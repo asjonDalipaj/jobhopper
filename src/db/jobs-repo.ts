@@ -89,6 +89,7 @@ export interface ListFilters {
   country?: string | null;
   remote?: boolean | null;
   contract?: boolean | null;
+  source?: string | null;
   limit?: number;
   offset?: number;
   unjudged?: boolean;
@@ -107,6 +108,10 @@ function buildListSql(filters: ListFilters): { sql: string; params: SQLInputValu
   if (filters.contract) {
     conds.push('(employment_type IS NOT NULL AND employment_type LIKE ?)');
     params.push('%Contract%');
+  }
+  if (filters.source) {
+    conds.push('source = ?');
+    params.push(filters.source);
   }
   if (filters.unjudged) {
     conds.push('NOT EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id)');
@@ -159,6 +164,7 @@ export function searchJobs(options: {
   country?: string | null;
   remote?: boolean | null;
   contract?: boolean | null;
+  source?: string | null;
   limit?: number;
   unjudged?: boolean;
 }): SearchRow[] {
@@ -177,6 +183,10 @@ export function searchJobs(options: {
   if (options.contract) {
     conds.push('(jobs.employment_type IS NOT NULL AND jobs.employment_type LIKE ?)');
     params.push('%Contract%');
+  }
+  if (options.source) {
+    conds.push('jobs.source = ?');
+    params.push(options.source);
   }
   if (options.unjudged) {
     conds.push('NOT EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id)');

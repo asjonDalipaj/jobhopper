@@ -20,38 +20,38 @@ function as(name: string, token: string): CompanyEntry {
  * Default registry — Dutch and European technology companies (plus a few
  * remote-friendly international ones) that expose public Greenhouse/Lever/
  * Ashby boards. Tokens below were verified live against the public APIs.
- * scan() reports individual failures without aborting the run, so a dead
- * token is visible, not fatal. Extend via `jobhopper companies add`.
+ *
+ * Run `jobhopper companies verify` to re-check live, and `jobhopper scan -a`
+ * to also pull whole-market remote aggregators (Remotive, RemoteOK) which need
+ * no curated list at all. scan() reports individual failures without aborting,
+ * so a dead token is visible, not fatal.
  */
 export const DEFAULT_COMPANIES: CompanyEntry[] = [
-  // Netherlands — verified ------------------------------------------------------------------
-  gh('Bol.com', 'bolcom'),
+  // Netherlands — live-verified --------------------------------------------------------------
   gh('Adyen', 'adyen'),
+  gh('Bol.com', 'bolcom'),
   gh('MessageBird', 'bird'),
+  gh('Optiver', 'optiver'),
+  gh('Sendcloud', 'sendcloud'),
 
-  // Netherlands — commonly used public tokens (may be gated or renamed) ----------------------
-  gh('Mollie', 'mollie'),
-  gh('Backbase', 'backbase'),
-  gh('Bunq', 'bunq'),
-  gh('Picnic', 'picnic-technologies'),
-  gh('Channable', 'channable'),
-  gh('Funda', 'funda'),
-  gh('Exact', 'exact'),
-  lv('Moneybird', 'moneybird'),
-  gh('TomTom', 'tomtom'),
-  gh('Philips', 'philips'),
-  gh('Rabobank', 'rabobank'),
-
-  // Europe — verified -------------------------------------------------------------------------
+  // Europe — live-verified (Germany / France / UK / BENELUX) ----------------------------------
+  lv('Spotify', 'spotify'),
+  gh('N26', 'n26'),
+  gh('Monzo', 'monzo'),
+  gh('GoCardless', 'gocardless'),
+  lv('Wise', 'wise'),
+  gh('Algolia', 'algolia'),
+  gh('Doctolib', 'doctolib'),
+  gh('Trivago', 'trivago'),
+  gh('Remote', 'remote'),
   gh('JetBrains', 'jetbrains'),
   gh('Spryker', 'spryker'),
-  lv('Spotify', 'spotify'),
   gh('GitLab', 'gitlab'),
   gh('Elastic', 'elastic'),
   gh('Contentful', 'contentful'),
   gh('HelloFresh', 'hellofresh'),
 
-  // Remote-friendly international (verified) --------------------------------------------------
+  // Remote-friendly international (live-verified) ----------------------------------------------
   gh('Stripe', 'stripe'),
   gh('Datadog', 'datadog'),
   gh('Figma', 'figma'),
@@ -61,7 +61,6 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   gh('Reddit', 'reddit'),
   gh('Discord', 'discord'),
   gh('Twilio', 'twilio'),
-  gh('GitHub', 'github'),
   as('Firecrawl', 'firecrawl'),
   as('OpenAI', 'openai'),
   as('Anthropic', 'anthropic'),

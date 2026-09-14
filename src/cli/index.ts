@@ -174,14 +174,35 @@ companies
     process.stdout.write(boxTable(['#', 'Company', 'ATS', 'Token'], table) + '\n');
   });
 
+companies
+  .command('verify')
+  .description('Live-check which configured board tokens actually respond')
+  .action(async () => {
+    const { filterLiveCompanies } = await import('../sources/verify.js');
+    console.log(pc.cyan('Checking board tokens…'));
+    const { live, dead } = await filterLiveCompanies(DEFAULT_COMPANIES);
+    console.log(`\n${pc.green('Live')}: ${live.length} · ${pc.red('Dead')}: ${dead.length}`);
+    if (live.length) {
+      const t: unknown[][] = live.map((c, i) => [i + 1, c.name, c.ats, c.token]);
+      process.stdout.write(boxTable(['#', 'Company', 'ATS', 'Token'], t) + '\n');
+    }
+    if (dead.length) {
+      console.log(dim('\nThese tokens did not respond — consider fixing or removing:'));
+      for (const c of dead) console.log(dim(`  ${c.name} (${c.ats}/${c.token})`));
+    }
+  });
+
 /* ------------------------------------------------------------------ *
  * scan
  * ------------------------------------------------------------------ */
 program
   .command('scan')
-  .description('Fetch job postings from all configured company boards and store them locally')
+  .description('Fetch job postings from configured company boards (and optionally open aggregators)')
   .option('-c, --company <name>', 'scan only one company by name')
-  .action(async (opts: { company?: string }) => {
+  .option('-a, --aggregators', 'also pull whole-market remote aggregators (Remotive, RemoteOK)')
+  .option('--verify', 'check board tokens first and skip dead ones')
+  .option('--source-filter <source>', 'only scan companies using this ATS (greenhouse/lever/ashby)')
+  .action(async (opts: { company?: string; aggregators?: boolean; verify?: boolean; sourceFilter?: string }) => {
     ensureDirs();
     let list = DEFAULT_COMPANIES;
     if (opts.company) {
@@ -192,11 +213,22 @@ program
       }
       list = [hit];
     }
-    console.log(pc.cyan(`Scanning ${list.length} company board(s)…`));
-    const result = await scanCompanies(list);
+    if (opts.sourceFilter) {
+      list = list.filter((c) => c.ats === opts.sourceFilter);
+      if (!list.length) {
+        console.error(pc.red(`No companies using ATS '${opts.sourceFilter}'.`));
+        process.exit(1);
+      }
+    }
+    console.log(pc.cyan(`Scanning ${list.length} company board(s)${opts.aggregators ? ' + open aggregators' : ''}…`));
+    const result = await scanCompanies(list, {
+      verifyBoards: opts.verify,
+      includeAggregators: opts.aggregators,
+    });
     console.log(
       pc.green(`\nDone: ${result.fetched} postings fetched, ${result.inserted} new, total in DB: ${countJobs()}.`),
     );
+    if (result.deadBoards.length) console.log(dim(`  skipped ${result.deadBoards.length} dead board(s): ${result.deadBoards.join(', ')}`));
     if (result.errors.length) {
       console.log(dim(`\n${result.errors.length} source(s) failed:`));
       for (const e of result.errors) console.log(dim(`  ${e.company}: ${e.message}`));
@@ -214,6 +246,7 @@ program
   .option('-k, --contract', 'only contract postings')
   .option('-u, --unjudged', 'only postings not yet judged')
   .option('-l, --limit <n>', 'max results', '30')
+  .option('--source <source>', 'only postings from this source (e.g. aggregator-remoteok)')
   .option('--json', 'output JSON')
   .action((query: string[], opts: Record<string, unknown>) => {
     const q = query.join(' ');
@@ -226,6 +259,7 @@ program
       country: opts.country as string | undefined,
       remote: opts.remote as boolean,
       contract: opts.contract as boolean,
+      source: opts.source as string | undefined,
       unjudged: opts.unjudged as boolean,
       limit: Number(opts.limit),
     });
@@ -242,10 +276,11 @@ program
       r.company,
       r.title,
       r.location,
+      r.source,
       r.verdict ? verdictColor(r.verdict) : dim('—'),
       r.posted_at ? r.posted_at.slice(0, 10) : dim('?'),
     ]);
-    process.stdout.write(boxTable(['ID', 'Company', 'Title', 'Location', 'Verdict', 'Posted'], table) + '\n');
+    process.stdout.write(boxTable(['ID', 'Company', 'Title', 'Location', 'Source', 'Verdict', 'Posted'], table) + '\n');
   });
 
 /* ------------------------------------------------------------------ *
@@ -259,12 +294,14 @@ program
   .option('-k, --contract', 'only contract postings')
   .option('-u, --unjudged', 'only postings not yet judged')
   .option('-l, --limit <n>', 'max results', '30')
+  .option('--source <source>', 'only postings from this source (e.g. aggregator-remoteok)')
   .option('--json', 'output JSON')
   .action((opts: Record<string, unknown>) => {
     const rows = listJobs({
       country: opts.country as string | undefined,
       remote: opts.remote as boolean,
       contract: opts.contract as boolean,
+      source: opts.source as string | undefined,
       unjudged: opts.unjudged as boolean,
       limit: Number(opts.limit),
     });
@@ -281,10 +318,11 @@ program
       r.company,
       r.title,
       r.location,
+      r.source,
       r.verdict ? verdictColor(r.verdict) : dim('—'),
       r.posted_at ? r.posted_at.slice(0, 10) : dim('?'),
     ]);
-    process.stdout.write(boxTable(['ID', 'Company', 'Title', 'Location', 'Verdict', 'Posted'], table) + '\n');
+    process.stdout.write(boxTable(['ID', 'Company', 'Title', 'Location', 'Source', 'Verdict', 'Posted'], table) + '\n');
   });
 
 /* ------------------------------------------------------------------ *

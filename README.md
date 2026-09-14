@@ -57,12 +57,15 @@ jobhopper profile import-cv ~/Documents/CV.pdf
 jobhopper profile set preferences
 jobhopper profile set constraints
 
-# 4. Fetch postings from configured Dutch/EU boards
-jobhopper scan
+# 4. Fetch postings from configured Dutch/EU boards (+ open remote aggregators)
+jobhopper scan                  # curated company boards only
+jobhopper scan -a               # also pull Remotive + RemoteOK (whole-market remote)
+jobhopper companies verify      # live-check which board tokens still respond
 
 # 5. Search your local index
 jobhopper search fullstack --country Netherlands
 jobhopper list --remote --limit 20
+jobhopper list --source aggregator-remoteok --limit 10   # only RemoteOK postings
 
 # 6. Judge a posting against your profile (visits OpenRouter with YOUR key)
 jobhopper judge 358
@@ -86,7 +89,8 @@ profile import-cv <pdf>            extract CV text locally from a PDF
 profile set <name> [file]          set a profile doc (preferences/constraints/background)
 profile show / get <name>          view stored profile docs
 companies list                     list configured boards
-scan [--company <name>]            fetch postings from configured boards
+companies verify                   live-check which board tokens respond
+scan [-c <name>] [-a] [--verify]   fetch from curated boards (+ -a adds RemoteOK/Remotive)
 search <words> [filters]           full-text search local DB
 list [filters]                     list jobs
 judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter)
@@ -95,16 +99,36 @@ tab create/list/add/get/rm         manage shortlists
 export [tab] [-o out.html]         build a clickable HTML dashboard
 status                             show DB / config status
 
-Common filters: --country <name> --remote --contract --unjudged --limit <n>
+Common filters: --country <name> --remote --contract --unjudged --source <s> --limit <n>
 ```
+
+## Job sources
+
+JobHopper pulls from two kinds of sources:
+
+1. **Curated company boards** — a live-verified list of Dutch/EU (and a few
+   international) companies exposing public Greenhouse / Lever / Ashby boards
+   (Adyen, Bol.com, Optiver, N26, Monzo, GoCardless, GitLab, Elastic, Stripe,
+   Spotify, …). Run `jobhopper companies verify` to re-check which tokens
+   respond at any time.
+2. **Open whole-market aggregators** (added with `scan -a`):
+   **Remotive** and **RemoteOK**, which need no curated list at all and return
+   remote developer jobs across the whole market. Tagged with source
+   `aggregator-remotive` / `aggregator-remoteok`, and filterable via
+   `--source`. Because these are remote-anywhere (US-heavy), combine them with
+   `--country`, `--remote` and your `constraints.md`.
+
+Every source normalizes to the same shape, so results flow through the same
+search / judge / export pipeline. Sources are distinguished by the `--source`
+value shown in `search`/`list`.
 
 ## Privacy
 
 - All job postings, profile documents, and judgments are stored in
   `~/.config/jobhopper/jobhopper.db` and `~/.config/jobhopper/profile/`.
-- The **only** outbound network traffic is to (a) the public job-board APIs
-  when you run `scan`, and (b) [openrouter.ai](https://openrouter.ai) when you
-  run `judge`, using your key, sending your local profile for evaluation.
+- The **only** outbound network traffic is to (a) the public job-board APIs and
+  aggregators when you run `scan`, and (b) [openrouter.ai](https://openrouter.ai)
+  when you run `judge`, using your key, sending your local profile for evaluation.
 - Nothing is sent to any jobhun/saas middleman. No account, no tracking.
 
 ## Judging models
@@ -115,7 +139,8 @@ Defaults (override with `config set-model` / `config set-quick-model`):
 - Quick screening: `openai/gpt-4o-mini`
 
 Other good choices: `anthropic/claude-3.5-sonnet`,
-`anthropic/claude-3.7-sonnet`, `deepseek/deepseek-chat`,
+`anthropic/claude-3.7-sonnet`, `deepseek/deepseek-v4-pro`,
+`deepseek/deepseek-v4-flash`, `deepseek/deepseek-chat`,
 `meta-llama/llama-3.3-70b-instruct`.
 
 ## Configuring boards

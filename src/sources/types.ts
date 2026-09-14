@@ -18,10 +18,21 @@ export interface ScraperStats {
   errors: number;
 }
 
+/**
+ * A job posting source.
+ *
+ * ATS board sources (Greenhouse/Lever/Ashby) fetch one company at a time via
+ * `fetchCompany`. Open aggregator sources (Remotive, RemoteOK) have no company
+ * concept — they implement `fetchAll` and are run as whole-market sources.
+ */
 export interface JobSource {
   readonly name: string;
-  /** Fetch all available postings for the given company board token. */
-  fetchCompany(company: { name: string; token: string }): Promise<SourceJob[]>;
+  /** True for whole-market aggregators that implement `fetchAll`. */
+  readonly aggregator?: boolean;
+  /** Fetch all postings for a company board (ATS sources only). */
+  fetchCompany?(company: { name: string; token: string }): Promise<SourceJob[]>;
+  /** Fetch all postings from the whole market (aggregator sources only). */
+  fetchAll?(): Promise<SourceJob[]>;
 }
 
 /** Guess a workplace type keyword from location/description text. */

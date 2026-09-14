@@ -3,6 +3,9 @@ import { upsertJob, countJobs } from '../db/jobs-repo.js';
 import { greenhouse } from './greenhouse.js';
 import { lever } from './lever.js';
 import { ashby } from './ashby.js';
+import { remotive } from './remotive.js';
+import { remoteok } from './remoteok.js';
+import { filterLiveCompanies } from './verify.js';
 import type { JobSource, SourceJob, ScraperStats } from './types.js';
 import type { CompanyEntry } from './companies.js';
 
@@ -10,7 +13,12 @@ const SOURCES: Record<string, JobSource> = {
   greenhouse,
   lever,
   ashby,
+  [remotive.name]: remotive,
+  [remoteok.name]: remoteok,
 };
+
+/** Whole-market aggregator sources run on every scan (no company token). */
+export const AGGREGATORS: JobSource[] = [remotive, remoteok];
 
 export interface ScanResult {
   companies: number;
@@ -18,42 +26,74 @@ export interface ScanResult {
   inserted: number;
   errors: Array<{ company: string; message: string }>;
   stats: ScraperStats[];
+  deadBoards: string[];
+}
+
+async function ingest(jobs: SourceJob[], insertedHere: Set<number>): Promise<void> {
+  for (const job of jobs) {
+    const result = upsertJob(normalize(job));
+    if (result.created) insertedHere.add(result.id);
+  }
 }
 
 /**
- * Scan a set of companies and insert their postings into the local DB.
- * Deduplicated by (source, external_id). Individual company failures are
- * collected and reported without aborting the whole run.
+ * Scan companies (ATS boards) plus any open aggregators, inserting new postings
+ * into the local DB. Deduplicated by (source, external_id). Individual failures
+ * are collected and reported without aborting the whole run.
  */
-export async function scanCompanies(companies: CompanyEntry[]): Promise<ScanResult> {
-  const before = countJobs();
+export async function scanCompanies(
+  companies: CompanyEntry[],
+  options: { verifyBoards?: boolean; includeAggregators?: boolean } = {},
+): Promise<ScanResult> {
   const insertedHere: Set<number> = new Set();
   const errors: ScanResult['errors'] = [];
   const stats: ScraperStats[] = [];
+  let deadBoards: string[] = [];
   const db = getDb();
+
+  let live = companies;
+  if (options.verifyBoards) {
+    const { live: l, dead } = await filterLiveCompanies(companies);
+    live = l;
+    deadBoards = dead.map((c) => c.name);
+  }
 
   db.exec('BEGIN');
   try {
-    for (let i = 0; i < companies.length; i++) {
-      const company = companies[i];
+    // 1. Per-company ATS boards
+    for (const company of live) {
       const source = SOURCES[company.ats];
-      if (!source) {
+      if (!source?.fetchCompany) {
         errors.push({ company: company.name, message: `unknown ATS '${company.ats}'` });
         continue;
       }
       try {
         const jobs = await source.fetchCompany(company);
         stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
-        for (const job of jobs) {
-          const result = upsertJob(normalize(job));
-          if (result.created) insertedHere.add(result.id);
-        }
+        await ingest(jobs, insertedHere);
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         errors.push({ company: company.name, message });
         stats.push({ source: source.name, fetched: 0, errors: 1 });
       }
     }
+
+    // 2. Whole-market aggregators
+    if (options.includeAggregators) {
+      for (const source of AGGREGATORS) {
+        if (!source.fetchAll) continue;
+        try {
+          const jobs = await source.fetchAll();
+          stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
+          await ingest(jobs, insertedHere);
+        } catch (err) {
+          const message = err instanceof Error ? err.message : String(err);
+          errors.push({ company: source.name, message });
+          stats.push({ source: source.name, fetched: 0, errors: 1 });
+        }
+      }
+    }
+
     db.exec('COMMIT');
   } catch (err) {
     db.exec('ROLLBACK');
@@ -66,6 +106,7 @@ export async function scanCompanies(companies: CompanyEntry[]): Promise<ScanResu
     inserted: insertedHere.size,
     errors,
     stats,
+    deadBoards,
   };
 }
 
@@ -75,7 +116,6 @@ function normalize(job: SourceJob) {
     if (typeof v === 'string') return v;
     if (typeof v === 'number' || typeof v === 'boolean') return String(v);
     if (Array.isArray(v)) return v.map((x) => str(x, '')).filter(Boolean).join('; ');
-    // Any other type (object, etc.) -> flatten defensively.
     try {
       return JSON.stringify(v);
     } catch {
