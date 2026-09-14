@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>EU remote contract roles</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:920px;margin:40px auto;padding:0 16px;color:#1a1a1a}
+h1{font-size:1.6em}.cards{display:grid;gap:12px;margin-top:20px}
+.card{border:1px solid #e2e2e2;border-radius:8px;padding:16px;position:relative}
+.card h3{margin:0 0 4px;padding-right:70px}
+.meta{color:#666;margin-bottom:8px}
+a{color:#0b74de;text-decoration:none;font-weight:600}
+.verdict{position:absolute;top:14px;right:14px;text-transform:uppercase;font-size:.72em;font-weight:700;padding:2px 8px;border-radius:10px}
+.verdict.strong{background:#e6f4ea;color:#137333}.verdict.fair{background:#fef7e0;color:#b06000}
+.verdict.weak{background:#fce8e6;color:#c5221f}
+details{color:#444;margin-top:8px;font-size:.9em}
+.search{width:100%;padding:10px;margin:16px 0;border:1px solid #ccc;border-radius:6px;font-size:1em}
+.count{color:#666;font-size:.9em;margin-bottom:8px}
+</style></head>
+<body><h1>EU remote contract roles</h1>
+<div class="count" id="count"></div>
+<input class="search" id="q" placeholder="Filter by title, company, location…">
+<div class="cards" id="cards"><div class="card">
+        <h3>Senior Capture Manager</h3>
+        
+        <div class="meta">Datadog · District of Columbia, USA, Remote; Maryland, USA, Remote; New York, New York, USA; New York, USA, Remote; Virginia, USA, Remote · greenhouse · 2026-09-10</div>
+        <a href="https://careers.datadoghq.com/detail/8113116/?gh_jid=8113116" target="_blank" rel="noopener">Apply ↗</a>
+        <details><summary>Description</summary><p>&lt;h1&gt;&lt;strong&gt;Senior Capture Manager, Federal Systems Integrators - Public Sector&lt;/strong&gt;&lt;/h1&gt; &lt;p&gt;As the Senior Capture Manager, Federal Systems Integrators (FSI), you will lead joint capture and channel coordination across Datadog's federal systems integrator and prime-contractor ecosystem, serving as the connective tissue between those partners and Datadog's internal federal sales teams. You will make sure capture activity happening inside FSI partner organizations is visible to, aligned with, and reinforced by Datadog's own federal sellers, and vice versa, so that partner-led and direct-led motions strengthen a pursuit rather than duplicate or collide with it. The role reports to the Channel &amp;amp; Alliances (C&amp;amp;A) organization and works cross-functionally with federal sales, distribution (Carahsoft, Vertosoft), deal desk, and legal to drive joint capture outcomes on priority federal pursuits.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Travel:&lt;/strong&gt; Less than 25%&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Clearance:&lt;/strong&gt; An active U.S. government security clearance is preferred but not required. Candidates without an active clearance are encouraged to apply.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;At Datadog, we place value in our office culture - the relationships and collaboration it builds, and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.&lt;/p&gt; &lt;h2&gt;&lt;strong&gt;What You'll Do:&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Own the joint-capture strategy and partner alignment for a portfolio of approximately 20 priority federal programs, engaging 12-24 months ahead of RFP release&lt;/li&gt; &lt;li&gt;Manage each named program as a distinct capture effort, coordinating dedicated engagement across agency stakeholders, FSI partners, and independent software vendors (ISVs)&lt;/li&gt; &lt;li&gt;Identify requirements, shape acquisition strategy, engage agencies, primes, and partners, and position Datadog ahead of procurement&lt;/li&gt; &lt;li&gt;Act as the primary liaison between FSI </p></details>
+      </div></div>
+<script>
+const q=document.getElementById('q');const count=document.getElementById('count');
+function upd(){const t=q.value.toLowerCase();let n=0;
+document.querySelectorAll('.card').forEach(c=>{const show=c.textContent.toLowerCase().includes(t);c.style.display=show?'':'none';if(show)n++;});
+count.textContent=n+' shown';}
+q.addEventListener('input',upd);upd();
+</script>
+</body></html>
