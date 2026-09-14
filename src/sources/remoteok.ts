@@ -49,7 +49,7 @@ export const remoteok: JobSource = {
 };
 
 /** A payload record is a real job if it has a position; the first element is metadata. */
-function isJob(j: unknown): j is RemoteOkJob {
+export function isJob(j: unknown): j is RemoteOkJob {
   return (
     typeof j === 'object' &&
     j !== null &&

@@ -51,7 +51,7 @@ export const remotive: JobSource = {
   },
 };
 
-function isSoftware(j: RemotiveJob): boolean {
+export function isSoftware(j: RemotiveJob): boolean {
   const tags = (j.tags ?? []).join(' ').toLowerCase();
   const title = (j.title ?? '').toLowerCase();
   return (

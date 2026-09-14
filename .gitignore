@@ -3,4 +3,9 @@ dist/
 *.log
 .env
 shortlist.html
+*.html
+*.db
+*.db-shm
+*.db-wal
+undefined/
 .jobhopper/
