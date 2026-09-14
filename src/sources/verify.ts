@@ -11,8 +11,7 @@ const BASE_URLS: Record<string, (token: string) => string> = {
  * Check whether a company board token resolves to a live, readable feed.
  *
  * Uses GET (not HEAD) because the ATS JSON endpoints may reject HEAD while
- * serving GET fine, which would falsely prune live boards. Reads only the
- * status line, so no payload is retained.
+ * serving GET fine, which would falsely prune live boards.
  */
 export async function verifyCompanyBoard(company: CompanyEntry): Promise<boolean> {
   const makeUrl = BASE_URLS[company.ats];
@@ -23,9 +22,7 @@ export async function verifyCompanyBoard(company: CompanyEntry): Promise<boolean
       method: 'GET',
       headers: { 'User-Agent': 'jobhopper/0.1', Accept: 'application/json' },
     });
-    if (res.ok) return true;
-    // Some boards only serve HEAD-less GET on alternate paths; treat 4xx as dead.
-    return false;
+    return res.ok;
   } catch {
     return false;
   }

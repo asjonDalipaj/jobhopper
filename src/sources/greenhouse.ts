@@ -2,9 +2,6 @@ import type { JobSource, SourceJob } from './types.js';
 import { guessWorkplace, guessEmployment } from './types.js';
 import { stripHtml, fetchWithTimeout } from './html.js';
 
-// Re-export for sources that historically imported it from greenhouse.
-export { stripHtml } from './html.js';
-
 interface GreenhouseJobResponse {
   id?: number | string;
   title?: string;

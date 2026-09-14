@@ -106,11 +106,14 @@ Common filters: --country <name> --remote --contract --unjudged --source <s> --l
 
 JobHopper pulls from two kinds of sources:
 
-1. **Curated company boards** — a live-verified list of Dutch/EU (and a few
+1. **Curated company boards** — a live-verified list of ~50 Dutch/EU (and a few
    international) companies exposing public Greenhouse / Lever / Ashby boards
    (Adyen, Bol.com, Optiver, N26, Monzo, GoCardless, GitLab, Elastic, Stripe,
-   Spotify, …). Run `jobhopper companies verify` to re-check which tokens
-   respond at any time.
+   Spotify, Typeform, Wayve, Neo4j, …). Tokens are checked live before use:
+   `jobhopper companies verify` re-checks at any time, and `scan --verify`
+   auto-skips boards that no longer respond. A deliberately smaller, honest,
+   verified set beats padding with dead tokens — coverage grows as boards are
+   confirmed working.
 2. **Open whole-market aggregators** (added with `scan -a`):
    **Remotive** and **RemoteOK**, which need no curated list at all and return
    remote developer jobs across the whole market. Tagged with source
