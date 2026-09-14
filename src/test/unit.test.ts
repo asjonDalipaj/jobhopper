@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { sanitizeFtsQuery } from '../db/jobs-repo.js';
-import { stripHtml } from '../sources/html.js';
+import { stripHtml, htmlToPlainText } from '../sources/html.js';
 import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
@@ -19,6 +19,16 @@ test('stripHtml removes tags and decodes entities', () => {
   assert.equal(stripHtml('a&nbsp; b&#39;c'), 'a b\'c');
   assert.equal(stripHtml('<b>X</b>   <i>Y</i>'), 'X Y');
   assert.equal(stripHtml(''), '');
+});
+
+test('htmlToPlainText keeps paragraph/list structure and strips markup', () => {
+  assert.equal(
+    htmlToPlainText('<p><strong>Title</strong></p><ul><li>A</li><li>B</li></ul>'),
+    'Title\n\n• A\n• B',
+  );
+  assert.equal(htmlToPlainText('a<br>b'), 'a\nb');
+  assert.equal(htmlToPlainText('<p style="x">Bye &amp; hi</p>'), 'Bye & hi');
+  assert.equal(htmlToPlainText(''), '');
 });
 
 test('guessWorkplace returns Remote/Hybrid/On-site or null', () => {

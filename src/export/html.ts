@@ -77,3 +77,36 @@ export function exportToHtmlFile(rows: HtmlRow[], outputPath: string, title?: st
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, buildHtml(rows, title), 'utf8');
 }
+
+/**
+ * Write rows out as a JSON data file (mirrors the /api/jobs payload shape) so
+ * CI can commit a snapshot the React web UI can consume without a local DB.
+ */
+export function exportToJsonFile(rows: HtmlRow[], outputPath: string): void {
+  mkdirSync(dirname(outputPath), { recursive: true });
+  writeFileSync(outputPath, `${JSON.stringify(rows, null, 2)}\n`, 'utf8');
+}
+
+/** Snapshot row shape — the full set of fields the React UI understands. */
+export interface JsonRow {
+  id: number;
+  external_id: string;
+  source: string;
+  company: string;
+  title: string;
+  location: string;
+  workplace_type: string | null;
+  employment_type: string | null;
+  url: string;
+  description: string;
+  posted_at: string | null;
+  tags: string | null;
+  verdict?: string | null;
+  reasoning?: string | null;
+}
+
+/** Write full job rows (as returned by the DB, containing verdicts) to JSON. */
+export function exportJobsToJsonFile(rows: JsonRow[], outputPath: string): void {
+  mkdirSync(dirname(outputPath), { recursive: true });
+  writeFileSync(outputPath, `${JSON.stringify(rows, null, 2)}\n`, 'utf8');
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---- Design tokens: Light (default) ---- */
+:root {
+  --canvas: #f7f6f3;
+  --surface: #ffffff;
+  --surface-hover: #fbfbfa;
+  --surface-well: #f2f1ed;
+  --line: #eaeaea;
+  --line-strong: #d9d8d3;
+  --ink: #1c1b19;
+  --ink-soft: #6f6d67;
+  --ink-faint: #a09e98;
+  --ring: rgba(0, 0, 0, 0.12);
+}
+
+/* ---- Design tokens: Dark ---- */
+.dark {
+  --canvas: #0c0d0e;
+  --surface: #161718;
+  --surface-hover: #1c1d1f;
+  --surface-well: #101112;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --ink: #ededed;
+  --ink-soft: #a1a1aa;
+  --ink-faint: #52525b;
+  --ring: rgba(255, 255, 255, 0.14);
+}
+
+/* Map tokens to Tailwind color names so utilities react to theme class */
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-well: var(--surface-well);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'Geist Mono', 'SF Mono', 'JetBrains Mono', monospace;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 3px;
+}
+

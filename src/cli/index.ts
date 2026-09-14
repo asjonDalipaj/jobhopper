@@ -16,7 +16,9 @@ import { judgePosting } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
 import { runJob, runAllJobs } from '../jobs/run.js';
-import { exportToHtmlFile, type HtmlRow } from '../export/html.js';
+import { exportToHtmlFile, exportJobsToJsonFile, type HtmlRow } from '../export/html.js';
+import { startWebServer } from './serve.js';
+
 
 const program = new Command();
 
@@ -537,7 +539,8 @@ program
   .description('Run every named job in jobs.json: find -> refresh tab -> judge -> export HTML')
   .option('--job <name>', 'run only this named job')
   .option('--no-judge', 'skip judging even for jobs marked judge:true')
-  .action(async (opts: { job?: string; noJudge?: boolean }) => {
+  .option('-j, --json <path>', 'also write a JSON jobs snapshot (default: exports/jobs.json)')
+  .action(async (opts: { job?: string; noJudge?: boolean; json?: string }) => {
     const cfg = loadJobsConfig();
     if (!cfg.jobs.length) {
       console.log(dim('No jobs configured. Run `jobhopper jobs --init` to scaffold, then edit jobs.json.'));
@@ -559,6 +562,41 @@ program
       const suffix = r.error ? pc.red(` error: ${r.error}`) : ` (judged ${r.judged})`;
       console.log(`${r.found > 0 ? pc.green(`${r.found} found`) : dim('0 found')}  ${dim(r.name)}  ${r.output ? dim('->') + ` ${r.output}` : ''}${suffix}`);
     }
+
+    // Write a JSON snapshot of the full local DB (with verdicts) so the React
+    // web UI can show the same data via a committed file when no local DB exists.
+    if (opts.json !== undefined) {
+      const jsonPath = opts.json && opts.json !== 'true' ? opts.json : join(getPaths().exportsDir, 'jobs.json');
+      const rows = listJobs({ limit: 1000 }).map((j) => ({
+        id: j.id,
+        external_id: j.external_id,
+        source: j.source,
+        company: j.company,
+        title: j.title,
+        location: j.location,
+        workplace_type: j.workplace_type,
+        employment_type: j.employment_type,
+        url: j.url,
+        description: j.description,
+        posted_at: j.posted_at,
+        tags: j.tags ?? null,
+        verdict: j.verdict ?? null,
+        reasoning: j.reasoning ?? null,
+      }));
+      exportJobsToJsonFile(rows, jsonPath);
+      console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}`);
+    }
+  });
+
+/* ------------------------------------------------------------------ *
+ * ui (web)
+ * ------------------------------------------------------------------ */
+program
+  .command('ui')
+  .description('Start the local minimalist React frontend and API server')
+  .option('-p, --port <port>', 'Port to listen on', '3333')
+  .action((opts: { port: string }) => {
+    startWebServer(parseInt(opts.port, 10) || 3333);
   });
 
 /* ------------------------------------------------------------------ *
