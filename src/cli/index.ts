@@ -14,6 +14,9 @@ import { getPaths, ensureDirs } from '../storage/paths.js';
 import { importCvPdf, readCvText, readProfileDoc, writeProfileDoc, profileFiles } from '../profile/cv.js';
 import { judgePosting } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
+import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
+import { runJob, runAllJobs } from '../jobs/run.js';
+import { exportToHtmlFile, type HtmlRow } from '../export/html.js';
 
 const program = new Command();
 
@@ -477,54 +480,87 @@ program
       console.log(dim('Nothing to export.'));
       return;
     }
-    const html = buildHtml(rows);
-    mkdirSync(getPaths().exportsDir, { recursive: true });
-    writeFileSync(opts.output, html, 'utf8');
+    const htmlRows: HtmlRow[] = rows.map((r) => ({
+      company: r.company,
+      title: r.title,
+      location: r.location,
+      url: r.url,
+      description: r.description,
+      source: r.source,
+      posted_at: r.posted_at,
+    }));
+    exportToHtmlFile(htmlRows, opts.output);
     console.log(pc.green(`Wrote ${rows.length} posting(s) to ${opts.output}`));
   });
 
-function esc(s: string | null | undefined): string {
-  return (s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
+/* ------------------------------------------------------------------ *
+ * jobs & run
+ * ------------------------------------------------------------------ */
+program
+  .command('jobs')
+  .description('Show configured named jobs, or write a starter jobs.json')
+  .option('--init', 'write a starter jobs.json with examples (does not overwrite)')
+  .action((opts: { init?: boolean }) => {
+    const path = jobsConfigPath();
+    const existing = loadJobsConfig();
+    if (opts.init) {
+      if (existing.jobs.length) {
+        console.log(dim(`jobs.json already has ${existing.jobs.length} job(s): ${path}`));
+        return;
+      }
+      const samples: JobSpec[] = [
+        { name: 'netherlands-fullstack', query: 'fullstack java', country: 'Netherlands', limit: 20 },
+        { name: 'eu-remote-software', query: 'software engineer', remote: true, limit: 30 },
+        { name: 'eu-remote-contracts', remote: true, contract: true, limit: 20 },
+      ];
+      saveJobsConfig({ jobs: samples });
+      console.log(pc.green(`Wrote starter jobs.json to ${path}`));
+      console.log('Edit it to add your own filters, then run `jobhopper run`.');
+      return;
+    }
+    if (!existing.jobs.length) {
+      console.log(dim('No jobs configured. Run `jobhopper jobs --init` to scaffold, then edit jobs.json.'));
+      return;
+    }
+    const table: unknown[][] = existing.jobs.map((j, i) => [
+      i + 1,
+      j.name,
+      j.query ?? '—',
+      j.country ?? '—',
+      j.output ?? `exports/${j.name}.html`,
+    ]);
+    process.stdout.write(boxTable(['#', 'Job', 'Query', 'Country', 'HTML output'], table) + '\n');
+  });
 
-function buildHtml(
-  rows: Array<{ company: string; title: string; location: string; url: string | null; description: string }>,
-): string {
-  const cards = rows
-    .map((r) => {
-      const url = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Apply ↗</a>` : '<span>—</span>';
-      const desc = r.description
-        ? `<details><summary>Description</summary><p>${esc(r.description.slice(0, 2000))}</p></details>`
-        : '';
-      return `<div class="card">
-        <h3>${esc(r.title)}</h3>
-        <div class="meta">${esc(r.company)} · ${esc(r.location)}</div>
-        ${url}
-        ${desc}
-      </div>`;
-    })
-    .join('\n');
-  return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>JobHopper shortlist</title>
-<style>
-body{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;color:#1a1a1a}
-h1{font-size:1.6em}.cards{display:grid;gap:12px;margin-top:20px}
-.card{border:1px solid #e2e2e2;border-radius:8px;padding:16px}
-.card h3{margin:0 0 4px}.meta{color:#666;margin-bottom:8px}
-a{color:#0b74de;text-decoration:none;font-weight:600}
-details{color:#444;margin-top:8px;font-size:.9em}
-.search{width:100%;padding:10px;margin:16px 0;border:1px solid #ccc;border-radius:6px;font-size:1em}
-</style></head>
-<body><h1>JobHopper shortlist</h1>
-<input class="search" id="q" placeholder="Filter by title, company, location…">
-<div class="cards" id="cards">${cards}</div>
-<script>
-const q=document.getElementById('q');
-q.addEventListener('input',()=>{const t=q.value.toLowerCase();
-document.querySelectorAll('.card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(t)?'':'none';});});
-</script>
-</body></html>`;
-}
+program
+  .command('run')
+  .description('Run every named job in jobs.json: find -> refresh tab -> judge -> export HTML')
+  .option('--job <name>', 'run only this named job')
+  .option('--no-judge', 'skip judging even for jobs marked judge:true')
+  .action(async (opts: { job?: string; noJudge?: boolean }) => {
+    const cfg = loadJobsConfig();
+    if (!cfg.jobs.length) {
+      console.log(dim('No jobs configured. Run `jobhopper jobs --init` to scaffold, then edit jobs.json.'));
+      return;
+    }
+    let specs = cfg.jobs;
+    if (opts.job) {
+      specs = specs.filter((s) => s.name === opts.job);
+      if (!specs.length) {
+        console.error(pc.red(`No job named '${opts.job}'. Run \`jobhopper jobs\` to list them.`));
+        process.exit(1);
+      }
+    }
+    if (opts.noJudge) specs = specs.map((s) => ({ ...s, judge: false }));
+
+    console.log(pc.cyan(`Running ${specs.length} job(s)…`));
+    const results = await runAllJobs(specs);
+    for (const r of results) {
+      const suffix = r.error ? pc.red(` error: ${r.error}`) : ` (judged ${r.judged})`;
+      console.log(`${r.found > 0 ? pc.green(`${r.found} found`) : dim('0 found')}  ${dim(r.name)}  ${r.output ? dim('->') + ` ${r.output}` : ''}${suffix}`);
+    }
+  });
+
 /* ------------------------------------------------------------------ *
  * status
  * ------------------------------------------------------------------ */

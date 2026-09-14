@@ -2,10 +2,13 @@ node_modules/
 dist/
 *.log
 .env
-shortlist.html
 *.html
-*.db
-*.db-shm
-*.db-wal
 undefined/
-.jobhopper/
+
+# CI-persisted workspace ./.jobhopper IS tracked so dashboards + dedup DB commit
+# each scheduled run. So we specifically re-include it below.
+.jobhopper/*
+!.jobhopper/
+!.jobhopper/exports/
+!.jobhopper/exports/**
+!.jobhopper/jobhopper.db
