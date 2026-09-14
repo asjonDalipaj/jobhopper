@@ -1,8 +1,10 @@
 name: scheduled job scan
 
 # Runs jobhopper on GitHub's free servers, so it keeps finding jobs even when
-# your laptop is off. Frequency is "every 3 hours". The HTML dashboards (and the
-# local DB used for dedup) are committed back so history is preserved.
+# your laptop is off. Frequency is "every 3 hours". Each run fetches fresh
+# postings and commits the rendered HTML dashboards (.jobhopper/exports/*.html).
+# The SQLite DB is NOT committed (too large + local-only); it is rebuilt fresh
+# on each runner and discarded when the job ends.
 on:
   schedule:
     - cron: '0 */3 * * *'   # every 3 hours
@@ -30,9 +32,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      # CI keeps its data in the repo at ./.jobhopper so the DB (dedup) and the
-      # generated HTML dashboards persist and can be committed each run.
-      # The CLI is invoked via the built entry point (no global install needed).
+      # CI works in the repo at ./.jobhopper so the generated HTML dashboards
+      # land there and get committed. The CLI is invoked via the built entry
+      # point (no global install needed).
       - name: Scan + run jobs
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
