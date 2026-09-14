@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "name": "nl-fullstack-java",
+      "query": "fullstack java",
+      "country": "Netherlands",
+      "limit": 25,
+      "output": ".jobhopper/exports/nl-fullstack-java.html",
+      "title": "NL fullstick Java roles",
+      "description": "Senior full-stack / Java roles in Netherlands",
+      "judge": false
+    },
+    {
+      "name": "eu-remote-software",
+      "query": "software engineer",
+      "remote": true,
+      "limit": 30,
+      "output": ".jobhopper/exports/eu-remote-software.html",
+      "title": "EU remote software roles",
+      "judge": false
+    },
+    {
+      "name": "eu-remote-contracts",
+      "remote": true,
+      "contract": true,
+      "limit": 20,
+      "output": ".jobhopper/exports/eu-remote-contracts.html",
+      "title": "EU remote contract roles",
+      "judge": false
+    },
+    {
+      "name": "eu-recent-software",
+      "query": "software",
+      "limit": 30,
+      "output": ".jobhopper/exports/eu-recent-software.html",
+      "title": "Recent EU software roles",
+      "judge": false
+    }
+  ]
+}

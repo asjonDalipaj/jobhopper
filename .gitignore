@@ -5,10 +5,10 @@ dist/
 *.html
 undefined/
 
-# CI-persisted workspace ./.jobhopper IS tracked so dashboards + dedup DB commit
-# each scheduled run. So we specifically re-include it below.
-.jobhopper/*
+# Local data & cache — commit the jobs config and dashboards, but NOT the SQLite
+# DB (it grows large and is rebuilt by GitHub Actions on first run).
+.jobhopper/**
 !.jobhopper/
 !.jobhopper/exports/
 !.jobhopper/exports/**
-!.jobhopper/jobhopper.db
+!.jobhopper/jobs.json
