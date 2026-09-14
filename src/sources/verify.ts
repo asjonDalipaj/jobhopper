@@ -1,4 +1,5 @@
 import type { CompanyEntry } from './companies.js';
+import { fetchWithTimeout } from './html.js';
 
 const BASE_URLS: Record<string, (token: string) => string> = {
   greenhouse: (t) => `https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(t)}/jobs`,
@@ -6,16 +7,25 @@ const BASE_URLS: Record<string, (token: string) => string> = {
   ashby: (t) => `https://api.ashbyhq.com/posting-api/job-board/${encodeURIComponent(t)}`,
 };
 
-/** Check whether a company board token resolves to a live, readable feed. */
+/**
+ * Check whether a company board token resolves to a live, readable feed.
+ *
+ * Uses GET (not HEAD) because the ATS JSON endpoints may reject HEAD while
+ * serving GET fine, which would falsely prune live boards. Reads only the
+ * status line, so no payload is retained.
+ */
 export async function verifyCompanyBoard(company: CompanyEntry): Promise<boolean> {
   const makeUrl = BASE_URLS[company.ats];
   if (!makeUrl) return false;
   try {
-    const res = await fetch(makeUrl(company.token), {
-      method: 'HEAD',
-      headers: { 'User-Agent': 'jobhopper/0.1' },
+    const url = makeUrl(company.token);
+    const res = await fetchWithTimeout(url, {
+      method: 'GET',
+      headers: { 'User-Agent': 'jobhopper/0.1', Accept: 'application/json' },
     });
-    return res.ok;
+    if (res.ok) return true;
+    // Some boards only serve HEAD-less GET on alternate paths; treat 4xx as dead.
+    return false;
   } catch {
     return false;
   }

@@ -17,8 +17,8 @@ const SOURCES: Record<string, JobSource> = {
   [remoteok.name]: remoteok,
 };
 
-/** Whole-market aggregator sources run on every scan (no company token). */
-export const AGGREGATORS: JobSource[] = [remotive, remoteok];
+/** Whole-market aggregator sources (no company token) — derived from SOURCES. */
+export const AGGREGATORS: JobSource[] = Object.values(SOURCES).filter((s) => s.aggregator);
 
 export interface ScanResult {
   companies: number;
@@ -36,6 +36,28 @@ async function ingest(jobs: SourceJob[], insertedHere: Set<number>): Promise<voi
   }
 }
 
+async function fetchOne(
+  company: CompanyEntry,
+  errors: ScanResult['errors'],
+  stats: ScraperStats[],
+  insertedHere: Set<number>,
+): Promise<void> {
+  const source = SOURCES[company.ats];
+  if (!source?.fetchCompany) {
+    errors.push({ company: company.name, message: `unknown ATS '${company.ats}'` });
+    return;
+  }
+  try {
+    const jobs = await source.fetchCompany(company);
+    stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
+    await ingest(jobs, insertedHere);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    errors.push({ company: company.name, message });
+    stats.push({ source: source.name, fetched: 0, errors: 1 });
+  }
+}
+
 /**
  * Scan companies (ATS boards) plus any open aggregators, inserting new postings
  * into the local DB. Deduplicated by (source, external_id). Individual failures
@@ -43,7 +65,7 @@ async function ingest(jobs: SourceJob[], insertedHere: Set<number>): Promise<voi
  */
 export async function scanCompanies(
   companies: CompanyEntry[],
-  options: { verifyBoards?: boolean; includeAggregators?: boolean } = {},
+  options: { verifyBoards?: boolean; includeAggregators?: boolean; concurrency?: number } = {},
 ): Promise<ScanResult> {
   const insertedHere: Set<number> = new Set();
   const errors: ScanResult['errors'] = [];
@@ -58,25 +80,21 @@ export async function scanCompanies(
     deadBoards = dead.map((c) => c.name);
   }
 
+  const concurrency = options.concurrency ?? 6;
+
   db.exec('BEGIN');
   try {
-    // 1. Per-company ATS boards
-    for (const company of live) {
-      const source = SOURCES[company.ats];
-      if (!source?.fetchCompany) {
-        errors.push({ company: company.name, message: `unknown ATS '${company.ats}'` });
-        continue;
+    // 1. Per-company ATS boards — fetched concurrently (each bounded by its own
+    //    timeout), ingested in order by awaiting the batch before commit.
+    const queue = [...live];
+    const worker = async () => {
+      while (queue.length) {
+        const c = queue.shift();
+        if (!c) return;
+        await fetchOne(c, errors, stats, insertedHere);
       }
-      try {
-        const jobs = await source.fetchCompany(company);
-        stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
-        await ingest(jobs, insertedHere);
-      } catch (err) {
-        const message = err instanceof Error ? err.message : String(err);
-        errors.push({ company: company.name, message });
-        stats.push({ source: source.name, fetched: 0, errors: 1 });
-      }
-    }
+    };
+    await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, worker));
 
     // 2. Whole-market aggregators
     if (options.includeAggregators) {

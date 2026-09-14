@@ -1,5 +1,6 @@
 import type { JobSource, SourceJob } from './types.js';
 import { guessWorkplace, guessEmployment } from './types.js';
+import { stripHtml, fetchWithTimeout } from './html.js';
 
 interface RemoteOkJob {
   id?: string;
@@ -22,7 +23,7 @@ export const remoteok: JobSource = {
   name: 'aggregator-remoteok',
   aggregator: true,
   async fetchAll() {
-    const res = await fetch('https://remoteok.com/api', {
+    const res = await fetchWithTimeout('https://remoteok.com/api', {
       headers: { 'User-Agent': 'jobhopper/0.1 (local job search tool; link back to RemoteOK)', Accept: 'application/json' },
     });
     if (!res.ok) throw new Error(`remoteok: HTTP ${res.status}`);
@@ -32,7 +33,7 @@ export const remoteok: JobSource = {
     return jobs.map((j): SourceJob => {
       const title = j.position ?? 'Untitled';
       return {
-        externalId: String(j.id ?? j.slug ?? `${j.company}-${title}`),
+        externalId: String(j.id ?? j.slug ?? `${j.company ?? 'Unknown'}-${title}-${j.url ?? ''}`),
         source: 'aggregator-remoteok',
         company: j.company ?? 'Unknown',
         title,
@@ -40,33 +41,20 @@ export const remoteok: JobSource = {
         workplaceType: 'Remote',
         employmentType: guessEmployment((j.tags ?? []).join(' ')),
         url: j.url ?? undefined,
-        description: strip(j.description ?? ''),
+        description: stripHtml(j.description ?? ''),
         postedAt: j.epoch ? new Date(j.epoch * 1000).toISOString() : null,
       };
     });
   },
 };
 
-/** A payload record is a real job if it has a position/company; the first element is metadata. */
+/** A payload record is a real job if it has a position; the first element is metadata. */
 function isJob(j: unknown): j is RemoteOkJob {
   return (
     typeof j === 'object' &&
     j !== null &&
     'position' in j &&
-    'slug' in j &&
-    typeof j.position === 'string'
+    typeof j.position === 'string' &&
+    j.position.length > 0
   );
-}
-
-function strip(html: string): string {
-  return html
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;|&#160;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;|&apos;/gi, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
 }

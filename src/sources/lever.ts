@@ -1,6 +1,6 @@
 import type { JobSource, SourceJob } from './types.js';
 import { guessWorkplace, guessEmployment } from './types.js';
-import { stripHtml } from './greenhouse.js';
+import { stripHtml, fetchWithTimeout } from './html.js';
 
 interface LeverPosting {
   id?: string;
@@ -27,7 +27,7 @@ export const lever: JobSource = {
   name: 'lever',
   async fetchCompany(company) {
     const url = `https://api.lever.co/v0/postings/${company.token}?mode=json`;
-    const res = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' } });
+    const res = await fetchWithTimeout(url, { headers: { Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' } });
     if (!res.ok) {
       throw new Error(`lever(${company.name}): HTTP ${res.status}`);
     }

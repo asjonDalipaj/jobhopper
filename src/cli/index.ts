@@ -201,8 +201,7 @@ program
   .option('-c, --company <name>', 'scan only one company by name')
   .option('-a, --aggregators', 'also pull whole-market remote aggregators (Remotive, RemoteOK)')
   .option('--verify', 'check board tokens first and skip dead ones')
-  .option('--source-filter <source>', 'only scan companies using this ATS (greenhouse/lever/ashby)')
-  .action(async (opts: { company?: string; aggregators?: boolean; verify?: boolean; sourceFilter?: string }) => {
+  .action(async (opts: { company?: string; aggregators?: boolean; verify?: boolean }) => {
     ensureDirs();
     let list = DEFAULT_COMPANIES;
     if (opts.company) {
@@ -212,13 +211,6 @@ program
         process.exit(1);
       }
       list = [hit];
-    }
-    if (opts.sourceFilter) {
-      list = list.filter((c) => c.ats === opts.sourceFilter);
-      if (!list.length) {
-        console.error(pc.red(`No companies using ATS '${opts.sourceFilter}'.`));
-        process.exit(1);
-      }
     }
     console.log(pc.cyan(`Scanning ${list.length} company board(s)${opts.aggregators ? ' + open aggregators' : ''}…`));
     const result = await scanCompanies(list, {

@@ -1,5 +1,6 @@
 import type { JobSource, SourceJob } from './types.js';
 import { guessWorkplace, guessEmployment } from './types.js';
+import { stripHtml, fetchWithTimeout } from './html.js';
 
 interface RemotiveJob {
   id?: number | string;
@@ -23,7 +24,7 @@ export const remotive: JobSource = {
   name: 'aggregator-remotive',
   aggregator: true,
   async fetchAll() {
-    const res = await fetch('https://remotive.com/api/remote-jobs', {
+    const res = await fetchWithTimeout('https://remotive.com/api/remote-jobs', {
       headers: { 'User-Agent': 'jobhopper/0.1', Accept: 'application/json' },
     });
     if (!res.ok) throw new Error(`remotive: HTTP ${res.status}`);
@@ -33,7 +34,7 @@ export const remotive: JobSource = {
       .filter((j) => isSoftware(j))
       .map((j): SourceJob => {
         const title = j.title ?? 'Untitled';
-        const desc = strip(j.description ?? '');
+        const desc = stripHtml(j.description ?? '');
         return {
           externalId: String(j.id ?? `${j.company_name}-${title}`),
           source: 'aggregator-remotive',
@@ -57,26 +58,15 @@ function isSoftware(j: RemotiveJob): boolean {
     tags.includes('software') ||
     tags.includes('frontend') ||
     tags.includes('backend') ||
-    tags.includes('full') ||
     tags.includes('devops') ||
-    tags.includes('engineering') ||
+    tags.includes('database') ||
+    tags.includes('full-stack') ||
+    tags.includes('fullstack') ||
     title.includes('engineer') ||
     title.includes('developer') ||
     title.includes('frontend') ||
     title.includes('backend') ||
-    title.includes('full-stack')
+    title.includes('full-stack') ||
+    title.includes('fullstack')
   );
-}
-
-function strip(html: string): string {
-  return html
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;|&#160;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;|&apos;/gi, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
 }
