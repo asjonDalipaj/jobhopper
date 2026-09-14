@@ -1,0 +1,201 @@
+import { getDb } from './connection.js';
+import type { Job, SearchRow, Verdict } from './types.js';
+import type { SQLInputValue } from 'node:sqlite';
+
+export interface InsertJobInput {
+  externalId: string;
+  source: string;
+  company: string;
+  title: string;
+  location: string;
+  workplaceType?: string | null;
+  employmentType?: string | null;
+  url?: string | null;
+  description?: string;
+  postedAt?: string | null;
+  tags?: string | null;
+}
+
+export interface InsertResult {
+  /** Row id of the inserted job. */
+  id: number;
+  /** True if the row was inserted (false if it already existed). */
+  created: boolean;
+}
+
+/** Insert a job if it does not already exist (dedup on source+external_id). */
+export function upsertJob(input: InsertJobInput): InsertResult {
+  const db = getDb();
+  const existing = db
+    .prepare('SELECT id FROM jobs WHERE source = ? AND external_id = ?')
+    .get(input.source, input.externalId) as { id: number } | undefined;
+  if (existing) {
+    return { id: existing.id, created: false };
+  }
+  const info = db
+    .prepare(
+      `INSERT INTO jobs
+        (external_id, source, company, title, location, workplace_type,
+         employment_type, url, description, posted_at, tags)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    )
+    .run(
+      input.externalId,
+      input.source,
+      input.company,
+      input.title,
+      input.location,
+      input.workplaceType ?? null,
+      input.employmentType ?? null,
+      input.url ?? null,
+      input.description ?? '',
+      input.postedAt ?? null,
+      input.tags ?? null,
+    );
+  const id = Number(info.lastInsertRowid);
+  indexJobFts(id, input);
+  return { id, created: true };
+}
+
+function indexJobFts(id: number, input: InsertJobInput): void {
+  getDb()
+    .prepare(
+      'INSERT INTO jobs_fts (rowid, title, company, location, description) VALUES (?, ?, ?, ?, ?)',
+    )
+    .run(id, input.title, input.company, input.location, input.description ?? '');
+}
+
+export function removeJob(id: number): void {
+  getDb().prepare('DELETE FROM jobs_fts WHERE rowid = ?').run(id);
+  getDb().prepare('DELETE FROM jobs WHERE id = ?').run(id);
+}
+
+export function getJob(id: number): Job | undefined {
+  return getDb().prepare('SELECT * FROM jobs WHERE id = ?').get(id) as Job | undefined;
+}
+
+export function getJobByExternal(source: string, externalId: string): Job | undefined {
+  return getDb()
+    .prepare('SELECT * FROM jobs WHERE source = ? AND external_id = ?')
+    .get(source, externalId) as Job | undefined;
+}
+
+export function countJobs(): number {
+  const row = getDb().prepare('SELECT COUNT(*) AS n FROM jobs').get() as { n: number };
+  return row.n;
+}
+
+export interface ListFilters {
+  country?: string | null;
+  remote?: boolean | null;
+  contract?: boolean | null;
+  limit?: number;
+  offset?: number;
+  unjudged?: boolean;
+}
+
+function buildListSql(filters: ListFilters): { sql: string; params: SQLInputValue[] } {
+  const conds: string[] = [];
+  const params: SQLInputValue[] = [];
+  if (filters.country) {
+    conds.push('location LIKE ?');
+    params.push(`%${filters.country}%`);
+  }
+  if (filters.remote) {
+    conds.push("(workplace_type IS NOT NULL AND (workplace_type LIKE '%Remote%' OR workplace_type LIKE '%remote%'))");
+  }
+  if (filters.contract) {
+    conds.push('(employment_type IS NOT NULL AND employment_type LIKE ?)');
+    params.push('%Contract%');
+  }
+  if (filters.unjudged) {
+    conds.push('NOT EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id)');
+  }
+  const where = conds.length ? ` WHERE ${conds.join(' AND ')}` : '';
+  return { sql: where, params };
+}
+
+export function listJobs(filters: ListFilters = {}): Array<Job & { verdict: Verdict | null; reasoning: string | null }> {
+  const { sql, params } = buildListSql(filters);
+  const limit = filters.limit ?? 50;
+  const offset = filters.offset ?? 0;
+  const rows = getDb()
+    .prepare(
+      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning
+       FROM jobs
+       LEFT JOIN judgments ON judgments.job_id = jobs.id
+       ${sql}
+       ORDER BY jobs.posted_at IS NULL, jobs.posted_at DESC, jobs.id DESC
+       LIMIT ? OFFSET ?`,
+    )
+    .all(...params, limit, offset) as unknown as Array<
+    Job & { verdict: Verdict | null; reasoning: string | null }
+  >;
+  return rows;
+}
+
+/**
+ * Sanitize user search query for SQLite FTS5 MATCH expressions.
+ * Strips special FTS5 operators and encloses alphanumeric tokens in double quotes
+ * to avoid syntax errors with terms like "c++", "node.js", or "full-stack".
+ */
+export function sanitizeFtsQuery(raw: string): string {
+  const tokens = raw
+    .replace(/[^\p{L}\p{N}\s_]/gu, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  if (tokens.length === 0) {
+    return '""';
+  }
+
+  return tokens.map((token) => `"${token}"*`).join(' ');
+}
+
+/** Full-text keyword search across title/company/location/description. */
+export function searchJobs(options: {
+  query: string;
+  country?: string | null;
+  remote?: boolean | null;
+  contract?: boolean | null;
+  limit?: number;
+  unjudged?: boolean;
+}): SearchRow[] {
+  const db = getDb();
+  const conds: string[] = [];
+  const params: SQLInputValue[] = [];
+  conds.push('jobs_fts MATCH ?');
+  params.push(sanitizeFtsQuery(options.query));
+  if (options.country) {
+    conds.push('jobs.location LIKE ?');
+    params.push(`%${options.country}%`);
+  }
+  if (options.remote) {
+    conds.push("(jobs.workplace_type IS NOT NULL AND (jobs.workplace_type LIKE '%Rem%'))");
+  }
+  if (options.contract) {
+    conds.push('(jobs.employment_type IS NOT NULL AND jobs.employment_type LIKE ?)');
+    params.push('%Contract%');
+  }
+  if (options.unjudged) {
+    conds.push('NOT EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id)');
+  }
+  const where = conds.join(' AND ');
+  const limit = options.limit ?? 50;
+  const rows = db
+    .prepare(
+      `SELECT jobs.*, bm25(jobs_fts) AS match_rank,
+              judgments.verdict AS verdict, judgments.reasoning AS reasoning
+       FROM jobs_fts
+       JOIN jobs ON jobs.id = jobs_fts.rowid
+       LEFT JOIN judgments ON judgments.job_id = jobs.id
+       WHERE ${where}
+       ORDER BY match_rank
+       LIMIT ?`,
+    )
+    .all(...params, limit) as unknown as Array<
+    Job & { match_rank: number; verdict: Verdict | null; reasoning: string | null }
+  >;
+  return rows;
+}

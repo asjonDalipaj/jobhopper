@@ -1,0 +1,38 @@
+{
+  "name": "jobhopper",
+  "version": "0.1.0",
+  "description": "Local-first, privacy-respecting job search & evaluation CLI for Dutch and European software engineers",
+  "type": "module",
+  "bin": {
+    "jobhopper": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "node dist/cli/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "job-search",
+    "cli",
+    "local-first",
+    "openrouter",
+    "netherlands",
+    "europe",
+    "privacy"
+  ],
+  "author": "Asjon Dalipaj",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "pdf-parse": "^1.1.1",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/pdf-parse": "^1.1.4",
+    "typescript": "^5.8.2"
+  }
+}
