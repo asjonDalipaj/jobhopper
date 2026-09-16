@@ -44,11 +44,11 @@ jobs:
 
       # Optional AI judging on the schedule: uncomment, and add an
       # OPENROUTER_API_KEY secret under Settings -> Secrets and variables.
-      # - name: Judge results (optional)
-      #   env:
-      #     JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
-      #     OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      #   run: node dist/cli/index.js run
+      - name: Judge results (optional)
+        env:
+          JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node dist/cli/index.js run
 
       - name: Commit dashboards
         run: |
