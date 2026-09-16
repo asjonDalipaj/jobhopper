@@ -1,0 +1,1 @@
+Senior full-stack software engineer with 10+ years of experience. Strong in Java and SQL, plus React frontend, CI/CD and DevOps. Fintech background. Has owned product initiatives end-to-end and built independent projects (e.g. a REA bot) demonstrating delivery and open-source interest. Comfortable on both backend and frontend.
