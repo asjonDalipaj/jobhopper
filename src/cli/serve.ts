@@ -63,10 +63,13 @@ export function startWebServer(port = 3333): void {
       }
 
       try {
-        const dbJobs = listJobs({ limit: 500 });
-        // Prefer the local live DB; if it's empty/missing, fall back to the
-        // committed JSON snapshot so a fresh pull still shows the last CI run.
-        const source = dbJobs.length > 0 ? dbJobs : loadJsonSnapshot();
+        // The committed JSON snapshot (.jobhopper/exports/jobs.json) is the
+        // single reviewed source of truth: CI judges postings and commits it,
+        // so a fresh `git pull` shows the latest jobs WITH their verdicts.
+        // Prefer it; fall back to the local live DB only when there is no
+        // snapshot (e.g. on a machine that has never run CI).
+        const snapshot = loadJsonSnapshot();
+        const source = snapshot.length > 0 ? snapshot : listJobs({ limit: 1000 });
         // Coerce stored HTML descriptions into clean, readable plain text so
         // the frontend never has to ingest raw markup or risk XSS.
         const cleaned = source.map((j) => {
