@@ -16,12 +16,6 @@ export function boxTable(head: string[], rows: unknown[][]): string {
   return table.toString();
 }
 
-export function simpleTable(rows: unknown[][]): string {
-  const table = new Table({ style: { head: [] } });
-  for (const row of rows) table.push(row);
-  return table.toString();
-}
-
 export function dim(s: string): string {
   return pc.dim(s);
 }

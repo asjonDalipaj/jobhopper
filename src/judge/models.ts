@@ -11,9 +11,6 @@ export const DEFAULT_MODELS = {
   quick: 'openai/gpt-4o-mini',
 } as const;
 
-/** Default model if the user has not configured one. */
-export const DEFAULT_MODEL: string = DEFAULT_MODELS.full;
-
 /** Friendly descriptions for `jobhopper config list-models`. */
 export const MODEL_PRESETS: Record<string, string> = {
   'openai/gpt-4o-mini': 'Fast and cheap; good default for screening.',

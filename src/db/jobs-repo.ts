@@ -74,12 +74,6 @@ export function getJob(id: number): Job | undefined {
   return getDb().prepare('SELECT * FROM jobs WHERE id = ?').get(id) as Job | undefined;
 }
 
-export function getJobByExternal(source: string, externalId: string): Job | undefined {
-  return getDb()
-    .prepare('SELECT * FROM jobs WHERE source = ? AND external_id = ?')
-    .get(source, externalId) as Job | undefined;
-}
-
 export function countJobs(): number {
   const row = getDb().prepare('SELECT COUNT(*) AS n FROM jobs').get() as { n: number };
   return row.n;

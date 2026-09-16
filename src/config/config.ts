@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { getPaths } from '../storage/paths.js';
-import { DEFAULT_MODEL, DEFAULT_MODELS } from '../judge/models.js';
+import { DEFAULT_MODELS } from '../judge/models.js';
 
 export interface AppConfig {
   /** OpenRouter API key. Leave empty to rely on JOBHOPPER_OPENROUTER_KEY env var. */
@@ -14,7 +14,7 @@ export interface AppConfig {
 export function defaultConfig(): AppConfig {
   return {
     openrouterKey: '',
-    model: DEFAULT_MODEL,
+    model: DEFAULT_MODELS.full,
     quickModel: DEFAULT_MODELS.quick,
   };
 }

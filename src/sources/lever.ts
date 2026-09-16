@@ -1,5 +1,5 @@
 import type { JobSource, SourceJob } from './types.js';
-import { guessWorkplace, guessEmployment } from './types.js';
+import { guessWorkplace } from './types.js';
 import { stripHtml, fetchWithTimeout } from './html.js';
 
 interface LeverPosting {
@@ -43,7 +43,7 @@ export const lever: JobSource = {
         title,
         location,
         workplaceType: j.workplaceType ?? guessWorkplace(location),
-        employmentType: j.categories?.commitment ?? guessEmployment(j.categories?.commitment ?? ''),
+        employmentType: j.categories?.commitment ?? null,
         url: j.hostedUrl ?? undefined,
         description: desc,
         postedAt: typeof j.createdAt === 'number' ? new Date(j.createdAt).toISOString() : null,

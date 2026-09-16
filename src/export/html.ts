@@ -78,15 +78,6 @@ export function exportToHtmlFile(rows: HtmlRow[], outputPath: string, title?: st
   writeFileSync(outputPath, buildHtml(rows, title), 'utf8');
 }
 
-/**
- * Write rows out as a JSON data file (mirrors the /api/jobs payload shape) so
- * CI can commit a snapshot the React web UI can consume without a local DB.
- */
-export function exportToJsonFile(rows: HtmlRow[], outputPath: string): void {
-  mkdirSync(dirname(outputPath), { recursive: true });
-  writeFileSync(outputPath, `${JSON.stringify(rows, null, 2)}\n`, 'utf8');
-}
-
 /** Snapshot row shape — the full set of fields the React UI understands. */
 export interface JsonRow {
   id: number;

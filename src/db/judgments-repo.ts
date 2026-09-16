@@ -60,12 +60,3 @@ export function listJudgments(options: { limit?: number; verdict?: Verdict | nul
     )
     .all(limit) as unknown as Array<Judgment & { company: string; title: string; url: string | null }>;
 }
-
-export function countUnjudged(): number {
-  const row = getDb()
-    .prepare(
-      'SELECT COUNT(*) AS n FROM jobs WHERE NOT EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id)',
-    )
-    .get() as { n: number };
-  return row.n;
-}

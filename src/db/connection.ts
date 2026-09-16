@@ -10,7 +10,7 @@ export function getDb(): DatabaseSync {
   _db = new DatabaseSync(getPaths().db);
   _db.exec('PRAGMA journal_mode = WAL;');
   _db.exec('PRAGMA foreign_keys = ON;');
-  migrate(_db);
+  _db.exec(SCHEMA);
   return _db;
 }
 
@@ -64,10 +64,6 @@ CREATE TABLE IF NOT EXISTS tab_items (
   PRIMARY KEY (tab_id, job_id)
 );
 `;
-
-function migrate(db: DatabaseSync): void {
-  db.exec(SCHEMA);
-}
 
 /** Close the database connection (used in tests / process teardown). */
 export function closeDb(): void {
