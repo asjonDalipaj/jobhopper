@@ -15,4 +15,5 @@ undefined/
 !.jobhopper/exports/**
 !.jobhopper/jobs.json
 !.jobhopper/profile/
-!.jobhopper/profile/**graphify-out/
+!.jobhopper/profile/**
+graphify-out/
