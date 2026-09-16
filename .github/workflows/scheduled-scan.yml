@@ -40,15 +40,28 @@ jobs:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
         run: |
           node dist/cli/index.js scan -a --verify
-          node dist/cli/index.js run judge --all --json .jobhopper/exports/jobs.json
+          # -j writes the committed JSON snapshot (jobs.json) for the React UI.
+          node dist/cli/index.js run -j .jobhopper/exports/jobs.json
 
-      # Optional AI judging on the schedule: uncomment, and add an
-      # OPENROUTER_API_KEY secret under Settings -> Secrets and variables.
-      - name: Judge results (optional)
+      # Judge the most recently posted postings against the committed profile
+      # (cv.txt / preferences / constraints under .jobhopper/profile/).
+      # Add an OPENROUTER_API_KEY secret under Settings -> Secrets and
+      # variables. When it is present this:
+      #   1. judges the newest postings (listJobs is ordered posted_at DESC, so
+      #      `--all --limit 20` covers the 20 most recent unjudged rows), and
+      #   2. re-exports so those verdicts land in the committed JSON snapshot.
+      # Without the secret the step simply no-ops.
+      - name: Judge latest postings (if key set)
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: node dist/cli/index.js run
+        run: |
+          if [ -n "$OPENROUTER_API_KEY" ]; then
+            node dist/cli/index.js judge --all --quick --limit 20
+            node dist/cli/index.js run -j .jobhopper/exports/jobs.json
+          else
+            echo "No OPENROUTER_API_KEY; skipping judgment this run."
+          fi
 
       - name: Commit dashboards
         run: |

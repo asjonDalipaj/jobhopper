@@ -5,10 +5,14 @@ dist/
 *.html
 undefined/
 
-# Local data & cache — commit the jobs config and dashboards, but NOT the SQLite
-# DB (it grows large and is rebuilt by GitHub Actions on first run).
+# Local data & cache — commit the jobs config, dashboards and profile, but NOT
+# the SQLite DB (it grows large and is rebuilt by GitHub Actions on first run).
+# The profile (cv.txt, preferences, constraints) is committed so the scheduled
+# CI run can produce meaningful judgments. Keep this repo PRIVATE if you do this.
 .jobhopper/**
 !.jobhopper/
 !.jobhopper/exports/
 !.jobhopper/exports/**
 !.jobhopper/jobs.json
+!.jobhopper/profile/
+!.jobhopper/profile/**
