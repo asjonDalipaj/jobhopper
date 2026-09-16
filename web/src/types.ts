@@ -21,6 +21,11 @@ export interface Job {
 export interface FilterState {
   search: string;
   verdict: 'all' | 'strong' | 'fair' | 'weak' | 'unjudged';
+  /** A continent ("Europe") or country ("Netherlands") to filter by. */
   country: string;
+  /** YYYY-MM-DD lower bound for the posting date (inclusive). */
+  dateFrom: string;
+  /** YYYY-MM-DD upper bound for the posting date (inclusive). */
+  dateTo: string;
   remoteOnly: boolean;
 }

@@ -1,18 +1,19 @@
 import React from 'react';
-import { Search, MapPin, Laptop, SlidersHorizontal } from 'lucide-react';
+import { Search, MapPin, Laptop, SlidersHorizontal, CalendarRange } from 'lucide-react';
 import type { FilterState } from '../types';
+import type { LocationGroupOptions } from '../data/locations';
 import { cn } from '../utils';
 
 interface FilterBarProps {
   filters: FilterState;
   onChange: (filters: FilterState) => void;
-  availableCountries: string[];
+  locationOptions: LocationGroupOptions[];
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
   filters,
   onChange,
-  availableCountries,
+  locationOptions,
 }) => {
   const verdicts: Array<{ id: FilterState['verdict']; label: string }> = [
     { id: 'all', label: 'All Jobs' },
@@ -89,15 +90,59 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               className="appearance-none pl-8 pr-7 py-1.5 rounded-lg bg-surface border border-line text-ink-soft text-xs font-medium focus:outline-none focus:border-line-strong cursor-pointer"
             >
               <option value="">All Locations</option>
-              {availableCountries.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
+              {locationOptions.map((group) => (
+                <optgroup key={group.continent} label={group.continent}>
+                  <option value={group.continent}>
+                    {group.continent} (All)
+                  </option>
+                  {group.countries.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
             <SlidersHorizontal className="absolute right-2.5 w-3 h-3 text-ink-faint pointer-events-none" />
           </div>
         </div>
+      </div>
+
+      {/* Posting Date Range Filter */}
+      <div className="flex flex-wrap items-center gap-2 text-xs">
+        <span className="flex items-center gap-1.5 text-ink-soft">
+          <CalendarRange className="w-3.5 h-3.5 text-ink-faint" />
+          <span className="font-medium">Posted</span>
+        </span>
+        <input
+          type="date"
+          value={filters.dateFrom}
+          onChange={(e) => onChange({ ...filters, dateFrom: e.target.value })}
+          title="From date (inclusive) - show postings from this day onwards"
+          className="bg-surface border border-line rounded-lg px-2 py-1.5 text-ink-soft text-xs font-medium focus:outline-none focus:border-line-strong"
+          aria-label="Posted from date"
+        />
+        <span className="text-ink-faint">→</span>
+        <input
+          type="date"
+          value={filters.dateTo}
+          onChange={(e) => onChange({ ...filters, dateTo: e.target.value })}
+          title="To date (inclusive) - show postings up to this day"
+          className="bg-surface border border-line rounded-lg px-2 py-1.5 text-ink-soft text-xs font-medium focus:outline-none focus:border-line-strong"
+          aria-label="Posted to date"
+        />
+        {(filters.dateFrom || filters.dateTo) && (
+          <button
+            type="button"
+            onClick={() => onChange({ ...filters, dateFrom: '', dateTo: '' })}
+            className="text-ink-soft hover:text-ink cursor-pointer underline"
+          >
+            Clear
+          </button>
+        )}
+        <span className="text-ink-faint font-mono">
+          {/* newest postings sorted to the top */}latest first
+        </span>
       </div>
     </div>
   );

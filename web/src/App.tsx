@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
 import { SAMPLE_JOBS } from './data/mockJobs';
+import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
 import { Briefcase, Inbox } from 'lucide-react';
 
@@ -13,6 +14,8 @@ export function App() {
     search: '',
     verdict: 'all',
     country: '',
+    dateFrom: '',
+    dateTo: '',
     remoteOnly: false,
   });
 
@@ -64,8 +67,16 @@ export function App() {
       }
 
       if (filters.country) {
-        const loc = (job.location || '').toLowerCase();
-        if (!loc.includes(filters.country.toLowerCase())) return false;
+        if (!matchesLocation(job.location, filters.country)) return false;
+      }
+
+      // Posting date range (inclusive). postings without a date are excluded
+      // whenever a range is active.
+      if (filters.dateFrom || filters.dateTo) {
+        const postedDate = (job.posted_at || '').slice(0, 10);
+        if (!postedDate) return false;
+        if (filters.dateFrom && postedDate < filters.dateFrom) return false;
+        if (filters.dateTo && postedDate > filters.dateTo) return false;
       }
 
       if (filters.search.trim()) {
@@ -84,19 +95,7 @@ export function App() {
     });
   }, [jobs, filters]);
 
-  const availableCountries = useMemo(() => {
-    const set = new Set<string>();
-    jobs.forEach((j) => {
-      const parts = j.location.split(',');
-      if (parts.length > 1) {
-        const country = parts[parts.length - 1].trim();
-        if (country) set.add(country);
-      } else if (j.location.trim()) {
-        set.add(j.location.trim());
-      }
-    });
-    return Array.from(set).sort();
-  }, [jobs]);
+  const locationOptions = useMemo(() => getLocationFilterOptions(jobs), [jobs]);
 
   const strongCount = useMemo(() => jobs.filter((j) => j.verdict === 'strong').length, [jobs]);
 
@@ -118,7 +117,7 @@ export function App() {
         <FilterBar
           filters={filters}
           onChange={setFilters}
-          availableCountries={availableCountries}
+          locationOptions={locationOptions}
         />
 
         <div className="flex items-center justify-between text-xs font-mono text-ink-faint">
