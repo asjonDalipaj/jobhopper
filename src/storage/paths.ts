@@ -1,9 +1,22 @@
 import { homedir } from 'node:os';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { mkdirSync, existsSync } from 'node:fs';
 
-/** Root directory where jobhopper keeps all its local data. */
-export const CONFIG_ROOT = process.env['JOBHOPPER_HOME'] ?? join(homedir(), '.config', 'jobhopper');
+/** Absolute path to this package's own checkout root (dist/storage -> repo root). */
+const PACKAGE_ROOT = resolve(fileURLToPath(import.meta.url), '..', '..', '..');
+
+/**
+ * Root directory where jobhopper keeps all its local data.
+ * `JOBHOPPER_HOME` always wins. Otherwise prefer this project's committed
+ * `.jobhopper/` dir (what CI and local dev use), and fall back to the user
+ * config dir only for a globally-installed binary with no project checkout.
+ */
+export const CONFIG_ROOT =
+  process.env['JOBHOPPER_HOME'] ??
+  (existsSync(join(PACKAGE_ROOT, '.jobhopper', 'exports'))
+    ? join(PACKAGE_ROOT, '.jobhopper')
+    : join(homedir(), '.config', 'jobhopper'));
 
 export interface Paths {
   /** Base directory for all jobhopper state. */
