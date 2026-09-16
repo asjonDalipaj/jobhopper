@@ -62,10 +62,15 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           if [ -n "$OPENROUTER_API_KEY" ]; then
+            echo "OpenRouter key reached this step (${#OPENROUTER_API_KEY} chars) - judging EU work tab..."
             node dist/cli/index.js judge --tab eu-recent-software --quick
             node dist/cli/index.js run -j .jobhopper/exports/jobs.json
           else
-            echo "No OPENROUTER_API_KEY; skipping judgment this run."
+            echo "No OpenRouter API key reached this step - skipping judgment."
+            echo "Check Settings -> Secrets and variables -> Actions:"
+            echo "  - the secret must be named exactly OPENROUTER_API_KEY"
+            echo "  - it must be a REPOSITORY secret (not only an environment secret, unless the job sets environment:)"
+            echo "  - scheduled runs on the default branch see repo/org secrets; a run started before you saved it won't have it"
           fi
 
       - name: Commit dashboards
