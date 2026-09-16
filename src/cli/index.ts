@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
 import { loadConfig, saveConfig, resolveApiKey, hasApiKey } from '../config/config.js';
-import { listJobs, searchJobs, countJobs, getJob } from '../db/jobs-repo.js';
+import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs } from '../db/jobs-repo.js';
 import { storeJudgment, listJudgments } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
 import { scanCompanies } from '../sources/scan.js';
@@ -567,7 +567,17 @@ program
     // web UI can show the same data via a committed file when no local DB exists.
     if (opts.json !== undefined) {
       const jsonPath = opts.json && opts.json !== 'true' ? opts.json : join(getPaths().exportsDir, 'jobs.json');
-      const rows = listJobs({ limit: 1000 }).map((j) => ({
+      // Newest postings first. A judged posting must never be dropped just
+      // because it falls outside the newest-1000 cutoff, so merge the judged
+      // rows in too — this keeps every verdict visible on the React board.
+      const newest = listJobs({ limit: 1000 });
+      const withJudgments = listJudgedJobs(5000);
+      const byId = new Map<number, (typeof newest)[number]>();
+      newest.forEach((j) => byId.set(j.id, j));
+      withJudgments.forEach((j) => {
+        if (!byId.has(j.id)) byId.set(j.id, j);
+      });
+      const rows = Array.from(byId.values()).map((j) => ({
         id: j.id,
         external_id: j.external_id,
         source: j.source,

@@ -209,3 +209,19 @@ export function searchJobs(options: {
   >;
   return rows;
 }
+/**
+ * Rows for every job that currently has a stored judgment (regardless of
+ * recency). Used to ensure judged postings are never dropped from the exported
+ * snapshot just because they fall outside the newest-1000 cutoff.
+ */
+export function listJudgedJobs(limit = 5000): Array<Job & { verdict: Verdict | null; reasoning: string | null }> {
+  return getDb()
+    .prepare(
+      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning
+       FROM jobs
+       INNER JOIN judgments ON judgments.job_id = jobs.id
+       ORDER BY jobs.posted_at IS NULL, jobs.posted_at DESC, jobs.id DESC
+       LIMIT ?`,
+    )
+    .all(limit) as unknown as Array<Job & { verdict: Verdict | null; reasoning: string | null }>;
+}
