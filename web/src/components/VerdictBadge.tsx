@@ -12,10 +12,11 @@ export const VerdictBadge: React.FC<VerdictBadgeProps> = ({ verdict, className }
     return (
       <span
         className={cn(
-          'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium tracking-wide uppercase',
-          'bg-surface-well text-ink-faint border border-line',
+          'sticker inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium tracking-wide uppercase',
+          'bg-surface-well text-ink-faint border-2 border-line',
           className
         )}
+        style={{ '--sticker-rotate': '-2deg' } as React.CSSProperties}
       >
         <span className="w-1.5 h-1.5 rounded-full bg-ink-faint" />
         Unjudged
@@ -25,28 +26,31 @@ export const VerdictBadge: React.FC<VerdictBadgeProps> = ({ verdict, className }
 
   const configs: Record<
     Verdict,
-    { label: string; bg: string; text: string; dot: string; border: string }
+    { label: string; bg: string; text: string; dot: string; border: string; rotate: string }
   > = {
     strong: {
       label: 'Strong Match',
-      bg: 'bg-emerald-50 dark:bg-emerald-950/40',
+      bg: 'bg-mint/20 dark:bg-mint/15',
       text: 'text-emerald-700 dark:text-emerald-300',
-      dot: 'bg-emerald-500',
-      border: 'border-emerald-200 dark:border-emerald-800/50',
+      dot: 'bg-mint',
+      border: 'border-mint',
+      rotate: '-2deg',
     },
     fair: {
       label: 'Fair Match',
-      bg: 'bg-amber-50 dark:bg-amber-950/40',
+      bg: 'bg-butter/25 dark:bg-butter/15',
       text: 'text-amber-700 dark:text-amber-300',
-      dot: 'bg-amber-500',
-      border: 'border-amber-200 dark:border-amber-800/50',
+      dot: 'bg-butter',
+      border: 'border-butter',
+      rotate: '2deg',
     },
     weak: {
       label: 'Weak Match',
-      bg: 'bg-rose-50 dark:bg-rose-950/40',
+      bg: 'bg-coral/15 dark:bg-coral/15',
       text: 'text-rose-700 dark:text-rose-300',
-      dot: 'bg-rose-500',
-      border: 'border-rose-200 dark:border-rose-800/50',
+      dot: 'bg-coral',
+      border: 'border-coral',
+      rotate: '-2deg',
     },
     no: {
       label: 'Pass',
@@ -54,6 +58,7 @@ export const VerdictBadge: React.FC<VerdictBadgeProps> = ({ verdict, className }
       text: 'text-ink-faint',
       dot: 'bg-ink-faint',
       border: 'border-line',
+      rotate: '2deg',
     },
   };
 
@@ -62,15 +67,16 @@ export const VerdictBadge: React.FC<VerdictBadgeProps> = ({ verdict, className }
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium tracking-wider uppercase',
+        'sticker inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium tracking-wider uppercase',
         c.bg,
         c.text,
         c.border,
-        'border',
+        'border-2',
         className
       )}
+      style={{ '--sticker-rotate': c.rotate } as React.CSSProperties}
     >
-      <span className={cn('w-1.5 h-1.5 rounded-full animate-pulse', c.dot)} />
+      <span className={cn('w-1.5 h-1.5 rounded-full', c.dot)} />
       {c.label}
     </span>
   );

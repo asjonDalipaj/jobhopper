@@ -26,9 +26,9 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.25, delay: Math.min(index * 0.04, 0.4) }}
-      className="group relative rounded-xl bg-surface hover:bg-surface-hover border border-line hover:border-line-strong transition-all duration-200 overflow-hidden"
+      className="group relative rounded-2xl bg-surface hover:bg-surface-hover border border-line/70 hover:border-line-strong shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden"
     >
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-ink-soft/0 to-transparent group-hover:via-ink-soft/20 transition-all duration-300" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-coral/0 to-transparent group-hover:via-coral/40 transition-all duration-300" />
 
       <div className="p-5 sm:p-6 space-y-4">
         {/* Header */}
@@ -76,7 +76,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
         {/* AI Insight */}
         {job.reasoning && (
           <div className="rounded-lg bg-surface-well border border-line p-3 text-xs text-ink-soft space-y-1.5">
-            <div className="flex items-center gap-1.5 font-mono text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <div className="flex items-center gap-1.5 font-mono text-[11px] text-emerald-700 dark:text-emerald-300 font-medium">
               <Sparkles className="w-3.5 h-3.5" />
               <span>AI Match Analysis</span>
             </div>
@@ -121,7 +121,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
               href={job.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-ink text-canvas hover:opacity-80 font-medium transition-all text-xs cursor-pointer active:scale-95"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-gradient-to-r from-coral to-butter text-ink hover:opacity-90 shadow-sm font-medium transition-all text-xs cursor-pointer active:scale-95"
             >
               <span>Apply</span>
               <ExternalLink className="w-3 h-3" />

@@ -25,14 +25,28 @@ function as(name: string, token: string): CompanyEntry {
  * to also pull whole-market remote aggregators (Remotive, RemoteOK) which need
  * no curated list at all. scan() reports individual failures without aborting,
  * so a dead token is visible, not fatal.
+ *
+ * Market focus is Italy/Spain/Netherlands (see src/market.ts) — scan-time
+ * filtering drops everything else, so multinationals below only contribute
+ * their IT/ES/NL postings.
  */
 export const DEFAULT_COMPANIES: CompanyEntry[] = [
+  // Italy/Spain/Netherlands headquartered or heavy — live-verified -----------------------------
+  as('Mollie', 'mollie'),
+  as('Docebo', 'docebo'),
+  as('Satispay', 'satispay'),
+  as('Bynder', 'bynder'),
+  lv('Job&Talent', 'jobandtalent'),
+  gh('Wallapop', 'wallapop'),
+  gh('ClarityAI', 'clarityai'),
+
   // Netherlands — live-verified --------------------------------------------------------------
   gh('Adyen', 'adyen'),
   gh('Bol.com', 'bolcom'),
   gh('MessageBird', 'bird'),
   gh('Optiver', 'optiver'),
   gh('Sendcloud', 'sendcloud'),
+  gh('Trustpilot', 'trustpilot'),
 
   // Europe — live-verified (Germany / France / UK / BENELUX) ----------------------------------
   lv('Spotify', 'spotify'),

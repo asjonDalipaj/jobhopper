@@ -5,6 +5,7 @@ import { stripHtml, htmlToPlainText } from '../sources/html.js';
 import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
+import { isTargetMarket, isFresh, MAX_JOB_AGE_DAYS } from '../market.js';
 
 test('sanitizeFtsQuery strips special characters and prefixes wildcards', () => {
   assert.equal(sanitizeFtsQuery('c++'), '"c"*');
@@ -61,4 +62,24 @@ test('isJob requires a non-empty position', () => {
   assert.equal(isJob({ position: '', slug: 'x' }), false); // empty position
   assert.equal(isJob({ legal: 'meta' }), false); // metadata record
   assert.equal(isJob(null), false);
+});
+
+test('isTargetMarket matches Italy/Spain/Netherlands substrings, case-insensitively', () => {
+  assert.equal(isTargetMarket('Milan, Italy'), true);
+  assert.equal(isTargetMarket('Madrid, spain'), true);
+  assert.equal(isTargetMarket('Amsterdam, NETHERLANDS'), true);
+  assert.equal(isTargetMarket('Berlin, Germany'), false);
+  assert.equal(isTargetMarket(''), false);
+  assert.equal(isTargetMarket(null), false);
+  assert.equal(isTargetMarket(undefined), false);
+});
+
+test('isFresh accepts dates within the cutoff and rejects stale/missing/invalid dates', () => {
+  const now = new Date('2026-01-31T00:00:00Z');
+  assert.equal(isFresh(new Date('2026-01-30T00:00:00Z').toISOString(), now), true);
+  const justOutside = new Date(now.getTime() - (MAX_JOB_AGE_DAYS + 1) * 86400000).toISOString();
+  assert.equal(isFresh(justOutside, now), false);
+  assert.equal(isFresh(null, now), false);
+  assert.equal(isFresh(undefined, now), false);
+  assert.equal(isFresh('not-a-date', now), false);
 });

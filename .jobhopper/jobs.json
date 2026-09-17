@@ -1,39 +1,30 @@
 {
   "jobs": [
     {
-      "name": "nl-fullstack-java",
-      "query": "fullstack java",
+      "name": "italy-roles",
+      "country": "Italy",
+      "limit": 30,
+      "output": ".jobhopper/exports/italy-roles.html",
+      "title": "Italy engineering roles",
+      "description": "Software engineering roles in Italy, last 30 days",
+      "judge": false
+    },
+    {
+      "name": "spain-roles",
+      "country": "Spain",
+      "limit": 30,
+      "output": ".jobhopper/exports/spain-roles.html",
+      "title": "Spain engineering roles",
+      "description": "Software engineering roles in Spain, last 30 days",
+      "judge": false
+    },
+    {
+      "name": "netherlands-roles",
       "country": "Netherlands",
-      "limit": 25,
-      "output": ".jobhopper/exports/nl-fullstack-java.html",
-      "title": "NL fullstick Java roles",
-      "description": "Senior full-stack / Java roles in Netherlands",
-      "judge": false
-    },
-    {
-      "name": "eu-remote-software",
-      "query": "software engineer",
-      "remote": true,
       "limit": 30,
-      "output": ".jobhopper/exports/eu-remote-software.html",
-      "title": "EU remote software roles",
-      "judge": false
-    },
-    {
-      "name": "eu-remote-contracts",
-      "remote": true,
-      "contract": true,
-      "limit": 20,
-      "output": ".jobhopper/exports/eu-remote-contracts.html",
-      "title": "EU remote contract roles",
-      "judge": false
-    },
-    {
-      "name": "eu-recent-software",
-      "query": "software",
-      "limit": 30,
-      "output": ".jobhopper/exports/eu-recent-software.html",
-      "title": "Recent EU software roles",
+      "output": ".jobhopper/exports/netherlands-roles.html",
+      "title": "Netherlands engineering roles",
+      "description": "Software engineering roles in Netherlands, last 30 days",
       "judge": false
     }
   ]

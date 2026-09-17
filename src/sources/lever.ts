@@ -15,7 +15,7 @@ interface LeverPosting {
     commitment?: string;
     location?: string;
     team?: string;
-    allLocations?: string;
+    allLocations?: string | string[];
   };
 }
 
@@ -34,7 +34,12 @@ export const lever: JobSource = {
     const jobs = (await res.json()) as LeverPosting[];
     return jobs.map((j) => {
       const title = j.text ?? 'Untitled';
-      const location = j.location ?? j.categories?.allLocations ?? '';
+      const allLocations = j.categories?.allLocations;
+      const location =
+        j.location ??
+        j.categories?.location ??
+        (Array.isArray(allLocations) ? allLocations.join('; ') : allLocations) ??
+        '';
       const desc = j.descriptionPlain ?? stripHtml(j.description ?? '');
       return {
         externalId: String(j.id ?? `${company.token}-${title}`),

@@ -1,6 +1,7 @@
 import { getDb } from './connection.js';
 import type { Job, SearchRow, Verdict } from './types.js';
 import type { SQLInputValue } from 'node:sqlite';
+import { isTargetMarket, isFresh } from '../market.js';
 
 export interface InsertJobInput {
   externalId: string;
@@ -68,6 +69,39 @@ function indexJobFts(id: number, input: InsertJobInput): void {
 export function removeJob(id: number): void {
   getDb().prepare('DELETE FROM jobs_fts WHERE rowid = ?').run(id);
   getDb().prepare('DELETE FROM jobs WHERE id = ?').run(id);
+}
+
+/**
+ * Delete every stored job outside the target market (Italy/Spain/Netherlands)
+ * or older than the freshness cutoff. Applies the same rules used at scan
+ * ingestion, so the existing DB matches what a fresh scan would keep.
+ */
+export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMarket: number } {
+  const db = getDb();
+  const rows = db.prepare('SELECT id, location, posted_at FROM jobs').all() as Array<{
+    id: number;
+    location: string;
+    posted_at: string | null;
+  }>;
+  let removedStale = 0;
+  let removedOffMarket = 0;
+  db.exec('BEGIN');
+  try {
+    for (const row of rows) {
+      if (!isTargetMarket(row.location)) {
+        removeJob(row.id);
+        removedOffMarket++;
+      } else if (!isFresh(row.posted_at)) {
+        removeJob(row.id);
+        removedStale++;
+      }
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+  return { removedStale, removedOffMarket };
 }
 
 export function getJob(id: number): Job | undefined {

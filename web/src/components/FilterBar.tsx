@@ -35,7 +35,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           value={filters.search}
           onChange={(e) => onChange({ ...filters, search: e.target.value })}
           placeholder="Filter by title, company, stack, keywords... (Press / to focus)"
-          className="w-full pl-10 pr-12 py-2.5 bg-surface hover:bg-surface-hover focus:bg-surface border border-line focus:border-line-strong rounded-lg text-sm text-ink placeholder-ink-faint transition-all outline-none font-sans"
+          className="w-full pl-10 pr-12 py-2.5 bg-surface hover:bg-surface-hover focus:bg-surface border border-line focus:border-coral focus:ring-2 focus:ring-coral/20 rounded-lg text-sm text-ink placeholder-ink-faint transition-all outline-none font-sans"
         />
         <div className="absolute right-3 hidden sm:flex items-center gap-1 text-[10px] font-mono text-ink-faint px-1.5 py-0.5 rounded border border-line bg-surface-well">
           ⌘K or /
@@ -56,7 +56,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 className={cn(
                   'px-3 py-1 rounded-md font-medium transition-all cursor-pointer',
                   active
-                    ? 'bg-ink text-canvas shadow-sm'
+                    ? 'bg-gradient-to-r from-coral to-butter text-ink shadow-sm'
                     : 'text-ink-soft hover:text-ink hover:bg-surface-well'
                 )}
               >
@@ -74,7 +74,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             className={cn(
               'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-medium cursor-pointer transition-all',
               filters.remoteOnly
-                ? 'bg-ink border-line-strong text-canvas'
+                ? 'bg-gradient-to-r from-coral to-butter border-transparent text-ink'
                 : 'bg-surface border-line text-ink-soft hover:text-ink'
             )}
           >

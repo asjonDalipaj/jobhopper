@@ -1,11 +1,15 @@
 import { getDb } from '../db/connection.js';
-import { upsertJob, countJobs } from '../db/jobs-repo.js';
+import { upsertJob, countJobs, getJob, removeJob } from '../db/jobs-repo.js';
+import { storeJudgment } from '../db/judgments-repo.js';
 import { greenhouse } from './greenhouse.js';
 import { lever } from './lever.js';
 import { ashby } from './ashby.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
+import { isTargetMarket, isFresh } from '../market.js';
+import { judgePosting } from '../judge/openrouter.js';
+import { loadConfig, resolveApiKey } from '../config/config.js';
 import type { JobSource, SourceJob, ScraperStats } from './types.js';
 import type { CompanyEntry } from './companies.js';
 
@@ -24,16 +28,76 @@ export interface ScanResult {
   companies: number;
   fetched: number;
   inserted: number;
+  skippedStale: number;
+  skippedOffMarket: number;
+  judged: number;
+  rejected: number;
   errors: Array<{ company: string; message: string }>;
   stats: ScraperStats[];
   deadBoards: string[];
 }
 
-async function ingest(jobs: SourceJob[], insertedHere: Set<number>): Promise<void> {
+/** Quality gate applied to every fetched posting before it reaches the DB. */
+function passesMarketFilter(job: SourceJob, skipped: { stale: number; offMarket: number }): boolean {
+  if (!isTargetMarket(job.location)) {
+    skipped.offMarket++;
+    return false;
+  }
+  if (!isFresh(job.postedAt)) {
+    skipped.stale++;
+    return false;
+  }
+  return true;
+}
+
+async function ingest(
+  jobs: SourceJob[],
+  insertedHere: Set<number>,
+  skipped: { stale: number; offMarket: number },
+): Promise<void> {
   for (const job of jobs) {
+    if (!passesMarketFilter(job, skipped)) continue;
     const result = upsertJob(normalize(job));
     if (result.created) insertedHere.add(result.id);
   }
+}
+
+/**
+ * Quick-judge every newly inserted posting against the local profile and
+ * delete it if the verdict is "no" — quality over quantity, a rejected
+ * posting doesn't clutter search/list/export downstream. Silently skipped
+ * if no OpenRouter key is configured (same convention as jobs/run.ts).
+ */
+async function judgeAndPrune(insertedHere: Set<number>, concurrency = 4): Promise<{ judged: number; rejected: number }> {
+  const config = loadConfig();
+  if (!resolveApiKey(config)) return { judged: 0, rejected: 0 };
+
+  let judged = 0;
+  let rejected = 0;
+  const queue = [...insertedHere];
+  const worker = async () => {
+    while (queue.length) {
+      const id = queue.shift();
+      if (id === undefined) return;
+      const job = getJob(id);
+      if (!job) continue;
+      try {
+        const result = await judgePosting(job, { quick: true });
+        judged++;
+        if (result.verdict === 'no') {
+          removeJob(id);
+          insertedHere.delete(id);
+          rejected++;
+        } else {
+          storeJudgment({ jobId: id, verdict: result.verdict, reasoning: result.reasoning, model: result.model, quick: true });
+        }
+      } catch {
+        // A single judging failure shouldn't abort the scan; leave the job unjudged.
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, worker));
+  return { judged, rejected };
 }
 
 async function fetchOne(
@@ -41,6 +105,7 @@ async function fetchOne(
   errors: ScanResult['errors'],
   stats: ScraperStats[],
   insertedHere: Set<number>,
+  skipped: { stale: number; offMarket: number },
 ): Promise<void> {
   const source = SOURCES[company.ats];
   if (!source?.fetchCompany) {
@@ -50,7 +115,7 @@ async function fetchOne(
   try {
     const jobs = await source.fetchCompany(company);
     stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
-    await ingest(jobs, insertedHere);
+    await ingest(jobs, insertedHere, skipped);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     errors.push({ company: company.name, message });
@@ -65,9 +130,16 @@ async function fetchOne(
  */
 export async function scanCompanies(
   companies: CompanyEntry[],
-  options: { verifyBoards?: boolean; includeAggregators?: boolean; concurrency?: number } = {},
+  options: {
+    verifyBoards?: boolean;
+    includeAggregators?: boolean;
+    concurrency?: number;
+    /** Quick-judge new postings and auto-delete verdict "no" (default true). */
+    judge?: boolean;
+  } = {},
 ): Promise<ScanResult> {
   const insertedHere: Set<number> = new Set();
+  const skipped = { stale: 0, offMarket: 0 };
   const errors: ScanResult['errors'] = [];
   const stats: ScraperStats[] = [];
   let deadBoards: string[] = [];
@@ -91,7 +163,7 @@ export async function scanCompanies(
       while (queue.length) {
         const c = queue.shift();
         if (!c) return;
-        await fetchOne(c, errors, stats, insertedHere);
+        await fetchOne(c, errors, stats, insertedHere, skipped);
       }
     };
     await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, worker));
@@ -103,7 +175,7 @@ export async function scanCompanies(
         try {
           const jobs = await source.fetchAll();
           stats.push({ source: source.name, fetched: jobs.length, errors: 0 });
-          await ingest(jobs, insertedHere);
+          await ingest(jobs, insertedHere, skipped);
         } catch (err) {
           const message = err instanceof Error ? err.message : String(err);
           errors.push({ company: source.name, message });
@@ -118,10 +190,24 @@ export async function scanCompanies(
     throw err;
   }
 
+  // 3. Quality gate: quick-judge newly inserted postings and drop verdict "no".
+  // Runs after commit — network calls to OpenRouter shouldn't hold the DB transaction open.
+  let judged = 0;
+  let rejected = 0;
+  if (options.judge !== false) {
+    const result = await judgeAndPrune(insertedHere);
+    judged = result.judged;
+    rejected = result.rejected;
+  }
+
   return {
     companies: companies.length,
     fetched: stats.reduce((n, s) => n + s.fetched, 0),
     inserted: insertedHere.size,
+    skippedStale: skipped.stale,
+    skippedOffMarket: skipped.offMarket,
+    judged,
+    rejected,
     errors,
     stats,
     deadBoards,

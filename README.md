@@ -8,6 +8,14 @@ login, no account), indexes them locally in SQLite with full-text search, and
 evaluates postings against your profile using **OpenRouter** with your own API
 key (no middleman, no third-party collecting your data).
 
+**Market focus: Italy, Spain, Netherlands.** `scan` only ingests postings
+located in one of these countries and posted within the last 30 days
+(`src/market.ts`) — everything else is dropped at ingestion, quality over
+quantity. If an OpenRouter key is configured, every newly ingested posting is
+also quick-judged against your profile and auto-deleted if the verdict is
+"no" (`scan --no-judge` to skip this). Run `jobhopper cleanup` at any time to
+apply the same rules retroactively to the existing database.
+
 Unlike hosted services, there is **no account and no login**. Set one API key
 and it's yours.
 
@@ -90,7 +98,8 @@ profile set <name> [file]          set a profile doc (preferences/constraints/ba
 profile show / get <name>          view stored profile docs
 companies list                     list configured boards
 companies verify                   live-check which board tokens respond
-scan [-c <name>] [-a] [--verify]   fetch from curated boards (+ -a adds RemoteOK/Remotive)
+scan [-c <name>] [-a] [--verify] [--no-judge]   fetch from curated boards (+ -a adds RemoteOK/Remotive)
+cleanup                            purge stored jobs outside IT/ES/NL or older than 30 days
 search <words> [filters]           full-text search local DB
 list [filters]                     list jobs
 judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter)

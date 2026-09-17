@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
 import { loadConfig, saveConfig, resolveApiKey, hasApiKey } from '../config/config.js';
-import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs } from '../db/jobs-repo.js';
+import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket } from '../db/jobs-repo.js';
 import { storeJudgment, listJudgments } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
 import { scanCompanies } from '../sources/scan.js';
@@ -206,7 +206,8 @@ program
   .option('-c, --company <name>', 'scan only one company by name')
   .option('-a, --aggregators', 'also pull whole-market remote aggregators (Remotive, RemoteOK)')
   .option('--verify', 'check board tokens first and skip dead ones')
-  .action(async (opts: { company?: string; aggregators?: boolean; verify?: boolean }) => {
+  .option('--no-judge', 'skip the auto quick-judge/auto-reject pass on new postings')
+  .action(async (opts: { company?: string; aggregators?: boolean; verify?: boolean; judge?: boolean }) => {
     ensureDirs();
     let list = DEFAULT_COMPANIES;
     if (opts.company) {
@@ -221,15 +222,40 @@ program
     const result = await scanCompanies(list, {
       verifyBoards: opts.verify,
       includeAggregators: opts.aggregators,
+      judge: opts.judge,
     });
     console.log(
       pc.green(`\nDone: ${result.fetched} postings fetched, ${result.inserted} new, total in DB: ${countJobs()}.`),
     );
+    console.log(
+      dim(
+        `  filtered out ${result.skippedOffMarket} off-market, ${result.skippedStale} stale (>30d) at ingestion.`,
+      ),
+    );
+    if (result.judged || result.rejected) {
+      console.log(dim(`  quick-judged ${result.judged}, auto-rejected (verdict "no") ${result.rejected}.`));
+    }
     if (result.deadBoards.length) console.log(dim(`  skipped ${result.deadBoards.length} dead board(s): ${result.deadBoards.join(', ')}`));
     if (result.errors.length) {
       console.log(dim(`\n${result.errors.length} source(s) failed:`));
       for (const e of result.errors) console.log(dim(`  ${e.company}: ${e.message}`));
     }
+  });
+
+/* ------------------------------------------------------------------ *
+ * cleanup
+ * ------------------------------------------------------------------ */
+program
+  .command('cleanup')
+  .description('Purge stored jobs outside Italy/Spain/Netherlands or older than 30 days')
+  .action(() => {
+    const before = countJobs();
+    const { removedStale, removedOffMarket } = purgeStaleAndOffMarket();
+    console.log(
+      pc.green(
+        `Removed ${removedOffMarket} off-market and ${removedStale} stale posting(s). ${before} -> ${countJobs()} jobs.`,
+      ),
+    );
   });
 /* ------------------------------------------------------------------ *
  * search
@@ -665,7 +691,8 @@ Commands:
   profile set <name> [file]          set a profile doc (preferences/constraints/background)
   profile show / get <name>          view stored profile docs
   companies list                     list configured boards
-  scan [--company <name>]            fetch postings from configured boards
+  scan [-c <name>] [-a] [--no-judge] fetch postings from configured boards (IT/ES/NL only, <=30d)
+  cleanup                            purge stored jobs outside IT/ES/NL or older than 30 days
   search <words> [filters]           full-text search local DB
   list [filters]                     list jobs
   judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter)
