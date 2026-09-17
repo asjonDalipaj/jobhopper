@@ -5,7 +5,7 @@ import { stripHtml, htmlToPlainText } from '../sources/html.js';
 import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
-import { isTargetMarket, isFresh, MAX_JOB_AGE_DAYS } from '../market.js';
+import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
 
 test('sanitizeFtsQuery strips special characters and prefixes wildcards', () => {
   assert.equal(sanitizeFtsQuery('c++'), '"c"*');
@@ -68,6 +68,9 @@ test('isTargetMarket matches Italy/Spain/Netherlands substrings, case-insensitiv
   assert.equal(isTargetMarket('Milan, Italy'), true);
   assert.equal(isTargetMarket('Madrid, spain'), true);
   assert.equal(isTargetMarket('Amsterdam, NETHERLANDS'), true);
+  assert.equal(isTargetMarket('Milano'), true);
+  assert.equal(isTargetMarket('Madrid'), true);
+  assert.equal(isTargetMarket('Utrecht, Nederland'), true);
   assert.equal(isTargetMarket('Berlin, Germany'), false);
   assert.equal(isTargetMarket(''), false);
   assert.equal(isTargetMarket(null), false);
@@ -82,4 +85,13 @@ test('isFresh accepts dates within the cutoff and rejects stale/missing/invalid 
   assert.equal(isFresh(null, now), false);
   assert.equal(isFresh(undefined, now), false);
   assert.equal(isFresh('not-a-date', now), false);
+  assert.equal(isFresh(new Date(now.getTime() - (TARGET_MARKET_MAX_AGE_DAYS + 1) * 86400000).toISOString(), now, true), false);
+});
+
+test('isRelevantRole keeps engineering and music titles, rejects unrelated roles', () => {
+  assert.equal(isRelevantRole('Senior Backend Engineer'), true);
+  assert.equal(isRelevantRole('Music Producer'), true);
+  assert.equal(isRelevantRole('Audio Engineer'), true);
+  assert.equal(isRelevantRole('Sales Development Representative'), false);
+  assert.equal(isRelevantRole('Product Manager'), false);
 });

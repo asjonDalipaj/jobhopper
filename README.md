@@ -8,10 +8,10 @@ login, no account), indexes them locally in SQLite with full-text search, and
 evaluates postings against your profile using **OpenRouter** with your own API
 key (no middleman, no third-party collecting your data).
 
-**Market focus: Italy, Spain, Netherlands.** `scan` only ingests postings
-located in one of these countries and posted within the last 30 days
-(`src/market.ts`) — everything else is dropped at ingestion, quality over
-quantity. If an OpenRouter key is configured, every newly ingested posting is
+**Market focus: Italy, Spain, Netherlands.** `scan` only ingests engineering or
+music postings located in one of these countries and posted within the last 14
+days (`src/market.ts`) — city/native-language aliases are recognized, and
+everything else is dropped at ingestion, quality over quantity. If an OpenRouter key is configured, every newly ingested posting is
 also quick-judged against your profile and auto-deleted if the verdict is
 "no" (`scan --no-judge` to skip this). Run `jobhopper cleanup` at any time to
 apply the same rules retroactively to the existing database.

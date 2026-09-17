@@ -11,6 +11,18 @@ export function getDb(): DatabaseSync {
   _db.exec('PRAGMA journal_mode = WAL;');
   _db.exec('PRAGMA foreign_keys = ON;');
   _db.exec(SCHEMA);
+  for (const column of [
+    'category TEXT',
+    'normalized_locations TEXT',
+    'extracted_workplace_type TEXT',
+    'extraction_model TEXT',
+  ]) {
+    try {
+      _db.exec(`ALTER TABLE jobs ADD COLUMN ${column}`);
+    } catch {
+      // Existing databases already have this column.
+    }
+  }
   return _db;
 }
 
@@ -29,6 +41,10 @@ CREATE TABLE IF NOT EXISTS jobs (
   posted_at TEXT,
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
   tags TEXT,
+  category TEXT,
+  normalized_locations TEXT,
+  extracted_workplace_type TEXT,
+  extraction_model TEXT,
   UNIQUE(source, external_id)
 );
 

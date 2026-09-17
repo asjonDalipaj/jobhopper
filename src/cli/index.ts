@@ -229,7 +229,7 @@ program
     );
     console.log(
       dim(
-        `  filtered out ${result.skippedOffMarket} off-market, ${result.skippedStale} stale (>30d) at ingestion.`,
+      `  filtered out ${result.skippedOffMarket} off-market, ${result.skippedStale} stale, ${result.skippedOffRole} unrelated roles at ingestion.`,
       ),
     );
     if (result.judged || result.rejected) {

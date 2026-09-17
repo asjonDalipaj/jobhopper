@@ -1,6 +1,7 @@
 import type { Verdict } from '../db/types.js';
 import { loadConfig, resolveApiKey, hasApiKey } from '../config/config.js';
 import { gatherProfile } from '../profile/cv.js';
+import type { JobMetadata } from '../db/jobs-repo.js';
 
 export interface OpenRouterResult {
   verdict: Verdict;
@@ -22,6 +23,10 @@ export interface JudgeTarget {
 }
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
+
+const EXTRACTION_PROMPT = `Extract structured fields from this job posting. Return only JSON:
+{"category":"Software Development|Engineering|Information Technology|Data and Analytics|Music|Other","locations":["city, country"],"workplace_type":"Remote|Onsite|Hybrid|null"}
+Use the job description as source of truth. Normalize locations to city/country where possible. Choose Music for music/audio industry or production roles; choose one of the technical categories for software/engineering/IT/data roles; choose Other for everything else.`;
 
 const SYSTEM_PROMPT = `You are an expert technical recruiter and career advisor. You evaluate a job posting against a candidate's local profile and return a structured verdict. Read the CV, preferences and constraints the candidate provided, then judge how well THIS job fits THEM.
 
@@ -143,4 +148,40 @@ export async function judgePosting(
   const parsed = parseVerdict(content);
   parsed.model = data.model ?? model;
   return parsed;
+}
+
+/** Extract searchable job metadata with the configured quick model. */
+export async function extractJobMetadata(target: JudgeTarget): Promise<JobMetadata> {
+  const config = loadConfig();
+  if (!hasApiKey(config)) throw new Error('No OpenRouter API key configured.');
+  const model = config.quickModel;
+  const key = resolveApiKey(config);
+  const res = await fetch(OPENROUTER_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}`, 'HTTP-Referer': 'https://github.com/local/jobhopper', 'X-Title': 'jobhopper' },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: EXTRACTION_PROMPT },
+        { role: 'user', content: `Title: ${target.title}\nLocation: ${target.location}\nWorkplace: ${target.workplaceType || 'n/a'}\nDescription:\n${(target.description || '').slice(0, 12000)}` },
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0,
+    }),
+  });
+  if (!res.ok) throw new Error(`OpenRouter returned HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }>; model?: string };
+  const raw = data.choices?.[0]?.message?.content ?? '';
+  const start = raw.indexOf('{');
+  const end = raw.lastIndexOf('}');
+  if (start < 0 || end <= start) throw new Error('could not parse metadata JSON');
+  const parsed = JSON.parse(raw.slice(start, end + 1)) as { category?: unknown; locations?: unknown; workplace_type?: unknown };
+  const categories = ['Software Development', 'Engineering', 'Information Technology', 'Data and Analytics', 'Music', 'Other'];
+  const workplace = parsed.workplace_type;
+  return {
+    category: categories.includes(String(parsed.category)) ? String(parsed.category) : 'Other',
+    locations: Array.isArray(parsed.locations) ? parsed.locations.map(String).slice(0, 10) : [],
+    workplaceType: workplace === 'Remote' || workplace === 'Onsite' || workplace === 'Hybrid' ? workplace : null,
+    model: data.model ?? model,
+  };
 }

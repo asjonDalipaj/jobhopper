@@ -12,6 +12,10 @@ export interface Job {
   posted_at: string | null;
   created_at: string;
   tags: string | null;
+  category: string | null;
+  normalized_locations: string | null;
+  extracted_workplace_type: string | null;
+  extraction_model: string | null;
 }
 
 export type Verdict = 'no' | 'weak' | 'fair' | 'strong';

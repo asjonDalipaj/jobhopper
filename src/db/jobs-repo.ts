@@ -1,7 +1,7 @@
 import { getDb } from './connection.js';
 import type { Job, SearchRow, Verdict } from './types.js';
 import type { SQLInputValue } from 'node:sqlite';
-import { isTargetMarket, isFresh } from '../market.js';
+import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
 
 export interface InsertJobInput {
   externalId: string;
@@ -15,6 +15,13 @@ export interface InsertJobInput {
   description?: string;
   postedAt?: string | null;
   tags?: string | null;
+}
+
+export interface JobMetadata {
+  category: string;
+  locations: string[];
+  workplaceType: 'Remote' | 'Onsite' | 'Hybrid' | null;
+  model: string;
 }
 
 export interface InsertResult {
@@ -71,6 +78,15 @@ export function removeJob(id: number): void {
   getDb().prepare('DELETE FROM jobs WHERE id = ?').run(id);
 }
 
+export function updateJobMetadata(id: number, metadata: JobMetadata): void {
+  getDb()
+    .prepare(
+      `UPDATE jobs SET category = ?, normalized_locations = ?,
+       extracted_workplace_type = ?, extraction_model = ? WHERE id = ?`,
+    )
+    .run(metadata.category, JSON.stringify(metadata.locations), metadata.workplaceType, metadata.model, id);
+}
+
 /**
  * Delete every stored job outside the target market (Italy/Spain/Netherlands)
  * or older than the freshness cutoff. Applies the same rules used at scan
@@ -78,8 +94,9 @@ export function removeJob(id: number): void {
  */
 export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMarket: number } {
   const db = getDb();
-  const rows = db.prepare('SELECT id, location, posted_at FROM jobs').all() as Array<{
+  const rows = db.prepare('SELECT id, title, location, posted_at FROM jobs').all() as Array<{
     id: number;
+    title: string;
     location: string;
     posted_at: string | null;
   }>;
@@ -88,10 +105,10 @@ export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMark
   db.exec('BEGIN');
   try {
     for (const row of rows) {
-      if (!isTargetMarket(row.location)) {
+      if (!isTargetMarket(row.location) || !isRelevantRole(row.title)) {
         removeJob(row.id);
         removedOffMarket++;
-      } else if (!isFresh(row.posted_at)) {
+      } else if (!isFresh(row.posted_at, new Date(), true)) {
         removeJob(row.id);
         removedStale++;
       }

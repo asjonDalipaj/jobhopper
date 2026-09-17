@@ -1,5 +1,5 @@
 import { getDb } from '../db/connection.js';
-import { upsertJob, countJobs, getJob, removeJob } from '../db/jobs-repo.js';
+import { upsertJob, countJobs, getJob, removeJob, updateJobMetadata } from '../db/jobs-repo.js';
 import { storeJudgment } from '../db/judgments-repo.js';
 import { greenhouse } from './greenhouse.js';
 import { lever } from './lever.js';
@@ -7,8 +7,8 @@ import { ashby } from './ashby.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
-import { isTargetMarket, isFresh } from '../market.js';
-import { judgePosting } from '../judge/openrouter.js';
+import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
+import { judgePosting, extractJobMetadata } from '../judge/openrouter.js';
 import { loadConfig, resolveApiKey } from '../config/config.js';
 import type { JobSource, SourceJob, ScraperStats } from './types.js';
 import type { CompanyEntry } from './companies.js';
@@ -30,6 +30,7 @@ export interface ScanResult {
   inserted: number;
   skippedStale: number;
   skippedOffMarket: number;
+  skippedOffRole: number;
   judged: number;
   rejected: number;
   errors: Array<{ company: string; message: string }>;
@@ -38,13 +39,17 @@ export interface ScanResult {
 }
 
 /** Quality gate applied to every fetched posting before it reaches the DB. */
-function passesMarketFilter(job: SourceJob, skipped: { stale: number; offMarket: number }): boolean {
+function passesMarketFilter(job: SourceJob, skipped: { stale: number; offMarket: number; offRole: number }): boolean {
   if (!isTargetMarket(job.location)) {
     skipped.offMarket++;
     return false;
   }
-  if (!isFresh(job.postedAt)) {
+  if (!isFresh(job.postedAt, new Date(), true)) {
     skipped.stale++;
+    return false;
+  }
+  if (!isRelevantRole(job.title)) {
+    skipped.offRole++;
     return false;
   }
   return true;
@@ -53,7 +58,7 @@ function passesMarketFilter(job: SourceJob, skipped: { stale: number; offMarket:
 async function ingest(
   jobs: SourceJob[],
   insertedHere: Set<number>,
-  skipped: { stale: number; offMarket: number },
+  skipped: { stale: number; offMarket: number; offRole: number },
 ): Promise<void> {
   for (const job of jobs) {
     if (!passesMarketFilter(job, skipped)) continue;
@@ -100,12 +105,33 @@ async function judgeAndPrune(insertedHere: Set<number>, concurrency = 4): Promis
   return { judged, rejected };
 }
 
+async function extractMetadata(insertedHere: Set<number>, concurrency = 4): Promise<void> {
+  const config = loadConfig();
+  if (!resolveApiKey(config)) return;
+  const queue = [...insertedHere];
+  const worker = async () => {
+    while (queue.length) {
+      const id = queue.shift();
+      if (id === undefined) return;
+      const job = getJob(id);
+      if (!job) continue;
+      try {
+        const metadata = await extractJobMetadata(job);
+        updateJobMetadata(id, metadata);
+      } catch {
+        // Metadata is enrichment; a failed call must not lose the job.
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, worker));
+}
+
 async function fetchOne(
   company: CompanyEntry,
   errors: ScanResult['errors'],
   stats: ScraperStats[],
   insertedHere: Set<number>,
-  skipped: { stale: number; offMarket: number },
+  skipped: { stale: number; offMarket: number; offRole: number },
 ): Promise<void> {
   const source = SOURCES[company.ats];
   if (!source?.fetchCompany) {
@@ -139,7 +165,7 @@ export async function scanCompanies(
   } = {},
 ): Promise<ScanResult> {
   const insertedHere: Set<number> = new Set();
-  const skipped = { stale: 0, offMarket: 0 };
+  const skipped = { stale: 0, offMarket: 0, offRole: 0 };
   const errors: ScanResult['errors'] = [];
   const stats: ScraperStats[] = [];
   let deadBoards: string[] = [];
@@ -195,6 +221,7 @@ export async function scanCompanies(
   let judged = 0;
   let rejected = 0;
   if (options.judge !== false) {
+    await extractMetadata(insertedHere);
     const result = await judgeAndPrune(insertedHere);
     judged = result.judged;
     rejected = result.rejected;
@@ -206,6 +233,7 @@ export async function scanCompanies(
     inserted: insertedHere.size,
     skippedStale: skipped.stale,
     skippedOffMarket: skipped.offMarket,
+    skippedOffRole: skipped.offRole,
     judged,
     rejected,
     errors,
