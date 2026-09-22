@@ -1,6 +1,22 @@
 [
   {
-    "id": 5,
+    "id": 61,
+    "external_id": "8224018",
+    "source": "greenhouse",
+    "company": "Elastic",
+    "title": "Principal AI Engineer - Context - Agents and Context",
+    "location": "Spain",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.elastic.co/jobs?gh_jid=8224018&gh_jid=8224018",
+    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <p>The Context Engine team builds the knowledge layer that AI agents use to work with enterprise data in Elasticsearch. We extract knowledge from any data sources into a structured AI Index, serve it to agents through public APIs, MCP tools and framework integrations, and close the loop with agent traces so that what the engine knows improves from real usage. Any agent can use it: Elastic’s own Agent Builder, Claude Code, LangChain and other third-party harnesses.</p> <p>As a Principal AI Engineer, you own the improvement loop of this product end to end: how agents, automations and skills behave in production, how we observe them, how we evaluate them, and how we ship changes to them safely. This is a hybrid role at the intersection of engineering, data science, and product. You will write production code, design evaluation and telemetry that product decisions can rest on, and set the technical bar for how the team iterates on agentic behaviour. You will work alongside data scientists, backend engineers, product, and UX, and your work will show up directly in what customers build on top of Elastic.</p> <p>The codebase is TypeScript and we build it in the open, so you'll be shipping code, designs and discussions in public alongside the rest of the Elastic Stack.</p> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li>Own the production improvement loop for Context Engine: understand how extraction automations, retrieval tools and memory behave, based on offline evaluations and customer conversations and telemetry. You help find the failure modes, fix them, and prove the fix.</li> <li>Define how we iterate on agents and skills safely: versioning and rollout of prompts, skills and automations, regression coverage, staged and shadow evaluation, and the guardrails that let us change behaviour without breaking customers.</li> <li>Design the telemetry we need to make data-informed engineering decisions: what to capture from agent traces, tool calls and knowledge retrieval, how it lands in Elasticsearch, and how it feeds evaluation, dashboards and the feedback loop.</li> <li>Partner with the data science team on evaluation strategy: golden datasets, evaluators to gate on quality, latency and cost.</li> <li>Raise the bar across the team: review designs and PRs, mentor engineers in eval-driven development, and write the technical proposals that shape the roadmap.</li> </ul> <h3>What You Bring</h3> <ul> <li>10+ years of software engineering experience, with the recent years spent shipping and operating AI-driven products on real production traffic, ideally products with public APIs and data models that had to evolve without breaking customers.</li> <li>A track record of eval-driven product improvement: you have diagnosed agent or LLM behaviour from traces and user feedback, designed the evaluation that exposed the problem, shipped the fix and measured the outcome.</li> <li>Direct experience building agents with state and memory, and iterating on prompts, skills and tool behaviour safely in production.</li> <li>Familiarity with MCP, including exposing public MCP servers and tools.</li> <li>Experience designing telemetry for AI systems, and using it to make engineering and product decisions.</li> <li>Experience running product experiments end to end: instrumentation, unattended execution, and interpreting results.</li> <li>Experience building products with public APIs and evolving data models, and the judgement that comes with maintaining external contracts as a product changes.</li> <li>Strong backend engineering skills in either Python or TypeScript: APIs, stateful workflows, data pipelines and production services.</li> <li>Comfort working with data scientists, engineers, and product managers as peers, translating between measurement and shipping, and communicating trade-offs clearly.</li> <li>A pragmatic, low-ego style suited to a distributed, async-first team.</li> </ul> <h3>Bonus Points</h3> <ul> <li>Experience with agent frameworks such as LangGraph, CrewAI, Claude Agent SDK, or similar.</li> <li>Agentic retrieval experience, including knowledge representation.</li> <li>Practical Elasticsearch experience.</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€80.400</span><span class=\"divider\">&mdash;</span><span>€127.200 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
+    "posted_at": "2026-09-22T14:26:20-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 2,
     "external_id": "018e4ae4-eda1-4d10-8ae7-b78d52c13f72",
     "source": "ashby",
     "company": "Docebo",
@@ -16,7 +32,23 @@
     "reasoning": null
   },
   {
-    "id": 2,
+    "id": 57,
+    "external_id": "8157509",
+    "source": "greenhouse",
+    "company": "Twilio",
+    "title": "Presales Engineer  (German speaker)",
+    "location": "Remote - Spain",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/twilio/jobs/8157509",
+    "description": "<div class=\"content-intro\"><p><strong>Who we are&nbsp;</strong></p> <p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a class=\"c-link\" href=\"https://customers.twilio.com/\" target=\"_blank\" data-stringify-link=\"https://customers.twilio.com/\" data-sk=\"tooltip_parent\">&nbsp;hundreds of thousands of businesses&nbsp;</a>and empower millions of developers worldwide to craft personalized customer experiences.</p> <p>Our dedication to <a class=\"c-link\" href=\"https://www.twilio.com/en-us/blog/open-work\" target=\"_blank\" data-stringify-link=\"https://www.twilio.com/en-us/blog/open-work\" data-sk=\"tooltip_parent\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br><span style=\"color: rgb(255, 255, 255);\">.</span></p> <p><strong>Hiring and how we work</strong></p> <p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp;</p> <p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp;<br><span style=\"color: rgb(255, 255, 255);\">.</span></p></div><p><strong>See yourself at Twilio</strong></p> <p>Join the team as Twilio’s next Presales Engineer, DACH.&nbsp;</p> <p><strong>About the job</strong></p> <p>This position is needed to enable our customers to build the future of communications. The Principal Presales Engineer is a critical part of the sales team focused on our both New Business and Strategic segments.</p> <p>Twilio’s Principal Presales Engineers are responsible for delivering the Technical Win and best Product Fit to our customers. They lead the technical pre-sales relationship, drive technical discovery, propose technical architectures, demonstrate the product, anticipate concerns and offer creative solutions. They build customer trust in Twilio’s solutions.</p> <p>Principal Presales Engineers should be comfortable engaging a CEO or sketching out an API flow on a whiteboard with customer software engineers.</p> <p><strong>Responsibilities</strong></p> <p>In this role, you’ll:</p> <ul> <li>Partner with Account Executives to execute pre-sales activities including opportunity qualification, demonstrations, Proof-of-Concept, RFP, design documentation, technical presentations and enablement sessions.</li> <li>Help customers achieve success by leading the technical and product sale, recommending best-practice solutions, and guiding them on how to use Twilio’s APIs.</li> <li>Establish yourself as a trusted advisor to our customers, by taking the lead on understanding customer technical pains through discovery in order to design, demonstrate, and present innovative solutions that solve business challenges.</li> <li>Build and present highly interactive, complex and engaging customer product demonstrations to help showcase the capabilities of Twilio’s Communications Products, while effectively forming strong customer relationships with both technical and nontechnical stakeholders</li> <li>Be Hands-on, high-energy, passionate, and a creative problem solver, equipped with the knowledge of how to get things done and ability to lead others to success.</li> <li>Take the initiative to identify and solve problems - both for the customer and within the organization as we grow</li> <li>Contribute to the broader Twilio Presales Engineering community through knowledge sharing, constructing demonstration materials, and creating reusable presentations</li> <li>Mentor less experienced Presales Engineers</li> </ul> <p><strong>Qualifications&nbsp;</strong></p> <p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p> <p><strong>*Required:</strong></p> <ul> <li>8+ years pre-sales experience selling complex, technical products or 10+ years of professional experience supporting technical products coupled with customer facing experience, particularly in delivery or consulting</li> <li>Excellent communicator and presenter able to gain audience confidence</li> <li>An engaging storyteller - you can gain audience confidence and communicate complex topics to multiple levels of audience.</li> <li>Ability to build a deep understanding of a customer’s communications needs and guide them to a technical solution</li> <li>Previous software development experience or working knowledge in one or more of the following areas:</li> <ul> <li>Backend (Java, C#, Node.js, Python, PHP)</li> <li>Web development (JavaScript, HTML/CSS, frontend frameworks - React, Vue.js, Angular)</li> <li>Experience building with REST APIs</li> </ul> <li>Previous experience in Telecom, SIP, Contact Center, or Security .</li> <li>Experience with sales methodologies</li> <li>Bachelor’s and/or Master’s degree in a technical discipline (Engineering, Mathematics, Computer Science) or equivalent practical experience</li> <li>Proficient German speaker&nbsp;</li> </ul> <p><strong>Desired:</strong></p> <ul> <li>Familiarity with cloud platforms (Amazon Web Services, Google Cloud, Microsoft Azure) and cloud application architecture.</li> <li>Experience working with customers in the DACH region</li> </ul> <p><strong>Location</strong></p> <h4><strong>This role will be remote and based in the UK, Ireland or Spain</strong></h4> <p><strong>Travel</strong></p> <p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, approximately 35% travel is anticipated to help you connect in-person in a meaningful way.&nbsp;</p> <p><strong>What We Offer</strong></p> <p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.</p><div class=\"content-conclusion\"><p><strong>Twilio thinks big. Do you?</strong></p> <p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p> <p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p> <p><strong><span style=\"color: rgb(255, 255, 255);\">.</span></strong></p> <p><strong>Stay alert to recruitment fraud</strong></p> <p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br><br><span style=\"color: rgb(255, 255, 255);\">.</span><strong> </strong></p> <p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p></div>",
+    "posted_at": "2026-09-22T10:26:10-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 5,
     "external_id": "60286fb7-715d-49a1-87a5-7a141400ddc6",
     "source": "ashby",
     "company": "Satispay",
@@ -32,7 +64,23 @@
     "reasoning": null
   },
   {
-    "id": 1,
+    "id": 31,
+    "external_id": "4979524101",
+    "source": "greenhouse",
+    "company": "JetBrains",
+    "title": "Staff Software Developer (Kotlin Libraries)",
+    "location": "Amsterdam, Netherlands; Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; London, United Kingdom; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Prague, Czech Republic; Remote, Germany; Warsaw, Poland; Yerevan, Armenia",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4979524101",
+    "description": "<h4><strong>As part of our team, you will:</strong></h4> <ul data-tight=\"true\"> <li> <p>Create and maintain foundational libraries for Kotlin core primitives that are used by hundreds of thousands of developers</p> </li> <li> <p>Become an expert in specific domains of computer science and software engineering</p> </li> <li> <p>Be part of a design committee that decides how the Kotlin API should be shaped</p> </li> <li> <p>Participate in creating standard Kotlin tools, specifications and language features</p> </li> </ul> <p><strong>Preferable:&nbsp;</strong></p> <ul data-tight=\"true\"> <li> <p>JVM development experience down to the implementation details of the Java standard library</p> </li> <li> <p>Strong understanding of the domain you've been working with</p> </li> <li> <p>Ability to write design documents for complex systems with strong reasoning behind each trade-off and technical decision</p> </li> <li> <p>Experience in performance engineering or API design</p> </li> </ul> <p>In general, if you see yourself reading a Unicode standard, exploring how five other languages transform strings to bytes, figuring out why some Oceania islands changed their timezone from -10:00 to +14:00 and whether it should be expressed in the API of Kotlin timezones, optimizing interface hierarchy to be more JIT-friendly and is not afraid of re-iterating over documentation a multitude of times, you won't get bored in our team.</p> <p><strong><br>Why join JetBrains?&nbsp;</strong></p> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li><strong>Relocation support. We help make your move as smooth and stress-free as possible. (keep if relevant for the role)</strong></li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-KT1&nbsp;</span></p> <p>&nbsp;</p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the <a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
+    "posted_at": "2026-09-22T10:02:31-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 4,
     "external_id": "2afa9f84-613e-4088-a367-cf109d8d87c4",
     "source": "ashby",
     "company": "Satispay",
@@ -48,7 +96,7 @@
     "reasoning": null
   },
   {
-    "id": 72,
+    "id": 91,
     "external_id": "8080263",
     "source": "greenhouse",
     "company": "Elastic",
@@ -64,7 +112,7 @@
     "reasoning": null
   },
   {
-    "id": 29,
+    "id": 24,
     "external_id": "4976229101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -80,7 +128,7 @@
     "reasoning": null
   },
   {
-    "id": 93,
+    "id": 59,
     "external_id": "8087739",
     "source": "greenhouse",
     "company": "Okta",
@@ -96,7 +144,7 @@
     "reasoning": null
   },
   {
-    "id": 42,
+    "id": 95,
     "external_id": "4712270006",
     "source": "greenhouse",
     "company": "Neo4j",
@@ -112,7 +160,7 @@
     "reasoning": null
   },
   {
-    "id": 90,
+    "id": 56,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -128,23 +176,7 @@
     "reasoning": null
   },
   {
-    "id": 91,
-    "external_id": "8157509",
-    "source": "greenhouse",
-    "company": "Twilio",
-    "title": "Presales Engineer  (German speaker)",
-    "location": "Remote - Spain",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/twilio/jobs/8157509",
-    "description": "<div class=\"content-intro\"><p><strong>Who we are&nbsp;</strong></p> <p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a class=\"c-link\" href=\"https://customers.twilio.com/\" target=\"_blank\" data-stringify-link=\"https://customers.twilio.com/\" data-sk=\"tooltip_parent\">&nbsp;hundreds of thousands of businesses&nbsp;</a>and empower millions of developers worldwide to craft personalized customer experiences.</p> <p>Our dedication to <a class=\"c-link\" href=\"https://www.twilio.com/en-us/blog/open-work\" target=\"_blank\" data-stringify-link=\"https://www.twilio.com/en-us/blog/open-work\" data-sk=\"tooltip_parent\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br><span style=\"color: rgb(255, 255, 255);\">.</span></p> <p><strong>Hiring and how we work</strong></p> <p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp;</p> <p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp;<br><span style=\"color: rgb(255, 255, 255);\">.</span></p></div><p><strong>See yourself at Twilio</strong></p> <p>Join the team as Twilio’s next Presales Engineer, DACH.&nbsp;</p> <p><strong>About the job</strong></p> <p>This position is needed to enable our customers to build the future of communications. The Principal Presales Engineer is a critical part of the sales team focused on our both New Business and Strategic segments.</p> <p>Twilio’s Principal Presales Engineers are responsible for delivering the Technical Win and best Product Fit to our customers. They lead the technical pre-sales relationship, drive technical discovery, propose technical architectures, demonstrate the product, anticipate concerns and offer creative solutions. They build customer trust in Twilio’s solutions.</p> <p>Principal Presales Engineers should be comfortable engaging a CEO or sketching out an API flow on a whiteboard with customer software engineers.</p> <p><strong>Responsibilities</strong></p> <p>In this role, you’ll:</p> <ul> <li>Partner with Account Executives to execute pre-sales activities including opportunity qualification, demonstrations, Proof-of-Concept, RFP, design documentation, technical presentations and enablement sessions.</li> <li>Help customers achieve success by leading the technical and product sale, recommending best-practice solutions, and guiding them on how to use Twilio’s APIs.</li> <li>Establish yourself as a trusted advisor to our customers, by taking the lead on understanding customer technical pains through discovery in order to design, demonstrate, and present innovative solutions that solve business challenges.</li> <li>Build and present highly interactive, complex and engaging customer product demonstrations to help showcase the capabilities of Twilio’s Communications Products, while effectively forming strong customer relationships with both technical and nontechnical stakeholders</li> <li>Be Hands-on, high-energy, passionate, and a creative problem solver, equipped with the knowledge of how to get things done and ability to lead others to success.</li> <li>Take the initiative to identify and solve problems - both for the customer and within the organization as we grow</li> <li>Contribute to the broader Twilio Presales Engineering community through knowledge sharing, constructing demonstration materials, and creating reusable presentations</li> <li>Mentor less experienced Presales Engineers</li> </ul> <p><strong>Qualifications&nbsp;</strong></p> <p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p> <p><strong>*Required:</strong></p> <ul> <li>8+ years pre-sales experience selling complex, technical products or 10+ years of professional experience supporting technical products coupled with customer facing experience, particularly in delivery or consulting</li> <li>Excellent communicator and presenter able to gain audience confidence</li> <li>An engaging storyteller - you can gain audience confidence and communicate complex topics to multiple levels of audience.</li> <li>Ability to build a deep understanding of a customer’s communications needs and guide them to a technical solution</li> <li>Previous software development experience or working knowledge in one or more of the following areas:</li> <ul> <li>Backend (Java, C#, Node.js, Python, PHP)</li> <li>Web development (JavaScript, HTML/CSS, frontend frameworks - React, Vue.js, Angular)</li> <li>Experience building with REST APIs</li> </ul> <li>Previous experience in Telecom, SIP, Contact Center, or Security .</li> <li>Experience with sales methodologies</li> <li>Bachelor’s and/or Master’s degree in a technical discipline (Engineering, Mathematics, Computer Science) or equivalent practical experience</li> <li>Proficient German speaker&nbsp;</li> </ul> <p><strong>Desired:</strong></p> <ul> <li>Familiarity with cloud platforms (Amazon Web Services, Google Cloud, Microsoft Azure) and cloud application architecture.</li> <li>Experience working with customers in the DACH region</li> </ul> <p><strong>Location</strong></p> <h4><strong>This role will be remote and based in the UK, Ireland or Spain</strong></h4> <p><strong>Travel</strong></p> <p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, approximately 35% travel is anticipated to help you connect in-person in a meaningful way.&nbsp;</p> <p><strong>What We Offer</strong></p> <p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.</p><div class=\"content-conclusion\"><p><strong>Twilio thinks big. Do you?</strong></p> <p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p> <p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p> <p><strong><span style=\"color: rgb(255, 255, 255);\">.</span></strong></p> <p><strong>Stay alert to recruitment fraud</strong></p> <p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br><br><span style=\"color: rgb(255, 255, 255);\">.</span><strong> </strong></p> <p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p></div>",
-    "posted_at": "2026-09-21T10:28:24-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 76,
+    "id": 37,
     "external_id": "8161455",
     "source": "greenhouse",
     "company": "Datadog",
@@ -160,7 +192,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 23,
     "external_id": "4696977101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -176,7 +208,7 @@
     "reasoning": null
   },
   {
-    "id": 18,
+    "id": 14,
     "external_id": "7573921",
     "source": "greenhouse",
     "company": "Adyen",
@@ -192,7 +224,7 @@
     "reasoning": null
   },
   {
-    "id": 51,
+    "id": 71,
     "external_id": "8220151",
     "source": "greenhouse",
     "company": "Elastic",
@@ -208,7 +240,7 @@
     "reasoning": null
   },
   {
-    "id": 52,
+    "id": 70,
     "external_id": "8220111",
     "source": "greenhouse",
     "company": "Elastic",
@@ -224,7 +256,7 @@
     "reasoning": null
   },
   {
-    "id": 39,
+    "id": 34,
     "external_id": "8185412",
     "source": "greenhouse",
     "company": "Typeform",
@@ -240,7 +272,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 22,
     "external_id": "8076441",
     "source": "greenhouse",
     "company": "N26",
@@ -256,7 +288,7 @@
     "reasoning": null
   },
   {
-    "id": 87,
+    "id": 48,
     "external_id": "8007598",
     "source": "greenhouse",
     "company": "Datadog",
@@ -272,7 +304,7 @@
     "reasoning": null
   },
   {
-    "id": 86,
+    "id": 47,
     "external_id": "8043560",
     "source": "greenhouse",
     "company": "Datadog",
@@ -288,7 +320,7 @@
     "reasoning": null
   },
   {
-    "id": 85,
+    "id": 46,
     "external_id": "8119493",
     "source": "greenhouse",
     "company": "Datadog",
@@ -304,7 +336,7 @@
     "reasoning": null
   },
   {
-    "id": 84,
+    "id": 45,
     "external_id": "8139277",
     "source": "greenhouse",
     "company": "Datadog",
@@ -320,7 +352,7 @@
     "reasoning": null
   },
   {
-    "id": 83,
+    "id": 44,
     "external_id": "8114161",
     "source": "greenhouse",
     "company": "Datadog",
@@ -336,7 +368,7 @@
     "reasoning": null
   },
   {
-    "id": 82,
+    "id": 43,
     "external_id": "7959966",
     "source": "greenhouse",
     "company": "Datadog",
@@ -352,7 +384,7 @@
     "reasoning": null
   },
   {
-    "id": 81,
+    "id": 42,
     "external_id": "7959962",
     "source": "greenhouse",
     "company": "Datadog",
@@ -368,7 +400,7 @@
     "reasoning": null
   },
   {
-    "id": 80,
+    "id": 41,
     "external_id": "4599111",
     "source": "greenhouse",
     "company": "Datadog",
@@ -384,7 +416,7 @@
     "reasoning": null
   },
   {
-    "id": 79,
+    "id": 40,
     "external_id": "7904634",
     "source": "greenhouse",
     "company": "Datadog",
@@ -400,7 +432,7 @@
     "reasoning": null
   },
   {
-    "id": 78,
+    "id": 39,
     "external_id": "7586019",
     "source": "greenhouse",
     "company": "Datadog",
@@ -416,7 +448,7 @@
     "reasoning": null
   },
   {
-    "id": 77,
+    "id": 38,
     "external_id": "8048588",
     "source": "greenhouse",
     "company": "Datadog",
@@ -432,7 +464,7 @@
     "reasoning": null
   },
   {
-    "id": 75,
+    "id": 36,
     "external_id": "8080628",
     "source": "greenhouse",
     "company": "Datadog",
@@ -448,7 +480,7 @@
     "reasoning": null
   },
   {
-    "id": 46,
+    "id": 65,
     "external_id": "8198517",
     "source": "greenhouse",
     "company": "Elastic",
@@ -464,7 +496,7 @@
     "reasoning": null
   },
   {
-    "id": 19,
+    "id": 15,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -480,7 +512,7 @@
     "reasoning": null
   },
   {
-    "id": 30,
+    "id": 25,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -496,7 +528,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 11,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -512,7 +544,7 @@
     "reasoning": null
   },
   {
-    "id": 8,
+    "id": 20,
     "external_id": "7811482",
     "source": "greenhouse",
     "company": "N26",
@@ -528,7 +560,7 @@
     "reasoning": null
   },
   {
-    "id": 3,
+    "id": 6,
     "external_id": "d65851c8-6737-4d0c-910c-27f37e93433b",
     "source": "ashby",
     "company": "Satispay",
@@ -544,23 +576,7 @@
     "reasoning": null
   },
   {
-    "id": 62,
-    "external_id": "8207678",
-    "source": "greenhouse",
-    "company": "Elastic",
-    "title": "Senior Software Engineer -Observability, Managed Inputs ",
-    "location": "Romania",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8207678&gh_jid=8207678",
-    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <p>As part of the Observability organization and inside the Streams program, the Managed Inputs team builds high-performing backend ingestion pipelines. We collect telemetry across diverse environments—including Elastic Agents, agentless setups, OpenTelemetry collectors, and cloud sources via Elastic Cloud Forwarders—then process and store this information to power seamless, intuitive user experiences within Kibana.</p> <p>Elastic's Streams program is the unified platform for getting data into Elasticsearch from edge collection all the way through cloud processing. We accept any type of data generated at the edge (Elastic Agent, Elastic Classic APM Agents, Beats, any OTel SDK…) and we process and route the data to several destinations.</p> <p>We are building strong backend solutions for ingesting observability data. Our core focus is on building a performant, reliable, scalable, secure and maintainable backend that fulfills product requirements. We take responsibility for what we build, and therefore are also responsible for keeping the system running, and ensuring reliable quality gates and safe deployment mechanisms, as well as assisting in support cases.&nbsp;</p> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li>Design, implement, deploy and maintain high-performing, scalable features within the different products we own, being the most critical ones Managed Inputs (mOTLP endpoints) and Managed Integrations (Agentless architecture) across the three main cloud providers.</li> <li>Take ownership of projects and features, leading them from concept to delivery.</li> <li>Provide engineering level support to escalated customer cases, on a rotation basis.</li> <li>Provide mentorship and feedback to peers through pull request reviews, ensuring code quality and promoting best practices within the team.</li> <li>Monitor alerts, build SLIs and SLOs and ensure system stability.</li> <li>Cultivate a positive, inclusive, and collaborative team culture across timezones.</li> <li>You will be on call for services we own (current rotation is 12h/day/week every 8-10 weeks)</li> </ul> <h3>What You Bring</h3> <ul> <li>Intermediate to Expert Go skills with strong analytical, debugging, and troubleshooting skills.</li> <li>Hands-on experience with Kubernetes, IaC (Terraform) and Kafka</li> <li>At least Intermediate experience with Observability (tracing, metrics, logs, profiling)&nbsp;</li> <li>Strong understanding of microservice architecture and distributed systems, ability to understand tradeoffs between different solutions and familiarity with several parts and challenges for designing such systems.</li> <li>A positive attitude and a curious mindset with commitment to learning and self-enablement</li> <li>Ability to conduct root cause analysis and investigating to find the bottom of issues rather than accepting unexpected system behavior</li> <li>Ability to work independently in a globally distributed team, while ensuring to collaborate and share knowledge with colleagues.</li> <li>Experience with or interest in OpenTelemetry</li> <li>You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</li> <li>Demonstrated experience leveraging AI-assisted development tools to accelerate feature development, debug complex systems, and optimize existing codebases.</li> </ul> <h3>Bonus Points</h3> <ul> <li>Experience in designing scalable, high-availability services and applications ingesting terabytes per day.</li> <li>Experience with operational stability as responder or incident commander</li> <li>Experience with Elasticsearch and/or Kibana</li> <li>Passion for open-source development and contributions to community projects (doesn’t have to be ours).</li> <li>Experience in full remote teams</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
-    "posted_at": "2026-09-17T07:39:17-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 61,
+    "id": 81,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -576,7 +592,23 @@
     "reasoning": null
   },
   {
-    "id": 92,
+    "id": 80,
+    "external_id": "8207678",
+    "source": "greenhouse",
+    "company": "Elastic",
+    "title": "Senior Software Engineer -Observability, Managed Inputs ",
+    "location": "Romania",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.elastic.co/jobs?gh_jid=8207678&gh_jid=8207678",
+    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <p>As part of the Observability organization and inside the Streams program, the Managed Inputs team builds high-performing backend ingestion pipelines. We collect telemetry across diverse environments—including Elastic Agents, agentless setups, OpenTelemetry collectors, and cloud sources via Elastic Cloud Forwarders—then process and store this information to power seamless, intuitive user experiences within Kibana.</p> <p>Elastic's Streams program is the unified platform for getting data into Elasticsearch from edge collection all the way through cloud processing. We accept any type of data generated at the edge (Elastic Agent, Elastic Classic APM Agents, Beats, any OTel SDK…) and we process and route the data to several destinations.</p> <p>We are building strong backend solutions for ingesting observability data. Our core focus is on building a performant, reliable, scalable, secure and maintainable backend that fulfills product requirements. We take responsibility for what we build, and therefore are also responsible for keeping the system running, and ensuring reliable quality gates and safe deployment mechanisms, as well as assisting in support cases.&nbsp;</p> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li>Design, implement, deploy and maintain high-performing, scalable features within the different products we own, being the most critical ones Managed Inputs (mOTLP endpoints) and Managed Integrations (Agentless architecture) across the three main cloud providers.</li> <li>Take ownership of projects and features, leading them from concept to delivery.</li> <li>Provide engineering level support to escalated customer cases, on a rotation basis.</li> <li>Provide mentorship and feedback to peers through pull request reviews, ensuring code quality and promoting best practices within the team.</li> <li>Monitor alerts, build SLIs and SLOs and ensure system stability.</li> <li>Cultivate a positive, inclusive, and collaborative team culture across timezones.</li> <li>You will be on call for services we own (current rotation is 12h/day/week every 8-10 weeks)</li> </ul> <h3>What You Bring</h3> <ul> <li>Intermediate to Expert Go skills with strong analytical, debugging, and troubleshooting skills.</li> <li>Hands-on experience with Kubernetes, IaC (Terraform) and Kafka</li> <li>At least Intermediate experience with Observability (tracing, metrics, logs, profiling)&nbsp;</li> <li>Strong understanding of microservice architecture and distributed systems, ability to understand tradeoffs between different solutions and familiarity with several parts and challenges for designing such systems.</li> <li>A positive attitude and a curious mindset with commitment to learning and self-enablement</li> <li>Ability to conduct root cause analysis and investigating to find the bottom of issues rather than accepting unexpected system behavior</li> <li>Ability to work independently in a globally distributed team, while ensuring to collaborate and share knowledge with colleagues.</li> <li>Experience with or interest in OpenTelemetry</li> <li>You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</li> <li>Demonstrated experience leveraging AI-assisted development tools to accelerate feature development, debug complex systems, and optimize existing codebases.</li> </ul> <h3>Bonus Points</h3> <ul> <li>Experience in designing scalable, high-availability services and applications ingesting terabytes per day.</li> <li>Experience with operational stability as responder or incident commander</li> <li>Experience with Elasticsearch and/or Kibana</li> <li>Passion for open-source development and contributions to community projects (doesn’t have to be ours).</li> <li>Experience in full remote teams</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
+    "posted_at": "2026-09-17T07:39:17-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 58,
     "external_id": "8109295",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -592,7 +624,7 @@
     "reasoning": null
   },
   {
-    "id": 31,
+    "id": 26,
     "external_id": "4917464101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -608,7 +640,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 17,
     "external_id": "8107420",
     "source": "greenhouse",
     "company": "Adyen",
@@ -624,7 +656,7 @@
     "reasoning": null
   },
   {
-    "id": 6,
+    "id": 3,
     "external_id": "ea1d57c5-1553-49ec-b940-353bdb35e4c0",
     "source": "ashby",
     "company": "Docebo",
@@ -640,7 +672,7 @@
     "reasoning": null
   },
   {
-    "id": 63,
+    "id": 82,
     "external_id": "8204978",
     "source": "greenhouse",
     "company": "Elastic",
@@ -656,7 +688,7 @@
     "reasoning": null
   },
   {
-    "id": 73,
+    "id": 54,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -672,7 +704,7 @@
     "reasoning": null
   },
   {
-    "id": 74,
+    "id": 55,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -688,7 +720,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 12,
     "external_id": "7720026",
     "source": "greenhouse",
     "company": "Adyen",
@@ -704,7 +736,7 @@
     "reasoning": null
   },
   {
-    "id": 33,
+    "id": 28,
     "external_id": "4830653101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -720,7 +752,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 10,
     "external_id": "7369512",
     "source": "greenhouse",
     "company": "Adyen",
@@ -736,7 +768,7 @@
     "reasoning": null
   },
   {
-    "id": 13,
+    "id": 9,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -752,7 +784,7 @@
     "reasoning": null
   },
   {
-    "id": 40,
+    "id": 35,
     "external_id": "8522265002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -768,7 +800,7 @@
     "reasoning": null
   },
   {
-    "id": 41,
+    "id": 94,
     "external_id": "4713031006",
     "source": "greenhouse",
     "company": "Neo4j",
@@ -784,7 +816,7 @@
     "reasoning": null
   },
   {
-    "id": 9,
+    "id": 21,
     "external_id": "7656920",
     "source": "greenhouse",
     "company": "N26",
@@ -800,7 +832,7 @@
     "reasoning": null
   },
   {
-    "id": 27,
+    "id": 53,
     "external_id": "6656228",
     "source": "greenhouse",
     "company": "Monzo",
@@ -816,7 +848,7 @@
     "reasoning": null
   },
   {
-    "id": 26,
+    "id": 52,
     "external_id": "6758449",
     "source": "greenhouse",
     "company": "Monzo",
@@ -832,7 +864,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 51,
     "external_id": "6656737",
     "source": "greenhouse",
     "company": "Monzo",
@@ -848,7 +880,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 50,
     "external_id": "6945371",
     "source": "greenhouse",
     "company": "Monzo",
@@ -864,7 +896,7 @@
     "reasoning": null
   },
   {
-    "id": 23,
+    "id": 49,
     "external_id": "7343996",
     "source": "greenhouse",
     "company": "Monzo",
@@ -880,7 +912,7 @@
     "reasoning": null
   },
   {
-    "id": 55,
+    "id": 74,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -896,7 +928,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 7,
     "external_id": "7618901",
     "source": "greenhouse",
     "company": "Adyen",
@@ -912,7 +944,7 @@
     "reasoning": null
   },
   {
-    "id": 12,
+    "id": 8,
     "external_id": "7953778",
     "source": "greenhouse",
     "company": "Adyen",
@@ -928,7 +960,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 18,
     "external_id": "8003083",
     "source": "greenhouse",
     "company": "Adyen",
@@ -944,7 +976,7 @@
     "reasoning": null
   },
   {
-    "id": 20,
+    "id": 16,
     "external_id": "8179443",
     "source": "greenhouse",
     "company": "Adyen",
@@ -960,7 +992,7 @@
     "reasoning": null
   },
   {
-    "id": 17,
+    "id": 13,
     "external_id": "7941728",
     "source": "greenhouse",
     "company": "Adyen",
@@ -976,7 +1008,7 @@
     "reasoning": null
   },
   {
-    "id": 71,
+    "id": 90,
     "external_id": "8119456",
     "source": "greenhouse",
     "company": "Elastic",
@@ -992,23 +1024,7 @@
     "reasoning": null
   },
   {
-    "id": 70,
-    "external_id": "8161695",
-    "source": "greenhouse",
-    "company": "Elastic",
-    "title": "Senior Software Engineer - Vector Search - Elasticsearch",
-    "location": "Romania",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8161695&gh_jid=8161695",
-    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fgplg-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\"><span data-offset-key=\"fgplg-0-0\"><span data-text=\"true\">We're looking for a Senior Software Engineer to join the Elasticsearch - Search Relevance team. This globally-distributed team of expert engineers focuses on delivering a robust and feature-rich search experience, including contributing to improving the search experience in Lucene. </span></span><span id=\"popover-trigger-:r1v:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-1-0\"><span data-text=\"true\">This technical leader is </span></span></span><span id=\"popover-trigger-:r21:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"fgplg-2-0\"><span data-text=\"true\">responsible for</span></span></span><span id=\"popover-trigger-:r23:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-3-0\"><span data-text=\"true\"> contributing to the technical direction and vision for our search capabilities, including design and implementation of new search features, enhancements to search functionality, and resolving bugs.</span></span></span></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\">&nbsp;</div> </div> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"21sim-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"21sim-0-0\"><span data-offset-key=\"21sim-0-0\"><span data-text=\"true\">Our company is distributed by intention. We hire the best engineers we can find wherever they are, whoever they are. We collaborate across continents every day over email, GitHub, Zoom, and Slack. At our best, we write fast, scalable and intuitive software. We believe that the best way to do that is to </span></span><span id=\"popover-trigger-:r25:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-1-0\"><span data-text=\"true\">empower</span></span></span><span data-offset-key=\"21sim-2-0\"><span data-text=\"true\"> individual engineers, code review every change, </span></span><span id=\"popover-trigger-:r27:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-3-0\"><span data-text=\"true\">decide</span></span></span><span data-offset-key=\"21sim-4-0\"><span data-text=\"true\"> big things by consensus, and strive for incremental improvements.</span></span></div> </div> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"364fr-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"364fr-0-0\"><span data-offset-key=\"364fr-0-0\"><span data-text=\"true\">Lead initiatives within Elasticsearch to produce an industry-leading search engine offering, supplying unparalleled </span></span><span id=\"popover-trigger-:r29:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"364fr-1-0\"><span data-text=\"true\">speed</span></span></span><span data-offset-key=\"364fr-2-0\"><span data-text=\"true\"> and relevance in search.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"14fk5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"14fk5-0-0\"><span data-offset-key=\"14fk5-0-0\"><span data-text=\"true\">Contribute to Elasticsearch full time, building new search features and fixing intriguing bugs, all while making the code easier to understand. Sometimes you'll need to invent a new algorithm or data structure. Or find one and implement it. Sometimes you'll need to get close to the operating system and hardware.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fdtt-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fdtt-0-0\"><span data-offset-key=\"fdtt-0-0\"><span data-text=\"true\">Work with a globally distributed team of </span></span><span id=\"popover-trigger-:r2b:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"fdtt-1-0\"><span data-text=\"true\">experienced</span></span></span><span data-offset-key=\"fdtt-2-0\"><span data-text=\"true\"> engineers focused on the vector search capabilities of Elasticsearch.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"cl2da-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cl2da-0-0\"><span data-offset-key=\"cl2da-0-0\"><span data-text=\"true\">Be an expert on Elasticsearch search relevance. You'll identify and drive improvements this area based on your questions and your instincts.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ck5it-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ck5it-0-0\"><span data-offset-key=\"ck5it-0-0\"><span data-text=\"true\">Work with community members from all over the world on issues and pull requests, sometimes triaging them and handing them off to other experts and sometimes handling them yourself.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b0t23-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b0t23-0-0\"><span data-offset-key=\"b0t23-0-0\"><span data-text=\"true\">Write idiomatic modern Java -- Elasticsearch is 99.8% Java!</span></span></div> </li> </ul> <h3>What You Bring&nbsp;</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">You have implemented novel techniques in vector similarity on a search platform with a large user base or progressed the field of academic research in vector similarity information retrieval.</span></span></li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">Professional experience with search or vector databases, and you used HNSW, IVF, or other relevant algorithms and libraries on search platforms at scale.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"9chiv-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9chiv-0-0\"><span data-offset-key=\"9chiv-0-0\"><span data-text=\"true\">You have solid skills in core Java and are conversant in the standard library of data structures and concurrency constructs, as well as other features like lambdas.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3vu8e-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3vu8e-0-0\"><span data-offset-key=\"3vu8e-0-0\"><span data-text=\"true\">You work with a high level of autonomy and are able to take on projects and guide them from beginning to end. This covers both technical design and working with other engineers to develop needed components.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b4sg5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b4sg5-0-0\"><span data-offset-key=\"b4sg5-0-0\"><span data-text=\"true\">You're comfortable developing collaboratively. Giving and receiving feedback on code and approaches and APIs is hard! Bonus points if you've collaborated over the internet because that's harder. Double bonus points for asynchronous collaboration over the internet. That's even harder, but we do it anyway because it's the best way we know how to build software.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"c2l1c-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"c2l1c-0-0\"><span data-offset-key=\"c2l1c-0-0\"><span data-text=\"true\">You've used several data storage technologies like Elasticsearch, Solr, PostgreSQL, MongoDB, or Cassandra and have some idea how they work and why they work that way.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3unv6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3unv6-0-0\"><span data-offset-key=\"3unv6-0-0\"><span data-text=\"true\">You have a proven track record of using AI to accelerate development, debug complex systems, and optimize code, while still owning the final outcomes.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"5t766-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5t766-0-0\"><span data-offset-key=\"5t766-0-0\"><span data-text=\"true\">You possess the ability to collaborate across functions and teams and seamlessly transition between different projects, codebases, or teams based on business priorities</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"8qbqh-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8qbqh-0-0\"><span data-offset-key=\"8qbqh-0-0\"><span data-text=\"true\">You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</span></span></div> </li> </ul> <h3>Bonus Points</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"de8or-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"de8or-0-0\"><span data-offset-key=\"de8or-0-0\"><span data-text=\"true\">You've built things with Elasticsearch before.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b3l9l-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b3l9l-0-0\"><span data-offset-key=\"b3l9l-0-0\"><span data-text=\"true\">You've worked with open source projects and are </span></span><span id=\"popover-trigger-:r2d:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"b3l9l-1-0\"><span data-text=\"true\">familiar</span></span></span><span data-offset-key=\"b3l9l-2-0\"><span data-text=\"true\"> with different styles of source control workflow and continuous integration.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"6nedj-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6nedj-0-0\"><span data-offset-key=\"6nedj-0-0\"><span data-text=\"true\">Experience with data storage technology.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ar8t3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ar8t3-0-0\"><span data-offset-key=\"ar8t3-0-0\"><span data-text=\"true\">You have experience designing, leading, and owning cross-functional initiatives.</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
-    "posted_at": "2026-09-10T20:07:01-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 69,
+    "id": 89,
     "external_id": "8161519",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1024,7 +1040,23 @@
     "reasoning": null
   },
   {
-    "id": 68,
+    "id": 88,
+    "external_id": "8161695",
+    "source": "greenhouse",
+    "company": "Elastic",
+    "title": "Senior Software Engineer - Vector Search - Elasticsearch",
+    "location": "Romania",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.elastic.co/jobs?gh_jid=8161695&gh_jid=8161695",
+    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fgplg-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\"><span data-offset-key=\"fgplg-0-0\"><span data-text=\"true\">We're looking for a Senior Software Engineer to join the Elasticsearch - Search Relevance team. This globally-distributed team of expert engineers focuses on delivering a robust and feature-rich search experience, including contributing to improving the search experience in Lucene. </span></span><span id=\"popover-trigger-:r1v:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-1-0\"><span data-text=\"true\">This technical leader is </span></span></span><span id=\"popover-trigger-:r21:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"fgplg-2-0\"><span data-text=\"true\">responsible for</span></span></span><span id=\"popover-trigger-:r23:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-3-0\"><span data-text=\"true\"> contributing to the technical direction and vision for our search capabilities, including design and implementation of new search features, enhancements to search functionality, and resolving bugs.</span></span></span></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\">&nbsp;</div> </div> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"21sim-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"21sim-0-0\"><span data-offset-key=\"21sim-0-0\"><span data-text=\"true\">Our company is distributed by intention. We hire the best engineers we can find wherever they are, whoever they are. We collaborate across continents every day over email, GitHub, Zoom, and Slack. At our best, we write fast, scalable and intuitive software. We believe that the best way to do that is to </span></span><span id=\"popover-trigger-:r25:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-1-0\"><span data-text=\"true\">empower</span></span></span><span data-offset-key=\"21sim-2-0\"><span data-text=\"true\"> individual engineers, code review every change, </span></span><span id=\"popover-trigger-:r27:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-3-0\"><span data-text=\"true\">decide</span></span></span><span data-offset-key=\"21sim-4-0\"><span data-text=\"true\"> big things by consensus, and strive for incremental improvements.</span></span></div> </div> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"364fr-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"364fr-0-0\"><span data-offset-key=\"364fr-0-0\"><span data-text=\"true\">Lead initiatives within Elasticsearch to produce an industry-leading search engine offering, supplying unparalleled </span></span><span id=\"popover-trigger-:r29:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"364fr-1-0\"><span data-text=\"true\">speed</span></span></span><span data-offset-key=\"364fr-2-0\"><span data-text=\"true\"> and relevance in search.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"14fk5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"14fk5-0-0\"><span data-offset-key=\"14fk5-0-0\"><span data-text=\"true\">Contribute to Elasticsearch full time, building new search features and fixing intriguing bugs, all while making the code easier to understand. Sometimes you'll need to invent a new algorithm or data structure. Or find one and implement it. Sometimes you'll need to get close to the operating system and hardware.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fdtt-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fdtt-0-0\"><span data-offset-key=\"fdtt-0-0\"><span data-text=\"true\">Work with a globally distributed team of </span></span><span id=\"popover-trigger-:r2b:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"fdtt-1-0\"><span data-text=\"true\">experienced</span></span></span><span data-offset-key=\"fdtt-2-0\"><span data-text=\"true\"> engineers focused on the vector search capabilities of Elasticsearch.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"cl2da-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cl2da-0-0\"><span data-offset-key=\"cl2da-0-0\"><span data-text=\"true\">Be an expert on Elasticsearch search relevance. You'll identify and drive improvements this area based on your questions and your instincts.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ck5it-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ck5it-0-0\"><span data-offset-key=\"ck5it-0-0\"><span data-text=\"true\">Work with community members from all over the world on issues and pull requests, sometimes triaging them and handing them off to other experts and sometimes handling them yourself.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b0t23-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b0t23-0-0\"><span data-offset-key=\"b0t23-0-0\"><span data-text=\"true\">Write idiomatic modern Java -- Elasticsearch is 99.8% Java!</span></span></div> </li> </ul> <h3>What You Bring&nbsp;</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">You have implemented novel techniques in vector similarity on a search platform with a large user base or progressed the field of academic research in vector similarity information retrieval.</span></span></li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">Professional experience with search or vector databases, and you used HNSW, IVF, or other relevant algorithms and libraries on search platforms at scale.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"9chiv-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9chiv-0-0\"><span data-offset-key=\"9chiv-0-0\"><span data-text=\"true\">You have solid skills in core Java and are conversant in the standard library of data structures and concurrency constructs, as well as other features like lambdas.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3vu8e-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3vu8e-0-0\"><span data-offset-key=\"3vu8e-0-0\"><span data-text=\"true\">You work with a high level of autonomy and are able to take on projects and guide them from beginning to end. This covers both technical design and working with other engineers to develop needed components.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b4sg5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b4sg5-0-0\"><span data-offset-key=\"b4sg5-0-0\"><span data-text=\"true\">You're comfortable developing collaboratively. Giving and receiving feedback on code and approaches and APIs is hard! Bonus points if you've collaborated over the internet because that's harder. Double bonus points for asynchronous collaboration over the internet. That's even harder, but we do it anyway because it's the best way we know how to build software.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"c2l1c-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"c2l1c-0-0\"><span data-offset-key=\"c2l1c-0-0\"><span data-text=\"true\">You've used several data storage technologies like Elasticsearch, Solr, PostgreSQL, MongoDB, or Cassandra and have some idea how they work and why they work that way.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3unv6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3unv6-0-0\"><span data-offset-key=\"3unv6-0-0\"><span data-text=\"true\">You have a proven track record of using AI to accelerate development, debug complex systems, and optimize code, while still owning the final outcomes.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"5t766-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5t766-0-0\"><span data-offset-key=\"5t766-0-0\"><span data-text=\"true\">You possess the ability to collaborate across functions and teams and seamlessly transition between different projects, codebases, or teams based on business priorities</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"8qbqh-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8qbqh-0-0\"><span data-offset-key=\"8qbqh-0-0\"><span data-text=\"true\">You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</span></span></div> </li> </ul> <h3>Bonus Points</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"de8or-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"de8or-0-0\"><span data-offset-key=\"de8or-0-0\"><span data-text=\"true\">You've built things with Elasticsearch before.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b3l9l-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b3l9l-0-0\"><span data-offset-key=\"b3l9l-0-0\"><span data-text=\"true\">You've worked with open source projects and are </span></span><span id=\"popover-trigger-:r2d:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"b3l9l-1-0\"><span data-text=\"true\">familiar</span></span></span><span data-offset-key=\"b3l9l-2-0\"><span data-text=\"true\"> with different styles of source control workflow and continuous integration.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"6nedj-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6nedj-0-0\"><span data-offset-key=\"6nedj-0-0\"><span data-text=\"true\">Experience with data storage technology.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ar8t3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ar8t3-0-0\"><span data-offset-key=\"ar8t3-0-0\"><span data-text=\"true\">You have experience designing, leading, and owning cross-functional initiatives.</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
+    "posted_at": "2026-09-10T20:07:01-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 87,
     "external_id": "8074855",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1040,7 +1072,7 @@
     "reasoning": null
   },
   {
-    "id": 67,
+    "id": 86,
     "external_id": "8074894",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1056,7 +1088,7 @@
     "reasoning": null
   },
   {
-    "id": 66,
+    "id": 85,
     "external_id": "8111792",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1072,23 +1104,7 @@
     "reasoning": null
   },
   {
-    "id": 65,
-    "external_id": "8161435",
-    "source": "greenhouse",
-    "company": "Elastic",
-    "title": "Senior Software Engineer - Search Algorithms - Elasticsearch",
-    "location": "Romania",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8161435&gh_jid=8161435",
-    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fgplg-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\"><span data-offset-key=\"fgplg-0-0\"><span data-text=\"true\">We're looking for a Senior Software Engineer to join the Elasticsearch - Search Relevance team. This globally-distributed team of expert engineers focuses on delivering a robust and feature-rich search experience, including contributing to improving the search experience in Lucene. </span></span><span id=\"popover-trigger-:r1v:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-1-0\"><span data-text=\"true\">This technical leader is </span></span></span><span id=\"popover-trigger-:r21:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"fgplg-2-0\"><span data-text=\"true\">responsible for</span></span></span><span id=\"popover-trigger-:r23:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-3-0\"><span data-text=\"true\"> contributing to the technical direction and vision for our search capabilities, including design and implementation of new search features, enhancements to search functionality, and resolving bugs.</span></span></span></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\">&nbsp;</div> </div> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"21sim-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"21sim-0-0\"><span data-offset-key=\"21sim-0-0\"><span data-text=\"true\">Our company is distributed by intention. We hire the best engineers we can find wherever they are, whoever they are. We collaborate across continents every day over email, GitHub, Zoom, and Slack. At our best, we write fast, scalable and intuitive software. We believe that the best way to do that is to </span></span><span id=\"popover-trigger-:r25:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-1-0\"><span data-text=\"true\">empower</span></span></span><span data-offset-key=\"21sim-2-0\"><span data-text=\"true\"> individual engineers, code review every change, </span></span><span id=\"popover-trigger-:r27:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-3-0\"><span data-text=\"true\">decide</span></span></span><span data-offset-key=\"21sim-4-0\"><span data-text=\"true\"> big things by consensus, and strive for incremental improvements.</span></span></div> </div> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"364fr-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"364fr-0-0\"><span data-offset-key=\"364fr-0-0\"><span data-text=\"true\">Lead initiatives within Elasticsearch to produce an industry-leading search engine offering, supplying unparalleled </span></span><span id=\"popover-trigger-:r29:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"364fr-1-0\"><span data-text=\"true\">speed</span></span></span><span data-offset-key=\"364fr-2-0\"><span data-text=\"true\"> and relevance in search.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"14fk5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"14fk5-0-0\"><span data-offset-key=\"14fk5-0-0\"><span data-text=\"true\">Contribute to Elasticsearch full time, building new search features and fixing intriguing bugs, all while making the code easier to understand. Sometimes you'll need to invent a new algorithm or data structure. Or find one and implement it. Sometimes you'll need to get close to the operating system and hardware.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fdtt-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fdtt-0-0\"><span data-offset-key=\"fdtt-0-0\"><span data-text=\"true\">Work with a globally distributed team of </span></span><span id=\"popover-trigger-:r2b:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"fdtt-1-0\"><span data-text=\"true\">experienced</span></span></span><span data-offset-key=\"fdtt-2-0\"><span data-text=\"true\"> engineers focused on the vector search capabilities of Elasticsearch.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"cl2da-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cl2da-0-0\"><span data-offset-key=\"cl2da-0-0\"><span data-text=\"true\">Be an expert on Elasticsearch search relevance. You'll identify and drive improvements this area based on your questions and your instincts.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ck5it-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ck5it-0-0\"><span data-offset-key=\"ck5it-0-0\"><span data-text=\"true\">Work with community members from all over the world on issues and pull requests, sometimes triaging them and handing them off to other experts and sometimes handling them yourself.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b0t23-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b0t23-0-0\"><span data-offset-key=\"b0t23-0-0\"><span data-text=\"true\">Write idiomatic modern Java -- Elasticsearch is 99.8% Java!</span></span></div> </li> </ul> <h3>What You Bring&nbsp;</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">Professional experience with search or vector databases, and you used HNSW, IVF, or other relevant algorithms and libraries on search platforms at scale.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"9chiv-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9chiv-0-0\"><span data-offset-key=\"9chiv-0-0\"><span data-text=\"true\">You have solid skills in core Java and are conversant in the standard library of data structures and concurrency constructs, as well as other features like lambdas.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3vu8e-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3vu8e-0-0\"><span data-offset-key=\"3vu8e-0-0\"><span data-text=\"true\">You work with a high level of autonomy and are able to take on projects and guide them from beginning to end. This covers both technical design and working with other engineers to develop needed components.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b4sg5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b4sg5-0-0\"><span data-offset-key=\"b4sg5-0-0\"><span data-text=\"true\">You're comfortable developing collaboratively. Giving and receiving feedback on code and approaches and APIs is hard! Bonus points if you've collaborated over the internet because that's harder. Double bonus points for asynchronous collaboration over the internet. That's even harder, but we do it anyway because it's the best way we know how to build software.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"c2l1c-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"c2l1c-0-0\"><span data-offset-key=\"c2l1c-0-0\"><span data-text=\"true\">You've used several data storage technologies like Elasticsearch, Solr, PostgreSQL, MongoDB, or Cassandra and have some idea how they work and why they work that way.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3unv6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3unv6-0-0\"><span data-offset-key=\"3unv6-0-0\"><span data-text=\"true\">You have a proven track record of using AI to accelerate development, debug complex systems, and optimize code, while still owning the final outcomes.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"5t766-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5t766-0-0\"><span data-offset-key=\"5t766-0-0\"><span data-text=\"true\">You possess the ability to collaborate across functions and teams and seamlessly transition between different projects, codebases, or teams based on business priorities</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"8qbqh-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8qbqh-0-0\"><span data-offset-key=\"8qbqh-0-0\"><span data-text=\"true\">You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</span></span></div> </li> </ul> <h3>Bonus Points</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"de8or-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"de8or-0-0\"><span data-offset-key=\"de8or-0-0\"><span data-text=\"true\">You've built things with Elasticsearch before.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b3l9l-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b3l9l-0-0\"><span data-offset-key=\"b3l9l-0-0\"><span data-text=\"true\">You've worked with open source projects and are </span></span><span id=\"popover-trigger-:r2d:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"b3l9l-1-0\"><span data-text=\"true\">familiar</span></span></span><span data-offset-key=\"b3l9l-2-0\"><span data-text=\"true\"> with different styles of source control workflow and continuous integration.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"6nedj-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6nedj-0-0\"><span data-offset-key=\"6nedj-0-0\"><span data-text=\"true\">Experience with data storage technology.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ar8t3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ar8t3-0-0\"><span data-offset-key=\"ar8t3-0-0\"><span data-text=\"true\">You have experience designing, leading, and owning cross-functional initiatives.</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
-    "posted_at": "2026-09-10T20:07:01-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 64,
+    "id": 84,
     "external_id": "8161419",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1104,7 +1120,23 @@
     "reasoning": null
   },
   {
-    "id": 60,
+    "id": 83,
+    "external_id": "8161435",
+    "source": "greenhouse",
+    "company": "Elastic",
+    "title": "Senior Software Engineer - Search Algorithms - Elasticsearch",
+    "location": "Romania",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.elastic.co/jobs?gh_jid=8161435&gh_jid=8161435",
+    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fgplg-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\"><span data-offset-key=\"fgplg-0-0\"><span data-text=\"true\">We're looking for a Senior Software Engineer to join the Elasticsearch - Search Relevance team. This globally-distributed team of expert engineers focuses on delivering a robust and feature-rich search experience, including contributing to improving the search experience in Lucene. </span></span><span id=\"popover-trigger-:r1v:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-1-0\"><span data-text=\"true\">This technical leader is </span></span></span><span id=\"popover-trigger-:r21:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"fgplg-2-0\"><span data-text=\"true\">responsible for</span></span></span><span id=\"popover-trigger-:r23:\" class=\"chakra-text css-bcri66\"><span data-offset-key=\"fgplg-3-0\"><span data-text=\"true\"> contributing to the technical direction and vision for our search capabilities, including design and implementation of new search features, enhancements to search functionality, and resolving bugs.</span></span></span></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgplg-0-0\">&nbsp;</div> </div> <div class=\"p\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"21sim-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"21sim-0-0\"><span data-offset-key=\"21sim-0-0\"><span data-text=\"true\">Our company is distributed by intention. We hire the best engineers we can find wherever they are, whoever they are. We collaborate across continents every day over email, GitHub, Zoom, and Slack. At our best, we write fast, scalable and intuitive software. We believe that the best way to do that is to </span></span><span id=\"popover-trigger-:r25:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-1-0\"><span data-text=\"true\">empower</span></span></span><span data-offset-key=\"21sim-2-0\"><span data-text=\"true\"> individual engineers, code review every change, </span></span><span id=\"popover-trigger-:r27:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"21sim-3-0\"><span data-text=\"true\">decide</span></span></span><span data-offset-key=\"21sim-4-0\"><span data-text=\"true\"> big things by consensus, and strive for incremental improvements.</span></span></div> </div> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"364fr-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"364fr-0-0\"><span data-offset-key=\"364fr-0-0\"><span data-text=\"true\">Lead initiatives within Elasticsearch to produce an industry-leading search engine offering, supplying unparalleled </span></span><span id=\"popover-trigger-:r29:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"364fr-1-0\"><span data-text=\"true\">speed</span></span></span><span data-offset-key=\"364fr-2-0\"><span data-text=\"true\"> and relevance in search.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"14fk5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"14fk5-0-0\"><span data-offset-key=\"14fk5-0-0\"><span data-text=\"true\">Contribute to Elasticsearch full time, building new search features and fixing intriguing bugs, all while making the code easier to understand. Sometimes you'll need to invent a new algorithm or data structure. Or find one and implement it. Sometimes you'll need to get close to the operating system and hardware.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"fdtt-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fdtt-0-0\"><span data-offset-key=\"fdtt-0-0\"><span data-text=\"true\">Work with a globally distributed team of </span></span><span id=\"popover-trigger-:r2b:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"fdtt-1-0\"><span data-text=\"true\">experienced</span></span></span><span data-offset-key=\"fdtt-2-0\"><span data-text=\"true\"> engineers focused on the vector search capabilities of Elasticsearch.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"cl2da-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cl2da-0-0\"><span data-offset-key=\"cl2da-0-0\"><span data-text=\"true\">Be an expert on Elasticsearch search relevance. You'll identify and drive improvements this area based on your questions and your instincts.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ck5it-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ck5it-0-0\"><span data-offset-key=\"ck5it-0-0\"><span data-text=\"true\">Work with community members from all over the world on issues and pull requests, sometimes triaging them and handing them off to other experts and sometimes handling them yourself.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b0t23-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b0t23-0-0\"><span data-offset-key=\"b0t23-0-0\"><span data-text=\"true\">Write idiomatic modern Java -- Elasticsearch is 99.8% Java!</span></span></div> </li> </ul> <h3>What You Bring&nbsp;</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"eo4le-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eo4le-0-0\"><span data-offset-key=\"eo4le-0-0\"><span data-text=\"true\">Professional experience with search or vector databases, and you used HNSW, IVF, or other relevant algorithms and libraries on search platforms at scale.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"9chiv-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9chiv-0-0\"><span data-offset-key=\"9chiv-0-0\"><span data-text=\"true\">You have solid skills in core Java and are conversant in the standard library of data structures and concurrency constructs, as well as other features like lambdas.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3vu8e-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3vu8e-0-0\"><span data-offset-key=\"3vu8e-0-0\"><span data-text=\"true\">You work with a high level of autonomy and are able to take on projects and guide them from beginning to end. This covers both technical design and working with other engineers to develop needed components.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b4sg5-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b4sg5-0-0\"><span data-offset-key=\"b4sg5-0-0\"><span data-text=\"true\">You're comfortable developing collaboratively. Giving and receiving feedback on code and approaches and APIs is hard! Bonus points if you've collaborated over the internet because that's harder. Double bonus points for asynchronous collaboration over the internet. That's even harder, but we do it anyway because it's the best way we know how to build software.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"c2l1c-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"c2l1c-0-0\"><span data-offset-key=\"c2l1c-0-0\"><span data-text=\"true\">You've used several data storage technologies like Elasticsearch, Solr, PostgreSQL, MongoDB, or Cassandra and have some idea how they work and why they work that way.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"3unv6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"3unv6-0-0\"><span data-offset-key=\"3unv6-0-0\"><span data-text=\"true\">You have a proven track record of using AI to accelerate development, debug complex systems, and optimize code, while still owning the final outcomes.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"5t766-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5t766-0-0\"><span data-offset-key=\"5t766-0-0\"><span data-text=\"true\">You possess the ability to collaborate across functions and teams and seamlessly transition between different projects, codebases, or teams based on business priorities</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"8qbqh-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8qbqh-0-0\"><span data-offset-key=\"8qbqh-0-0\"><span data-text=\"true\">You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</span></span></div> </li> </ul> <h3>Bonus Points</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"de8or-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"de8or-0-0\"><span data-offset-key=\"de8or-0-0\"><span data-text=\"true\">You've built things with Elasticsearch before.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"b3l9l-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"b3l9l-0-0\"><span data-offset-key=\"b3l9l-0-0\"><span data-text=\"true\">You've worked with open source projects and are </span></span><span id=\"popover-trigger-:r2d:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"b3l9l-1-0\"><span data-text=\"true\">familiar</span></span></span><span data-offset-key=\"b3l9l-2-0\"><span data-text=\"true\"> with different styles of source control workflow and continuous integration.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"6nedj-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6nedj-0-0\"><span data-offset-key=\"6nedj-0-0\"><span data-text=\"true\">Experience with data storage technology.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"bhr51\" data-offset-key=\"ar8t3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ar8t3-0-0\"><span data-offset-key=\"ar8t3-0-0\"><span data-text=\"true\">You have experience designing, leading, and owning cross-functional initiatives.</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>272.000 Lei</span><span class=\"divider\">&mdash;</span><span>430.200 Lei RON</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
+    "posted_at": "2026-09-10T20:07:01-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 79,
     "external_id": "8105634",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1120,7 +1152,7 @@
     "reasoning": null
   },
   {
-    "id": 59,
+    "id": 78,
     "external_id": "8161936",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1136,7 +1168,7 @@
     "reasoning": null
   },
   {
-    "id": 58,
+    "id": 77,
     "external_id": "8161837",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1152,7 +1184,7 @@
     "reasoning": null
   },
   {
-    "id": 57,
+    "id": 76,
     "external_id": "8001192",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1168,7 +1200,7 @@
     "reasoning": null
   },
   {
-    "id": 56,
+    "id": 75,
     "external_id": "8001191",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1184,7 +1216,7 @@
     "reasoning": null
   },
   {
-    "id": 54,
+    "id": 73,
     "external_id": "8162406",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1200,7 +1232,7 @@
     "reasoning": null
   },
   {
-    "id": 53,
+    "id": 72,
     "external_id": "8162407",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1216,7 +1248,7 @@
     "reasoning": null
   },
   {
-    "id": 50,
+    "id": 69,
     "external_id": "8162473",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1232,7 +1264,7 @@
     "reasoning": null
   },
   {
-    "id": 49,
+    "id": 68,
     "external_id": "8162474",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1248,7 +1280,7 @@
     "reasoning": null
   },
   {
-    "id": 48,
+    "id": 67,
     "external_id": "8138696",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1264,7 +1296,7 @@
     "reasoning": null
   },
   {
-    "id": 47,
+    "id": 66,
     "external_id": "8138694",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1280,7 +1312,7 @@
     "reasoning": null
   },
   {
-    "id": 45,
+    "id": 64,
     "external_id": "8096579",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1296,7 +1328,7 @@
     "reasoning": null
   },
   {
-    "id": 44,
+    "id": 63,
     "external_id": "8002562",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1312,7 +1344,7 @@
     "reasoning": null
   },
   {
-    "id": 43,
+    "id": 62,
     "external_id": "8002561",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1328,7 +1360,7 @@
     "reasoning": null
   },
   {
-    "id": 89,
+    "id": 93,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1344,7 +1376,7 @@
     "reasoning": null
   },
   {
-    "id": 88,
+    "id": 92,
     "external_id": "8078337",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1360,7 +1392,7 @@
     "reasoning": null
   },
   {
-    "id": 32,
+    "id": 27,
     "external_id": "4963986101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1376,7 +1408,7 @@
     "reasoning": null
   },
   {
-    "id": 36,
+    "id": 30,
     "external_id": "4963991101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1392,7 +1424,7 @@
     "reasoning": null
   },
   {
-    "id": 37,
+    "id": 32,
     "external_id": "4956003101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1408,7 +1440,7 @@
     "reasoning": null
   },
   {
-    "id": 4,
+    "id": 1,
     "external_id": "9fbfa9c6-e57c-43ab-b7c1-39cd7d7d801f",
     "source": "ashby",
     "company": "Mollie",
@@ -1424,7 +1456,7 @@
     "reasoning": null
   },
   {
-    "id": 34,
+    "id": 29,
     "external_id": "4961618101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1440,7 +1472,7 @@
     "reasoning": null
   },
   {
-    "id": 7,
+    "id": 19,
     "external_id": "8111543",
     "source": "greenhouse",
     "company": "N26",
@@ -1456,7 +1488,7 @@
     "reasoning": null
   },
   {
-    "id": 38,
+    "id": 33,
     "external_id": "7942504",
     "source": "greenhouse",
     "company": "Typeform",
@@ -1472,7 +1504,7 @@
     "reasoning": null
   },
   {
-    "id": 94,
+    "id": 60,
     "external_id": "14c5d693-7e85-4c26-8ca7-0b6f68fe6ace",
     "source": "ashby",
     "company": "OpenAI",
@@ -1483,22 +1515,6 @@
     "url": "https://jobs.ashbyhq.com/openai/14c5d693-7e85-4c26-8ca7-0b6f68fe6ace",
     "description": "",
     "posted_at": "2026-09-08T21:18:19.165+00:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 35,
-    "external_id": "4970937101",
-    "source": "greenhouse",
-    "company": "JetBrains",
-    "title": "Staff/Lead Software Developer (AI Agents & Integrations)",
-    "location": "Amsterdam, Netherlands; Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; London, United Kingdom; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Prague, Czech Republic; Remote, Germany; Warsaw, Poland; Yerevan, Armenia",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4970937101",
-    "description": "<p data-start=\"213\" data-end=\"305\">AI is fundamentally changing how developers write, understand, debug, and maintain software.</p> <p data-start=\"307\" data-end=\"665\">At JetBrains, we're exploring what an AI-native development experience should look like for C++ developers. We are looking for a senior technical leader to help shape this future by building AI-powered workflows, integrating coding agents into developer tools, and defining how CLion can become a first-class environment for AI-assisted software development.</p> <p data-start=\"667\" data-end=\"1126\">This is a highly hands-on role focused on technical leadership rather than people management. You should expect to spend most of your time prototyping, implementing, and validating AI-powered workflows while helping shape technical direction through hands-on engineering. You'll work at the intersection of developer tools, AI agents, IDE architecture, and product strategy while helping define how software developers work with AI in the future.</p> <h3><strong>Example problems you'll work on:</strong></h3> <ul data-start=\"1257\" data-end=\"1772\"> <li data-section-id=\"1kr8jn4\" data-start=\"1257\" data-end=\"1341\">How can coding agents become more effective when working with large C++ codebases?</li> <li data-section-id=\"1grdqsk\" data-start=\"1342\" data-end=\"1472\">How can CLion's debugging, code understanding, and navigation capabilities be integrated into AI-assisted development workflows?</li> <li data-section-id=\"1a96z5j\" data-start=\"1473\" data-end=\"1584\">How should AI-powered developer experiences be evaluated and benchmarked in real-world development scenarios?</li> <li data-section-id=\"x2tg27\" data-start=\"1585\" data-end=\"1657\">What capabilities should AI agents have access to inside a modern IDE?</li> <li data-section-id=\"1h33vb4\" data-start=\"1658\" data-end=\"1772\">How can we make CLion a better environment for developers who increasingly collaborate with AI tools and agents?</li> </ul> <h3><strong>In this role, you will:</strong></h3> <ul> <li data-section-id=\"ulv941\" data-start=\"167\" data-end=\"285\">Shape and deliver AI-powered features for CLion and C++ development workflows.</li> <li data-section-id=\"lhgmb6\" data-start=\"286\" data-end=\"417\">Design the architecture for AI integrations, agent tools, and C++-specific AI capabilities.</li> <li data-section-id=\"dripig\" data-start=\"418\" data-end=\"591\">Build practical benchmarks and evaluation frameworks for AI-assisted C++ development scenarios.</li> <li data-section-id=\"1gmdjb8\" data-start=\"592\" data-end=\"750\">Prototype and validate new AI workflows, including debugging, code understanding, refactoring, and project navigation.</li> <li data-section-id=\"1qfb96v\" data-start=\"751\" data-end=\"923\">Collaborate with product managers, ML engineers, QA engineers, stakeholders, and senior developers to shape and deliver the roadmap.</li> <li data-section-id=\"cg7clz\" data-start=\"924\" data-end=\"1109\">Work closely with JetBrains AI, ML, and product teams to help define the AI strategy for the C++ ecosystem.</li> <li data-section-id=\"1ew61mo\" data-start=\"1110\" data-end=\"1273\">Evaluate and prioritize AI initiatives, bringing new ideas and proposals that align with the broader JetBrains AI strategy.</li> <li data-section-id=\"mf99vh\" data-start=\"1274\" data-end=\"1465\">Contribute hands-on to technical design, software architecture, and implementation in a large, mature codebase.</li> <li data-section-id=\"1j853ei\" data-start=\"1466\" data-end=\"1604\">Help define a technical roadmap for AI agent and tool integrations in C++ development workflows.</li> <li data-section-id=\"10l7mut\" data-start=\"1605\" data-end=\"1737\">Build trust and alignment across the C++ Ecosystem, AI, Product, QA, and ML organizations</li> </ul> <h3><strong>We'd love to talk if you have:&nbsp;</strong></h3> <ul> <li>Significant software engineering experience as a Staff Engineer, Principal Engineer, Technical Lead, or similar senior technical role.</li> <li>Strong experience with Kotlin, Java, or other JVM technologies, or the ability to quickly become productive in a JVM-based codebase.</li> <li>Experience building AI-powered products, developer tools, coding assistants, agents, or LLM-based workflows.</li> <li data-section-id=\"u914ku\" data-start=\"4530\" data-end=\"4665\">Strong understanding of how modern coding agents operate, including tool calling, context management, MCP, and evaluation techniques.</li> <li data-section-id=\"878m62\" data-start=\"4755\" data-end=\"4843\">A track record of driving technical direction in ambiguous and rapidly evolving areas.</li> <li data-section-id=\"1lcrl1i\" data-start=\"4844\" data-end=\"4932\">Strong product instincts and an ability to balance innovation with practical delivery.</li> <li data-section-id=\"vtnivs\" data-start=\"4933\" data-end=\"5020\">Excellent communication skills and the ability to influence without formal authority.</li> </ul> <h3><strong>Nice to have</strong></h3> <ul data-start=\"1342\" data-end=\"1687\"> <li data-section-id=\"1b3ujlt\" data-start=\"1342\" data-end=\"1462\">Experience with C++ development workflows, compilers, debuggers, language tooling, or developer productivity products.</li> <li data-section-id=\"p2q2va\" data-start=\"1463\" data-end=\"1569\">Experience with IDE internals, language servers, code analysis, refactoring systems, or static analysis.</li> <li data-section-id=\"1axscea\" data-start=\"1570\" data-end=\"1633\">Experience leading small teams or acting as a technical lead.</li> <li data-section-id=\"ny4zci\" data-start=\"1634\" data-end=\"1687\">Experience working on AI-native developer products.</li> </ul> <h3 data-section-id=\"ctb2ez\" data-start=\"4418\" data-end=\"4445\"><strong>Why this role is unique</strong></h3> <p data-start=\"4781\" data-end=\"5174\">Rather than building generic chat experiences, you'll be working on challenges such as AI-assisted debugging, agent-powered code understanding, developer workflow automation, and evaluation systems for AI-powered development tools. Your work will directly influence products used by millions of developers worldwide and help shape JetBrains' broader vision for AI-powered software development.</p> <h3><strong>Why join JetBrains?&nbsp;</strong></h3> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li><strong>Relocation support. We help make your move as smooth and stress-free as possible. (keep if relevant for the role)</strong></li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.</p> <p>&nbsp;</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-DNI</span><br><br></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the <a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
-    "posted_at": "2026-09-08T10:17:38-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null
