@@ -1,6 +1,6 @@
 [
   {
-    "id": 90,
+    "id": 92,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -16,7 +16,7 @@
     "reasoning": null
   },
   {
-    "id": 91,
+    "id": 93,
     "external_id": "8157509",
     "source": "greenhouse",
     "company": "Twilio",
@@ -32,7 +32,7 @@
     "reasoning": null
   },
   {
-    "id": 30,
+    "id": 38,
     "external_id": "7985189003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -48,7 +48,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 14,
     "external_id": "8222839",
     "source": "greenhouse",
     "company": "N26",
@@ -64,7 +64,7 @@
     "reasoning": null
   },
   {
-    "id": 17,
+    "id": 26,
     "external_id": "7771629",
     "source": "greenhouse",
     "company": "Adyen",
@@ -80,7 +80,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 19,
     "external_id": "8179613",
     "source": "greenhouse",
     "company": "Adyen",
@@ -112,7 +112,7 @@
     "reasoning": null
   },
   {
-    "id": 40,
+    "id": 41,
     "external_id": "8225984",
     "source": "greenhouse",
     "company": "Elastic",
@@ -128,7 +128,7 @@
     "reasoning": null
   },
   {
-    "id": 32,
+    "id": 31,
     "external_id": "4976229101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -144,7 +144,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 6,
     "external_id": "7343996",
     "source": "greenhouse",
     "company": "Monzo",
@@ -160,7 +160,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 20,
     "external_id": "7908806",
     "source": "greenhouse",
     "company": "Adyen",
@@ -176,7 +176,7 @@
     "reasoning": null
   },
   {
-    "id": 41,
+    "id": 42,
     "external_id": "8224018",
     "source": "greenhouse",
     "company": "Elastic",
@@ -192,7 +192,7 @@
     "reasoning": null
   },
   {
-    "id": 4,
+    "id": 1,
     "external_id": "018e4ae4-eda1-4d10-8ae7-b78d52c13f72",
     "source": "ashby",
     "company": "Docebo",
@@ -208,7 +208,7 @@
     "reasoning": null
   },
   {
-    "id": 2,
+    "id": 4,
     "external_id": "60286fb7-715d-49a1-87a5-7a141400ddc6",
     "source": "ashby",
     "company": "Satispay",
@@ -224,7 +224,7 @@
     "reasoning": null
   },
   {
-    "id": 38,
+    "id": 37,
     "external_id": "4979524101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -240,7 +240,7 @@
     "reasoning": null
   },
   {
-    "id": 1,
+    "id": 3,
     "external_id": "2afa9f84-613e-4088-a367-cf109d8d87c4",
     "source": "ashby",
     "company": "Satispay",
@@ -256,7 +256,7 @@
     "reasoning": null
   },
   {
-    "id": 71,
+    "id": 72,
     "external_id": "8080263",
     "source": "greenhouse",
     "company": "Elastic",
@@ -272,7 +272,7 @@
     "reasoning": null
   },
   {
-    "id": 95,
+    "id": 91,
     "external_id": "8087739",
     "source": "greenhouse",
     "company": "Okta",
@@ -320,7 +320,7 @@
     "reasoning": null
   },
   {
-    "id": 31,
+    "id": 30,
     "external_id": "4696977101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -336,7 +336,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 24,
     "external_id": "7573921",
     "source": "greenhouse",
     "company": "Adyen",
@@ -352,7 +352,7 @@
     "reasoning": null
   },
   {
-    "id": 51,
+    "id": 52,
     "external_id": "8220151",
     "source": "greenhouse",
     "company": "Elastic",
@@ -368,7 +368,7 @@
     "reasoning": null
   },
   {
-    "id": 50,
+    "id": 51,
     "external_id": "8220111",
     "source": "greenhouse",
     "company": "Elastic",
@@ -384,7 +384,7 @@
     "reasoning": null
   },
   {
-    "id": 72,
+    "id": 40,
     "external_id": "8185412",
     "source": "greenhouse",
     "company": "Typeform",
@@ -400,7 +400,7 @@
     "reasoning": null
   },
   {
-    "id": 23,
+    "id": 13,
     "external_id": "8076441",
     "source": "greenhouse",
     "company": "N26",
@@ -497,22 +497,6 @@
   },
   {
     "id": 84,
-    "external_id": "7959962",
-    "source": "greenhouse",
-    "company": "Datadog",
-    "title": "Senior Software Engineer - REDAPL Graph Engine",
-    "location": "Dublin, Ireland; Madrid, Spain; Paris, France",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://careers.datadoghq.com/detail/7959962/?gh_jid=7959962",
-    "description": "<p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business&nbsp;</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Hybrid</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
-    "posted_at": "2026-09-18T14:57:30-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 83,
     "external_id": "7959966",
     "source": "greenhouse",
     "company": "Datadog",
@@ -522,6 +506,22 @@
     "employment_type": null,
     "url": "https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966",
     "description": "<div id=\"message-list_1786698316.066069\"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div><strong><em>Please note that the job is only available from the locations outlined.</em></strong>&nbsp;</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p>&nbsp;</p> <p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores.&nbsp;</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business .</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Remote</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
+    "posted_at": "2026-09-18T14:57:30-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 83,
+    "external_id": "7959962",
+    "source": "greenhouse",
+    "company": "Datadog",
+    "title": "Senior Software Engineer - REDAPL Graph Engine",
+    "location": "Dublin, Ireland; Madrid, Spain; Paris, France",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://careers.datadoghq.com/detail/7959962/?gh_jid=7959962",
+    "description": "<p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business&nbsp;</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Hybrid</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
     "posted_at": "2026-09-18T14:57:30-04:00",
     "tags": null,
     "verdict": null,
@@ -608,7 +608,7 @@
     "reasoning": null
   },
   {
-    "id": 45,
+    "id": 46,
     "external_id": "8198517",
     "source": "greenhouse",
     "company": "Elastic",
@@ -624,7 +624,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 25,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -640,7 +640,7 @@
     "reasoning": null
   },
   {
-    "id": 33,
+    "id": 32,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -656,7 +656,7 @@
     "reasoning": null
   },
   {
-    "id": 12,
+    "id": 21,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -672,7 +672,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 11,
     "external_id": "7811482",
     "source": "greenhouse",
     "company": "N26",
@@ -688,7 +688,7 @@
     "reasoning": null
   },
   {
-    "id": 3,
+    "id": 5,
     "external_id": "d65851c8-6737-4d0c-910c-27f37e93433b",
     "source": "ashby",
     "company": "Satispay",
@@ -704,7 +704,7 @@
     "reasoning": null
   },
   {
-    "id": 61,
+    "id": 62,
     "external_id": "8207678",
     "source": "greenhouse",
     "company": "Elastic",
@@ -720,7 +720,7 @@
     "reasoning": null
   },
   {
-    "id": 60,
+    "id": 61,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -736,7 +736,7 @@
     "reasoning": null
   },
   {
-    "id": 94,
+    "id": 90,
     "external_id": "8109295",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -752,7 +752,7 @@
     "reasoning": null
   },
   {
-    "id": 34,
+    "id": 33,
     "external_id": "4917464101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -768,7 +768,7 @@
     "reasoning": null
   },
   {
-    "id": 19,
+    "id": 28,
     "external_id": "8107420",
     "source": "greenhouse",
     "company": "Adyen",
@@ -784,7 +784,7 @@
     "reasoning": null
   },
   {
-    "id": 5,
+    "id": 2,
     "external_id": "ea1d57c5-1553-49ec-b940-353bdb35e4c0",
     "source": "ashby",
     "company": "Docebo",
@@ -800,7 +800,7 @@
     "reasoning": null
   },
   {
-    "id": 62,
+    "id": 63,
     "external_id": "8204978",
     "source": "greenhouse",
     "company": "Elastic",
@@ -816,7 +816,7 @@
     "reasoning": null
   },
   {
-    "id": 76,
+    "id": 75,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -832,7 +832,7 @@
     "reasoning": null
   },
   {
-    "id": 75,
+    "id": 76,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -848,7 +848,7 @@
     "reasoning": null
   },
   {
-    "id": 13,
+    "id": 22,
     "external_id": "7720026",
     "source": "greenhouse",
     "company": "Adyen",
@@ -864,7 +864,7 @@
     "reasoning": null
   },
   {
-    "id": 36,
+    "id": 35,
     "external_id": "4830653101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -880,7 +880,7 @@
     "reasoning": null
   },
   {
-    "id": 9,
+    "id": 18,
     "external_id": "7369512",
     "source": "greenhouse",
     "company": "Adyen",
@@ -896,7 +896,7 @@
     "reasoning": null
   },
   {
-    "id": 8,
+    "id": 17,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -944,7 +944,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 12,
     "external_id": "7656920",
     "source": "greenhouse",
     "company": "N26",
@@ -960,7 +960,7 @@
     "reasoning": null
   },
   {
-    "id": 29,
+    "id": 10,
     "external_id": "6656228",
     "source": "greenhouse",
     "company": "Monzo",
@@ -976,7 +976,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 9,
     "external_id": "6758449",
     "source": "greenhouse",
     "company": "Monzo",
@@ -992,7 +992,7 @@
     "reasoning": null
   },
   {
-    "id": 27,
+    "id": 8,
     "external_id": "6656737",
     "source": "greenhouse",
     "company": "Monzo",
@@ -1008,7 +1008,7 @@
     "reasoning": null
   },
   {
-    "id": 26,
+    "id": 7,
     "external_id": "6945371",
     "source": "greenhouse",
     "company": "Monzo",
@@ -1024,7 +1024,7 @@
     "reasoning": null
   },
   {
-    "id": 54,
+    "id": 55,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1040,7 +1040,7 @@
     "reasoning": null
   },
   {
-    "id": 6,
+    "id": 15,
     "external_id": "7618901",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1056,7 +1056,7 @@
     "reasoning": null
   },
   {
-    "id": 7,
+    "id": 16,
     "external_id": "7953778",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1072,7 +1072,7 @@
     "reasoning": null
   },
   {
-    "id": 20,
+    "id": 29,
     "external_id": "8003083",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1088,7 +1088,7 @@
     "reasoning": null
   },
   {
-    "id": 18,
+    "id": 27,
     "external_id": "8179443",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1104,7 +1104,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 23,
     "external_id": "7941728",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1120,7 +1120,7 @@
     "reasoning": null
   },
   {
-    "id": 70,
+    "id": 71,
     "external_id": "8119456",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1136,7 +1136,7 @@
     "reasoning": null
   },
   {
-    "id": 69,
+    "id": 70,
     "external_id": "8161519",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1152,7 +1152,7 @@
     "reasoning": null
   },
   {
-    "id": 68,
+    "id": 69,
     "external_id": "8161695",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1168,7 +1168,7 @@
     "reasoning": null
   },
   {
-    "id": 67,
+    "id": 68,
     "external_id": "8074855",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1184,7 +1184,7 @@
     "reasoning": null
   },
   {
-    "id": 66,
+    "id": 67,
     "external_id": "8074894",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1200,7 +1200,7 @@
     "reasoning": null
   },
   {
-    "id": 65,
+    "id": 66,
     "external_id": "8111792",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1216,7 +1216,7 @@
     "reasoning": null
   },
   {
-    "id": 64,
+    "id": 65,
     "external_id": "8161435",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1232,7 +1232,7 @@
     "reasoning": null
   },
   {
-    "id": 63,
+    "id": 64,
     "external_id": "8161419",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1248,7 +1248,7 @@
     "reasoning": null
   },
   {
-    "id": 59,
+    "id": 60,
     "external_id": "8105634",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1264,7 +1264,7 @@
     "reasoning": null
   },
   {
-    "id": 58,
+    "id": 59,
     "external_id": "8161936",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1280,7 +1280,7 @@
     "reasoning": null
   },
   {
-    "id": 57,
+    "id": 58,
     "external_id": "8161837",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1296,7 +1296,7 @@
     "reasoning": null
   },
   {
-    "id": 56,
+    "id": 57,
     "external_id": "8001192",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1312,7 +1312,7 @@
     "reasoning": null
   },
   {
-    "id": 55,
+    "id": 56,
     "external_id": "8001191",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1328,7 +1328,7 @@
     "reasoning": null
   },
   {
-    "id": 53,
+    "id": 54,
     "external_id": "8162407",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1344,7 +1344,7 @@
     "reasoning": null
   },
   {
-    "id": 52,
+    "id": 53,
     "external_id": "8162406",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1360,7 +1360,7 @@
     "reasoning": null
   },
   {
-    "id": 49,
+    "id": 50,
     "external_id": "8162473",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1376,7 +1376,7 @@
     "reasoning": null
   },
   {
-    "id": 48,
+    "id": 49,
     "external_id": "8162474",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1392,7 +1392,7 @@
     "reasoning": null
   },
   {
-    "id": 47,
+    "id": 48,
     "external_id": "8138696",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1408,7 +1408,7 @@
     "reasoning": null
   },
   {
-    "id": 46,
+    "id": 47,
     "external_id": "8138694",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1424,7 +1424,7 @@
     "reasoning": null
   },
   {
-    "id": 44,
+    "id": 45,
     "external_id": "8096579",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1440,7 +1440,7 @@
     "reasoning": null
   },
   {
-    "id": 43,
+    "id": 44,
     "external_id": "8002561",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1456,7 +1456,7 @@
     "reasoning": null
   },
   {
-    "id": 42,
+    "id": 43,
     "external_id": "8002562",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1472,7 +1472,7 @@
     "reasoning": null
   },
   {
-    "id": 93,
+    "id": 95,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1488,7 +1488,7 @@
     "reasoning": null
   },
   {
-    "id": 92,
+    "id": 94,
     "external_id": "8078337",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1504,7 +1504,7 @@
     "reasoning": null
   },
   {
-    "id": 35,
+    "id": 34,
     "external_id": "4963986101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1520,7 +1520,7 @@
     "reasoning": null
   },
   {
-    "id": 37,
+    "id": 36,
     "external_id": "4963991101",
     "source": "greenhouse",
     "company": "JetBrains",
