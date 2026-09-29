@@ -1,6 +1,6 @@
 [
   {
-    "id": 49,
+    "id": 63,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -16,7 +16,7 @@
     "reasoning": null
   },
   {
-    "id": 54,
+    "id": 67,
     "external_id": "7418982",
     "source": "greenhouse",
     "company": "Okta",
@@ -32,7 +32,7 @@
     "reasoning": null
   },
   {
-    "id": 50,
+    "id": 64,
     "external_id": "8157509",
     "source": "greenhouse",
     "company": "Twilio",
@@ -64,7 +64,7 @@
     "reasoning": null
   },
   {
-    "id": 61,
+    "id": 55,
     "external_id": "4599111",
     "source": "greenhouse",
     "company": "Datadog",
@@ -80,7 +80,7 @@
     "reasoning": null
   },
   {
-    "id": 39,
+    "id": 40,
     "external_id": "8225984",
     "source": "greenhouse",
     "company": "Elastic",
@@ -96,7 +96,7 @@
     "reasoning": null
   },
   {
-    "id": 53,
+    "id": 22,
     "external_id": "8076441",
     "source": "greenhouse",
     "company": "N26",
@@ -128,7 +128,7 @@
     "reasoning": null
   },
   {
-    "id": 48,
+    "id": 47,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -144,7 +144,7 @@
     "reasoning": null
   },
   {
-    "id": 47,
+    "id": 46,
     "external_id": "8078337",
     "source": "greenhouse",
     "company": "Stripe",
@@ -176,7 +176,7 @@
     "reasoning": null
   },
   {
-    "id": 4,
+    "id": 1,
     "external_id": "c0981874-e98c-41cc-82be-8c6f13a478ba",
     "source": "ashby",
     "company": "Mollie",
@@ -192,7 +192,7 @@
     "reasoning": null
   },
   {
-    "id": 35,
+    "id": 27,
     "external_id": "6656228",
     "source": "greenhouse",
     "company": "Monzo",
@@ -208,7 +208,7 @@
     "reasoning": null
   },
   {
-    "id": 34,
+    "id": 26,
     "external_id": "6758449",
     "source": "greenhouse",
     "company": "Monzo",
@@ -224,7 +224,7 @@
     "reasoning": null
   },
   {
-    "id": 33,
+    "id": 25,
     "external_id": "6656737",
     "source": "greenhouse",
     "company": "Monzo",
@@ -240,7 +240,7 @@
     "reasoning": null
   },
   {
-    "id": 32,
+    "id": 24,
     "external_id": "6945371",
     "source": "greenhouse",
     "company": "Monzo",
@@ -256,7 +256,7 @@
     "reasoning": null
   },
   {
-    "id": 31,
+    "id": 23,
     "external_id": "7343996",
     "source": "greenhouse",
     "company": "Monzo",
@@ -272,7 +272,7 @@
     "reasoning": null
   },
   {
-    "id": 40,
+    "id": 41,
     "external_id": "8176967",
     "source": "greenhouse",
     "company": "Elastic",
@@ -288,7 +288,7 @@
     "reasoning": null
   },
   {
-    "id": 51,
+    "id": 65,
     "external_id": "8109295",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -304,7 +304,7 @@
     "reasoning": null
   },
   {
-    "id": 44,
+    "id": 45,
     "external_id": "4712270006",
     "source": "greenhouse",
     "company": "Neo4j",
@@ -336,7 +336,7 @@
     "reasoning": null
   },
   {
-    "id": 46,
+    "id": 49,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -352,7 +352,7 @@
     "reasoning": null
   },
   {
-    "id": 45,
+    "id": 48,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -368,7 +368,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 32,
     "external_id": "4777935101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -384,7 +384,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 28,
     "external_id": "7985189003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -432,7 +432,7 @@
     "reasoning": null
   },
   {
-    "id": 69,
+    "id": 66,
     "external_id": "566a5565-925c-4367-9912-6b64841beba2",
     "source": "ashby",
     "company": "OpenAI",
@@ -448,7 +448,7 @@
     "reasoning": null
   },
   {
-    "id": 23,
+    "id": 31,
     "external_id": "4976229101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -480,7 +480,7 @@
     "reasoning": null
   },
   {
-    "id": 36,
+    "id": 37,
     "external_id": "8224018",
     "source": "greenhouse",
     "company": "Elastic",
@@ -512,7 +512,7 @@
     "reasoning": null
   },
   {
-    "id": 2,
+    "id": 3,
     "external_id": "60286fb7-715d-49a1-87a5-7a141400ddc6",
     "source": "ashby",
     "company": "Satispay",
@@ -528,7 +528,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 36,
     "external_id": "4979524101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -544,7 +544,7 @@
     "reasoning": null
   },
   {
-    "id": 1,
+    "id": 2,
     "external_id": "2afa9f84-613e-4088-a367-cf109d8d87c4",
     "source": "ashby",
     "company": "Satispay",
@@ -560,7 +560,7 @@
     "reasoning": null
   },
   {
-    "id": 55,
+    "id": 68,
     "external_id": "8087739",
     "source": "greenhouse",
     "company": "Okta",
@@ -576,7 +576,7 @@
     "reasoning": null
   },
   {
-    "id": 57,
+    "id": 51,
     "external_id": "8161455",
     "source": "greenhouse",
     "company": "Datadog",
@@ -592,7 +592,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 30,
     "external_id": "4696977101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -624,7 +624,7 @@
     "reasoning": null
   },
   {
-    "id": 37,
+    "id": 39,
     "external_id": "8220151",
     "source": "greenhouse",
     "company": "Elastic",
@@ -656,7 +656,7 @@
     "reasoning": null
   },
   {
-    "id": 30,
+    "id": 29,
     "external_id": "8185412",
     "source": "greenhouse",
     "company": "Typeform",
@@ -672,7 +672,7 @@
     "reasoning": null
   },
   {
-    "id": 68,
+    "id": 62,
     "external_id": "8007598",
     "source": "greenhouse",
     "company": "Datadog",
@@ -688,7 +688,7 @@
     "reasoning": null
   },
   {
-    "id": 67,
+    "id": 61,
     "external_id": "8043560",
     "source": "greenhouse",
     "company": "Datadog",
@@ -704,7 +704,7 @@
     "reasoning": null
   },
   {
-    "id": 66,
+    "id": 60,
     "external_id": "8119493",
     "source": "greenhouse",
     "company": "Datadog",
@@ -720,7 +720,7 @@
     "reasoning": null
   },
   {
-    "id": 65,
+    "id": 59,
     "external_id": "8139277",
     "source": "greenhouse",
     "company": "Datadog",
@@ -736,7 +736,7 @@
     "reasoning": null
   },
   {
-    "id": 64,
+    "id": 58,
     "external_id": "8114161",
     "source": "greenhouse",
     "company": "Datadog",
@@ -752,23 +752,7 @@
     "reasoning": null
   },
   {
-    "id": 63,
-    "external_id": "7959966",
-    "source": "greenhouse",
-    "company": "Datadog",
-    "title": "Senior Software Engineer - REDAPL Graph Engine",
-    "location": "France, Remote; Germany, Remote; Italy, Remote; Spain, Remote; Switzerland, Remote; United Kingdom, Remote",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966",
-    "description": "<div id=\"message-list_1786698316.066069\"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div><strong><em>Please note that the job is only available from the locations outlined.</em></strong>&nbsp;</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p>&nbsp;</p> <p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores.&nbsp;</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business .</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Remote</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
-    "posted_at": "2026-09-18T14:57:30-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 62,
+    "id": 57,
     "external_id": "7959962",
     "source": "greenhouse",
     "company": "Datadog",
@@ -784,7 +768,23 @@
     "reasoning": null
   },
   {
-    "id": 60,
+    "id": 56,
+    "external_id": "7959966",
+    "source": "greenhouse",
+    "company": "Datadog",
+    "title": "Senior Software Engineer - REDAPL Graph Engine",
+    "location": "France, Remote; Germany, Remote; Italy, Remote; Spain, Remote; Switzerland, Remote; United Kingdom, Remote",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966",
+    "description": "<div id=\"message-list_1786698316.066069\"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div><strong><em>Please note that the job is only available from the locations outlined.</em></strong>&nbsp;</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p>&nbsp;</p> <p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores.&nbsp;</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business .</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Remote</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
+    "posted_at": "2026-09-18T14:57:30-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 54,
     "external_id": "7904634",
     "source": "greenhouse",
     "company": "Datadog",
@@ -800,7 +800,7 @@
     "reasoning": null
   },
   {
-    "id": 59,
+    "id": 53,
     "external_id": "7586019",
     "source": "greenhouse",
     "company": "Datadog",
@@ -816,7 +816,7 @@
     "reasoning": null
   },
   {
-    "id": 58,
+    "id": 52,
     "external_id": "8048588",
     "source": "greenhouse",
     "company": "Datadog",
@@ -832,7 +832,7 @@
     "reasoning": null
   },
   {
-    "id": 56,
+    "id": 50,
     "external_id": "8080628",
     "source": "greenhouse",
     "company": "Datadog",
@@ -864,7 +864,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 33,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -896,7 +896,7 @@
     "reasoning": null
   },
   {
-    "id": 52,
+    "id": 21,
     "external_id": "7811482",
     "source": "greenhouse",
     "company": "N26",
@@ -912,7 +912,7 @@
     "reasoning": null
   },
   {
-    "id": 3,
+    "id": 4,
     "external_id": "d65851c8-6737-4d0c-910c-27f37e93433b",
     "source": "ashby",
     "company": "Satispay",
@@ -928,7 +928,7 @@
     "reasoning": null
   },
   {
-    "id": 42,
+    "id": 43,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -944,7 +944,7 @@
     "reasoning": null
   },
   {
-    "id": 41,
+    "id": 42,
     "external_id": "8207678",
     "source": "greenhouse",
     "company": "Elastic",
@@ -960,7 +960,7 @@
     "reasoning": null
   },
   {
-    "id": 26,
+    "id": 34,
     "external_id": "4917464101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1008,7 +1008,7 @@
     "reasoning": null
   },
   {
-    "id": 43,
+    "id": 44,
     "external_id": "8204978",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1040,7 +1040,7 @@
     "reasoning": null
   },
   {
-    "id": 27,
+    "id": 35,
     "external_id": "4830653101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1083,22 +1083,6 @@
     "url": "https://job-boards.greenhouse.io/adyen/jobs/6761873",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Java Software Engineer / Senior Java Engineer</strong></p> <p>Our engineers are reshaping the payments landscape. We’re looking for more talented problem solvers to help us address a unique set of challenges.</p> <p><strong>We are looking for Mid level and Senior Java Engineers for a number of positions in the teams within our Customer Experience Solution.</strong></p> <p>As an engineer at Adyen , you will be<strong> </strong>responsible for the full development cycle from software design to testing and ensuring everything works as expected in production. You will work with one of the biggest PostgreSQL databases out there, focusing on maintaining the platform's performance and reliability.</p> <p><strong>Who you are:</strong></p> <ul> <li>You have experience with Java, web services, REST APIs and SQL / PostgreSQL</li> <li>You have worked with and deployed high-throughput and highly reliable services</li> <li>You are proactive, you take ownership and you strive for quality, from both a technical and product perspective</li> <li>You have excellent communication skills and you can explain complex, technical concepts to a non-technical audience</li> <li>You are a team player who knows when and how to involve other people to hear different perspectives</li> <li>You know how to evaluate tradeoffs and how to balance speed vs tech debt</li> <li>You enjoy working on a global product that impacts millions of people everyday</li> <li>Nice to have: experience with RabbitMQ, Kafka, Elasticsearch</li> </ul> <p>&nbsp;</p> <p><strong>What you’ll do:</strong></p> <ul> <li>You will build and maintain our distributed high-performance platform</li> <li>You will be part of a diverse and inclusive team</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring code live that impacts many businesses and shoppers</li> <li>You will be fully responsible from its initial design to bringing new functionality live</li> <li>Identify and improve parts of the platform to make it more robust and scalable</li> <li>Collaborate across teams and time zones to make things happen, review code and be open to feedback</li> </ul> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p>&nbsp;</p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.<br><br></span></p> <p><span style=\"font-weight: 400;\">Note: This role is based out of our&nbsp;<strong>Amsterdam</strong> office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.<br>&nbsp;</span></p>",
     "posted_at": "2026-09-15T04:17:21-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 29,
-    "external_id": "8522265002",
-    "source": "greenhouse",
-    "company": "GitLab",
-    "title": "Forward Deployed Engineer - EMEA",
-    "location": "Remote Ireland; Remote, France; Remote, Germany; Remote, Netherlands; Remote, United Kingdom",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8522265002",
-    "description": "<div class=\"content-intro\"><p>GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.</p> <p>The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. <a href=\"https://www.youtube.com/watch?v=OuZIb5zszQI\">Co-create the future with us</a> as we build technology that transforms how the world develops software.</p> <p>*<em>Fortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab.</em></p></div><h2><strong>Staff Forward Deployed Engineer, Agentic SDLC - (EMEA Only)</strong><strong><br></strong><strong><br></strong><strong>An overview of this role</strong></h2> <p>GitLab’s Forward Deployed Engineering team is a field-situated product engineering function focused on strategic customer outcomes, artificial intelligence (AI) adoption, and direct contributions to GitLab’s product. This isn't a traditional field engineering, solutions architecture, or professional services role. As a Staff Forward Deployed Engineer, you'll work closely with customers while maintaining the technical standards and contribution discipline of a Staff-level product engineer.</p> <p>You'll work where strategic customer urgency, complex technical ambiguity, and GitLab product execution intersect. You'll partner directly with strategic customers and teams across Product, Engineering, Support, Site Reliability Engineering (SRE), Solutions Architecture (SA), Customer Success Architecture (CSA), Customer Success Management (CSM), and Professional Services. You'll diagnose and resolve high-impact adoption blockers, contribute production-quality fixes and features, and turn what you learn into repeatable patterns for GitLab and its customers.</p> <h2><strong>Why this role exists</strong></h2> <p>Strategic customers sometimes encounter challenges that are too broad, deep, urgent, or cross-functional for any single team to own from start to finish. These challenges may involve product gaps, performance degradation, scale bottlenecks, AI governance, adoption blockers, architectural constraints, Git usage patterns, continuous integration and continuous delivery (CI/CD) complexity, application programming interface (API) automation, security requirements, or operational instability.</p> <p>Forward Deployed Engineering provides technical stewardship in these moments. The team doesn't simply observe, report, or escalate. You'll engage directly, diagnose the underlying technical problem, collaborate with the right teams, contribute code or technical solutions where appropriate, and transition the outcome into normal ownership once the customer is stable and the learning can be reused.</p> <h2><strong>What you’ll do</strong></h2> <h3><strong>Product contribution</strong></h3> <ul> <li>Contribute production-quality code to GitLab’s product and adjacent systems.</li> <li>Develop bug fixes, features, integrations, tooling, and performance improvements when strategic customer outcomes require direct engineering work.</li> <li>Work within GitLab’s product and engineering processes, including issue discovery, merge request creation, testing, review, documentation, and maintainability.</li> <li>Partner with Product and Engineering so customer-driven solutions support long-term product direction rather than becoming one-off customizations.</li> <li>Turn blockers discovered in the field into durable product improvements, reference architectures, documentation, and repeatable implementation patterns.</li> </ul> <h3><strong>Strategic technical stewardship</strong></h3> <ul> <li>Engage with strategically important customers when adoption, retention, executive confidence, or public trust is materially at risk.</li> <li>Diagnose complex problems across GitLab product behavior, customer architecture, Git internals, CI/CD workflows, API usage, observability, infrastructure, networking, and cloud environments.</li> <li>Coordinate across Product, Engineering, SRE, Support, SA, CSA, CSM, Professional Services, and customer technical teams to drive resolution from discovery through handoff.</li> <li>Provide recommendations grounded in data, traces, and systems analysis to improve GitLab usage, workflows, automation, and architecture.</li> <li>Create durable outcomes without establishing permanent dependency on Forward Deployed Engineering.</li> </ul> <h3><strong>AI adoption and agentic software development lifecycle</strong></h3> <ul> <li>Drive governed, measurable, and production-oriented adoption of GitLab Duo Agent Platform with strategic customers.</li> <li>Identify and resolve AI adoption blockers involving governance, usage controls, auditability, security, compliance, operating models, workflow design, and integrations.</li> <li>Develop customer-safe adoption patterns for the agentic software development lifecycle (SDLC), AI-assisted development, intent-based review, AI governance, and human-in-the-loop software delivery.</li> <li>Partner with Product, Engineering, Field, and Customer Success teams to turn AI adoption learning into reusable guidance and product improvements.</li> </ul> <h3><strong>Thought leadership</strong></h3> <ul> <li>Create technical narratives grounded in customer experience and product reality that can help shape the industry’s approach.</li> <li>Contribute to Well-Architected Frameworks, whitepapers, webinars, reference architectures, technical strategy memos, and adoption frameworks.</li> <li>Guide ideas through discovery, formulation, validation, amplification, and adoption across GitLab.</li> <li>Partner with SA, CSA, Product, Engineering, Marketing, Product Marketing Management, CSM, Support, and executive stakeholders to make technical thought leadership a shared company capability.</li> </ul> <h2><strong>What you’ll bring</strong></h2> <ul> <li>Staff-level experience building, operating, or improving complex production software systems.</li> <li>Experience contributing to large, mature product codebases with high standards for testing, maintainability, performance, and security.</li> <li>Strong Ruby on Rails or Go experience and the ability to contribute directly to GitLab’s product and adjacent systems.</li> <li>Experience with AI-assisted software development, agentic workflows, AI governance, model evaluation, context management, prompt and workflow design, or AI adoption in enterprise environments.</li> <li>Experience diagnosing complex system behavior across application code, data stores, infrastructure, observability, networking, APIs, and customer usage patterns.</li> <li>Deep knowledge of modern DevSecOps workflows, including Git, merge requests, CI/CD, security controls, compliance needs, and enterprise software delivery.</li> <li>Experience working with strategic customers or senior technical stakeholders in ambiguous, high-impact situations.</li> <li>The ability to coordinate across product, engineering, field, and customer teams without formal authority.</li> <li>Strong written communication and sound judgment, including the ability to create technical narratives and distinguish reusable product work from customer-specific customization.</li> </ul> <h2><strong>Strongly preferred qualifications</strong></h2> <ul> <li>Direct experience with GitLab as a platform, including GitLab.com, GitLab Dedicated, or GitLab Self-Managed.</li> <li>Production experience with Ruby on Rails, Go, PostgreSQL, Redis, Sidekiq, Vue, TypeScript, Kubernetes, Docker, Linux, or observability tools.</li> <li>Deep familiarity with Git internals, repository performance, large-scale Git usage patterns, or GitLab Runner behavior.</li> <li>Experience creating technical thought-leadership materials, such as whitepapers, technical talks, architecture frameworks, requests for comments, public technical writing, or internal strategy documents.</li> <li>A background in performance engineering, site reliability engineering, platform engineering, infrastructure engineering, or distributed systems.</li> <li>Experience working in open source or highly asynchronous engineering environments.</li> </ul> <h2><strong>Technologies and domains</strong></h2> <p>Directly relevant technologies and domains include:</p> <ul> <li>Ruby on Rails</li> <li>Go</li> <li>AI-assisted development and the agentic SDLC</li> <li>PostgreSQL</li> <li>Redis and Sidekiq</li> <li>Git internals</li> <li>GitLab CI/CD and Runner architecture</li> <li>Kubernetes and containers</li> <li>Terraform</li> <li>Linux, networking, observability, and performance analysis</li> <li>Vue and TypeScript</li> <li>APIs and automation</li> <li>DevSecOps governance, security, and compliance</li> </ul> <h2><strong>What this role is not</strong></h2> <p>This role isn't:</p> <ul> <li>A generic field engineering role.</li> <li>A proof-of-concept factory.</li> <li>A replacement for Solutions Architecture, Customer Success Architecture, Customer Success Management, Professional Services, Support, SRE, Product, or Engineering.</li> <li>A customer-specific customization function.</li> <li>Unbilled Professional Services.</li> <li>A requirements-gathering role that only escalates to Product.</li> <li>An AI evangelism role disconnected from product execution.</li> </ul> <h2><strong>Success measures</strong></h2> <p>Success in this role may include:</p> <ul> <li>Stabilizing strategic customer adoption or retention risks.</li> <li>Fixing product bugs or contributing features.</li> <li>Removing AI adoption blockers for strategic accounts.</li> <li>Creating reusable implementation patterns and transitioning them to long-term owners.</li> <li>Producing or enabling Well-Architected Frameworks, whitepapers, webinars, or technical narratives.</li> <li>Resolving cross-functional customer challenges without creating permanent dependency on Forward Deployed Engineering.</li> <li>Equipping Product, Engineering, Support, CSA, CSM, Professional Services, and SA teams with better guidance based on learning from the field.</li> <li>Increasing adoption and effective use of GitLab capabilities, especially GitLab Duo and GitLab Duo Agent Platform, in targeted accounts.</li> </ul> <h2><strong>About the team</strong></h2> <p>The Forward Deployed Engineering team connects strategic customer needs with GitLab product execution. The team works directly with customers and across GitLab to resolve complex adoption challenges, contribute durable product improvements, and create reusable technical guidance. Its goal is to stabilize urgent situations, improve the product, and transition ongoing ownership to the appropriate team rather than create a permanent dependency.</p> <h2><strong>Ideal candidate profile</strong></h2> <p>You're a Staff-level product or platform engineer who can operate in the field without becoming field-only. You're comfortable reading traces, writing production code, debugging architecture, discussing AI governance, leading a customer technical session, opening a merge request, outlining a whitepaper, and coordinating across teams to achieve a strategic customer outcome.</p> <p>You're not simply a strong communicator with technical awareness. You're a credible engineer with the judgment, presence, and narrative ability to turn customer reality into product contributions, adoption guidance, and company-level thought leadership.</p> <p>We welcome candidates with different backgrounds and levels of experience. Many successful candidates don't meet every qualification. If you're excited about this role, we encourage you to apply and let our recruiting team assess your application.</p> <div class=\"c-message_actions__container c-message__actions\">&nbsp;</div> <div><span style=\"font-size: xx-small;\"><span style=\"color: white;\">Remote-Global</span></span></div><div class=\"content-conclusion\"><h4><strong>How GitLab Supports Full-Time Employees</strong></h4> <ul> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/\">Benefits to support your health, finances, and well-being</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#flexible-paid-time-off-pto\">Flexible Paid Time Off&nbsp;</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/company/culture/inclusion/tmrg-tmag/\">Team Member Resource Groups</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/total-rewards/stock-options/\">Equity Compensation &amp; Employee Stock Purchase Plan</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/\">Growth and Development Fund</a></li> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave\">Parental Leave</a>&nbsp;</li> </ul> <p>Please note that we welcome interest from candidates with varying levels of experience; many successful candidates do not meet every single requirement. Additionally, studies have shown that people from <a href=\"https://about.gitlab.com/company/culture/inclusion/#examples-of-select-underrepresented-groups\">underrepresented groups</a> are less likely to apply to a job unless they meet every single qualification. If you're excited about this role, please apply and allow our recruiters to assess your application.</p> <hr> <p><strong>Country Hiring Guidelines: </strong>GitLab hires new team members in countries around the world. All of our roles are remote, however some roles may carry specific location-based eligibility requirements. Our Talent Acquisition team can help answer any questions about location after starting the recruiting process.&nbsp;&nbsp;</p> <p><strong>Privacy Policy: </strong>Please review our <a href=\"https://handbook.gitlab.com/handbook/hiring/candidate-faq/recruitment-privacy-policy/\" target=\"_blank\">Recruitment Privacy Policy.</a> Your privacy is important to us.</p> <p>GitLab is proud to be an equal opportunity workplace and is an affirmative action employer. GitLab’s policies and practices relating to recruitment, employment, career development and advancement, promotion, and retirement are based solely on merit, regardless of race, color, religion, ancestry, sex (including pregnancy, lactation, sexual orientation, gender identity, or gender expression), national origin, age, citizenship, marital status, mental or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartime or campaign badge veterans, and Armed Forces service medal veterans), or any other basis protected by law. GitLab will not tolerate discrimination or harassment based on any of these characteristics. See also&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#equal-employment-opportunity-policy\" target=\"_blank\">GitLab’s EEO Policy</a>&nbsp;and&nbsp;<a href=\"https://about.gitlab.com/handbook/labor-and-employment-notices/#eeoc-us-equal-employment-opportunity-commission-notices\" target=\"_blank\">EEO is the Law</a>. If you have a disability or special need that requires&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#reasonable-accommodation\" target=\"_blank\">accommodation</a>, please let us know during the&nbsp;<a href=\"https://about.gitlab.com/handbook/hiring/interviewing/#adjustments-to-our-interview-process\" target=\"_blank\">recruiting process</a>.</p></div>",
-    "posted_at": "2026-09-14T16:01:39-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null
