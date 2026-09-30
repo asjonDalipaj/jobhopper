@@ -1,6 +1,86 @@
 [
   {
-    "id": 59,
+    "id": 1,
+    "external_id": "c0981874-e98c-41cc-82be-8c6f13a478ba",
+    "source": "ashby",
+    "company": "Mollie",
+    "title": "Platform Engineer II  - Build",
+    "location": "Milan",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/mollie/c0981874-e98c-41cc-82be-8c6f13a478ba",
+    "description": "",
+    "posted_at": "2026-09-30T09:54:15.492+00:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 31,
+    "external_id": "4696977101",
+    "source": "greenhouse",
+    "company": "JetBrains",
+    "title": "Build Infrastructure Engineer (JetBrains IDEs)",
+    "location": "Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Prague, Czech Republic; Warsaw, Poland; Yerevan, Armenia",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4696977101",
+    "description": "<p data-pos=\"0\">At JetBrains, code is our passion. Ever since we started, back in 2000, we have strived to make the strongest, most effective developer tools on earth. By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover, and create.</p> <p data-pos=\"280\"><a class=\"ring-ui-link_f850\" href=\"https://www.jetbrains.com/ides/\" target=\"_blank\" data-pos=\"280\">JetBrains IDEs</a>&nbsp;support many programming languages, including Java, Kotlin, Python, Go, Rust, JavaScript, and others. Our IDEs are used by hundreds of thousands of developers around the world, and we do all we can to make development an enjoyable experience for them.</p> <p data-pos=\"583\">JetBrains IDEs have grown in several ways over the years. They now have:</p> <ul data-pos=\"657\"> <li data-pos=\"657\">14 GB of source code</li> <li data-pos=\"680\">500+ developers</li> <li data-pos=\"698\">Hundreds of thousands of tests</li> </ul> <p data-pos=\"732\">We strive to streamline the development of JetBrains IDEs, so we are looking for a person who would help us support and develop infrastructure for quick and easy test runs, installer builds, product releases, and related tasks.</p> <h3 id=\"we-will-be-happy-to-have-you-on-our-team-if-you\" data-pos=\"965\"><strong data-pos=\"967\">We will be happy to have you on our team if you:</strong>&nbsp;</h3> <ul data-pos=\"1019\"> <li data-pos=\"1019\">Have experience with Java or Kotlin stack development. Can design and write code that is easy to read and maintain.</li> <li data-pos=\"1137\">Are familiar with build systems such as Bazel, Gradle, or Maven.</li> <li data-pos=\"1204\">Are experienced with DevOps tooling such as AWS, Azure, Kubernetes, Terraform, Packer, or Ansible.</li> <li data-pos=\"1305\">Are familiar with Linux fundamentals and shell scripting, and feel comfortable handling basic system administrative tasks.</li> <li data-pos=\"1430\">Understand the algorithms behind the code you write.</li> <li data-pos=\"1485\">Have strong teamwork skills, are open to diverse opinions, and can support your point of view with sound reasoning.</li> <li data-pos=\"1603\">Are ready to communicate and collaborate closely with other teams.</li> <li data-pos=\"1672\">Are willing to grow as a professional by learning and applying new approaches and technologies.</li> <li data-pos=\"1770\">Take pride in the work you do.</li> <li data-pos=\"1803\">Have contributed to open-source projects or have developed projects of your own.</li> </ul> <h3 id=\"how-we-develop-intellij-idea\" data-pos=\"1891\"><strong data-pos=\"1893\">How we develop IntelliJ IDEA:</strong>&nbsp;</h3> <ul data-pos=\"1926\"> <li data-pos=\"1926\">The source code is stored in Git, with the public part available on&nbsp;<a class=\"ring-ui-link_f850\" href=\"https://github.com/JetBrains/intellij-community\" target=\"_blank\" data-pos=\"1996\">GitHub</a>.</li> <li data-pos=\"2055\">The source code is written in Java 17 and Kotlin. When it comes to build tools, we develop them using our own Kotlin scripts.</li> <li data-pos=\"2183\">For effective team collaboration, we use the following JetBrains products: Space, TeamCity, and YouTrack.</li> </ul> <h3><strong>Why join JetBrains?&nbsp;</strong></h3> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family.</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li>Relocation support. We help make your move as smooth and stress-free as possible.&nbsp;</li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.<br><span style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(255, 255, 255);\">#LI-DNI&nbsp;</span><br><br></span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
+    "posted_at": "2026-09-30T07:39:50-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 32,
+    "external_id": "4976229101",
+    "source": "greenhouse",
+    "company": "JetBrains",
+    "title": "Customer Success Engineer EMEA",
+    "location": "Amsterdam, Netherlands; Limassol, Cyprus; Paphos, Cyprus; Prague, Czech Republic",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4976229101",
+    "description": "<p>At JetBrains, code is our passion. Since we started in 2000, we have strived to make the most effective developer tools on earth so developers can learn fast and make amazing things happen – with code. Customer Success Engineers (CSE) are technical points of contact for JetBrains customers. They work with the JetBrains product teams and customers to ensure that the products meet the needs of our enterprise users, helping our products retain their position as the best on the market.</p> <p>Many of our customers begin with a set of strategic projects that grow into sizable partnerships. We are looking for&nbsp;<strong>Customer Success Engineers to build great technical relationships with our customers and grow JetBrains' business.</strong> We care deeply about our customers' success and the quality of our work. In addition to having a passion for working with others, the ideal candidate will be able to deepen our relationships with customers and serve as a technical advisor to them.</p> <h3>In this role, you will:</h3> <ul> <li>Work closely with JetBrains Account Executives.</li> <li>Help customers adopt JetBrains products and services to achieve desired business outcomes. This responsibility may include whiteboarding and assisting with the development of architecture or providing support for overcoming technical and cultural barriers to adoption.</li> <li>Manage the technical relationships for a portfolio of accounts, and partner with other members of the account team to define and implement the account strategies.</li> <li>Be the customers’ advocate within JetBrains, representing them to the Support and Product Engineering teams, as well as other groups.</li> <li>Recommend product enhancements based on your customer experiences and the feedback you receive.</li> <li>Help product teams present and evaluate new product ideas to the customers in your portfolio.</li> <li>Act as a trusted technical advisor to customers, staying up to date on the ever-evolving state of technology both within JetBrains and in the field at large.</li> <li>Work with Sales to facilitate account expansions by developing short-term and long-term account plans that meet customer needs.</li> </ul> <h3>We will be happy to have you on our team if you have:</h3> <ul> <li>Proven experience in technical consulting, technical customer success, or other customer-facing technical roles.</li> <li>Extensive experience in software development, QA, IT, DevOps, ML, or any related IT field – the wider the variety of fields, the better.</li> <li>Hands-on knowledge of AI/LLMs in the field of software development.</li> <li>A passion for continually improving the customer experience.</li> <li>Strong verbal and written communication skills in English and the local language of your office.</li> <li>Exceptional presentation skills for demonstrating JetBrains products to customers.</li> <li>The ability to quickly identify and address technical and business challenges related to software development tooling.</li> <li>The ability to convey technical concepts to customers of all technical backgrounds.</li> <li>Comfort in a fast-paced and dynamic working environment.</li> <li>Experience working in or with large software development teams.</li> <li>A collaborative and team-focused mentality, with a willingness to take initiative.</li> <li>Self-direction and resourcefulness.</li> <li>The ability to travel approximately 25% of the time.</li> </ul> <p><strong>Why join JetBrains?&nbsp;</strong></p> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li><strong>Relocation support. We help make your move as smooth and stress-free as possible.&nbsp;</strong></li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-HYBRID</span></p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-JP1</span></p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-REMOTE</span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
+    "posted_at": "2026-09-30T07:14:38-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 19,
+    "external_id": "8106754",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Java Engineer in Java Application Core Components team",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8106754",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>&nbsp;</p> <p><strong>Senior Software Engineer - Java Application Core Components (JACC)</strong></p> <p>Adyen provides a global, unified platform built by Java application teams across the company. The Java Application Core Components (JACC) team plays a key role in this: we build and maintain the shared frameworks and components that define how other Adyen teams design, structure, and deploy their Java applications.</p> <p>As part of JACC, you will build and maintain the core Java tools and components used across all of Adyen, shaping how other engineering teams build their services. You'll work on some of the largest ongoing efforts in the company, including 3 large-scale migrations that will shape the future of Adyen's application architecture. You'll join a lean team of 6 Java experts, working in a Kanban-like way with minimal process overhead, and gain real influence over the architecture of one of the leading players in the payments space.</p> <h2><strong>What you will do</strong></h2> <ul> <li>Design, build, and evolve the internal and open source Java frameworks and components used by every Java application team at Adyen.</li> <li>Play an active role in one or more of the team's 3 large-scale migrations that are reshaping Adyen's application architecture.</li> <li>Provide hands-on technical guidance to other engineering teams, by guiding them on how the frameworks and libraries we provide can be used to solve Adyen's business problems.</li> <li>Design and evolve workflows used by other engineering teams across Adyen, working closely with them to identify pain points and improvement opportunities.</li> <li>Collaborate with partner platform teams (Kubernetes infrastructure, deployment, security) to make sure our components integrate well across Adyen's tech stack.</li> <li>Advocate for best practices across Adyen and define boundaries/guidance on how the frameworks/libraries we maintain can be used. This should be achieved by creating code validation rules, running workshops and giving presentations to other development teams.</li> </ul> <h2><strong>What you bring</strong></h2> <ul> <li>5+ years of experience with Java backend development</li> <li>Strong skills in core Java and code/API design</li> <li>Track record of building high-quality software, with testing at all levels</li> <li>A communicative, proactive team player who takes ownership, is decisive under ambiguity, and can act as a technical influencer with a multiplier mindset</li> <li>Comfortable being a driver: able to build alignment with stakeholders and partners while pushing initiatives for our customers</li> </ul> <h2><strong>Nice to have</strong></h2> <ul> <li>Experience with Kubernetes/cloud migrations, legacy application modernization, security-related work or platform development experience</li> <li>Experience developing and maintaining libraries/frameworks used by many other developers (either open source or internal)</li> <li>Experience with build tools, ideally for Java (Gradle/Maven)</li> <li>Broader architecture sense across distributed systems</li> <li>Familiarity with Spring, Jersey, Feign, OpenAPI</li> <li>Understanding of Domain-Driven Design (DDD) and Test-Driven Development (TDD)</li> <li>Exposure to AI agent workflows and a DevOps mindset</li> <li>Developer advocacy experience: public speaking or training/facilitation skills</li> </ul> <p>&nbsp;</p> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
+    "posted_at": "2026-09-30T04:54:34-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 11,
+    "external_id": "8132053",
+    "source": "greenhouse",
+    "company": "N26",
+    "title": "Backend Engineer",
+    "location": "Berlin, Barcelona",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://n26.com/en-eu/careers/positions/8132053?gh_jid=8132053",
+    "description": "<h2><strong>About the opportunity</strong></h2> <p><span data-path-to-node=\"5,1\"><span class=\"citation-67\">You will work in the Everyday Banking domain, within the Payments Team</span></span><span data-path-to-node=\"5,3\">. </span><span data-path-to-node=\"5,5\"><span class=\"citation-66\">This is where all payment and card transactions are being managed and processed by modern &amp; high-volume systems that power the best customer experience possible</span></span><span data-path-to-node=\"5,7\">. </span><span data-path-to-node=\"5,9\"><span class=\"citation-65\">These teams make banking easy, reliable, seamless and secure - everyday for every customer.</span></span><br><br><em><span style=\"text-decoration: underline;\">This is a hybrid role from Barcelona or Berlin.</span></em></p> <h2><strong>In this role, you will:</strong></h2> <ul> <li>Do discovery, design, develop, test, deploy and maintain software in a thriving environment.</li> <li>Manage individual project priorities and deliverables while working in a team that enjoys knowledge sharing sessions.</li> <li>Stay up to date with the latest trends in technology.</li> <li>Propose new findings during our GSDD (Get Stuff Done Days).</li> </ul> <p><strong>What you need to be successful:</strong></p> <ul> <li>Experience in developing software using a JVM language and Spring Boot in large-scale production systems (note: experience of Kotlin would be a plus).</li> <li>Sound understanding of microservice architecture.</li> <li>Knowledge of both relational and non-relational databases, preferably Postgres.</li> <li>Appreciation of working in a modern cloud architecture, preferably with AWS.</li> <li>Strong bias for action and getting things done.</li> <li>Ongoing appreciation and consideration for security.</li> <li>Motivation to write code which is well-tested and well-documented.</li> <li>Ability to give and receive open, direct, and timely feedback.</li> </ul> <h2><strong>What’s in it for you:</strong></h2> <ul> <li>Accelerate your career growth by joining one of Europe’s most talked about disruptors 🚀.</li> <li>Employee benefits that range from a competitive personal development budget, work from home budget, discounts to fitness &amp; wellness memberships, language apps and public transportation.&nbsp;</li> <li>As an N26 employee you will have access to a Premium subscription on your personal N26 bank account. As well as subscriptions for friends and family members.&nbsp;&nbsp;&nbsp;&nbsp;</li> <li>Additional day of annual leave for each year of service.&nbsp;&nbsp;</li> <li>A high degree of autonomy and access to cutting edge technologies - all while working with a friendly team of peers of diverse nationalities, life experiences and family statuses.&nbsp;</li> <li>A relocation package with visa support for those who need it.</li> </ul> <h2><strong>Who we are</strong></h2> <p>N26 has reimagined banking for today’s digital world. Technology and design empower<a href=\"https://n26.com/en-eu/blog\"> everything we do</a> and it’s how we are building the global banking platform the world loves to use.</p> <p>We've eliminated physical branches, paperwork, and hidden fees for an elegant digital experience and supreme savings. Giving people the power to live and bank their way is what gets us out of bed in the morning and inspires the work that we do.&nbsp;</p> <p>We are headquartered in Berlin with offices in multiple cities across Europe, including Vienna and Barcelona, and a 1,500-strong team of more than 80 nationalities.</p> <p><strong>Sounds good? Apply now for this position.</strong></p> <p><strong>Equal Opportunities:</strong></p> <p>We recognize that our strength lies in our people and the varied perspectives they bring to our workforce. We strive to build talented and diverse teams to drive our business success and empower our people to reach their full potential.</p> <p>We genuinely welcome and encourage applications from people of all backgrounds, cultures, genders, sexual orientations, abilities, neurodiversities, and ages. We're committed to creating an inclusive workspace where everyone feels valued and respected, free from harassment and discrimination. If there's anything you need to make the application process work for you, please let us know by reaching out to <a href=\"mailto:candidate.exp@n26.com\">candidate.exp@n26.com</a>.&nbsp;</p> <p>Visit our <a href=\"https://n26.com/en-eu/diversity-and-inclusion\">website</a> to learn more about Diversity, Equity, &amp; Inclusion at N26.</p>",
+    "posted_at": "2026-09-30T04:36:45-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 72,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -32,7 +112,7 @@
     "reasoning": null
   },
   {
-    "id": 52,
+    "id": 69,
     "external_id": "8007598",
     "source": "greenhouse",
     "company": "Datadog",
@@ -48,7 +128,7 @@
     "reasoning": null
   },
   {
-    "id": 51,
+    "id": 68,
     "external_id": "8043560",
     "source": "greenhouse",
     "company": "Datadog",
@@ -64,7 +144,7 @@
     "reasoning": null
   },
   {
-    "id": 50,
+    "id": 67,
     "external_id": "8119493",
     "source": "greenhouse",
     "company": "Datadog",
@@ -80,7 +160,7 @@
     "reasoning": null
   },
   {
-    "id": 49,
+    "id": 66,
     "external_id": "8139277",
     "source": "greenhouse",
     "company": "Datadog",
@@ -96,7 +176,7 @@
     "reasoning": null
   },
   {
-    "id": 48,
+    "id": 65,
     "external_id": "8114161",
     "source": "greenhouse",
     "company": "Datadog",
@@ -112,23 +192,7 @@
     "reasoning": null
   },
   {
-    "id": 47,
-    "external_id": "7959966",
-    "source": "greenhouse",
-    "company": "Datadog",
-    "title": "Senior Software Engineer - REDAPL Graph Engine",
-    "location": "France, Remote; Germany, Remote; Italy, Remote; Spain, Remote; Switzerland, Remote; United Kingdom, Remote",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966",
-    "description": "<div id=\"message-list_1786698316.066069\"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div><strong><em>Please note that the job is only available from the locations outlined.</em></strong>&nbsp;</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p>&nbsp;</p> <p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores.&nbsp;</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business .</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Remote</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
-    "posted_at": "2026-09-29T13:18:57-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 46,
+    "id": 64,
     "external_id": "7959962",
     "source": "greenhouse",
     "company": "Datadog",
@@ -144,7 +208,23 @@
     "reasoning": null
   },
   {
-    "id": 45,
+    "id": 63,
+    "external_id": "7959966",
+    "source": "greenhouse",
+    "company": "Datadog",
+    "title": "Senior Software Engineer - REDAPL Graph Engine",
+    "location": "France, Remote; Germany, Remote; Italy, Remote; Spain, Remote; Switzerland, Remote; United Kingdom, Remote",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966",
+    "description": "<div id=\"message-list_1786698316.066069\"> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div><strong><em>Please note that the job is only available from the locations outlined.</em></strong>&nbsp;</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p>&nbsp;</p> <p>We are looking for a Senior Software Engineer to help us take REDAPL, our Referential Data Platform, to the next level. REDAPL is Datadog's main platform for tracking our customers' infrastructure resources and relationships. The platform enables products where customers can understand, keep track of, and gain insights into their infrastructure related to performance, cost, security, and more.</p> <p>Many Datadog products use REDAPL today such Cloud Security Posture Management, Resource Catalog, Cloud Cost Management, and Service Catalog and others - REDAPL ingests more than 4.5mil updates/second.</p> <p>As a Senior Engineer, you will drive, lead and collaborate on projects both inside and outside the platform. You can expect to contribute to key technical decisions relating to our data ingestion, processing, and query pipelines.</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You’ll Do:</strong></p> <ul> <li>Build a query engine that supports efficient relationship traversals for our most demanding workloads.</li> <li>Contribute to design and drive high-priority, high-visibility projects to increase the platform's value, resilience, and scalability across multiple teams.</li> <li>Lead and guide other engineers through architectural platform decisions</li> <li>Identify potential system risks and trends in reliability and design solutions to address them</li> <li>Provide input on prioritizing engineering-led initiatives in short- and long-term planning and roadmaps</li> <li>Collaborate with internal product teams to understand their requirements and how we plan for their product growth as they integrate and depend on REDAPL</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have a BS/MS/PhD in a Computer Science, Engineering or related scientific field or equivalent experience</li> <li>You have worked extensively with multiple types of data stores.&nbsp;</li> <li>You have contributed to initiatives in a platform or infrastructure-focused environment for several years</li> <li>You have led impactful technical initiatives in an environment where performance, cost efficiency, ease of use, and resilience/operability are first-order concerns</li> <li>You have significant back-end engineering experience and have built, and operated distributed systems to solve problems at a high scale</li> </ul> <p><strong>Bonus points:</strong></p> <ul> <li>You have experience working with Graph Databases such as Neo4j, Memgraph, JanusGraph, ArangoDB, Amazon Neptune or PuppyGraph.</li> <li>You have production-grade experience with Apache Iceberg</li> <li>You have a solid grasp of query planning or better yet - contributed to a production-grade query engines or related projects (e.g. Trino, Calcite, Substrait, DataFusion, etc) ideally demonstrated through open-source contributions or PMC membership on projects.</li> </ul> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you’re passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>Get to build tools for software engineers, just like yourself. And use the tools we build to accelerate our development.</li> <li>Have a lot of influence on product direction and impact on the business .</li> <li>Work with skilled, knowledgeable, and kind teammates who are happy to teach and learn</li> <li>Competitive global benefits</li> <li>Continuous professional development</li> </ul> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Remote</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
+    "posted_at": "2026-09-29T13:18:57-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null
+  },
+  {
+    "id": 62,
     "external_id": "4599111",
     "source": "greenhouse",
     "company": "Datadog",
@@ -160,7 +240,7 @@
     "reasoning": null
   },
   {
-    "id": 44,
+    "id": 61,
     "external_id": "7904634",
     "source": "greenhouse",
     "company": "Datadog",
@@ -176,7 +256,7 @@
     "reasoning": null
   },
   {
-    "id": 43,
+    "id": 60,
     "external_id": "7586019",
     "source": "greenhouse",
     "company": "Datadog",
@@ -192,7 +272,7 @@
     "reasoning": null
   },
   {
-    "id": 42,
+    "id": 59,
     "external_id": "8048588",
     "source": "greenhouse",
     "company": "Datadog",
@@ -208,7 +288,7 @@
     "reasoning": null
   },
   {
-    "id": 41,
+    "id": 58,
     "external_id": "8161455",
     "source": "greenhouse",
     "company": "Datadog",
@@ -224,7 +304,7 @@
     "reasoning": null
   },
   {
-    "id": 40,
+    "id": 57,
     "external_id": "8080628",
     "source": "greenhouse",
     "company": "Datadog",
@@ -240,7 +320,7 @@
     "reasoning": null
   },
   {
-    "id": 60,
+    "id": 73,
     "external_id": "8157509",
     "source": "greenhouse",
     "company": "Twilio",
@@ -256,7 +336,7 @@
     "reasoning": null
   },
   {
-    "id": 65,
+    "id": 34,
     "external_id": "4867022101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -272,7 +352,7 @@
     "reasoning": null
   },
   {
-    "id": 18,
+    "id": 20,
     "external_id": "8226137",
     "source": "greenhouse",
     "company": "Adyen",
@@ -288,7 +368,7 @@
     "reasoning": null
   },
   {
-    "id": 30,
+    "id": 45,
     "external_id": "8522265002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -304,7 +384,7 @@
     "reasoning": null
   },
   {
-    "id": 55,
+    "id": 53,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -320,7 +400,7 @@
     "reasoning": null
   },
   {
-    "id": 56,
+    "id": 54,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -336,7 +416,7 @@
     "reasoning": null
   },
   {
-    "id": 68,
+    "id": 37,
     "external_id": "4795218101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -352,7 +432,7 @@
     "reasoning": null
   },
   {
-    "id": 73,
+    "id": 43,
     "external_id": "7811586003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -416,7 +496,7 @@
     "reasoning": null
   },
   {
-    "id": 67,
+    "id": 36,
     "external_id": "4975244101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -432,7 +512,7 @@
     "reasoning": null
   },
   {
-    "id": 69,
+    "id": 38,
     "external_id": "4927320101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -448,23 +528,7 @@
     "reasoning": null
   },
   {
-    "id": 31,
-    "external_id": "4717389006",
-    "source": "greenhouse",
-    "company": "Neo4j",
-    "title": "Senior Consulting Engineer  - Milan",
-    "location": "Remote: Italy",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://boards.greenhouse.io/neo4j/jobs/4717389006?gh_jid=4717389006",
-    "description": "<div class=\"content-intro\"><div><span style=\"font-size: 18pt;\"><strong>About Neo4j:</strong></span></div> <div> <p>Neo4j is the graph intelligence platform that transforms data into knowledge to power the next generation of intelligent applications and AI systems. It includes enterprise-ready knowledge graphs for accurate, explainable, and governed AI; the most comprehensive, trusted, and easy-to-deploy graph capabilities across any environment and data source; and an unmatched ecosystem trusted by 84 of the Fortune 100 and supported by the world’s largest graph community.&nbsp;Intelligence that works. Results that matter.</p> <p>Built to work everywhere and integrate with everything across every cloud for dynamic, personalized, and autonomous AI systems. We deliver quicker results, contextual knowledge, and solutions that impact customers and employees across the business.</p> </div> <div><span style=\"font-size: 18pt;\"><strong>Our Vision:&nbsp;</strong></span></div> <div> <p><span style=\"font-weight: 400;\">At Neo4j, we have always strived to help the world make sense of data.&nbsp;&nbsp;</span></p> <p><span style=\"font-weight: 400;\">As business, society and knowledge become increasingly connected, our technology promotes innovation by helping organizations to find and understand data relationships. We created, drive and lead the graph database category, and we’re disrupting how organizations leverage their data to innovate and stay competitive.</span></p> </div></div><p><strong>The Role:</strong></p> <p>&nbsp;</p> <p>As a Senior Consulting Engineer, you will be responsible for leading and executing complex consulting projects for our clients. You will work closely with clients to understand their business needs, design innovative solutions, and provide technical expertise across a range of technologies.</p> <p>&nbsp;</p> <p>Key Responsibilities:</p> <ul> <li>Lead and manage consulting projects from inception to completion, ensuring successful delivery and client satisfaction.</li> <li>Collaborate with clients to understand their business goals, technical requirements, and challenges.</li> <li>Conduct in-depth technical assessments and analysis to identify opportunities for improvement and optimization.</li> <li>Design and architect innovative solutions to address client needs, utilizing a range of technologies and platforms.</li> <li>Provide hands-on implementation, configuration, and troubleshooting support for client projects.</li> <li>Mentor and provide guidance to junior consulting engineers within the team.</li> <li>Collaborate with cross-functional teams, including sales, product development, and customer success, to ensure a seamless client experience.</li> <li>Stay informed about industry trends and emerging technologies to provide proactive recommendations to clients.</li> <li>Develop and deliver technical training sessions and workshops for clients.</li> <li>Create and maintain technical documentation, including project plans, architecture diagrams, and implementation guides.</li> </ul> <p>&nbsp;</p> <p>Qualifications:</p> <ul> <li>Bachelor's degree in Computer Science, Information Technology, or a related field (Master's degree is a plus).</li> <li>Proven experience as a Consulting Engineer or in a similar role, with a track record of successful project delivery.</li> <li>Strong understanding of a variety of technologies, including networking, security, cloud, and infrastructure.</li> <li>Excellent communication and presentation skills, with the ability to convey complex technical concepts to both technical and non-technical audiences.</li> <li>Hands-on experience with implementation, configuration, and troubleshooting in client environments.</li> <li>Strong problem-solving skills and the ability to think strategically about technical solutions.</li> <li>Ability to work independently and collaboratively in a fast-paced environment.</li> <li>Strong organizational and project management skills.</li> <li>Willingness to travel to client sites as needed.</li> </ul><div class=\"content-conclusion\"><div><span style=\"font-size: 18pt;\"><strong>Why Join Neo4j?</strong></span></div> <div> <p>Neo4j is, without question, the most popular graph intelligence platform in the world. We have customers in every industry globally, and our products are a proven product/market fit. Joining our team is an opportunity to shape the future of data and analytics. Below are just a few exciting facts about Neo4j.&nbsp;</p> <ul> <li>Neo4j is one of the fastest-scaling technology companies in this industry. It <a href=\"https://neo4j.com/press-releases/neo4j-revenue-milestone-2024/\">recently surpassed $200M</a> in annual recurring revenue (ARR), doubling its ARR <a href=\"https://neo4j.com/press-releases/2021-company-momentum/\">over the past three years.</a>&nbsp;</li> <li>Raised the biggest funding round in database history ($325M Series F). Backed by world-class investors like Eurazeo, GV (formerly Google Ventures), and Inovia Capital, Neo4j has raised over $600M in funding and is currently valued at over $2Bn. This puts Neo4j among the most well-funded database companies in history.</li> <li>84% of the Fortune 100 and 58% of the Fortune 500 use Neo4j. Examples include <a href=\"https://neo4j.com/case-studies/boston-scientific/\">Boston Scientific</a>, <a href=\"https://neo4j.com/case-studies/bt/\">BT Group</a>, <a href=\"https://neo4j.com/case-studies/caterpillar/\">Caterpillar</a>, <a href=\"https://neo4j.com/case-studies/cisco/\">Cisco</a>, <a href=\"https://neo4j.com/case-studies/comcast/\">Comcast</a>, <a href=\"https://neo4j.com/case-studies/department-for-education-uk/\">Department for Education UK</a>, <a href=\"https://neo4j.com/case-studies/ebay/\">eBay</a>, <a href=\"https://neo4j.com/case-studies/nbc-news/\">NBC News</a>, <a href=\"https://neo4j.com/case-studies/novo-nordisk/\">Novo Nordisk</a>, <a href=\"https://neo4j.com/case-studies/worldline/\">Worldline</a>, and <a href=\"https://neo4j.com/case-studies/\">others</a>.&nbsp;</li> <li>Co-founder and CEO Emil Eifrem has built an amazing culture that prides itself on relationships, inclusiveness, innovation, and customer success.</li> <li>Countless <a href=\"https://neo4j.com/awards/\">industry awards</a>. Massive enterprises and individual developers/data scientists love Neo4j. A strong sense of community and ecosystem is built around the platform.</li> <li>A recent Forrester Total Economic Impact™ Study cited Neo4j as delivering 417% ROI to customers.&nbsp;</li> </ul> <p><a href=\"https://www.bizjournals.com/bizwomen/news/profiles-strategies/2022/07/getting-the-job-how-gender-equity.html?page=all\">Research</a> shows that members of underrepresented communities are less likely to apply for jobs when they don’t meet all the qualifications. <strong>If this is part of the reason you hesitate to apply, we’d encourage you to reconsider and give us the opportunity to review your application. </strong>At Neo4j, we are committed to building awareness and helping to improve these issues.&nbsp;</p> <p>One of our central objectives is to provide an inclusive, diverse, and equitable workplace for everyone to develop their potential and have a positive, career-defining experience. We look forward to receiving your application.</p> </div> <div><span style=\"font-size: 18pt;\"><strong>Neo4j Values:</strong></span></div> <div> <p><span style=\"font-weight: 400;\">Neo4j is a Silicon Valley company with a Swedish soul. We foster collaboration and each of us is empowered to contribute and put our innovative stamp on projects. We hire candidates who reflect the following Neo4j core values:</span></p> <p><span style=\"font-weight: 400;\">(we)-[:VALUE]->(relationships)<br></span><span style=\"font-weight: 400;\">(we)-[:FOCUS_ON]->(userSuccess)<br></span><span style=\"font-weight: 400;\">(we)-[:THRIVE_IN]->(:Culture {type: [‘Open’, ‘Inclusive’]})<br></span><span style=\"font-weight: 400;\">(we)-[:ASSUME]->(:Intent {direction:’Positive’})<br></span><span style=\"font-weight: 400;\">(we)-[:WELCOME]->(:Discussions {nature: ‘IntellectuallyHonest’})<br></span><span style=\"font-weight: 400;\">(we)-[:DELIVER_ON]->(ourCommitments)&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Neo4j is committed to protecting and respecting your privacy. Please read the</span><a href=\"https://neo4j.com/privacy-policy/recruitment-process/?ref=hr-\"><span style=\"font-weight: 400;\"> </span><span style=\"font-weight: 400;\">privacy notice regarding Neo4j's recruitment process</span></a><span style=\"font-weight: 400;\"> to understand how we will handle the personal data that you provide.</span><span style=\"font-weight: 400;\">&nbsp;</span></p> <span style=\"font-weight: 400;\">More information at</span><a href=\"http://www.neo4j.com/\"><span style=\"font-weight: 400;\"> </span></a><span style=\"font-weight: 400;\"><a href=\"https://www.neo4j.com\">www.neo4j.com</a></span><span style=\"font-weight: 400;\">.</span></div> <div>&nbsp;</div> <div><span style=\"font-weight: 400;\">©2026 Neo4j, Inc., Neo Technology®, Neo4j®, Cypher®, Neo4j Bloom™, Neo4j Graph Data Science Library™, Neo4j® Aura™, and Neo4j® AuraDB™ are registered trademarks or a trademark of Neo4j, Inc. All other marks are owned by their respective companies.</span></div></div>",
-    "posted_at": "2026-09-29T04:52:21-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 64,
+    "id": 33,
     "external_id": "4906209101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -496,7 +560,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 24,
     "external_id": "6924441",
     "source": "greenhouse",
     "company": "Adyen",
@@ -512,7 +576,7 @@
     "reasoning": null
   },
   {
-    "id": 36,
+    "id": 49,
     "external_id": "8225984",
     "source": "greenhouse",
     "company": "Elastic",
@@ -528,7 +592,7 @@
     "reasoning": null
   },
   {
-    "id": 12,
+    "id": 13,
     "external_id": "8076441",
     "source": "greenhouse",
     "company": "N26",
@@ -560,7 +624,7 @@
     "reasoning": null
   },
   {
-    "id": 54,
+    "id": 71,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -576,7 +640,7 @@
     "reasoning": null
   },
   {
-    "id": 53,
+    "id": 70,
     "external_id": "8078337",
     "source": "greenhouse",
     "company": "Stripe",
@@ -592,7 +656,7 @@
     "reasoning": null
   },
   {
-    "id": 26,
+    "id": 28,
     "external_id": "7342890",
     "source": "greenhouse",
     "company": "Adyen",
@@ -608,23 +672,7 @@
     "reasoning": null
   },
   {
-    "id": 1,
-    "external_id": "c0981874-e98c-41cc-82be-8c6f13a478ba",
-    "source": "ashby",
-    "company": "Mollie",
-    "title": "Platform Engineer II  - Build",
-    "location": "Milan",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://jobs.ashbyhq.com/mollie/c0981874-e98c-41cc-82be-8c6f13a478ba",
-    "description": "",
-    "posted_at": "2026-09-25T09:55:51.856+00:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 17,
+    "id": 18,
     "external_id": "6656228",
     "source": "greenhouse",
     "company": "Monzo",
@@ -640,7 +688,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 17,
     "external_id": "6758449",
     "source": "greenhouse",
     "company": "Monzo",
@@ -656,7 +704,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 16,
     "external_id": "6656737",
     "source": "greenhouse",
     "company": "Monzo",
@@ -672,7 +720,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 15,
     "external_id": "6945371",
     "source": "greenhouse",
     "company": "Monzo",
@@ -688,7 +736,7 @@
     "reasoning": null
   },
   {
-    "id": 13,
+    "id": 14,
     "external_id": "7343996",
     "source": "greenhouse",
     "company": "Monzo",
@@ -704,7 +752,7 @@
     "reasoning": null
   },
   {
-    "id": 37,
+    "id": 50,
     "external_id": "8176967",
     "source": "greenhouse",
     "company": "Elastic",
@@ -713,14 +761,14 @@
     "workplace_type": null,
     "employment_type": null,
     "url": "https://jobs.elastic.co/jobs?gh_jid=8176967&gh_jid=8176967",
-    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><p></p> <h2><strong>What is The Role:</strong></h2> <p>As part of the Platform Engineering department, the SRE team is designing, building, scaling and maturing the multi-cloud platform for hosting internal and external services such as the Elastic Cloud<a href=\"https://www.elastic.co/cloud\" target=\"_blank\"> Hosted</a> and<a href=\"https://www.elastic.co/elasticsearch/serverless\" target=\"_blank\"> Serverless</a>. We develop and extend new software and tools that support the rest of the infrastructure, so that we can rapidly deploy products from all corners of Elastic. We want your experience and recommendations to offer a truly exceptional customer experience!</p> <h2><strong>What you will be doing:</strong></h2> <ul> <li>Taking an engineering approach in leading technical initiatives for automating system engineering efforts to guarantee the reliability of the global Elastic infrastructure. .</li> <li>Growing our global Platform infrastructure to meet the increasing scaling demands by developing and maintaining software, tooling and automations.</li> <li>Using an inclusive approach at championing an environment focused on collaboration, operational excellence, and uplifting others.</li> <li>Responding to and preventing repeated customer impact in response to major incidents and prioritised problem management. Our on call rotation uses follow-the-sun model where everyone participates in it in (mostly) their working hours.</li> </ul> <h2><strong>What you bring:</strong></h2> <ul> <li>Success and lessons of experiences from striving for 'progress not perfection' in the name of Platform reliability. We want to hear about your customer first approach in solving operational problems with a SRE perspective.</li> <li>A background in software engineering to collaborate with engineers to expertly identify, implement and deliver solutions. An experience in public cloud and managed Kubernetes services is advantageous.</li> <li>Passion for developing solutions that involve inclusive communication methods to grow and strengthen partner and team relationships. Examples of working in distributed teams or working remotely is desirable.</li> </ul> <h2><strong>Bonus Points:</strong></h2> <p>You don't need to have all of these items, but these represent the types of work you will do as a Site Reliability Engineer at Elastic.</p> <ul> <li>You have operated a SaaS product in a public cloud ideally built using Infrastructure-as-Code tooling such as Crossplane or Terraform</li> <li>You have built or operated a Kubernetes-at-scale infrastructure, ideally across multiple cloud providers, and the vital automation to support it.</li> <li>You have written non-trivial programs in Golang or other programming languages.</li> <li>You have worked with containerized services (such as Docker.)</li> <li>You have proven experience in leading and improving alerting and major incident management standard processes metrics systems (e.g. Elastic Stack, Graphite, Prometheus, Influx) to diagnose issues and quantify impacts to present to others at varying level of the organization.</li> <li>You have experience in system administration with professional skills in Linux on distributed systems at scale.</li> <li>You have diagnosed or designed, implemented and created solutions with the Elastic Stack.</li> <li>You are experienced in thriving in a self-organizing and sharing in a globally distributed team environment.</li> <li>You strengthen team members in bringing out the best of each other by uplifting others with coaching and mentoring.</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€76.000</span><span class=\"divider\">&mdash;</span><span>€101.800 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
+    "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><p></p> <h2><strong>What is The Role:</strong></h2> <p>As part of the Platform Engineering department, the SRE team is designing, building, scaling and maturing the multi-cloud platform for hosting internal and external services such as the Elastic Cloud<a href=\"https://www.elastic.co/cloud\" target=\"_blank\"> Hosted</a> and<a href=\"https://www.elastic.co/elasticsearch/serverless\" target=\"_blank\"> Serverless</a>. We develop and extend new software and tools that support the rest of the infrastructure, so that we can rapidly deploy products from all corners of Elastic. We want your experience and recommendations to offer a truly exceptional customer experience!</p> <h2><strong>What you will be doing:</strong></h2> <ul> <li>Taking an engineering approach in leading technical initiatives for automating system engineering efforts to guarantee the reliability of the global Elastic infrastructure. .</li> <li>Growing our global Platform infrastructure to meet the increasing scaling demands by developing and maintaining software, tooling and automations.</li> <li>Using an inclusive approach at championing an environment focused on collaboration, operational excellence, and uplifting others.</li> <li>Responding to and preventing repeated customer impact in response to major incidents and prioritised problem management. Our on call rotation uses follow-the-sun model where everyone participates in it in (mostly) their working hours.</li> </ul> <h2><strong>What you bring:</strong></h2> <ul> <li>Success and lessons of experiences from striving for 'progress not perfection' in the name of Platform reliability. We want to hear about your customer first approach in solving operational problems with a SRE perspective.</li> <li>A background in software engineering to collaborate with engineers to expertly identify, implement and deliver solutions. An experience in public cloud and managed Kubernetes services is advantageous.</li> <li>Passion for developing solutions that involve inclusive communication methods to grow and strengthen partner and team relationships. Examples of working in distributed teams or working remotely is desirable.</li> </ul> <h2><strong>Bonus Points:</strong></h2> <p>You don't need to have all of these items, but these represent the types of work you will do as a Site Reliability Engineer at Elastic.</p> <ul> <li>You have operated a SaaS product in a public cloud ideally built using Infrastructure-as-Code tooling such as Crossplane or Terraform</li> <li>You have built or operated a Kubernetes-at-scale infrastructure, ideally across multiple cloud providers, and the vital automation to support it.</li> <li>You have written non-trivial programs in Golang or other programming languages.</li> <li>You have worked with containerized services (such as Docker.)</li> <li>You have proven experience in leading and improving alerting and major incident management standard processes metrics systems (e.g. Elastic Stack, Graphite, Prometheus, Influx) to diagnose issues and quantify impacts to present to others at varying level of the organization.</li> <li>You have experience in system administration with professional skills in Linux on distributed systems at scale.</li> <li>You have diagnosed or designed, implemented and created solutions with the Elastic Stack.</li> <li>You are experienced in thriving in a self-organizing and sharing in a globally distributed team environment.</li> <li>You strengthen team members in bringing out the best of each other by uplifting others with coaching and mentoring.</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€55.800</span><span class=\"divider\">&mdash;</span><span>€88.300 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
     "posted_at": "2026-09-24T17:25:10-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null
   },
   {
-    "id": 61,
+    "id": 74,
     "external_id": "8109295",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -736,23 +784,7 @@
     "reasoning": null
   },
   {
-    "id": 32,
-    "external_id": "4712270006",
-    "source": "greenhouse",
-    "company": "Neo4j",
-    "title": "Senior Solutions Engineer-  Rome",
-    "location": "Remote: Italy",
-    "workplace_type": "Remote",
-    "employment_type": null,
-    "url": "https://boards.greenhouse.io/neo4j/jobs/4712270006?gh_jid=4712270006",
-    "description": "<div class=\"content-intro\"><div><span style=\"font-size: 18pt;\"><strong>About Neo4j:</strong></span></div> <div> <p>Neo4j is the graph intelligence platform that transforms data into knowledge to power the next generation of intelligent applications and AI systems. It includes enterprise-ready knowledge graphs for accurate, explainable, and governed AI; the most comprehensive, trusted, and easy-to-deploy graph capabilities across any environment and data source; and an unmatched ecosystem trusted by 84 of the Fortune 100 and supported by the world’s largest graph community.&nbsp;Intelligence that works. Results that matter.</p> <p>Built to work everywhere and integrate with everything across every cloud for dynamic, personalized, and autonomous AI systems. We deliver quicker results, contextual knowledge, and solutions that impact customers and employees across the business.</p> </div> <div><span style=\"font-size: 18pt;\"><strong>Our Vision:&nbsp;</strong></span></div> <div> <p><span style=\"font-weight: 400;\">At Neo4j, we have always strived to help the world make sense of data.&nbsp;&nbsp;</span></p> <p><span style=\"font-weight: 400;\">As business, society and knowledge become increasingly connected, our technology promotes innovation by helping organizations to find and understand data relationships. We created, drive and lead the graph database category, and we’re disrupting how organizations leverage their data to innovate and stay competitive.</span></p> </div></div><p>&nbsp;</p> <h2><strong>The Role</strong></h2> <p>Neo4j is the world’s leading graph database, and our Solutions Engineering (PreSales) team plays a pivotal role in helping customers unlock its potential every day. Neo4j has established itself as a premier data and AI platform for enterprise use cases across Knowledge Graphs, Network &amp; Grid Topology, Root-Cause &amp; Impact Analysis, Fraud &amp; AML, Customer 360, Asset Intelligence, and modern AI workloads including GenAI, LLM-driven applications, and emerging Agentic AI architectures.</p> <p>As part of Neo4j’s Solutions Engineering (PreSales) organization, you will work directly with strategic and enterprise customers across several key Benelux verticals — including High-Tech Manufacturing, Energy &amp; Utilities, Telecommunications, Financial Services, and the Public Sector. You’ll provide technical and architectural leadership, helping customers design Neo4j-powered solutions that deliver measurable business value.</p> <p>The role of a Solutions Engineer (PreSales) encompasses a broad range of responsibilities, starting with understanding a customer’s unique requirements and environment. You’ll translate these into tailored solution architectures that incorporate Neo4j’s advanced graph technology, guiding stakeholders throughout the sales cycle. Daily work includes demonstrating Neo4j’s capabilities, whiteboarding solution designs, and engaging with technical decision-makers to align solutions with their strategic priorities.</p> <p>You’ll bridge the gap between business and technology, combining technical strength with the ability to articulate clear value and outcomes.</p> <h2><strong>Main Responsibilities</strong></h2> <ul> <li>Act as a central player in Neo4j Solution Engineering engagements, supporting customers across the entire customer lifecycle — from early discovery to architecture design, proof-of-value, and long-term adoption.</li> <li>Build and nurture strong relationships with strategic and enterprise customer teams.</li> <li>Partner closely with Account Executives to communicate the technical and business impact of graph solutions.</li> <li>Ensure strong technical alignment and smooth integration of Neo4j into customer environments.</li> <li>Provide architectural recommendations aligned with customer strategies and IT landscapes.</li> <li>Design and present Neo4j-based prototypes that demonstrate both technical feasibility and business value.<br><br></li> </ul> <h2><strong>Key Role</strong></h2> <ul> <li>Experience: At least 5 years in PreSales / Solutions Engineering or Professional Services, ideally with enterprise customers in High-Tech, Energy, Telecom, Financial Services, or Public Sector.</li> <li>Database Expertise: Strong understanding of database platforms, particularly NoSQL.</li> <li>Solution Design: Ability to translate business requirements into effective solution architectures.</li> <li>Technical Proficiency: Familiarity with a programming or scripting language (Java, Python, JavaScript, etc.).</li> <li>Consultative Skills: Proven experience guiding technical teams through complex, consultative engagements.</li> <li>Adaptability: Strong desire to learn and quickly adopt emerging technologies.</li> <li>Problem-Solving: Passion for tackling complex technical challenges with innovative solutions.</li> <li>Enablement: Ability to lead technical workshops and small-group sessions.</li> <li>Sales Alignment: Comfortable managing the technical aspects of enterprise sales cycles.</li> </ul><div class=\"content-conclusion\"><div><span style=\"font-size: 18pt;\"><strong>Why Join Neo4j?</strong></span></div> <div> <p>Neo4j is, without question, the most popular graph intelligence platform in the world. We have customers in every industry globally, and our products are a proven product/market fit. Joining our team is an opportunity to shape the future of data and analytics. Below are just a few exciting facts about Neo4j.&nbsp;</p> <ul> <li>Neo4j is one of the fastest-scaling technology companies in this industry. It <a href=\"https://neo4j.com/press-releases/neo4j-revenue-milestone-2024/\">recently surpassed $200M</a> in annual recurring revenue (ARR), doubling its ARR <a href=\"https://neo4j.com/press-releases/2021-company-momentum/\">over the past three years.</a>&nbsp;</li> <li>Raised the biggest funding round in database history ($325M Series F). Backed by world-class investors like Eurazeo, GV (formerly Google Ventures), and Inovia Capital, Neo4j has raised over $600M in funding and is currently valued at over $2Bn. This puts Neo4j among the most well-funded database companies in history.</li> <li>84% of the Fortune 100 and 58% of the Fortune 500 use Neo4j. Examples include <a href=\"https://neo4j.com/case-studies/boston-scientific/\">Boston Scientific</a>, <a href=\"https://neo4j.com/case-studies/bt/\">BT Group</a>, <a href=\"https://neo4j.com/case-studies/caterpillar/\">Caterpillar</a>, <a href=\"https://neo4j.com/case-studies/cisco/\">Cisco</a>, <a href=\"https://neo4j.com/case-studies/comcast/\">Comcast</a>, <a href=\"https://neo4j.com/case-studies/department-for-education-uk/\">Department for Education UK</a>, <a href=\"https://neo4j.com/case-studies/ebay/\">eBay</a>, <a href=\"https://neo4j.com/case-studies/nbc-news/\">NBC News</a>, <a href=\"https://neo4j.com/case-studies/novo-nordisk/\">Novo Nordisk</a>, <a href=\"https://neo4j.com/case-studies/worldline/\">Worldline</a>, and <a href=\"https://neo4j.com/case-studies/\">others</a>.&nbsp;</li> <li>Co-founder and CEO Emil Eifrem has built an amazing culture that prides itself on relationships, inclusiveness, innovation, and customer success.</li> <li>Countless <a href=\"https://neo4j.com/awards/\">industry awards</a>. Massive enterprises and individual developers/data scientists love Neo4j. A strong sense of community and ecosystem is built around the platform.</li> <li>A recent Forrester Total Economic Impact™ Study cited Neo4j as delivering 417% ROI to customers.&nbsp;</li> </ul> <p><a href=\"https://www.bizjournals.com/bizwomen/news/profiles-strategies/2022/07/getting-the-job-how-gender-equity.html?page=all\">Research</a> shows that members of underrepresented communities are less likely to apply for jobs when they don’t meet all the qualifications. <strong>If this is part of the reason you hesitate to apply, we’d encourage you to reconsider and give us the opportunity to review your application. </strong>At Neo4j, we are committed to building awareness and helping to improve these issues.&nbsp;</p> <p>One of our central objectives is to provide an inclusive, diverse, and equitable workplace for everyone to develop their potential and have a positive, career-defining experience. We look forward to receiving your application.</p> </div> <div><span style=\"font-size: 18pt;\"><strong>Neo4j Values:</strong></span></div> <div> <p><span style=\"font-weight: 400;\">Neo4j is a Silicon Valley company with a Swedish soul. We foster collaboration and each of us is empowered to contribute and put our innovative stamp on projects. We hire candidates who reflect the following Neo4j core values:</span></p> <p><span style=\"font-weight: 400;\">(we)-[:VALUE]->(relationships)<br></span><span style=\"font-weight: 400;\">(we)-[:FOCUS_ON]->(userSuccess)<br></span><span style=\"font-weight: 400;\">(we)-[:THRIVE_IN]->(:Culture {type: [‘Open’, ‘Inclusive’]})<br></span><span style=\"font-weight: 400;\">(we)-[:ASSUME]->(:Intent {direction:’Positive’})<br></span><span style=\"font-weight: 400;\">(we)-[:WELCOME]->(:Discussions {nature: ‘IntellectuallyHonest’})<br></span><span style=\"font-weight: 400;\">(we)-[:DELIVER_ON]->(ourCommitments)&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Neo4j is committed to protecting and respecting your privacy. Please read the</span><a href=\"https://neo4j.com/privacy-policy/recruitment-process/?ref=hr-\"><span style=\"font-weight: 400;\"> </span><span style=\"font-weight: 400;\">privacy notice regarding Neo4j's recruitment process</span></a><span style=\"font-weight: 400;\"> to understand how we will handle the personal data that you provide.</span><span style=\"font-weight: 400;\">&nbsp;</span></p> <span style=\"font-weight: 400;\">More information at</span><a href=\"http://www.neo4j.com/\"><span style=\"font-weight: 400;\"> </span></a><span style=\"font-weight: 400;\"><a href=\"https://www.neo4j.com\">www.neo4j.com</a></span><span style=\"font-weight: 400;\">.</span></div> <div>&nbsp;</div> <div><span style=\"font-weight: 400;\">©2026 Neo4j, Inc., Neo Technology®, Neo4j®, Cypher®, Neo4j Bloom™, Neo4j Graph Data Science Library™, Neo4j® Aura™, and Neo4j® AuraDB™ are registered trademarks or a trademark of Neo4j, Inc. All other marks are owned by their respective companies.</span></div></div>",
-    "posted_at": "2026-09-24T11:24:20-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 28,
+    "id": 30,
     "external_id": "7180929",
     "source": "greenhouse",
     "company": "Adyen",
@@ -768,7 +800,7 @@
     "reasoning": null
   },
   {
-    "id": 58,
+    "id": 56,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -784,7 +816,7 @@
     "reasoning": null
   },
   {
-    "id": 57,
+    "id": 55,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -800,7 +832,7 @@
     "reasoning": null
   },
   {
-    "id": 66,
+    "id": 35,
     "external_id": "4777935101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -816,7 +848,7 @@
     "reasoning": null
   },
   {
-    "id": 74,
+    "id": 44,
     "external_id": "7985189003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -832,7 +864,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 27,
     "external_id": "7771629",
     "source": "greenhouse",
     "company": "Adyen",
@@ -848,7 +880,7 @@
     "reasoning": null
   },
   {
-    "id": 19,
+    "id": 21,
     "external_id": "8179613",
     "source": "greenhouse",
     "company": "Adyen",
@@ -880,23 +912,7 @@
     "reasoning": null
   },
   {
-    "id": 63,
-    "external_id": "4976229101",
-    "source": "greenhouse",
-    "company": "JetBrains",
-    "title": "Customer Success Engineer EMEA",
-    "location": "Amsterdam, Netherlands; Prague, Czech Republic",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4976229101",
-    "description": "<p>At JetBrains, code is our passion. Since we started in 2000, we have strived to make the most effective developer tools on earth so developers can learn fast and make amazing things happen – with code. Customer Success Engineers (CSE) are technical points of contact for JetBrains customers. They work with the JetBrains product teams and customers to ensure that the products meet the needs of our enterprise users, helping our products retain their position as the best on the market.</p> <p>Many of our customers begin with a set of strategic projects that grow into sizable partnerships. We are looking for&nbsp;<strong>Customer Success Engineers to build great technical relationships with our customers and grow JetBrains' business.</strong> We care deeply about our customers' success and the quality of our work. In addition to having a passion for working with others, the ideal candidate will be able to deepen our relationships with customers and serve as a technical advisor to them.</p> <h3>In this role, you will:</h3> <ul> <li>Work closely with JetBrains Account Executives.</li> <li>Help customers adopt JetBrains products and services to achieve desired business outcomes. This responsibility may include whiteboarding and assisting with the development of architecture or providing support for overcoming technical and cultural barriers to adoption.</li> <li>Manage the technical relationships for a portfolio of accounts, and partner with other members of the account team to define and implement the account strategies.</li> <li>Be the customers’ advocate within JetBrains, representing them to the Support and Product Engineering teams, as well as other groups.</li> <li>Recommend product enhancements based on your customer experiences and the feedback you receive.</li> <li>Help product teams present and evaluate new product ideas to the customers in your portfolio.</li> <li>Act as a trusted technical advisor to customers, staying up to date on the ever-evolving state of technology both within JetBrains and in the field at large.</li> <li>Work with Sales to facilitate account expansions by developing short-term and long-term account plans that meet customer needs.</li> </ul> <h3>We will be happy to have you on our team if you have:</h3> <ul> <li>Proven experience in technical consulting, technical customer success, or other customer-facing technical roles.</li> <li>Extensive experience in software development, QA, IT, DevOps, ML, or any related IT field – the wider the variety of fields, the better.</li> <li>Hands-on knowledge of AI/LLMs in the field of software development.</li> <li>A passion for continually improving the customer experience.</li> <li>Strong verbal and written communication skills in English and the local language of your office.</li> <li>Exceptional presentation skills for demonstrating JetBrains products to customers.</li> <li>The ability to quickly identify and address technical and business challenges related to software development tooling.</li> <li>The ability to convey technical concepts to customers of all technical backgrounds.</li> <li>Comfort in a fast-paced and dynamic working environment.</li> <li>Experience working in or with large software development teams.</li> <li>A collaborative and team-focused mentality, with a willingness to take initiative.</li> <li>Self-direction and resourcefulness.</li> <li>The ability to travel approximately 25% of the time.</li> </ul> <p><strong>Why join JetBrains?&nbsp;</strong></p> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li><strong>Relocation support. We help make your move as smooth and stress-free as possible.&nbsp;</strong></li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-HYBRID</span></p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-JP1</span></p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-REMOTE</span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
-    "posted_at": "2026-09-23T04:30:42-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 20,
+    "id": 22,
     "external_id": "7908806",
     "source": "greenhouse",
     "company": "Adyen",
@@ -912,7 +928,7 @@
     "reasoning": null
   },
   {
-    "id": 33,
+    "id": 46,
     "external_id": "8224018",
     "source": "greenhouse",
     "company": "Elastic",
@@ -960,7 +976,7 @@
     "reasoning": null
   },
   {
-    "id": 72,
+    "id": 41,
     "external_id": "4979524101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1008,23 +1024,7 @@
     "reasoning": null
   },
   {
-    "id": 62,
-    "external_id": "4696977101",
-    "source": "greenhouse",
-    "company": "JetBrains",
-    "title": "Build Infrastructure Engineer (JetBrains IDEs)",
-    "location": "Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Prague, Czech Republic; Warsaw, Poland; Yerevan, Armenia",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4696977101",
-    "description": "<p data-pos=\"0\">At JetBrains, code is our passion. Ever since we started, back in 2000, we have strived to make the strongest, most effective developer tools on earth. By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover, and create.</p> <p data-pos=\"280\"><a class=\"ring-ui-link_f850\" href=\"https://www.jetbrains.com/ides/\" target=\"_blank\" data-pos=\"280\">JetBrains IDEs</a>&nbsp;support many programming languages, including Java, Kotlin, Python, Go, Rust, JavaScript, and others. Our IDEs are used by hundreds of thousands of developers around the world, and we do all we can to make development an enjoyable experience for them.</p> <p data-pos=\"583\">JetBrains IDEs have grown in several ways over the years. They now have:</p> <ul data-pos=\"657\"> <li data-pos=\"657\">14 GB of source code</li> <li data-pos=\"680\">500+ developers</li> <li data-pos=\"698\">Hundreds of thousands of tests</li> </ul> <p data-pos=\"732\">We strive to streamline the development of JetBrains IDEs, so we are looking for a person who would help us support and develop infrastructure for quick and easy test runs, installer builds, product releases, and related tasks.</p> <h3 id=\"we-will-be-happy-to-have-you-on-our-team-if-you\" data-pos=\"965\"><strong data-pos=\"967\">We will be happy to have you on our team if you:</strong>&nbsp;</h3> <ul data-pos=\"1019\"> <li data-pos=\"1019\">Have experience with Java or Kotlin stack development. Can design and write code that is easy to read and maintain.</li> <li data-pos=\"1137\">Are familiar with build systems such as Bazel, Gradle, or Maven.</li> <li data-pos=\"1204\">Are experienced with DevOps tooling such as AWS, Azure, Kubernetes, Terraform, Packer, or Ansible.</li> <li data-pos=\"1305\">Are familiar with Linux fundamentals and shell scripting, and feel comfortable handling basic system administrative tasks.</li> <li data-pos=\"1430\">Understand the algorithms behind the code you write.</li> <li data-pos=\"1485\">Have strong teamwork skills, are open to diverse opinions, and can support your point of view with sound reasoning.</li> <li data-pos=\"1603\">Are ready to communicate and collaborate closely with other teams.</li> <li data-pos=\"1672\">Are willing to grow as a professional by learning and applying new approaches and technologies.</li> <li data-pos=\"1770\">Take pride in the work you do.</li> <li data-pos=\"1803\">Have contributed to open-source projects or have developed projects of your own.</li> </ul> <h3 id=\"how-we-develop-intellij-idea\" data-pos=\"1891\"><strong data-pos=\"1893\">How we develop IntelliJ IDEA:</strong>&nbsp;</h3> <ul data-pos=\"1926\"> <li data-pos=\"1926\">The source code is stored in Git, with the public part available on&nbsp;<a class=\"ring-ui-link_f850\" href=\"https://github.com/JetBrains/intellij-community\" target=\"_blank\" data-pos=\"1996\">GitHub</a>.</li> <li data-pos=\"2055\">The source code is written in Java 17 and Kotlin. When it comes to build tools, we develop them using our own Kotlin scripts.</li> <li data-pos=\"2183\">For effective team collaboration, we use the following JetBrains products: Space, TeamCity, and YouTrack.</li> </ul> <h3><strong>Why join JetBrains?&nbsp;</strong></h3> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family.</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li>Relocation support. We help make your move as smooth and stress-free as possible.&nbsp;</li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.<br><span style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(255, 255, 255);\">#LI-DNI&nbsp;</span><br><br></span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
-    "posted_at": "2026-09-21T09:19:20-04:00",
-    "tags": null,
-    "verdict": null,
-    "reasoning": null
-  },
-  {
-    "id": 23,
+    "id": 25,
     "external_id": "7573921",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1040,7 +1040,7 @@
     "reasoning": null
   },
   {
-    "id": 35,
+    "id": 48,
     "external_id": "8220151",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1056,7 +1056,7 @@
     "reasoning": null
   },
   {
-    "id": 34,
+    "id": 47,
     "external_id": "8220111",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1072,7 +1072,7 @@
     "reasoning": null
   },
   {
-    "id": 29,
+    "id": 42,
     "external_id": "8185412",
     "source": "greenhouse",
     "company": "Typeform",
@@ -1088,7 +1088,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 26,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1104,7 +1104,7 @@
     "reasoning": null
   },
   {
-    "id": 70,
+    "id": 39,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1120,7 +1120,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 23,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1136,7 +1136,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 12,
     "external_id": "7811482",
     "source": "greenhouse",
     "company": "N26",
@@ -1168,7 +1168,7 @@
     "reasoning": null
   },
   {
-    "id": 39,
+    "id": 52,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1184,7 +1184,7 @@
     "reasoning": null
   },
   {
-    "id": 38,
+    "id": 51,
     "external_id": "8207678",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1200,7 +1200,7 @@
     "reasoning": null
   },
   {
-    "id": 71,
+    "id": 40,
     "external_id": "4917464101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -1216,7 +1216,7 @@
     "reasoning": null
   },
   {
-    "id": 27,
+    "id": 29,
     "external_id": "8107420",
     "source": "greenhouse",
     "company": "Adyen",
