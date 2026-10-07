@@ -717,4 +717,7 @@ Common filters: --country <name> --remote --contract --unjudged --limit <n>`);
 
 program.parseAsync().then(() => closeDb()).catch((err) => {
   console.error(pc.red(String(err?.message ?? err)));
+  // A failed command must fail the process, otherwise CI steps report success
+  // while doing nothing (e.g. judging a tab that no longer exists).
+  process.exitCode = 1;
 });

@@ -6,8 +6,6 @@ export interface RecruiteeOffer {
   id?: number | string;
   slug?: string;
   title?: string;
-  city?: string;
-  country?: string;
   status?: string;
   published_at?: string;
   careers_url?: string;

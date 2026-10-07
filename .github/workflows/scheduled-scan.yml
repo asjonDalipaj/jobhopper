@@ -62,8 +62,11 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           if [ -n "$OPENROUTER_API_KEY" ]; then
-            echo "OpenRouter key reached this step (${#OPENROUTER_API_KEY} chars) - judging EU work tab..."
-            node dist/cli/index.js judge --tab eu-recent-software --quick
+            echo "OpenRouter key reached this step (${#OPENROUTER_API_KEY} chars) - judging market tabs..."
+            # Tabs must exist (see .jobhopper/jobs.json); a missing tab now fails the step.
+            for tab in italy-roles spain-roles netherlands-roles; do
+              node dist/cli/index.js judge --tab "$tab" --quick
+            done
             node dist/cli/index.js run -j .jobhopper/exports/jobs.json
           else
             echo "No OpenRouter API key reached this step - skipping judgment."

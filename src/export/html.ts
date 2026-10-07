@@ -96,7 +96,6 @@ export interface JsonRow {
   reasoning?: string | null;
 }
 
-/** Write full job rows (as returned by the DB, containing verdicts) to JSON. */
 /**
  * Merge fresh DB rows into the committed snapshot without losing history.
  * Every existing row is kept, unless a fresh row has the same source+external_id,
@@ -118,6 +117,7 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
   return Array.from(byKey.values());
 }
 
+/** Write full job rows (as returned by the DB, containing verdicts) to JSON. */
 export function exportJobsToJsonFile(rows: JsonRow[], outputPath: string): void {
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, `${JSON.stringify(rows, null, 2)}\n`, 'utf8');
