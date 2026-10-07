@@ -41,6 +41,9 @@ export function parseAtsUrl(url: string): { ats: AtsKind; token: string } | null
   if (host === 'jobs.lever.co') return { ats: 'lever', token: token.toLowerCase() };
   if (host === 'jobs.ashbyhq.com') return { ats: 'ashby', token: token.toLowerCase() };
   if (host === 'apply.workable.com') return { ats: 'workable', token: token.toLowerCase() };
+  if (host === 'careers.smartrecruiters.com' || host === 'jobs.smartrecruiters.com') {
+    return { ats: 'smartrecruiters', token };
+  }
   return null;
 }
 

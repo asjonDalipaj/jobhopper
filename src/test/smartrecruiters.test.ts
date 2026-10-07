@@ -1,0 +1,52 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { smartrecruitersLocation, smartrecruitersJobsFromPage } from '../sources/smartrecruiters.js';
+
+test('smartrecruitersLocation uses fullLocation, falling back to city and country', () => {
+  assert.equal(
+    smartrecruitersLocation({ fullLocation: 'Suzhou, Jiangsu, China', city: 'Suzhou', country: 'cn' }),
+    'Suzhou, Jiangsu, China',
+  );
+  assert.equal(smartrecruitersLocation({ city: 'Madrid', country: 'es' }), 'Madrid, es');
+  assert.equal(smartrecruitersLocation({ country: 'nl' }), 'nl');
+  assert.equal(smartrecruitersLocation(undefined), '');
+});
+
+test('smartrecruitersJobsFromPage maps postings to SourceJob', () => {
+  const page = {
+    totalFound: 1,
+    content: [
+      {
+        id: '744000154195629',
+        name: 'Asia HR Director',
+        releasedDate: '2026-10-07T21:07:45.186Z',
+        refNumber: 'REF460M',
+        typeOfEmployment: { label: 'Full-time' },
+        location: { city: 'Suzhou', fullLocation: 'Suzhou, Jiangsu, China', country: 'cn', remote: false, hybrid: true },
+      },
+    ],
+  };
+  const jobs = smartrecruitersJobsFromPage({ name: 'Averna', token: 'Averna1' }, page);
+  assert.equal(jobs.length, 1);
+  assert.deepEqual(jobs[0], {
+    externalId: '744000154195629',
+    source: 'smartrecruiters',
+    company: 'Averna',
+    title: 'Asia HR Director',
+    location: 'Suzhou, Jiangsu, China',
+    workplaceType: 'Hybrid',
+    employmentType: 'Full-time',
+    url: 'https://jobs.smartrecruiters.com/Averna1/744000154195629',
+    description: '',
+    postedAt: '2026-10-07T21:07:45.186Z',
+  });
+});
+
+test('smartrecruitersJobsFromPage tolerates an empty page and partial postings', () => {
+  assert.deepEqual(smartrecruitersJobsFromPage({ name: 'X', token: 'x' }, {}), []);
+  const [job] = smartrecruitersJobsFromPage({ name: 'X', token: 'x' }, { content: [{ id: 'a1', name: 'Role' }] });
+  assert.equal(job.title, 'Role');
+  assert.equal(job.location, '');
+  assert.equal(job.employmentType, null);
+  assert.equal(job.postedAt, null);
+});

@@ -8,6 +8,7 @@ const BASE_URLS: Record<string, (token: string) => string> = {
   workable: (t) => `https://apply.workable.com/api/v3/accounts/${encodeURIComponent(t)}/jobs`,
   teamtailor: (t) => `https://${encodeURIComponent(t)}.teamtailor.com/jobs.json`,
   recruitee: (t) => `https://${encodeURIComponent(t)}.recruitee.com/api/offers/`,
+  smartrecruiters: (t) => `https://api.smartrecruiters.com/v1/companies/${encodeURIComponent(t)}/postings?limit=1`,
 };
 
 /**

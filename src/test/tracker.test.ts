@@ -8,6 +8,12 @@ test('parseAtsUrl reads subdomain tokens from root-only Recruitee and Teamtailor
   assert.deepEqual(parseAtsUrl('https://tradingview.teamtailor.com/'), { ats: 'teamtailor', token: 'tradingview' });
 });
 
+test('parseAtsUrl reads SmartRecruiters tokens from careers and jobs hosts', () => {
+  assert.deepEqual(parseAtsUrl('https://careers.smartrecruiters.com/NielsenIQ'), { ats: 'smartrecruiters', token: 'NielsenIQ' });
+  assert.deepEqual(parseAtsUrl('https://jobs.smartrecruiters.com/HireVue/'), { ats: 'smartrecruiters', token: 'HireVue' });
+  assert.deepEqual(parseAtsUrl('https://careers.smartrecruiters.com/InformaGroupPlc/taylor-and-francis'), { ats: 'smartrecruiters', token: 'InformaGroupPlc' });
+});
+
 test('parseAtsUrl still reads path tokens for path-based hosts', () => {
   assert.deepEqual(parseAtsUrl('https://jobs.lever.co/ottobock'), { ats: 'lever', token: 'ottobock' });
   assert.equal(parseAtsUrl('https://jobs.lever.co/'), null);

@@ -1,4 +1,4 @@
-export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee';
+export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee' | 'smartrecruiters';
 
 export interface CompanyEntry {
   name: string;
@@ -23,6 +23,9 @@ function as(name: string, token: string): CompanyEntry {
 }
 function rc(name: string, token: string): CompanyEntry {
   return { name, ats: 'recruitee', token };
+}
+function sr(name: string, token: string): CompanyEntry {
+  return { name, ats: 'smartrecruiters', token };
 }
 
 /**
@@ -193,4 +196,5 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   wk('Laravel', 'laravel'),
   wk('Oppizi', 'oppizi'),
   rc('Dss', 'consultdss'),
+  sr('NielsenIQ', 'NielsenIQ'),
 ];
