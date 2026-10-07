@@ -15,7 +15,7 @@ const USABLE_STATUS_PREFIXES = ['Supported/Already Live', 'Missing Jobs'];
 
 /**
  * Detect a supported ATS and its board token from a careers URL.
- * Returns null for unsupported platforms (Workday, Workable, Personio, ...).
+ * Returns null for unsupported platforms (e.g. Workday, Personio).
  */
 export function parseAtsUrl(url: string): { ats: AtsKind; token: string } | null {
   let parsed: URL;

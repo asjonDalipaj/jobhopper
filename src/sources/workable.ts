@@ -1,5 +1,5 @@
 import type { CompanyEntry } from './companies.js';
-import type { JobSource, SourceJob } from './types.js';
+import { joinLocationParts, type JobSource, type SourceJob } from './types.js';
 import { fetchWithTimeout } from './html.js';
 
 export interface WorkableLocation {
@@ -24,10 +24,7 @@ interface WorkableJob {
  * Keeps the country name so the market filter can match it.
  */
 export function workableLocation(locations: WorkableLocation[] | undefined): string {
-  return (locations ?? [])
-    .map((l) => [l.city, l.country].filter(Boolean).join(', '))
-    .filter(Boolean)
-    .join('; ');
+  return joinLocationParts((locations ?? []).map((l) => [l.city, l.country]));
 }
 
 /** Map a Workable v3 `/jobs` response body to normalized postings. Pure: no I/O. */
@@ -43,7 +40,7 @@ export function workableJobsFromResponse(
     location: workableLocation(j.locations),
     workplaceType: j.workplace ?? (j.remote ? 'Remote' : null),
     employmentType: null,
-    url: j.shortcode ? `https://apply.workable.com/${company.token}/j/${j.shortcode}/` : null,
+    url: j.shortcode ? `https://apply.workable.com/${encodeURIComponent(company.token)}/j/${encodeURIComponent(j.shortcode)}/` : null,
     description: '',
     postedAt: j.published ?? null,
   }));

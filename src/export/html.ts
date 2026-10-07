@@ -97,6 +97,27 @@ export interface JsonRow {
 }
 
 /** Write full job rows (as returned by the DB, containing verdicts) to JSON. */
+/**
+ * Merge fresh DB rows into the committed snapshot without losing history.
+ * Every existing row is kept, unless a fresh row has the same source+external_id,
+ * in which case the fresh row wins. A committed verdict/reasoning is kept when the
+ * fresh row has none, so a re-export never erases a judgment.
+ */
+export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null }>(
+  existing: T[],
+  fresh: T[],
+): T[] {
+  const byKey = new Map<string, T>();
+  for (const row of existing) byKey.set(`${row.source}:${row.external_id}`, row);
+  for (const row of fresh) {
+    const key = `${row.source}:${row.external_id}`;
+    const prev = byKey.get(key);
+    const keepVerdict = !row.verdict && prev?.verdict;
+    byKey.set(key, keepVerdict ? { ...row, verdict: prev.verdict, reasoning: prev.reasoning ?? row.reasoning } : row);
+  }
+  return Array.from(byKey.values());
+}
+
 export function exportJobsToJsonFile(rows: JsonRow[], outputPath: string): void {
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, `${JSON.stringify(rows, null, 2)}\n`, 'utf8');

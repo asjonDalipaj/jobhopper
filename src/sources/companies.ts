@@ -24,8 +24,9 @@ function as(name: string, token: string): CompanyEntry {
 
 /**
  * Default registry — Dutch and European technology companies (plus a few
- * remote-friendly international ones) that expose public Greenhouse/Lever/
- * Ashby boards. Tokens below were verified live against the public APIs.
+ * remote-friendly international ones) that expose public Greenhouse, Lever,
+ * Ashby, Workable or Teamtailor boards. Tokens below were verified live
+ * against the public APIs.
  *
  * Run `jobhopper companies verify` to re-check live, and `jobhopper scan -a`
  * to also pull whole-market remote aggregators (Remotive, RemoteOK) which need
@@ -170,7 +171,7 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   tt('TLC Worldwide', 'tlcworldwide'),
   tt('THE/STUDIO', 'thestudio.na'),
   tt('North Star Network (NSN)', 'northstarnetwork-1711439398'),
-  tt('Teamtailor', 'career'),
+  tt('Teamtailor (own careers)', 'career'),
   wk('Channel Factory', 'channel-factory'),
   wk('Wati', 'wati-dot-i-o'),
   wk('Flosum', 'flosum'),

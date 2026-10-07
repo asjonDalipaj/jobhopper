@@ -35,6 +35,17 @@ export interface JobSource {
   fetchAll?(): Promise<SourceJob[]>;
 }
 
+/**
+ * Join per-posting locations (each a list of parts such as ["Milan", "IT"])
+ * into one "; "-separated string. Empty parts and empty locations are dropped.
+ */
+export function joinLocationParts(locations: Array<Array<string | null | undefined>>): string {
+  return locations
+    .map((parts) => parts.filter((p): p is string => Boolean(p)).join(', '))
+    .filter(Boolean)
+    .join('; ');
+}
+
 /** Guess a workplace type keyword from location/description text. */
 export function guessWorkplace(text: string | undefined): string | null {
   if (!text) return null;

@@ -1,5 +1,5 @@
 import type { CompanyEntry } from './companies.js';
-import type { JobSource, SourceJob } from './types.js';
+import { joinLocationParts, type JobSource, type SourceJob } from './types.js';
 import { stripHtml, fetchWithTimeout } from './html.js';
 
 export interface TeamtailorPlace {
@@ -20,10 +20,7 @@ interface TeamtailorItem {
  * Keeps the country code so the market filter can match it.
  */
 export function teamtailorLocation(places: TeamtailorPlace[] | undefined): string {
-  return (places ?? [])
-    .map((p) => [p.address?.addressLocality, p.address?.addressCountry].filter(Boolean).join(', '))
-    .filter(Boolean)
-    .join('; ');
+  return joinLocationParts((places ?? []).map((p) => [p.address?.addressLocality, p.address?.addressCountry]));
 }
 
 /** Map a Teamtailor JSON Feed body to normalized postings. Pure: no I/O. */

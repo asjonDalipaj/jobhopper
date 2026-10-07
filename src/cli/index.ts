@@ -16,7 +16,7 @@ import { judgePosting } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
 import { runJob, runAllJobs } from '../jobs/run.js';
-import { exportToHtmlFile, exportJobsToJsonFile, type HtmlRow } from '../export/html.js';
+import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, type HtmlRow } from '../export/html.js';
 import { startWebServer } from './serve.js';
 
 
@@ -619,7 +619,18 @@ program
         verdict: j.verdict ?? null,
         reasoning: j.reasoning ?? null,
       }));
-      exportJobsToJsonFile(rows, jsonPath);
+      // Merge rather than overwrite: committed rows that the local DB no longer
+      // holds (e.g. postings from an earlier CI run) must survive a re-export.
+      let existing: typeof rows = [];
+      if (existsSync(jsonPath)) {
+        try {
+          const parsed: unknown = JSON.parse(readFileSync(jsonPath, 'utf8'));
+          if (Array.isArray(parsed)) existing = parsed as typeof rows;
+        } catch {
+          existing = [];
+        }
+      }
+      exportJobsToJsonFile(mergeSnapshotRows(existing, rows), jsonPath);
       console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}`);
     }
   });
