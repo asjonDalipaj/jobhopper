@@ -6,6 +6,18 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
+import { ashbyLocations } from '../sources/ashby.js';
+
+test('ashbyLocations joins primary and secondary locations as plain strings', () => {
+  const job = {
+    location: 'Paris',
+    secondaryLocations: [{ location: 'Lisbon', address: { postalAddress: { addressCountry: 'Portugal' } } }, { location: 'Amsterdam' }],
+  };
+  assert.equal(ashbyLocations(job), 'Paris; Lisbon; Amsterdam');
+  assert.equal(ashbyLocations({ location: 'Madrid' }), 'Madrid');
+  assert.equal(ashbyLocations({ location: undefined, secondaryLocations: [] }), '');
+  assert.ok(!ashbyLocations(job).includes('[object Object]'));
+});
 
 test('sanitizeFtsQuery strips special characters and prefixes wildcards', () => {
   assert.equal(sanitizeFtsQuery('c++'), '"c"*');
@@ -75,6 +87,15 @@ test('isTargetMarket matches Italy/Spain/Netherlands substrings, case-insensitiv
   assert.equal(isTargetMarket(''), false);
   assert.equal(isTargetMarket(null), false);
   assert.equal(isTargetMarket(undefined), false);
+});
+
+test('isTargetMarket matches whole words only (no substring false positives)', () => {
+  assert.equal(isTargetMarket('Manufacturing & Distribution'), false); // contains "turin"
+  assert.equal(isTargetMarket('Remote - Manufacturing'), false);
+  assert.equal(isTargetMarket('Bolognaise Foods'), false); // contains "bologna"
+  assert.equal(isTargetMarket('Torino, Italy'), true);
+  assert.equal(isTargetMarket('Remote (Italia)'), true);
+  assert.equal(isTargetMarket('Barcelona, España'), true);
 });
 
 test('isFresh accepts dates within the cutoff and rejects stale/missing/invalid dates', () => {

@@ -21,7 +21,13 @@ export const TARGET_MARKET_MAX_AGE_DAYS = 14;
 export function isTargetMarket(location: string | null | undefined): boolean {
   if (!location) return false;
   const lower = location.toLowerCase();
-  return TARGET_COUNTRIES.some((c) => lower.includes(c.toLowerCase()) || COUNTRY_ALIASES[c].some((alias) => lower.includes(alias)));
+  // Whole-word match: plain substring matching let "manufacturing" hit "turin".
+  const terms = TARGET_COUNTRIES.flatMap((c) => [c.toLowerCase(), ...COUNTRY_ALIASES[c]]);
+  return terms.some((term) => new RegExp(`(^|[^\\p{L}])${escapeRegExp(term)}($|[^\\p{L}])`, 'u').test(lower));
+}
+
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 /**

@@ -2,15 +2,29 @@ import type { JobSource, SourceJob } from './types.js';
 import { guessWorkplace, guessEmployment } from './types.js';
 import { stripHtml, fetchWithTimeout } from './html.js';
 
+interface AshbyLocation {
+  location?: string;
+  address?: unknown;
+}
+
 interface AshbyPosting {
   id?: string;
   title?: string;
   location?: string;
-  secondaryLocations?: string[];
+  secondaryLocations?: AshbyLocation[];
   jobUrl?: string;
   employmentType?: { name?: string };
   publishedAt?: string;
   jobDescriptionAsHtml?: string;
+}
+
+/**
+ * Flatten an Ashby posting's locations into one string. Secondary locations
+ * are objects ({ location, address }), so we must read `.location` rather
+ * than stringify the object (which produced "[object Object]").
+ */
+export function ashbyLocations(j: AshbyPosting): string {
+  return [j.location, ...(j.secondaryLocations ?? []).map((s) => s.location)].filter(Boolean).join('; ');
 }
 
 /**
@@ -29,7 +43,7 @@ export const ashby: JobSource = {
     const jobs = data.jobs ?? [];
     return jobs.map((j) => {
       const title = j.title ?? 'Untitled';
-      const location = [j.location, ...(j.secondaryLocations ?? [])].filter(Boolean).join('; ');
+      const location = ashbyLocations(j);
       const desc = stripHtml(j.jobDescriptionAsHtml ?? '');
       return {
         externalId: String(j.id ?? `${company.token}-${title}`),
