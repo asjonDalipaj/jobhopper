@@ -14,6 +14,11 @@ test('parseAtsUrl detects Workable accounts from apply.workable.com URLs', () =>
   assert.deepEqual(parseAtsUrl('https://apply.workable.com/Charger-Logistics-Inc/'), { ats: 'workable', token: 'charger-logistics-inc' });
 });
 
+test('parseAtsUrl detects Teamtailor subdomains as the board token', () => {
+  assert.deepEqual(parseAtsUrl('https://fluxmarine.teamtailor.com/jobs'), { ats: 'teamtailor', token: 'fluxmarine' });
+  assert.deepEqual(parseAtsUrl('https://shiftmarkets.na.teamtailor.com/jobs'), { ats: 'teamtailor', token: 'shiftmarkets.na' });
+});
+
 test('parseAtsUrl returns null for unsupported platforms and junk input', () => {
   assert.equal(parseAtsUrl('https://cleafy.workable.com/'), null);
   assert.equal(parseAtsUrl('https://ikusi.wd3.myworkdayjobs.com/es/Vacantes'), null);

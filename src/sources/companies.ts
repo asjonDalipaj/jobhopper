@@ -1,4 +1,4 @@
-export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable';
+export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor';
 
 export interface CompanyEntry {
   name: string;
@@ -11,6 +11,9 @@ function gh(name: string, token: string): CompanyEntry {
 }
 function lv(name: string, token: string): CompanyEntry {
   return { name, ats: 'lever', token };
+}
+function tt(name: string, token: string): CompanyEntry {
+  return { name, ats: 'teamtailor', token };
 }
 function wk(name: string, token: string): CompanyEntry {
   return { name, ats: 'workable', token };
@@ -164,6 +167,10 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   gh('Telnyx', 'telnyx54'),
   lv('Shield AI', 'shieldai'),
   wk('Cleafy', 'cleafy'),
+  tt('TLC Worldwide', 'tlcworldwide'),
+  tt('THE/STUDIO', 'thestudio.na'),
+  tt('North Star Network (NSN)', 'northstarnetwork-1711439398'),
+  tt('Teamtailor', 'career'),
   wk('Channel Factory', 'channel-factory'),
   wk('Wati', 'wati-dot-i-o'),
   wk('Flosum', 'flosum'),
