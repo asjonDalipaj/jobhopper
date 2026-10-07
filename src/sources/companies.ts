@@ -1,4 +1,4 @@
-export type AtsKind = 'greenhouse' | 'lever' | 'ashby';
+export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable';
 
 export interface CompanyEntry {
   name: string;
@@ -11,6 +11,9 @@ function gh(name: string, token: string): CompanyEntry {
 }
 function lv(name: string, token: string): CompanyEntry {
   return { name, ats: 'lever', token };
+}
+function wk(name: string, token: string): CompanyEntry {
+  return { name, ats: 'workable', token };
 }
 function as(name: string, token: string): CompanyEntry {
   return { name, ats: 'ashby', token };
@@ -160,4 +163,5 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   gh('WorldStrides', 'world4822stri986des'),
   gh('Telnyx', 'telnyx54'),
   lv('Shield AI', 'shieldai'),
+  wk('Cleafy', 'cleafy'),
 ];

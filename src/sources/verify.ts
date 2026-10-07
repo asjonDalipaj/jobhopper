@@ -5,6 +5,7 @@ const BASE_URLS: Record<string, (token: string) => string> = {
   greenhouse: (t) => `https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(t)}/jobs`,
   lever: (t) => `https://api.lever.co/v0/postings/${encodeURIComponent(t)}?mode=json`,
   ashby: (t) => `https://api.ashbyhq.com/posting-api/job-board/${encodeURIComponent(t)}`,
+  workable: (t) => `https://apply.workable.com/api/v3/accounts/${encodeURIComponent(t)}/jobs`,
 };
 
 /**

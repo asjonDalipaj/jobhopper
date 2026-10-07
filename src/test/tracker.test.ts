@@ -9,6 +9,11 @@ test('parseAtsUrl detects Greenhouse, Lever and Ashby board tokens', () => {
   assert.deepEqual(parseAtsUrl('https://jobs.ashbyhq.com/mollie/'), { ats: 'ashby', token: 'mollie' });
 });
 
+test('parseAtsUrl detects Workable accounts from apply.workable.com URLs', () => {
+  assert.deepEqual(parseAtsUrl('https://apply.workable.com/cleafy/#jobs'), { ats: 'workable', token: 'cleafy' });
+  assert.deepEqual(parseAtsUrl('https://apply.workable.com/Charger-Logistics-Inc/'), { ats: 'workable', token: 'charger-logistics-inc' });
+});
+
 test('parseAtsUrl returns null for unsupported platforms and junk input', () => {
   assert.equal(parseAtsUrl('https://cleafy.workable.com/'), null);
   assert.equal(parseAtsUrl('https://ikusi.wd3.myworkdayjobs.com/es/Vacantes'), null);

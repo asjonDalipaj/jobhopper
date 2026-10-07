@@ -4,6 +4,7 @@ import { storeJudgment } from '../db/judgments-repo.js';
 import { greenhouse } from './greenhouse.js';
 import { lever } from './lever.js';
 import { ashby } from './ashby.js';
+import { workable } from './workable.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
@@ -17,6 +18,7 @@ const SOURCES: Record<string, JobSource> = {
   greenhouse,
   lever,
   ashby,
+  workable,
   [remotive.name]: remotive,
   [remoteok.name]: remoteok,
 };
