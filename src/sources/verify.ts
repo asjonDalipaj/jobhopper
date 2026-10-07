@@ -7,6 +7,7 @@ const BASE_URLS: Record<string, (token: string) => string> = {
   ashby: (t) => `https://api.ashbyhq.com/posting-api/job-board/${encodeURIComponent(t)}`,
   workable: (t) => `https://apply.workable.com/api/v3/accounts/${encodeURIComponent(t)}/jobs`,
   teamtailor: (t) => `https://${encodeURIComponent(t)}.teamtailor.com/jobs.json`,
+  recruitee: (t) => `https://${encodeURIComponent(t)}.recruitee.com/api/offers/`,
 };
 
 /**

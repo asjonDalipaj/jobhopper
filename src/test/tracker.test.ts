@@ -2,6 +2,17 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { parseAtsUrl, isUsableStatus, rowsToCompanies, boardHasTargetMarketJobs, type TrackerRow } from '../sources/tracker.js';
 
+test('parseAtsUrl reads subdomain tokens from root-only Recruitee and Teamtailor URLs', () => {
+  assert.deepEqual(parseAtsUrl('https://hamelin.recruitee.com/'), { ats: 'recruitee', token: 'hamelin' });
+  assert.deepEqual(parseAtsUrl('https://consultdss.recruitee.com/jobs'), { ats: 'recruitee', token: 'consultdss' });
+  assert.deepEqual(parseAtsUrl('https://tradingview.teamtailor.com/'), { ats: 'teamtailor', token: 'tradingview' });
+});
+
+test('parseAtsUrl still reads path tokens for path-based hosts', () => {
+  assert.deepEqual(parseAtsUrl('https://jobs.lever.co/ottobock'), { ats: 'lever', token: 'ottobock' });
+  assert.equal(parseAtsUrl('https://jobs.lever.co/'), null);
+});
+
 test('parseAtsUrl detects Greenhouse, Lever and Ashby board tokens', () => {
   assert.deepEqual(parseAtsUrl('https://job-boards.greenhouse.io/adyen/jobs/7342887'), { ats: 'greenhouse', token: 'adyen' });
   assert.deepEqual(parseAtsUrl('https://boards.greenhouse.io/Cloudflare/jobs/1'), { ats: 'greenhouse', token: 'cloudflare' });

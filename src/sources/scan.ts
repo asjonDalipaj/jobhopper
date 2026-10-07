@@ -6,6 +6,7 @@ import { lever } from './lever.js';
 import { ashby } from './ashby.js';
 import { workable } from './workable.js';
 import { teamtailor } from './teamtailor.js';
+import { recruitee } from './recruitee.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
@@ -21,6 +22,7 @@ const SOURCES: Record<string, JobSource> = {
   ashby,
   workable,
   teamtailor,
+  recruitee,
   [remotive.name]: remotive,
   [remoteok.name]: remoteok,
 };

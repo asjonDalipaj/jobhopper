@@ -25,6 +25,13 @@ export function parseAtsUrl(url: string): { ats: AtsKind; token: string } | null
     return null;
   }
   const host = parsed.hostname.toLowerCase();
+
+  // Subdomain-hosted ATSes carry the company token in the host label, so they
+  // must not require a path segment (root URLs like https://x.recruitee.com/).
+  if (host.endsWith('.teamtailor.com')) return { ats: 'teamtailor', token: host.slice(0, -'.teamtailor.com'.length) };
+  if (host.endsWith('.recruitee.com')) return { ats: 'recruitee', token: host.slice(0, -'.recruitee.com'.length) };
+
+  // Path-hosted ATSes carry the company token as the first path segment.
   const token = parsed.pathname.split('/').filter(Boolean)[0];
   if (!token) return null;
 
@@ -34,7 +41,6 @@ export function parseAtsUrl(url: string): { ats: AtsKind; token: string } | null
   if (host === 'jobs.lever.co') return { ats: 'lever', token: token.toLowerCase() };
   if (host === 'jobs.ashbyhq.com') return { ats: 'ashby', token: token.toLowerCase() };
   if (host === 'apply.workable.com') return { ats: 'workable', token: token.toLowerCase() };
-  if (host.endsWith('.teamtailor.com')) return { ats: 'teamtailor', token: host.slice(0, -'.teamtailor.com'.length) };
   return null;
 }
 
