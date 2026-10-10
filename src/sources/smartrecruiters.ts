@@ -1,6 +1,6 @@
 import { type JobSource, type SourceJob } from './types.js';
 import { fetchWithTimeout, stripHtml } from './html.js';
-import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
+import { passesMarketGate } from '../market.js';
 
 export interface SmartrecruitersPosting {
   id?: string;
@@ -26,6 +26,11 @@ export function smartrecruitersLocation(loc: SmartrecruitersPosting['location'])
   return [loc.city, loc.country].filter(Boolean).join(', ');
 }
 
+/** True when a posting id is usable as an externalId (not missing/empty). */
+function isNonEmptyId(id: unknown): boolean {
+  return id !== undefined && id !== null && String(id) !== '';
+}
+
 /** Map one SmartRecruiters list page to normalized postings. Pure: no I/O. */
 export function smartrecruitersJobsFromPage(
   company: { name: string; token: string },
@@ -34,7 +39,7 @@ export function smartrecruitersJobsFromPage(
   // A posting without an id has no stable externalId and no usable URL — drop it
   // rather than emitting externalId "undefined".
   return (page.content ?? [])
-    .filter((p) => p.id !== undefined && p.id !== null && String(p.id) !== '')
+    .filter((p) => isNonEmptyId(p.id))
     .map((p) => {
     const id = String(p.id);
     const workplaceType = p.location?.remote ? 'Remote' : p.location?.hybrid ? 'Hybrid' : null;
@@ -58,7 +63,6 @@ export interface SmartrecruitersDetail {
     sections?: {
       jobDescription?: { text?: string };
       qualifications?: { text?: string };
-      companyDescription?: { text?: string };
       additionalInformation?: { text?: string };
     };
   };
@@ -98,6 +102,9 @@ export async function fetchSmartrecruitersDescription(token: string, id: string)
 
 const PAGE_SIZE = 100;
 const MAX_PAGES = 20;
+// ponytail: cap detail fetches per board — survivors are few, and each fetch
+// can take up to the 20s fetchWithTimeout. Raise if a board ever needs more.
+const MAX_ENRICH = 10;
 
 /**
  * Fetch an employer's postings from SmartRecruiters' public postings API,
@@ -121,12 +128,13 @@ export const smartrecruiters: JobSource = {
       const fetched = (page + 1) * PAGE_SIZE;
       if (!body.content?.length || fetched >= (body.totalFound ?? 0)) break;
     }
+    let enriched = 0;
     for (const job of jobs) {
+      if (enriched >= MAX_ENRICH) break;
       if (job.description) continue;
-      if (!isTargetMarket(job.location)) continue;
-      if (!isFresh(job.postedAt, new Date(), true)) continue;
-      if (!isRelevantRole(job.title)) continue;
+      if (!passesMarketGate(job)) continue;
       job.description = await fetchSmartrecruitersDescription(company.token, job.externalId);
+      enriched++;
     }
     return jobs;
   },

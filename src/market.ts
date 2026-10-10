@@ -61,3 +61,12 @@ export function isRelevantRole(title: string | null | undefined): boolean {
   const lower = title.toLowerCase();
   return ENGINEERING_KEYWORDS.some((keyword) => lower.includes(keyword)) || MUSIC_KEYWORDS.some((keyword) => lower.includes(keyword));
 }
+
+/**
+ * The full scan-time quality gate in one predicate: target market, fresh
+ * (14-day target-market window), relevant role. scan.ts and adapters share
+ * this so the gate can't drift between call sites.
+ */
+export function passesMarketGate(job: { location?: string | null; postedAt?: string | null; title?: string | null }): boolean {
+  return isTargetMarket(job.location) && isFresh(job.postedAt, new Date(), true) && isRelevantRole(job.title);
+}
