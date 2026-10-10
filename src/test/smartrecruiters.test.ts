@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { smartrecruitersLocation, smartrecruitersJobsFromPage } from '../sources/smartrecruiters.js';
+import { smartrecruitersLocation, smartrecruitersJobsFromPage, smartrecruitersDescription } from '../sources/smartrecruiters.js';
 
 test('smartrecruitersLocation uses fullLocation, falling back to city and country', () => {
   assert.equal(
@@ -57,4 +57,20 @@ test('smartrecruitersJobsFromPage tolerates an empty page and partial postings',
   assert.equal(job.location, '');
   assert.equal(job.employmentType, null);
   assert.equal(job.postedAt, null);
+});
+
+test('smartrecruitersDescription combines detail sections into plain text', () => {
+  assert.equal(
+    smartrecruitersDescription({
+      jobAd: {
+        sections: {
+          jobDescription: { text: '<p>Build <strong>things</strong>.</p>' },
+          qualifications: { text: '<ul><li>5+ years</li></ul>' },
+        },
+      },
+    }),
+    'Build things .\n\n5+ years',
+  );
+  assert.equal(smartrecruitersDescription({}), '');
+  assert.equal(smartrecruitersDescription({ jobAd: {} }), '');
 });

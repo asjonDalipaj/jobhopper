@@ -1,5 +1,6 @@
 import { type JobSource, type SourceJob } from './types.js';
-import { fetchWithTimeout } from './html.js';
+import { fetchWithTimeout, stripHtml } from './html.js';
+import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
 
 export interface SmartrecruitersPosting {
   id?: string;
@@ -52,12 +53,58 @@ export function smartrecruitersJobsFromPage(
   });
 }
 
+export interface SmartrecruitersDetail {
+  jobAd?: {
+    sections?: {
+      jobDescription?: { text?: string };
+      qualifications?: { text?: string };
+      companyDescription?: { text?: string };
+      additionalInformation?: { text?: string };
+    };
+  };
+}
+
+/**
+ * Combine a posting's detail sections into one plain-text description.
+ * Pure: no I/O. Empty when the detail carries no sections.
+ */
+export function smartrecruitersDescription(detail: SmartrecruitersDetail): string {
+  const sections = detail.jobAd?.sections;
+  if (!sections) return '';
+  return [
+    sections.jobDescription?.text,
+    sections.qualifications?.text,
+    sections.additionalInformation?.text,
+  ]
+    .map((html) => stripHtml(html ?? ''))
+    .filter(Boolean)
+    .join('\n\n');
+}
+
+/**
+ * Fetch one posting's full description from the detail endpoint.
+ * Returns '' on any failure — a missing description must not fail the scan.
+ */
+export async function fetchSmartrecruitersDescription(token: string, id: string): Promise<string> {
+  try {
+    const url = `https://api.smartrecruiters.com/v1/companies/${encodeURIComponent(token)}/postings/${encodeURIComponent(id)}`;
+    const res = await fetchWithTimeout(url, { headers: { Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' } });
+    if (!res.ok) return '';
+    return smartrecruitersDescription((await res.json()) as SmartrecruitersDetail);
+  } catch {
+    return '';
+  }
+}
+
 const PAGE_SIZE = 100;
 const MAX_PAGES = 20;
 
 /**
  * Fetch an employer's postings from SmartRecruiters' public postings API,
  * paging with limit/offset until totalFound is reached (capped at MAX_PAGES).
+ * The list endpoint carries no descriptions, so postings that survive the
+ * market gate get their full text from the detail endpoint (sequential —
+ * survivors are few, politeness over throughput). Failures keep ''.
  */
 export const smartrecruiters: JobSource = {
   name: 'smartrecruiters',
@@ -73,6 +120,13 @@ export const smartrecruiters: JobSource = {
       jobs.push(...smartrecruitersJobsFromPage(company, body));
       const fetched = (page + 1) * PAGE_SIZE;
       if (!body.content?.length || fetched >= (body.totalFound ?? 0)) break;
+    }
+    for (const job of jobs) {
+      if (job.description) continue;
+      if (!isTargetMarket(job.location)) continue;
+      if (!isFresh(job.postedAt, new Date(), true)) continue;
+      if (!isRelevantRole(job.title)) continue;
+      job.description = await fetchSmartrecruitersDescription(company.token, job.externalId);
     }
     return jobs;
   },
