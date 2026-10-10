@@ -1,6 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { smartrecruitersLocation, smartrecruitersJobsFromPage, smartrecruitersDescription } from '../sources/smartrecruiters.js';
+import { passesMarketGate } from '../market.js';
+
+test('passesMarketGate accepts only market-fresh-relevant postings', () => {
+  assert.equal(passesMarketGate({ location: 'Madrid, Spain', postedAt: new Date().toISOString(), title: 'Backend Engineer' }), true);
+  assert.equal(passesMarketGate({ location: 'Berlin, Germany', postedAt: new Date().toISOString(), title: 'Backend Engineer' }), false);
+  assert.equal(passesMarketGate({ location: 'Madrid, Spain', postedAt: '2020-01-01', title: 'Backend Engineer' }), false);
+  assert.equal(passesMarketGate({ location: 'Madrid, Spain', postedAt: new Date().toISOString(), title: 'Payroll Specialist' }), false);
+});
 
 test('smartrecruitersLocation uses fullLocation, falling back to city and country', () => {
   assert.equal(
