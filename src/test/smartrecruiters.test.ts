@@ -41,6 +41,15 @@ test('smartrecruitersJobsFromPage maps postings to SourceJob', () => {
   });
 });
 
+test('smartrecruitersJobsFromPage drops postings without an id', () => {
+  const jobs = smartrecruitersJobsFromPage(
+    { name: 'X', token: 'x' },
+    { content: [{ name: 'No id role' }, { id: '', name: 'Empty id role' }, { id: 'b2', name: 'Kept' }] },
+  );
+  assert.equal(jobs.length, 1);
+  assert.equal(jobs[0].externalId, 'b2');
+});
+
 test('smartrecruitersJobsFromPage tolerates an empty page and partial postings', () => {
   assert.deepEqual(smartrecruitersJobsFromPage({ name: 'X', token: 'x' }, {}), []);
   const [job] = smartrecruitersJobsFromPage({ name: 'X', token: 'x' }, { content: [{ id: 'a1', name: 'Role' }] });

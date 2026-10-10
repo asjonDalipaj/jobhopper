@@ -30,7 +30,11 @@ export function smartrecruitersJobsFromPage(
   company: { name: string; token: string },
   page: { content?: SmartrecruitersPosting[] },
 ): SourceJob[] {
-  return (page.content ?? []).map((p) => {
+  // A posting without an id has no stable externalId and no usable URL — drop it
+  // rather than emitting externalId "undefined".
+  return (page.content ?? [])
+    .filter((p) => p.id !== undefined && p.id !== null && String(p.id) !== '')
+    .map((p) => {
     const id = String(p.id);
     const workplaceType = p.location?.remote ? 'Remote' : p.location?.hybrid ? 'Hybrid' : null;
     return {
