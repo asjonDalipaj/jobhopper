@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo, type CSSProperties } from 'react';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
-import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
 import { Inbox } from 'lucide-react';
@@ -10,6 +9,7 @@ import { Inbox } from 'lucide-react';
 export function App() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [filters, setFilters] = useState<FilterState>({
     search: '',
     verdict: 'all',
@@ -29,19 +29,25 @@ export function App() {
           return;
         }
 
-        const res = await fetch('/api/jobs');
-        if (res.ok) {
-          const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) {
-            setJobs(data);
-            setLoading(false);
-            return;
+        const urls = import.meta.env.DEV ? ['/api/jobs', 'http://localhost:3333/api/jobs'] : ['/api/jobs'];
+        for (const url of urls) {
+          try {
+            const res = await fetch(url);
+            if (!res.ok) continue;
+            const data = await res.json();
+            if (Array.isArray(data)) {
+              setJobs(data);
+              setLoading(false);
+              return;
+            }
+          } catch {
+            // Try next local API endpoint.
           }
         }
+        setLoadError('Cannot load jobs from local database. Start `npm run ui`.');
       } catch {
-        // Local server not running or static mode
+        setLoadError('Cannot load jobs from local database. Start `npm run ui`.');
       }
-      setJobs(SAMPLE_JOBS);
       setLoading(false);
     }
 
@@ -187,7 +193,7 @@ export function App() {
         ) : (
           <div className="rounded-xl border border-dashed border-line-strong p-12 text-center space-y-3">
             <Inbox className="w-8 h-8 mx-auto text-ink-faint" />
-            <p className="text-sm text-ink-soft font-medium">No roles match your filters</p>
+            <p className="text-sm text-ink-soft font-medium">{loadError || 'No roles match your filters'}</p>
           </div>
         )}
       </main>

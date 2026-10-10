@@ -1,10 +1,9 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
-import { readFileSync, existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, resolve, extname } from 'node:path';
 import pc from 'picocolors';
 import { listJobs } from '../db/jobs-repo.js';
 import { htmlToPlainText } from '../sources/html.js';
-import { getPaths } from '../storage/paths.js';
 
 const MIME_TYPES: Record<string, string> = {
   '.html': 'text/html; charset=utf-8',
@@ -18,20 +17,6 @@ const MIME_TYPES: Record<string, string> = {
   '.json': 'application/json; charset=utf-8',
   '.woff2': 'font/woff2',
 };
-
-/** Load a committed JSON jobs snapshot (produced by `jobhopper run --json`). */
-function loadJsonSnapshot(): Array<Record<string, unknown>> {
-  const path = join(getPaths().exportsDir, 'jobs.json');
-  if (!existsSync(path)) return [];
-  try {
-    const parsed: unknown = JSON.parse(readFileSync(path, 'utf8'));
-    return Array.isArray(parsed)
-      ? (parsed as Array<Record<string, unknown>>)
-      : [];
-  } catch {
-    return [];
-  }
-}
 
 /**
  * Start a minimal local web server serving the React frontend and local SQLite jobs API.
@@ -63,13 +48,8 @@ export function startWebServer(port = 3333): void {
       }
 
       try {
-        // The committed JSON snapshot (.jobhopper/exports/jobs.json) is the
-        // single reviewed source of truth: CI judges postings and commits it,
-        // so a fresh `git pull` shows the latest jobs WITH their verdicts.
-        // Prefer it; fall back to the local live DB only when there is no
-        // snapshot (e.g. on a machine that has never run CI).
-        const snapshot = loadJsonSnapshot();
-        const source = snapshot.length > 0 ? snapshot : listJobs({ limit: 1000 });
+        // Local UI must show current local scans, not a stale committed snapshot.
+        const source = listJobs({ limit: 1000 });
         // Coerce stored HTML descriptions into clean, readable plain text so
         // the frontend never has to ingest raw markup or risk XSS.
         const cleaned = source.map((j) => {
