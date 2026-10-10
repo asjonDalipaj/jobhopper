@@ -14,7 +14,6 @@ test('smartrecruitersLocation uses fullLocation, falling back to city and countr
 
 test('smartrecruitersJobsFromPage maps postings to SourceJob', () => {
   const page = {
-    totalFound: 1,
     content: [
       {
         id: '744000154195629',

@@ -1,4 +1,3 @@
-import type { CompanyEntry } from './companies.js';
 import { type JobSource, type SourceJob } from './types.js';
 import { fetchWithTimeout } from './html.js';
 
@@ -28,11 +27,11 @@ export function smartrecruitersLocation(loc: SmartrecruitersPosting['location'])
 
 /** Map one SmartRecruiters list page to normalized postings. Pure: no I/O. */
 export function smartrecruitersJobsFromPage(
-  company: Pick<CompanyEntry, 'name' | 'token'>,
+  company: { name: string; token: string },
   page: { content?: SmartrecruitersPosting[] },
 ): SourceJob[] {
   return (page.content ?? []).map((p) => {
-    const id = String(p.id ?? p.name ?? `${company.token}-untitled`);
+    const id = String(p.id);
     const workplaceType = p.location?.remote ? 'Remote' : p.location?.hybrid ? 'Hybrid' : null;
     return {
       externalId: id,
