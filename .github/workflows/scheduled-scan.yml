@@ -2,7 +2,8 @@ name: scheduled job scan
 
 # Runs jobhopper on GitHub's free servers, so it keeps finding jobs even when
 # your laptop is off. Frequency is "every 3 hours". Each run fetches fresh
-# postings, judges the "eu-recent-software" (EU work) tab, and commits the JSON
+# postings, judges the market tabs (italy-roles, spain-roles,
+# netherlands-roles), and commits the JSON
 # snapshot (.jobhopper/exports/jobs.json) + HTML dashboards. Verdicts are read
 # in the React UI, which is served from the JSON snapshot - that is the single
 # verdict surface.
@@ -46,17 +47,17 @@ jobs:
           # -j writes the committed JSON snapshot (jobs.json) for the React UI.
           node dist/cli/index.js run -j .jobhopper/exports/jobs.json
 
-      # Judge the EU work tab against the committed profile (cv.txt / preferences
+      # Judge the market tabs against the committed profile (cv.txt / preferences
       # / constraints under .jobhopper/profile/). Verdicts are surfaced in the
       # React UI via the committed jobs.json snapshot — that is the single place
       # to read verdicts (the static HTML dashboards don't carry verdicts).
       # Add an OPENROUTER_API_KEY secret under Settings -> Secrets and variables.
       # When it is present this:
-      #   1. judges every posting in the "eu-recent-software" tab (the broad
-      #      "Recent EU software roles" view) with the quick model, and
+      #   1. judges every posting in the italy-roles, spain-roles and
+      #      netherlands-roles tabs with the quick model, and
       #   2. re-exports so those verdicts land in the committed JSON snapshot.
       # Without the secret the step simply no-ops.
-      - name: Judge EU work tab (if key set)
+      - name: Judge market tabs (if key set)
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
