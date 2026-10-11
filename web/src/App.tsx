@@ -44,6 +44,21 @@ export function App() {
         // Local server not running or static mode.
       }
 
+      // Hosted (static) deploy: the build copies the committed snapshot to /jobs.json.
+      try {
+        const res = await fetch('/jobs.json');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data) && data.length > 0) {
+            setJobs(data);
+            setLoading(false);
+            return;
+          }
+        }
+      } catch {
+        // Snapshot missing; fall through to sample data.
+      }
+
       setJobs(SAMPLE_JOBS);
       setLoading(false);
     }
