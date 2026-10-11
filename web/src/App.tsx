@@ -101,6 +101,7 @@ export function App() {
     strong: jobs.filter((job) => job.verdict === 'strong').length,
     fair: jobs.filter((job) => job.verdict === 'fair').length,
     weak: jobs.filter((job) => job.verdict === 'weak').length,
+    no: jobs.filter((job) => job.verdict === 'no').length,
     unjudged: jobs.filter((job) => !job.verdict).length,
   }), [jobs]);
 
@@ -147,7 +148,7 @@ export function App() {
                 <legend className="mb-3 text-sm font-semibold">Match</legend>
                 <div className="space-y-2.5">
                   {([
-                    ['all', 'All roles'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['unjudged', 'Not reviewed'],
+                    ['all', 'All roles'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['no', 'Pass'], ['unjudged', 'Not reviewed'],
                   ] as const).map(([value, label]) => (
                     <label key={value} className="flex cursor-pointer items-center justify-between gap-2 text-sm text-ink-soft hover:text-ink">
                       <span className="flex items-center gap-2"><input type="radio" name="verdict" value={value} checked={filters.verdict === value} onChange={() => setFilters({ ...filters, verdict: value })} />{label}</span>
@@ -187,7 +188,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={job.id || `${job.source}-${job.external_id}`} job={job} index={index} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">
