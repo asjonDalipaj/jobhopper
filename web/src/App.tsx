@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { AnimatePresence } from 'motion/react';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
@@ -6,6 +7,8 @@ import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
 import { toLocalDay } from './utils';
+import { appliedKey, loadApplied, saveApplied } from './utils/applied';
+import { ApplyToast } from './components/ApplyToast';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
 
 const initialFilters: FilterState = {
@@ -21,6 +24,14 @@ export function App() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState<FilterState>(initialFilters);
+  const [applied, setApplied] = useState<Record<string, string>>(() => loadApplied());
+  const [toastJob, setToastJob] = useState<Job | null>(null);
+
+  const markApplied = (job: Job) => {
+    const next = { ...applied, [appliedKey(job)]: new Date().toISOString() };
+    setApplied(next);
+    saveApplied(next);
+  };
 
   useEffect(() => {
     async function loadData() {
@@ -189,7 +200,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} appliedAt={applied[appliedKey(job)] ?? null} onApplyClick={setToastJob} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">
@@ -206,6 +217,17 @@ export function App() {
       <footer className="mt-8 border-t border-line bg-surface/60 py-5 text-center text-xs text-ink-faint">
         <span className="font-display font-medium text-ink-soft">JobHopper</span> · Local data stays on your machine
       </footer>
+
+      <AnimatePresence>
+        {toastJob && (
+          <ApplyToast
+            key={appliedKey(toastJob)}
+            job={toastJob}
+            onConfirm={() => { markApplied(toastJob); setToastJob(null); }}
+            onDismiss={() => setToastJob(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

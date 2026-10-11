@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag } from 'lucide-react';
+import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag, Check } from 'lucide-react';
 import type { Job } from '../types';
 import { VerdictBadge } from './VerdictBadge';
 import { formatDate } from '../utils';
@@ -8,11 +8,15 @@ import { formatDate } from '../utils';
 interface JobCardProps {
   job: Job;
   index: number;
+  /** ISO date the user marked this job applied, if any. */
+  appliedAt?: string | null;
+  /** Fired when the Apply link is clicked (opens the posting in a new tab). */
+  onApplyClick?: (job: Job) => void;
 }
 
 const cardTints = ['card-tint-blue', 'card-tint-mint', 'card-tint-pink', 'card-tint-lilac', 'card-tint-slate', 'card-tint-peach'];
 
-export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
+export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApplyClick }) => {
   const [expanded, setExpanded] = useState(false);
   const tint = cardTints[index % cardTints.length];
 
@@ -25,7 +29,14 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
         <div className="company-mark flex h-12 w-12 items-center justify-center rounded-full bg-white/85 text-ink shadow-sm" aria-hidden="true">
           <Building2 className="h-5 w-5" />
         </div>
-        <VerdictBadge verdict={job.verdict} />
+        <div className="flex items-center gap-2">
+          <VerdictBadge verdict={job.verdict} />
+          {appliedAt && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-mint px-2.5 py-1 text-[11px] font-semibold text-ink" title={`Marked applied ${new Date(appliedAt).toLocaleDateString()}`}>
+              <Check className="h-3 w-3" /> Applied
+            </span>
+          )}
+        </div>
       </div>
 
       <h3 className="text-lg font-semibold leading-snug tracking-tight text-ink">{job.title}</h3>
@@ -57,7 +68,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
             Details
             <ChevronDown className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`} />
           </button>
-          {job.url && <a href={job.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl bg-ink px-3 text-sm font-medium text-white transition-opacity hover:opacity-85">
+          {job.url && <a href={job.url} target="_blank" rel="noopener noreferrer" onClick={() => onApplyClick?.(job)} className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl bg-ink px-3 text-sm font-medium text-white transition-opacity hover:opacity-85">
             Apply <ExternalLink className="h-3.5 w-3.5" />
           </a>}
         </div>
