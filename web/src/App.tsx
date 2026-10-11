@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
-import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
@@ -19,6 +18,7 @@ const initialFilters: FilterState = {
 export function App() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [filters, setFilters] = useState<FilterState>(initialFilters);
 
   useEffect(() => {
@@ -31,15 +31,22 @@ export function App() {
           return;
         }
 
-        const res = await fetch('/api/jobs');
-        if (res.ok) {
-          const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) {
-            setJobs(data);
-            setLoading(false);
-            return;
+        const urls = import.meta.env.DEV ? ['/api/jobs', 'http://localhost:3333/api/jobs'] : ['/api/jobs'];
+        for (const url of urls) {
+          try {
+            const res = await fetch(url);
+            if (!res.ok) continue;
+            const data = await res.json();
+            if (Array.isArray(data)) {
+              setJobs(data);
+              setLoading(false);
+              return;
+            }
+          } catch {
+            // Try next local API endpoint.
           }
         }
+        setLoadError('Cannot load jobs from local database. Start `npm run ui`.');
       } catch {
         // Local server not running or static mode.
       }
