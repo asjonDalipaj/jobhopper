@@ -19,3 +19,18 @@ export function formatDate(dateStr?: string | null): string {
     return String(dateStr).slice(0, 10);
   }
 }
+
+/**
+ * Day of an ISO timestamp in the viewer's timezone, as YYYY-MM-DD.
+ * Must match formatDate() so the date filter compares against the same
+ * day the card displays (posted_at offsets vary between sources).
+ */
+export function toLocalDay(dateStr?: string | null): string {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return dateStr.slice(0, 10);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}

@@ -5,6 +5,7 @@ import { JobCard } from './components/JobCard';
 import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
+import { toLocalDay } from './utils';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
 
 const initialFilters: FilterState = {
@@ -82,7 +83,7 @@ export function App() {
     if (filters.country && !matchesLocation(job.location, filters.country)) return false;
 
     if (filters.dateFrom || filters.dateTo) {
-      const postedDate = (job.posted_at || '').slice(0, 10);
+      const postedDate = toLocalDay(job.posted_at);
       if (!postedDate || (filters.dateFrom && postedDate < filters.dateFrom) || (filters.dateTo && postedDate > filters.dateTo)) return false;
     }
 
