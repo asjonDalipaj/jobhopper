@@ -1,0 +1,72 @@
+name: deploy web to cloudflare pages
+
+# Publishes the React job board to a PRIVATE Cloudflare Pages project.
+# Runs after each scheduled scan commits a fresh snapshot, and on pushes to
+# main that touch the web app. The snapshot is copied into the build as
+# /jobs.json, so the hosted page shows the latest verdicts without a server.
+#
+# Access control lives in Cloudflare (Zero Trust -> Access), not here: the
+# site must be gated by an Access policy before anyone relies on it.
+
+on:
+  workflow_run:
+    workflows: ['scheduled job scan']
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.jobhopper/exports/jobs.json'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    # Skip scan-triggered runs when the scan itself failed.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # workflow_run checks out the default branch; use the latest commit.
+          ref: main
+
+      - name: Check Cloudflare secrets
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ] || [ -z "$CF_PAGES_PROJECT" ]; then
+            echo "Missing CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets or CF_PAGES_PROJECT variable - skipping deploy."
+            exit 0
+          fi
+          echo "CF_READY=1" >> "$GITHUB_ENV"
+
+      - name: Setup Node
+        if: env.CF_READY == '1'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build web
+        if: env.CF_READY == '1'
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - name: Add job snapshot to site
+        if: env.CF_READY == '1'
+        run: cp .jobhopper/exports/jobs.json web/dist/jobs.json
+
+      - name: Deploy to Pages
+        if: env.CF_READY == '1'
+        run: npx --yes wrangler@4 pages deploy web/dist --project-name "$CF_PAGES_PROJECT" --branch main --commit-dirty=true

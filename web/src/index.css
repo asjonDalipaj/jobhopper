@@ -2,42 +2,42 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ---- Design tokens: Light (default) — pastel, nimslo-inspired ---- */
+/* ---- Design tokens: Light — warm paper with restrained job-card pastels ---- */
 :root {
-  --canvas: #fceff5;
-  --canvas-2: #efebfa;
+  --canvas: #e4ded2;
+  --canvas-2: #e4ded2;
   --surface: #ffffff;
-  --surface-hover: #fdf7fb;
-  --surface-well: #f7eff8;
-  --line: #f0dfe9;
-  --line-strong: #e0c3d8;
-  --ink: #2a1f33;
-  --ink-soft: #6e5c7a;
-  --ink-faint: #a795b0;
-  --ring: rgba(255, 110, 138, 0.25);
-  --brand: #ff6e8a;
-  --brand-2: #7fe0c2;
-  --coral: #ff6e8a;
-  --mint: #7fe0c2;
-  --butter: #ffd873;
+  --surface-hover: #faf9f6;
+  --surface-well: #f5f4f1;
+  --line: #e7e5e0;
+  --line-strong: #d5d2ca;
+  --ink: #171717;
+  --ink-soft: #66645f;
+  --ink-faint: #92908a;
+  --ring: rgba(245, 166, 35, 0.28);
+  --brand: #f5a623;
+  --brand-2: #d9f4eb;
+  --coral: #f5a623;
+  --mint: #66c6a6;
+  --butter: #f5ce73;
 }
 
 /* ---- Design tokens: Dark ---- */
 .dark {
-  --canvas: #201628;
-  --canvas-2: #2a1c33;
-  --surface: #2e2038;
-  --surface-hover: #362542;
-  --surface-well: #241a2c;
-  --line: #43304f;
-  --line-strong: #5a4269;
-  --ink: #f6ecf4;
-  --ink-soft: #c9b3d3;
-  --ink-faint: #8c7398;
-  --ring: rgba(255, 143, 166, 0.3);
-  --brand: #ff8fa6;
+  --canvas: #242320;
+  --canvas-2: #242320;
+  --surface: #302f2b;
+  --surface-hover: #393832;
+  --surface-well: #282723;
+  --line: #46443e;
+  --line-strong: #5a574f;
+  --ink: #f5f3ed;
+  --ink-soft: #c0bdb4;
+  --ink-faint: #918e84;
+  --ring: rgba(255, 190, 77, 0.3);
+  --brand: #ffbe4d;
   --brand-2: #8fedd3;
-  --coral: #ff8fa6;
+  --coral: #ffbe4d;
   --mint: #8fedd3;
   --butter: #ffe08a;
 }
@@ -108,7 +108,7 @@
   }
 
   body {
-    background: linear-gradient(160deg, var(--canvas) 0%, var(--canvas-2) 100%);
+    background: var(--canvas);
     color: var(--ink);
     font-family: var(--font-sans);
     margin: 0;
@@ -116,7 +116,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.2s ease;
   }
 
   :focus-visible {
@@ -151,22 +151,19 @@
   border-radius: 3px;
 }
 
-/* Wavy divider — sits under the hero, echoing a nimslo-strip curve. */
-.wavy-divider {
-  display: block;
-  width: 100%;
-  height: 28px;
-  color: var(--surface);
-}
+.card-tint-blue { background: #dce9ff; }
+.card-tint-mint { background: #d7f3e9; }
+.card-tint-pink { background: #f9e0ef; }
+.card-tint-lilac { background: #e8e0fa; }
+.card-tint-slate { background: #e7eaed; }
+.card-tint-peach { background: #fbe6d7; }
 
-/* Rotated "sticker" chip used for hero stats + verdict badges. */
-.sticker {
-  display: inline-flex;
-  transform: rotate(var(--sticker-rotate, -2deg));
-  box-shadow: 0 6px 16px -6px rgba(42, 31, 51, 0.25), 0 2px 4px -2px rgba(42, 31, 51, 0.12);
-  transition: transform 0.2s ease;
-}
-.sticker:hover {
-  transform: rotate(0deg) translateY(-1px);
-}
+.dark .card-tint-blue { background: #34445f; }
+.dark .card-tint-mint { background: #315448; }
+.dark .card-tint-pink { background: #583c50; }
+.dark .card-tint-lilac { background: #483e60; }
+.dark .card-tint-slate { background: #414449; }
+.dark .card-tint-peach { background: #5b4639; }
+
+.dark .company-mark { color: #171717; }
 
