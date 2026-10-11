@@ -2,7 +2,7 @@ import { createServer, type IncomingMessage, type ServerResponse } from 'node:ht
 import { existsSync, readFileSync } from 'node:fs';
 import { join, resolve, extname } from 'node:path';
 import pc from 'picocolors';
-import { listJobs } from '../db/jobs-repo.js';
+import { listJobs, setJobApplied } from '../db/jobs-repo.js';
 import { htmlToPlainText } from '../sources/html.js';
 
 const MIME_TYPES: Record<string, string> = {
@@ -27,7 +27,7 @@ export function startWebServer(port = 3333): void {
   const server = createServer((req: IncomingMessage, res: ServerResponse) => {
     // CORS headers for Vite dev server proxy
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
     if (req.method === 'OPTIONS') {
@@ -38,6 +38,35 @@ export function startWebServer(port = 3333): void {
 
     const host = req.headers.host || 'localhost';
     const url = new URL(req.url ?? '/', `http://${host}`);
+
+    // Record an "applied" flag from the web UI (works on the local server;
+    // the static hosted site stores it in localStorage instead).
+    if (url.pathname === '/api/applied' && req.method === 'POST') {
+      const send = (status: number, body: unknown) => {
+        res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(body));
+      };
+      void (async () => {
+        try {
+          const chunks: Buffer[] = [];
+          for await (const chunk of req) chunks.push(chunk as Buffer);
+          const { source, externalId, appliedAt } = JSON.parse(Buffer.concat(chunks).toString('utf8')) as {
+            source?: string;
+            externalId?: string;
+            appliedAt?: string | null;
+          };
+          if (!source || !externalId) {
+            send(400, { error: 'source and externalId are required' });
+            return;
+          }
+          const ok = setJobApplied(source, externalId, appliedAt ?? null);
+          send(ok ? 200 : 404, ok ? { ok: true } : { error: 'unknown job' });
+        } catch (err) {
+          send(400, { error: err instanceof Error ? err.message : 'invalid JSON body' });
+        }
+      })();
+      return;
+    }
 
     // API endpoint returning local indexed jobs from SQLite with their verdicts
     if (url.pathname === '/api/jobs') {

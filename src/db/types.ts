@@ -11,6 +11,7 @@ export interface Job {
   description: string;
   posted_at: string | null;
   created_at: string;
+  applied_at: string | null;
   tags: string | null;
   category: string | null;
   normalized_locations: string | null;

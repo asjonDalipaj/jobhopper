@@ -16,6 +16,7 @@ export function getDb(): DatabaseSync {
     'normalized_locations TEXT',
     'extracted_workplace_type TEXT',
     'extraction_model TEXT',
+    'applied_at TEXT',
   ]) {
     try {
       _db.exec(`ALTER TABLE jobs ADD COLUMN ${column}`);

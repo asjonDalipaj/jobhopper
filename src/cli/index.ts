@@ -618,6 +618,7 @@ program
         tags: j.tags ?? null,
         verdict: j.verdict ?? null,
         reasoning: j.reasoning ?? null,
+        applied_at: j.applied_at ?? null,
       }));
       // Merge rather than overwrite: committed rows that the local DB no longer
       // holds (e.g. postings from an earlier CI run) must survive a re-export.

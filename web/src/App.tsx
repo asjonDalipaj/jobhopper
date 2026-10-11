@@ -18,6 +18,7 @@ const initialFilters: FilterState = {
   dateFrom: '',
   dateTo: '',
   remoteOnly: false,
+  applied: 'all',
 };
 
 export function App() {
@@ -28,10 +29,22 @@ export function App() {
   const [toastJob, setToastJob] = useState<Job | null>(null);
 
   const markApplied = (job: Job) => {
-    const next = { ...applied, [appliedKey(job)]: new Date().toISOString() };
+    const appliedAt = new Date().toISOString();
+    const next = { ...applied, [appliedKey(job)]: appliedAt };
     setApplied(next);
     saveApplied(next);
+    // Sync into the local DB when the local server is running, so scheduled
+    // snapshots carry the flag. Static hosted site: fire-and-forget, ignore.
+    void fetch('/api/applied', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source: job.source, externalId: job.external_id, appliedAt }),
+    }).catch(() => undefined);
   };
+
+  /** localStorage wins (device-specific), snapshot value as fallback. */
+  const effectiveAppliedAt = (job: Job): string | null =>
+    applied[appliedKey(job)] ?? job.applied_at ?? null;
 
   useEffect(() => {
     async function loadData() {
@@ -91,6 +104,11 @@ export function App() {
       if (!remote) return false;
     }
 
+    if (filters.applied !== 'all') {
+      const isApplied = Boolean(applied[appliedKey(job)] ?? job.applied_at);
+      if (filters.applied === 'applied' ? !isApplied : isApplied) return false;
+    }
+
     if (filters.country && !matchesLocation(job.location, filters.country)) return false;
 
     if (filters.dateFrom || filters.dateTo) {
@@ -105,7 +123,7 @@ export function App() {
     }
 
     return true;
-  }), [jobs, filters]);
+  }), [jobs, filters, applied]);
 
   const locationOptions = useMemo(() => getLocationFilterOptions(jobs), [jobs]);
   const verdictCounts = useMemo(() => ({
@@ -118,7 +136,7 @@ export function App() {
   }), [jobs]);
 
   const clearFilters = () => setFilters(initialFilters);
-  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly;
+  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.applied !== 'all';
 
   return (
     <div className="app-shell min-h-screen bg-canvas text-ink">
@@ -175,6 +193,17 @@ export function App() {
                   <span>Remote roles</span>
                   <input type="checkbox" checked={filters.remoteOnly} onChange={(event) => setFilters({ ...filters, remoteOnly: event.target.checked })} />
                 </label>
+                <label className="mt-4 block text-sm font-medium" htmlFor="applied-filter">Applications</label>
+                <select
+                  id="applied-filter"
+                  value={filters.applied}
+                  onChange={(event) => setFilters({ ...filters, applied: event.target.value as FilterState['applied'] })}
+                  className="mt-2 w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm"
+                >
+                  <option value="all">All roles</option>
+                  <option value="applied">Applied only</option>
+                  <option value="not">Not applied yet</option>
+                </select>
               </div>
 
               <fieldset className="border-t border-line pt-5">
@@ -200,7 +229,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} appliedAt={applied[appliedKey(job)] ?? null} onApplyClick={setToastJob} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">

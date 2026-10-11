@@ -15,7 +15,7 @@ const COUNTRY_ALIASES: Record<(typeof TARGET_COUNTRIES)[number], string[]> = {
 
 /** Postings older than this are considered stale and dropped. */
 export const MAX_JOB_AGE_DAYS = 30;
-export const TARGET_MARKET_MAX_AGE_DAYS = 14;
+export const TARGET_MARKET_MAX_AGE_DAYS = 3;
 
 /** True if `location` mentions at least one target country. */
 export function isTargetMarket(location: string | null | undefined): boolean {

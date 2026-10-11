@@ -16,6 +16,8 @@ export interface Job {
   tags?: string | null;
   verdict?: Verdict | null;
   reasoning?: string | null;
+  /** ISO date the user applied, synced from the local DB snapshot. */
+  applied_at?: string | null;
 }
 
 export interface FilterState {
@@ -28,4 +30,6 @@ export interface FilterState {
   /** YYYY-MM-DD upper bound for the posting date (inclusive). */
   dateTo: string;
   remoteOnly: boolean;
+  /** Filter by the user's applied flag (localStorage merged with snapshot). */
+  applied: 'all' | 'applied' | 'not';
 }

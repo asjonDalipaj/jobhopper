@@ -65,6 +65,17 @@ export function upsertJob(input: InsertJobInput): InsertResult {
   return { id, created: true };
 }
 
+/**
+ * Record (or clear) when the user applied to a job, keyed by source+external_id
+ * so it survives re-scans and DB rebuilds. Returns false if the job is unknown.
+ */
+export function setJobApplied(source: string, externalId: string, appliedAt: string | null): boolean {
+  const info = getDb()
+    .prepare('UPDATE jobs SET applied_at = ? WHERE source = ? AND external_id = ?')
+    .run(appliedAt, source, externalId);
+  return info.changes > 0;
+}
+
 function indexJobFts(id: number, input: InsertJobInput): void {
   getDb()
     .prepare(
