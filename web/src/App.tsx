@@ -121,11 +121,11 @@ export function App() {
           </div>
           <div className="flex gap-3 text-sm">
             <div className="rounded-xl border border-line bg-surface px-4 py-3">
-              <span className="block text-xl font-semibold tabular-nums">{jobs.length}</span>
-              <span className="text-xs text-ink-soft">roles found</span>
+              <span className="block text-xl font-semibold tabular-nums">{filteredJobs.length}</span>
+              <span className="text-xs text-ink-soft">{hasActiveFilters ? `of ${jobs.length} roles` : 'roles found'}</span>
             </div>
             <div className="rounded-xl border border-line bg-surface px-4 py-3">
-              <span className="block text-xl font-semibold tabular-nums">{verdictCounts.strong}</span>
+              <span className="block text-xl font-semibold tabular-nums">{hasActiveFilters ? filteredJobs.filter((job) => job.verdict === 'strong').length : verdictCounts.strong}</span>
               <span className="text-xs text-ink-soft">strong matches</span>
             </div>
           </div>
