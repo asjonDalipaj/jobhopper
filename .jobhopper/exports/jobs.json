@@ -64,7 +64,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 6,
+    "id": 8,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -77,7 +77,7 @@
     "posted_at": "2026-10-09T14:41:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in Python with ML frameworks. The role specifically requires 2+ years of experience in machine learning, which the candidate does not possess, as their expertise is primarily in software engineering and fintech. Additionally, the position is remote from Spain, which does not align with the candidate's preference for roles based in the Netherlands.",
+    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks specific experience in machine learning engineering and the required proficiency in Python and ML frameworks. The candidate's expertise does not align with the core responsibilities of designing and implementing machine learning solutions, which are central to this role. Additionally, the role requires familiarity with NLP libraries and experience in developing ML services, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -127,7 +127,7 @@
     "posted_at": "2026-10-09T02:17:56-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly list in their experience. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align perfectly with the candidate's primarily development-focused background. However, the candidate's experience with CI/CD and DevOps is a positive match.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies (like Terraform and Ansible) and direct experience with GitLab, which the candidate lacks. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align perfectly with the candidate's experience primarily in development and product initiatives. The candidate's strong communication skills and remote work experience are positives, but the gaps in required technical skills lead to a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -836,7 +836,7 @@
     "reasoning": null
   },
   {
-    "id": 8,
+    "id": 7,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -849,7 +849,7 @@
     "posted_at": "2026-10-10T20:19:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer, which is focused on security architecture and infrastructure management. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks specific experience in security engineering, Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the candidate's preference for full-stack or backend roles does not align with the security-focused nature of this position.",
+    "reasoning": "This job posting is for a Senior Information Security Infrastructure Engineer, which focuses heavily on information security, infrastructure management, and specific technologies like Elasticsearch, Kubernetes, and Terraform. The candidate's background is primarily in full-stack software engineering with a strong focus on fintech, Java, and React, but lacks direct experience in security architecture and the specific tools mentioned in the job description. Additionally, the role does not align with the candidate's expressed interest in product engineering and technical ownership in a software development context.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -1992,7 +1992,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 15,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2005,12 +2005,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a stagiair(e) position, which is an internship role aimed at students seeking practical experience. The candidate is a senior full-stack software engineer with over 10 years of experience and is not interested in junior or entry-level roles. Additionally, the role requires the candidate to be enrolled in an educational institution, which does not align with the candidate's profile.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not a fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 13,
+    "id": 14,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2023,7 +2023,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship role, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level positions. Additionally, the role requires the candidate to be enrolled in an educational institution, which does not align with the candidate's profile as a senior full-stack software engineer with over 10 years of experience. Therefore, this position is not a suitable fit for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires the candidate to be enrolled in an educational institution for the entire duration of the internship, which does not align with the candidate's profile as a senior software engineer with over 10 years of experience.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2044,7 +2044,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 12,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2056,13 +2056,13 @@
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><strong>Over WPP Media: Waar Innovatie en Groei Samenkomen<br></strong>Als onderdeel van het wereldwijde WPP mediacollectief, zijn we gebouwd voor het AI-tijdperk. We brengen het beste platform, de beste mensen en de beste partners samen om innovatieve oplossingen te creëren die merken ongeëvenaarde groei opleveren. Onze kernwaarden:</p> <ul> <li><strong>We’re Extraordinary:</strong>&nbsp;We verleggen grenzen en dagen het gewone denken uit.</li> <li><strong>We’re Open:</strong>&nbsp;We creëren vertrouwen en begrip door samen te werken.</li> <li><strong>We’re Optimistic:</strong>&nbsp;Een 'growth mindset' zit in ons DNA; verandering is een kans.</li> </ul> <p><strong>Ben jij klaar om de dynamische wereld van digitale marketing te veroveren?</strong>&nbsp;Bij WPP Media werken we samen met toonaangevende merken zoals AdAlliance, Google, Amazon en DPG aan de meest innovatieve en datagedreven digitale campagnes. Wij zoeken een gedreven en leergierige collega die zich wil specialiseren in&nbsp;<strong>Digital Video &amp; Audio Advertising</strong>. Is jouw passie online media, data en wil je impact maken? Dan is dit jouw kans!</p> <p><strong>Jouw Rol als Digital Video &amp; Audio Specialist in Eindhoven: Vorm de Toekomst van Media<br></strong>Online Video en Audio groeien exponentieel en zijn de snelst ontwikkelende en meest innovatieve vakgebieden binnen digitale marketing. Kanalen zoals YouTube, Twitch, Videoland en diverse audioplatformen zitten vol met waardevolle data die we gebruiken om de online campagnes van onze adverteerders te optimaliseren.</p> <p>Als Digital Video &amp; Audio Specialist in Eindhoven bij WPP Media word je onderdeel van een innovatief en snelgroeiend team. Je werkt voor de grootste merken in Nederland, waaronder RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>Wat ga je doen? Jouw Impact:</strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;Je draagt de verantwoordelijkheid voor de ontwikkeling van geïntegreerde programmatic media plannen voor Video en Audio campagnes.</li> <li><strong>Campagne Management &amp; Optimalisatie:</strong>&nbsp;Je managet lopende Video en/of Audio campagnes, waarbij je continu analyseert en optimaliseert op diverse platformen. Jouw analytische vaardigheden zijn hierbij cruciaal!</li> <li><strong>Data-gedreven Inzichten:</strong>&nbsp;Je zet complexe data om in waardevolle en inzichtelijke rapportages, waarmee je de beste performance voor onze campagnes realiseert.</li> <li><strong>Innovatie &amp; Procesverbetering:</strong>&nbsp;Je bent proactief op zoek naar nieuwe verbeteringen, oplossingen en tools (denk aan AI-toepassingen) om campagnes en processen continu te optimaliseren.</li> </ul> <p><strong>Dit ben jij:&nbsp;</strong></p> <ul> <li><strong>Opleiding:</strong>&nbsp;HBO/WO werk- en denkniveau.</li> <li><strong>Passie voor Digitale Media:</strong>&nbsp;Grote interesse in online marketing, digitale media, programmatic advertising en data.</li> <li><strong>Analytisch &amp; Resultaatgericht:</strong>&nbsp;Sterk analytisch vermogen; je haalt inzichten uit data en zorgt dat campagnes optimaal presteren. Je bent proactief en resultaatgericht.</li> <li><strong>Teamplayer &amp; Groeimindset:</strong>&nbsp;Een teamplayer die wil groeien binnen een specifiek marketingvakgebied en altijd op zoek is naar nieuwe kennis.</li> <li><strong>Innovatief:</strong>&nbsp;Je bent nieuwsgierig naar nieuwe technologieën en de rol van AI in media.</li> </ul> <p><strong>Wat b</strong><strong>ieden wij? Jouw voordelen bij WPP Media</strong></p> <ul> <li><strong>Flexibiliteit:</strong>&nbsp;Thuiswerken, flexibele werktijden én de mogelijkheid om tijdelijk vanuit het buitenland (EU) te werken.</li> <li><strong>Groei &amp; Ontwikkeling:</strong>&nbsp;Volop groeikansen in een innovatief en dynamisch team, met veel ruimte voor persoonlijke en professionele ontwikkeling.</li> <li><strong>Salaris:</strong> Het salaris bedraagt €2.700 tot €3.400 bruto per maand op basis van relevante werkervaring.</li> <li><strong>WPP Academy:</strong>&nbsp;Toegang tot de WPP Academy voor uitgebreide trainingen en workshops in zowel hard als soft skills. Word een expert!</li> <li><strong>Reiskostenvergoeding:</strong>&nbsp;Volledige vergoeding van reiskosten.&nbsp;</li> <li><strong>Vakantie &amp; Extra's:</strong>&nbsp;8% vakantiegeld en 26 vakantiedagen per jaar (met de optie om 9 extra dagen bij te kopen!).</li> <li><strong>Thuiswerkvergoeding:</strong>&nbsp;Hybrid Working allowance van €30 netto per maand bij fulltime.</li> <li><strong>BYOD:</strong>&nbsp;Maandelijkse telefoonvergoeding van €57,50 netto (Bring Your Own Device).</li> <li><span data-teams=\"true\"><strong>Epassi-vergoeding</strong> van&nbsp;<strong>€10 </strong>per maand die je kunt uitgeven aan persoonlijke behoeften.</span></li> <li><strong>Faciliteiten:</strong>&nbsp;Voordelige lunch in de kantine en een barista voor verse koffie.</li> <li><strong>Zorgverzekering:</strong>&nbsp;Profiteer van onze collectieve zorgverzekering.</li> </ul> <p><strong>Klaar voor de uitdaging en wil je meebouwen aan de toekomst van digitale media?</strong></p> <p>Klik op 'Apply', stuur je CV en motivatie, en we nemen snel contact met je op!</p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not leverage the candidate's strong technical skills in full-stack development, Java, or SQL, making it a poor fit.",
+    "verdict": "weak",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is primarily focused on digital marketing, programmatic advertising, and data analysis, which does not align closely with the candidate's strong background in full-stack software engineering and fintech. While the candidate has experience in data management and analytics, the role requires a specific passion for digital media and marketing that is not evident in the candidate's profile. Furthermore, the candidate's expertise in software development does not directly translate to the responsibilities outlined in the job description.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 10,
+    "id": 11,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2075,7 +2075,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong background in software engineering, particularly in fintech and full-stack development, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's experience with APIs and data management is relevant, but the gaps in specific analytics tools and language proficiency lead to a weak fit overall.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering and marketing technology, which the candidate does not explicitly have. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant, but they do not align closely with the specific tools and responsibilities outlined in the job description.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2502,7 +2502,7 @@
     "reasoning": null
   },
   {
-    "id": 19,
+    "id": 17,
     "external_id": "31a6f0f4-8e1d-4d77-9d00-026ed12213f2",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2520,7 +2520,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 15,
+    "id": 10,
     "external_id": "2919c9d5-3740-4772-9b43-c014732cf257",
     "source": "lever",
     "company": "Yuno",
@@ -2533,12 +2533,12 @@
     "posted_at": "2026-10-09T16:45:25.106Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, as it requires specific expertise in security compliance, ISO audits, and cloud security controls, which are not mentioned in the candidate's background. The candidate has strong experience in software engineering and fintech but lacks the necessary qualifications and experience in security compliance and related frameworks. Additionally, the role is focused on security rather than software engineering, which does not align with the candidate's preferences for senior full-stack or backend roles.",
+    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, as it requires specific expertise in security compliance, ISO audits, and cloud security controls, which are not mentioned in the candidate's background. The candidate has a strong software engineering background with a focus on fintech but lacks the necessary experience in security compliance and the specific technical requirements outlined in the job description. Additionally, the role is focused on security engineering rather than software development, which does not align with the candidate's career goals.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 13,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2551,12 +2551,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate has a strong background in software engineering, particularly in fintech, but lacks the specific experience and interest in digital media and programmatic advertising that this role requires. Additionally, the job does not align with the candidate's preference for senior full-stack or backend roles.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, programmatic advertising, and data analysis. The candidate's background as a senior full-stack software engineer with a strong focus on backend and frontend development in fintech does not align with the requirements of this role. Additionally, the position emphasizes a passion for digital media and marketing rather than software engineering, which is outside the candidate's stated preferences.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 18,
+    "id": 16,
     "external_id": "5255122007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -2569,7 +2569,7 @@
     "posted_at": "2026-10-09T15:00:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Staff Data Center Operations Engineer at Zscaler is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in software development, particularly in fintech. The role requires extensive experience in physical data center operations, hardware troubleshooting, and infrastructure management, which are not part of the candidate's expertise. Additionally, the position mandates U.S. citizenship, which the candidate does not possess, making it impossible for them to apply.",
+    "reasoning": "This job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure, hardware, and network operations. The candidate, while experienced as a full-stack software engineer with a strong background in fintech, does not possess the necessary skills or experience in data center operations, hardware troubleshooting, or physical infrastructure management. Additionally, the role requires U.S. citizenship, which is a hard constraint for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2587,12 +2587,12 @@
     "posted_at": "2026-10-09T14:28:04.840+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Senior Software Engineer at Kraken focuses on React Native, which is not mentioned in the candidate's skill set. Additionally, the role is based in various countries but does not include the Netherlands, which is the candidate's primary location. The candidate is also not interested in roles that require relocation to the US or on-site work in the US, which is not applicable here but indicates a preference for specific locations. Overall, the mismatch in required skills and location preferences leads to a 'no' verdict.",
+    "reasoning": "The job posting for a Senior Software Engineer at Kraken is focused on React Native, which is not mentioned in the candidate's skill set. Additionally, the location options do not include the Netherlands, where the candidate is based, and the candidate is not interested in relocating to the US or working US-on-site. Therefore, this role does not align with the candidate's preferences and constraints.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 7,
+    "id": 6,
     "external_id": "8267185",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2605,12 +2605,12 @@
     "posted_at": "2026-10-09T14:00:22-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and CI/CD, the job posting for a Principal Software Engineer at Elastic requires deep expertise specifically in CI/CD infrastructure and tools like Buildkite, GitHub Actions, or Kubernetes, which are not mentioned in the candidate's profile. Additionally, the role emphasizes a proactive leadership style and experience in directing complex, multi-quarter projects across organizations, which may not align perfectly with the candidate's experience. The candidate's fintech background is relevant, but the specific requirements for this role present significant gaps.",
+    "reasoning": "While the candidate has extensive experience in software engineering and CI/CD, the job posting for a Principal Software Engineer at Elastic requires deep expertise specifically in CI/CD infrastructure and tools like Buildkite, GitHub Actions, or Kubernetes, which are not mentioned in the candidate's profile. Additionally, the role emphasizes multi-quarter, cross-organizational ownership and the ability to drive complex projects, which may stretch the candidate's experience in a leadership capacity. The candidate's fintech background aligns with the tech focus but does not fully meet the specific requirements for this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 4,
+    "id": 3,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2628,7 +2628,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 2,
+    "id": 4,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2641,12 +2641,12 @@
     "posted_at": "2026-10-09T09:36:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's requirements, they lack specific experience with Kotlin, Gradle, and the JetBrains toolchain, which are crucial for this role. Additionally, the focus on release engineering and infrastructure management may not fully leverage the candidate's full-stack capabilities and fintech background. The candidate's strong communication and problem-solving skills are a plus, but the gaps in required technologies and specific experience with large-scale monorepo builds present significant challenges.",
+    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the role's focus on release infrastructure, they lack specific experience with the JetBrains toolchain (TeamCity, YouTrack) and Kotlin, which are crucial for this position. The candidate's background in Java is a plus, but the job requires fluency in Kotlin, which they do not possess. Additionally, the role emphasizes managing large-scale monorepo builds, an area not explicitly covered in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 3,
+    "id": 2,
     "external_id": "8158521",
     "source": "greenhouse",
     "company": "Adyen",
