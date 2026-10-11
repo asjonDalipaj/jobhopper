@@ -619,6 +619,7 @@ program
         verdict: j.verdict ?? null,
         reasoning: j.reasoning ?? null,
         applied_at: j.applied_at ?? null,
+        first_seen: null as string | null, // set below from the previous snapshot
       }));
       // Merge rather than overwrite: committed rows that the local DB no longer
       // holds (e.g. postings from an earlier CI run) must survive a re-export.
@@ -631,8 +632,20 @@ program
           existing = [];
         }
       }
+      // First-seen tracking: the previous committed snapshot is the only
+      // cross-run memory (the DB is rebuilt on every CI runner). Rows the
+      // last snapshot already knew keep their original first_seen; everything
+      // else is stamped with this run's time.
+      const prevFirstSeen = new Map<string, string | null>(
+        existing.map((r) => [`${r.source}:${r.external_id}`, r.first_seen ?? null]),
+      );
+      const nowISO = new Date().toISOString();
+      for (const row of rows) {
+        row.first_seen = prevFirstSeen.get(`${row.source}:${row.external_id}`) ?? nowISO;
+      }
       exportJobsToJsonFile(mergeSnapshotRows(existing, rows), jsonPath);
-      console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}`);
+      const newCount = rows.filter((r) => prevFirstSeen.get(`${r.source}:${r.external_id}`) === null || prevFirstSeen.get(`${r.source}:${r.external_id}`) === undefined).length;
+      console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}` + (existing.length ? dim(` (${newCount} new since last snapshot)`) : ''));
     }
   });
 

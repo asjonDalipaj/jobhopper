@@ -102,7 +102,7 @@ export interface JsonRow {
  * in which case the fresh row wins. A committed verdict/reasoning is kept when the
  * fresh row has none, so a re-export never erases a judgment.
  */
-export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; applied_at?: string | null }>(
+export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; applied_at?: string | null; first_seen?: string | null }>(
   existing: T[],
   fresh: T[],
 ): T[] {
@@ -113,9 +113,11 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
     const prev = byKey.get(key);
     const keepVerdict = !row.verdict && prev?.verdict;
     const keepApplied = !row.applied_at && prev?.applied_at;
+    const keepFirstSeen = !row.first_seen && prev?.first_seen;
     let merged = row;
     if (keepVerdict) merged = { ...merged, verdict: prev.verdict, reasoning: prev.reasoning ?? row.reasoning };
     if (keepApplied) merged = { ...merged, applied_at: prev.applied_at };
+    if (keepFirstSeen) merged = { ...merged, first_seen: prev.first_seen };
     byKey.set(key, merged);
   }
   return Array.from(byKey.values());

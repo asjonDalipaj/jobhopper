@@ -14,6 +14,7 @@ type SnapRow = {
   verdict: string | null;
   reasoning: string | null;
   applied_at: string | null;
+  first_seen?: string | null;
 };
 import { ashbyLocations } from '../sources/ashby.js';
 
@@ -148,6 +149,17 @@ test('mergeSnapshotRows lets a fresher applied_at win over the stored one', () =
   const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: '2026-10-12T00:00:00Z' }];
   const out = mergeSnapshotRows(existing, fresh);
   assert.equal(out[0].applied_at, '2026-10-12T00:00:00Z');
+});
+
+test('mergeSnapshotRows preserves first_seen from the previous snapshot', () => {
+  const existing: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null, first_seen: '2026-10-01T00:00:00Z' }];
+  const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null, first_seen: null }];
+  const out = mergeSnapshotRows(existing, fresh);
+  assert.equal(out[0].first_seen, '2026-10-01T00:00:00Z');
+  // and a genuinely new row keeps its fresh stamp
+  const fresh2: SnapRow[] = [...fresh, { source: 'a', external_id: '9', verdict: null, reasoning: null, applied_at: null, first_seen: '2026-10-11T00:00:00Z' }];
+  const out2 = mergeSnapshotRows(existing, fresh2);
+  assert.equal(out2.find((r) => r.external_id === '9')?.first_seen, '2026-10-11T00:00:00Z');
 });
 
 test('mergeSnapshotRows keeps rows only present in one side and dedupes across', () => {

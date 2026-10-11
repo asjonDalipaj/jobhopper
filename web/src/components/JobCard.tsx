@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag, Check } from 'lucide-react';
 import type { Job } from '../types';
 import { VerdictBadge } from './VerdictBadge';
-import { formatDate } from '../utils';
+import { formatDate, isNewJob } from '../utils';
 
 interface JobCardProps {
   job: Job;
@@ -19,6 +19,7 @@ const cardTints = ['card-tint-blue', 'card-tint-mint', 'card-tint-pink', 'card-t
 export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApplyClick }) => {
   const [expanded, setExpanded] = useState(false);
   const tint = cardTints[index % cardTints.length];
+  const isNewRow = isNewJob(job);
 
   return (
     <motion.article
@@ -31,6 +32,11 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
         </div>
         <div className="flex items-center gap-2">
           <VerdictBadge verdict={job.verdict} />
+          {isNewRow && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-butter px-2.5 py-1 text-[11px] font-semibold text-ink" title={`First seen ${new Date(job.first_seen!).toLocaleDateString()}`}>
+              New
+            </span>
+          )}
           {appliedAt && (
             <span className="inline-flex items-center gap-1 rounded-full bg-mint px-2.5 py-1 text-[11px] font-semibold text-ink" title={`Marked applied ${new Date(appliedAt).toLocaleDateString()}`}>
               <Check className="h-3 w-3" /> Applied

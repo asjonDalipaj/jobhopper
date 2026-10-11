@@ -74,7 +74,11 @@ client-side; the local serve API can sync later.
 
 1. B first (one-line change + cron check — immediately improves signal). — DONE
    (TARGET_MARKET_MAX_AGE_DAYS = 3, scan runs every 3h, nothing ages out unseen.)
-2. A (export dedupe + first_seen, then web badge + toggle). — NEXT UP
+2. A (export dedupe + first_seen, then web badge + toggle). — DONE
+   (first_seen stamped at export from the previous committed snapshot; merge
+   preserves it; web shows a New pill + New-only toggle, 3-day window. The
+   next CI scan stamps all existing rows once — everything is New for one
+   cycle, then decays.)
 3. C phase 1 (localStorage) — DONE. C phase 2 (DB sync) — DONE.
 
 ### Decision log
@@ -84,8 +88,9 @@ client-side; the local serve API can sync later.
   Judged and applied rows are always kept — they are the scan/application
   history the user tracks and wants to graph at the end of the cycle. The
   committed snapshot likewise accumulates (merge never drops rows).
-- **Queued: Workstream A** (dedupe + first-seen + "New" badge) is the open
-  plan item.
+- **2026-10-11 — Workstream A done.** All three workstreams (A/B/C) complete.
+  Remaining backlog: application-history graph (end of cycle), CLI/HTML date
+  display timezone cleanup (low priority).
 
 ---
 

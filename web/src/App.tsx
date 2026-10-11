@@ -6,7 +6,7 @@ import { JobCard } from './components/JobCard';
 import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
-import { toLocalDay } from './utils';
+import { toLocalDay, isNewJob } from './utils';
 import { appliedKey, loadApplied, saveApplied } from './utils/applied';
 import { ApplyToast } from './components/ApplyToast';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
@@ -18,6 +18,7 @@ const initialFilters: FilterState = {
   dateFrom: '',
   dateTo: '',
   remoteOnly: false,
+  newOnly: false,
   applied: 'all',
 };
 
@@ -104,6 +105,8 @@ export function App() {
       if (!remote) return false;
     }
 
+    if (filters.newOnly && !isNewJob(job)) return false;
+
     if (filters.applied !== 'all') {
       const isApplied = Boolean(applied[appliedKey(job)] ?? job.applied_at);
       if (filters.applied === 'applied' ? !isApplied : isApplied) return false;
@@ -136,7 +139,7 @@ export function App() {
   }), [jobs]);
 
   const clearFilters = () => setFilters(initialFilters);
-  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.applied !== 'all';
+  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
 
   return (
     <div className="app-shell min-h-screen bg-canvas text-ink">
@@ -192,6 +195,10 @@ export function App() {
                 <label className="flex cursor-pointer items-center justify-between gap-3 text-sm font-medium">
                   <span>Remote roles</span>
                   <input type="checkbox" checked={filters.remoteOnly} onChange={(event) => setFilters({ ...filters, remoteOnly: event.target.checked })} />
+                </label>
+                <label className="mt-4 flex cursor-pointer items-center justify-between gap-3 text-sm font-medium">
+                  <span>New this scan <span className="text-xs font-normal text-ink-faint">(last 3 days)</span></span>
+                  <input type="checkbox" checked={filters.newOnly} onChange={(event) => setFilters({ ...filters, newOnly: event.target.checked })} />
                 </label>
                 <label className="mt-4 block text-sm font-medium" htmlFor="applied-filter">Applications</label>
                 <select
