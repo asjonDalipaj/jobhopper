@@ -6,6 +6,15 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
+import { mergeSnapshotRows } from '../export/html.js';
+
+type SnapRow = {
+  source: string;
+  external_id: string;
+  verdict: string | null;
+  reasoning: string | null;
+  applied_at: string | null;
+};
 import { ashbyLocations } from '../sources/ashby.js';
 
 test('ashbyLocations joins primary and secondary locations as plain strings', () => {
@@ -115,4 +124,40 @@ test('isRelevantRole keeps engineering and music titles, rejects unrelated roles
   assert.equal(isRelevantRole('Audio Engineer'), true);
   assert.equal(isRelevantRole('Sales Development Representative'), false);
   assert.equal(isRelevantRole('Product Manager'), false);
+});
+
+test('mergeSnapshotRows dedupes on source+external_id and prefers a fresh verdict', () => {
+  const existing: SnapRow[] = [{ source: 'a', external_id: '1', verdict: 'strong', reasoning: 'old', applied_at: null }];
+  const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: 'no', reasoning: 'new', applied_at: null }];
+  const out = mergeSnapshotRows(existing, fresh);
+  assert.equal(out.length, 1);
+  assert.equal(out[0].verdict, 'no'); // fresh re-judgment wins over the stored one
+});
+
+test('mergeSnapshotRows preserves verdict and applied_at from the previous snapshot', () => {
+  const existing: SnapRow[] = [{ source: 'a', external_id: '1', verdict: 'strong', reasoning: 'why', applied_at: '2026-10-11T10:00:00Z' }];
+  const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null }];
+  const out = mergeSnapshotRows(existing, fresh);
+  assert.equal(out[0].verdict, 'strong');
+  assert.equal(out[0].reasoning, 'why');
+  assert.equal(out[0].applied_at, '2026-10-11T10:00:00Z');
+});
+
+test('mergeSnapshotRows lets a fresher applied_at win over the stored one', () => {
+  const existing: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: '2026-10-11T10:00:00Z' }];
+  const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: '2026-10-12T00:00:00Z' }];
+  const out = mergeSnapshotRows(existing, fresh);
+  assert.equal(out[0].applied_at, '2026-10-12T00:00:00Z');
+});
+
+test('mergeSnapshotRows keeps rows only present in one side and dedupes across', () => {
+  const existing: SnapRow[] = [{ source: 'a', external_id: '2', verdict: 'fair', reasoning: null, applied_at: null }];
+  const fresh = [
+    { source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null },
+    { source: 'a', external_id: '2', verdict: null, reasoning: null, applied_at: null },
+  ];
+  const out = mergeSnapshotRows(existing, fresh);
+  assert.equal(out.length, 2);
+  const row2 = out.find((r) => r.external_id === '2');
+  assert.equal(row2?.verdict, 'fair'); // judged row preserved even though the fresh scan lost it
 });

@@ -155,7 +155,7 @@ export function App() {
               <span className="text-xs text-ink-soft">{hasActiveFilters ? `of ${jobs.length} roles` : 'roles found'}</span>
             </div>
             <div className="rounded-xl border border-line bg-surface px-4 py-3">
-              <span className="block text-xl font-semibold tabular-nums">{hasActiveFilters ? filteredJobs.filter((job) => job.verdict === 'strong').length : verdictCounts.strong}</span>
+              <span className="block text-xl font-semibold tabular-nums">{filteredJobs.filter((job) => job.verdict === 'strong').length}</span>
               <span className="text-xs text-ink-soft">strong matches</span>
             </div>
           </div>
@@ -229,7 +229,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={`${job.source ?? 'x'}-${job.external_id ?? job.id ?? `i${index}`}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source}-${job.external_id}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">

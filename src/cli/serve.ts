@@ -1,5 +1,5 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { join, resolve, extname } from 'node:path';
 import pc from 'picocolors';
 import { listJobs, setJobApplied } from '../db/jobs-repo.js';
@@ -66,6 +66,23 @@ export function startWebServer(port = 3333): void {
         }
       })();
       return;
+    }
+
+    // Fallback snapshot for the web UI's static mode: if the dist copy of
+    // jobs.json is missing or stale (it is only refreshed by an explicit
+    // `cp` or the deploy workflow), serve the live exports snapshot instead.
+    if (url.pathname === '/jobs.json') {
+      const exportsSnapshot = resolve(process.cwd(), '.jobhopper', 'exports', 'jobs.json');
+      const distCopy = join(webDist, 'jobs.json');
+      const target = existsSync(exportsSnapshot)
+        && (!existsSync(distCopy) || statSync(exportsSnapshot).mtimeMs > statSync(distCopy).mtimeMs)
+        ? exportsSnapshot
+        : distCopy;
+      if (existsSync(target)) {
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(readFileSync(target));
+        return;
+      }
     }
 
     // API endpoint returning local indexed jobs from SQLite with their verdicts
