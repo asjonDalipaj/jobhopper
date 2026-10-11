@@ -72,9 +72,20 @@ client-side; the local serve API can sync later.
 
 ### Order of work
 
-1. B first (one-line change + cron check — immediately improves signal).
-2. A (export dedupe + first_seen, then web badge + toggle).
-3. C phase 1 (localStorage), evaluate, then C phase 2 if wanted.
+1. B first (one-line change + cron check — immediately improves signal). — DONE
+   (TARGET_MARKET_MAX_AGE_DAYS = 3, scan runs every 3h, nothing ages out unseen.)
+2. A (export dedupe + first_seen, then web badge + toggle). — NEXT UP
+3. C phase 1 (localStorage) — DONE. C phase 2 (DB sync) — DONE.
+
+### Decision log
+
+- **2026-10-11 — purge keeps history (user decision).** `cleanup` now deletes
+  only noise: off-market rows and stale rows that were never judged/applied.
+  Judged and applied rows are always kept — they are the scan/application
+  history the user tracks and wants to graph at the end of the cycle. The
+  committed snapshot likewise accumulates (merge never drops rows).
+- **Queued: Workstream A** (dedupe + first-seen + "New" badge) is the open
+  plan item.
 
 ---
 

@@ -247,7 +247,7 @@ program
  * ------------------------------------------------------------------ */
 program
   .command('cleanup')
-  .description('Purge stored jobs outside Italy/Spain/Netherlands or older than 30 days')
+  .description('Purge noise: off-market postings and stale ones that were never judged or applied. Judged/applied history is always kept.')
   .action(() => {
     const before = countJobs();
     const { removedStale, removedOffMarket } = purgeStaleAndOffMarket();

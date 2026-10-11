@@ -99,27 +99,35 @@ export function updateJobMetadata(id: number, metadata: JobMetadata): void {
 }
 
 /**
- * Delete every stored job outside the target market (Italy/Spain/Netherlands)
- * or older than the freshness cutoff. Applies the same rules used at scan
- * ingestion, so the existing DB matches what a fresh scan would keep.
+ * Delete stored noise, never history. Rows that were judged or marked applied
+ * are always kept — they are the scan/application history the user tracks and
+ * graphs — so only these are removed:
+ *  - rows outside the target market or with irrelevant titles (junk), unless applied
+ *  - rows older than the freshness cutoff that were never judged and never applied
  */
 export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMarket: number } {
   const db = getDb();
-  const rows = db.prepare('SELECT id, title, location, posted_at FROM jobs').all() as Array<{
+  const rows = db.prepare(
+    `SELECT jobs.id, jobs.title, jobs.location, jobs.posted_at, jobs.applied_at,
+       EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id) AS judged
+     FROM jobs`,
+  ).all() as Array<{
     id: number;
     title: string;
     location: string;
     posted_at: string | null;
+    applied_at: string | null;
+    judged: number;
   }>;
   let removedStale = 0;
   let removedOffMarket = 0;
   db.exec('BEGIN');
   try {
     for (const row of rows) {
-      if (!isTargetMarket(row.location) || !isRelevantRole(row.title)) {
+      if ((!isTargetMarket(row.location) || !isRelevantRole(row.title)) && !row.applied_at) {
         removeJob(row.id);
         removedOffMarket++;
-      } else if (!isFresh(row.posted_at, new Date(), true)) {
+      } else if (!row.judged && !row.applied_at && !isFresh(row.posted_at, new Date(), true)) {
         removeJob(row.id);
         removedStale++;
       }
