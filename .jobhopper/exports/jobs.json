@@ -64,7 +64,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 83,
+    "id": 6,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -77,7 +77,9 @@
     "posted_at": "2026-10-09T14:41:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer position, which is not aligned with the candidate's background as a full-stack software engineer. The candidate has extensive experience in Java, SQL, and React, but lacks the required experience in machine learning engineering, Python proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role is remote from Spain, which does not match the candidate's preference for remote roles based in the Netherlands."
+    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in Python with ML frameworks. The role specifically requires 2+ years of experience in machine learning, which the candidate does not possess, as their expertise is primarily in software engineering and fintech. Additionally, the position is remote from Spain, which does not align with the candidate's preference for roles based in the Netherlands.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 45,
@@ -112,7 +114,7 @@
     "reasoning": "This Adyen role matches on seniority, fintech domain, and location — a senior fintech engineer based in Utrecht for an Amsterdam office-first role. The candidate brings 10+ years full-stack experience with Java/Python, REST/SOAP, CI/CD, and product ownership at Rabobank. However the role is a highly specialized AI research position requiring deep GenAI/LLM expertise and paper-to-production experience. The candidate has no research background, no foundation-model/agent work, and only light use of AI-powered services in his REA bot scraper project, leaving the core requirements unmet."
   },
   {
-    "id": 39,
+    "id": 5,
     "external_id": "8745623002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -125,7 +127,9 @@
     "posted_at": "2026-10-09T02:17:56-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies like Terraform and Ansible, as well as experience with GitLab itself, which the candidate lacks. Additionally, the role emphasizes customer-facing services and project management in a professional services context, which may not align directly with the candidate's experience primarily in software development and engineering. Therefore, while there are relevant skills, the gaps in specific requirements make this a weak fit."
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly list in their experience. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align perfectly with the candidate's primarily development-focused background. However, the candidate's experience with CI/CD and DevOps is a positive match.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 70,
@@ -832,7 +836,7 @@
     "reasoning": null
   },
   {
-    "id": 63,
+    "id": 8,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -845,7 +849,9 @@
     "posted_at": "2026-10-10T20:19:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer role, which focuses heavily on information security, data ingestion, and managing Elasticsearch clusters. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks specific experience in security architecture, Elasticsearch management, and the use of Terraform and Kubernetes as required in this role. Additionally, the candidate's interests and constraints do not align with a position that is primarily focused on security infrastructure."
+    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer, which is focused on security architecture and infrastructure management. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks specific experience in security engineering, Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the candidate's preference for full-stack or backend roles does not align with the security-focused nature of this position.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 62,
@@ -1232,7 +1238,7 @@
     "reasoning": null
   },
   {
-    "id": 2,
+    "id": 1,
     "external_id": "c0981874-e98c-41cc-82be-8c6f13a478ba",
     "source": "ashby",
     "company": "Mollie",
@@ -1245,7 +1251,9 @@
     "posted_at": "2026-10-09T12:54:58.533+00:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 7,
@@ -1984,7 +1992,7 @@
     "reasoning": null
   },
   {
-    "id": 95,
+    "id": 14,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -1997,10 +2005,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are looking for senior roles. The role requires a candidate who is currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority. Additionally, the focus on digital marketing and advertising does not match the candidate's strong background in software engineering and fintech."
+    "reasoning": "This job posting is for a stagiair(e) position, which is an internship role aimed at students seeking practical experience. The candidate is a senior full-stack software engineer with over 10 years of experience and is not interested in junior or entry-level roles. Additionally, the role requires the candidate to be enrolled in an educational institution, which does not align with the candidate's profile.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 94,
+    "id": 13,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2013,7 +2023,9 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The candidate has over 10 years of experience and is not interested in junior or entry-level roles. Additionally, the internship requires the candidate to be enrolled in an educational institution, which does not align with the candidate's current professional status."
+    "reasoning": "This job posting is for an internship role, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level positions. Additionally, the role requires the candidate to be enrolled in an educational institution, which does not align with the candidate's profile as a senior full-stack software engineer with over 10 years of experience. Therefore, this position is not a suitable fit for the candidate.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 103,
@@ -2032,7 +2044,7 @@
     "reasoning": null
   },
   {
-    "id": 92,
+    "id": 11,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2045,10 +2057,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic media planning, and campaign management, which are not within the candidate's expertise in software engineering, particularly in fintech and full-stack development. Additionally, the position requires a strong interest in digital media and marketing rather than software development skills, which the candidate specializes in."
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not leverage the candidate's strong technical skills in full-stack development, Java, or SQL, making it a poor fit.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 91,
+    "id": 10,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2061,10 +2075,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the primary focus of this position."
+    "reasoning": "While the candidate has a strong background in software engineering, particularly in fintech and full-stack development, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's experience with APIs and data management is relevant, but the gaps in specific analytics tools and language proficiency lead to a weak fit overall.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 100,
+    "id": 16,
     "external_id": "5435390008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2077,7 +2093,9 @@
     "posted_at": "2026-10-08T13:16:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an IT Engineer role focused on IT support and infrastructure management, which does not align with the candidate's background as a senior full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the specific IT support experience and qualifications required for this role. Additionally, the position is based in Germany or Spain, which may not fit the candidate's preference for roles based in the Netherlands."
+    "reasoning": "This job posting is for an IT Engineer role focused on IT support and infrastructure management, which is not aligned with the candidate's background as a senior full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the specific IT support experience and responsibilities outlined in the job description. Additionally, the role requires 4-8 years of IT support experience, which the candidate does not possess.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 24,
@@ -2304,7 +2322,7 @@
     "reasoning": null
   },
   {
-    "id": 101,
+    "id": 17,
     "external_id": "5373589008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2317,7 +2335,9 @@
     "posted_at": "2026-10-08T13:16:39-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The role requires expertise in leather material development, sourcing, and quality assurance, which are not skills or experiences the candidate possesses. Additionally, the candidate is focused on software engineering roles, particularly in fintech, which does not align with the responsibilities outlined in this position."
+    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The role requires expertise in leather material development, sourcing, and quality assurance, which are not skills or experiences the candidate possesses. Additionally, the candidate's focus is on software engineering within the fintech sector, making this position a poor fit.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 127,
@@ -2384,7 +2404,7 @@
     "reasoning": null
   },
   {
-    "id": 116,
+    "id": 20,
     "external_id": "5028862007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -2397,7 +2417,9 @@
     "posted_at": "2026-10-08T15:21:29-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 130,
@@ -2480,7 +2502,7 @@
     "reasoning": null
   },
   {
-    "id": 115,
+    "id": 19,
     "external_id": "31a6f0f4-8e1d-4d77-9d00-026ed12213f2",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2493,10 +2515,12 @@
     "posted_at": "2026-10-09T20:09:11.183+00:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 96,
+    "id": 15,
     "external_id": "2919c9d5-3740-4772-9b43-c014732cf257",
     "source": "lever",
     "company": "Yuno",
@@ -2509,10 +2533,12 @@
     "posted_at": "2026-10-09T16:45:25.106Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not aligned with the candidate's background and preferences. The candidate is a senior full-stack software engineer with a focus on software development, particularly in fintech, while this role is centered around security compliance, audits, and technical controls, which are outside the candidate's expertise. Additionally, the candidate is not interested in roles that do not involve software engineering or development, making this position a poor fit."
+    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, as it requires specific expertise in security compliance, ISO audits, and cloud security controls, which are not mentioned in the candidate's background. The candidate has strong experience in software engineering and fintech but lacks the necessary qualifications and experience in security compliance and related frameworks. Additionally, the role is focused on security rather than software engineering, which does not align with the candidate's preferences for senior full-stack or backend roles.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 93,
+    "id": 12,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2525,10 +2551,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and data analysis. The candidate, while experienced as a full-stack software engineer with a strong background in fintech, lacks specific experience in digital media and advertising, which are central to this role. Additionally, the job does not align with the candidate's preference for software engineering roles, making it an unsuitable match."
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate has a strong background in software engineering, particularly in fintech, but lacks the specific experience and interest in digital media and programmatic advertising that this role requires. Additionally, the job does not align with the candidate's preference for senior full-stack or backend roles.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 110,
+    "id": 18,
     "external_id": "5255122007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -2541,10 +2569,12 @@
     "posted_at": "2026-10-09T15:00:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure, hardware, and network operations. The candidate, while experienced as a full-stack software engineer with a strong background in fintech, does not have the required experience in managing physical data center operations or the specific hardware and network skills outlined in the job description. Additionally, the role requires U.S. citizenship, which is a hard constraint that the candidate does not meet."
+    "reasoning": "The job posting for a Staff Data Center Operations Engineer at Zscaler is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in software development, particularly in fintech. The role requires extensive experience in physical data center operations, hardware troubleshooting, and infrastructure management, which are not part of the candidate's expertise. Additionally, the position mandates U.S. citizenship, which the candidate does not possess, making it impossible for them to apply.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 87,
+    "id": 9,
     "external_id": "482dd459-50ae-4d16-aa69-18bc4f93fed8",
     "source": "ashby",
     "company": "Kraken",
@@ -2556,11 +2586,13 @@
     "description": "",
     "posted_at": "2026-10-09T14:28:04.840+00:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development and a fintech background, the job posting specifically requires expertise in React Native, which is not mentioned in the candidate's profile. Additionally, the role is based in various countries but does not include the Netherlands, which is the candidate's primary location. The candidate's experience with ReactJS is relevant, but the lack of React Native experience is a significant gap."
+    "verdict": "no",
+    "reasoning": "The job posting for a Senior Software Engineer at Kraken focuses on React Native, which is not mentioned in the candidate's skill set. Additionally, the role is based in various countries but does not include the Netherlands, which is the candidate's primary location. The candidate is also not interested in roles that require relocation to the US or on-site work in the US, which is not applicable here but indicates a preference for specific locations. Overall, the mismatch in required skills and location preferences leads to a 'no' verdict.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 57,
+    "id": 7,
     "external_id": "8267185",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2573,10 +2605,12 @@
     "posted_at": "2026-10-09T14:00:22-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in CI/CD and DevOps, the job posting for a Principal Software Engineer at Elastic requires deep expertise specifically in CI/CD infrastructure and tools like Buildkite, GitHub Actions, or Kubernetes, which are not mentioned in the candidate's profile. Additionally, the role emphasizes multi-quarter, cross-organizational ownership and directing the work of other engineers, which may be a stretch for the candidate who has primarily worked in a consulting capacity. Overall, there are relevant skills but significant gaps in specific requirements."
+    "reasoning": "While the candidate has extensive experience in software engineering and CI/CD, the job posting for a Principal Software Engineer at Elastic requires deep expertise specifically in CI/CD infrastructure and tools like Buildkite, GitHub Actions, or Kubernetes, which are not mentioned in the candidate's profile. Additionally, the role emphasizes a proactive leadership style and experience in directing complex, multi-quarter projects across organizations, which may not align perfectly with the candidate's experience. The candidate's fintech background is relevant, but the specific requirements for this role present significant gaps.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 14,
+    "id": 4,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2589,10 +2623,12 @@
     "posted_at": "2026-10-09T10:12:44-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 35,
+    "id": 2,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2605,10 +2641,12 @@
     "posted_at": "2026-10-09T09:36:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job requirements, they lack specific experience with the JetBrains toolchain (TeamCity, YouTrack) and Kotlin, which are essential for this role. The candidate's background in fintech and full-stack development is relevant, but the focus on release engineering and infrastructure management is a shift from their primary expertise. Additionally, the job requires familiarity with large-scale monorepo builds, which is not mentioned in the candidate's experience."
+    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's requirements, they lack specific experience with Kotlin, Gradle, and the JetBrains toolchain, which are crucial for this role. Additionally, the focus on release engineering and infrastructure management may not fully leverage the candidate's full-stack capabilities and fintech background. The candidate's strong communication and problem-solving skills are a plus, but the gaps in required technologies and specific experience with large-scale monorepo builds present significant challenges.",
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 3,
     "external_id": "8158521",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2621,7 +2659,9 @@
     "posted_at": "2026-10-09T08:08:47-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
     "id": 4,
