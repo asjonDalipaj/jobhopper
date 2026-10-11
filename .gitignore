@@ -2,7 +2,9 @@ node_modules/
 dist/
 *.log
 .env
-*.html
+# HTML exports (reports) — but never ignore the web app's entry point.
+.jobhopper/exports/*.html
+!web/index.html
 undefined/
 
 # Local data & cache — commit the jobs config, dashboards and profile, but NOT
