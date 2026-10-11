@@ -29,8 +29,6 @@ export function toLocalDay(dateStr?: string | null): string {
   if (!dateStr) return '';
   const d = new Date(dateStr);
   if (isNaN(d.getTime())) return dateStr.slice(0, 10);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+  // en-CA locale formats dates as YYYY-MM-DD.
+  return d.toLocaleDateString('en-CA');
 }
