@@ -1,5 +1,24 @@
 # Next steps — JobHopper NL/IT/ES coverage
 
+## Plan — Application history graph (added 2026-10-11, after main @ `a705f10`)
+
+Track the application cycle visually. No new dependencies: hand-rolled SVG.
+
+1. **ActivityPanel component** (`web/src/components/ActivityPanel.tsx`):
+   summary tiles (scanned / judged / applied / application rate), a
+   per-week bar chart of new jobs discovered (first_seen) vs applications
+   (effective appliedAt: localStorage ?? snapshot applied_at), verdict
+   distribution bars, and a scanned → judged → applied funnel.
+2. **Toggle** in the filter sidebar ("Show activity"); panel renders above
+   the job grid; collapses to nothing when off.
+3. **Acceptance:** Playwright — with stamped data, tile counts match the
+   data, bar heights match weekly counts, toggle shows/hides the panel.
+
+   DONE 2026-10-11 (`ActivityPanel.tsx`): tiles + weekly discovered-vs-applied
+   SVG bars + verdict distribution; sidebar Show/Hide activity button. All
+   acceptance checks green (tiles 167/70/11/16%, 6+6 bars, ratio-exact
+   heights, verdict counts exact).
+
 ## Plan — Quality over quantity (added 2026-10-11, after main @ `2b1fdcb`)
 
 Three workstreams: dedupe + first-seen, 3-day freshness window, apply tracking.

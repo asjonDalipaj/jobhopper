@@ -9,6 +9,7 @@ import type { Job, FilterState } from './types';
 import { toLocalDay, isNewJob } from './utils';
 import { appliedKey, loadApplied, saveApplied } from './utils/applied';
 import { ApplyToast } from './components/ApplyToast';
+import { ActivityPanel } from './components/ActivityPanel';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
 
 const initialFilters: FilterState = {
@@ -28,6 +29,7 @@ export function App() {
   const [filters, setFilters] = useState<FilterState>(initialFilters);
   const [applied, setApplied] = useState<Record<string, string>>(() => loadApplied());
   const [toastJob, setToastJob] = useState<Job | null>(null);
+  const [showActivity, setShowActivity] = useState(false);
 
   const markApplied = (job: Job) => {
     const appliedAt = new Date().toISOString();
@@ -164,6 +166,8 @@ export function App() {
           </div>
         </section>
 
+        {showActivity && <ActivityPanel jobs={jobs} appliedAtByKey={applied} />}
+
         <FilterBar
           filters={filters}
           onChange={setFilters}
@@ -176,6 +180,14 @@ export function App() {
               <h3 className="text-lg font-semibold">Filters</h3>
               <button type="button" onClick={clearFilters} className="text-xs text-ink-soft underline-offset-4 hover:underline">Clear all</button>
             </div>
+            <button
+              type="button"
+              onClick={() => setShowActivity((v) => !v)}
+              aria-pressed={showActivity}
+              className={`mb-5 w-full rounded-xl px-4 py-2.5 text-sm font-semibold transition-colors ${showActivity ? 'bg-ink text-surface' : 'bg-brand text-ink hover:brightness-95'}`}
+            >
+              {showActivity ? 'Hide activity' : 'Show activity'}
+            </button>
             <div className="space-y-5">
               <fieldset>
                 <legend className="mb-3 text-sm font-semibold">Match</legend>
