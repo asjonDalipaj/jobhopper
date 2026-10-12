@@ -64,7 +64,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 11,
+    "id": 10,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -77,7 +77,7 @@
     "posted_at": "2026-10-09T14:41:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a match for the candidate's profile. The candidate has extensive experience as a full-stack software engineer with a focus on Java, SQL, and React, but lacks the required expertise in machine learning, Python proficiency specific to ML frameworks, and experience with NLP libraries. Additionally, the role is focused on AI and ML solutions, which is outside the candidate's stated interests in fintech and product engineering.",
+    "reasoning": "This job posting is for a Machine Learning Engineer position, which is outside the candidate's expertise and experience in full-stack software engineering. The candidate has a strong background in Java, SQL, and React, but lacks the required experience in machine learning, Python proficiency specific to ML frameworks, and familiarity with NLP libraries. Additionally, the role is remote from Spain, which does not align with the candidate's preference for remote roles based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -836,7 +836,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 9,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -849,7 +849,7 @@
     "posted_at": "2026-10-10T20:19:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer, which is focused on security architecture and infrastructure management, areas that do not align with the candidate's expertise in full-stack software engineering and fintech. The candidate lacks specific experience with Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the position is based in Spain, while the candidate is targeting opportunities in the Netherlands, making this a poor fit.",
+    "reasoning": "This job posting is for a Senior Information Security Infrastructure Engineer role, which is focused on security architecture and infrastructure management, rather than software engineering. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks specific experience in security engineering, Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the candidate's preference for software engineering roles does not align with the security-focused nature of this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -1206,7 +1206,7 @@
     "reasoning": null
   },
   {
-    "id": 20,
+    "id": 2,
     "external_id": "8105603",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1216,10 +1216,12 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8105603",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <h4><strong>Supply Chain Data Engineer &amp; Integration Specialist, Amsterdam</strong></h4> <p>Adyen is looking for a <strong>Supply Chain Data Engineer &amp; Integration Specialist</strong> to join our team in Amsterdam. This high-impact role is positioned at the center of our operational systems landscape. You will own the technical architecture and data pipelines connecting our new Enterprise Performance Management (EPM) platform, Pigment, with our broader enterprise layers (Workday, Salesforce, Big Data Platform, Looker) and our global third-party logistics (3PL) warehouse networks.</p> <p>This is an exceptional opportunity to build sustainable, long-term technical capability within our Supply Chain function. You will lead the technical integrations for upcoming warehouse expansions in key growth markets, directly enabling business expansion.</p> <h4><strong>What you’ll do</strong></h4> <ul> <li><strong>Build &amp; Maintain Data Pipelines:</strong> Architect, implement, and monitor robust, production-grade data pipelines that feed our planning platforms, ensuring that clean operational data reliably reaches Pigment in the exact shape required.</li> <li><strong>Industrialize POC Integrations:</strong> Take our initial automated prototype connections and harden them into scalable, secure, and production-ready enterprise integrations.</li> <li><strong>Integrate Key Enterprise Systems:</strong> Establish and maintain seamless system-to-system connections linking Pigment with Workday (Finance &amp; Procurement), Salesforce (CRM), Big Data Platform, and reporting interfaces (Looker).</li> <li><strong>Connect Logistics Networks (3PLs):</strong> Build and maintain direct integrations with external warehouse management systems and global logistics partners (e.g., DHL APIs) to support real-time inventory tracking and automated stock reconciliation.</li> <li><strong>Drive Data Quality &amp; MDM:</strong> Work closely with the Central Data Platform team to enforce Master Data Management (MDM) at the source systems before data flows into down-stream planning modules.</li> <li><strong>Support Global Expansion:</strong> Serve as the technical integration lead for our global warehouse expansions, ensuring robust local warehouse configurations from day one.</li> </ul> <h4><strong>Who you are</strong></h4> <ul> <li>You have 4+ years of experience in data engineering, backend integration development, or a systems integration role.</li> <li>You are highly motivated, proactive, and a natural problem solver with an eagerness to master supply chain, financial, and warehouse logistics systems.</li> <li>You are highly proficient in database structures, SQL, and programming languages commonly used in data pipelines (e.g., Python, Apache Airflow, PySpark).</li> <li>You have deep experience building API integrations (REST, SOAP), handling data transformation formats (JSON, XML, CSV), and managing enterprise connectors.</li> <li>You bring an architectural mindset. You naturally engineer for pipeline resilience, including automated alerting, transaction retries, error-logging, and comprehensive unit/UAT testing.</li> <li>You have a Data Governance and Architectural Mindset.&nbsp;</li> <li>You are a self-starter who actively seeks out inefficiencies, takes technical ownership of solutions, and delivers results without requiring constant hand-holding.</li> <li>You can explain complex data architectures and pipeline failures clearly to operational planners and business stakeholders.</li> <li>You are familiar with numerous AI models and embed AI usage in your daily work.&nbsp;</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-09-30T18:52:47-04:00",
+    "posted_at": "2026-10-12T10:03:49-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-12T14:05:34.157Z"
   },
   {
     "id": 4,
@@ -1992,7 +1994,7 @@
     "reasoning": null
   },
   {
-    "id": 18,
+    "id": 16,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2005,12 +2007,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a senior full-stack software engineer with over 10 years of experience.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate who is currently enrolled in an educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not suitable for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 17,
+    "id": 15,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2023,7 +2025,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior positions, making this internship role completely misaligned with their career goals and experience level.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior-level positions, making this opportunity completely misaligned with their career stage and aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2044,7 +2046,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 13,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2056,13 +2058,13 @@
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><strong>Over WPP Media: Waar Innovatie en Groei Samenkomen<br></strong>Als onderdeel van het wereldwijde WPP mediacollectief, zijn we gebouwd voor het AI-tijdperk. We brengen het beste platform, de beste mensen en de beste partners samen om innovatieve oplossingen te creëren die merken ongeëvenaarde groei opleveren. Onze kernwaarden:</p> <ul> <li><strong>We’re Extraordinary:</strong>&nbsp;We verleggen grenzen en dagen het gewone denken uit.</li> <li><strong>We’re Open:</strong>&nbsp;We creëren vertrouwen en begrip door samen te werken.</li> <li><strong>We’re Optimistic:</strong>&nbsp;Een 'growth mindset' zit in ons DNA; verandering is een kans.</li> </ul> <p><strong>Ben jij klaar om de dynamische wereld van digitale marketing te veroveren?</strong>&nbsp;Bij WPP Media werken we samen met toonaangevende merken zoals AdAlliance, Google, Amazon en DPG aan de meest innovatieve en datagedreven digitale campagnes. Wij zoeken een gedreven en leergierige collega die zich wil specialiseren in&nbsp;<strong>Digital Video &amp; Audio Advertising</strong>. Is jouw passie online media, data en wil je impact maken? Dan is dit jouw kans!</p> <p><strong>Jouw Rol als Digital Video &amp; Audio Specialist in Eindhoven: Vorm de Toekomst van Media<br></strong>Online Video en Audio groeien exponentieel en zijn de snelst ontwikkelende en meest innovatieve vakgebieden binnen digitale marketing. Kanalen zoals YouTube, Twitch, Videoland en diverse audioplatformen zitten vol met waardevolle data die we gebruiken om de online campagnes van onze adverteerders te optimaliseren.</p> <p>Als Digital Video &amp; Audio Specialist in Eindhoven bij WPP Media word je onderdeel van een innovatief en snelgroeiend team. Je werkt voor de grootste merken in Nederland, waaronder RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>Wat ga je doen? Jouw Impact:</strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;Je draagt de verantwoordelijkheid voor de ontwikkeling van geïntegreerde programmatic media plannen voor Video en Audio campagnes.</li> <li><strong>Campagne Management &amp; Optimalisatie:</strong>&nbsp;Je managet lopende Video en/of Audio campagnes, waarbij je continu analyseert en optimaliseert op diverse platformen. Jouw analytische vaardigheden zijn hierbij cruciaal!</li> <li><strong>Data-gedreven Inzichten:</strong>&nbsp;Je zet complexe data om in waardevolle en inzichtelijke rapportages, waarmee je de beste performance voor onze campagnes realiseert.</li> <li><strong>Innovatie &amp; Procesverbetering:</strong>&nbsp;Je bent proactief op zoek naar nieuwe verbeteringen, oplossingen en tools (denk aan AI-toepassingen) om campagnes en processen continu te optimaliseren.</li> </ul> <p><strong>Dit ben jij:&nbsp;</strong></p> <ul> <li><strong>Opleiding:</strong>&nbsp;HBO/WO werk- en denkniveau.</li> <li><strong>Passie voor Digitale Media:</strong>&nbsp;Grote interesse in online marketing, digitale media, programmatic advertising en data.</li> <li><strong>Analytisch &amp; Resultaatgericht:</strong>&nbsp;Sterk analytisch vermogen; je haalt inzichten uit data en zorgt dat campagnes optimaal presteren. Je bent proactief en resultaatgericht.</li> <li><strong>Teamplayer &amp; Groeimindset:</strong>&nbsp;Een teamplayer die wil groeien binnen een specifiek marketingvakgebied en altijd op zoek is naar nieuwe kennis.</li> <li><strong>Innovatief:</strong>&nbsp;Je bent nieuwsgierig naar nieuwe technologieën en de rol van AI in media.</li> </ul> <p><strong>Wat b</strong><strong>ieden wij? Jouw voordelen bij WPP Media</strong></p> <ul> <li><strong>Flexibiliteit:</strong>&nbsp;Thuiswerken, flexibele werktijden én de mogelijkheid om tijdelijk vanuit het buitenland (EU) te werken.</li> <li><strong>Groei &amp; Ontwikkeling:</strong>&nbsp;Volop groeikansen in een innovatief en dynamisch team, met veel ruimte voor persoonlijke en professionele ontwikkeling.</li> <li><strong>Salaris:</strong> Het salaris bedraagt €2.700 tot €3.400 bruto per maand op basis van relevante werkervaring.</li> <li><strong>WPP Academy:</strong>&nbsp;Toegang tot de WPP Academy voor uitgebreide trainingen en workshops in zowel hard als soft skills. Word een expert!</li> <li><strong>Reiskostenvergoeding:</strong>&nbsp;Volledige vergoeding van reiskosten.&nbsp;</li> <li><strong>Vakantie &amp; Extra's:</strong>&nbsp;8% vakantiegeld en 26 vakantiedagen per jaar (met de optie om 9 extra dagen bij te kopen!).</li> <li><strong>Thuiswerkvergoeding:</strong>&nbsp;Hybrid Working allowance van €30 netto per maand bij fulltime.</li> <li><strong>BYOD:</strong>&nbsp;Maandelijkse telefoonvergoeding van €57,50 netto (Bring Your Own Device).</li> <li><span data-teams=\"true\"><strong>Epassi-vergoeding</strong> van&nbsp;<strong>€10 </strong>per maand die je kunt uitgeven aan persoonlijke behoeften.</span></li> <li><strong>Faciliteiten:</strong>&nbsp;Voordelige lunch in de kantine en een barista voor verse koffie.</li> <li><strong>Zorgverzekering:</strong>&nbsp;Profiteer van onze collectieve zorgverzekering.</li> </ul> <p><strong>Klaar voor de uitdaging en wil je meebouwen aan de toekomst van digitale media?</strong></p> <p>Klik op 'Apply', stuur je CV en motivatie, en we nemen snel contact met je op!</p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's core competencies in software engineering, particularly in fintech. Additionally, the candidate's experience and interests do not match the requirements for a position that emphasizes media planning and analytics.",
+    "verdict": "weak",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align well with the candidate's background as a senior full-stack software engineer. While the candidate has strong technical skills in software engineering, the role focuses heavily on digital marketing, programmatic advertising, and data analysis, which are not highlighted in the candidate's experience. The candidate's fintech background and full-stack development expertise do not directly translate to the responsibilities of managing video and audio campaigns. Additionally, the job requires a passion for digital media and marketing, which is not evident in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 14,
+    "id": 12,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2075,7 +2077,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java and SQL, which aligns with some of the technical requirements. However, the job specifically requires at least 3 years of experience in analytics engineering and familiarity with tools like dbt, which the candidate does not mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not indicate. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the analytics focus of this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2502,7 +2504,7 @@
     "reasoning": null
   },
   {
-    "id": 20,
+    "id": 19,
     "external_id": "31a6f0f4-8e1d-4d77-9d00-026ed12213f2",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2520,7 +2522,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 13,
+    "id": 17,
     "external_id": "2919c9d5-3740-4772-9b43-c014732cf257",
     "source": "lever",
     "company": "Yuno",
@@ -2533,12 +2535,12 @@
     "posted_at": "2026-10-09T16:45:25.106Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, who is seeking senior full-stack or backend software engineering roles. The position requires specific expertise in security compliance, ISO audits, and cloud security controls, which are not mentioned in the candidate's background. Additionally, the candidate has a strong focus on software engineering rather than compliance or security roles, making this opportunity unrelated to their career goals.",
+    "reasoning": "This job posting is for a Security Compliance Engineer role, which is not aligned with the candidate's expertise as a full-stack software engineer. The candidate has a strong background in software development, particularly in fintech, but lacks the specific experience in security compliance, ISO audits, and the technical requirements outlined in the job description. Additionally, the role focuses on security and compliance rather than software engineering, making it a poor fit for the candidate's skills and career aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 16,
+    "id": 14,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2551,12 +2553,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate's background is in full-stack software engineering with a strong emphasis on backend and frontend development, particularly in fintech. There is no alignment with the candidate's expertise in software engineering or interest in technical ownership, making this role a poor fit.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and campaign management. The candidate's background is primarily in software engineering with a strong emphasis on backend and frontend development in the fintech sector, which does not align with the marketing and media focus of this role. Additionally, the position requires a passion for digital media and marketing, which is not highlighted in the candidate's profile. Therefore, this opportunity does not match the candidate's skills or career aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 19,
+    "id": 18,
     "external_id": "5255122007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -2569,12 +2571,12 @@
     "posted_at": "2026-10-09T15:00:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure, hardware, and network management in data centers. The candidate, while experienced in software engineering, particularly in fintech and full-stack development, does not have the required experience in data center operations or hardware management. Additionally, the role requires U.S. citizenship, which the candidate does not possess, making this position completely unsuitable.",
+    "reasoning": "This job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure management, hardware troubleshooting, and data center operations. The candidate, while experienced as a full-stack software engineer with a strong background in fintech and software development, does not possess the required skills or experience in physical data center operations, hardware management, or the specific technical requirements outlined in the job description. Additionally, the role requires U.S. citizenship, which is a hard constraint for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "482dd459-50ae-4d16-aa69-18bc4f93fed8",
     "source": "ashby",
     "company": "Kraken",
@@ -2587,12 +2589,12 @@
     "posted_at": "2026-10-09T14:28:04.840+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for a Senior Software Engineer at Kraken focuses on React Native and targets Asian markets, which does not align with the candidate's expertise in ReactJS and Java. While the candidate has extensive experience in fintech and full-stack development, the specific requirement for React Native is a significant gap. Additionally, the location options do not include the Netherlands, which is the candidate's base, and there is no mention of remote work, which could further limit the fit.",
+    "reasoning": "While the candidate has extensive experience as a senior full-stack software engineer with a strong background in fintech, this job posting specifically focuses on React Native and targets Asian markets, which may not align with the candidate's expertise in ReactJS and Java. Additionally, the location options do not include the Netherlands, which is the candidate's base, and there is no mention of remote work options. These factors contribute to a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 9,
+    "id": 8,
     "external_id": "8267185",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2605,12 +2607,12 @@
     "posted_at": "2026-10-09T14:00:22-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's focus on CI/CD infrastructure, they lack specific expertise in the tools mentioned, such as Buildkite, GitHub Actions, or Kubernetes. Additionally, the role requires deep experience in securing release pipelines against supply chain attacks, which is not explicitly covered in the candidate's background. The candidate's fintech experience and full-stack capabilities are relevant, but the gaps in specific CI/CD tools and security expertise make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in CI/CD and DevOps, the job posting for the Principal Software Engineer role at Elastic requires deep expertise specifically in CI/CD infrastructure and tools like Buildkite, GitHub Actions, or Kubernetes, which are not mentioned in the candidate's profile. Additionally, the role emphasizes multi-quarter, cross-org ownership and directing other engineers, which may stretch the candidate's current experience. The candidate's fintech background is relevant but does not align closely with the specific focus on supply chain security and release pipeline hardening required by this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 3,
+    "id": 1,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2712,7 +2714,7 @@
     "reasoning": "The candidate has a strong technical background in software engineering and fintech, but the job posting for a Principal Sales Engineer requires extensive pre-sales experience and a focus on sales strategy, which the candidate does not possess. Additionally, the role demands over 12 years of experience in technical pre-sales and specific knowledge of Zscaler's security platforms, which the candidate lacks. While the candidate's skills in Java, SQL, and React are relevant, they do not align with the sales engineering focus of this position."
   },
   {
-    "id": 4,
+    "id": 6,
     "external_id": "4988356101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2725,12 +2727,12 @@
     "posted_at": "2026-10-12T06:18:00-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for the Founding GTM Engineering Lead requires specific experience in building GTM systems, sales automation, and familiarity with modern GTM tooling, which the candidate does not explicitly possess. The role also emphasizes a strong understanding of B2B GTM operations and practical experience with AI agents, which are not highlighted in the candidate's profile. Therefore, while there are relevant skills, the candidate lacks several key requirements.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for the Founding GTM Engineering Lead at JetBrains requires specific experience in building GTM systems, sales automation, and familiarity with modern GTM tooling, which the candidate lacks. The role also emphasizes a strong understanding of B2B GTM operations and the ability to work with ambiguity, which may not align with the candidate's primarily technical background. However, the candidate's experience in product initiatives and technical ownership could provide some relevant skills.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 8,
+    "id": 5,
     "external_id": "8000653003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2743,12 +2745,12 @@
     "posted_at": "2026-10-12T05:53:20-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate has over 10 years of experience and is seeking senior roles, making this position a poor fit. Additionally, the candidate is not interested in junior or internship roles, which further confirms the mismatch.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate, with over 10 years of experience, is seeking senior full-stack or backend roles and is not interested in junior or internship positions. Additionally, the role is located in Milan, Italy, which does not align with the candidate's preference for positions in the Netherlands or remote roles.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 7,
+    "id": 4,
     "external_id": "8006520003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2761,12 +2763,12 @@
     "posted_at": "2026-10-12T05:52:45-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate has over 10 years of experience and is seeking senior roles, making this position a poor fit. Additionally, the candidate has stated they are not interested in junior or entry-level roles, which further solidifies the mismatch.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate has over 10 years of experience and is seeking senior roles, making this position a poor fit. Additionally, the candidate has stated they are not interested in junior or internship roles, further confirming the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 6,
+    "id": 3,
     "external_id": "8015566003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2779,8 +2781,26 @@
     "posted_at": "2026-10-12T05:48:29-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an AI Engineer intern position, which is explicitly targeted at candidates in the final year of their degree or those with basic experience in Python. The candidate is a senior full-stack software engineer with over 10 years of experience, making this role a significant mismatch in terms of seniority. Additionally, the candidate is not interested in internship roles, which further disqualifies them from this opportunity.",
+    "reasoning": "This job posting is for an AI Engineer intern position, which is explicitly an internship role. The candidate has over 10 years of experience and is looking for senior full-stack or backend software engineering roles, making this position unsuitable. Additionally, the candidate has a clear constraint against junior or internship roles, further solidifying the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
+  },
+  {
+    "id": 7,
+    "external_id": "4866608101",
+    "source": "greenhouse",
+    "company": "JetBrains",
+    "title": "Software Developer  Java/ Node.JS (Web Development Team)",
+    "location": "Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Warsaw, Poland",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4866608101",
+    "description": "<p><strong>JetBrains </strong>creates professional tools that make developers more productive and help them focus on what matters. Our websites and web services are a core part of the JetBrains ecosystem. They connect us with users worldwide, power product distribution, support learning, and enable feedback loops at scale.</p> <p>We are currently looking for a <strong>Software Developer </strong>to join our<strong> Web Development team</strong>. The ideal candidate will be someone who can take ownership of services end-to-end, from architecture and implementation to deployment and long-term support.</p> <h3><strong>In this role, you will:</strong></h3> <ul> <li>Design and develop internal company-wide web applications and services.</li> <li>Participate in the creation of solution architecture, from selecting approaches to decomposing services and defining their interactions.</li> <li>Build and maintain services running in AWS and Kubernetes-based environments.</li> <li>Develop tools and platforms for localization workflows and integrate them with third-party systems.</li> <li>Improve the reliability, scalability, and observability of our systems.</li> <li>Collaborate with other teams to evolve shared infrastructure and internal platforms.</li> </ul> <h3><strong>We’ll be happy to have you on our team if you have:</strong></h3> <ul> <li>Strong&nbsp; 3- 5 years experience in backend web development using Kotlin or Java.</li> <li>Experience with Node.js.</li> <li>A solid understanding of modern backend frameworks (e.g. Ktor and Spring).</li> <li>Experience designing and building production-grade systems.</li> <li>An understanding of distributed-system fundamentals (e.g. networking, fault tolerance, and scalability).</li> <li>Experience working with cloud environments (AWS or similar).</li> <li>Familiarity with containerization and orchestration.</li> <li>The ability to write clean, maintainable, and well-structured code.</li> <li>A willingness to take ownership of systems in production (including by offering support and assisting with continuous improvement).</li> <li>Good communication skills and a collaborative mindset.</li> </ul> <h3><strong>We would be especially thrilled if you have:</strong></h3> <ul> <li>Experience with infrastructure as code (e.g. Terraform).</li> <li>Experience with CI/CD pipelines and deployment automation.</li> <li>Experience with observability tools (e.g. metrics, logging, and tracing).</li> <li>Practical experience using AI tools or agents in development workflows.</li> </ul> <h3><strong><br>Why join JetBrains?&nbsp;</strong></h3> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Flexible work location. Enjoy the freedom to work from home or from the office.</li> <li>Remote work. Spend up to 30 days per year working remotely from abroad.</li> <li>Extra time off. More days to relax, recharge, and do the things you love.</li> <li>Medical insurance allowance. Enjoy peace of mind for you and your family</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li>Relocation support. We help make your move as smooth and stress-free as possible.&nbsp;</li> <li>Language classes. Pick up the local language or sharpen your English skills.</li> <li>Fuel your day. Enjoy a hot meal or receive a lunch allowance on workdays.</li> <li>Mental health support. To help you feel your best, we provide easy access to professional mental health services.</li> <li>Sports benefit. Enjoy an on-site gym or sports club stipend.</li> <li>Internal events. Join company-wide celebrations and team gatherings.</li> </ul> <p>*Some benefits may vary depending on location.</p> <p>&nbsp;</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-MP1</span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
+    "posted_at": "2026-10-12T09:57:21-04:00",
+    "tags": null,
+    "verdict": "fair",
+    "reasoning": "The candidate has a strong background in Java and experience with CI/CD and DevOps, which aligns well with the job's requirements for backend development and deployment. However, the job specifically requires experience with Node.js and modern backend frameworks like Ktor, which the candidate does not mention. Additionally, while the candidate has experience in fintech and product ownership, the role at JetBrains focuses more on web applications and services, which may require some adaptation.",
+    "applied_at": null,
+    "first_seen": "2026-10-12T14:05:34.157Z"
   }
 ]
