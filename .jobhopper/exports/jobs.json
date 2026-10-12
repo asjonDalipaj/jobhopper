@@ -64,7 +64,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 8,
+    "id": 11,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -77,7 +77,7 @@
     "posted_at": "2026-10-09T14:41:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer role, which is not aligned with the candidate's expertise in full-stack and backend software engineering. The candidate has no experience in machine learning engineering or applied ML, which is a core requirement for this position. Additionally, the role requires proficiency in specific ML frameworks and libraries that the candidate does not mention in their background. The candidate's focus on fintech and product engineering does not match the AI-centric nature of this role.",
+    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a match for the candidate's profile. The candidate has extensive experience as a full-stack software engineer with a focus on Java, SQL, and React, but lacks the required expertise in machine learning, Python proficiency specific to ML frameworks, and experience with NLP libraries. Additionally, the role is focused on AI and ML solutions, which is outside the candidate's stated interests in fintech and product engineering.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -836,7 +836,7 @@
     "reasoning": null
   },
   {
-    "id": 7,
+    "id": 10,
     "external_id": "8088013",
     "source": "greenhouse",
     "company": "Elastic",
@@ -849,7 +849,7 @@
     "posted_at": "2026-10-10T20:19:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer role, which is focused on security architecture and infrastructure management, areas that do not align with the candidate's background in full-stack software engineering and fintech. The candidate lacks specific experience with Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the position is centered around security telemetry and data ingestion, which is outside the candidate's expertise in software development.",
+    "reasoning": "The job posting is for a Senior Information Security Infrastructure Engineer, which is focused on security architecture and infrastructure management, areas that do not align with the candidate's expertise in full-stack software engineering and fintech. The candidate lacks specific experience with Elasticsearch, Kubernetes, and Terraform, which are critical for this role. Additionally, the position is based in Spain, while the candidate is targeting opportunities in the Netherlands, making this a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -1992,7 +1992,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 18,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2005,12 +2005,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which the candidate does not meet. The candidate's extensive experience and seniority do not align with the requirements of a stagiair(e) position.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a senior full-stack software engineer with over 10 years of experience.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 13,
+    "id": 17,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2023,7 +2023,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is not aligned with the candidate's seniority level and explicit constraints. The candidate has over 10 years of experience as a senior full-stack software engineer, while this role is aimed at individuals pursuing a degree and looking for a graduation internship. Additionally, the candidate is not interested in junior or entry-level roles, making this opportunity completely mismatched.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior positions, making this internship role completely misaligned with their career goals and experience level.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2044,7 +2044,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 15,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2057,12 +2057,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Digital Video & Audio Specialist, which focuses on digital marketing, programmatic advertising, and campaign management. This role does not align with the candidate's background as a full-stack software engineer with a strong focus on backend and frontend development in fintech. The candidate's experience in software engineering does not match the requirements for a marketing-focused position, and there are no relevant technical skills or experiences mentioned that would apply to this role.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's core competencies in software engineering, particularly in fintech. Additionally, the candidate's experience and interests do not match the requirements for a position that emphasizes media planning and analytics.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 10,
+    "id": 14,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2075,7 +2075,7 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering, particularly in fintech and full-stack development, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not meet. The candidate's strong background in Java, SQL, and CI/CD is relevant but does not align closely enough with the specific analytics focus of the position.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java and SQL, which aligns with some of the technical requirements. However, the job specifically requires at least 3 years of experience in analytics engineering and familiarity with tools like dbt, which the candidate does not mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2502,7 +2502,7 @@
     "reasoning": null
   },
   {
-    "id": 17,
+    "id": 20,
     "external_id": "31a6f0f4-8e1d-4d77-9d00-026ed12213f2",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2520,7 +2520,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 15,
+    "id": 13,
     "external_id": "2919c9d5-3740-4772-9b43-c014732cf257",
     "source": "lever",
     "company": "Yuno",
@@ -2533,12 +2533,12 @@
     "posted_at": "2026-10-09T16:45:25.106Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, who is seeking senior full-stack or backend software engineering roles. The role focuses on security compliance, audits, and technical controls, which diverges significantly from the candidate's expertise in full-stack development and fintech product engineering. Additionally, the candidate lacks specific experience with ISO audits and cloud security services, which are critical for this position.",
+    "reasoning": "The job posting for a Security Compliance Engineer at Yuno is not a fit for the candidate, who is seeking senior full-stack or backend software engineering roles. The position requires specific expertise in security compliance, ISO audits, and cloud security controls, which are not mentioned in the candidate's background. Additionally, the candidate has a strong focus on software engineering rather than compliance or security roles, making this opportunity unrelated to their career goals.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 16,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2551,12 +2551,12 @@
     "posted_at": "2026-10-09T16:33:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and campaign management rather than software engineering. The candidate has a strong background in full-stack software engineering, particularly in fintech, but lacks the specific experience and interest in digital media and advertising required for this role. Additionally, the job does not align with the candidate's preference for software engineering roles.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate's background is in full-stack software engineering with a strong emphasis on backend and frontend development, particularly in fintech. There is no alignment with the candidate's expertise in software engineering or interest in technical ownership, making this role a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 16,
+    "id": 19,
     "external_id": "5255122007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -2569,16 +2569,16 @@
     "posted_at": "2026-10-09T15:00:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure, hardware, and network operations. This role requires specific experience in data center environments and physical deployments, which is not aligned with the candidate's background as a software engineer with a focus on full-stack development and fintech. Additionally, the position requires U.S. citizenship, which the candidate does not possess. Therefore, this role is not a fit for the candidate.",
+    "reasoning": "This job posting is for a Staff Data Center Operations Engineer, which is focused on physical infrastructure, hardware, and network management in data centers. The candidate, while experienced in software engineering, particularly in fintech and full-stack development, does not have the required experience in data center operations or hardware management. Additionally, the role requires U.S. citizenship, which the candidate does not possess, making this position completely unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 9,
+    "id": 12,
     "external_id": "482dd459-50ae-4d16-aa69-18bc4f93fed8",
     "source": "ashby",
     "company": "Kraken",
-    "title": "Senior Software Engineer - React Native - Consumer",
+    "title": "Senior Software Engineer - React Native - Consumer  - Asian Markets",
     "location": "United Kingdom; Brazil; United Arab Emirates; Ireland; Peru; Sweden; Colombia; Argentina; Romania; Cyprus; Switzerland; Portugal; Lithuania; South Africa; Czech Republic; Canada; Hungary; Chile; Poland; Spain; Bulgaria",
     "workplace_type": null,
     "employment_type": null,
@@ -2587,12 +2587,12 @@
     "posted_at": "2026-10-09T14:28:04.840+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong full-stack experience and a fintech background, the job posting specifically focuses on React Native, which is not mentioned in the candidate's skill set. Additionally, the role is located in various countries but does not include the Netherlands, which is the candidate's primary location. The candidate's expertise in Java and CI/CD aligns with some aspects of the role, but the lack of React Native experience and the geographical mismatch are significant gaps.",
+    "reasoning": "The job posting for a Senior Software Engineer at Kraken focuses on React Native and targets Asian markets, which does not align with the candidate's expertise in ReactJS and Java. While the candidate has extensive experience in fintech and full-stack development, the specific requirement for React Native is a significant gap. Additionally, the location options do not include the Netherlands, which is the candidate's base, and there is no mention of remote work, which could further limit the fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 6,
+    "id": 9,
     "external_id": "8267185",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2605,7 +2605,7 @@
     "posted_at": "2026-10-09T14:00:22-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's focus on CI/CD infrastructure, they lack specific expertise in the tools mentioned such as Buildkite, GitHub Actions, or Kubernetes. Additionally, the role requires deep expertise in securing release pipelines against supply chain attacks, which is not explicitly covered in the candidate's background. The candidate's fintech experience is relevant, but the position is more focused on platform engineering productivity rather than direct product engineering.",
+    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's focus on CI/CD infrastructure, they lack specific expertise in the tools mentioned, such as Buildkite, GitHub Actions, or Kubernetes. Additionally, the role requires deep experience in securing release pipelines against supply chain attacks, which is not explicitly covered in the candidate's background. The candidate's fintech experience and full-stack capabilities are relevant, but the gaps in specific CI/CD tools and security expertise make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2628,7 +2628,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 4,
+    "id": 5,
     "external_id": "4966818101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2641,7 +2641,7 @@
     "posted_at": "2026-10-09T09:36:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's focus on release infrastructure, they lack specific experience with the JetBrains toolchain (TeamCity, YouTrack) and Kotlin, which are crucial for this role. The candidate's background in fintech and full-stack development is relevant, but the job requires a deeper focus on release engineering and automation that may not fully match their experience. Additionally, the role's emphasis on managing large-scale monorepo builds and familiarity with Gradle is not clearly demonstrated in the candidate's profile.",
+    "reasoning": "While the candidate has strong experience in CI/CD and DevOps, which aligns with the job's focus on release engineering, there are significant gaps in required skills. The job requires fluency in Kotlin, experience with Gradle, and familiarity with Linux environments, none of which are mentioned in the candidate's profile. Additionally, the role emphasizes managing large-scale monorepo builds and specific tools like TeamCity and YouTrack, which the candidate does not appear to have experience with.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2710,5 +2710,77 @@
     "tags": null,
     "verdict": "weak",
     "reasoning": "The candidate has a strong technical background in software engineering and fintech, but the job posting for a Principal Sales Engineer requires extensive pre-sales experience and a focus on sales strategy, which the candidate does not possess. Additionally, the role demands over 12 years of experience in technical pre-sales and specific knowledge of Zscaler's security platforms, which the candidate lacks. While the candidate's skills in Java, SQL, and React are relevant, they do not align with the sales engineering focus of this position."
+  },
+  {
+    "id": 4,
+    "external_id": "4988356101",
+    "source": "greenhouse",
+    "company": "JetBrains",
+    "title": "Founding GTM Engineering Lead (GrowthBricks)",
+    "location": "Amsterdam, Netherlands; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Warsaw, Poland",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4988356101",
+    "description": "<h1><strong>Founding GTM Engineering Lead (GrowthBricks)</strong></h1> <p>Are you someone who likes to build GTM systems from the ground up? Have you built sales automations, signal-based workflows, account intelligence systems, or AI-powered GTM solutions yourself?</p> <p>We’re looking for a <strong>Founding GTM Engineering Lead</strong> to build GrowthBricks with us, turning real GTM problems into working systems and using what we learn to shape the product itself.</p> <h2><strong>About JetBrains</strong></h2> <p>We create intelligent software development tools for developers and teams. More than 15 million users, over 300,000 companies, and 88 of the Fortune Global Top 100 rely on our products to solve real, complex problems.</p> <p>JetMinds is a new JetBrains-backed venture focused on AI-native GTM tools, and GrowthBricks is one of its new projects, designed to give GTM teams and AI agents a shared business brain. It brings together business context that’s usually fragmented across CRMs, calls, documents, dashboards, and other tools, giving people and AI agents the context they need to make better decisions and execute effectively across the sales and marketing stack.</p> <h2><strong>What you’ll do</strong></h2> <p>You will own our early customer implementations and help the founding team shape the product around what actually works.</p> <p>Working directly with customers, you'll figure out their GTM operations, identify where agentic automations can help, and build solutions around those needs. Alongside the product and technical founders, you’ll use what you learn from these implementations to shape GrowthBricks itself.</p> <p>Day to day, you will:</p> <ul> <li>Work directly with customers to understand their GTM workflows, systems, data, and bottlenecks.</li> <li>Turn ambiguous business problems into working GTM systems.</li> <li>Help build signal pipelines, account intelligence systems, enrichment and qualification workflows, outbound and CRM automation, and agentic workflows using GrowthBricks.</li> <li>Work hands-on with tools such as CRMs, enrichment platforms, sales engagement tools, APIs, automation platforms, and AI agents.</li> <li>Connect GrowthBricks to customers’ existing GTM stack rather than rebuilding it.</li> <li>Identify patterns across customers and turn them into reusable product capabilities.</li> <li>Work closely with the product founder and engineering team to shape GrowthBricks, including building and shipping features yourself.</li> </ul> <h2><strong>What you’ll bring</strong></h2> <p>&nbsp;</p> <ul> <li>Clear communication across roles. You can work effectively with founders, sales and marketing teams, RevOps specialists, and engineers.</li> <li>Comfort with ambiguity. You can take an unclear business problem and work toward a concrete solution.</li> <li>Strong product instinct. You can recognize which customer problems should become part of the product.</li> <li>A practical mindset. You value working systems over unnecessary complexity.</li> </ul> <h2><strong>What you’ll need</strong></h2> <ul> <li>A strong, practical understanding of modern B2B GTM operations.</li> <li>Experience building sales automation, enrichment workflows, signal-based GTM systems, or similar infrastructure.</li> <li>Hands-on experience with modern GTM tooling such as Clay, TheirStack, or FullEnrich.</li> <li>Experience connecting multiple systems using APIs, webhooks, scripts, or custom integrations.</li> <li>Practical experience using LLMs or agents for GTM research, qualification, personalization, and automation.</li> <li>Experience implementing GTM systems across multiple teams or customers.</li> <li>The technical ability to build and modify product features and working solutions yourself, rather than just specifying what others should build.</li> </ul> <h2><strong>What success looks like</strong></h2> <p>In your first six months, you will have taken several customer problems from discovery to working production workflows.</p> <p>You will also have helped us understand where GrowthBricks creates the most value, identified patterns that repeat across customers, and turned those patterns into reusable product capabilities.</p> <p>Success means building systems that customers actually use, producing measurable GTM outcomes, and making the product materially better with every implementation.</p> <h2><strong>Why join JetBrains?</strong></h2> <ul> <li>Strong base salary. We offer competitive pay that reflects your skills and experience.</li> <li>Meaningful ownership. You will help shape the product, implementation model, and direction of GrowthBricks.</li> <li>Flexible work schedule. Enjoy the freedom to work from home or from the office.</li> <li>Extra time off. More days to relax and recharge.</li> <li>Learning and development opportunities. Access to conferences, courses, and language classes.</li> <li>Relocation support. Assistance to help make your move as smooth and stress-free as possible.</li> <li>Health and wellness. On-site gyms or sports club stipends.</li> <li>Internal events. Company-wide celebrations and team gatherings.</li> </ul> <p>We are an equal opportunity employer. We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace.</p> <p>If this sounds like a challenge you'd enjoy, we’d love to hear from you. Send us your CV or LinkedIn profile and, more importantly, show us something you’ve built: a GTM system, automation, agent, workflow, or customer implementation you’re particularly proud of.</p> <p><span style=\"color: rgb(255, 255, 255);\">#LI-IM1</span></p><div class=\"content-conclusion\"><p><strong>We are an equal opportunity employer</strong><br><br>We know great ideas can come from anyone, anywhere. That’s why we do our best to create an open and inclusive workplace – one that welcomes everyone regardless of their background, identity, religion, age, accessibility needs, or orientation.</p> <p><em data-stringify-type=\"italic\">We process the data provided in your job application in accordance with the&nbsp;<a href=\"https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/\">Recruitment Privacy Policy.</a></em></p></div>",
+    "posted_at": "2026-10-12T06:18:00-04:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for the Founding GTM Engineering Lead requires specific experience in building GTM systems, sales automation, and familiarity with modern GTM tooling, which the candidate does not explicitly possess. The role also emphasizes a strong understanding of B2B GTM operations and practical experience with AI agents, which are not highlighted in the candidate's profile. Therefore, while there are relevant skills, the candidate lacks several key requirements.",
+    "applied_at": null,
+    "first_seen": "2026-10-12T12:07:13.067Z"
+  },
+  {
+    "id": 8,
+    "external_id": "8000653003",
+    "source": "greenhouse",
+    "company": "Doctolib",
+    "title": "Software Engineer Intern - Fullstack (x/f/m) - Milano",
+    "location": "Milano, Milan, Italy",
+    "workplace_type": null,
+    "employment_type": "Intern",
+    "url": "https://job-boards.greenhouse.io/doctolib/jobs/8000653003",
+    "description": "<h1><strong>Software Engineering Intern - Fullstack (x/f/m)</strong></h1> <h2>&nbsp;</h2> <h2><strong>Set a new pulse for healthcare!</strong></h2> <p>We are looking for a <strong>Software Engineering Intern</strong> to join the <strong>Engineering</strong> team.</p> <p>Your mission will be to build innovative products and features that improve the daily lives of care teams and patients. You will work in a feature team developing solutions that directly impact healthcare professionals and patients across Europe, contributing to our Operating System powered by AI to manage all clinical and administrative activities.</p> <p>Working in the tech team at Doctolib means building innovative products and features to improve the daily lives of care teams and patients.</p> <h2><strong>What you'll do</strong></h2> <p>Your responsibilities include but are not limited to:</p> <ul> <li>Build and own features alongside experienced engineers — from design and development to testing and shipping — with a direct impact on real users</li> <li>Collaborate with engineers, product managers, and designers to solve complex technical challenges and build scalable, secure, and user-friendly healthcare tools</li> <li>Write clean, efficient code following industry best practices in design, testing, and peer review</li> <li>Solve real-world problems that directly enhance patient care and improve doctor-patient relationships</li> <li>Explore new tools and technologies, including AI and distributed systems, as part of your continuous growth</li> <li>Contribute to a culture of learning and collaboration by sharing knowledge and engaging actively with your team</li> </ul> <h2><strong>Who you are</strong></h2> <p>Before you read on: if you don't have the exact profile described below, but you feel this job description matches your skill set, we still encourage you to apply.</p> <p><strong>You'll be a great fit if you:</strong></p> <ul> <li>You love problem-solving and are driven by curiosity — you're not afraid to dive into complex issues and find creative solutions</li> <li>You thrive in a collaborative environment and enjoy working with cross-functional teams, sharing knowledge, and learning from your peers</li> <li>You have a passion for technology and product development, and always keep the user experience in mind</li> <li>You are comfortable coding, with the help of AI agents like Claude Code, in multiple languages and eager to learn our tech stack</li> <li>You are in your final year of a degree in Software Engineering, Computer Science, or a related field and looking for a 6-month full-time internship</li> <li>Eager to learn and work in a team of builders</li> <li>You are fluent in English</li> </ul> <p><strong>It would be fantastic if you:</strong></p> <ul> <li>Have experience with web development or building products in a fast-paced environment</li> <li>Have worked on side projects or contributed to open-source communities</li> <li>Are familiar with AI-assisted coding tools and eager to integrate them into your daily workflow.</li> </ul> <h2><strong>Life at Doctolib Tech</strong></h2> <ul> <li>Our solutions are built on a single fully cloud-native platform that supports web and mobile app interfaces, multiple languages, and is adapted to country and healthcare specialty requirements.</li> <li>Our stack is composed of Rails, TypeScript, Java, Python, Kotlin, Swift, and React Native.</li> <li>We leverage AI ethically across our products to empower patients and health professionals. Discover our AI vision <a href=\"https://careers.doctolib.com/ai-careers/\">here</a>.</li> </ul> <p><em>Want to learn more about our tech culture and environment? Visit the</em><a href=\"https://careers.doctolib.com/tech-doctolib/\"><em> </em><em>Doctolib Tech site</em></a><em>.</em></p> <h2><strong>What we offer</strong></h2> <ul> <li>Tech masterclasses throughout the internship</li> <li>Free breakfast at the office</li> <li>Access to the best AI tools for coding and development, along with dedicated training</li> <li>Supplementary health insurance, with the option to include cohabiting family members</li> <li>Reimbursement of public transportation</li> <li>Food benefits: electronic meal vouchers (€8.00 per working day), Foorban fridges, and breakfast at the office</li> <li>Wellbeing and sports: access to mental health services in partnership with<a href=\"http://moka.care/\"> Moka.care</a>; free access to the gym at our Milan office; and a partnership with Wellhub</li> <li>For employees caring for dependent family members and employees with disabilities, a support package including adapted remote-working arrangements, additional paid leave for medical reasons, and psychological support</li> <li>Partnership with Ciao Elsa for access to pension funds</li> <li>Annual flu vaccination offered during the winter, along with various preventive healthcare initiatives throughout the year</li> <li>A fixed monthly allowance for internet and electricity</li> <li>Corporate partnerships with various providers across Italy, including Corporate Benefits and Ennevolte, offering dedicated discounts and promotions</li> </ul> <h3 data-start=\"87\" data-end=\"122\">&nbsp;</h3> <p><strong>Our interview process</strong></p> <ul> <li>Coding Game (1h)</li> <li>Recruiter Interview (30 minutes)</li> <li>Feature Building Interview (1h)</li> <li>Behavioral Interview (1h)</li> </ul> <h2><strong>Job details</strong></h2> <ul> <li>Internship (6 months)</li> <li>Milano&nbsp;</li> <li>Total compensation : 1000 euros</li> <li>Hybrid work setup (up to 2 remote days per week)</li> <li>Start date: March 2027</li> </ul> <h2><strong>We welcome everyone</strong></h2> <p>At Doctolib, we are committed to improving access to healthcare for everyone. This translates into our recruitment process. We evaluate candidates based solely on qualifications and motivation, without any form of discrimination.</p> <p>The more diverse ideas are heard, the more our product will truly improve healthcare for all. You are welcome to apply to Doctolib, regardless of your gender, religion, age, sexual orientation, ethnicity, or disability.</p> <p>To ensure equal opportunities, we invite you to exclude personal information (e.g., pictures, age) from your applications. If you require any accommodation, please let us know for support during the hiring process.</p> <p>Join us in building the healthcare we all dream of!</p> <h2><strong>Your data privacy</strong></h2> <p>All information provided is processed by Doctolib for application management. For data processing details, click here:<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-DE\"> Germany</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-FR\"> France</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-IT\"> Italy</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-COM\"> Netherlands</a>.</p> <p>Please contact hr.dataprivacy(at)doctolib.com for inquiries or to exercise your rights.</p> <h3 data-start=\"87\" data-end=\"122\"><br><br></h3>",
+    "posted_at": "2026-10-12T05:53:20-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate has over 10 years of experience and is seeking senior roles, making this position a poor fit. Additionally, the candidate is not interested in junior or internship roles, which further confirms the mismatch.",
+    "applied_at": null,
+    "first_seen": "2026-10-12T12:07:13.067Z"
+  },
+  {
+    "id": 7,
+    "external_id": "8006520003",
+    "source": "greenhouse",
+    "company": "Doctolib",
+    "title": "Software Engineer Intern - Fullstack (x/f/m) - Amsterdam",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "workplace_type": null,
+    "employment_type": "Intern",
+    "url": "https://job-boards.greenhouse.io/doctolib/jobs/8006520003",
+    "description": "<h1><strong>Software Engineering Intern - Fullstack (x/f/m)</strong></h1> <h2>&nbsp;</h2> <h2><strong>Set a new pulse for healthcare!</strong></h2> <p>We are looking for a <strong>Software Engineering Intern</strong> to join the <strong>Engineering</strong> team.</p> <p>Your mission will be to build innovative products and features that improve the daily lives of care teams and patients. You will work in a feature team developing solutions that directly impact healthcare professionals and patients across Europe, contributing to our Operating System powered by AI to manage all clinical and administrative activities.</p> <p>Working in the tech team at Doctolib means building innovative products and features to improve the daily lives of care teams and patients.</p> <h2><strong>What you'll do</strong></h2> <p>Your responsibilities include but are not limited to:</p> <ul> <li>Build and own features alongside experienced engineers — from design and development to testing and shipping — with a direct impact on real users</li> <li>Collaborate with engineers, product managers, and designers to solve complex technical challenges and build scalable, secure, and user-friendly healthcare tools</li> <li>Write clean, efficient code following industry best practices in design, testing, and peer review</li> <li>Solve real-world problems that directly enhance patient care and improve doctor-patient relationships</li> <li>Explore new tools and technologies, including AI and distributed systems, as part of your continuous growth</li> <li>Contribute to a culture of learning and collaboration by sharing knowledge and engaging actively with your team</li> </ul> <h3 data-start=\"87\" data-end=\"122\">&nbsp;</h3> <h2><strong>Who you are</strong></h2> <p>Before you read on: if you don't have the exact profile described below, but you feel this job description matches your skill set, we still encourage you to apply.</p> <p><strong>You'll be a great fit if you:</strong></p> <ul> <li>You love problem-solving and are driven by curiosity — you're not afraid to dive into complex issues and find creative solutions</li> <li>You thrive in a collaborative environment and enjoy working with cross-functional teams, sharing knowledge, and learning from your peers</li> <li>You have a passion for technology and product development, and always keep the user experience in mind</li> <li>You are comfortable coding, with the help of AI agents like Claude Code, in multiple languages and eager to learn our tech stack</li> <li>You are in your final year of a degree in Software Engineering, Computer Science, or a related field and looking for a 6-month full-time internship</li> <li>Eager to learn and work in a team of builders</li> <li>You are fluent in English</li> </ul> <p><strong>It would be fantastic if you:</strong></p> <ul> <li>Have experience with web development or building products in a fast-paced environment</li> <li>Have worked on side projects or contributed to open-source communities</li> <li>Are familiar with AI-assisted coding tools and eager to integrate them into your daily workflow.</li> </ul> <h2><strong>Life at Doctolib Tech</strong></h2> <ul> <li>Our solutions are built on a single fully cloud-native platform that supports web and mobile app interfaces, multiple languages, and is adapted to country and healthcare specialty requirements.</li> <li>Our stack is composed of Rails, TypeScript, Java, Python, Kotlin, Swift, and React Native.</li> <li>We leverage AI ethically across our products to empower patients and health professionals. Discover our AI vision <a href=\"https://careers.doctolib.com/ai-careers/\">here</a>.</li> </ul> <p><em>Want to learn more about our tech culture and environment? Visit the</em><a href=\"https://careers.doctolib.com/tech-doctolib/\"><em> </em><em>Doctolib Tech site</em></a><em>.</em></p> <h2><strong>What we offer</strong></h2> <ul> <li>Tech masterclasses throughout the internship</li> <li>Free breakfast and lunch plan every day on-site</li> <li>Up to 2 days of remote work per week</li> <li>Access to the best AI tools for coding and development, along with dedicated training</li> <li>Discounted membership to Urban Sports Club</li> <li>Bike lease scheme with our partner Lease a Bike, 35% price below the market</li> <li>Reimbursement of public transportation if you live outside the Amsterdam highway ring</li> <li>Comprehensive health insurance, fully covered by Doctolib for employees and their children under the basic plan</li> <li>Free mental health and personalised coaching programme with our partner,<a href=\"http://moka.care/\"> Moka.care</a></li> </ul> <p><strong>Our interview process</strong></p> <ul> <li>Coding Game (1h)</li> <li>Recruiter Interview (30 minutes)</li> <li>Feature Building Interview (1h)</li> <li>Behavioral Interview (1h)</li> </ul> <h2><strong>Job details</strong></h2> <ul> <li>Internship (6 months)</li> <li>Amsterdam</li> <li>Hybrid work setup (up to 2 remote days per week)</li> <li>Start date: March 2027</li> </ul> <h2><strong>We welcome everyone</strong></h2> <p>At Doctolib, we are committed to improving access to healthcare for everyone. This translates into our recruitment process. We evaluate candidates based solely on qualifications and motivation, without any form of discrimination.</p> <p>The more diverse ideas are heard, the more our product will truly improve healthcare for all. You are welcome to apply to Doctolib, regardless of your gender, religion, age, sexual orientation, ethnicity, or disability.</p> <p>To ensure equal opportunities, we invite you to exclude personal information (e.g., pictures, age) from your applications. If you require any accommodation, please let us know for support during the hiring process.</p> <p>Join us in building the healthcare we all dream of!</p> <h2><strong>Your data privacy</strong></h2> <p>All information provided is processed by Doctolib for application management. For data processing details, click here:<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-DE\"> Germany</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-FR\"> France</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-IT\"> Italy</a> |<a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-COM\"> Netherlands</a>. Please contact hr.dataprivacy(at)doctolib.com for inquiries or to exercise your rights.</p> <h3 data-start=\"87\" data-end=\"122\"><br><br></h3>",
+    "posted_at": "2026-10-12T05:52:45-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate has over 10 years of experience and is seeking senior roles, making this position a poor fit. Additionally, the candidate has stated they are not interested in junior or entry-level roles, which further solidifies the mismatch.",
+    "applied_at": null,
+    "first_seen": "2026-10-12T12:07:13.067Z"
+  },
+  {
+    "id": 6,
+    "external_id": "8015566003",
+    "source": "greenhouse",
+    "company": "Doctolib",
+    "title": "IA Engineer intern (x/f/m) - Milano",
+    "location": "Milano, Milan, Italy",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/doctolib/jobs/8015566003",
+    "description": "<p>Join a team of passionate and committed people working to improve healthcare.</p> <p>At Doctolib, our tech teams build products and features that improve the daily lives of healthcare professionals and patients. We work in feature teams within an agile environment, in close collaboration with Product, Design, Data Science, and Business teams.</p> <h2><strong>What you'll do</strong></h2> <p>We are looking for an <strong>AI Engineer Intern</strong> to join our Tech team and contribute to the development of AI-powered features at Doctolib.</p> <p>You will work closely with experienced AI and software engineers to explore, prototype, evaluate, and improve AI-based solutions. This internship will give you the opportunity to gain practical experience across the different stages of an AI product, from experimentation to integration into a production environment.</p> <p>Your responsibilities will include:</p> <ul> <li>Contribute to the development of AI features and services under the guidance of experienced engineers</li> <li>Write Python code to support prototypes, experiments, evaluation tools, and backend components</li> <li>Experiment with large language models, prompting techniques, retrieval, and tool integration</li> <li>Contribute to automated tests and documentation for the components you develop</li> <li>Investigate issues, analyse results, and suggest improvements to your team</li> <li>Participate in code reviews, technical discussions, and team rituals</li> </ul> <p>You will receive regular guidance from your mentor and teammates. The scope of your work will grow progressively as you become familiar with the codebase, the tools, and the technical challenges.</p> <h2><strong>Who you are</strong></h2> <p>Before you read on, if you do not have the exact profile described below but feel that this internship matches your skills and interests, we still encourage you to apply.</p> <p>You will be a great fit if you:</p> <ul> <li>Are in the final year of a degree in Computer Science, Artificial Intelligence, Software Engineering, or a related field</li> <li>Have basic experience with Python through coursework, personal projects, research, or previous internships</li> <li>Have a basic understanding of programming concepts, data structures, and software development</li> <li>Are curious about artificial intelligence and interested in understanding how AI systems work</li> <li>Are comfortable communicating in English, both written and spoken</li> </ul> <p>It would be fantastic if you:</p> <ul> <li>Have worked on a project involving machine learning, natural language processing, or large language models</li> <li>Have used agentic frameworks like Langchain or Google ADK.</li> <li>Have experimented with AI APIs, prompting, retrieval, or conversational interfaces</li> <li>Have experience in taking products to production and supporting them with real users.</li> <li>Have some experience with Git, APIs, testing, or data analysis</li> <li>Have an interest in healthcare, privacy, or responsible AI</li> </ul> <h2><strong>Life at Doctolib Tech</strong></h2> <p>Our products are built on a cloud-native platform that supports web and mobile applications across several countries and healthcare systems.</p> <p>Even if Doctolib uses technologies like Ruby on Rails, TypeScript, Java, Kotlin, Swift, React Native, and many cloud-related technologies, the principal language you'll work on is Python.You will also have the opportunity to use AI-assisted development tools within our engineering practices.</p> <p>Discover our AI vision<a href=\"https://careers.doctolib.com/ai-careers/\"> here</a> and learn more about our tech culture on the<a href=\"https://careers.doctolib.com/tech-doctolib/\"> Doctolib Tech site</a>.</p> <h2><strong>What we offer</strong></h2> <ul> <li>A structured internship with dedicated mentoring</li> <li>The opportunity to work on real AI projects in a healthcare environment</li> <li>Technical learning sessions and access to internal engineering communities</li> <li>Access to AI tools for coding, development, and learning</li> <li>Meal vouchers</li> <li>Free breakfast in the office</li> <li>Up to 2 days of remote work per week</li> <li>A flexible workplace policy, depending on the team and location</li> <li>A collaborative and international working environment</li> </ul> <h2><strong>The interview process</strong></h2> <ul> <li>Coding Game</li> <li>Recruiter Interview</li> <li>Technical Interview</li> <li>Behavioral Interview</li> </ul> <h2><strong>Job details</strong></h2> <ul> <li>Internship, 6 months, full-time</li> <li>Location: Berlin, Paris, Nantes, Milan, or Amsterdam</li> <li>Hybrid work setup, up to 2 remote days per week</li> <li>Start date: March 2027</li> <li>Salary : 1000€ gross per month</li> </ul> <h2><strong>We welcome everyone</strong></h2> <p>At Doctolib, we are committed to improving access to healthcare for everyone. We evaluate candidates based on their qualifications, motivation, and potential, without discrimination.</p> <p>The more diverse ideas are heard, the better our products can serve patients and healthcare professionals. We welcome applications regardless of gender, religion, age, sexual orientation, ethnicity, disability, or place of origin.</p> <p>To support an inclusive recruitment process, we invite you to leave personal information such as pictures and age off your application. If you require an accommodation during the interview process, please let us know.</p> <p>Join us in building the healthcare we all dream of!</p> <h2><strong>Your data privacy</strong></h2> <p>All information provided through this application is processed by Doctolib for recruitment purposes. For more information about how Doctolib processes your application data, please consult the relevant privacy policy:</p> <ul> <li><a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-DE\">Germany</a></li> <li><a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-FR\">France</a></li> <li><a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-IT\">Italy</a></li> <li><a href=\"https://doctolib.legal/B2C-Privacy-Policy-Career-COM\">The Netherlands</a></li> </ul> <p>For questions or to exercise your rights, please contact hr.dataprivacy(at)<a href=\"http://doctolib.com/\">doctolib.com</a>.</p>",
+    "posted_at": "2026-10-12T05:48:29-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for an AI Engineer intern position, which is explicitly targeted at candidates in the final year of their degree or those with basic experience in Python. The candidate is a senior full-stack software engineer with over 10 years of experience, making this role a significant mismatch in terms of seniority. Additionally, the candidate is not interested in internship roles, which further disqualifies them from this opportunity.",
+    "applied_at": null,
+    "first_seen": "2026-10-12T12:07:13.067Z"
   }
 ]
