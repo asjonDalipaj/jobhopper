@@ -64,7 +64,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 12,
+    "id": 14,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -77,7 +77,7 @@
     "posted_at": "2026-10-13T17:49:27-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer role, which is not aligned with the candidate's experience as a full-stack software engineer. The candidate has strong skills in Java, SQL, and React, but lacks the required experience in machine learning engineering, Python proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role is remote from Spain, which may not fit the candidate's preference for remote work from the Netherlands.",
+    "reasoning": "The job posting is for a Machine Learning Engineer role, which requires specific expertise in machine learning, AI frameworks, and natural language processing. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and React, lacking the necessary experience in machine learning engineering and related technologies. Additionally, the role is remote from Spain, which does not align with the candidate's preference for remote roles anywhere in Europe, as they are based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -164,7 +164,7 @@
     "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns with some aspects of the job. However, the role specifically requires at least two years of experience with TypeScript and Node.js, which the candidate does not have. Additionally, the focus on AI and observability systems is a significant shift from the candidate's fintech background, creating a gap in relevant experience. Overall, while there are some relevant skills, the missing key technologies and domain knowledge lead to a weak fit."
   },
   {
-    "id": 80,
+    "id": 13,
     "external_id": "8018517",
     "source": "greenhouse",
     "company": "Reddit",
@@ -174,10 +174,12 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/reddit/jobs/8018517",
     "description": "<div class=\"content-intro\"><div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <div class=\"p-rich_text_section\">Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit <a class=\"c-link\" href=\"http://www.redditinc.com/\" target=\"_blank\" data-stringify-link=\"http://redditinc.com\" data-sk=\"tooltip_parent\">www.redditinc.com</a>.</div> </div> </div> </div> </div> </div></div><p><strong>Location: </strong>Reddit has a flexible first workforce. Don't live near our office? No worries: you can work remotely from anywhere in the UK or the Netherlands.</p> <p>The <strong>Ads Foundational Representations (AFR)</strong> team develops signals and representations of Reddit’s core entities (ads, posts, users, and so on), capturing the semantic, contextual, and behavioral information that Reddit Ads needs. We work on building embeddings to understand content and users' interests based on the content they engage with.&nbsp;</p> <p>Our team has the potential to highlight one of Reddit's biggest differentiators: genuinely curated, high-quality, extremely relevant, and daily updated organic content. We are a Machine Learning/Data heavy team with a focus on the following areas:</p> <ul> <li><strong>Multimodal &amp; Content Embeddings</strong> - Make sense of organic (posts, comments, subreddits) and promoted (ads, shopping products, their landing pages) text and media content by embedding them into a shared space.&nbsp;</li> <li><strong>Contextual and Behavioral Relevance </strong>- Working with Product &amp; Data Science, establishing definitions of what ads are relevant to users and the content we show them next to, building metrics and fine-tuning embeddings to better reflect relevance.</li> <li><strong>Knowledge Graph Embeddings - </strong>Building representations for the Knowledge graph entities, e.g., intellectual properties/brands, to be used for high-precision targeting &amp; business insights.&nbsp;</li> <li><strong>User Intent Modeling -</strong> Leveraging various techniques to introduce user representations based on the content they interact with: batch &amp; real-time sequence modeling, LLM summarization, etc.&nbsp;</li> <li><strong>LLM-based Representations</strong> - Leveraging LLMs, VLMs, and foundational models to build complex representations of Reddit entities that improve ranking outcomes</li> </ul> <p>The signals and features we create become a key piece in the Ads Delivery funnel, from targeting to the auction, as well as the Business Insights product and other advertiser-facing products such as Creative generation and optimization.</p> <p>As a <strong>Staff ML Engineer</strong>, you’ll be in charge of setting the technical direction of multiple pillars the team owns. You will lead cross-functional ML projects end to end - from high-level business gap analysis to engineering execution.&nbsp;</p> <p>Roughly 50% of your time will be spent on technical leadership and mentorship (driving strategy &amp; designs, cross-functional collaboration, raising the quality bar), another 50% being individual hands-on work (data analysis &amp; engineering, modeling &amp; automation).&nbsp;&nbsp;</p> <p><strong>Responsibilities</strong></p> <ul> <li>Providing technical leadership and mentorship to MLEs in the team: driving designs &amp; their review, establishing best practices in analysis, modeling and engineering, keeping the bar high.&nbsp;</li> <li>Working closely with team/org leadership developing technical strategy for content-based embeddings &amp; relevance for Ads.</li> <li>Developing new or iterating on existing embedding models for advertising use cases, ranging from aggregation pipelines to two-tower architectures and sequence models.&nbsp;&nbsp;</li> <li>Working with local and 3rd-party LLMs/VLMs: extract representations, develop evaluation methodologies, prompt tune and fine-tune large models to build state-of-the-art embeddings.&nbsp;</li> <li>Building data processing and inference pipelines for the models we develop.&nbsp;</li> <li>Qualitative and quantitative evaluation of the various features we develop, end-to-end experimentation from internal benchmarks to downstream recommender system offline metrics to online experiments.&nbsp;</li> <li>Ensuring the reliability, scalability, and performance of the ML systems by writing automated tests, monitoring performance, and implementing best practices for model management.</li> <li>Participating in modeling and coding reviews: You will review work by other team members and provide feedback to ensure that it meets the team's standards for quality and performance.</li> <li>Collaborating with cross-functional teams to understand business requirements and translate them into technical solutions.</li> </ul> <p><strong>Required Qualifications:</strong></p> <ul> <li>7+ years of hands-on experience with the full lifecycle of designing, training, evaluating, testing, and deploying industry-level models.</li> <li>Demonstrated Staff-level technical leadership: mentoring engineers, driving standards and bar raising, leading complex cross-functional projects: from requirements, design to cross-team/functional alignment and execution without direct people-management authority.&nbsp;</li> <li>Excellent communication skills, with the ability to translate complex technical concepts to different audiences, both verbally and in writing.&nbsp;</li> <li>Strong track record of working on content rich NLP/CV problems at scale, and using embeddings as a tool to solve them.&nbsp;</li> <li>Established data-driven approach for ML system development. Excitement about working with data and readiness to look behind the metric numbers.&nbsp;</li> <li>Familiarity with the Ads domain and/or Search/Recommender systems.</li> <li>Experience with mainstream DL frameworks: PyTorch or TensorFlow.</li> </ul> <p><strong>Preferred Qualifications:</strong></p> <ul> <li>Experience with our stack (Python, Pytorch, Airflow, BigQuery, Ray, k8s, kafka, GCP)</li> <li>Tech leadership experience: mentoring junior engineers and leading complex projects.&nbsp;</li> <li>Hands-on experience with using/fine-tuning/building LLMs.</li> </ul> <p><strong>Benefits:</strong></p> <ul> <li>Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support</li> <li>Family Planning Support</li> <li>Gender-Affirming Care</li> <li>Mental Health &amp; Coaching Benefits</li> <li>Private Pension plan with Employer-matching</li> <li>100% employer-sponsored group medical plan &nbsp;</li> <li>Income Replacement Programs</li> <li>Flexible Vacation &amp; Paid Volunteer Time Off</li> <li>Generous Paid Parental Leave</li> </ul><div class=\"content-conclusion\"><p>In select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.</p> <p><span style=\"font-weight: 400;\">During the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable.&nbsp; We will not sell your personal information or disclose it to any third party for their marketing purposes.&nbsp; We will delete any recording of your interview promptly after making a hiring decision.&nbsp; For more information about how we will handle your personal information, including our retention of it, please refer to our <a href=\"https://redditinc.com/policies/candidate-privacy-policy\">Candidate Privacy Policy for Potential Employees and Contractors</a>.</span></p> <p><em><span style=\"font-weight: 400;\">Reddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve.&nbsp; Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.</span></em></p></div>",
-    "posted_at": "2026-10-07T02:15:11-04:00",
+    "posted_at": "2026-10-14T04:06:48-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and a strong background in Java and SQL, the job posting is for a Staff Machine Learning Engineer role, which requires specialized experience in machine learning, particularly with NLP and deep learning frameworks like PyTorch or TensorFlow. The candidate's experience does not explicitly include machine learning or the required frameworks, which represents a significant gap. Additionally, the role emphasizes technical leadership in ML projects, which may not align with the candidate's current focus on software engineering."
+    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java and SQL, which aligns with some aspects of the job. However, the role requires extensive experience in machine learning, specifically with NLP/CV problems, and familiarity with frameworks like PyTorch or TensorFlow, which the candidate does not explicitly possess. Additionally, the position emphasizes technical leadership in ML projects, which may not align with the candidate's current focus on full-stack development.",
+    "applied_at": null,
+    "first_seen": "2026-10-14T08:16:56.953Z"
   },
   {
     "id": 79,
@@ -1206,7 +1208,7 @@
     "reasoning": null
   },
   {
-    "id": 3,
+    "id": 4,
     "external_id": "8105603",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2082,7 +2084,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 18,
+    "id": 19,
     "external_id": "5435390008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2095,7 +2097,7 @@
     "posted_at": "2026-10-13T14:37:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for IT Engineer 3 at Quince is not aligned with the candidate's experience and preferences. The role focuses on IT support and infrastructure management, which is outside the candidate's expertise as a senior full-stack software engineer. Additionally, the position requires 4-8 years of IT support experience, which the candidate does not possess, as their background is primarily in software development and fintech. Furthermore, the candidate is not interested in roles that do not align with their seniority level or technical focus.",
+    "reasoning": "The job posting for IT Engineer 3 is focused on IT support and infrastructure management, which is not aligned with the candidate's expertise as a senior full-stack software engineer. The role requires 4-8 years of IT support experience and responsibilities such as managing employee onboarding, IT asset lifecycle, and providing technical support, which do not match the candidate's background in software development and product engineering. Additionally, the candidate is looking for roles specifically in software engineering, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2648,7 +2650,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 2,
+    "id": 3,
     "external_id": "8158521",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2714,7 +2716,7 @@
     "reasoning": "The candidate has a strong technical background in software engineering and fintech, but the job posting for a Principal Sales Engineer requires extensive pre-sales experience and a focus on sales strategy, which the candidate does not possess. Additionally, the role demands over 12 years of experience in technical pre-sales and specific knowledge of Zscaler's security platforms, which the candidate lacks. While the candidate's skills in Java, SQL, and React are relevant, they do not align with the sales engineering focus of this position."
   },
   {
-    "id": 4,
+    "id": 8,
     "external_id": "4988356101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2727,12 +2729,12 @@
     "posted_at": "2026-10-12T06:18:00-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and possesses relevant skills in Java, SQL, and React. However, the job posting requires specific experience in building GTM systems, sales automation, and familiarity with modern GTM tooling, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes a strong understanding of B2B GTM operations and the ability to work with ambiguous business problems, which may not align closely with the candidate's background focused on software development rather than GTM strategy.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting for the Founding GTM Engineering Lead requires specific experience in building GTM systems, sales automation, and account intelligence systems, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes working with modern GTM tooling and AI agents, areas where the candidate's experience is not clearly aligned. The candidate's skills in Java, SQL, and React are relevant, but they do not match the core requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 9,
+    "id": 7,
     "external_id": "8000653003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2745,12 +2747,12 @@
     "posted_at": "2026-10-13T10:55:55-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly not suitable for the candidate who has over 10 years of experience and is seeking senior roles. The candidate's extensive background in software engineering and fintech makes this internship role a significant mismatch in terms of seniority and expectations. Additionally, the role requires being in the final year of a degree, which the candidate does not meet.",
+    "reasoning": "The job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of a degree program. This does not align with the candidate's profile as they have over 10 years of experience and are looking for senior roles. Additionally, the candidate has stated they are not interested in junior or internship roles, making this position a complete mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 8,
+    "id": 6,
     "external_id": "8006520003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2763,12 +2765,12 @@
     "posted_at": "2026-10-13T10:56:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly aimed at candidates in their final year of a degree program. The candidate, with over 10 years of experience, is seeking senior roles and is not interested in internships or entry-level positions. This mismatch in seniority and the nature of the role makes it unsuitable for the candidate.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate is a senior full-stack software engineer with over 10 years of experience, making this role unsuitable due to the significant mismatch in seniority. Additionally, the candidate is not interested in internship roles, further solidifying the verdict.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 7,
+    "id": 5,
     "external_id": "8015566003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2781,12 +2783,12 @@
     "posted_at": "2026-10-12T05:48:29-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an AI Engineer intern position, which is a junior role that does not align with the candidate's extensive experience as a senior full-stack software engineer. The candidate has over 10 years of experience and is looking for senior roles, making this internship unsuitable. Additionally, the position requires candidates to be in the final year of a degree, which does not match the candidate's profile.",
+    "reasoning": "This job posting is for an AI Engineer intern position, which is explicitly an entry-level role. The candidate has over 10 years of experience and is seeking senior full-stack or backend software engineering roles, making this position a poor fit. Additionally, the candidate's constraints specify they are not interested in junior or internship roles, further solidifying the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 6,
+    "id": 10,
     "external_id": "4866608101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2799,12 +2801,12 @@
     "posted_at": "2026-10-12T09:57:21-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in Java and backend development, which aligns well with the job's requirements. However, the job specifically requires experience with Node.js and Kotlin, which the candidate does not possess. Additionally, while the candidate has experience with CI/CD pipelines, the job emphasizes cloud environments and containerization, which may require further adaptation. Overall, the candidate's fintech background and full-stack experience make them a relevant fit, but the gaps in specific technologies and frameworks present meaningful challenges.",
+    "reasoning": "The candidate has strong experience in Java and backend development, which aligns well with the job's requirements. However, the job specifically asks for experience with Node.js and Kotlin, which the candidate does not possess. Additionally, while the candidate has experience with CI/CD and cloud environments, the role emphasizes AWS and Kubernetes, which may require further adaptation. Overall, the candidate's fintech background and full-stack experience make them a reasonable fit, but there are notable gaps in required technologies.",
     "applied_at": null,
     "first_seen": "2026-10-12T14:05:34.157Z"
   },
   {
-    "id": 1,
+    "id": 2,
     "external_id": "8167155",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2822,7 +2824,7 @@
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 5,
+    "id": 9,
     "external_id": "4999781101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2835,12 +2837,12 @@
     "posted_at": "2026-10-13T03:42:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering and a solid fintech background, but the job posting requires proficiency with the .NET stack and C#, which the candidate does not possess. While the candidate has experience in Java and React, the focus on support engineering and troubleshooting commercial software applications is a significant shift from their current role as a full-stack engineer. Additionally, the role emphasizes a user-first mindset and support frameworks, which may not align with the candidate's experience in product initiatives and development.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role focuses on support engineering within the .NET stack, which the candidate does not have experience with. The job requires proficiency in C# and the .NET technology stack, which are not mentioned in the candidate's profile. Additionally, the role emphasizes troubleshooting and support, which may not align with the candidate's preference for product engineering and technical ownership.",
     "applied_at": null,
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 17,
+    "id": 18,
     "external_id": "5299904008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2850,15 +2852,15 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/quince/jobs/5299904008",
     "description": "<div class=\"content-intro\"><p><span style=\"text-decoration: underline;\"><strong>ABOUT QUINCE</strong></span></p> <p>Quince is a destination for builders, creators, innovators, and operators who want to come together and challenge the status quo. Our mission is simple: make really high quality essentials for really low prices, fairly and sustainably. We deliver on that mission through a unique manufacturer-to-consumer (M2C) model eliminating the layers of traditional retail that add cost and result in consumers paying more than they need to. We find, build relationships with, and work directly with the manufacturing partners behind some of the world’s finest products. From there, our teams design smart, efficient operational processes&nbsp; and build and deploy proprietary technology, AI, and analytics to help us scale fast.</p> <p>What began with a small assortment of elevated basics has quickly grown into a cross-category brand spanning apparel, accessories, home goods, and more. Today, tens of millions of people across a growing number of countries come – and return – to Quince because they trust us to deliver.</p> <p><span style=\"text-decoration: underline;\"><strong>OUR CULTURE</strong></span></p> <p>Quince is a culture built for builders by builders. Our way of working starts with a blank sheet of paper. We question conventional thinking, use technology and data to uncover new opportunities, and move quickly to turn ideas into reality. We aren’t interested in replicating how others do retail. We’re building a better way – at a speed and scale unlike anything that’s been done before.</p> <ul> <li>We dream big and chase the hard problems others shy away from. Rejecting long-held assumptions is part of our company's DNA.&nbsp; Where conventional wisdom says you have to choose – soft or durable, speed or rigor, quality or price – we ask why that trade-off has to exist in the first place.</li> <li>Our pace is fast and the bar is high because our customers expect a lot from us and we refuse to let them down. We believe the best results come from challenging ourselves, learning from one another, and building on each other's strengths.&nbsp;</li> <li>Here, responsibility is not determined by role, tenure, or seniority. Every team member - no matter their level - has the opportunity to drive our business and shape our trajectory.&nbsp;</li> </ul> <p>If you’re someone who likes to imagine new possibilities and build better systems rather than plug-in to outdated ones, Quince is the place for you.</p></div><p data-renderer-start-pos=\"2290\" data-local-id=\"6a0d0d38-3057-4834-9012-12f09f19e465\"><strong data-renderer-mark=\"true\"><span class=\"fabric-text-color-mark\" data-renderer-mark=\"true\" data-text-custom-color=\"#0747a6\"><u data-renderer-mark=\"true\">THE ROLE </u></span></strong></p> <p><strong>Cashmere Engineer Specialist</strong></p> <p>Dehaired Fiber Quality Control</p> <ul> <li>Oversee the quality of dehaired cashmere fiber entering the supply chain, ensuring it meets Grade A specifications for micron, length, purity, and vegetable matter content.</li> <li>Establish and enforce clear acceptance criteria for dehaired fiber, including maximum coarse hair content and minimum yield thresholds.</li> <li>Inspect and approve incoming dehaired fiber lots before release to spinning mills, flagging any non-conforming material for return or rework.</li> <li>Partner with dehairing facilities to optimize processes that maximize Grade A output while minimizing fiber damage or waste.</li> </ul> <p>Grade A Standards Enforcement</p> <ul> <li>Define what constitutes Grade A cashmere for the organization.</li> <li>Conduct regular audits of dehairing suppliers to ensure consistent adherence to Grade A specifications.</li> <li>Work upstream with sourcing and herder cooperatives to improve raw fiber quality before dehairing, reducing Grade A rejection rates.</li> </ul> <p>Finished Yarn Quality Assurance</p> <ul> <li>Evaluate finished cashmere yarns against required quality standards, including evenness, tensile strength, twist consistency, and surface cleanliness.</li> <li>Test yarns for critical attributes such as pilling potential, colorfastness, and handfeel before approval for knitting production.</li> <li>Identify and reject yarn lots that fail to meet quality thresholds, documenting defects and communicating findings to spinning mills.</li> </ul> <p>Cashmere Material Library</p> <ul> <li>Build and maintain a physical and digital cashmere material library, cataloging dehaired fiber lots and finished yarns by key attributes (micron, origin, color, lot number, test results).</li> <li>Organize the library to support cross-functional teams (R&amp;D, Product Development, Sourcing, Production) in referencing past and current materials for development and troubleshooting.</li> <li>Include reference standards for Grade A fiber and approved yarn constructions to serve as benchmarks for quality comparisons.</li> <li>Update the library regularly with new fiber lots, yarn developments, and supplier samples, ensuring traceability from raw material to finished yarn.</li> </ul> <p>Root Cause &amp; Corrective Actions</p> <ul> <li>Investigate quality failures in finished yarns—such as neps, slubs, weak spots, or inconsistent dye uptake—to determine if the root cause lies in dehaired fiber, spinning, or finishing.</li> <li>Collaborate with dehairing and spinning partners to implement corrective actions and prevent repeat issues.</li> <li>Track quality trends across fiber lots and yarn batches to identify recurring supplier or process weaknesses.</li> </ul> <p data-renderer-start-pos=\"2301\" data-local-id=\"6d5afd27-5970-45c1-b675-f5df64663cbf\">&nbsp;</p> <p>Testing &amp; Lab Coordination</p> <ul> <li>Coordinate with internal and external labs to conduct fiber and yarn testing (e.g., micron analysis, coarse hair count, tensile testing, evenness).</li> <li>Interpret lab reports and make pass/fail decisions based on Grade A fiber specs and finished yarn quality requirements.</li> <li>Maintain a database of test results for all dehaired fiber lots and finished yarn batches, linking results to the material library for easy reference.</li> </ul> <p data-renderer-start-pos=\"2301\" data-local-id=\"6d5afd27-5970-45c1-b675-f5df64663cbf\">&nbsp;</p> <p>Cross-Functional Collaboration</p> <ul> <li>Partner with Sourcing to ensure dehairing suppliers are selected and evaluated based on their ability to consistently deliver Grade A fiber.</li> <li>Work with Production and Planning teams to flag quality holds on fiber or yarn that could impact production schedules.</li> <li>Provide clear quality feedback to R&amp;D and Product Development teams to inform yarn specifications and supplier requirements, using the material library as a reference tool.</li> </ul> <p>Documentation &amp; Continuous Improvement</p> <ul> <li>Maintain detailed records of fiber inspections, yarn test results, rejections, and supplier corrective actions within the material library system.</li> <li>Drive initiatives to improve Grade A yield from dehairing partners and reduce variability in finished yarn quality.</li> <li>Share quality insights across internal teams to support better sourcing, development, and production decisions.</li> </ul> <p data-renderer-start-pos=\"2301\" data-local-id=\"6d5afd27-5970-45c1-b675-f5df64663cbf\">&nbsp;</p> <p>QUALIFICATIONS</p> <ul> <li>Education: Degree in Textile Engineering, Material Science, or a related field.</li> <li>Fiber &amp; Yarn Expertise: Deep experience evaluating dehaired cashmere fiber (micron, coarse hair, length, purity) and finished cashmere yarns (evenness, strength, twist, appearance).</li> <li>Grade A Knowledge: Strong understanding of Grade A cashmere specifications and how to enforce them with dehairing suppliers.</li> <li>Defect Analysis: Ability to trace quality failures in finished yarns back to fiber quality or spinning process issues.</li> <li>Testing Acumen: Familiarity with fiber and yarn testing methods (e.g., OFDA, micrograph analysis, tensile testing, evenness testing).</li> <li>Supplier Collaboration: Experience working with dehairing facilities and spinning mills to drive quality improvements.</li> <li>Material Library Experience: Demonstrated ability to organize and maintain a physical and digital material reference system.</li> </ul> <p>Preferred:</p> <ul> <li>Experience with cashmere dehairing processes and coarse hair reduction technologies.</li> <li>Knowledge of spinning mill quality control systems and yarn manufacturing.</li> <li>Familiarity with traceability systems and digital library tools for material development.</li> <li>Willingness to travel to dehairing and spinning facilities for quality audits.</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p data-renderer-start-pos=\"3150\"><em><span style=\"font-size: 11px;\">All posted ranges are reflective of base salary and may vary depending upon experience level and location. </span></em><em><span style=\"font-size: 11px;\">Bonus and equity may also be provided for eligible roles.</span></em></p></div><div class=\"title\">Pay Range</div><div class=\"pay-range\"><span>$1</span><span class=\"divider\">&mdash;</span><span>$50 USD</span></div></div></div><div class=\"content-conclusion\"><p data-renderer-start-pos=\"3319\"><strong data-renderer-mark=\"true\"><u data-renderer-mark=\"true\">WHY QUINCE?</u></strong></p> <p data-renderer-start-pos=\"3352\">Joining Quince means being part of a mission-driven team reshaping retail. You will work alongside talented colleagues, tackle meaningful challenges, and contribute to building a more sustainable, accessible future for customers and partners alike.</p> <p data-renderer-start-pos=\"3604\"><strong data-renderer-mark=\"true\"><u data-renderer-mark=\"true\">EQUAL OPPORTUNITY &amp; HIRING INTEGRITY</u></strong></p> <p data-renderer-start-pos=\"3662\">Quince provides equal employment opportunities to all employees and applications for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran or military status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws.&nbsp;</p> <p data-renderer-start-pos=\"4074\">Quince is committed to providing reasonable accommodations to qualified individuals with disabilities. If you need a reasonable accommodation to complete your application or to perform the essential functions of a role at Quince, please let us know by completing <a href=\"https://forms.gle/DpJ11jHa1WbqfUWB9\">this accommodation form</a>. We review all requests individually and will work with you to determine appropriate accommodations on a case-by-case basis.</p> <p data-renderer-start-pos=\"4428\">Employment is contingent upon successful completion of a background check. Quince will conduct background checks in compliance with applicable federal, state, and local laws.</p> <p data-renderer-start-pos=\"4604\"><em data-renderer-mark=\"true\">Security Advisory: Beware of Frauds</em></p> <p data-renderer-start-pos=\"4641\">At Quince, we're dedicated to recruiting top talent who share our drive for innovation. To safeguard candidates, Quince emphasizes legitimate recruitment practices. Initial communication is primarily via official Quince email addresses and LinkedIn; beware of deviations. Personal data and sensitive information will not be solicited during the application phase. Interviews are conducted via phone, in person, or through the approved platforms Google Meets or Zoom—never via messaging apps or other calling services. Offers are merit-based, communicated verbally, and followed up in writing. If personal information is requested to initiate the hiring process, rest assured it will be through secure and protected means.</p> <p data-renderer-start-pos=\"5364\">&nbsp;</p></div>",
-    "posted_at": "2026-10-12T21:59:13-04:00",
+    "posted_at": "2026-10-13T23:18:05-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Cashmere Engineer Specialist, which is entirely unrelated to the candidate's background in software engineering and fintech. The role requires expertise in textile engineering and quality control of cashmere fibers, which does not align with the candidate's skills in software development, Java, SQL, and React. Additionally, the candidate is based in the Netherlands and is not looking for roles in Italy, further compounding the mismatch.",
+    "reasoning": "The job posting for a Cashmere Engineer Specialist is entirely unrelated to the candidate's background in software engineering and fintech. The role focuses on quality control and material science related to cashmere fibers, which does not align with the candidate's expertise in software development, Java, SQL, and React. Additionally, the candidate is based in the Netherlands, while the job is located in Italy, which may not meet their preference for remote work.",
     "applied_at": null,
     "first_seen": "2026-10-13T04:53:53.308Z"
   },
   {
-    "id": 19,
+    "id": 20,
     "external_id": "108c99e6-ba2b-44a0-b830-7d535e14a152",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2876,7 +2878,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 23,
+    "id": 24,
     "external_id": "1b90a2b2-1352-458d-b2b7-3900f6e02df5",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2889,12 +2891,12 @@
     "posted_at": "2026-10-13T11:46:04.421+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Mobile Engineer does not align with the candidate's expertise and preferences. The candidate specializes in full-stack and backend software engineering with a strong focus on Java, SQL, and React, while the role appears to be centered around mobile development, which is not mentioned in the candidate's skill set. Additionally, the candidate is looking for senior roles, and the job description does not specify the seniority level, which raises concerns about fit.",
+    "reasoning": "The job posting for a Mobile Engineer at Eleven Labs does not align with the candidate's expertise and preferences. The candidate is a senior full-stack software engineer with a strong focus on backend and frontend development, particularly in fintech, while this role appears to be focused on mobile engineering, which is outside their stated area of specialization. Additionally, the candidate's constraints explicitly mention a preference for senior roles, and this position does not seem to match that level of seniority or relevant experience.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 20,
+    "id": 21,
     "external_id": "38bac641-02de-414d-96f3-d0adb603cb89",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2906,17 +2908,17 @@
     "description": "",
     "posted_at": "2026-10-13T11:44:40.668+00:00",
     "tags": null,
-    "verdict": "strong",
-    "reasoning": "This job posting aligns well with the candidate's extensive experience as a senior full-stack software engineer, particularly in fintech, which is a key interest for them. The candidate's strong skills in Java, SQL, and React match the requirements for a full-stack role, and their experience with CI/CD and DevOps complements the expectations for this position. Additionally, the remote work option fits the candidate's preference for flexibility in location. However, the job's specific focus on a 'frontend-leaning' role may require the candidate to emphasize their frontend skills more than they typically do.",
+    "verdict": "fair",
+    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs aligns well with the candidate's experience in full-stack development, particularly in frontend technologies like React. However, the role is described as 'frontend-leaning,' which may not fully utilize the candidate's strong backend skills in Java and SQL. Additionally, while the candidate is open to remote work, the job's focus on creative music may not align with their fintech background, representing a potential gap in industry relevance.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 22,
+    "id": 23,
     "external_id": "a03536c8-8728-4007-aef2-460def03173e",
     "source": "ashby",
     "company": "Eleven Labs",
-    "title": "Full-Stack Engineer (Backend-Leaning) - CoreMusic",
+    "title": "Full-Stack Engineer (Backend Leaning) - CoreMusic",
     "location": "Remote; New York; Brazil; Paris; Poland; London; Amsterdam; Canada",
     "workplace_type": "Remote",
     "employment_type": null,
@@ -2930,7 +2932,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 10,
+    "id": 11,
     "external_id": "8276131",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2943,7 +2945,7 @@
     "posted_at": "2026-10-13T06:33:51-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in full-stack development with a focus on Java and React, which aligns well with the job's requirements for building user interfaces and integrating front-end elements with back-end services. However, the job specifically mentions a preference for TypeScript and Node.js, which the candidate does not explicitly list as part of their skill set. Additionally, while the candidate has experience in leading product initiatives, the role requires a strong emphasis on architecture and system design in large codebases, which may be a stretch given the candidate's background. Overall, the candidate is a realistic fit but would need to address some gaps in specific technologies and experience.",
+    "reasoning": "The candidate has a strong background in full-stack development with expertise in Java, React, and CI/CD, which aligns well with the job's requirements for building user interfaces and backend services. However, the job emphasizes TypeScript and Node.js, which the candidate has not explicitly mentioned in their experience. Additionally, while the candidate has led product initiatives, the role requires specific experience with observability tools and the Elastic stack, which the candidate lacks. Overall, this position represents a realistic stretch for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -2966,7 +2968,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 16,
+    "id": 17,
     "external_id": "8276008",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2978,13 +2980,13 @@
     "description": "<div class=\"content-intro\"><p><strong>Welcome to Planet. We believe in using space to help life on Earth.</strong></p> <p>Planet designs, builds, and operates the largest constellation of imaging satellites in history. This constellation delivers an unprecedented dataset of empirical information via a revolutionary cloud-based platform to authoritative figures in commercial, environmental, and humanitarian sectors. We are both a space company and data company all rolled into one.</p> <p>Customers and users across the globe use Planet's data to develop new technologies, drive revenue, power research, and solve our world’s toughest obstacles.</p> <p>As we control every component of hardware design, manufacturing, data processing, and software engineering, our office is a truly inspiring mix of experts from a variety of domains.</p> <p>We have a people-centric approach toward culture and community and we strive to iterate in a way that puts our team members first and prepares our company for growth. Join Planet and be a part of our mission to change the way people see the world.</p> <p>Planet is a global company with employees working remotely world wide and joining us from offices in San Francisco, Washington DC, Germany, Austria, Slovenia, and The Netherlands.</p></div><p><strong>About the Role:&nbsp;&nbsp;</strong></p> <p>We are looking for a Senior Reliability Engineer with focus on Identity and Access Management (IAM) to join the Corporate Engineering team. As an SRE together with other engineers you will be responsible for the continuous operation, further development and enhancement of Planet’s corporate infrastructure and applications, acting as the technical authority for our enterprise identity ecosystem.&nbsp;</p> <p>This is a full-time, hybrid role which will require you to work from our Berlin, Haarlem or Ljubljana office 3 days per week.</p> <p><strong>Impact You’ll Own:</strong></p> <ul> <li>Help to ensure the operation of Planet’s internal IT systems, specifically architecting and maintaining our identity providers (Okta, Auth0, Keycloak).</li> <li>Improve existing and create new solutions by engineering automated zero-day Joiner, Mover, and Leaver (JML) workflows directly from our HRIS (e.g., HiBob).</li> <li>Scripting &amp; Tooling: Use Python or Go to automate repetitive tasks, build custom provisioning connectors for legacy applications, and enforce identity data minimization.</li> <li>Identify and reduce operational toil through automation, making our systems self-healing and predictable.</li> <li>Infrastructure as Code (IaC): Leverage APIs, Terraform, Ansible, or SaltStack to manage configurations as code, moving away from manual UI/CLI changes across our identity platforms.</li> <li>Participate in an on-call rotation and drive the continuous improvement of incident response, root cause analysis (RCA), and post-mortem processes for complex authentication failures.</li> <li>Collaborate closely with Security and other IT teams to embed reliability, scalability, and security best practices from the ground up, ensuring our identity architecture complies with GDPR and Zero Trust principles.</li> </ul> <p><strong>What You Bring:</strong></p> <ul> <li>6+ years experience in infrastructure development and/or operations, with a dedicated focus on Identity and Access Management.</li> <li data-path-to-node=\"2,1,0\">Bachelor’s degree in a related field or equivalent professional experience.</li> <li data-path-to-node=\"2,1,0\">Expertise with a scripting language like Python.</li> <li>Track record of working with large web applications or computer clusters and managing complex identity architectures (Okta, Auth0, Keycloak).</li> <li>Experience integrating HR Information Systems with identity directories and handling complex edge cases (re-hires, cross-border transfers).</li> <li>Solid understanding of Network principles and operations alongside modern identity protocols (OAuth 2.0, OIDC, SAML, SCIM).</li> <li>Practical understanding of PKI, certificate lifecycles (S/MIME, X.509), and managing legacy directories like Active Directory.</li> </ul> <p><strong>What Makes You Stand Out:</strong></p> <ul> <li>Operational experience in deploying and maintaining databases.</li> <li>Experience using Docker, ECS or Linux Containers in a production environment.</li> <li>Awareness of best practices about systems security and defensive programming</li> <li>Experience with version control e.g. Git.</li> <li>Experience in deploying and maintaining virtual machines e.g. KVM, ProxMox.</li> <li>Experience in software development using CI/CD processes and tools e.g. Jenkins, GitLab.</li> <li>Experience with Access Control systems, e. g. Avigilon, Verkada or dormakaba.</li> <li>Experience with&nbsp; Public Key Infrastructure (PKI) and deployment automation, renewal, and revocation of personal S/MIME certificates.</li> </ul> <p><strong>Application Deadline:</strong></p> <p>11:45p / 23:45 CET on the date stated below. Applications are reviewed on a rolling basis. This posting may be removed earlier than projected if a suitable pool of applications has been received. For this reason, we recommend applying as soon as you are able to.</p> <p><strong>Export Control Requirements:</strong></p> <p><em>Planet Labs Germany GmbH is authorized to receive U.S. export-controlled information at Planet under an export license issued by the Bureau of Industry and Security. This position requires access to export-controlled information, and as such, employment (or hiring of a contractor) is contingent upon the candidate’s ability to access all applicable export-controlled information without additional export licensing being required by the Bureau of Industry and Security and/or the Directorate of Defense Trade Controls.</em></p> <p><strong>Benefits While Working at Planet:</strong></p> <p><em>These offerings are dependent on employment type and geographical location, based upon applicable law or company policy.</em></p> <ul> <li>Paid time off including vacation, holidays and company-wide days off&nbsp;</li> <li>Employee Wellness Program&nbsp;</li> <li>Home Office Reimbursement</li> <li>Monthly Phone and Internet Reimbursement</li> <li>Tuition Reimbursement and access to LinkedIn Learning</li> <li>Equity&nbsp;</li> <li>Volunteering Paid Time Off</li> </ul> <p><strong>Compensation:</strong></p> <p>The expected starting gross salary range for this role is listed below. Individual placement within this range is determined objectively based on gender-neutral criteria such as your skills, qualifications, and professional experience. This position may also be eligible for discretionary bonuses and/or equity.</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">Netherlands Salary Range</div><div class=\"pay-range\"><span>€75.000</span><span class=\"divider\">&mdash;</span><span>€93.700 EUR</span></div></div></div><div class=\"content-conclusion\"><p><strong>San Francisco Fair Chance Ordinance<br></strong>Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.<strong><br></strong></p> <p><strong>Why we care so much about Belonging.&nbsp;<br></strong>We’re dedicated to helping the whole Planet, and to do that we must strive to represent all of it within each of our offices and on all of our teams. That’s why Planet is guided by an ultimate north star of Belonging—dreaming big as we approach our ongoing work.&nbsp; If this job intrigues you, but you’re thinking you might not have all the qualifications, please... do apply!&nbsp; At Planet, we are looking for well-rounded people from around the world who can contribute to more ways than just what is listed in this job description.&nbsp; We don’t just fill positions, we aspire to fulfill people’s careers, most excited about folks who are motivated by our underlying humanitarian efforts.&nbsp; We are a few orbits around the sun before we get to where we want to be, so we hope you’re excited to come along for the ride.&nbsp;</p> <p><strong>EEO statement: <br></strong>Planet is committed to building a community where everyone belongs and we invite people from all backgrounds to apply. Planet is an equal opportunity employer, and committed to providing employment opportunities regardless of race, religious creed, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, pregnancy, childbirth and breastfeeding, age, sexual orientation, military or veteran status, or any other protected classification, in accordance with applicable federal, state, and local laws. <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\">Know Your Rights.</a></p> <p><strong>Accommodations:&nbsp;<br></strong>Planet is an inclusive community and we know that everyone has their own needs. If you have a disability or special need that requires accommodation during the hiring process, please reach out to accommodations@planet.com or contact your recruiter with your request. Your message will be confidential and we will be happy to assist you.</p> <p><strong>Privacy Policy</strong>: By clicking \"Apply Now\" at the top of this job posting, I acknowledge that I have read the <a href=\"https://www.planet.com/privacy/#california\">Planet Data Privacy Notice for California Staff Members and Applicants</a>, and hereby consent to the collection, processing, use, and storage of my personal information as described therein.</p> <p><strong>Privacy Policy (European Applicants):</strong> By clicking \"Apply Now\" at the top of this job posting, I acknowledge that I have read the <a href=\"https://www.planet.com/privacy/\">Candidate Privacy Notice GDPR Planet Labs Europe</a>, and hereby consent to the collection, processing, use, and storage of my personal information as described therein.</p> <p><strong>AI in Our Interviewing Process</strong>: Planet is committed to providing an exceptional interview experience for all candidates. We currently use <a href=\"https://www.metaview.ai/\" target=\"_blank\">Metaview</a> to better focus on candidates and less on trying to capture notes. As such, with the candidate's consent, select interviews may be recorded and include a \"Planet AI Notetaker\" for transcription and summarization purposes. Should an interview involve use of AI interview technologies, the candidate will receive notification and have the ability to opt out both in advance and/or real-time. Opting out will not affect one's candidacy.</p> <p><strong>Candidate AI Policy</strong>: Planet embraces Artificial Intelligence (AI) tools, and we encourage its responsible use. We understand that candidates may use various resources, including AI tools, to <em>prepare</em> for interviews and assessments. However, <em>during any live interview stage or when actively completing assessments for this position, the use of AI tools—e.g. Large Language Models (LLMs), deep fake technology, etc.—is strictly prohibited unless explicitly prompted by an interviewer or assessment instructions</em>. If you are unsure about acceptable use, please contact your recruiter for clarification. If an AI tool or similar technology is desired as an accommodation, please contact accommodations@planet.com with your request for assistance. Your message will be confidential, and we will be happy to assist you. Violation of this policy may result in disqualification of your application.</p></div>",
     "posted_at": "2026-10-13T04:46:11-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java and SQL, which aligns with some technical aspects of the job. However, the role of Senior Site Reliability Engineer focuses heavily on Identity and Access Management (IAM), which is not part of the candidate's expertise. Additionally, the job requires specific experience with IAM tools like Okta and Auth0, as well as a strong background in infrastructure development, which the candidate lacks. Therefore, while there are some relevant skills, the gaps in IAM experience and infrastructure development make this a weak fit.",
+    "verdict": "no",
+    "reasoning": "The job posting for a Senior Site Reliability Engineer at Planet Labs requires a strong focus on Identity and Access Management (IAM), which is not part of the candidate's expertise. The candidate has a solid background in full-stack development with Java, SQL, and React, but lacks the specific experience in IAM systems like Okta, Auth0, or Keycloak, as well as the required infrastructure development experience. Additionally, the role involves a hybrid work model requiring in-office presence, which may not align with the candidate's preference for remote work.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 21,
+    "id": 22,
     "external_id": "10e6475e-67ef-4621-8718-7b087c354651",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -3002,7 +3004,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 14,
+    "id": 15,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3020,7 +3022,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 13,
+    "id": 12,
     "external_id": "8278850",
     "source": "greenhouse",
     "company": "Datadog",
@@ -3033,12 +3035,12 @@
     "posted_at": "2026-10-13T12:06:09-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in Java and a solid background in full-stack development, which aligns with the job's requirement for Java expertise. However, the role emphasizes distributed systems engineering and experience with Go, which the candidate lacks. Additionally, while the candidate has experience in CI/CD and DevOps, the specific focus on building high-performance large-scale systems and working with AI coding agents is not clearly demonstrated in their background. Overall, while there are relevant skills, the gaps in distributed systems and Go experience make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in Java and a solid background in software engineering, the job posting specifically requires experience with distributed systems and Go, which the candidate does not have. Additionally, the role emphasizes building high-performance large-scale systems, an area where the candidate's experience is less clear. The candidate's fintech background and familiarity with CI/CD pipelines are relevant, but the gaps in distributed systems and Go experience make this a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 15,
+    "id": 16,
     "external_id": "8010489003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3051,12 +3053,12 @@
     "posted_at": "2026-10-13T10:20:51-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Analytics Engineer II position that requires specific experience in analytics engineering, data engineering, and familiarity with dbt and Snowflake, which are not mentioned in the candidate's profile. Additionally, the role is remote but specifically requires the candidate to be based in Spain, which contradicts the candidate's location in the Netherlands. The candidate's strong background in full-stack development and fintech does not align with the analytics-focused nature of this position.",
+    "reasoning": "This job posting is for an Analytics Engineer II position based in Spain, which does not align with the candidate's location in the Netherlands. Additionally, the role focuses on analytics engineering and data systems, requiring specific experience with dbt and Snowflake, which the candidate does not possess. The candidate's background is more aligned with full-stack software engineering and fintech, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 24,
+    "id": 25,
     "external_id": "744000155212515",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -3069,8 +3071,26 @@
     "posted_at": "2026-10-13T09:48:20.957Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Business Developer role focused on sales and client management within the FMCG sector, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required sales experience and skills outlined in the job description. Additionally, the role does not match the candidate's preference for technical positions, making it a poor fit overall.",
+    "reasoning": "This job posting is for a Business Developer role focused on sales and client management within the FMCG sector, which is unrelated to the candidate's expertise in software engineering and development. The candidate has a strong technical background with no mention of sales experience or interest in business development, which is a core requirement for this position. Additionally, the role does not align with the candidate's preference for senior full-stack or backend engineering roles.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
+  },
+  {
+    "id": 1,
+    "external_id": "49a04ef0-16c4-42b3-a0bd-6b80ca6d5c02",
+    "source": "ashby",
+    "company": "Mollie",
+    "title": "Machine Learning Platform Engineer I ",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/mollie/49a04ef0-16c4-42b3-a0bd-6b80ca6d5c02",
+    "description": "",
+    "posted_at": "2026-10-14T08:14:38.831+00:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-14T08:16:56.953Z"
   }
 ]
