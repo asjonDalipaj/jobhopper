@@ -66,7 +66,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 19,
+    "id": 21,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -79,12 +79,12 @@
     "posted_at": "2026-10-15T10:32:33-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer position, which is outside the candidate's expertise and experience in full-stack and backend software engineering. The candidate has no demonstrated experience in machine learning, AI frameworks, or the specific qualifications required for this role, such as proficiency in Python for ML applications and familiarity with NLP libraries. Additionally, the role is remote from Spain, which does not align with the candidate's preference for remote roles based in the Netherlands.",
+    "reasoning": "This job posting is for a Machine Learning Engineer role, which is outside the candidate's expertise and experience in full-stack and backend software engineering. The candidate has no demonstrated experience in machine learning engineering or applied ML, nor proficiency in the required ML frameworks or libraries. Additionally, the role requires a focus on AI/ML pipelines and conversational AI, which are not part of the candidate's background in fintech and software development.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 17,
+    "id": 18,
     "external_id": "8260933",
     "source": "greenhouse",
     "company": "Datadog",
@@ -97,12 +97,12 @@
     "posted_at": "2026-10-15T04:52:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Manager I, Engineering position, which requires significant leadership experience and a track record of managing teams, while the candidate is a senior full-stack engineer without explicit management experience. Additionally, the role emphasizes programming in Go, C, or Rust, which the candidate does not have experience in. The candidate's focus on fintech and product engineering does not align with the specific requirements of this managerial role in a different domain.",
+    "reasoning": "This position is for an Engineering Manager role, which requires significant leadership experience and a track record of managing teams, neither of which is highlighted in the candidate's profile. The candidate has a strong technical background but lacks the managerial experience necessary for this role. Additionally, the job requires programming experience in Go, C, or Rust, which the candidate does not possess. The location constraints also do not align, as the role is based in Madrid or Paris, while the candidate is based in the Netherlands and prefers remote opportunities.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 6,
+    "id": 5,
     "external_id": "7908806",
     "source": "greenhouse",
     "company": "Adyen",
@@ -120,7 +120,7 @@
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 5,
+    "id": 11,
     "external_id": "8745623002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -130,10 +130,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/gitlab/jobs/8745623002",
     "description": "<div class=\"content-intro\"><p>GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.</p> <p>The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. <a href=\"https://www.youtube.com/watch?v=OuZIb5zszQI\">Co-create the future with us</a> as we build technology that transforms how the world develops software.</p> <p>*<em>Fortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab.</em></p></div><h2><strong>An overview of this role</strong></h2> <p>As a Senior Professional Services Engineer at GitLab, you'll work directly with customers to deliver installation, migration, training, and advisory services that help them adopt GitLab successfully. You'll lead engagements from single-node Omnibus installs to large reference architectures built with infrastructure as code (IaC) and configuration as code. You'll also guide migrations from other systems to GitLab SaaS or self-managed deployments, and help customers make practical decisions that improve reliability, security, and day-to-day workflows.</p> <p>In this role, you'll work closely with customers and GitLab's product and engineering teams to drive customer success and share feedback that improves GitLab and how we deliver services. You'll manage multiple projects at once, mentor other Professional Services Engineers, and help streamline how we deliver consistent outcomes in a remote, largely asynchronous environment.</p> <p>Some examples of our projects:</p> <ul> <li>Designing and delivering GitLab installations and reference architectures using tools like Terraform and Ansible across major cloud providers</li> <li>Leading migrations to GitLab SaaS or self-managed GitLab, and turning customer feedback into actionable improvements for GitLab's product and engineering teams</li> </ul> <h2><strong>What you’ll do</strong></h2> <ul> <li>Deliver GitLab Professional Services engagements, including installation, migration, training, and advisory services across GitLab capabilities.</li> <li>Plan and execute deployments ranging from single-node Omnibus installations to large reference architectures using Infrastructure as Code and Configuration as Code practices.</li> <li>Lead migrations from multiple source systems to GitLab SaaS or self-managed GitLab, helping customers adopt secure, reliable workflows.</li> <li>Partner with Engagement Managers and Project Managers to improve delivery consistency, remove friction, and continuously refine delivery processes.</li> <li>Serve as a trusted technical advisor for customers, translating goals and constraints into practical implementation plans and clear next steps.</li> <li>Interface with GitLab's product and engineering teams to unblock customer outcomes and share feedback that helps improve GitLab features and services.</li> <li>Mentor Associate and Intermediate Professional Services Engineers, providing technical guidance, helping remove blockers, and supporting increased autonomy.</li> <li>Manage and deliver multiple customer engagements at once, either as the primary engineer or as a lead providing oversight and direction to other engineers.</li> </ul> <h2><strong>What you’ll bring</strong></h2> <ul> <li>Professional exposure with one or more infrastructure as code or configuration as code technologies such as Terraform, Ansible, Packer, Puppet, Chef or Kubernetes.</li> <li>Professional exposure with two or more cloud providers such as Amazon Web Services (AWS), Google Cloud Platform (GCP), or Microsoft Azure.</li> <li>Experience using, deploying, or configuring GitLab, including a solid understanding of Git and source control workflows.</li> <li>Strong grounding in Security / AI technologies</li> <li>Experience delivering customer-facing services such as installation, migration, training, and advisory engagements across GitLab's feature set.</li> <li>Proven ability to independently manage one or more projects and to lead and provide direction to other Professional Services Engineers on complex engagements.</li> <li>Strong communication skills in English, written and verbal, with the ability to provide clear status updates and build consensus with peers and customers in a remote, largely asynchronous environment.</li> <li>Demonstrated ability to take a solution-oriented approach by identifying root causes, proposing options and tradeoffs, and driving issues to resolution while balancing multiple customer engagements in a fast-paced environment.</li> <li>Demonstrated ability to work effectively in a fully remote organization by communicating clearly in writing, documenting decisions, collaborating asynchronously across time zones, and working in ways consistent with GitLab's values.</li> </ul> <h2><strong>About the team</strong></h2> <p>Senior Professional Services Engineers are part of GitLab's Professional Services team. We partner closely with Engagement Managers and Project Managers to deliver consistent outcomes, and we work with GitLab's product and engineering teams to share customer feedback and improve GitLab. Professional Services operates in a fully remote and largely asynchronous environment, collaborating across regions and time zones. The team's challenge is to support customers with a wide range of architectures and deployment models while maintaining high-quality delivery and setting customers up for long-term success.</p> <div class=\"c-message_actions__container c-message__actions\">&nbsp;</div> <div><span style=\"font-size: xx-small;\"><span style=\"color: white;\">Remote-Global</span></span></div><div class=\"content-conclusion\"><h4><strong>How GitLab Supports Full-Time Employees</strong></h4> <ul> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/\">Benefits to support your health, finances, and well-being</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#flexible-paid-time-off-pto\">Flexible Paid Time Off&nbsp;</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/company/culture/inclusion/tmrg-tmag/\">Team Member Resource Groups</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/total-rewards/stock-options/\">Equity Compensation &amp; Employee Stock Purchase Plan</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/\">Growth and Development Fund</a></li> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave\">Parental Leave</a>&nbsp;</li> </ul> <p>Please note that we welcome interest from candidates with varying levels of experience; many successful candidates do not meet every single requirement. Additionally, studies have shown that people from <a href=\"https://about.gitlab.com/company/culture/inclusion/#examples-of-select-underrepresented-groups\">underrepresented groups</a> are less likely to apply to a job unless they meet every single qualification. If you're excited about this role, please apply and allow our recruiters to assess your application.</p> <hr> <p><strong>Country Hiring Guidelines: </strong>GitLab hires new team members in countries around the world. All of our roles are remote, however some roles may carry specific location-based eligibility requirements. Our Talent Acquisition team can help answer any questions about location after starting the recruiting process.&nbsp;&nbsp;</p> <p><strong>Privacy Policy: </strong>Please review our <a href=\"https://handbook.gitlab.com/handbook/hiring/candidate-faq/recruitment-privacy-policy/\" target=\"_blank\">Recruitment Privacy Policy.</a> Your privacy is important to us.</p> <p>GitLab is proud to be an equal opportunity workplace and is an affirmative action employer. GitLab’s policies and practices relating to recruitment, employment, career development and advancement, promotion, and retirement are based solely on merit, regardless of race, color, religion, ancestry, sex (including pregnancy, lactation, sexual orientation, gender identity, or gender expression), national origin, age, citizenship, marital status, mental or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartime or campaign badge veterans, and Armed Forces service medal veterans), or any other basis protected by law. GitLab will not tolerate discrimination or harassment based on any of these characteristics. See also&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#equal-employment-opportunity-policy\" target=\"_blank\">GitLab’s EEO Policy</a>&nbsp;and&nbsp;<a href=\"https://about.gitlab.com/handbook/labor-and-employment-notices/#eeoc-us-equal-employment-opportunity-commission-notices\" target=\"_blank\">EEO is the Law</a>. If you have a disability or special need that requires&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#reasonable-accommodation\" target=\"_blank\">accommodation</a>, please let us know during the&nbsp;<a href=\"https://about.gitlab.com/handbook/hiring/interviewing/#adjustments-to-our-interview-process\" target=\"_blank\">recruiting process</a>.</p></div>",
-    "posted_at": "2026-10-09T02:17:56-04:00",
+    "posted_at": "2026-10-15T15:24:46-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific experience with infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly mention. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align with the candidate's primarily development-focused experience. The candidate's strong communication skills and remote work adaptability are positives, but the gaps in required technical exposure and customer engagement experience lead to a weak fit overall.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific experience with infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly mention. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align perfectly with the candidate's primarily development-focused experience. However, the candidate's strong communication skills and experience in managing projects could be beneficial in this role.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -170,7 +170,7 @@
     "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns with some aspects of the job. However, the role specifically requires at least two years of experience with TypeScript and Node.js, which the candidate does not have. Additionally, the focus on AI and observability systems is a significant shift from the candidate's fintech background, creating a gap in relevant experience. Overall, while there are some relevant skills, the missing key technologies and domain knowledge lead to a weak fit."
   },
   {
-    "id": 13,
+    "id": 20,
     "external_id": "8018517",
     "source": "greenhouse",
     "company": "Reddit",
@@ -182,8 +182,8 @@
     "description": "<div class=\"content-intro\"><div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <div class=\"p-rich_text_section\">Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit <a class=\"c-link\" href=\"http://www.redditinc.com/\" target=\"_blank\" data-stringify-link=\"http://redditinc.com\" data-sk=\"tooltip_parent\">www.redditinc.com</a>.</div> </div> </div> </div> </div> </div></div><p><strong>Location: </strong>Reddit has a flexible first workforce. Don't live near our office? No worries: you can work remotely from anywhere in the UK or the Netherlands.</p> <p>The <strong>Ads Foundational Representations (AFR)</strong> team develops signals and representations of Reddit’s core entities (ads, posts, users, and so on), capturing the semantic, contextual, and behavioral information that Reddit Ads needs. We work on building embeddings to understand content and users' interests based on the content they engage with.&nbsp;</p> <p>Our team has the potential to highlight one of Reddit's biggest differentiators: genuinely curated, high-quality, extremely relevant, and daily updated organic content. We are a Machine Learning/Data heavy team with a focus on the following areas:</p> <ul> <li><strong>Multimodal &amp; Content Embeddings</strong> - Make sense of organic (posts, comments, subreddits) and promoted (ads, shopping products, their landing pages) text and media content by embedding them into a shared space.&nbsp;</li> <li><strong>Contextual and Behavioral Relevance </strong>- Working with Product &amp; Data Science, establishing definitions of what ads are relevant to users and the content we show them next to, building metrics and fine-tuning embeddings to better reflect relevance.</li> <li><strong>Knowledge Graph Embeddings - </strong>Building representations for the Knowledge graph entities, e.g., intellectual properties/brands, to be used for high-precision targeting &amp; business insights.&nbsp;</li> <li><strong>User Intent Modeling -</strong> Leveraging various techniques to introduce user representations based on the content they interact with: batch &amp; real-time sequence modeling, LLM summarization, etc.&nbsp;</li> <li><strong>LLM-based Representations</strong> - Leveraging LLMs, VLMs, and foundational models to build complex representations of Reddit entities that improve ranking outcomes</li> </ul> <p>The signals and features we create become a key piece in the Ads Delivery funnel, from targeting to the auction, as well as the Business Insights product and other advertiser-facing products such as Creative generation and optimization.</p> <p>As a <strong>Staff ML Engineer</strong>, you’ll be in charge of setting the technical direction of multiple pillars the team owns. You will lead cross-functional ML projects end to end - from high-level business gap analysis to engineering execution.&nbsp;</p> <p>Roughly 50% of your time will be spent on technical leadership and mentorship (driving strategy &amp; designs, cross-functional collaboration, raising the quality bar), another 50% being individual hands-on work (data analysis &amp; engineering, modeling &amp; automation).&nbsp;&nbsp;</p> <p><strong>Responsibilities</strong></p> <ul> <li>Providing technical leadership and mentorship to MLEs in the team: driving designs &amp; their review, establishing best practices in analysis, modeling and engineering, keeping the bar high.&nbsp;</li> <li>Working closely with team/org leadership developing technical strategy for content-based embeddings &amp; relevance for Ads.</li> <li>Developing new or iterating on existing embedding models for advertising use cases, ranging from aggregation pipelines to two-tower architectures and sequence models.&nbsp;&nbsp;</li> <li>Working with local and 3rd-party LLMs/VLMs: extract representations, develop evaluation methodologies, prompt tune and fine-tune large models to build state-of-the-art embeddings.&nbsp;</li> <li>Building data processing and inference pipelines for the models we develop.&nbsp;</li> <li>Qualitative and quantitative evaluation of the various features we develop, end-to-end experimentation from internal benchmarks to downstream recommender system offline metrics to online experiments.&nbsp;</li> <li>Ensuring the reliability, scalability, and performance of the ML systems by writing automated tests, monitoring performance, and implementing best practices for model management.</li> <li>Participating in modeling and coding reviews: You will review work by other team members and provide feedback to ensure that it meets the team's standards for quality and performance.</li> <li>Collaborating with cross-functional teams to understand business requirements and translate them into technical solutions.</li> </ul> <p><strong>Required Qualifications:</strong></p> <ul> <li>7+ years of hands-on experience with the full lifecycle of designing, training, evaluating, testing, and deploying industry-level models.</li> <li>Demonstrated Staff-level technical leadership: mentoring engineers, driving standards and bar raising, leading complex cross-functional projects: from requirements, design to cross-team/functional alignment and execution without direct people-management authority.&nbsp;</li> <li>Excellent communication skills, with the ability to translate complex technical concepts to different audiences, both verbally and in writing.&nbsp;</li> <li>Strong track record of working on content rich NLP/CV problems at scale, and using embeddings as a tool to solve them.&nbsp;</li> <li>Established data-driven approach for ML system development. Excitement about working with data and readiness to look behind the metric numbers.&nbsp;</li> <li>Familiarity with the Ads domain and/or Search/Recommender systems.</li> <li>Experience with mainstream DL frameworks: PyTorch or TensorFlow.</li> </ul> <p><strong>Preferred Qualifications:</strong></p> <ul> <li>Experience with our stack (Python, Pytorch, Airflow, BigQuery, Ray, k8s, kafka, GCP)</li> <li>Tech leadership experience: mentoring junior engineers and leading complex projects.&nbsp;</li> <li>Hands-on experience with using/fine-tuning/building LLMs.</li> </ul> <p><strong>Benefits:</strong></p> <ul> <li>Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support</li> <li>Family Planning Support</li> <li>Gender-Affirming Care</li> <li>Mental Health &amp; Coaching Benefits</li> <li>Private Pension plan with Employer-matching</li> <li>100% employer-sponsored group medical plan &nbsp;</li> <li>Income Replacement Programs</li> <li>Flexible Vacation &amp; Paid Volunteer Time Off</li> <li>Generous Paid Parental Leave</li> </ul><div class=\"content-conclusion\"><p>In select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.</p> <p><span style=\"font-weight: 400;\">During the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable.&nbsp; We will not sell your personal information or disclose it to any third party for their marketing purposes.&nbsp; We will delete any recording of your interview promptly after making a hiring decision.&nbsp; For more information about how we will handle your personal information, including our retention of it, please refer to our <a href=\"https://redditinc.com/policies/candidate-privacy-policy\">Candidate Privacy Policy for Potential Employees and Contractors</a>.</span></p> <p><em><span style=\"font-weight: 400;\">Reddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve.&nbsp; Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.</span></em></p></div>",
     "posted_at": "2026-10-15T11:40:02-04:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "This position is for a Staff Machine Learning Engineer, which requires extensive experience in machine learning, particularly in designing and deploying models, as well as familiarity with deep learning frameworks like PyTorch or TensorFlow. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and React, lacking the necessary machine learning expertise and experience with the required technologies. Additionally, the role emphasizes technical leadership in ML projects, which does not align with the candidate's experience in fintech and software engineering.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting is for a Staff Machine Learning Engineer role that requires specific expertise in machine learning, particularly in NLP and deep learning frameworks like PyTorch or TensorFlow. The candidate's experience does not indicate a strong background in machine learning or the required technical leadership in that domain. Additionally, the role emphasizes working with embeddings and complex ML systems, which are not highlighted in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-14T08:16:56.953Z"
   },
@@ -380,7 +380,7 @@
     "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and React, the job posting for a Senior Site Reliability Engineer requires proficiency in Go, which the candidate does not have. Additionally, the role emphasizes experience with infrastructure as code, container orchestration, and SRE principles, areas where the candidate's background is less aligned. The candidate's fintech experience is relevant, but the specific focus on reliability engineering and operational expertise presents a significant gap."
   },
   {
-    "id": 21,
+    "id": 22,
     "external_id": "8087739",
     "source": "greenhouse",
     "company": "Okta",
@@ -393,7 +393,7 @@
     "posted_at": "2026-10-14T07:45:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for the Staff Product Security Engineer at Okta is not a fit for the candidate as it focuses heavily on information security, product security, and vulnerability management, which are not areas highlighted in the candidate's experience. The candidate has a strong background in full-stack development and fintech but lacks the required expertise in security operations and incident response. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote work or positions specifically in the Netherlands.",
+    "reasoning": "The job posting for the Staff Product Security Engineer at Okta is not a fit for the candidate, as it requires extensive experience in Information Security, particularly in Product Security, Application Security, and Vulnerability Management, which the candidate does not possess. The candidate's background is primarily in software engineering with a focus on full-stack development and fintech, lacking the specific security expertise and experience in incident response and vulnerability management required for this role. Additionally, the position is located in Spain, which may not align with the candidate's preference for remote roles in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -1524,7 +1524,7 @@
     "reasoning": null
   },
   {
-    "id": 38,
+    "id": 10,
     "external_id": "8522265002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -1534,10 +1534,12 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/gitlab/jobs/8522265002",
     "description": "<div class=\"content-intro\"><p>GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.</p> <p>The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. <a href=\"https://www.youtube.com/watch?v=OuZIb5zszQI\">Co-create the future with us</a> as we build technology that transforms how the world develops software.</p> <p>*<em>Fortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab.</em></p></div><h2><strong>Staff Forward Deployed Engineer, Agentic SDLC - (EMEA Only)</strong><strong><br></strong><strong><br></strong><strong>An overview of this role</strong></h2> <p>GitLab’s Forward Deployed Engineering team is a field-situated product engineering function focused on strategic customer outcomes, artificial intelligence (AI) adoption, and direct contributions to GitLab’s product. This isn't a traditional field engineering, solutions architecture, or professional services role. As a Staff Forward Deployed Engineer, you'll work closely with customers while maintaining the technical standards and contribution discipline of a Staff-level product engineer.</p> <p>You'll work where strategic customer urgency, complex technical ambiguity, and GitLab product execution intersect. You'll partner directly with strategic customers and teams across Product, Engineering, Support, Site Reliability Engineering (SRE), Solutions Architecture (SA), Customer Success Architecture (CSA), Customer Success Management (CSM), and Professional Services. You'll diagnose and resolve high-impact adoption blockers, contribute production-quality fixes and features, and turn what you learn into repeatable patterns for GitLab and its customers.</p> <h2><strong>Why this role exists</strong></h2> <p>Strategic customers sometimes encounter challenges that are too broad, deep, urgent, or cross-functional for any single team to own from start to finish. These challenges may involve product gaps, performance degradation, scale bottlenecks, AI governance, adoption blockers, architectural constraints, Git usage patterns, continuous integration and continuous delivery (CI/CD) complexity, application programming interface (API) automation, security requirements, or operational instability.</p> <p>Forward Deployed Engineering provides technical stewardship in these moments. The team doesn't simply observe, report, or escalate. You'll engage directly, diagnose the underlying technical problem, collaborate with the right teams, contribute code or technical solutions where appropriate, and transition the outcome into normal ownership once the customer is stable and the learning can be reused.</p> <h2><strong>What you’ll do</strong></h2> <h3><strong>Product contribution</strong></h3> <ul> <li>Contribute production-quality code to GitLab’s product and adjacent systems.</li> <li>Develop bug fixes, features, integrations, tooling, and performance improvements when strategic customer outcomes require direct engineering work.</li> <li>Work within GitLab’s product and engineering processes, including issue discovery, merge request creation, testing, review, documentation, and maintainability.</li> <li>Partner with Product and Engineering so customer-driven solutions support long-term product direction rather than becoming one-off customizations.</li> <li>Turn blockers discovered in the field into durable product improvements, reference architectures, documentation, and repeatable implementation patterns.</li> </ul> <h3><strong>Strategic technical stewardship</strong></h3> <ul> <li>Engage with strategically important customers when adoption, retention, executive confidence, or public trust is materially at risk.</li> <li>Diagnose complex problems across GitLab product behavior, customer architecture, Git internals, CI/CD workflows, API usage, observability, infrastructure, networking, and cloud environments.</li> <li>Coordinate across Product, Engineering, SRE, Support, SA, CSA, CSM, Professional Services, and customer technical teams to drive resolution from discovery through handoff.</li> <li>Provide recommendations grounded in data, traces, and systems analysis to improve GitLab usage, workflows, automation, and architecture.</li> <li>Create durable outcomes without establishing permanent dependency on Forward Deployed Engineering.</li> </ul> <h3><strong>AI adoption and agentic software development lifecycle</strong></h3> <ul> <li>Drive governed, measurable, and production-oriented adoption of GitLab Duo Agent Platform with strategic customers.</li> <li>Identify and resolve AI adoption blockers involving governance, usage controls, auditability, security, compliance, operating models, workflow design, and integrations.</li> <li>Develop customer-safe adoption patterns for the agentic software development lifecycle (SDLC), AI-assisted development, intent-based review, AI governance, and human-in-the-loop software delivery.</li> <li>Partner with Product, Engineering, Field, and Customer Success teams to turn AI adoption learning into reusable guidance and product improvements.</li> </ul> <h3><strong>Thought leadership</strong></h3> <ul> <li>Create technical narratives grounded in customer experience and product reality that can help shape the industry’s approach.</li> <li>Contribute to Well-Architected Frameworks, whitepapers, webinars, reference architectures, technical strategy memos, and adoption frameworks.</li> <li>Guide ideas through discovery, formulation, validation, amplification, and adoption across GitLab.</li> <li>Partner with SA, CSA, Product, Engineering, Marketing, Product Marketing Management, CSM, Support, and executive stakeholders to make technical thought leadership a shared company capability.</li> </ul> <h2><strong>What you’ll bring</strong></h2> <ul> <li>Staff-level experience building, operating, or improving complex production software systems.</li> <li>Experience contributing to large, mature product codebases with high standards for testing, maintainability, performance, and security.</li> <li>Strong Ruby on Rails or Go experience and the ability to contribute directly to GitLab’s product and adjacent systems.</li> <li>Experience with AI-assisted software development, agentic workflows, AI governance, model evaluation, context management, prompt and workflow design, or AI adoption in enterprise environments.</li> <li>Experience diagnosing complex system behavior across application code, data stores, infrastructure, observability, networking, APIs, and customer usage patterns.</li> <li>Deep knowledge of modern DevSecOps workflows, including Git, merge requests, CI/CD, security controls, compliance needs, and enterprise software delivery.</li> <li>Experience working with strategic customers or senior technical stakeholders in ambiguous, high-impact situations.</li> <li>The ability to coordinate across product, engineering, field, and customer teams without formal authority.</li> <li>Strong written communication and sound judgment, including the ability to create technical narratives and distinguish reusable product work from customer-specific customization.</li> </ul> <h2><strong>Strongly preferred qualifications</strong></h2> <ul> <li>Direct experience with GitLab as a platform, including GitLab.com, GitLab Dedicated, or GitLab Self-Managed.</li> <li>Production experience with Ruby on Rails, Go, PostgreSQL, Redis, Sidekiq, Vue, TypeScript, Kubernetes, Docker, Linux, or observability tools.</li> <li>Deep familiarity with Git internals, repository performance, large-scale Git usage patterns, or GitLab Runner behavior.</li> <li>Experience creating technical thought-leadership materials, such as whitepapers, technical talks, architecture frameworks, requests for comments, public technical writing, or internal strategy documents.</li> <li>A background in performance engineering, site reliability engineering, platform engineering, infrastructure engineering, or distributed systems.</li> <li>Experience working in open source or highly asynchronous engineering environments.</li> </ul> <h2><strong>Technologies and domains</strong></h2> <p>Directly relevant technologies and domains include:</p> <ul> <li>Ruby on Rails</li> <li>Go</li> <li>AI-assisted development and the agentic SDLC</li> <li>PostgreSQL</li> <li>Redis and Sidekiq</li> <li>Git internals</li> <li>GitLab CI/CD and Runner architecture</li> <li>Kubernetes and containers</li> <li>Terraform</li> <li>Linux, networking, observability, and performance analysis</li> <li>Vue and TypeScript</li> <li>APIs and automation</li> <li>DevSecOps governance, security, and compliance</li> </ul> <h2><strong>What this role is not</strong></h2> <p>This role isn't:</p> <ul> <li>A generic field engineering role.</li> <li>A proof-of-concept factory.</li> <li>A replacement for Solutions Architecture, Customer Success Architecture, Customer Success Management, Professional Services, Support, SRE, Product, or Engineering.</li> <li>A customer-specific customization function.</li> <li>Unbilled Professional Services.</li> <li>A requirements-gathering role that only escalates to Product.</li> <li>An AI evangelism role disconnected from product execution.</li> </ul> <h2><strong>Success measures</strong></h2> <p>Success in this role may include:</p> <ul> <li>Stabilizing strategic customer adoption or retention risks.</li> <li>Fixing product bugs or contributing features.</li> <li>Removing AI adoption blockers for strategic accounts.</li> <li>Creating reusable implementation patterns and transitioning them to long-term owners.</li> <li>Producing or enabling Well-Architected Frameworks, whitepapers, webinars, or technical narratives.</li> <li>Resolving cross-functional customer challenges without creating permanent dependency on Forward Deployed Engineering.</li> <li>Equipping Product, Engineering, Support, CSA, CSM, Professional Services, and SA teams with better guidance based on learning from the field.</li> <li>Increasing adoption and effective use of GitLab capabilities, especially GitLab Duo and GitLab Duo Agent Platform, in targeted accounts.</li> </ul> <h2><strong>About the team</strong></h2> <p>The Forward Deployed Engineering team connects strategic customer needs with GitLab product execution. The team works directly with customers and across GitLab to resolve complex adoption challenges, contribute durable product improvements, and create reusable technical guidance. Its goal is to stabilize urgent situations, improve the product, and transition ongoing ownership to the appropriate team rather than create a permanent dependency.</p> <h2><strong>Ideal candidate profile</strong></h2> <p>You're a Staff-level product or platform engineer who can operate in the field without becoming field-only. You're comfortable reading traces, writing production code, debugging architecture, discussing AI governance, leading a customer technical session, opening a merge request, outlining a whitepaper, and coordinating across teams to achieve a strategic customer outcome.</p> <p>You're not simply a strong communicator with technical awareness. You're a credible engineer with the judgment, presence, and narrative ability to turn customer reality into product contributions, adoption guidance, and company-level thought leadership.</p> <p>We welcome candidates with different backgrounds and levels of experience. Many successful candidates don't meet every qualification. If you're excited about this role, we encourage you to apply and let our recruiting team assess your application.</p> <div class=\"c-message_actions__container c-message__actions\">&nbsp;</div> <div><span style=\"font-size: xx-small;\"><span style=\"color: white;\">Remote-Global</span></span></div><div class=\"content-conclusion\"><h4><strong>How GitLab Supports Full-Time Employees</strong></h4> <ul> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/\">Benefits to support your health, finances, and well-being</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/time-off-types/#flexible-paid-time-off-pto\">Flexible Paid Time Off&nbsp;</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/company/culture/inclusion/tmrg-tmag/\">Team Member Resource Groups</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/total-rewards/stock-options/\">Equity Compensation &amp; Employee Stock Purchase Plan</a></li> <li><a href=\"https://handbook.gitlab.com/handbook/people-group/learning-and-development/growth-and-development/\">Growth and Development Fund</a></li> <li><a href=\"https://about.gitlab.com/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave\">Parental Leave</a>&nbsp;</li> </ul> <p>Please note that we welcome interest from candidates with varying levels of experience; many successful candidates do not meet every single requirement. Additionally, studies have shown that people from <a href=\"https://about.gitlab.com/company/culture/inclusion/#examples-of-select-underrepresented-groups\">underrepresented groups</a> are less likely to apply to a job unless they meet every single qualification. If you're excited about this role, please apply and allow our recruiters to assess your application.</p> <hr> <p><strong>Country Hiring Guidelines: </strong>GitLab hires new team members in countries around the world. All of our roles are remote, however some roles may carry specific location-based eligibility requirements. Our Talent Acquisition team can help answer any questions about location after starting the recruiting process.&nbsp;&nbsp;</p> <p><strong>Privacy Policy: </strong>Please review our <a href=\"https://handbook.gitlab.com/handbook/hiring/candidate-faq/recruitment-privacy-policy/\" target=\"_blank\">Recruitment Privacy Policy.</a> Your privacy is important to us.</p> <p>GitLab is proud to be an equal opportunity workplace and is an affirmative action employer. GitLab’s policies and practices relating to recruitment, employment, career development and advancement, promotion, and retirement are based solely on merit, regardless of race, color, religion, ancestry, sex (including pregnancy, lactation, sexual orientation, gender identity, or gender expression), national origin, age, citizenship, marital status, mental or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartime or campaign badge veterans, and Armed Forces service medal veterans), or any other basis protected by law. GitLab will not tolerate discrimination or harassment based on any of these characteristics. See also&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#equal-employment-opportunity-policy\" target=\"_blank\">GitLab’s EEO Policy</a>&nbsp;and&nbsp;<a href=\"https://about.gitlab.com/handbook/labor-and-employment-notices/#eeoc-us-equal-employment-opportunity-commission-notices\" target=\"_blank\">EEO is the Law</a>. If you have a disability or special need that requires&nbsp;<a href=\"https://about.gitlab.com/handbook/people-policies/inc-usa/#reasonable-accommodation\" target=\"_blank\">accommodation</a>, please let us know during the&nbsp;<a href=\"https://about.gitlab.com/handbook/hiring/interviewing/#adjustments-to-our-interview-process\" target=\"_blank\">recruiting process</a>.</p></div>",
-    "posted_at": "2026-09-29T10:38:50-04:00",
+    "posted_at": "2026-10-15T15:24:46-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong background in software engineering, particularly in Java, SQL, and React, the job posting requires specific experience with Ruby on Rails or Go, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnostics, areas where the candidate's experience is not clearly aligned. The candidate's fintech background is relevant, but the position's focus on strategic customer engagement and high-level technical stewardship may stretch their current experience."
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in Ruby on Rails or Go, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnostics, areas where the candidate has limited direct experience. However, the candidate's skills in Java, React, and CI/CD align with some of the job's requirements, making it a tangential fit.",
+    "applied_at": null,
+    "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
     "id": 81,
@@ -1876,7 +1878,7 @@
     "reasoning": "While the candidate has strong experience in Java, React, and CI/CD practices, the job requires specific expertise in SAP connectivity and the Spring ecosystem, which the candidate does not explicitly mention. Additionally, the role emphasizes AI-enhanced development and prompt engineering, areas where the candidate's experience is not clearly aligned. The candidate's fintech background is a plus, but the gaps in SAP and AI tool fluency are significant."
   },
   {
-    "id": 25,
+    "id": 32,
     "external_id": "5432726008",
     "source": "greenhouse",
     "company": "Geotab",
@@ -1889,7 +1891,7 @@
     "posted_at": "2026-10-14T15:59:32-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for an Embedded Developer at Geotab is not a match for the candidate's profile. The candidate specializes in full-stack software engineering with a strong focus on Java, SQL, and React, but lacks the required experience in embedded systems design, specifically with C, C++, and Rust programming languages. Additionally, the role requires knowledge of real-time operating systems and firmware development, which are not part of the candidate's expertise. Furthermore, the position is located in Madrid, Spain, which may not align with the candidate's preference for roles based in or targeting the Netherlands.",
+    "reasoning": "This job posting is for an Embedded Developer role requiring expertise in C, C++, and Rust, which are not mentioned in the candidate's skill set. The candidate has a strong background in full-stack development with Java and React, but lacks the necessary experience in embedded systems design and programming languages specific to this role. Additionally, the location in Madrid does not align with the candidate's preference for roles in the Netherlands or remote opportunities.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -1910,7 +1912,7 @@
     "reasoning": "Amsterdam location fits the candidate's Netherlands base in Utrecht, and manager-level seniority aligns with 10+ years experience including leading and supporting developers at Rabobank. However Solutions Engineering Manager is typically a customer-facing / pre-sales leadership role, not the senior full-stack or backend product engineering roles the candidate is seeking. No job description was provided, so tech stack, responsibilities, and employment type cannot be verified. With no demonstrated solutions engineering or formal people-management background, this is at best tangentially relevant."
   },
   {
-    "id": 42,
+    "id": 44,
     "external_id": "7992708003",
     "source": "greenhouse",
     "company": "Telnyx",
@@ -1923,7 +1925,7 @@
     "posted_at": "2026-10-15T13:56:36-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java, SQL, and React, which aligns with some of the job's requirements. However, the role demands specific experience with Python, Node.js/TypeScript, and high-concurrency systems like Kafka, which the candidate lacks. Additionally, the position emphasizes customer-facing engineering and experience with AI voice assistants, which are not highlighted in the candidate's background. Overall, while there are relevant skills, the gaps in required technologies and experience make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the job posting requires specific expertise in deploying containerized services on Kubernetes, proficiency in multiple programming languages including Python and TypeScript, and experience with high-concurrency systems like Kafka. The candidate's background does not explicitly mention these skills, which are critical for the role. Additionally, the position emphasizes customer-facing engineering experience and the ability to engage in high-stakes technical conversations, which may be a stretch for the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
@@ -2096,7 +2098,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 27,
+    "id": 31,
     "external_id": "5435390008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2109,7 +2111,7 @@
     "posted_at": "2026-10-13T14:37:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an IT Engineer role focused on internal IT support and infrastructure management, which is not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate has a strong background in software development, particularly in Java and React, but lacks the specific IT support experience and qualifications required for this position. Additionally, the role is based in Germany and Spain, which may not fit the candidate's preference for remote work in the Netherlands.",
+    "reasoning": "The job posting for IT Engineer 3 at Quince is not a fit for the candidate, as it focuses on IT support and infrastructure management rather than software engineering. The candidate has a strong background in full-stack development and fintech, but this role requires 4-8 years of IT support experience and specific skills in user access provisioning, IT asset management, and video conferencing systems, which the candidate does not possess. Additionally, the candidate is looking for senior full-stack or backend roles, which this position does not align with.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2290,7 +2292,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 33,
     "external_id": "9371410f-1664-48c7-8153-466766739c8d",
     "source": "ashby",
     "company": "ICEYE",
@@ -2664,7 +2666,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 5,
+    "id": 4,
     "external_id": "8158521",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2748,7 +2750,7 @@
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 10,
+    "id": 7,
     "external_id": "8000653003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2761,12 +2763,12 @@
     "posted_at": "2026-10-14T07:36:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly a junior role. The candidate has over 10 years of experience and is seeking senior-level positions, making this opportunity a poor fit. Additionally, the role requires candidates to be in their final year of a degree program, which does not align with the candidate's extensive professional background.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study and looking for an internship. The candidate, with over 10 years of experience, is seeking senior full-stack or backend roles, making this position a significant mismatch in terms of seniority and experience level. Additionally, the candidate has stated they are not interested in junior or internship roles, further solidifying the inappropriateness of this opportunity.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 9,
+    "id": 6,
     "external_id": "8006520003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2779,7 +2781,7 @@
     "posted_at": "2026-10-14T07:38:20-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Software Engineering Intern position, which is explicitly aimed at candidates in their final year of a degree program. This does not align with the candidate's profile as they have over 10 years of experience and are seeking senior roles. Additionally, the candidate is not interested in internship roles, making this opportunity completely mismatched.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly targeted at candidates in their final year of study. The candidate has over 10 years of experience and is looking for senior roles, making this position unsuitable. Additionally, the candidate has stated they are not interested in junior or internship roles, which further confirms the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
@@ -2838,7 +2840,7 @@
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 7,
+    "id": 8,
     "external_id": "4999781101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2851,12 +2853,12 @@
     "posted_at": "2026-10-13T03:42:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering and a solid background in fintech, but the job posting is for a Senior Support Engineer role focused on the .NET stack and C#, which the candidate does not have experience with. While the candidate has relevant skills in Java and React, the core requirements of proficiency in .NET technologies and troubleshooting commercial software applications are missing. Additionally, the role emphasizes user support and advocacy, which may not align with the candidate's preference for product engineering and technical ownership.",
+    "reasoning": "The candidate has a strong background in software engineering with expertise in Java, SQL, and React, but lacks experience with the .NET stack and C#, which are critical for this role. While the candidate has experience in troubleshooting and supporting software applications, the focus here is on support engineering rather than full-stack development, which may not align with their career goals. Additionally, the role emphasizes a user-first mindset and advocacy for customer needs, which may not fully leverage the candidate's strengths in product engineering and technical ownership.",
     "applied_at": null,
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 26,
+    "id": 30,
     "external_id": "5299904008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2869,12 +2871,12 @@
     "posted_at": "2026-10-14T13:22:11-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a software engineer. The role requires expertise in textile engineering, fiber quality control, and yarn manufacturing, which are not within the candidate's skill set or experience. Additionally, the position is located in Italy, while the candidate is based in the Netherlands and is looking for software engineering roles. There are no relevant matches between the candidate's profile and the job requirements.",
+    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a senior full-stack software engineer with expertise in software development, particularly in fintech. The role requires specific knowledge in textile engineering, cashmere quality control, and fiber testing, which the candidate does not possess. Additionally, the position is based in Italy, while the candidate is targeting opportunities in the Netherlands, making this a poor fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-13T04:53:53.308Z"
   },
   {
-    "id": 34,
+    "id": 39,
     "external_id": "108c99e6-ba2b-44a0-b830-7d535e14a152",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2892,7 +2894,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 38,
+    "id": 43,
     "external_id": "1b90a2b2-1352-458d-b2b7-3900f6e02df5",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2905,12 +2907,12 @@
     "posted_at": "2026-10-13T11:46:04.421+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Mobile Engineer does not align with the candidate's expertise as a full-stack software engineer. The candidate specializes in backend and frontend development with a strong focus on Java, React, and CI/CD, but there is no mention of mobile development skills or experience in the job description. Additionally, the candidate is specifically looking for senior roles in full-stack or backend engineering, making this position a poor fit.",
+    "reasoning": "The job posting for a Mobile Engineer does not align with the candidate's expertise in full-stack and backend software engineering, particularly in Java and React. The candidate has a strong fintech background and is focused on roles that leverage their experience in product initiatives and technical ownership, which this position does not appear to offer. Additionally, the job title suggests a focus on mobile development, which is not mentioned in the candidate's skill set.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 35,
+    "id": 40,
     "external_id": "38bac641-02de-414d-96f3-d0adb603cb89",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2923,12 +2925,12 @@
     "posted_at": "2026-10-13T11:44:40.668+00:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs aligns well with the candidate's experience in full-stack development, particularly in React and Java, which are crucial for this role. The remote work option is also a match for the candidate's preference. However, the posting emphasizes a 'frontend-leaning' focus, which may require a stronger emphasis on frontend technologies than the candidate's backend experience. Additionally, the candidate's fintech background may not directly align with the creative music focus of the company, presenting a gap in industry relevance.",
+    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs aligns with the candidate's experience in full-stack development, particularly in Java and React, which are essential for the role. The remote nature of the position fits the candidate's preference for remote work in Europe. However, the posting emphasizes a frontend-leaning focus, which may not fully leverage the candidate's backend strengths. Additionally, there is no specific mention of fintech, which is a key interest for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 37,
+    "id": 42,
     "external_id": "a03536c8-8728-4007-aef2-460def03173e",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -2946,7 +2948,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 15,
+    "id": 14,
     "external_id": "8276131",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2959,7 +2961,7 @@
     "posted_at": "2026-10-13T06:33:51-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns well with the job's requirements for building user interfaces and integrating backend services. However, the job specifically mentions a preference for TypeScript and Node.js, which the candidate does not explicitly list as part of their skill set. Additionally, while the candidate has experience in leading projects, the role emphasizes architecture discussions and system design in a large codebase, which may require further experience than the candidate has demonstrated.",
+    "reasoning": "The candidate has a strong background in full-stack development, particularly with Java and React, which aligns well with the job's requirements for designing user interfaces and integrating front-end elements with back-end services. However, the job specifically mentions a preference for TypeScript and Node.js, which the candidate does not explicitly list as experience. Additionally, while the candidate has experience in leading projects and working in a collaborative environment, the job emphasizes a focus on observability and log data management, areas where the candidate's experience is less clear. Overall, this role represents a realistic stretch for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -2982,7 +2984,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 24,
+    "id": 29,
     "external_id": "8276008",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2995,12 +2997,12 @@
     "posted_at": "2026-10-13T04:46:11-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java, SQL, and React, which are valuable skills. However, the job posting is for a Senior Site Reliability Engineer with a specific focus on Identity and Access Management (IAM), requiring expertise in tools like Okta, Auth0, and Keycloak, which the candidate does not have. Additionally, the role emphasizes infrastructure development and operations, which is not the candidate's primary focus. This results in several critical gaps.",
+    "reasoning": "The candidate has a strong background in software engineering, particularly in fintech, and possesses relevant skills in Java, SQL, and React. However, the job posting for a Senior Site Reliability Engineer focuses heavily on Identity and Access Management (IAM), which is not a specified area of expertise for the candidate. Additionally, the role requires experience with specific IAM tools (Okta, Auth0, Keycloak) and a deep understanding of network principles and identity protocols, which the candidate does not demonstrate. This results in a significant gap in the required qualifications.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 36,
+    "id": 41,
     "external_id": "10e6475e-67ef-4621-8718-7b087c354651",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -3018,7 +3020,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 39,
+    "id": 23,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3036,7 +3038,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 18,
+    "id": 19,
     "external_id": "8278850",
     "source": "greenhouse",
     "company": "Datadog",
@@ -3049,12 +3051,12 @@
     "posted_at": "2026-10-14T08:30:00-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java and a solid background in full-stack development, the job posting emphasizes expertise in distributed systems and experience with Go, which the candidate lacks. The role also requires building high-performance large-scale systems, an area not explicitly covered in the candidate's experience. Additionally, the focus on profiling and statistical methods is not aligned with the candidate's fintech background.",
+    "reasoning": "While the candidate has strong experience in Java and a solid background in full-stack development, the job posting emphasizes expertise in distributed systems and experience with Go, which the candidate does not possess. Additionally, the role requires building high-performance large-scale systems, which may stretch the candidate's experience in fintech-focused environments. The candidate's strong communication skills and collaborative experience align well with the job's requirements, but the gaps in specific technologies and system architecture experience are significant.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 22,
+    "id": 27,
     "external_id": "8010489003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3067,12 +3069,12 @@
     "posted_at": "2026-10-13T10:20:51-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Analytics Engineer II position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate. Additionally, the role focuses on analytics engineering and data systems, which diverges from the candidate's strong background in full-stack software engineering and fintech. The required experience with dbt and Snowflake is also not mentioned in the candidate's profile, indicating a significant gap.",
+    "reasoning": "This job posting is for an Analytics Engineer II role based in Spain, which is not compatible with the candidate's location preference of the Netherlands. Additionally, the role requires specific experience in analytics engineering and familiarity with dbt and Snowflake, which are not mentioned in the candidate's profile. The candidate's background is more aligned with full-stack software engineering rather than a specialized analytics engineering position.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 44,
+    "id": 46,
     "external_id": "744000155212515",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -3085,7 +3087,7 @@
     "posted_at": "2026-10-13T09:48:20.957Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Business Developer role focused on sales and client management within the FMCG sector, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required sales experience and client-facing skills emphasized in the job description. Additionally, the role does not match the candidate's preference for technical positions, making it a poor fit overall.",
+    "reasoning": "The job posting is for a Business Developer role focused on sales and client management within the FMCG sector, which is unrelated to the candidate's expertise in software engineering and development. The candidate has a strong background in full-stack development, particularly in fintech, but lacks any relevant experience in direct sales, business development, or the FMCG industry. Additionally, the role does not align with the candidate's preference for technical positions.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -3126,7 +3128,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 20,
+    "id": 26,
     "external_id": "d62250a9-363c-43b0-b3de-958e3cc9f97b",
     "source": "ashby",
     "company": "Kraken",
@@ -3139,12 +3141,12 @@
     "posted_at": "2026-10-14T11:47:44.625+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a senior full-stack software engineer and a strong fintech background, the job posting for a Senior Software Engineer – AI Infrastructure at Kraken does not specifically mention fintech or full-stack development, which are the candidate's primary interests. Additionally, the focus on AI infrastructure may require specialized knowledge in AI and machine learning that the candidate's profile does not explicitly demonstrate. The candidate's experience with Java and SQL is relevant, but the lack of direct experience with AI technologies presents a significant gap.",
+    "reasoning": "While the candidate has extensive experience as a senior full-stack software engineer and a strong background in fintech, the job posting for a Senior Software Engineer – AI Infrastructure at Kraken does not explicitly align with the candidate's core competencies in Java and React. The focus on AI infrastructure may require specialized knowledge in AI technologies that the candidate has not demonstrated. Additionally, the job is located in various countries but does not include the Netherlands, which is the candidate's primary location.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 32,
+    "id": 37,
     "external_id": "01edf520-e6e9-4b3e-bc57-5886e694b6b8",
     "source": "ashby",
     "company": "ICEYE",
@@ -3162,7 +3164,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 30,
+    "id": 35,
     "external_id": "ef9b96f4-b5b2-403c-9bb7-b07a339a5c82",
     "source": "ashby",
     "company": "ICEYE",
@@ -3180,7 +3182,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 31,
+    "id": 36,
     "external_id": "cd7e0449-3f24-45ed-8c09-6153c0d02980",
     "source": "ashby",
     "company": "ICEYE",
@@ -3198,7 +3200,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 23,
+    "id": 28,
     "external_id": "6103685004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3211,12 +3213,12 @@
     "posted_at": "2026-10-14T05:42:34-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires specific expertise in distributed systems, Kubernetes, and multi-tenant systems at scale, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes operational responsibilities and on-call duties for high-SLA customers, which may not align with the candidate's previous experience. The candidate's fintech background is relevant, but the gaps in required technical skills and experience with specific technologies make this a weak fit.",
+    "reasoning": "While the candidate has significant experience in software engineering and a strong fintech background, the job posting requires deep expertise in distributed systems, Kubernetes, and specific observability tools like Mimir, Loki, and Tempo, which the candidate does not explicitly mention. Additionally, the role emphasizes on-call responsibilities and technical leadership at a staff level, which may not align with the candidate's current experience. However, the remote nature of the position and the candidate's full-stack capabilities are positive aspects.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 41,
+    "id": 24,
     "external_id": "8281670",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3229,12 +3231,12 @@
     "posted_at": "2026-10-15T12:56:28-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech and full-stack development, but the job at MongoDB requires specific expertise in systems programming and C++ which the candidate does not possess. While the candidate has a solid background in Java and SQL, the role's focus on query execution and performance tuning in a distributed system does not align with their experience. Additionally, the candidate's preference for remote work in the Netherlands does not match the job's location in Spain, which could complicate logistics.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech and full-stack development, but this role at MongoDB focuses heavily on systems programming and C++ development, which the candidate lacks. While the candidate has experience with databases and data management systems, the specific requirement for C++ and systems programming experience is a significant gap. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote roles based in or targeting the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 40,
+    "id": 25,
     "external_id": "8281662",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3247,12 +3249,12 @@
     "posted_at": "2026-10-15T12:56:28-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. Additionally, the focus on database query engines and performance tuning is not aligned with the candidate's fintech and full-stack experience. There are some relevant skills, but the gaps in required programming languages and specific domain knowledge make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. The role focuses heavily on database query engines and performance tuning, areas where the candidate's experience is limited to Java and SQL rather than the required languages and systems. Additionally, the candidate's experience does not align with the expectations of contributing to a large codebase in C++, which is a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 16,
+    "id": 15,
     "external_id": "8281637",
     "source": "greenhouse",
     "company": "Elastic",
@@ -3265,12 +3267,12 @@
     "posted_at": "2026-10-14T11:21:54-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java and a solid background in backend development, the job posting requires deep knowledge of Java internals, JVM memory management, and specific security-related expertise that the candidate does not explicitly demonstrate. Additionally, the role focuses heavily on security architecture and distributed systems security, areas where the candidate's experience is not clearly aligned. The candidate's fintech background is relevant, but the specific requirements for this role present significant gaps.",
+    "reasoning": "While the candidate has strong experience in Java and a solid background in backend development, the job posting requires deep knowledge of Java internals, JVM memory management, and specific security-related skills that the candidate does not explicitly demonstrate. The role also emphasizes experience with distributed systems security and cryptographic solutions, which are not mentioned in the candidate's profile. Additionally, the position is based in Spain, which may not align with the candidate's preference for roles in the Netherlands or remote opportunities.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 14,
+    "id": 13,
     "external_id": "8283666",
     "source": "greenhouse",
     "company": "Elastic",
@@ -3283,12 +3285,12 @@
     "posted_at": "2026-10-14T22:04:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong technical background in software engineering and experience in fintech, the role of Senior Developer Advocate at Elastic focuses heavily on content creation, community engagement, and video production, which are not highlighted in the candidate's experience. The candidate's expertise lies more in backend and frontend development rather than in advocacy or content creation. Additionally, the job is located in Spain, which may not align with the candidate's preference for roles in the Netherlands, although remote work is an option.",
+    "reasoning": "The candidate has a strong technical background in software engineering, particularly in fintech, which aligns with some aspects of the role. However, the position of Senior Developer Advocate focuses heavily on content creation, community engagement, and video production, areas where the candidate lacks direct experience. While the candidate has experience in technical roles and product initiatives, they do not demonstrate a proven track record in creating engaging technical videos or community advocacy, which are critical for this position.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 11,
+    "id": 17,
     "external_id": "8282264",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3301,12 +3303,12 @@
     "posted_at": "2026-10-14T20:00:08-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering, particularly in fintech and full-stack development, the job posting requires specific expertise in low-level software engineering, particularly in C and/or C++, which the candidate does not possess. Additionally, the role focuses heavily on security features and systems programming, areas where the candidate's experience is not directly aligned. The candidate's strong background in Java and React is relevant but does not meet the core requirements of this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job at Mozilla requires specific expertise in systems programming, particularly in C and/or C++, which the candidate does not possess. Additionally, the role emphasizes security knowledge and experience with low-level software engineering, which are not highlighted in the candidate's profile. The candidate's skills in Java, React, and CI/CD are relevant but do not align closely with the core requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 12,
+    "id": 16,
     "external_id": "8282262",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3319,12 +3321,12 @@
     "posted_at": "2026-10-14T19:59:17-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the job at Mozilla focuses heavily on security and systems programming with a requirement for proficiency in C and/or C++. The candidate's background does not indicate experience in low-level software engineering or security fundamentals, which are critical for this role. Additionally, the candidate's expertise is more aligned with web technologies rather than the specific security architecture improvements mentioned in the job description.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this job at Mozilla focuses heavily on security and systems programming, specifically requiring proficiency in C and/or C++. The candidate's experience does not include these languages or the specific security knowledge required for this role. Additionally, the job emphasizes debugging and performance optimization in multithreaded environments, which may not align with the candidate's primary experience in Java and web technologies.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 33,
+    "id": 38,
     "external_id": "969bbf7d-037c-4965-812e-442105ce58c1",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -3337,12 +3339,12 @@
     "posted_at": "2026-10-15T10:41:50.407+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The Developer Advocate position does not align with the candidate's preference for senior full-stack or backend software engineering roles. The role seems to focus more on advocacy rather than hands-on development, which does not match the candidate's expertise and interests in product engineering and technical ownership. Additionally, the job is located in multiple countries, including the US, which conflicts with the candidate's constraint of not wanting to work US-on-site.",
+    "reasoning": "The job posting for Developer Advocate does not align with the candidate's preferences for a senior full-stack or backend software engineering role. The position appears to focus on advocacy rather than hands-on development, which is not what the candidate is seeking. Additionally, the candidate is based in the Netherlands and is not interested in roles that require relocation to the US or on-site work in the US, which is a potential implication given the locations listed.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 8,
+    "id": 9,
     "external_id": "4814057101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -3355,12 +3357,12 @@
     "posted_at": "2026-10-15T07:11:50-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong background in software engineering with expertise in Java, SQL, and React, the job posting for a Staff Forward Deployed Engineer at JetBrains requires extensive experience in consulting and customer-facing roles, which is not explicitly highlighted in the candidate's CV. Additionally, the role emphasizes AI-native software development and integration into enterprise environments, areas where the candidate has limited direct experience. The candidate's fintech background is relevant, but the specific focus on AI and enterprise-level deployment presents a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Staff Forward Deployed Engineer at JetBrains requires a higher level of consulting and customer-facing experience, particularly in deploying complex systems in enterprise environments. The candidate's experience is primarily in development roles rather than consulting or solutions engineering, which is a significant gap. Additionally, the role emphasizes familiarity with AI-native development and governance, which the candidate does not explicitly demonstrate in their background.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 4,
+    "id": 12,
     "external_id": "5c33332b-1012-4d57-b105-d60cbc31b70a",
     "source": "lever",
     "company": "Job&Talent",
@@ -3378,7 +3380,7 @@
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 29,
+    "id": 34,
     "external_id": "9649c999-70dc-4620-9487-e664767fa88d",
     "source": "ashby",
     "company": "ICEYE",
@@ -3396,7 +3398,7 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 43,
+    "id": 45,
     "external_id": "8034464003",
     "source": "greenhouse",
     "company": "Telnyx",
@@ -3409,7 +3411,7 @@
     "posted_at": "2026-10-15T11:21:13-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in backend development with Java and SQL, which aligns with some of the job's requirements. However, the role specifically requires proficiency in Go and experience with Kubernetes, which the candidate lacks. Additionally, the job emphasizes building services for a serverless platform and managing workloads, areas where the candidate does not have direct experience. While the candidate's fintech background is relevant, the gaps in required technologies and specific experience make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in backend development with Java, they lack direct experience with Go, which is a primary requirement for this role. Additionally, the job emphasizes distributed systems and Kubernetes, areas where the candidate has limited exposure. Although they have relevant skills in APIs and databases, the specific technologies and frameworks mentioned in the job posting do not align closely with the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-15T18:49:35.417Z"
   }
