@@ -1,10 +1,15 @@
 import { useState, useEffect, useMemo } from 'react';
+import { AnimatePresence } from 'motion/react';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
-import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import { SAMPLE_JOBS } from './data/mockJobs';
+import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
+import { toLocalDay, isNewJob } from './utils';
+import { appliedKey, loadApplied, saveApplied } from './utils/applied';
+import { ApplyToast } from './components/ApplyToast';
+import { ActivityPanel } from './components/ActivityPanel';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
 
 const initialFilters: FilterState = {
@@ -14,12 +19,35 @@ const initialFilters: FilterState = {
   dateFrom: '',
   dateTo: '',
   remoteOnly: false,
+  newOnly: false,
+  applied: 'all',
 };
 
 export function App() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState<FilterState>(initialFilters);
+  const [applied, setApplied] = useState<Record<string, string>>(() => loadApplied());
+  const [toastJob, setToastJob] = useState<Job | null>(null);
+  const [showActivity, setShowActivity] = useState(false);
+
+  const markApplied = (job: Job) => {
+    const appliedAt = new Date().toISOString();
+    const next = { ...applied, [appliedKey(job)]: appliedAt };
+    setApplied(next);
+    saveApplied(next);
+    // Sync into the local DB when the local server is running, so scheduled
+    // snapshots carry the flag. Static hosted site: fire-and-forget, ignore.
+    void fetch('/api/applied', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source: job.source, externalId: job.external_id, appliedAt }),
+    }).catch(() => undefined);
+  };
+
+  /** localStorage wins (device-specific), snapshot value as fallback. */
+  const effectiveAppliedAt = (job: Job): string | null =>
+    applied[appliedKey(job)] ?? job.applied_at ?? null;
 
   useEffect(() => {
     async function loadData() {
@@ -31,19 +59,13 @@ export function App() {
           return;
         }
 
-        const urls = import.meta.env.DEV ? ['/api/jobs', 'http://localhost:3333/api/jobs'] : ['/api/jobs'];
-        for (const url of urls) {
-          try {
-            const res = await fetch(url);
-            if (!res.ok) continue;
-            const data = await res.json();
-            if (Array.isArray(data)) {
-              setJobs(data);
-              setLoading(false);
-              return;
-            }
-          } catch {
-            // Try next local API endpoint.
+        const res = await fetch('/api/jobs');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data) && data.length > 0) {
+            setJobs(data);
+            setLoading(false);
+            return;
           }
         }
       } catch {
@@ -85,10 +107,17 @@ export function App() {
       if (!remote) return false;
     }
 
+    if (filters.newOnly && !isNewJob(job)) return false;
+
+    if (filters.applied !== 'all') {
+      const isApplied = Boolean(applied[appliedKey(job)] ?? job.applied_at);
+      if (filters.applied === 'applied' ? !isApplied : isApplied) return false;
+    }
+
     if (filters.country && !matchesLocation(job.location, filters.country)) return false;
 
     if (filters.dateFrom || filters.dateTo) {
-      const postedDate = (job.posted_at || '').slice(0, 10);
+      const postedDate = toLocalDay(job.posted_at);
       if (!postedDate || (filters.dateFrom && postedDate < filters.dateFrom) || (filters.dateTo && postedDate > filters.dateTo)) return false;
     }
 
@@ -99,7 +128,7 @@ export function App() {
     }
 
     return true;
-  }), [jobs, filters]);
+  }), [jobs, filters, applied]);
 
   const locationOptions = useMemo(() => getLocationFilterOptions(jobs), [jobs]);
   const verdictCounts = useMemo(() => ({
@@ -107,11 +136,12 @@ export function App() {
     strong: jobs.filter((job) => job.verdict === 'strong').length,
     fair: jobs.filter((job) => job.verdict === 'fair').length,
     weak: jobs.filter((job) => job.verdict === 'weak').length,
+    no: jobs.filter((job) => job.verdict === 'no').length,
     unjudged: jobs.filter((job) => !job.verdict).length,
   }), [jobs]);
 
   const clearFilters = () => setFilters(initialFilters);
-  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly;
+  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
 
   return (
     <div className="app-shell min-h-screen bg-canvas text-ink">
@@ -126,15 +156,17 @@ export function App() {
           </div>
           <div className="flex gap-3 text-sm">
             <div className="rounded-xl border border-line bg-surface px-4 py-3">
-              <span className="block text-xl font-semibold tabular-nums">{jobs.length}</span>
-              <span className="text-xs text-ink-soft">roles found</span>
+              <span className="block text-xl font-semibold tabular-nums">{filteredJobs.length}</span>
+              <span className="text-xs text-ink-soft">{hasActiveFilters ? `of ${jobs.length} roles` : 'roles found'}</span>
             </div>
             <div className="rounded-xl border border-line bg-surface px-4 py-3">
-              <span className="block text-xl font-semibold tabular-nums">{verdictCounts.strong}</span>
+              <span className="block text-xl font-semibold tabular-nums">{filteredJobs.filter((job) => job.verdict === 'strong').length}</span>
               <span className="text-xs text-ink-soft">strong matches</span>
             </div>
           </div>
         </section>
+
+        {showActivity && <ActivityPanel jobs={jobs} appliedAtByKey={applied} />}
 
         <FilterBar
           filters={filters}
@@ -148,12 +180,20 @@ export function App() {
               <h3 className="text-lg font-semibold">Filters</h3>
               <button type="button" onClick={clearFilters} className="text-xs text-ink-soft underline-offset-4 hover:underline">Clear all</button>
             </div>
+            <button
+              type="button"
+              onClick={() => setShowActivity((v) => !v)}
+              aria-pressed={showActivity}
+              className={`mb-5 w-full rounded-xl px-4 py-2.5 text-sm font-semibold transition-colors ${showActivity ? 'bg-ink text-surface' : 'bg-brand text-ink hover:brightness-95'}`}
+            >
+              {showActivity ? 'Hide activity' : 'Show activity'}
+            </button>
             <div className="space-y-5">
               <fieldset>
                 <legend className="mb-3 text-sm font-semibold">Match</legend>
                 <div className="space-y-2.5">
                   {([
-                    ['all', 'All roles'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['unjudged', 'Not reviewed'],
+                    ['all', 'All roles'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['no', 'Pass'], ['unjudged', 'Not reviewed'],
                   ] as const).map(([value, label]) => (
                     <label key={value} className="flex cursor-pointer items-center justify-between gap-2 text-sm text-ink-soft hover:text-ink">
                       <span className="flex items-center gap-2"><input type="radio" name="verdict" value={value} checked={filters.verdict === value} onChange={() => setFilters({ ...filters, verdict: value })} />{label}</span>
@@ -168,6 +208,21 @@ export function App() {
                   <span>Remote roles</span>
                   <input type="checkbox" checked={filters.remoteOnly} onChange={(event) => setFilters({ ...filters, remoteOnly: event.target.checked })} />
                 </label>
+                <label className="mt-4 flex cursor-pointer items-center justify-between gap-3 text-sm font-medium">
+                  <span>New this scan <span className="text-xs font-normal text-ink-faint">(last 3 days)</span></span>
+                  <input type="checkbox" checked={filters.newOnly} onChange={(event) => setFilters({ ...filters, newOnly: event.target.checked })} />
+                </label>
+                <label className="mt-4 block text-sm font-medium" htmlFor="applied-filter">Applications</label>
+                <select
+                  id="applied-filter"
+                  value={filters.applied}
+                  onChange={(event) => setFilters({ ...filters, applied: event.target.value as FilterState['applied'] })}
+                  className="mt-2 w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm"
+                >
+                  <option value="all">All roles</option>
+                  <option value="applied">Applied only</option>
+                  <option value="not">Not applied yet</option>
+                </select>
               </div>
 
               <fieldset className="border-t border-line pt-5">
@@ -193,7 +248,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={job.id || `${job.source}-${job.external_id}`} job={job} index={index} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source}-${job.external_id}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">
@@ -210,6 +265,17 @@ export function App() {
       <footer className="mt-8 border-t border-line bg-surface/60 py-5 text-center text-xs text-ink-faint">
         <span className="font-display font-medium text-ink-soft">JobHopper</span> · Local data stays on your machine
       </footer>
+
+      <AnimatePresence>
+        {toastJob && (
+          <ApplyToast
+            key={appliedKey(toastJob)}
+            job={toastJob}
+            onConfirm={() => { markApplied(toastJob); setToastJob(null); }}
+            onDismiss={() => setToastJob(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
