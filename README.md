@@ -102,7 +102,7 @@ scan [-c <name>] [-a] [--verify] [--no-judge]   fetch from curated boards (+ -a 
 cleanup                            purge stored jobs outside IT/ES/NL or older than 30 days
 search <words> [filters]           full-text search local DB
 list [filters]                     list jobs
-judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter)
+judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter; --tab judges only unjudged unless --rejudge)
 judgments [--verdict <v>]          list stored verdicts
 tab create/list/add/get/rm         manage shortlists
 export [tab] [-o out.html]         build a clickable HTML dashboard

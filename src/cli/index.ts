@@ -4,7 +4,7 @@ import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
 import { loadConfig, saveConfig, resolveApiKey, hasApiKey } from '../config/config.js';
 import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket } from '../db/jobs-repo.js';
-import { storeJudgment, listJudgments } from '../db/judgments-repo.js';
+import { storeJudgment, listJudgments, getJudgment } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
 import { scanCompanies } from '../sources/scan.js';
 import { DEFAULT_COMPANIES } from '../sources/companies.js';
@@ -355,7 +355,8 @@ program
   .command('judge')
   .description('Judge poster(s) against your profile via OpenRouter')
   .argument('[id]', 'job id to judge')
-  .option('-t, --tab <name>', 'judge all jobs in a tab')
+  .option('-t, --tab <name>', 'judge unjudged jobs in a tab')
+  .option('--rejudge', 'include jobs that already have a verdict (default: judge only unjudged)')
   .option('--all', 'judge all unjudged jobs in the DB')
   .option('--quick', 'use the cheaper quick model')
   .option('--model <model>', 'override the model')
@@ -371,7 +372,13 @@ program
       }
       targets.push(job.id);
     } else if (opts.tab) {
-      targets.push(...getTabJobs(opts.tab as string).map((j) => j.id));
+      const tabJobs = getTabJobs(opts.tab as string);
+      const rejudge = opts.rejudge as boolean;
+      const pending = tabJobs.filter((j) => rejudge || !getJudgment(j.id));
+      if (!rejudge && pending.length < tabJobs.length) {
+        console.log(dim(`Skipping ${tabJobs.length - pending.length} already-judged job(s); pass --rejudge to redo them.`));
+      }
+      targets.push(...pending.map((j) => j.id));
     } else if (opts.all) {
       targets.push(...listJobs({ unjudged: true, limit: Number(opts.limit) }).map((j) => j.id));
     } else {
