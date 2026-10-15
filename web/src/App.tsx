@@ -19,6 +19,8 @@ export function App() {
     dateFrom: '',
     dateTo: '',
     remoteOnly: false,
+    newOnly: false,
+    applied: 'all',
   });
 
   useEffect(() => {
