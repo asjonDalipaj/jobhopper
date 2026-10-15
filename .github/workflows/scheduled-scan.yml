@@ -76,20 +76,6 @@ jobs:
             echo "  - it must be a REPOSITORY secret (not only an environment secret, unless the job sets environment:)"
             echo "  - scheduled runs on the default branch see repo/org secrets; a run started before you saved it won't have it"
           fi
-      # Optional private dashboard deploy. Configure Cloudflare Pages Access
-      # (allow only your identity) before setting the enable variable to true.
-      - name: Deploy private dashboard (if enabled)
-        if: ${{ vars.CLOUDFLARE_PAGES_ENABLED == 'true' }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
-        run: |
-          for name in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID CLOUDFLARE_PAGES_PROJECT; do [ -n "${!name}" ] || { echo "Missing $name"; exit 1; }; done
-          npm ci --prefix web
-          npm run build:web
-          cp .jobhopper/exports/jobs.json web/dist/jobs.json
-          npx --yes wrangler@4 pages deploy web/dist --project-name "$CLOUDFLARE_PAGES_PROJECT"
 
       - name: Commit dashboards
         run: |
