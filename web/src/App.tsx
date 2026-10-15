@@ -4,6 +4,7 @@ import { FilterBar } from './components/FilterBar';
 import { JobCard } from './components/JobCard';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
+import { toLocalDay } from './utils';
 import { Inbox } from 'lucide-react';
 
 const LOAD_ERROR = 'Cannot load dashboard data. For local SQLite mode, run npm run ui.';
@@ -83,9 +84,10 @@ export function App() {
       }
 
       // Posting date range (inclusive). postings without a date are excluded
-      // whenever a range is active.
+      // whenever a range is active. toLocalDay matches formatDate's timezone
+      // so the filter compares against the day the card displays.
       if (filters.dateFrom || filters.dateTo) {
-        const postedDate = (job.posted_at || '').slice(0, 10);
+        const postedDate = toLocalDay(job.posted_at);
         if (!postedDate) return false;
         if (filters.dateFrom && postedDate < filters.dateFrom) return false;
         if (filters.dateTo && postedDate > filters.dateTo) return false;
@@ -169,7 +171,7 @@ export function App() {
         ) : filteredJobs.length > 0 ? (
           <div className="grid grid-cols-1 gap-4">
             {filteredJobs.map((job) => (
-              <JobCard key={job.id || `${job.source}-${job.external_id}`} job={job} />
+              <JobCard key={`${job.source}-${job.external_id}`} job={job} />
             ))}
           </div>
         ) : (
