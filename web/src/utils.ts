@@ -19,27 +19,3 @@ export function formatDate(dateStr?: string | null): string {
     return String(dateStr).slice(0, 10);
   }
 }
-
-/**
- * A row counts as "New" when first seen within the last 3 days
- * (snapshot-driven, scan-to-scan).
- */
-const NEW_SINCE_MS = 3 * 24 * 60 * 60 * 1000;
-export function isNewJob(job: { first_seen?: string | null }): boolean {
-  if (!job.first_seen) return false;
-  const seen = new Date(job.first_seen).getTime();
-  return !Number.isNaN(seen) && Date.now() - seen <= NEW_SINCE_MS;
-}
-
-/**
- * Day of an ISO timestamp in the viewer's timezone, as YYYY-MM-DD.
- * Must match formatDate() so the date filter compares against the same
- * day the card displays (posted_at offsets vary between sources).
- */
-export function toLocalDay(dateStr?: string | null): string {
-  if (!dateStr) return '';
-  const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return dateStr.slice(0, 10);
-  // en-CA locale formats dates as YYYY-MM-DD.
-  return d.toLocaleDateString('en-CA');
-}
