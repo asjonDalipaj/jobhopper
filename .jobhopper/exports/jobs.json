@@ -1322,7 +1322,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 2,
+    "id": 3,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1563,12 +1563,12 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on incident response and security operations, which is not aligned with the candidate's background in full-stack software engineering and fintech. The candidate lacks the required security experience, knowledge of security incident management, and expertise in security tools and practices outlined in the job description. Additionally, the role requires specific experience in security operations centers and incident response teams, which the candidate does not possess.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is focused on incident response and security operations. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks specific experience in security incident management, security operations centers, and the required security tools and technologies. Additionally, the role requires expertise in security information and event management systems and endpoint detection, which are not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 8,
+    "id": 6,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1581,7 +1581,7 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role, which is focused on security incident response and requires specific expertise in security operations, incident management, and familiarity with security tools and protocols. The candidate's background is primarily in full-stack software engineering with a strong focus on fintech, Java, and React, but lacks the necessary security experience and knowledge required for this role. Additionally, the candidate is not interested in roles that do not align with their software engineering focus, making this position a poor fit.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has a strong background in Java, React, and CI/CD, but lacks the specific security incident management experience and knowledge of security operations that this role requires. Additionally, the candidate's focus is on fintech and product engineering, which does not align with the security-focused nature of this position.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1974,7 +1974,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 32,
+    "id": 18,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1987,7 +1987,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience managing teams and developing technical leaders. The candidate's experience primarily revolves around software development rather than team management, which is a critical aspect of this position. Additionally, the job emphasizes a strong technical foundation in modern web or frontend systems, which may not align perfectly with the candidate's backend-heavy experience.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for Senior Engineering Manager at Grafana Labs requires significant management experience and a focus on leading engineering teams, which is not explicitly demonstrated in the candidate's CV. The candidate's experience is more technical and project-focused rather than managerial. Additionally, the role emphasizes a strong technical foundation in modern web or frontend systems and experience with large-scale frontend ecosystems, which the candidate has but may not fully align with the leadership expectations of this position.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2024,7 +2024,7 @@
     "reasoning": null
   },
   {
-    "id": 31,
+    "id": 16,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2037,12 +2037,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority. Additionally, the focus on digital marketing and programmatic advertising does not match the candidate's strong background in full-stack software engineering and fintech.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not suitable for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 30,
+    "id": 15,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2055,7 +2055,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is not aligned with the candidate's seniority level as a senior full-stack software engineer with over 10 years of experience. The candidate is explicitly not interested in junior or entry-level roles, making this opportunity completely unsuitable. Additionally, the role requires enrollment in an educational institution, which the candidate does not meet.",
+    "reasoning": "This job posting is for an internship position, which is not aligned with the candidate's seniority level and explicit constraints. The candidate has over 10 years of experience as a senior full-stack software engineer, while this role is targeted at students seeking practical experience. Additionally, the candidate is not interested in junior or entry-level roles, making this opportunity completely mismatched.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2076,7 +2076,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 13,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2089,12 +2089,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a passion for digital media and marketing, which is not mentioned in the candidate's profile.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic media planning, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not leverage the candidate's strong technical skills in full-stack development, Java, or SQL, making it a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 27,
+    "id": 12,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2107,7 +2107,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, data modeling, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not indicate they possess. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering and relevant skills in Java, SQL, and React, the job posting specifically requires fluency in Dutch, which the candidate does not mention. Additionally, the role focuses heavily on analytics engineering and marketing technology, areas that are not highlighted in the candidate's experience. There are also specific tools and platforms mentioned (like dbt and Customer Data Platforms) that the candidate may not have direct experience with.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2572,7 +2572,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 29,
+    "id": 14,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2585,7 +2585,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, programmatic advertising, and data analysis. The candidate's background as a senior full-stack software engineer with a strong focus on backend and frontend development in fintech does not align with the requirements for a role centered around media planning and campaign management. Additionally, the candidate's experience does not indicate a passion or expertise in digital media or advertising, making this position a poor fit.",
+    "reasoning": "This position is focused on digital media, specifically in video and audio advertising, which does not align with the candidate's expertise in software engineering and fintech. The role requires a strong interest in online marketing and programmatic advertising, areas where the candidate has no demonstrated experience. Additionally, the job description emphasizes campaign management and data analysis rather than software development, making it a poor fit for the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2644,7 +2644,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 3,
+    "id": 4,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3034,7 +3034,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 10,
+    "id": 9,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3244,13 +3244,13 @@
     "description": "<p>The MongoDB Query Execution Team is hiring software engineers who want to join us in developing a high performing, reliable and modular distributed query system. Our engineers work on implementing and maintaining execution algorithms, building new query language features, tuning database performance, and more to power our customers' critical workloads.</p> <p>This role can be based remotely in Spain.</p> <h3>Position Expectations</h3> <ul> <li>Understand and improve current functionality of the MongoDB query engine</li> <li>Contribute high quality C++ code and give and solicit feedback in code reviews</li> <li>Identify, design, implement, test, and support new features related to query performance and robustness, query language enhancements, diagnostics for query performance problems, and integration with other products and tools</li> <li>Work constructively with peers to deliver excellent technical solutions</li> </ul> <h3>Candidate Profile</h3> <ul> <li>5+ years of experience in systems programming</li> <ul> <li>Experience in databases and/or data management systems is a huge plus, but not a requirement</li> </ul> <li>Hands-on experience building industrial-strength software</li> <li>Solid computer science fundamentals, with strong competencies in data structures, algorithms, and software design/architecture</li> <li>Experience with large code bases, preferably in C++, C, Rust or a similar compiled language</li> <li>B.Sc in Computer Science or similar field, or equivalent practical experience</li> <li>Interest in the theory and practice of database query engines. Hands-on experience or M.Sc./Ph.D in the domain is a plus</li> </ul> <h3>Success Measures</h3> <ul> <li>In three months you’ll have contributed to the development of a project slated for the next major version, as well as fixed a few bugs in a minor version of our latest stable release series</li> <li>In six months, you’ll have taken on code review responsibilities and are independently delivering complex functionality and squashing bugs independently</li> <li>In twelve months, you’re leading the development of a new major feature and are helping to mentor new engineers on the team</li> </ul> <h3>About MongoDB</h3> <p>MongoDB is built for change, empowering our customers and our people to innovate at the speed of the market. We have redefined the data platform for the AI era, enabling builders to create, transform, and disrupt industries with software. MongoDB’s unified data platform, the most widely available, globally distributed data platform on the market, helps organizations modernize legacy workloads, embrace innovation, and unleash AI. Our cloud-native platform, MongoDB Atlas, is the only globally distributed, multi-cloud data platform and is available across AWS, Google Cloud, and Microsoft Azure.</p> <p>With offices worldwide and over 67,000 customers, including 75% of the Fortune 100 and AI-native startups, relying on MongoDB for their most important applications, we’re powering the next era of software.</p> <p>Our compass at MongoDB is our <a href=\"https://www.mongodb.com/company\">Leadership Commitment,</a> guiding how and why we make decisions, show up for each other, and win. It’s what makes us MongoDB.&nbsp;</p> <p>To drive the personal growth and business impact of our employees, we’re committed to developing a supportive and enriching culture for everyone. <a href=\"https://www.mongodb.com/company/blog/culture/employee-benefits-that-make-a-difference-at-mongodb\">From employee affinity groups, to fertility assistance and a generous parental leave policy</a>, we value our employees’ wellbeing and want to support them along every step of their professional and personal journeys.<a href=\"https://www.mongodb.com/blog/channel/culture\"> Learn more about what it’s like to work at MongoDB</a>, and help us make an impact on the world!</p> <p>MongoDB is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request an accommodation due to a disability, please inform your recruiter.</p> <p>MongoDB is an equal opportunities employer.</p> <p><em>Req ID: 2273491237</em></p>",
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate lacks. Additionally, the role focuses on database query engines, an area where the candidate has limited direct experience. Although the candidate's skills in Java and SQL are relevant, they do not align closely with the core requirements of this position.",
+    "verdict": "no",
+    "reasoning": "This job posting is not a fit for the candidate due to a significant mismatch in required skills and experience. The role demands expertise in C++ and systems programming, which the candidate does not possess, as their background is primarily in Java and web technologies. Additionally, the candidate's experience is heavily focused on fintech and full-stack development, while this position is centered around database query execution and performance, which is outside their stated areas of interest.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 12,
+    "id": 10,
     "external_id": "8281662",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3263,7 +3263,7 @@
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. The role focuses on developing a distributed query system and requires knowledge of database query engines, which is not mentioned in the candidate's experience. Additionally, the emphasis on high-performance code and large code bases in C++ presents a gap in the candidate's skill set.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. Additionally, the role focuses heavily on database query engines and performance tuning, areas that are not highlighted in the candidate's experience. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the core requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -3736,7 +3736,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 4,
+    "id": 5,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3754,25 +3754,25 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 20,
+    "id": 17,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
-    "title": "Senior Software Engineer (Comms Core)",
+    "title": "Senior Software Engineer, Backend (Comms Core)",
     "location": "Remote Spain",
     "workplace_type": "Remote",
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/affirm/jobs/8034649003",
     "description": "<div class=\"content-intro\"><p>At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.</p></div><p data-pm-slice=\"1 3 []\"><strong>About the Engineering team</strong></p> <p>The Engineering team builds systems that power Affirm’s mission. We take pride in our craft, building reliable, performant, and scalable solutions that touch every part of the business. Whether we’re enabling new ways to pay, ensuring our platforms can scale to the most demanding levels in the industry, or developing seamless servicing experiences, our focus is on solving complex problems through exceptional engineering.</p> <p><strong>About the team</strong></p> <p>Affirm’s Communications team builds and modernizes the highly available platform that delivers billions of customer messages reliably and on time across the customer journey. As a senior backend engineer, you will shape multi-region, multi-tenant infrastructure, APIs, and vendor integrations that help product teams communicate with customers at scale.</p> <p><strong>What you’ll do</strong></p> <ul> <li> <p>You will own and deliver quarterly technical goals for the Communications area, collaborating with teammates to solve ambiguous, open-ended problems across messaging infrastructure.</p> </li> <li> <p>You will design and evolve reliable backend services for high-volume communications across multi-region, multi-tenant environments, including orchestration, delivery, preferences, templates, and observability.</p> </li> <li> <p>You will collaborate with product management, design, analytics, security, and engineering partners throughout the product lifecycle, articulating technical constraints and balancing customer impact, risks, and trade-offs.</p> </li> <li> <p>You will design, implement, and operate resilient integrations with external messaging vendors, balancing reliability, latency, cost, and compliance.</p> </li> <li> <p>You will proactively identify and solve project, process, technology, or business issues that affect scalability, developer experience, and operational resilience.</p> </li> <li> <p>You will support the operations and availability of your team’s services by defining service-level objectives and metrics, improving alerting and incident response, and participating in on-call efforts.</p> </li> <li> <p>You will foster quality and ownership by improving design, testing, code review, rollout, and operational standards, and advocating for them through writing and tech talks.</p> </li> <li> <p>You will help develop talent on your team by providing feedback, mentorship, and technical direction, and leading by example.</p> </li> <li>On-Call Rotation - There would be an on-call rotation for this role as a requirement.<br><br></li> </ul> <p><strong>What we look for</strong></p> <ul> <li> <p>You have 5+ years of experience in software development or engineering, with a deep understanding of system design and architecture.</p> </li> <li> <p>Proficiency in modern programming languages such as Python, Kotlin, or similar.</p> </li> <li> <p>You have a track record of developing highly available distributed systems using technologies like AWS, MySQL, DynamoDB, and Kubernetes.</p> </li> <li> <p>You have experience designing multi-region, multi-tenant platforms with strong isolation, scalability, failure recovery, and data-consistency guarantees.</p> </li> <li> <p>You have experience integrating with third-party communications or messaging vendors and designing abstractions that account for different capabilities, rate limits, and failure modes.</p> </li> <li> <p>You have experience defining a technical plan for the delivery of a significant feature or system component with an elegant, simple and extensible design. You write high quality code that is easily understood and used by others.</p> </li> <li> <p>You are proficient at making significant changes in a large code base, and have developed a suite of tools and practices that enable you and your team to do so safely.</p> </li> <li> <p>You are proficient with AI-assisted development tools and apply sound judgment to validate their outputs.</p> </li> <li> <p>Your experience demonstrates that you take ownership of your growth, proactively seeking feedback from your team, your manager, and your stakeholders.</p> </li> <li> <p>You have strong verbal and written communication skills that support effective collaboration with our global engineering team.<br><br><br></p> </li> </ul> <p><strong>Compensation &amp; Benefits</strong><br>Pay Grade - N<br>Equity Grade - 4<br><br>Employees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.<br><br>Base pay is part of a total compensation package that may include monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents). In addition, the employees may be eligible for equity rewards offered by Affirm Holdings, Inc. (parent company).<br><br><strong>ESP base pay range per year: €86,000 - €122,000</strong><br><br>Additional benefits include:<br>• Flexible Spending Wallets for tech, food and lifestyle<br>• Away Days - wellness days to take off work and recharge<br>• Learning &amp; Development programs<br>• Parental benefits<br>• Employee Resource &amp; Community Groups</p> <div> <div> <div> <p><strong>Location - Remote Spain</strong></p> </div> </div> </div> <div> <div> <p>We are able to offer visa sponsorship for this role, but do require that someone is based in Spain for the role.</p> </div> </div> <p><strong>#LI-Remote</strong></p><div class=\"content-conclusion\"><div> <p><strong>Remote-first with flexibility built in</strong><strong><br></strong>Affirm is proud to be a remote-first company. Most roles can be done from almost anywhere within the country of employment. Some positions may occasionally require in-person work at an Affirm office, and a few are office-based due to the nature of the work. All new hires will be invited to attend an in-person onboarding experience.</p> <p><strong>Benefits designed for you</strong><strong><br></strong>Our benefits reflect our commitment to care, transparency, and flexibility. Here are a few highlights:</p> <ul> <li>Health coverage at no cost: We cover 100% of premiums for employees and their dependents.</li> <li>Spending stipends: Monthly stipends support your tech setup, and the ability to choose health and wellness options that are right for you.</li> <li>Time off to recharge: Flexible time off and generous holiday calendars help you rest when you need to.</li> <li>Own a piece of what you build: Our employee stock purchase plan (ESPP) lets you buy Affirm stock at a discount.</li> </ul> <p>We’re committed to providing an inclusive interview process, including accommodations for candidates with disabilities. If you need support, we’re happy to help.</p> <p>For positions based in San Francisco or Los Angeles: Affirm considers qualified applicants with arrest and conviction records, as required by law.</p> </div> <div> <p>By clicking \"Submit Application,\" you acknowledge that you have read Affirm's&nbsp;<a href=\"https://www.affirm.com/global-candidate-privacy-notice\" target=\"_blank\">Global Candidate Privacy Notice</a> and consent to the use of your personal information as described.</p> </div></div>",
-    "posted_at": "2026-10-19T02:36:14-04:00",
+    "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Software Engineer role at Affirm, but it requires the candidate to be based in Spain, which is a hard constraint for the candidate who is based in the Netherlands. Additionally, the role focuses heavily on backend systems and requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength. While the candidate has relevant experience in fintech and backend development, the geographical requirement and specific technical skills create a mismatch.",
+    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which is a hard constraint for the candidate who is based in the Netherlands and is not willing to relocate to the US or work US-on-site. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength. While the candidate has relevant experience in backend development and fintech, the geographical requirement and specific language proficiency create a mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 6,
+    "id": 21,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3781,7 +3781,7 @@
     "workplace_type": "remote",
     "employment_type": "Permanent",
     "url": "https://jobs.lever.co/jobandtalent/4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
-    "description": "Join us to shape the future of work: your next adventure awaits!\n",
+    "description": "Join us to shape the future of work: your next adventure awaits!\n\n\nWe’re looking for a Principal IT Engineer to own and evolve the technology experience of our global workforce.\nThis is a senior individual-contributor role with broad ownership across identity, endpoint management, workplace applications, IT automation, security controls, and service operations.\nYou will work in a global, product-led, high-paced technology company, partnering closely with Security, Engineering, People, Finance, Legal, and business teams to ensure employees can work securely, efficiently, and with minimal friction across multiple countries and time zones.\n",
     "posted_at": "2026-10-19T14:43:25.737Z",
     "tags": null,
     "verdict": null,
@@ -3790,7 +3790,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 5,
+    "id": 20,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3826,7 +3826,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 9,
+    "id": 8,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3839,7 +3839,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting for a Machine Learning Engineer at Twilio does not align with the candidate's background or preferences. The candidate is a senior full-stack software engineer with expertise in Java, SQL, and React, but lacks the required experience in machine learning engineering, Python proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role is focused on AI and ML, which is outside the candidate's stated interests in fintech and product engineering.",
+    "reasoning": "This job posting is for a Machine Learning Engineer role, which is outside the candidate's expertise and focus on full-stack and backend software engineering. The candidate has strong experience in Java, SQL, and React, but lacks the required machine learning experience and proficiency in Python and ML frameworks like PyTorch or TensorFlow. Additionally, the candidate's background does not align with the specific qualifications related to AI/ML pipelines and conversational AI, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3860,5 +3860,41 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
+  },
+  {
+    "id": 2,
+    "external_id": "65ce6d8d-1ea4-47b7-a148-ae8b0812ee72",
+    "source": "ashby",
+    "company": "Mollie",
+    "title": "Solution Engineer I",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/mollie/65ce6d8d-1ea4-47b7-a148-ae8b0812ee72",
+    "description": "",
+    "posted_at": "2026-10-19T16:26:31.649+00:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-19T21:55:18.274Z"
+  },
+  {
+    "id": 19,
+    "external_id": "6228510004",
+    "source": "greenhouse",
+    "company": "Grafana Labs",
+    "title": "Senior Software Engineer, Security Assurance | Spain | Remote",
+    "location": "Spain (Remote)",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6228510004",
+    "description": "<div class=\"content-intro\"><p>Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. Built on open source and open standards and designed for interoperability across any stack, Grafana Cloud brings AI to observability and observability to AI, giving teams (and their agents) unified visibility so they can see, understand, and act on all their disparate data, wherever it lives, and move at the speed of their ambitions. Customers, including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce, rely on Grafana Labs. We are a 100% remote company with team members across 40+ countries, backed by leading investors including Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan, CapitalG, and Lead Edge Capital. Learn more at <u><span><a href=\"http://grafana.com\" target=\"_blank\">grafana.com</a></span></u> and follow us on <u><span><a href=\"https://www.linkedin.com/company/grafana-labs/\" target=\"_blank\">LinkedIn</a></span></u> and <u><span><a href=\"https://twitter.com/grafana\" target=\"_blank\">X</a></span></u><u>.</u></p> <p>We’re scaling fast and staying true to what makes us different: an open-source legacy, a global collaborative culture, and a passion for meaningful work. Our team thrives in an innovation-driven environment where transparency, autonomy, and trust fuel everything we do.</p> <p>You may not meet every requirement, and that’s okay. If this role excites you, we’d love you to raise your hand for what could be a truly career-defining opportunity.</p></div><p><em>This is a remote position. We are looking for candidates in the UK, Ireland, Spain, Germany or Sweden.</em></p> <h3><strong>Senior Software Engineer - Security Assurances</strong></h3> <p>We are looking for a Senior Software Engineer, Security Assurance to join our GRC engineering team. We are building a security system that’s automated at scale, rigorously data-driven, and built from the ground up with defense-in-depth and self-healing in mind. We support a highly autonomous, remote-first, cloud-native organization. We are a technical team that can build any tool we need, while knowing when to buy to improve velocity.</p> <p>To support our growth and ambitious vision, we embrace agile principles and values, share openly, apply context-driven security mechanisms, default to action, and have an OSS-first mindset. We are a 100% remote company. We believe in high-velocity but sustainable expectations and timeframes, giving people the room to do great work.</p> <p><strong>The Opportunity:</strong></p> <p>You will work to build out our security observability, compliance, and control management systems and tools. You will develop services and tools to proactively defend our systems, provide visibility to our security state, and give engineers and stakeholders guardrails and paved roads to behave securely. You will collaborate across your team, the security department, and wider Grafana to write and deploy security policies across all of our SDLC, applications, and infrastructure.</p> <p>This is a very technical, hands-on keyboard software engineering, so development experience is critical. You will ideally have some experience building, implementing and improving the maturity of security programs in Cloud-based SaaS organizations. Knowledge of security standards and frameworks (ISO, FedRAMP, PCI-DSS, GDPR, etc) is useful, but the disposition to quickly learn new things is more important than rote knowledge. You will work alongside other security engineers, full-stack developers, and customer-facing teams. Experience guiding and negotiating with peers, stakeholders, customers, and auditors is a plus.&nbsp;</p> <p><strong>What You’ll Be Doing:</strong></p> <ul> <li>Be a technical contributor on our GRC team covering a range of areas, including certifications, application, build, cloud, and supply chain security, and internal security tooling development</li> <li>Develop, implement, and maintain highly automated security assurance programs to ensure compliance with organizational and regulatory requirements (e.g., ISO 27001, SOC 2, GDPR, NIST, PCI-DSS, TISAX, whatever else our customers eventually throw at us)</li> <li>Develop systems, automations, and methods of security observability to push the GRC engineering organization beyond just meeting certification requirements</li> <li>Deploy security and compliance checks in an employee-enabling way (guardrails and paved roads) in their daily workflows and build pipelines</li> <li>Collaborate with cross-functional teams to integrate security controls into the software development lifecycle and operational processes.</li> <li>Respond to customer security issues, security alerts, and potential incidents</li> </ul> <p><strong>What Makes You a Great Fit:</strong></p> <ul> <li>Experience developing in a production environment with at least one programming language. We primarily use Go, TypeScript, and Python but most languages translate well. You will take a code screen and be expected to discuss programming principles such as algorithms, data structures, and optimization</li> <li>Knowledge of using and securing containerized, cloud-native applications, ideally with Kubernetes. Experience with multiple cloud providers is a strong plus</li> <li>Experience in automating security and compliance processes using tools, scripts, and frameworks while enabling developer and employee workflows</li> <li>Strong interpersonal skills, as this position will require communication with peers, stakeholders, auditors, and customers</li> <li>Understanding of industry-recognized security frameworks, standards, and certifications, such as ISO 27001, SOC 2, PCI DSS, NIST, or GDPR, and how to apply them without added operational burden. You can gain this by reading the standards documents and audit guidance</li> <li>A degree in Computer Science, Information Security, or related field (or equivalent experience)</li> </ul> <p><strong>Bonus Points For:</strong></p> <ul> <li>Working knowledge of Grafana Labs OSS projects and products. Experience in using observability tooling to solve security problems.&nbsp;</li> <li>Experience working with OSS communities</li> <li>Experience in using technical automations to prove infrastructure compliance</li> <li>Experience securing large-scale distributed systems running in public clouds</li> </ul> <p>In Ireland, the base compensation range for this role is €<span data-sheets-root=\"1\">82,988 - €99,586</span><span data-sheets-root=\"1\">.</span>&nbsp;Actual compensation may vary based on level, experience, and skillset as assessed throughout the interview process. All of our roles include Restricted Stock Units (RSUs), giving every team member ownership in Grafana Labs' success. We believe in shared outcomes—RSUs help us stay aligned and invested as we scale globally.</p><div class=\"content-conclusion\"><div> <p><em data-stringify-type=\"italic\">*Compensation ranges are country specific. If you are applying for this role from a different location than listed above, your recruiter will discuss your specific market’s defined pay range &amp; benefits at the beginning of the process.</em></p> <p><strong>Why You’ll Thrive at Grafana Labs:</strong></p> <ul> <li><strong data-stringify-type=\"bold\">100% Remote, Global Culture -&nbsp;</strong>As a remote-only company, we bring together talent from around the world, united by a culture of collaboration and shared purpose.</li> <li><strong>Scaling Organization</strong> – Tackle meaningful work in a high-growth, ever-evolving environment.</li> <li><strong>Transparent Communication</strong> – Expect open decision-making and regular company-wide updates.</li> <li><strong>Innovation-Driven</strong> – Autonomy and support to ship great work and try new things.</li> <li><strong>Open Source Roots</strong> – Built on community-driven values that shape how we work.</li> <li><strong>Empowered Teams</strong> – High trust, low ego culture that values outcomes over optics.</li> <li><strong>Career Growth Pathways</strong> – Defined opportunities to grow and develop your career.</li> <li><strong>Approachable Leadership</strong> – Transparent execs who are involved, visible, and human.</li> <li><strong>Passionate People</strong> – Join a team of smart, supportive folks who care deeply about what they do.</li> <li><strong>In-Person onboarding </strong>- We want you to thrive from day 1 with your fellow new ‘Grafanistas’ to learn all about what we do and how we do it.&nbsp;</li> <li><strong>Balance is Key</strong> - We operate a global annual leave policy of 30 days per annum. 3 days of your annual leave entitlement are reserved for Grafana Shutdown Days to allow the team to really disconnect. <em>*We will comply with local legislation where applicable.</em></li> </ul> <p><strong>Equal Opportunity Employer:</strong> <em>Grafana Labs is an equal opportunities employer. We welcome applications from everyone regardless of race, colour, nationality, origin, caste, sex, gender reassignment identity or expression, sexual orientation, age, religion or belief, disability, veteran status, genetic information, pregnancy, maternity, marital, family or carer status, or any other characteristic which is protected by local law. We believe that equality and diversity build a strong organisation, and we work hard to ensure that is the foundation of our organisation as we grow.</em></p> <p><em data-stringify-type=\"italic\">Grafana Labs may utilize AI tools in its recruitment process to assist in matching information provided in CVs to job postings. The recruitment team will continue to review inbound CVs manually to identify alignment with current openings.</em></p> <p>#LI-Remote</p> </div> <div><em>For information about how your personal data is used once you’ve applied to a job, check out our <a href=\"https://grafana.com/legal/applicant-and-candidate-privacy-policy/\" target=\"_blank\">privacy policy</a>.&nbsp;</em></div> <div>&nbsp;</div></div>",
+    "posted_at": "2026-10-19T14:25:07-04:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the job posting is focused on security assurance, which requires specific knowledge of security frameworks and compliance standards that the candidate does not explicitly mention. Additionally, the role emphasizes experience with Go and TypeScript, which are not part of the candidate's stated skill set. The candidate's background in Java and CI/CD is relevant, but the gaps in security-specific experience and the programming languages required make this a weak fit.",
+    "applied_at": null,
+    "first_seen": "2026-10-19T21:55:18.274Z"
   }
 ]
