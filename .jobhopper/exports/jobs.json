@@ -1322,7 +1322,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 17,
+    "id": 2,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1332,10 +1332,12 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8106754",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>&nbsp;</p> <p><strong>Senior Software Engineer - Java Application Core Components (JACC)</strong></p> <p>Adyen provides a global, unified platform built by Java application teams across the company. The Java Application Core Components (JACC) team plays a key role in this: we build and maintain the shared frameworks and components that define how other Adyen teams design, structure, and deploy their Java applications.</p> <p>As part of JACC, you will build and maintain the core Java tools and components used across all of Adyen, shaping how other engineering teams build their services. You'll work on some of the largest ongoing efforts in the company, including 3 large-scale migrations that will shape the future of Adyen's application architecture. You'll join a lean team of 6 Java experts, working in a Kanban-like way with minimal process overhead, and gain real influence over the architecture of one of the leading players in the payments space.</p> <h2><strong>What you will do</strong></h2> <ul> <li>Design, build, and evolve the internal and open source Java frameworks and components used by every Java application team at Adyen.</li> <li>Play an active role in one or more of the team's 3 large-scale migrations that are reshaping Adyen's application architecture.</li> <li>Provide hands-on technical guidance to other engineering teams, by guiding them on how the frameworks and libraries we provide can be used to solve Adyen's business problems.</li> <li>Design and evolve workflows used by other engineering teams across Adyen, working closely with them to identify pain points and improvement opportunities.</li> <li>Collaborate with partner platform teams (Kubernetes infrastructure, deployment, security) to make sure our components integrate well across Adyen's tech stack.</li> <li>Advocate for best practices across Adyen and define boundaries/guidance on how the frameworks/libraries we maintain can be used. This should be achieved by creating code validation rules, running workshops and giving presentations to other development teams.</li> </ul> <h2><strong>What you bring</strong></h2> <ul> <li>5+ years of experience with Java backend development</li> <li>Strong skills in core Java and code/API design</li> <li>Track record of building high-quality software, with testing at all levels</li> <li>A communicative, proactive team player who takes ownership, is decisive under ambiguity, and can act as a technical influencer with a multiplier mindset</li> <li>Comfortable being a driver: able to build alignment with stakeholders and partners while pushing initiatives for our customers</li> </ul> <h2><strong>Nice to have</strong></h2> <ul> <li>Experience with Kubernetes/cloud migrations, legacy application modernization, security-related work or platform development experience</li> <li>Experience developing and maintaining libraries/frameworks used by many other developers (either open source or internal)</li> <li>Experience with build tools, ideally for Java (Gradle/Maven)</li> <li>Broader architecture sense across distributed systems</li> <li>Familiarity with Spring, Jersey, Feign, OpenAPI</li> <li>Understanding of Domain-Driven Design (DDD) and Test-Driven Development (TDD)</li> <li>Exposure to AI agent workflows and a DevOps mindset</li> <li>Developer advocacy experience: public speaking or training/facilitation skills</li> </ul> <p>&nbsp;</p> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-09-30T04:54:34-04:00",
+    "posted_at": "2026-10-19T10:13:26-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
     "id": 52,
@@ -1548,7 +1550,7 @@
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 9,
+    "id": 7,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1561,7 +1563,7 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role, which is focused on security incident response and requires specific expertise in security operations, incident management, and security tools that the candidate does not possess. The candidate's background is primarily in full-stack software engineering with a strong focus on fintech, Java, and React, but lacks the necessary experience in security operations centers (SOC) and related security technologies. Additionally, the role requires a minimum of 5 years in security-specific roles, which the candidate does not meet.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on incident response and security operations, which is not aligned with the candidate's background in full-stack software engineering and fintech. The candidate lacks the required security experience, knowledge of security incident management, and expertise in security tools and practices outlined in the job description. Additionally, the role requires specific experience in security operations centers and incident response teams, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1579,7 +1581,7 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role focused on security operations, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has a strong background in Java, SQL, and React, but lacks the required experience in security incident management, SIEM systems, and incident response teams. Additionally, the role requires specific security knowledge and skills that the candidate does not possess, making this position a poor fit.",
+    "reasoning": "The job posting is for a Senior Security Engineer role, which is focused on security incident response and requires specific expertise in security operations, incident management, and familiarity with security tools and protocols. The candidate's background is primarily in full-stack software engineering with a strong focus on fintech, Java, and React, but lacks the necessary security experience and knowledge required for this role. Additionally, the candidate is not interested in roles that do not align with their software engineering focus, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1972,7 +1974,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 15,
+    "id": 32,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1985,7 +1987,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong technical skills in Java, SQL, and React, which are relevant to the role, they lack direct experience in a managerial position overseeing engineering teams, which is a key requirement for this Senior Engineering Manager role. Additionally, the job emphasizes the need for experience with AI and automation in leadership, which is not explicitly mentioned in the candidate's background. The candidate's fintech experience aligns with the company's focus, but the gaps in management experience and specific AI application in leadership make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience managing teams and developing technical leaders. The candidate's experience primarily revolves around software development rather than team management, which is a critical aspect of this position. Additionally, the job emphasizes a strong technical foundation in modern web or frontend systems, which may not align perfectly with the candidate's backend-heavy experience.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2022,7 +2024,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 31,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2032,15 +2034,15 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5186216008",
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p>Hey toekomstige media-expert! Klaar om je stempel te drukken in de dynamische wereld van digitale marketing? Bij WPP Media, onderdeel van het wereldwijde WPP mediacollectief, bouwen we aan de toekomst van media in het AI-tijdperk. We brengen het beste platform, de meest getalenteerde mensen en de sterkste partners samen om baanbrekende oplossingen te creëren die merken laten groeien. Onze kernwaarden? We zijn&nbsp;<strong><em>Extraordinary</em></strong>,&nbsp;<strong><em>Open</em></strong>&nbsp;en&nbsp;<strong><em>Optimistic</em></strong>&nbsp;– altijd op zoek naar nieuwe kansen en klaar om grenzen te verleggen.</p> <p>Ben jij klaar om&nbsp;<em>je onder te dompelen in</em>&nbsp;de dynamische wereld van digitale marketing en waardevolle praktijkervaring op te doen? Bij WPP Media werken we samen met toonaangevende merken zoals AdAlliance, Google, Amazon en DPG aan de meest innovatieve en datagedreven digitale campagnes. Wij zoeken een gedreven en leergierige&nbsp;<strong>stagiair(e)</strong>&nbsp;die zich wil specialiseren in Digital Video &amp; Audio Advertising. Is jouw passie online media, data en wil je impact maken&nbsp;<em>tijdens je stageperiode</em>? Dan is dit jouw kans!</p> <p><strong>Jouw Rol als Stagiair(e) Digital Video &amp; Audio Advertising in Eindhoven:&nbsp;</strong></p> <p>Online Video en Audio groeien exponentieel en zijn de snelst ontwikkelende en meest innovatieve vakgebieden binnen digitale marketing. Kanalen zoals YouTube, Twitch, Videoland en diverse audioplatformen zitten vol met waardevolle data die we gebruiken om de online campagnes van onze adverteerders te optimaliseren. Tijdens je stage krijg je de kans om hier direct aan bij te dragen.</p> <p>Als Stagiair(e) Digital Video &amp; Audio Advertising bij WPP Media word je onderdeel van een innovatief en snelgroeiend team. Je ondersteunt en werkt mee aan projecten voor de grootste merken in Nederland, waaronder RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>Wat ga je doen? </strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;Je&nbsp;<em>zal meewerken aan</em>&nbsp;de ontwikkeling van geïntegreerde programmatic media plannen voor Video en Audio campagnes, waarbij je inzicht krijgt in de strategie.</li> <li><strong>Campagne Management &amp; Optimalisatie:</strong>&nbsp;Je&nbsp;<em>assisteert bij het managen en optimaliseren</em>&nbsp;van lopende Video en/of Audio campagnes op diverse platformen. Je leert hoe je continu analyseert en optimaliseert, waarbij je jouw analytische vaardigheden verder ontwikkelt!</li> <li><strong>Data-gedreven Inzichten:</strong>&nbsp;Je&nbsp;<em>ondersteunt bij het omzetten</em>&nbsp;van complexe data in waardevolle en inzichtelijke rapportages, en draagt zo bij aan het realiseren van optimale performance voor onze campagnes.</li> <li><strong>Innovatie &amp; Procesverbetering:</strong>&nbsp;Je bent proactief op zoek naar nieuwe verbeteringen, oplossingen en tools (denk aan AI-toepassingen) om campagnes en processen continu te optimaliseren. We moedigen je aan om met frisse ideeën te komen!</li> </ul> <p><strong>Dit Ben Jij: </strong></p> <ul> <li><strong>Opleiding:</strong>&nbsp;Je volgt een HBO/WO-opleiding en bent op zoek naar een afstudeerstage, bij voorkeur in een richting gerelateerd aan media, marketing of communicatie.</li> <li><strong>Beschikbaarheid</strong>: Je bent beschikbaar vanaf januari/februari 2027 voor een periode van minimaal 5 maanden. Je kunt 4/5 dagen per week meewerken.</li> <li><strong>Passie voor Digitale Media:</strong>&nbsp;Grote interesse in online marketing, digitale media, programmatic advertising en data. Je staat te popelen om hier meer over te leren!</li> <li><strong>Analytisch &amp; Leergierig:</strong>&nbsp;Je hebt aanleg voor analytisch denken en bent leergierig om inzichten uit data te halen en te zien hoe campagnes geoptimaliseerd worden. Je bent proactief en gemotiveerd om te leren.</li> <li><strong>Teamplayer &amp; Groeimindset:</strong>&nbsp;Een teamplayer die wil groeien binnen een specifiek marketingvakgebied en altijd op zoek is naar nieuwe kennis.</li> <li><strong>Innovatief:</strong>&nbsp;Je bent nieuwsgierig naar nieuwe technologieën en de rol van AI in media, en durft hierover mee te denken.</li> </ul> <p><strong>Wat bieden wij?</strong></p> <ul> <li>Een stagevergoeding van €450 per maand op basis van een fulltime stage;</li> <li>Persoonlijke 1-op1 begeleiding van een ervaren collega om jezelf optimaal te ontwikkelen;</li> <li>Een open, informele werksfeer waarin iedereen zichzelf kan zijn en waar jouw input telt;</li> <li>Toegang tot een groot internationaal netwerk vol kansen;</li> <li>Een dynamische werkplek waar je kunt samenwerken op onze bruisende kantoren in Sittard, Eindhoven en Amsterdam.</li> </ul> <p><strong>Klaar om je stage bij WPP Media te starten?</strong> Stuur dan nu je CV en motivatiebrief en wie weet verwelkomen we jou binnenkort in ons team!</p> <p>&nbsp;</p> <p><strong>Let op:</strong>&nbsp;Voor al onze stages geldt dat je gedurende jouw gehele stageperiode ingeschreven moet staan bij een opleidingsinstituut.</p> <p>&nbsp;</p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
-    "posted_at": "2026-10-09T16:33:30-04:00",
+    "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate who is currently enrolled in an educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not suitable for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority. Additionally, the focus on digital marketing and programmatic advertising does not match the candidate's strong background in full-stack software engineering and fintech.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 15,
+    "id": 30,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2050,10 +2052,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5180483008",
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><strong>Hey future media expert! Ready to make your mark in the dynamic world of digital marketing?</strong></p> <p>At WPP Media, part of the global WPP media collective, we are building the future of media in the AI era. We bring together the best platforms, the most talented people, and the strongest partners to create groundbreaking solutions that help brands grow. Our core values? We are <strong>Extraordinary, Open, and Optimistic</strong> – always looking for new opportunities and ready to push boundaries.</p> <p>Are you ready to immerse yourself in the dynamic world of digital marketing and gain valuable practical experience? At WPP Media, we collaborate with leading brands such as AdAlliance, Google, Amazon, and DPG on the most innovative and data-driven digital campaigns. We are looking for a driven and eager-to-learn intern who wants to specialize in Digital Video &amp; Audio Advertising. Do you have a passion for online media and data, and do you want to make an impact during your internship? Then this is your chance!</p> <p><strong>Your Role as Digital Video &amp; Audio Advertising Intern in Amsterdam:</strong></p> <p>The Online Video and Audio domain is growing exponentially and one of the most innovative fields within digital marketing. Channels like YouTube, Twitch, Videoland, and various audio platforms are full of valuable data that we use to optimize our advertisers' online campaigns. During your internship, you will have the opportunity to contribute directly to this.</p> <p>As a Digital Video &amp; Audio Advertising Intern at WPP Media, you will become part of an innovative and fast-growing team. You will support and work on projects for the biggest brands in the Netherlands, including RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>What will you do?</strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;You will contribute to the development of integrated programmatic media plans for Video and Audio campaigns, gaining insight into the strategy.</li> <li><strong>Campaign Management &amp; Optimization:</strong>&nbsp;You will assist in managing and optimizing ongoing Video and/or Audio campaigns across various platforms. You will learn how to continuously analyze and optimize, further developing your analytical skills!</li> <li><strong>Data-driven Insights:</strong>&nbsp;You will help translate complex data into valuable and insightful reports, thereby contributing to achieving optimal performance for our campaigns.</li> <li><strong>Innovation &amp; Process Improvement:</strong>&nbsp;You will proactively seek new improvements, solutions, and tools (think AI applications) to continuously optimize campaigns and processes. We encourage you to come up with fresh ideas!</li> </ul> <p><strong>This Is You:</strong></p> <ul> <li><strong>Education:</strong>&nbsp;You are pursuing a HBO/WO (Dutch vocational/university education) degree and are looking for a graduation internship, preferably in a field related to media, marketing, or communication.</li> <li><strong>Availability:</strong>&nbsp;You are available from September 2026 for a minimum period of 5 months. You can work 4/5 days a week.</li> <li><strong>Passion for Digital Media:</strong>&nbsp;Great interest in online marketing, digital media, programmatic advertising, and data. You are eager to learn more about this!</li> <li><strong>Analytical &amp; Eager to Learn:</strong>&nbsp;You have a talent for analytical thinking and are keen to derive insights from data and see how campaigns are optimized. You are proactive and motivated to learn.</li> <li><strong>Team Player &amp; Growth Mindset:</strong>&nbsp;A team player who wants to grow within a specific marketing field and is always looking for new knowledge.</li> <li><strong>Innovative:</strong>&nbsp;You are curious about new technologies and the role of AI in media, and dare to contribute ideas about this.</li> </ul> <p><strong>What do we offer?</strong></p> <ul> <li>An internship allowance of €450 per month based on a full-time internship;</li> <li>start date: January/February</li> <li>Personal 1-on-1 guidance from an experienced colleague to help you develop optimally;</li> <li>An open, informal working atmosphere where everyone can be themselves and where your input matters;</li> <li>Access to a large international network full of opportunities;</li> <li>A dynamic workplace where you can collaborate in our vibrant offices in Amsterdam and Eindhoven.</li> </ul> <p><strong>Ready to start your internship at WPP Media?</strong> Send your CV and cover letter now, and who knows, we might welcome you to our team in Amsterdam soon!</p> <p><em><strong>Note</strong>: For all our internships, it is required that you are enrolled at an educational institution for the entire duration of the internship.</em></p> <p>&nbsp;</p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
-    "posted_at": "2026-10-09T16:33:30-04:00",
+    "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior-level positions, making this opportunity completely misaligned with their career stage and aspirations.",
+    "reasoning": "This job posting is for an internship position, which is not aligned with the candidate's seniority level as a senior full-stack software engineer with over 10 years of experience. The candidate is explicitly not interested in junior or entry-level roles, making this opportunity completely unsuitable. Additionally, the role requires enrollment in an educational institution, which the candidate does not meet.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2074,7 +2076,7 @@
     "reasoning": null
   },
   {
-    "id": 13,
+    "id": 28,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2084,15 +2086,15 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5148575008",
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><strong>Over WPP Media: Waar Innovatie en Groei Samenkomen<br></strong>Als onderdeel van het wereldwijde WPP mediacollectief, zijn we gebouwd voor het AI-tijdperk. We brengen het beste platform, de beste mensen en de beste partners samen om innovatieve oplossingen te creëren die merken ongeëvenaarde groei opleveren. Onze kernwaarden:</p> <ul> <li><strong>We’re Extraordinary:</strong>&nbsp;We verleggen grenzen en dagen het gewone denken uit.</li> <li><strong>We’re Open:</strong>&nbsp;We creëren vertrouwen en begrip door samen te werken.</li> <li><strong>We’re Optimistic:</strong>&nbsp;Een 'growth mindset' zit in ons DNA; verandering is een kans.</li> </ul> <p><strong>Ben jij klaar om de dynamische wereld van digitale marketing te veroveren?</strong>&nbsp;Bij WPP Media werken we samen met toonaangevende merken zoals AdAlliance, Google, Amazon en DPG aan de meest innovatieve en datagedreven digitale campagnes. Wij zoeken een gedreven en leergierige collega die zich wil specialiseren in&nbsp;<strong>Digital Video &amp; Audio Advertising</strong>. Is jouw passie online media, data en wil je impact maken? Dan is dit jouw kans!</p> <p><strong>Jouw Rol als Digital Video &amp; Audio Specialist in Eindhoven: Vorm de Toekomst van Media<br></strong>Online Video en Audio groeien exponentieel en zijn de snelst ontwikkelende en meest innovatieve vakgebieden binnen digitale marketing. Kanalen zoals YouTube, Twitch, Videoland en diverse audioplatformen zitten vol met waardevolle data die we gebruiken om de online campagnes van onze adverteerders te optimaliseren.</p> <p>Als Digital Video &amp; Audio Specialist in Eindhoven bij WPP Media word je onderdeel van een innovatief en snelgroeiend team. Je werkt voor de grootste merken in Nederland, waaronder RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>Wat ga je doen? Jouw Impact:</strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;Je draagt de verantwoordelijkheid voor de ontwikkeling van geïntegreerde programmatic media plannen voor Video en Audio campagnes.</li> <li><strong>Campagne Management &amp; Optimalisatie:</strong>&nbsp;Je managet lopende Video en/of Audio campagnes, waarbij je continu analyseert en optimaliseert op diverse platformen. Jouw analytische vaardigheden zijn hierbij cruciaal!</li> <li><strong>Data-gedreven Inzichten:</strong>&nbsp;Je zet complexe data om in waardevolle en inzichtelijke rapportages, waarmee je de beste performance voor onze campagnes realiseert.</li> <li><strong>Innovatie &amp; Procesverbetering:</strong>&nbsp;Je bent proactief op zoek naar nieuwe verbeteringen, oplossingen en tools (denk aan AI-toepassingen) om campagnes en processen continu te optimaliseren.</li> </ul> <p><strong>Dit ben jij:&nbsp;</strong></p> <ul> <li><strong>Opleiding:</strong>&nbsp;HBO/WO werk- en denkniveau.</li> <li><strong>Passie voor Digitale Media:</strong>&nbsp;Grote interesse in online marketing, digitale media, programmatic advertising en data.</li> <li><strong>Analytisch &amp; Resultaatgericht:</strong>&nbsp;Sterk analytisch vermogen; je haalt inzichten uit data en zorgt dat campagnes optimaal presteren. Je bent proactief en resultaatgericht.</li> <li><strong>Teamplayer &amp; Groeimindset:</strong>&nbsp;Een teamplayer die wil groeien binnen een specifiek marketingvakgebied en altijd op zoek is naar nieuwe kennis.</li> <li><strong>Innovatief:</strong>&nbsp;Je bent nieuwsgierig naar nieuwe technologieën en de rol van AI in media.</li> </ul> <p><strong>Wat b</strong><strong>ieden wij? Jouw voordelen bij WPP Media</strong></p> <ul> <li><strong>Flexibiliteit:</strong>&nbsp;Thuiswerken, flexibele werktijden én de mogelijkheid om tijdelijk vanuit het buitenland (EU) te werken.</li> <li><strong>Groei &amp; Ontwikkeling:</strong>&nbsp;Volop groeikansen in een innovatief en dynamisch team, met veel ruimte voor persoonlijke en professionele ontwikkeling.</li> <li><strong>Salaris:</strong> Het salaris bedraagt €2.700 tot €3.400 bruto per maand op basis van relevante werkervaring.</li> <li><strong>WPP Academy:</strong>&nbsp;Toegang tot de WPP Academy voor uitgebreide trainingen en workshops in zowel hard als soft skills. Word een expert!</li> <li><strong>Reiskostenvergoeding:</strong>&nbsp;Volledige vergoeding van reiskosten.&nbsp;</li> <li><strong>Vakantie &amp; Extra's:</strong>&nbsp;8% vakantiegeld en 26 vakantiedagen per jaar (met de optie om 9 extra dagen bij te kopen!).</li> <li><strong>Thuiswerkvergoeding:</strong>&nbsp;Hybrid Working allowance van €30 netto per maand bij fulltime.</li> <li><strong>BYOD:</strong>&nbsp;Maandelijkse telefoonvergoeding van €57,50 netto (Bring Your Own Device).</li> <li><span data-teams=\"true\"><strong>Epassi-vergoeding</strong> van&nbsp;<strong>€10 </strong>per maand die je kunt uitgeven aan persoonlijke behoeften.</span></li> <li><strong>Faciliteiten:</strong>&nbsp;Voordelige lunch in de kantine en een barista voor verse koffie.</li> <li><strong>Zorgverzekering:</strong>&nbsp;Profiteer van onze collectieve zorgverzekering.</li> </ul> <p><strong>Klaar voor de uitdaging en wil je meebouwen aan de toekomst van digitale media?</strong></p> <p>Klik op 'Apply', stuur je CV en motivatie, en we nemen snel contact met je op!</p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
-    "posted_at": "2026-10-09T16:33:30-04:00",
+    "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align well with the candidate's background as a senior full-stack software engineer. While the candidate has strong technical skills in software engineering, the role focuses heavily on digital marketing, programmatic advertising, and data analysis, which are not highlighted in the candidate's experience. The candidate's fintech background and full-stack development expertise do not directly translate to the responsibilities of managing video and audio campaigns. Additionally, the job requires a passion for digital media and marketing, which is not evident in the candidate's profile.",
+    "verdict": "no",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a passion for digital media and marketing, which is not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 27,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2102,10 +2104,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5378900008",
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><em>Note: for this role it is necessary to speak and write fluently Dutch.</em></p> <p>Word jij enthousiast van het bouwen van schaalbare data-oplossingen op het snijvlak van marketing, analytics en data engineering? Vind je het leuk om technische uitdagingen op te lossen en marketingdata automatisch beschikbaar te maken voor analyses, dashboards en activatie? Dan zijn wij op zoek naar jou!</p> <p><strong>Wat ga je doen als Analytics Engineer?</strong></p> <p>Als Analytics Engineer ben je verantwoordelijk voor het ontwerpen, bouwen en beheren van data-oplossingen die marketing- en klantdata toegankelijk maken voor analyses, rapportages en activatie. Je werkt op het snijvlak van digital analytics, data engineering en marketing technology.</p> <p>Je ontwikkelt en onderhoudt datamodellen, geautomatiseerde datastromen en integraties tussen verschillende platformen. Daarbij maak je gebruik van tools zoals DBT, Adverity, data warehouses, API-koppelingen en Customer Data Platforms (CDP's). Je zorgt ervoor dat data uit marketingplatformen, analytics-tools en andere databronnen op een betrouwbare en schaalbare manier beschikbaar komt voor klanten en collega's.</p> <p>Naast het technische werk denk je mee over de architectuur van data-oplossingen en adviseer je klanten over de mogelijkheden om hun marketing- en datastrategie verder te professionaliseren. Hierbij werk je intensief samen met andere Data &amp; Tech specialisten.</p> <p><strong>Wie ben jij?</strong></p> <ul> <li>Je hebt minimaal 3 jaar ervaring binnen analytics engineering, marketing technology of data engineering</li> <li>Je hebt ervaring met dbt en het modelleren van data binnen moderne data platformen</li> <li>Je hebt goede SQL-vaardigheden en ervaring met het bouwen van datamodellen</li> <li>Je hebt ervaring met API-integraties en geautomatiseerde datastromen</li> <li>Je hebt ervaring met marketing- en klantdataplatformen zoals CDP's, marketing automation platformen of vergelijkbare oplossingen</li> <li>Kennis van de Google Marketing Platform stack, GA4, BigQuery of vergelijkbare ecosystemen is een pré</li> <li>Je hebt ervaring met scripting in Python of een vergelijkbare programmeertaal</li> <li>Je begrijpt hoe marketingprocessen werken en vindt het leuk om deze verder te automatiseren</li> <li>Je bent in staat technische architecturen begrijpelijk uit te leggen aan niet-technische stakeholders</li> <li>Je bent zelfstandig, neemt initiatief en vindt het leuk om klanten te adviseren</li> <li>Je spreekt en schrijft vloeiend Nederlands en Engels</li> </ul> <p><span data-ccp-props=\"{\"134245417\":true,\"335559739\":80,\"469777462\":[220,720],\"469777927\":[0,0],\"469777928\":[1,1]}\"><strong>Wat bieden wij?<br></strong>Bij WPP Media werk je in een ambitieus en creatief team aan een merk dat volop in ontwikkeling is. Je krijgt de ruimte om echt impact te maken op hoe we ons in de markt positioneren, hoe we proposities lanceren en hoe we thought leadership tot leven brengen.</span></p> <ul> <li><strong>Flexibiliteit:</strong>&nbsp;Mogelijkheid om thuis te werken, flexibele werktijden én zelfs voor een tijdje in het buitenland (EU).</li> <li><strong>Groeikansen</strong>: Volop ruimte voor ontwikkeling in een innovatief en dynamisch team.</li> <li><strong>Salaris:</strong>&nbsp;Een marktconform salaris (op basis van 38,75 uur per week).</li> <li><strong>Toegang tot M Academy:</strong>&nbsp;Voor uitgebreide trainingen en workshops in zowel hard als soft skills, inclusief specifieke AI-trainingen.</li> <li><strong>Mental Wellbeing</strong>: Toegang tot het platform Tellus</li> <li><strong>Vakantie</strong>: 8% vakantiegeld en 26 vakantiedagen per jaar (plus 9 extra bij te kopen!).</li> <li><strong>Hybrid Working allowance</strong>: €30 netto per maand bij fulltime.</li> <li><strong>Bring Your Own Device (BYOD):</strong>&nbsp;Je ontvangt een maandelijkse telefoonvergoeding van €57,50 netto.</li> <li><span data-teams=\"true\"><strong>Epassi-vergoeding</strong> van&nbsp;<strong>€10 </strong>per maand die je kunt uitgeven aan persoonlijke behoeften.</span></li> <li><strong>Lunchfaciliteiten</strong>: Voordelige lunch in de kantine en een barista voor verse koffie.</li> <li><strong>Zorgverzekering</strong>: Profiteer van onze collectieve zorgverzekering.</li> </ul> <p><strong>Team:</strong></p> <p>Naast het samenwerken met klanten en interne teams ben je dagelijks bezig met het ontwikkelen van nieuwe oplossingen die schaalbaar inzetbaar zijn voor meerdere klanten. Omdat iedere klant andere wensen en doelen heeft werk je met uiteenlopende technologieën; van API-integraties en CDP's tot cloud data platformen, dbt-modellen en marketing automatiseringen.</p> <p>Binnen ons interdisciplinaire Data, Tech &amp; Analytics team delen we kennis en toffe projecten, maar ook daarbuiten biedt WPP Media allerlei mogelijkheden om te leren en ontwikkelen. Daarnaast duiken we graag samen het terras op en organiseren activiteiten als boulderen of pubquizes!</p> <p>&nbsp;</p> <div><strong><span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">Ben</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">jij</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">de</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">Analytics</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">Engineer</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">die</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">wij</span> <span class=\"___xxxjie0 f1w7gpdv f1gqqdtu\">zoeken?</span></strong><br>Wil je werken <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">met</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">moderne</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">data-platformen,</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">marketingtechnologie</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">en</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">analytics</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">in</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">een</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">team</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">vol</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">gedreven</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">specialisten?</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">Dan</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">maken</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">we</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">graag</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">kennis</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">met</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">je.</span> <span class=\"___1cs5bdp f1w7gpdv f5p0z4x\">Solliciteer</span> <span class=\"___xxxjie0 f1w7gpdv f1gqqdtu\">direct!</span></div><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
-    "posted_at": "2026-10-09T16:33:30-04:00",
+    "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not indicate. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the analytics focus of this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, data modeling, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not indicate they possess. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2570,7 +2572,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 14,
+    "id": 29,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2580,10 +2582,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5399314008",
     "description": "<div class=\"content-intro\"><p><strong>About WPP Media</strong></p> <p>WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence, and world-class partnerships – all united by our pioneering agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity, and deliver transformational growth. </p> <p>WPP Media is WPP's AI-driven media operating unit, bringing together media, data, and partnerships to deliver creative personalisation at scale. Connected through WPP Open and powered by Open Intelligence, clients see exactly where, how, and why their media investment is working.</p> <p>For more information, visit <a href=\"wppmedia.com\">wppmedia.com</a>.</p></div><p><strong>Over WPP Media: Waar Innovatie en Groei Samenkomen<br></strong>Als onderdeel van het wereldwijde WPP mediacollectief, zijn we gebouwd voor het AI-tijdperk. We brengen het beste platform, de beste mensen en de beste partners samen om innovatieve oplossingen te creëren die merken ongeëvenaarde groei opleveren. Onze kernwaarden:</p> <ul> <li><strong>We’re Extraordinary:</strong>&nbsp;We verleggen grenzen en dagen het gewone denken uit.</li> <li><strong>We’re Open:</strong>&nbsp;We creëren vertrouwen en begrip door samen te werken.</li> <li><strong>We’re Optimistic:</strong>&nbsp;Een 'growth mindset' zit in ons DNA; verandering is een kans.</li> </ul> <p><strong>Ben jij klaar om de dynamische wereld van digitale marketing te veroveren?</strong>&nbsp;Bij WPP Media werken we samen met toonaangevende merken zoals AdAlliance, Google, Amazon en DPG aan de meest innovatieve en datagedreven digitale campagnes. Wij zoeken een gedreven en leergierige collega die zich wil specialiseren in&nbsp;<strong>Digital Video &amp; Audio Advertising</strong>. Is jouw passie online media, data en wil je impact maken? Dan is dit jouw kans!</p> <p><strong>Jouw Rol als Digital Video &amp; Audio Specialist in Sittard: Vorm de Toekomst van Media<br></strong>Online Video en Audio groeien exponentieel en zijn de snelst ontwikkelende en meest innovatieve vakgebieden binnen digitale marketing. Kanalen zoals YouTube, Twitch, Videoland en diverse audioplatformen zitten vol met waardevolle data die we gebruiken om de online campagnes van onze adverteerders te optimaliseren.</p> <p>Als Digital Video &amp; Audio Specialist in Sittard bij WPP Media word je onderdeel van een innovatief en snelgroeiend team. Je werkt voor de grootste merken in Nederland, waaronder RTL, Unilever, Kruidvat, Nederlandse Loterij &amp; Eneco.</p> <p><strong>Wat ga je doen? Jouw Impact:</strong></p> <ul> <li><strong>Programmatic Media Planning:</strong>&nbsp;Je draagt de verantwoordelijkheid voor de ontwikkeling van geïntegreerde programmatic media plannen voor Video en Audio campagnes.</li> <li><strong>Campagne Management &amp; Optimalisatie:</strong>&nbsp;Je managet lopende Video en/of Audio campagnes, waarbij je continu analyseert en optimaliseert op diverse platformen. Jouw analytische vaardigheden zijn hierbij cruciaal!</li> <li><strong>Data-gedreven Inzichten:</strong>&nbsp;Je zet complexe data om in waardevolle en inzichtelijke rapportages, waarmee je de beste performance voor onze campagnes realiseert.</li> <li><strong>Innovatie &amp; Procesverbetering:</strong>&nbsp;Je bent proactief op zoek naar nieuwe verbeteringen, oplossingen en tools (denk aan AI-toepassingen) om campagnes en processen continu te optimaliseren.</li> </ul> <p><strong>Dit Ben Jij: Jouw Profiel</strong></p> <ul> <li><strong>Opleiding:</strong>&nbsp;HBO/WO werk- en denkniveau.</li> <li><strong>Passie voor Digitale Media:</strong>&nbsp;Grote interesse in online marketing, digitale media, programmatic advertising en data.</li> <li><strong>Analytisch &amp; Resultaatgericht:</strong>&nbsp;Sterk analytisch vermogen; je haalt inzichten uit data en zorgt dat campagnes optimaal presteren. Je bent proactief en resultaatgericht.</li> <li><strong>Teamplayer &amp; Groeimindset:</strong>&nbsp;Een teamplayer die wil groeien binnen een specifiek marketingvakgebied en altijd op zoek is naar nieuwe kennis.</li> <li><strong>Innovatief:</strong>&nbsp;Je bent nieuwsgierig naar nieuwe technologieën en de rol van AI in media.</li> </ul> <p><strong>Wat Bieden Wij? Jouw Voordelen bij WPP Media</strong></p> <ul> <li><strong>Flexibiliteit:</strong>&nbsp;Thuiswerken, flexibele werktijden én de mogelijkheid om tijdelijk vanuit het buitenland (EU) te werken.</li> <li><strong>Groei &amp; Ontwikkeling:</strong>&nbsp;Volop groeikansen in een innovatief en dynamisch team, met veel ruimte voor persoonlijke en professionele ontwikkeling.</li> <li><strong>Salaris:</strong> Het salaris bedraagt €2.700 tot €3.400 bruto per maand op basis van relevante werkervaring.</li> <li><strong>WPP Academy:</strong>&nbsp;Toegang tot de WPP Academy voor uitgebreide trainingen en workshops in zowel hard als soft skills. Word een expert!</li> <li><strong>Reiskostenvergoeding:</strong>&nbsp;Volledige vergoeding van reiskosten.&nbsp;</li> <li><strong>Vakantie &amp; Extra's:</strong>&nbsp;8% vakantiegeld en 26 vakantiedagen per jaar (met de optie om 9 extra dagen bij te kopen!).</li> <li><strong>Thuiswerkvergoeding:</strong>&nbsp;Hybrid Working allowance van €30 netto per maand bij fulltime.</li> <li><strong>BYOD:</strong>&nbsp;Maandelijkse telefoonvergoeding van €57,50 netto (Bring Your Own Device).</li> <li><strong>Faciliteiten:</strong>&nbsp;Voordelige lunch in de kantine en een barista voor verse koffie.</li> <li><strong>Zorgverzekering:</strong>&nbsp;Profiteer van onze collectieve zorgverzekering.</li> </ul> <p><strong>Klaar voor de uitdaging en wil je meebouwen aan de toekomst van digitale media?</strong></p> <p>Klik op 'Apply', stuur je CV en motivatie, en we nemen snel contact met je op!</p> <p><em>&nbsp;</em></p><div class=\"content-conclusion\"><p></p> <p><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW227196529 BCX8\">Please read our <a href=\"https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment\">Privacy Notice</a></span></span><span class=\"TextRun SCXW227196529 BCX8\" lang=\"EN-CA\" data-contrast=\"auto\">&nbsp;<span class=\"NormalTextRun SCXW227196529 BCX8\">for more information on how we process the information you provide.</span></span><span class=\"EOP SCXW227196529 BCX8\" data-ccp-props=\"{\"201341983\":0,\"335559739\":0,\"335559740\":276}\">&nbsp;</span></p></div>",
-    "posted_at": "2026-10-09T16:33:30-04:00",
+    "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and campaign management. The candidate's background is primarily in software engineering with a strong emphasis on backend and frontend development in the fintech sector, which does not align with the marketing and media focus of this role. Additionally, the position requires a passion for digital media and marketing, which is not highlighted in the candidate's profile. Therefore, this opportunity does not match the candidate's skills or career aspirations.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, programmatic advertising, and data analysis. The candidate's background as a senior full-stack software engineer with a strong focus on backend and frontend development in fintech does not align with the requirements for a role centered around media planning and campaign management. Additionally, the candidate's experience does not indicate a passion or expertise in digital media or advertising, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2642,7 +2644,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 1,
+    "id": 3,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2652,7 +2654,7 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/6761873",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Java Software Engineer / Senior Java Engineer</strong></p> <p>Our engineers are reshaping the payments landscape. We’re looking for more talented problem solvers to help us address a unique set of challenges.</p> <p><strong>We are looking for Mid level and Senior Java Engineers for a number of positions in the teams within our Customer Experience Solution.</strong></p> <p>As an engineer at Adyen , you will be<strong> </strong>responsible for the full development cycle from software design to testing and ensuring everything works as expected in production. You will work with one of the biggest PostgreSQL databases out there, focusing on maintaining the platform's performance and reliability.</p> <p><strong>Who you are:</strong></p> <ul> <li>You have experience with Java, web services, REST APIs and SQL / PostgreSQL</li> <li>You have worked with and deployed high-throughput and highly reliable services</li> <li>You are proactive, you take ownership and you strive for quality, from both a technical and product perspective</li> <li>You have excellent communication skills and you can explain complex, technical concepts to a non-technical audience</li> <li>You are a team player who knows when and how to involve other people to hear different perspectives</li> <li>You know how to evaluate tradeoffs and how to balance speed vs tech debt</li> <li>You enjoy working on a global product that impacts millions of people everyday</li> <li>Nice to have: experience with RabbitMQ, Kafka, Elasticsearch</li> </ul> <p>&nbsp;</p> <p><strong>What you’ll do:</strong></p> <ul> <li>You will build and maintain our distributed high-performance platform</li> <li>You will be part of a diverse and inclusive team</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring code live that impacts many businesses and shoppers</li> <li>You will be fully responsible from its initial design to bringing new functionality live</li> <li>Identify and improve parts of the platform to make it more robust and scalable</li> <li>Collaborate across teams and time zones to make things happen, review code and be open to feedback</li> </ul> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p>&nbsp;</p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.<br><br></span></p> <p><span style=\"font-weight: 400;\">Note: This role is based out of our&nbsp;<strong>Amsterdam</strong> office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.<br>&nbsp;</span></p>",
-    "posted_at": "2026-10-09T10:12:44-04:00",
+    "posted_at": "2026-10-19T06:55:37-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null,
@@ -3032,7 +3034,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 12,
+    "id": 10,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3068,7 +3070,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 16,
+    "id": 14,
     "external_id": "8010489003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3081,7 +3083,7 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Analytics Engineer II position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote positions anywhere in Europe. Additionally, the role requires specific experience in analytics engineering and familiarity with dbt and Snowflake, which are not mentioned in the candidate's background. The candidate's expertise is more aligned with full-stack software engineering and fintech, making this position a poor fit.",
+    "reasoning": "This job posting is for an Analytics Engineer II position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the role requires specific experience in analytics engineering and familiarity with dbt and Snowflake, which the candidate does not explicitly mention in their background. The candidate's focus is on full-stack and backend software engineering, making this position unrelated to their expertise.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -3230,7 +3232,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 14,
+    "id": 11,
     "external_id": "8281670",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3243,12 +3245,12 @@
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java, SQL, and React, which aligns with some aspects of the role. However, the job requires significant experience in systems programming and C++ development, which the candidate lacks. Additionally, the focus on database query engines and performance tuning is not a primary area of the candidate's expertise, making this a tangential fit rather than a strong match.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate lacks. Additionally, the role focuses on database query engines, an area where the candidate has limited direct experience. Although the candidate's skills in Java and SQL are relevant, they do not align closely with the core requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 13,
+    "id": 12,
     "external_id": "8281662",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3261,7 +3263,7 @@
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. Additionally, the role focuses on database query engines, an area where the candidate has limited direct experience. Although the candidate's skills in Java and SQL are relevant, they do not align closely enough with the core requirements of this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. The role focuses on developing a distributed query system and requires knowledge of database query engines, which is not mentioned in the candidate's experience. Additionally, the emphasis on high-performance code and large code bases in C++ presents a gap in the candidate's skill set.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -3536,7 +3538,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 25,
+    "id": 23,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3549,12 +3551,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not align with the candidate's preferences.",
+    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which is not compatible with the candidate's location preference of the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, whereas the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not align with the candidate's preferences. Overall, the geographical constraint and mismatch in required programming languages make this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
   {
-    "id": 28,
+    "id": 26,
     "external_id": "7931494003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3567,12 +3569,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Staff Software Engineer position based in Spain, which does not align with the candidate's preference of being based in the Netherlands. Additionally, the role requires extensive experience with Python or Kotlin and developing highly available distributed systems using AWS, which the candidate does not explicitly demonstrate in their CV. The requirement for on-call rotation may also not align with the candidate's preferences.",
+    "reasoning": "This job posting is for a Staff Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate. Additionally, the role requires extensive experience with Python or Kotlin and developing distributed systems on AWS, which the candidate does not have. The requirement for on-call rotation may also not align with the candidate's preferences.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 27,
+    "id": 25,
     "external_id": "7820451003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3585,12 +3587,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Staff Software Engineer position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the requirement for the candidate to be based in Spain is a hard constraint that the candidate cannot meet. While the candidate has strong qualifications in backend and frontend development, the location requirement makes this opportunity unsuitable.",
+    "reasoning": "This position requires the candidate to be based in Spain, which contradicts the candidate's preference for roles in the Netherlands. Additionally, the job emphasizes experience with Python, Kotlin, AWS, and Kubernetes, which are not highlighted in the candidate's profile. While the candidate has strong experience in Java and SQL, the specific backend technologies required for this role are a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 26,
+    "id": 24,
     "external_id": "7799346003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3603,12 +3605,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not have as their primary backend language is Java. The requirement for 1.5+ years of experience also does not align with the candidate's seniority level.",
+    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not possess, as their primary backend expertise is in Java. The requirement for 1.5+ years of experience also does not align with the candidate's seniority level.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 24,
+    "id": 22,
     "external_id": "7807506003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3621,12 +3623,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level of over 10 years. Additionally, the position requires the candidate to be based in Spain, which contradicts the candidate's current location in the Netherlands and their preference for roles in that region. The job also specifies a need for experience with Python or Kotlin, which the candidate does not explicitly list as a strong skill.",
+    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level of over 10 years. Additionally, the position is remote but specifically requires the candidate to be based in Spain, which contradicts the candidate's preference for roles in the Netherlands. Therefore, this opportunity is not a fit for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 23,
+    "id": 21,
     "external_id": "7799935003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3639,12 +3641,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job specifically requires expertise in React Native, which the candidate does not mention in their CV. Additionally, the role emphasizes mobile application development, an area that is not highlighted in the candidate's experience. The candidate's skills in Java and ReactJS are relevant, but the lack of direct experience with mobile frameworks and the specific requirements of the role create a significant gap.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly in Java and React, which aligns with some of the job's requirements. However, the role specifically requires expertise in React Native, which the candidate does not have. Additionally, while the candidate has experience in agile environments and product ownership, the focus on mobile application development and the specific technologies mentioned in the job posting present a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 21,
+    "id": 19,
     "external_id": "7806683003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3657,12 +3659,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the role requires experience with Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not align with the candidate's preferences.",
+    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes experience with Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for developing highly available distributed systems using AWS and Kubernetes is also a gap, as these technologies are not mentioned in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 20,
+    "id": 18,
     "external_id": "7801373003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3675,12 +3677,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which violates the candidate's constraint of not relocating to the US or working US-on-site. Additionally, the role requires experience with Kotlin, which the candidate does not possess. While the candidate has strong backend experience and a fintech background, the location requirement makes this opportunity unsuitable.",
+    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's preference for roles based in or targeting the Netherlands. Additionally, the role requires experience with Kotlin, which the candidate does not have, and emphasizes a focus on identity systems and KYC processes that may not match the candidate's fintech experience. The requirement for on-call rotation may also be a concern for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 19,
+    "id": 17,
     "external_id": "7806679003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3692,13 +3694,13 @@
     "description": "<div class=\"content-intro\"><p>At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.</p></div><p>The Fraud Engineering organization builds the foundational and tactical software that enables Affirm to respond strategically to fraud - both in real time and after the transaction. Our mission is to support business growth while protecting Affirm, our buyers, and our merchants. We evaluate risk at critical decision points in the user journey, rapidly adapt to evolving fraud patterns, and equip operations teams with the tools needed to investigate and mitigate fraud at scale.</p> <p>We’re looking for a Senior Software Engineer to join our fully remote team based in Europe. You’ll collaborate closely with stakeholders across North America - including teams in Product, Compliance, Machine Learning, Fraud Operations, Fraud Strategy, and other Fraud Engineering teams.</p> <p>The Fraud Engineering organization builds the foundational and tactical software that enables Affirm to respond strategically to fraud - both in real time and after the transaction. Our mission is to support business growth while protecting Affirm, our customers, and our merchants. We evaluate risk at critical decision points in the user journey, rapidly adapt to evolving fraud patterns, and equip operations teams with the tools needed to investigate and mitigate fraud at scale.&nbsp;</p> <p>The Fraud International Team (FIT) leads the engineering effort to extend Affirm's Fraud Decisioning System into markets beyond the US - Canada, the UK, Australia, and growing rapidly. We own real-time fraud decisioning for these markets, integrate region-specific risk vendors, and are building the platform that lets Affirm stand up fraud protection in a new country quickly and safely. As Affirm expands globally, FIT scales with it.&nbsp;</p> <p>We're looking for a Senior Software Engineer to join our fully remote team based in Europe. You'll collaborate closely with stakeholders across North America - including teams in Product, Compliance, Machine Learning, Fraud Operations, Fraud Strategy, and other Fraud Engineering teams.</p> <div><strong>What You'll Do</strong></div> <ul> <li>You will own and deliver quarterly goals for your team, leading engineers through ambiguity to solve open-ended problems, and ensuring that everyone is supported throughout delivery.</li> <li>You will design and implement real-time fraud decisioning services and APIs in Python or Kotlin, extending Affirm's Fraud Decisioning System to markets beyond the US.</li> <li>You will build and evolve the platform and tooling that let Affirm launch fraud decisioning in a new country quickly—turning market-by-market setup (rules, models, and vendor configuration) into a repeatable, low-friction path so launches scale sub-linearly with the number of markets.</li> <li>You will integrate region-specific fraud and risk vendors and help operationalize the machine learning and AI signals that power real-time decisioning, while using modern AI tooling to move faster as an engineer.</li> <li>You will support peers and stakeholders across the product development lifecycle - collaborating with Product, Machine Learning, Analytics, and Fraud Strategy, articulating technical constraints, and partnering on decisions that properly weigh risks and trade-offs.</li> <li>You will support the operations and availability of your team's systems by creating and monitoring metrics, escalating when needed, and contributing to keep-the-lights-on and on-call efforts.</li> <li>You will foster a culture of quality and ownership - setting and improving code review and design standards, mentoring teammates, and leading by example.</li> <li>On-Call Rotation - There would be an on-call rotation for this role as a requirement.</li> </ul> <div><strong>What We Look For</strong></div> <ul> <li>5+ years of experience building backend systems at scale using Python or Kotlin.&nbsp;</li> <li>Experience with distributed systems and infrastructure using AWS, MySQL/PostgreSQL, and Kubernetes.</li> <li>Strong system design skills and a track record of delivering maintainable, extensible services.</li> <li>Fluency with AI-driven engineering - every Affirm engineer builds with tools like Claude Code and most PRs are co-authored with AI, so directing and orchestrating AI and excelling in the reviewer's seat (setting intent, critically evaluating generated code, and owning its correctness, quality, and security) is a core expectation.</li> <li>Proficiency in SQL and working with data-rich environments.</li> <li>Familiarity with CI/CD practices and safe production deployments.</li> <li>Strong written and verbal communication skills, especially in distributed teams.</li> <li>A proactive, ownership-driven mindset with a focus on learning and team success.</li> <li>Experience with Snowflake, dbt, Airflow, or Chronosphere (nice to have)</li> <li>Background in fraud prevention, risk systems, or real-time decisioning (nice to have)</li> <li>Experience building for multiple markets or regions - internationalization or localization (nice to have)</li> <li>Experience working in the fintech sector or other highly regulated environments, with a strong understanding of risk, compliance, and operational constraints. (nice to have)</li> </ul> <h2><strong>Compensation &amp; Benefits</strong></h2> <p><strong>Base Pay Grade</strong>&nbsp;<strong>- N</strong></p> <p><strong>Equity Grade</strong>&nbsp;<strong>- 4</strong></p> <p>Employees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.&nbsp;</p> <p>Base pay is part of a total compensation package that may include monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents). In addition, the employees may be eligible for equity rewards offered by Affirm Holdings, Inc. (parent company).</p> <p>ESP base pay range per year: €86,000 &nbsp;- &nbsp;€122,000 &nbsp; &nbsp;</p> <p>Additional benefits include:</p> <ul> <li>Flexible Spending Wallets for tech, food and lifestyle</li> <li>Away Days - wellness days to take off work and recharge</li> <li>Learning &amp; Development programs</li> <li>Parental benefits</li> <li>Employee Resource &amp; Community Groups</li> </ul> <p>We are able to offer visa sponsorship for this role, but do require that someone is based in Spain for the role.</p> <div> <div> <p><strong>Location - Remote Spain</strong></p> </div> <div><strong>#LI-Remote</strong></div> </div><div class=\"content-conclusion\"><div> <p><strong>Remote-first with flexibility built in</strong><strong><br></strong>Affirm is proud to be a remote-first company. Most roles can be done from almost anywhere within the country of employment. Some positions may occasionally require in-person work at an Affirm office, and a few are office-based due to the nature of the work. All new hires will be invited to attend an in-person onboarding experience.</p> <p><strong>Benefits designed for you</strong><strong><br></strong>Our benefits reflect our commitment to care, transparency, and flexibility. Here are a few highlights:</p> <ul> <li>Health coverage at no cost: We cover 100% of premiums for employees and their dependents.</li> <li>Spending stipends: Monthly stipends support your tech setup, and the ability to choose health and wellness options that are right for you.</li> <li>Time off to recharge: Flexible time off and generous holiday calendars help you rest when you need to.</li> <li>Own a piece of what you build: Our employee stock purchase plan (ESPP) lets you buy Affirm stock at a discount.</li> </ul> <p>We’re committed to providing an inclusive interview process, including accommodations for candidates with disabilities. If you need support, we’re happy to help.</p> <p>For positions based in San Francisco or Los Angeles: Affirm considers qualified applicants with arrest and conviction records, as required by law.</p> </div> <div> <p>By clicking \"Submit Application,\" you acknowledge that you have read Affirm's&nbsp;<a href=\"https://www.affirm.com/global-candidate-privacy-notice\" target=\"_blank\">Global Candidate Privacy Notice</a> and consent to the use of your personal information as described.</p> </div></div>",
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in backend systems and a fintech background, the job requires specific expertise in Python or Kotlin, which the candidate does not explicitly list as a primary skill. Additionally, the role emphasizes experience with distributed systems and AWS, which are not mentioned in the candidate's profile. The candidate's experience with SQL and CI/CD practices aligns well, but the gaps in required technologies and specific fraud prevention experience make this a weak fit.",
+    "verdict": "no",
+    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which is not compatible with the candidate's location in the Netherlands. Additionally, the role requires experience in Python or Kotlin for backend systems, while the candidate's primary backend expertise is in Java. The requirement for building real-time fraud decisioning services and familiarity with specific tools like Snowflake and Airflow also presents a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 18,
+    "id": 16,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3711,12 +3713,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's location in the Netherlands. The requirement for the candidate to be based in Spain for the role is a hard constraint that the candidate cannot meet. Additionally, while the candidate has strong backend experience, the job emphasizes technologies like Python and Kubernetes, which are not mentioned in the candidate's profile. Therefore, this opportunity is not suitable for the candidate.",
+    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which conflicts with the candidate's preference to work in the Netherlands or remotely from anywhere in Europe. Additionally, the role requires experience with technologies like Python, Kotlin, AWS, and Kubernetes, which are not mentioned in the candidate's profile. The requirement for on-call rotation may also not align with the candidate's preferences.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 17,
+    "id": 15,
     "external_id": "7916080003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3729,12 +3731,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Analytics Engineer II role focused on revenue analytics, requiring specific experience in analytics engineering, data modeling, and BI tools, which are not part of the candidate's expertise. The candidate has a strong background in full-stack software engineering and fintech but lacks the required 3+ years in an analytics engineering role and familiarity with tools like dbt, Sigma, or Looker. Additionally, the position is remote but specifically requires the candidate to be based in Spain, which does not align with the candidate's location in the Netherlands.",
+    "reasoning": "This job posting is for an Analytics Engineer II role based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not interested in relocating. Additionally, the role requires specific experience in analytics engineering, data modeling, and BI tools, which are not highlighted in the candidate's background. The candidate's expertise is more aligned with full-stack software engineering in the fintech sector rather than analytics engineering.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 5,
+    "id": 4,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3752,7 +3754,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 22,
+    "id": 20,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3765,8 +3767,98 @@
     "posted_at": "2026-10-19T02:36:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which is not compatible with the candidate's preference to work in the Netherlands. Additionally, the role requires experience with specific technologies such as Python, Kotlin, and AWS, which are not highlighted in the candidate's profile. While the candidate has strong experience in Java and SQL, the requirement for multi-region, multi-tenant platform design and specific messaging vendor integrations presents significant gaps.",
+    "reasoning": "The job posting is for a Senior Software Engineer role at Affirm, but it requires the candidate to be based in Spain, which is a hard constraint for the candidate who is based in the Netherlands. Additionally, the role focuses heavily on backend systems and requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength. While the candidate has relevant experience in fintech and backend development, the geographical requirement and specific technical skills create a mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
+  },
+  {
+    "id": 6,
+    "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
+    "source": "lever",
+    "company": "Job&Talent",
+    "title": "HQ - Principal IT Engineer",
+    "location": "Madrid HQ, ES",
+    "workplace_type": "remote",
+    "employment_type": "Permanent",
+    "url": "https://jobs.lever.co/jobandtalent/4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
+    "description": "Join us to shape the future of work: your next adventure awaits!\n",
+    "posted_at": "2026-10-19T14:43:25.737Z",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
+  },
+  {
+    "id": 5,
+    "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
+    "source": "lever",
+    "company": "Job&Talent",
+    "title": "HQ - Lead Information Security Engineer",
+    "location": "Madrid HQ, ES",
+    "workplace_type": "remote",
+    "employment_type": "Permanent",
+    "url": "https://jobs.lever.co/jobandtalent/4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
+    "description": "Join us to shape the future of work: your next adventure awaits!\nAbout the Role\nWe are seeking a proactive and experienced Lead Information Security Engineer to join our Information Security team. In this role, you will take ownership of incident management, threat detection, and the continuous improvement of our security posture, while leading and managing our team of four Information Security Engineers. You will be responsible for setting priorities, providing technical guidance, developing team capabilities, and ensuring the effective execution of our Security Operations strategy.\nYou will play a pivotal role in safeguarding Job&Talent’s systems, data, and operations, fostering a culture of security excellence, and ensuring our security capabilities evolve ahead of emerging threats. Combining hands-on technical expertise with people management, you will drive operational excellence, strengthen our detection and response capabilities, and collaborate closely with DevOps and other teams across the business.\nThis is a fully remote position with flexibility within ±1 hour of CET.\n",
+    "posted_at": "2026-10-19T12:46:30.118Z",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
+  },
+  {
+    "id": 13,
+    "external_id": "34e9f726-4461-4ef7-9724-a0aba8c72a76",
+    "source": "ashby",
+    "company": "Oyster HR, Inc",
+    "title": "Senior AI Solutions Engineer ",
+    "location": "EMEA; United States; United Kingdom; Spain; Brazil; Canada",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/oyster/34e9f726-4461-4ef7-9724-a0aba8c72a76",
+    "description": "",
+    "posted_at": "2026-10-19T12:20:43.465+00:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Senior AI Solutions Engineer, which does not align with the candidate's expertise in full-stack and backend software engineering, particularly in fintech. Additionally, the job is primarily targeting locations outside of the Netherlands, including the US, which contradicts the candidate's constraint of not relocating to the US or working US-on-site. Therefore, this position is not a fit for the candidate.",
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
+  },
+  {
+    "id": 9,
+    "external_id": "7996774",
+    "source": "greenhouse",
+    "company": "Twilio",
+    "title": "Machine Learning Engineer",
+    "location": "Remote - Spain",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+    "description": "<div class=\"content-intro\"><p><strong>Who we are&nbsp;</strong></p> <p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a class=\"c-link\" href=\"https://customers.twilio.com/\" target=\"_blank\" data-stringify-link=\"https://customers.twilio.com/\" data-sk=\"tooltip_parent\">&nbsp;hundreds of thousands of businesses&nbsp;</a>and empower millions of developers worldwide to craft personalized customer experiences.</p> <p>Our dedication to <a class=\"c-link\" href=\"https://www.twilio.com/en-us/blog/open-work\" target=\"_blank\" data-stringify-link=\"https://www.twilio.com/en-us/blog/open-work\" data-sk=\"tooltip_parent\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br><span style=\"color: rgb(255, 255, 255);\">.</span></p> <p><strong>Hiring and how we work</strong></p> <p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp;</p> <p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp;<br><span style=\"color: rgb(255, 255, 255);\">.</span></p></div><p><strong>See yourself at Twilio</strong></p> <p>Join the team as Twilio’s next Machine Learning Engineer.</p> <p><strong>About the job</strong></p> <p>This position is to design and engineer AI powered features that makes every customer conversation smarter. As a Machine Learning Engineer on the Conversation Intelligence team, you'll develop and deploy solutions that extract meaning from voice and messaging data at Twilio scale. You'll work alongside experienced ML practitioners to ship real features - from model pipelines to production inference - that directly shape how businesses understand their customers.</p> <p><strong>Responsibilities</strong></p> <p>In this role, you’ll:</p> <ul> <li>Design and development of machine learning solutions, ensuring accuracy, performance, security, and scalability.</li> <li>Implement and maintain end-to-end AI/ML pipelines - from data ingestion and feature engineering through to model development, validation, and deployment with guidance from senior engineers on complex architectural decisions</li> <li>Instrument AI/ML services with appropriate metrics, logging, and telemetry to monitor model performance and operational health against defined SLOs</li> <li>Participate in on-call rotations, executing progressive rollouts and applying standard mitigation strategies to keep production inference services healthy</li> <li>Collaborate across planning, design, and code review phases contributing to product and technical discussions, while helping raise overall code quality through thoughtful review feedback</li> </ul> <p><strong>Qualifications&nbsp;</strong></p> <p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p> <p><strong>*Required:</strong></p> <ul> <li>Bachelor's degree in Computer Science, Mathematics, Statistics, or a related quantitative field, or equivalent practical experience</li> <li>2+ years of experience in machine learning engineering or applied ML, with demonstrated proficiency in Python and at least one ML framework (PyTorch, TensorFlow, or JAX) and familiarity with NLP libraries such as Hugging Face Transformers, NLTK, or SpaCy.</li> <li>Experience developing, testing, and deploying small-to-medium scoped ML services or features in a collaborative engineering environment, including model versioning, experiment tracking, and cloud-based infrastructure (AWS, GCP, or Azure)</li> <li>Proficiency in Python (preferred) or similar OO language.</li> <li>Experience utilizing Large (or Small) Language Models within software systems.</li> <li>Excellent written and verbal communication skills with the ability to articulate complex technical concepts to both technical and non-technical audiences.</li> </ul> <p><strong>Desired:</strong></p> <ul> <li>Hands-on experience with conversational AI, or LLM fine-tuning and prompt engineering in a production&nbsp; context</li> <li>Exposure to agentic AI frameworks such as LangGraph, AutoGen, CrewAI</li> <li>Familiarity with MLOps/LLMOps tooling related to maintaining models in production such as testing, versioning, model registry, retraining, and monitoring.</li> </ul> <p><strong>Location</strong></p> <ol> <li>This role will be remote from Ireland.</li> </ol> <p><strong>Travel&nbsp;</strong></p> <p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, you may be required to travel occasionally to participate in project or team in-person meetings.</p> <p><strong>What We Offer</strong></p> <p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.</p><div class=\"content-conclusion\"><p><strong>Twilio thinks big. Do you?</strong></p> <p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p> <p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p> <p><strong><span style=\"color: rgb(255, 255, 255);\">.</span></strong></p> <p><strong>Stay alert to recruitment fraud</strong></p> <p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br><br><span style=\"color: rgb(255, 255, 255);\">.</span><strong> </strong></p> <p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p></div>",
+    "posted_at": "2026-10-19T10:33:15-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting for a Machine Learning Engineer at Twilio does not align with the candidate's background or preferences. The candidate is a senior full-stack software engineer with expertise in Java, SQL, and React, but lacks the required experience in machine learning engineering, Python proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role is focused on AI and ML, which is outside the candidate's stated interests in fintech and product engineering.",
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
+  },
+  {
+    "id": 1,
+    "external_id": "a47018ac-0a29-4ba0-88cf-9616fdb03b71",
+    "source": "ashby",
+    "company": "Mollie",
+    "title": "Analytics Engineer",
+    "location": "Milan; Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/mollie/a47018ac-0a29-4ba0-88cf-9616fdb03b71",
+    "description": "",
+    "posted_at": "2026-10-19T09:32:07.204+00:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-19T16:05:37.461Z"
   }
 ]
