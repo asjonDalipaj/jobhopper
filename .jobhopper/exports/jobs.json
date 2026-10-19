@@ -66,7 +66,7 @@
     "reasoning": "Senior level and end-to-end ownership align, and candidate has Python from the REA bot plus DevOps/CI-CD experience, but the core hard requirements are largely unmet. The role demands strong proficiency in Python and Go with hands-on Terraform and BigQuery, plus experience building and running evals for AI systems at scale. Candidate has no demonstrated Go, Terraform, BigQuery, AI evals, or cybersecurity/security integrations background, making this a tangential stretch despite relevant seniority."
   },
   {
-    "id": 11,
+    "id": 10,
     "external_id": "8007455",
     "source": "greenhouse",
     "company": "Twilio",
@@ -79,7 +79,7 @@
     "posted_at": "2026-10-16T10:33:17-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Machine Learning Engineer position, which requires specific expertise in machine learning, including proficiency in Python and experience with ML frameworks such as PyTorch or TensorFlow. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and React, lacking the necessary machine learning experience and skills. Additionally, the role is remote from Spain, which does not align with the candidate's preference for remote roles based in the Netherlands.",
+    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is a poor fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks experience in machine learning engineering. The role requires at least 2 years of experience in machine learning, proficiency in Python and ML frameworks, and familiarity with NLP libraries, none of which are highlighted in the candidate's profile. Additionally, the position is remote from Spain, which does not align with the candidate's preference for roles based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -252,7 +252,7 @@
     "reasoning": "While the candidate has over 10 years of experience in software engineering and is strong in Java, the job requires specific expertise in low-level Java concepts such as concurrency and parallelism, which are not explicitly mentioned in the candidate's background. Additionally, the role focuses on AI integration and machine learning systems, areas where the candidate has limited direct experience. The candidate's fintech background aligns with the company's focus on data solutions, but the gaps in required technical skills and specific experience with AI and Elasticsearch make this a weak fit."
   },
   {
-    "id": 4,
+    "id": 2,
     "external_id": "6919020",
     "source": "greenhouse",
     "company": "Adyen",
@@ -270,7 +270,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 3,
+    "id": 1,
     "external_id": "6720006",
     "source": "greenhouse",
     "company": "Adyen",
@@ -834,7 +834,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 7,
     "external_id": "8225984",
     "source": "greenhouse",
     "company": "Elastic",
@@ -847,7 +847,7 @@
     "posted_at": "2026-10-16T06:40:56-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java and backend development, which aligns with the core requirements of the Senior Java Engineer role at Elastic, there are significant gaps in their experience with low-level Java concepts such as concurrency and parallelism, which are emphasized in the job description. Additionally, the candidate's background is primarily in fintech and full-stack development, whereas this role focuses on core infrastructure and shared functionalities of Elasticsearch, which may require a deeper understanding of specific technologies and practices not mentioned in their CV. The candidate also lacks experience with observability solutions and knowledge of Go, which are considered bonus points for this position.",
+    "reasoning": "While the candidate has strong experience in Java and a solid background in backend development, the job posting emphasizes low-level Java skills, concurrency, and performance optimization, which are not explicitly highlighted in the candidate's experience. Additionally, the role requires familiarity with Elasticsearch and specific CI/CD tools that the candidate may not have worked with. The candidate's fintech background is relevant, but the focus on core infrastructure and observability in this role represents a gap in their experience.",
     "applied_at": null,
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
@@ -1561,7 +1561,7 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role, which is focused on security incident response and requires specific expertise in security operations, incident management, and familiarity with security tools like SIEM and EDR systems. The candidate's background is primarily in software engineering with a strong focus on full-stack development, Java, and SQL, lacking the necessary security experience and skills outlined in the job description. Additionally, the candidate has not indicated any interest or experience in security engineering, making this role a poor fit.",
+    "reasoning": "The job posting is for a Senior Security Engineer role, which is focused on security incident response and requires extensive experience in security operations, incident management, and specific security tools. The candidate, while experienced as a full-stack software engineer with a strong background in fintech, does not have the required security expertise or experience in managing security incidents at a global scale. Additionally, the role emphasizes skills in security information and event management (SIEM) systems and endpoint detection, which are not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1579,7 +1579,7 @@
     "posted_at": "2026-10-17T05:03:16-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has a strong background in Java, SQL, and React, but lacks the required experience in security incident management, security operations centers, and specific security tools mentioned in the posting. Additionally, the role requires a focus on security, which does not align with the candidate's stated interests in product engineering and technical ownership.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has no demonstrated experience in security incident management or the specific security technologies and practices required for this position. Additionally, the role requires a background in security operations and incident response, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1972,7 +1972,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 27,
+    "id": 26,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1985,7 +1985,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong background in software engineering with expertise in Java, SQL, and React, the job posting for a Senior Engineering Manager requires significant experience in managing senior engineers and leading teams, which is not explicitly demonstrated in the candidate's CV. Additionally, the role emphasizes product and customer judgment, as well as experience with AI and automation in leadership, which may not align with the candidate's current experience. The candidate's fintech background is a plus, but the managerial aspect of the role presents a gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders, which is not explicitly demonstrated in the candidate's CV. The candidate's experience is more technical and less managerial, which may not align with the leadership expectations of this position. Additionally, the role emphasizes a strong technical foundation in modern web or frontend systems, while the candidate's experience is more backend-focused with Java and SQL. There are also specific requirements around AI and automation leadership that the candidate does not clearly address.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2744,7 +2744,7 @@
     "reasoning": "The candidate has a strong technical background in software engineering and fintech, but the job posting for a Principal Sales Engineer requires extensive pre-sales experience and a focus on sales strategy, which the candidate does not possess. Additionally, the role demands over 12 years of experience in technical pre-sales and specific knowledge of Zscaler's security platforms, which the candidate lacks. While the candidate's skills in Java, SQL, and React are relevant, they do not align with the sales engineering focus of this position."
   },
   {
-    "id": 1,
+    "id": 5,
     "external_id": "4988356101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2757,7 +2757,7 @@
     "posted_at": "2026-10-16T09:09:17-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for the Founding GTM Engineering Lead requires specific experience in building GTM systems, sales automation, and familiarity with modern GTM tooling, which the candidate does not explicitly possess. The role also emphasizes a strong understanding of B2B GTM operations and the ability to work directly with customers to implement solutions, areas where the candidate's experience is less clear. Therefore, while there are some relevant skills, the candidate lacks several key requirements.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the job posting for the Founding GTM Engineering Lead requires specific experience in building GTM systems, sales automation, and account intelligence systems, which the candidate does not explicitly demonstrate. The candidate's background in APIs and automation is relevant, but they lack direct experience with modern GTM tooling and the specific GTM operations mentioned. Additionally, the role emphasizes a strong product instinct and hands-on experience with customer implementations, which may not align with the candidate's previous roles focused primarily on software development.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
@@ -2852,7 +2852,7 @@
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 2,
+    "id": 6,
     "external_id": "4999781101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -2865,7 +2865,7 @@
     "posted_at": "2026-10-16T06:01:52-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Support Engineer role focused on the .NET stack, which is a significant departure from the candidate's expertise in Java and React. The candidate's background in fintech and full-stack development does not align with the specific requirements for proficiency in C# and the .NET technology stack. Additionally, the role emphasizes support and troubleshooting rather than software development, which does not match the candidate's preference for full-stack or backend engineering roles.",
+    "reasoning": "This job posting is for a Senior Support Engineer role focused on the .NET stack, which requires proficiency in C# and experience with Microsoft Visual Studio. The candidate's background is primarily in Java and React, with no mention of .NET or C#. Additionally, the role emphasizes troubleshooting and support for commercial software applications, which does not align with the candidate's experience in software engineering and product initiatives. Therefore, the candidate does not meet the core technical requirements for this position.",
     "applied_at": null,
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
@@ -3032,7 +3032,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3068,7 +3068,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 15,
+    "id": 14,
     "external_id": "8010489003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3081,7 +3081,7 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for the Analytics Engineer II position at Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the role focuses on analytics engineering and data systems, which is not aligned with the candidate's strong background in full-stack software engineering and fintech development. The candidate's experience does not match the specific requirements for dbt and Snowflake expertise, which are critical for this role.",
+    "reasoning": "This job posting is for an Analytics Engineer II position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the role focuses on analytics engineering and data systems, while the candidate's expertise is primarily in full-stack software engineering with a strong emphasis on Java and React, which does not directly match the analytics engineering requirements. The candidate's background in fintech is relevant, but the specific skills required for this role, such as experience with dbt and Snowflake, are not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -3230,7 +3230,7 @@
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
   {
-    "id": 13,
+    "id": 12,
     "external_id": "8281670",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3243,12 +3243,12 @@
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. Additionally, the role focuses on database query execution, which is not aligned with the candidate's primary experience in Java and React. The remote location in Spain is acceptable, but the technical gaps are significant.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. Additionally, the focus on database query engines and performance tuning is not aligned with the candidate's primary experience in Java and React. There is a mismatch in the required programming languages and the candidate's core competencies.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 14,
+    "id": 13,
     "external_id": "8281662",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3261,7 +3261,7 @@
     "posted_at": "2026-10-16T17:59:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires expertise in C++ and systems programming, which the candidate lacks. Additionally, the focus on query execution and database performance tuning is somewhat outside the candidate's core competencies, which are more aligned with full-stack development in a fintech context. The candidate's experience with databases is a plus, but not sufficient to meet the specific requirements of this role.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. Additionally, the focus on query execution and database performance tuning is not directly aligned with the candidate's fintech experience. The candidate's experience with databases is a plus, but it does not compensate for the missing C++ skills and systems programming experience.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -3446,7 +3446,7 @@
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
   {
-    "id": 30,
+    "id": 29,
     "external_id": "744000155992484",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -3458,13 +3458,13 @@
     "description": "The Role&#xa0; The Senior Manager, Antibot Engineering takes leadership responsibility for a defined part of the Antibot Engineering organization. Based in Spain and reporting to the Director of Antibot Engineering, this leader manages a distributed team located in Western Europe and Algeria. The geographic footprint describes where the team is located, not a regional mandate: the role contributes to the global Antibot Engineering mission and priorities.&#xa0; This is a senior people-leadership role with three core accountabilities: building and developing a strong engineering team; prioritizing retailer work in line with business requirements; and driving an R&D roadmap that improves the effectiveness, durability, and scalability of Antibot capabilities. The leader works across Web Data Acquisition, Product, Engineering, Operations, and business stakeholders to turn demand into clear engineering choices and measurable outcomes.&#xa0; What You Will Do&#xa0; Lead part of the global Antibot Engineering organization&#xa0; Own the people, delivery, and technical outcomes of an assigned part of the global Antibot Engineering organization.&#xa0; Translate the Director of Antibot Engineering’s strategy into clear team objectives, priorities, roadmaps, and execution plans.&#xa0; Balance retailer unblocking and long-term R&D projects.&#xa0; Provide clear visibility into retailer priorities, R&D progress, capacity, dependencies, risks, and trade-offs.&#xa0; Drive retailer prioritization and engineering execution&#xa0; Establish a transparent prioritization process that converts business requirements, customer impact, operational risk, and technical dependencies into an executable retailer backlog.&#xa0; Partner with business, product, delivery, and operations stakeholders to clarify demand, challenge assumptions, resolve priority conflicts, and communicate trade-offs.&#xa0; Ensure prioritized retailer unblocking work is planned, staffed, tracked, and delivered with clear ownership and measurable outcomes.&#xa0; Balance urgent retailer needs with platform development, solution durability, technical debt, and longer-term engineering capacity.&#xa0; Lead, develop, and retain the team&#xa0; Lead, coach, and develop engineering managers, technical leads, and engineers across the distributed team in Western Europe and Algeria.&#xa0; Set clear expectations, strengthen accountability, and create an inclusive environment that supports learning, collaboration, and retention.&#xa0; Own team workforce and capability planning, including hiring, onboarding, succession, and development of critical Antibot expertise.&#xa0; Create effective operating rhythms for planning, reviews, risk management, and communication.&#xa0; Drive the Antibot R&D roadmap&#xa0; Own and drive an R&D roadmap for the assigned Antibot scope, aligned with the technical direction set by the Director of Antibot Engineering.&#xa0; Identify research and engineering opportunities that improve capability, automation, scalability, maintainability, and resilience.&#xa0; Turn experiments and technical learning into clear investment recommendations, reusable solutions, and production adoption plans.&#xa0;\n\nRequired Qualifications&#xa0; 8+ years of experience in software engineering, platform engineering, web data acquisition, applied R&D, or a related technology field.&#xa0; 3+ years of people-management experience, including leadership of experienced engineers, technical leads, managers, or multiple teams.&#xa0; Demonstrated accountability for engineering delivery and production services in a complex, high-change environment.&#xa0; Experience with distributed systems, cloud platforms, automation, observability, incident management, and engineering quality practices.&#xa0; Strong organizational leadership, prioritization, stakeholder management, and executive communication skills.&#xa0; Ability to lead across countries and cultures and to influence teams outside the direct reporting line.&#xa0; Professional fluency in English.&#xa0; Preferred Qualifications&#xa0; Experience with web scraping, reverse engineering, or large-scale data collection.&#xa0; Experience leading geographically distributed engineering teams in Europe and/or North Africa.&#xa0; Knowledge of antibot solutions, CDN or WAF.&#xa0; Experience driving operating-model change, automation, platform adoption, or engineering transformation.&#xa0; Success Measures&#xa0; A capable, engaged, and accountable engineering team with clear goals, development plans, and succession coverage.&#xa0; Retailer priorities that are traceable to business requirements and delivered with transparent trade-offs and predictable execution.&#xa0; An R&D roadmap that produces reusable improvements in Antibot capability, automation, durability, and scale.&#xa0; Clear ownership, metrics, risks, dependencies, and stakeholder communication.&#xa0; Effective adoption of global platforms and reduction of avoidable regional duplication.&#xa0;\n\nOur Benefits Flexible working environment Volunteer time off LinkedIn Learning Employee-Assistance-Program (EAP) NIQ may utilize artificial intelligence (AI) tools at various stages of the recruitment process, including résumé screening, candidate assessments, interview scheduling, job matching, communication support, and certain administrative tasks that help streamline workflows. These tools are intended to improve efficiency and support fair and consistent evaluation based on job-related criteria. All use of AI is governed by NIQ’s principles of fairness, transparency, human oversight, and inclusion. Final hiring decisions are made exclusively by humans. NIQ regularly reviews its AI tools to help mitigate bias and ensure compliance with applicable laws and regulations. If you have questions, require accommodations, or wish to request human review were permitted by law, please contact your local HR representative. For more information, please visit NIQ’s AI Safety Policies and Guiding Principles: https://nielseniq.com/global/en/info/niqs-ai-safety-policies/ About NIQ NIQ is the world’s leading consumer intelligence company, delivering the most complete understanding of consumer buying behavior and revealing new pathways to growth. In 2023, NIQ combined with GfK, bringing together the two industry leaders with unparalleled global reach. With a holistic retail read and the most comprehensive consumer insights—delivered with advanced analytics through state-of-the-art platforms—NIQ delivers the Full View™. NIQ is an Advent International portfolio company with operations in 100+ markets, covering more than 90% of the world’s population. For more information, visit NIQ.com Want to keep up with our latest updates? Follow us on:&#xa0; LinkedIn &#xa0;|&#xa0; Instagram &#xa0;|&#xa0; Twitter &#xa0;|&#xa0; Facebook Our commitment to Diversity, Equity, and Inclusion At NIQ, we are steadfast in our commitment to fostering an inclusive workplace that mirrors the rich diversity of the communities and markets we serve. We believe that embracing a wide range of perspectives drives innovation and excellence.&#xa0;&#xa0;All employment decisions at NIQ are made without regard to race, color, religion, sex (including pregnancy, sexual orientation, or gender identity), national origin, age, disability, genetic information, marital status, veteran status, or any other characteristic protected by applicable laws.&#xa0;We invite individuals who share our dedication to inclusivity and equity to join us in making a meaningful impact.&#xa0;To learn more about our ongoing efforts in diversity and inclusion, please visit the&#xa0; https://nielseniq.com/global/en/news-center/diversity-inclusion",
     "posted_at": "2026-10-16T13:09:18.307Z",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting is for a Senior Manager position focused on people management and leadership within the Antibot Engineering organization, which requires 3+ years of people-management experience and a strong emphasis on leading distributed teams. The candidate has extensive technical experience but lacks the required management experience and is not seeking a managerial role. Additionally, the job is based in Spain, which does not align with the candidate's preference for remote roles or their current location in the Netherlands.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has over 10 years of experience in software engineering and a strong background in fintech, this role requires specific experience in people management and leading distributed teams, which is not evident in the candidate's profile. The job also emphasizes R&D leadership and experience with web data acquisition and antibot solutions, areas where the candidate lacks direct experience. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote work in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 29,
+    "id": 28,
     "external_id": "ac75662f-e937-4870-8040-6dbe733d0a47",
     "source": "lever",
     "company": "Shield AI",
@@ -3482,7 +3482,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 6,
+    "id": 4,
     "external_id": "8288674",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3500,7 +3500,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 5,
+    "id": 3,
     "external_id": "8288668",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3518,7 +3518,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 28,
+    "id": 27,
     "external_id": "5261592007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -3536,7 +3536,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 23,
+    "id": 22,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3549,12 +3549,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which is incompatible with the candidate's location in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend experience is in Java. The requirement for on-call rotation may also not align with the candidate's preferences for work-life balance.",
+    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's location in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also be a concern for the candidate, who has not indicated experience or preference for such responsibilities.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
   {
-    "id": 26,
+    "id": 25,
     "external_id": "7931494003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3567,12 +3567,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in backend systems and a strong fintech background, the job requires expertise in Python or Kotlin, which the candidate does not list as a primary skill. Additionally, the role emphasizes experience with AWS, Spark, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with Java and SQL is relevant, but the specific technologies and responsibilities outlined in the job posting create a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in Python or Kotlin for backend systems, which the candidate does not possess. Additionally, the role emphasizes experience with AWS, Spark, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with Java and CI/CD is relevant, but the gaps in required technologies and specific backend experience limit the fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 25,
+    "id": 24,
     "external_id": "7820451003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3585,12 +3585,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position requires the candidate to be based in Spain, which conflicts with the candidate's preference to remain in the Netherlands. Additionally, the role demands proficiency in Python and Kubernetes, which the candidate does not explicitly list as part of their skill set. While the candidate has strong backend and frontend experience, the geographical requirement and specific technology stack make this opportunity unsuitable.",
+    "reasoning": "The job posting is for a Staff Software Engineer position based in Spain, which does not align with the candidate's preference to work in the Netherlands or remotely from anywhere in Europe. Additionally, the role requires proficiency in technologies such as Python, Kotlin, AWS, and Kubernetes, which are not highlighted in the candidate's experience. The requirement for on-call rotation may also be a concern for the candidate, who has not indicated comfort with such responsibilities.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 24,
+    "id": 23,
     "external_id": "7799346003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3603,12 +3603,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role specifies a minimum of 1.5 years of experience, which is significantly lower than the candidate's 10+ years, but the location constraint is a hard rule that makes this position unsuitable.",
+    "reasoning": "This job posting is for a position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the role requires experience in Python or Kotlin for backend development, which the candidate does not possess, as they are primarily strong in Java. The requirement for 1.5+ years of experience also seems to be a mismatch given the candidate's seniority level.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 22,
+    "id": 21,
     "external_id": "7807506003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3621,12 +3621,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level of over 10 years. Additionally, the role requires the candidate to be based in Spain, which contradicts the candidate's preference for roles in the Netherlands. The requirement for on-call rotation and specific technologies like Python or Kotlin also presents a mismatch.",
+    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level of over 10 years. Additionally, the position requires the candidate to be based in Spain, which contradicts the candidate's preference for roles in the Netherlands. The requirement for on-call rotation may also not align with the candidate's expectations for senior roles.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 21,
+    "id": 20,
     "external_id": "7799935003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3639,12 +3639,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, they lack specific experience with React Native, which is a critical requirement for this role. The job emphasizes mobile application development and ownership of user journeys, areas where the candidate has less direct experience. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote roles based in the Netherlands.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting specifically requires expertise in React Native, which the candidate does not mention in their CV. Additionally, the role emphasizes mobile application development, an area where the candidate's experience appears limited to web applications. The candidate's strong skills in Java and ReactJS are relevant, but the lack of direct experience with mobile frameworks and the specific requirements for this position create a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 20,
+    "id": 19,
     "external_id": "7806683003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3657,12 +3657,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's preference for roles in the Netherlands. Additionally, the role requires experience with Python or Kotlin for backend development, while the candidate's expertise is primarily in Java. The requirement for on-call rotation may also not fit the candidate's work style, as it was not mentioned in their background.",
+    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote roles anywhere in Europe. Additionally, the role requires experience with Python or Kotlin for backend development, whereas the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not align with the candidate's preferences.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 19,
+    "id": 18,
     "external_id": "7801373003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3675,12 +3675,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the role emphasizes experience with Kotlin, which the candidate does not have, as their expertise lies primarily in Java and Python. The requirement for on-call rotation may also not align with the candidate's preferences.",
+    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work from the Netherlands. Additionally, the role emphasizes experience with Kotlin, which the candidate does not possess, and requires a strong focus on backend systems, whereas the candidate has a more balanced full-stack background. The requirement for on-call rotation may also not align with the candidate's preferences.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 18,
+    "id": 17,
     "external_id": "7806679003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3693,12 +3693,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the role emphasizes experience with Python or Kotlin for backend systems, while the candidate's primary backend expertise is in Java. Although the candidate has a strong fintech background and relevant experience, the geographical constraint and specific language requirements make this position unsuitable.",
+    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which is not compatible with the candidate's location in the Netherlands. Additionally, the role requires experience in Python or Kotlin for backend systems, while the candidate's primary expertise is in Java. The requirement for familiarity with AWS and distributed systems is also a gap for the candidate, who has not indicated experience in these areas. Overall, the location constraint and specific technical requirements make this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 17,
+    "id": 16,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3711,12 +3711,12 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Software Engineer position based in Spain, which does not align with the candidate's preference for roles in the Netherlands. Additionally, the requirement for experience with technologies like Python, Kotlin, AWS, and Kubernetes presents a significant gap, as the candidate's expertise is primarily in Java and SQL. The candidate's constraints also explicitly state they are not willing to relocate to the US or work US-on-site, which is not applicable here but emphasizes their preference for roles within Europe.",
+    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work in the Netherlands. Additionally, the role emphasizes experience with technologies like Python, Kotlin, AWS, and Kubernetes, which are not highlighted in the candidate's profile. While the candidate has strong experience in Java and SQL, the specific backend technologies required for this position are a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 16,
+    "id": 15,
     "external_id": "7916080003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3729,7 +3729,7 @@
     "posted_at": "2026-10-16T17:13:47-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Analytics Engineer II position that requires specific expertise in analytics engineering, data modeling, and business intelligence tools, which are not part of the candidate's core competencies. The candidate has a strong background in full-stack development and fintech but lacks the required experience in analytics engineering and familiarity with tools like dbt, Sigma, or Looker. Additionally, the role is remote but specifically requires the candidate to be based in Spain, which does not align with the candidate's location in the Netherlands.",
+    "reasoning": "This job posting is for an Analytics Engineer II role focused on revenue analytics, requiring specific experience in analytics engineering, data modeling, and BI tools, which the candidate does not possess. The candidate has a strong background in full-stack development and fintech but lacks the necessary experience in analytics engineering and the specific tools mentioned, such as dbt and BI tools like Sigma or Looker. Additionally, the job is remote but requires the candidate to be based in Spain, which does not align with the candidate's location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   }
