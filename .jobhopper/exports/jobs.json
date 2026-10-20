@@ -270,7 +270,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 1,
+    "id": 3,
     "external_id": "6720006",
     "source": "greenhouse",
     "company": "Adyen",
@@ -280,7 +280,7 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/6720006",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Data Engineer&nbsp;</strong></p> <p>At Adyen, we treat data and data artifacts as first-class citizens. They form our backbone and drive the business and product insights we generate. To this end, Adyen is looking for a Data Engineer II to join our team in Amsterdam. This role requires a solid understanding of both the business context and its data needs, with a focus on building high-quality data pipelines on our Big Data Platform. As a Data Engineer at Adyen, you will be instrumental in maintaining our data infrastructure and ensuring smooth data flows across systems.</p> <p><strong>What you’ll do</strong></p> <ul> <li><strong>Collaborative Solution Development</strong>: Engage with a diverse range of stakeholders, including data scientists, analysts, software engineers, product managers, and customers, to understand their requirements and craft effective solutions.</li> <li><strong>Quality Pipelines and Architecture</strong>: Design, develop, deploy and operate high-quality production ELT pipelines and data architectures. Integrate data from various sources and formats, ensuring compatibility, consistency, and reliability.</li> <li><strong>Data Best Practices</strong>: Help establish and share best practices in performance, code quality, data validation, data governance, and discoverability in your team and in other teams. Participate in mentoring and knowledge sharing initiatives.</li> <li><strong>High Quality Data and Code:</strong> Ensure data is accurate, complete, reliable, relevant, and timely. Implement testing, monitoring and validation protocols for your code and data, leveraging tools such as Pytest.</li> <li><strong>Performance Optimization</strong>: Identify and resolve performance bottlenecks in data pipelines and systems. Improve query performance and resource utilization to meet SLAs and performance requirements, using technologies Spark optimizations.</li> </ul> <p><strong>Who you are</strong></p> <ul> <li><strong>Experienced in Big Data:</strong> <strong>3+ years</strong> of experience working as a Data Engineer or in a similar role.</li> <li><strong>Data &amp; Engineering practices:</strong> You have a solid understanding of both Software and Data Engineering practices.</li> <li><strong>Technical Super Star:</strong> Proficient in tools and languages such as: Python, PySpark, Airflow, Hadoop, Spark, Kafka, SQL, Git.&nbsp;</li> <li><strong>Clear Communicator:</strong> Able to effectively communicate complex data-related concepts and outcomes to a diverse range of stakeholders.&nbsp;</li> <li><strong>Self-starter:</strong> Capable of identifying opportunities, devising solutions, and handling projects independently.&nbsp;</li> <li><strong>Innovator:</strong> You have an experimental mindset with a ‘launch fast and iterate’ mentality.</li> <li><strong>Data Culture Champion:</strong> Skilled in promoting a data-centric culture within technical teams and advocating for setting standards and continuous improvement.</li> </ul> <p><strong>Data positions at Adyen</strong></p> <p>We know companies handle different definitions for their data-related positions, this is for instance dependent on the size of a company. Since the birth of the Data Solution and the growth of all data streams, we categorized and defined all our positions. Have a look at<a href=\"https://www.adyen.com/knowledge-hub/roles-scaling-up-data-culture\" target=\"_blank\"> this blogpost</a> to find out!</p> <p>We currently have roles available in the following teams:</p> <ul> <li>Uplift Protect</li> <li>Balance Transactions</li> <li>Optimise Interfaces</li> <li>Payments Pricing</li> <li>Finance &amp; Commercial Analytics&nbsp;</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p> <p>&nbsp;</p>",
-    "posted_at": "2026-10-16T09:44:06-04:00",
+    "posted_at": "2026-10-20T08:53:47-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null,
@@ -722,7 +722,7 @@
     "reasoning": null
   },
   {
-    "id": 69,
+    "id": 8,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -732,10 +732,12 @@
     "employment_type": null,
     "url": "https://jobs.elastic.co/jobs?gh_jid=8167769&gh_jid=8167769",
     "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <p>As part of the Observability organization and inside the Streams program, the Managed Inputs team builds high-performing backend ingestion pipelines. We collect telemetry across diverse environments—including Elastic Agents, agentless setups, OpenTelemetry collectors, and cloud sources via Elastic Cloud Forwarders—then process and store this information to power seamless, intuitive user experiences within Kibana.</p> <p>Elastic's Streams program is the unified platform for getting data into Elasticsearch from edge collection all the way through cloud processing. We accept any type of data generated at the edge (Elastic Agent, Elastic Classic APM Agents, Beats, any OTel SDK…) and we process and route the data to several destinations.</p> <p>We are building strong backend solutions for ingesting observability data. Our core focus is on building a performant, reliable, scalable, secure and maintainable backend that fulfills product requirements. We take responsibility for what we build, and therefore are also responsible for keeping the system running, and ensuring reliable quality gates and safe deployment mechanisms, as well as assisting in support cases.&nbsp;</p> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li>Design, implement, deploy and maintain high-performing, scalable features within the different products we own, being the most critical ones Managed Inputs (mOTLP endpoints) and Managed Integrations (Agentless architecture) across the three main cloud providers.</li> <li>Take ownership of projects and features, leading them from concept to delivery.</li> <li>Provide engineering level support to escalated customer cases, on a rotation basis.</li> <li>Provide mentorship and feedback to peers through pull request reviews, ensuring code quality and promoting best practices within the team.</li> <li>Monitor alerts, build SLIs and SLOs and ensure system stability.</li> <li>Cultivate a positive, inclusive, and collaborative team culture across timezones.</li> <li>You will be on call for services we own (current rotation is 12h/day/week every 8-10 weeks)</li> </ul> <h3>What You Bring</h3> <ul> <li>Intermediate to Expert Go skills with strong analytical, debugging, and troubleshooting skills.</li> <li>Hands-on experience with Kubernetes, IaC (Terraform) and Kafka</li> <li>At least Intermediate experience with Observability (tracing, metrics, logs, profiling)&nbsp;</li> <li>Strong understanding of microservice architecture and distributed systems, ability to understand tradeoffs between different solutions and familiarity with several parts and challenges for designing such systems.</li> <li>A positive attitude and a curious mindset with commitment to learning and self-enablement</li> <li>Ability to conduct root cause analysis and investigating to find the bottom of issues rather than accepting unexpected system behavior</li> <li>Ability to work independently in a globally distributed team, while ensuring to collaborate and share knowledge with colleagues.</li> <li>Experience with or interest in OpenTelemetry</li> <li>You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication.</li> <li>Demonstrated experience leveraging AI-assisted development tools to accelerate feature development, debug complex systems, and optimize existing codebases.</li> </ul> <h3>Bonus Points</h3> <ul> <li>Experience in designing scalable, high-availability services and applications ingesting terabytes per day.</li> <li>Experience with operational stability as responder or incident commander</li> <li>Experience with Elasticsearch and/or Kibana</li> <li>Passion for open-source development and contributions to community projects (doesn’t have to be ours).</li> <li>Experience in full remote teams</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€67.000</span><span class=\"divider\">&mdash;</span><span>€106.000 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
-    "posted_at": "2026-10-01T12:57:36-04:00",
+    "posted_at": "2026-10-20T08:53:23-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job requires expertise in Go, Kubernetes, and Kafka, which the candidate lacks. Additionally, the role focuses on observability and backend ingestion pipelines, areas that are not highlighted in the candidate's experience. The candidate's fintech background is relevant, but the specific technologies and responsibilities outlined in the job posting do not align closely with their skill set."
+    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, Terraform, and Kafka, areas where the candidate lacks direct experience. Although the candidate's fintech background aligns with the company's focus, the significant gaps in required technologies and specific observability experience make this a weak fit.",
+    "applied_at": null,
+    "first_seen": "2026-10-20T14:01:47.636Z"
   },
   {
     "id": 68,
@@ -1322,7 +1324,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 3,
+    "id": 4,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1974,7 +1976,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 17,
+    "id": 16,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1987,7 +1989,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has significant experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring substantial experience in managing teams and developing technical leaders, which is not explicitly mentioned in the candidate's profile. The candidate's expertise in frontend technologies like React aligns with the job's requirements, but the emphasis on leadership and team management is a notable gap. Additionally, the role's focus on navigating complex organizational dynamics may stretch the candidate's experience.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders, which is not explicitly highlighted in the candidate's CV. The candidate's experience is more technical and less managerial, which may not align with the leadership expectations of this position. Additionally, the role emphasizes experience with AI and automation in leadership, which is not mentioned in the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2024,7 +2026,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 14,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2037,12 +2039,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not suitable for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role focuses on digital marketing and advertising rather than software engineering, which does not align with the candidate's expertise in full-stack development and fintech. Therefore, this position is not a suitable match for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 14,
+    "id": 13,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2055,7 +2057,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior-level positions, making this internship role completely mismatched with their career level and aspirations.",
+    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The candidate has over 10 years of experience and is not seeking entry-level opportunities. Additionally, the internship requires enrollment in an educational institution, which does not align with the candidate's current professional status.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2076,7 +2078,7 @@
     "reasoning": null
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2089,12 +2091,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's core competencies in software engineering and fintech. Additionally, the candidate is looking for senior full-stack or backend roles, while this position does not require software engineering skills and is more focused on media planning and analytics.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which is not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 11,
+    "id": 10,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2107,7 +2109,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the primary focus of this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2572,7 +2574,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 13,
+    "id": 12,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2585,7 +2587,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic media planning, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the candidate is seeking senior full-stack or backend roles, while this position does not match those criteria.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in full-stack software engineering and fintech. Additionally, the position requires a strong interest in online marketing and data-driven insights, which do not match the candidate's core competencies. The candidate is looking for senior software engineering roles, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2644,7 +2646,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 4,
+    "id": 5,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3038,13 +3040,13 @@
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
-    "title": "Associate Technical Services Engineer II (Tues-Sat Shift)",
+    "title": "Associate Technical Services Engineer (Tues-Sat Shift)",
     "location": "Milan",
     "workplace_type": null,
     "employment_type": null,
     "url": "https://www.mongodb.com/careers/job/?gh_jid=8258710",
     "description": "<h3>About the team</h3> <p>MongoDB Technical Services Engineers will combine exceptional problem solving and communication skills with deep technical experience to advise customers and solve complex MongoDB problems.&nbsp;</p> <p>They are experts in components of the MongoDB ecosystem - database server, drivers, our management suite, and services such as Cloud Manager (the online product we developed for customers for automation, backup, monitoring, and analysis of their MongoDB systems), and MongoDB Atlas. They combine their MongoDB expertise with passion, initiative, teamwork and a great sense of humor to achieve exceptional results for our customers.</p> <p>We are looking to speak to candidates who are based in Milan for our hybrid working model (Tues-Sat Shift).</p> <h3>Cool things you’ll do</h3> <p>MongoDB is on a mission to change the way people think about databases. Along the way, our customers encounter questions and issues about how our approach to databases works for their use case. In Technical Services, it's our job to help these people. You'll be working alongside our largest customers, solving their complex challenges - resolving questions on architecture, performance, recovery, security, and everything in between. You'll be an expert resource on best practices in running MongoDB at scale, whatever that scale may be. You'll be an advocate for customers' needs - interfacing with our product management and development teams on their behalf. And you'll contribute to internal projects, including software development of support tools for performance, benchmarking, and diagnostics.</p> <p>In this specific role, starting from the MongoDB database, you will also focus on the performance of our Cloud platform Atlas and its supported services. You will help both frontend and backend developers build next generation applications on MongoDB platform.</p> <p>Finally, MongoDB Technical Services puts a strong focus on engineers enabling their peers to be successful by sharing newly gained technical knowledge with the team, either via informal one-to-one conversations, or training and workshop sessions. By documenting solutions in our knowledge base system, Technical Services Engineers will increase the efficiency of our customers, other team members and departments throughout MongoDB.&nbsp;</p> <h3>What you need</h3> <p>We are looking for curious, and multi-faceted teammates who are driven to serve our customers.&nbsp;</p> <p>The ideal candidate should have a mix of experience in most of the following areas. We are open to training people up in certain areas, so don't worry about ticking every box!</p> <ul> <li>3–4 years of experience in a technical support, solutions support, or customer-facing engineering role</li> <li>Distributed systems, Database architecture and administration, Application architecture, Data architecture</li> <li>Experience supporting complex mission-critical product applications and database systems (RDMBS or NoSQL or both)</li> <li>Supporting Cloud and/or Enterprise grade applications</li> <li>Strong diagnostics and troubleshooting experience, with the ability to analyze issues holistically, from the application tier, to database to storage</li> <li>Broad awareness of customer workloads and use cases, including performance, availability, and scalability</li> <li>Systems administration experience, including Linux performance, memory management, I/O tuning, configuration, security, networking, clusters, and troubleshooting</li> <li>Ability to read code, and basic coding/scripting ability in one or more languages: Java, Python, Ruby, C, C++, C#, Javascript, node.js, Go, etc</li> <li>Good understanding of Networking concepts and protocols (DNS, TCP/IP, SSL/TLS, etc.)</li> <li>Storage engineering experience, including NAS, RAID, SAN, SSD, multi-pathing, and caching</li> <li>Working with real time stream processing using Kafka.</li> <li>Serverless computing services such as AWS Lambda, Azure functions.</li> </ul> <p>As this role is technical but also about helping our customers, we are looking for:</p> <ul> <li>Excellent communication skills, both written and verbal</li> <li>Genuine desire to help people</li> <li>Desire and ability to rapidly learn a wide variety of new technical skills</li> <li>Uncontrollable urge to investigate and solve problems, with advanced diagnostic and troubleshooting skills</li> <li>Ability to think on your feet, remain calm under pressure, and solve problems in real-time</li> <li>Strong teamwork: willingness and ability to get help from team members when required, and the good judgment to know when to seek help</li> <li>Good written and verbal skills in Italian &amp; English</li> </ul> <h3>Bonus Points</h3> <ul> <li>Server side troubleshooting</li> <li>Deep understanding of at least object-oriented programming language.</li> <li>Deep understanding of connection pools.</li> <li>Experience with Apache Spark.</li> <li>Experience with authentication systems such as LDAP, Kerberos, AD</li> <li>Experience using or managing MongoDB</li> <li>Experience using distributed version control systems, and in particular git</li> <li>Experience using any cloud services stack such as AWS, Azure or GCP</li> <li>Experience with Kubernetes or other orchestration systems using vendor-specific Enterprise operators</li> </ul> <h3>Success Measures&nbsp;</h3> <ul> <li>In 3 months, you’ll have gained a deep understanding of MongoDB and its ecosystem. You will complete New Hire Training</li> <li>In 6 months, you will be comfortable working directly with our customers. You will also complete the MongoDB Certified DBA Associate exam</li> <li>In 12 months, you will work on gaining expertise to be a part of a technical experts group within the MongoDB ecosystem and will be helping your peer engineers in advance diagnostics. Also, you will be encouraged to handle technical escalations independently</li> </ul> <h3>About MongoDB</h3> <p>MongoDB is built for change, empowering our customers and our people to innovate at the speed of the market. We have redefined the data platform for the AI era, enabling builders to create, transform, and disrupt industries with software. MongoDB’s unified data platform, the most widely available, globally distributed data platform on the market, helps organizations modernize legacy workloads, embrace innovation, and unleash AI. Our cloud-native platform, MongoDB Atlas, is the only globally distributed, multi-cloud data platform and is available across AWS, Google Cloud, and Microsoft Azure.</p> <p>With offices worldwide and over 67,000 customers, including AI-native startups and approximately 75% of the Fortune 100, relying on MongoDB for their most important applications, we’re powering the next era of software.</p> <p>Our compass at MongoDB is our <a href=\"https://www.mongodb.com/company\">Leadership Commitment,</a> guiding how and why we make decisions, show up for each other, and win. It’s what makes us MongoDB.&nbsp;</p> <p>To drive the personal growth and business impact of our employees, we’re committed to developing a supportive and enriching culture for everyone. <a href=\"https://www.mongodb.com/company/blog/culture/employee-benefits-that-make-a-difference-at-mongodb\">From employee affinity groups, to fertility assistance and a generous parental leave policy</a>, we value our employees’ wellbeing and want to support them along every step of their professional and personal journeys.<a href=\"https://www.mongodb.com/blog/channel/culture\"> Learn more about what it’s like to work at MongoDB</a>, and help us make an impact on the world!</p> <p>MongoDB is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request an accommodation due to a disability, please inform your recruiter.</p> <p>MongoDB is an equal opportunities employer.</p> <p><em>Req ID: 3273573571</em></p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>EU Pay Transparency Information: MongoDB’s base salary range for this role is posted below. Compensation at the time of offer is unique to each candidate and based on a variety of factors such as skill set, experience, qualifications, and work location.&nbsp;</p> <p>&nbsp;</p> <p>Salary is one part of MongoDB’s total compensation and benefits package. Other benefits for eligible employees may include: equity, participation in the employee stock purchase program, financial protection benefits, paid time off, a minimum of 20 weeks fully-paid gender-neutral parental leave (inclusive of and running concurrently with statutory leave), fertility and adoption assistance, mental health counseling and other health benefits offerings.</p> <p>&nbsp;</p> <p>We are committed to providing a well-rounded compensation and benefits program that supports our employees in every stage of life. Please note, the base salary range listed below and the benefits in this paragraph are only applicable to Italy based candidates.</p></div><div class=\"title\">MongoDB’s base salary range for this role in Italy is:</div><div class=\"pay-range\"><span>€46.000</span><span class=\"divider\">&mdash;</span><span>€68.000 EUR</span></div></div></div>",
-    "posted_at": "2026-10-16T17:59:16-04:00",
+    "posted_at": "2026-10-20T07:37:09-04:00",
     "tags": null,
     "verdict": null,
     "reasoning": null,
@@ -3736,7 +3738,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 5,
+    "id": 6,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3754,7 +3756,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 16,
+    "id": 15,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3767,12 +3769,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strong skill. While the candidate has relevant experience in backend development and fintech, the geographical constraint and specific language requirements make this opportunity a poor fit.",
+    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not list as a strong skill. While the candidate has relevant experience in backend development and fintech, the geographical constraint and specific language requirements make this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 10,
+    "id": 19,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3790,7 +3792,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 9,
+    "id": 18,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3826,7 +3828,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 8,
+    "id": 7,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3839,7 +3841,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in Python and ML frameworks. The role specifically demands 2+ years of experience in machine learning, which the candidate does not possess, as well as familiarity with NLP libraries and AI/ML pipelines, further highlighting a significant mismatch in skill set.",
+    "reasoning": "This job posting is for a Machine Learning Engineer position, which is not aligned with the candidate's expertise as a full-stack software engineer. The candidate has strong experience in Java, SQL, and React, but lacks the required machine learning experience, particularly with frameworks like PyTorch or TensorFlow, and does not have a background in AI/ML pipelines. Additionally, the role requires specific qualifications in machine learning that the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3880,7 +3882,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 18,
+    "id": 17,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3893,7 +3895,7 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong full-stack experience and a fintech background, the job posting specifically focuses on security assurance, which requires specialized knowledge in security standards and frameworks that the candidate does not explicitly demonstrate. The candidate's experience in Java and CI/CD aligns with the technical requirements, but the lack of direct experience in security programs and cloud-native security practices presents a significant gap. Additionally, the role emphasizes knowledge of Go and TypeScript, which the candidate does not mention.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer with a strong background in Java, React, and CI/CD, the job posting is focused on security assurance, which requires specific knowledge of security frameworks and practices that the candidate does not explicitly demonstrate. Additionally, the role emphasizes experience with Go and TypeScript, which are not mentioned in the candidate's profile. The candidate's fintech experience is relevant, but the gaps in security expertise and specific programming languages make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
   }
