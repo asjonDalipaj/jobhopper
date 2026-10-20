@@ -270,7 +270,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 3,
+    "id": 4,
     "external_id": "6720006",
     "source": "greenhouse",
     "company": "Adyen",
@@ -722,7 +722,7 @@
     "reasoning": null
   },
   {
-    "id": 8,
+    "id": 11,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -735,7 +735,7 @@
     "posted_at": "2026-10-20T08:53:23-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, Terraform, and Kafka, areas where the candidate lacks direct experience. Although the candidate's fintech background aligns with the company's focus, the significant gaps in required technologies and specific observability experience make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, IaC (Terraform), and Kafka, areas where the candidate lacks direct experience. The candidate's fintech background aligns with the company's focus on data and observability, but the specific technical requirements create a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-20T14:01:47.636Z"
   },
@@ -1324,7 +1324,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 4,
+    "id": 5,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1976,7 +1976,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 16,
+    "id": 21,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1989,7 +1989,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders, which is not explicitly highlighted in the candidate's CV. The candidate's experience is more technical and less managerial, which may not align with the leadership expectations of this position. Additionally, the role emphasizes experience with AI and automation in leadership, which is not mentioned in the candidate's background.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders, which is not explicitly demonstrated in the candidate's CV. The candidate's experience is primarily as a software engineer rather than in a managerial capacity. Additionally, the job emphasizes a strong technical foundation in modern web or frontend systems, which the candidate has, but lacks specific experience in leading frontend teams or working with large-scale frontend ecosystems like TypeScript, which is preferred for this role.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2026,7 +2026,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 19,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2039,12 +2039,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role focuses on digital marketing and advertising rather than software engineering, which does not align with the candidate's expertise in full-stack development and fintech. Therefore, this position is not a suitable match for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority level. Additionally, the focus on digital marketing and advertising does not match the candidate's strong background in software engineering and fintech.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 13,
+    "id": 18,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2057,7 +2057,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The candidate has over 10 years of experience and is not seeking entry-level opportunities. Additionally, the internship requires enrollment in an educational institution, which does not align with the candidate's current professional status.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior positions, making this opportunity completely misaligned with their career level and aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2078,7 +2078,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 16,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2091,12 +2091,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which is not mentioned in the candidate's profile.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which is not highlighted in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 10,
+    "id": 15,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2109,7 +2109,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the primary focus of this position.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant, but the gaps in specific analytics experience and language proficiency lead to a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2574,7 +2574,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 12,
+    "id": 17,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2587,7 +2587,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in full-stack software engineering and fintech. Additionally, the position requires a strong interest in online marketing and data-driven insights, which do not match the candidate's core competencies. The candidate is looking for senior software engineering roles, making this position a poor fit.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate's background as a senior full-stack software engineer with expertise in Java, SQL, and React does not align with the requirements of this role, which emphasizes analytical skills in media and data-driven insights. Additionally, the job does not leverage the candidate's extensive software development experience, making it a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2646,7 +2646,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 5,
+    "id": 6,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3036,7 +3036,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 9,
+    "id": 13,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3130,13 +3130,13 @@
     "external_id": "28d6b7ce-0580-4756-89a9-2ae60970bc60",
     "source": "ashby",
     "company": "Mollie",
-    "title": "Platform Engineer II - Governance and Compliance",
+    "title": "Platform Engineer II - Infrastructure Governance",
     "location": "Milan",
     "workplace_type": null,
     "employment_type": null,
     "url": "https://jobs.ashbyhq.com/mollie/28d6b7ce-0580-4756-89a9-2ae60970bc60",
     "description": "",
-    "posted_at": "2026-10-15T11:04:15.871+00:00",
+    "posted_at": "2026-10-20T14:01:51.693+00:00",
     "tags": null,
     "verdict": null,
     "reasoning": null,
@@ -3432,20 +3432,20 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 7,
+    "id": 12,
     "external_id": "8223520",
     "source": "greenhouse",
     "company": "Mozilla",
-    "title": "Contract Software Engineer - DOM Core Firefox/Gecko",
+    "title": "Senior Contract C++ / JavaScript Software Engineer (Browser Engine)",
     "location": "Remote Belgium; Remote Denmark; Remote Finland; Remote France; Remote Netherlands; Remote Poland",
     "workplace_type": "Remote",
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/mozilla/jobs/8223520",
     "description": "<h2><strong>The role</strong></h2> <p><span style=\"font-weight: 400;\">You will help the Firefox DOM Core team improve the health of the Session History area. You will write tests to improve the coverage; you will fix tests and/or problems to improve the Gecko correctness.</span></p> <h2><strong>Responsibilities</strong></h2> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Write Web-Platform tests to improve the coverage, and Gecko mochitests as needed&nbsp;</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Fix the problems and pass the tests to improve the Gecko correctness</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Work through code review with the relevant Gecko module owners and iterate to landing</span></li> </ul> <h2><strong>Definition of done</strong></h2> <p><span style=\"font-weight: 400;\">Improved Session History test coverage and code correctness in Gecko, measured by passed test cases, allowing the team’s senior engineers to focus on security, performance and strategic projects.</span></p> <h2><strong>Required qualifications</strong></h2> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Substantial experience in a browser-engine codebase or in automating for a browser-engine, ideally Firefox/Gecko.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Solid Javascript and applying that language skill to write automated tests.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Proficiency in and experience developing software in C++.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Strong debugging skills in a mature larget codebase.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Comfort working in the open: public bugs, code review, and upstream landing.</span></li> </ul> <h2><strong>Preferred</strong></h2> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Prior contributions to Gecko or another major browser engine.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Familiarity with web standards and Web Platform Tests.</span></li> </ul>",
-    "posted_at": "2026-10-15T22:36:29-04:00",
+    "posted_at": "2026-10-20T10:31:49-04:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The job posting requires substantial experience in a browser-engine codebase, specifically Firefox/Gecko, and proficiency in C++, which the candidate does not possess. While the candidate has strong JavaScript skills and experience in software engineering, they lack the specific expertise in browser engines and C++ development that is critical for this role. Additionally, the focus on writing automated tests for a browser engine does not align with the candidate's fintech background.",
+    "verdict": "weak",
+    "reasoning": "The candidate has strong experience in Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are critical for this role. While the candidate's background in fintech and full-stack development is relevant, the job requires substantial experience in a browser-engine context, which the candidate does not have. Additionally, the role focuses heavily on testing and debugging within a mature codebase, areas where the candidate's experience may not align directly.",
     "applied_at": null,
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
@@ -3738,7 +3738,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 6,
+    "id": 7,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3756,7 +3756,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 15,
+    "id": 20,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3769,12 +3769,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not list as a strong skill. While the candidate has relevant experience in backend development and fintech, the geographical constraint and specific language requirements make this position a poor fit.",
+    "reasoning": "The job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes experience with Python and AWS, which the candidate does not explicitly list as part of their core competencies, focusing instead on Java and SQL. The requirement for designing multi-region, multi-tenant platforms also presents a gap in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 19,
+    "id": 10,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3792,7 +3792,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 18,
+    "id": 9,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3828,7 +3828,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 7,
+    "id": 14,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3841,7 +3841,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer position, which is not aligned with the candidate's expertise as a full-stack software engineer. The candidate has strong experience in Java, SQL, and React, but lacks the required machine learning experience, particularly with frameworks like PyTorch or TensorFlow, and does not have a background in AI/ML pipelines. Additionally, the role requires specific qualifications in machine learning that the candidate does not possess.",
+    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, as it requires specific expertise in machine learning and AI frameworks, which the candidate does not possess. The candidate has strong experience in full-stack development and fintech but lacks the necessary qualifications in machine learning, Python proficiency in ML frameworks, and experience with NLP libraries. Additionally, the role is focused on AI-powered features, which is outside the candidate's stated areas of interest and expertise.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3864,7 +3864,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 2,
+    "id": 3,
     "external_id": "65ce6d8d-1ea4-47b7-a148-ae8b0812ee72",
     "source": "ashby",
     "company": "Mollie",
@@ -3882,7 +3882,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 17,
+    "id": 22,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3895,8 +3895,62 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a full-stack software engineer with a strong background in Java, React, and CI/CD, the job posting is focused on security assurance, which requires specific knowledge of security frameworks and practices that the candidate does not explicitly demonstrate. Additionally, the role emphasizes experience with Go and TypeScript, which are not mentioned in the candidate's profile. The candidate's fintech experience is relevant, but the gaps in security expertise and specific programming languages make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting specifically focuses on security assurance, which is not a highlighted area in the candidate's CV. The candidate lacks direct experience with security frameworks and standards mentioned in the posting, such as ISO 27001 and SOC 2, and does not have experience with Go or TypeScript, which are preferred programming languages for this role. Additionally, the role emphasizes cloud-native security and compliance automation, which the candidate has not explicitly demonstrated expertise in.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
+  },
+  {
+    "id": 23,
+    "external_id": "33dd68d3-cd02-47ee-b3ec-24f39d51308d",
+    "source": "ashby",
+    "company": "ICEYE",
+    "title": "Engineering Template - remember to edit this",
+    "location": "Valencia",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/iceye/33dd68d3-cd02-47ee-b3ec-24f39d51308d",
+    "description": "",
+    "posted_at": "2026-10-20T14:51:46.057+00:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-20T18:51:31.037Z"
+  },
+  {
+    "id": 8,
+    "external_id": "8025854",
+    "source": "greenhouse",
+    "company": "Monzo",
+    "title": "Engineering Director, EU",
+    "location": "Barcelona; Cardiff, London or Remote (UK)",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/monzo/jobs/8025854",
+    "description": "<div class=\"content-intro\"><p><strong><em>🚀 We’re on a mission to make money work for everyone.</em></strong></p> <p>We’re waving goodbye to the complicated and confusing ways of traditional banking.</p> <p>After starting as a prepaid card, our product offering has grown a lot in the last 10 years in the UK. As well as&nbsp;<a href=\"https://monzo.com/current-account/personal\">personal</a> and <a href=\"https://monzo.com/business-banking\">business</a> bank accounts, we offer <a href=\"https://monzo.com/current-account/joint-account\">joint accounts</a>, <a href=\"https://monzo.com/current-account/16-17\">accounts for 16-17 year olds</a>, a <a href=\"https://monzo.com/current-account/under-16s\">free kids account</a> and <a href=\"https://monzo.com/flex\">credit cards</a> in the UK, with more exciting things to come beyond. Our UK customers can also <a href=\"https://monzo.com/savings\">save</a>, <a href=\"https://monzo.com/investments\">invest </a>and&nbsp;<a href=\"https://monzo.com/pensions\">combine their pensions</a> with us.&nbsp;</p> <p>With our hot coral cards and get-paid-early feature, combined with financial education on social media and our award winning customer service, we have a long history of creating magical moments for our customers!</p> <p>We’re not about selling products - we want to solve problems and change lives through Monzo ❤️</p> <hr> <p>&nbsp;</p></div><p>📍London or Remote (UK) or Barcelona, Spain (Hybrid)&nbsp;</p> <h3><strong>Engineering at Monzo</strong></h3> <p>Monzo has successfully launched in Ireland and is expanding across Europe. We're now entering the next phase of our journey: building and scaling a multi-market European bank.</p> <p>The EU Engineering organisation sits at the centre of that ambition. We are responsible for helping Monzo launch, grow and operate across Europe, navigating everything from product-market fit and customer growth to regulatory requirements, localisation and operational scale.</p> <p>Unlike most engineering organisations at Monzo, EU does not own a single product area. We work horizontally across the company, partnering with teams across Payments, Core Banking, Growth, Wealth, Customer Operations, Fincrime, Platform and many others to bring Monzo's products to new markets and deliver great customer experiences locally.</p> <p>As an Engineering Director, you'll lead a distributed engineering organisation across the UK, Spain and remote locations. You'll partner closely with Product, Design, Data, Operations, Risk, Compliance and executive stakeholders to solve complex problems that span organisational boundaries.</p> <p>Success in this role comes through influence, relationships and organisational leadership as much as execution. You'll need to build alignment across a wide range of teams, create clarity in ambiguity, and help Monzo discover what works in new markets while establishing the foundations that allow us to scale across Europe.</p> <p>This is one of Monzo's most strategically important areas and a unique opportunity to help build a European bank from the ground up.</p> <p><strong>What you’ll work on</strong></p> <ul> <li>Lead a distributed engineering organisation spanning multiple squads, markets and countries.</li> <li>Build and develop Engineering Managers, Senior Engineering Managers and senior technical leaders.</li> <li>Partner with Product, Design, Data, Research, Operations, Risk and Compliance leaders to define and execute Monzo's European strategy.</li> <li>Drive alignment and execution across numerous collectives to ensure Europe receives the capabilities it needs to succeed.</li> <li>Shape how Monzo approaches market expansion, localisation, regulatory requirements and multi-market product development.</li> <li>Influence priorities and outcomes across teams that do not directly report to you.</li> <li>Create clarity and momentum in highly ambiguous problem spaces where ownership and solutions are not always obvious.</li> <li>Design and evolve organisational structures, operating models and planning processes that allow Monzo to scale effectively across Europe.</li> <li>Help identify and validate product-market fit in new markets while balancing short-term delivery and long-term strategic investments.</li> <li>Partner closely with executive leadership to shape the future of Monzo's European business.</li> </ul> <h3><strong>You should apply if</strong></h3> <ul> <li>You have experience leading large engineering organisations through other leaders, including Engineering Managers, Senior Engineering Managers and senior individual contributors.</li> <li>You have successfully operated in highly complex organisations where outcomes depend on collaboration across many teams and functions.</li> <li>You are exceptional at building relationships and influencing without direct authority.</li> <li>You can navigate ambiguity and create clarity where goals, ownership or priorities are not yet fully defined.</li> <li>You have experience scaling organisations through periods of rapid growth, organisational change or market expansion.</li> <li>You enjoy solving organisational and business problems, not just technical ones.You can balance strategy and execution, translating ambitious goals into tangible outcomes.</li> <li>You are comfortable making decisions in environments where there is rarely a perfect answer.</li> <li>You have a strong track record of building high-performing leadership teams and developing future leaders.</li> <li>You are energised by the challenge of building something new and helping shape the future of Monzo's international expansion.</li> </ul> <h3><strong>The interview process</strong></h3> <p>After an informal ~30 min recruiter call our interview process involves 2 main stages:&nbsp;</p> <ol> <li><strong>Initial Call (1 hour)</strong> You'll meet with one of our senior engineering leaders. They'll ask you about your previous experience, in particular people leadership, product delivery and technical leadership. They’ll ask example based questions (‘Tell me about a time when…’)</li> <li><strong>Loop Stage</strong> - This is one stage with 4 interviews (totalling 4 hours) split between a collaboration with one of our engineers on a technical exercise, as well as execution and leadership interviews.</li> </ol> <p>At all stages we’ll create space for you to ask as many questions as you have, you’re interviewing us as well!</p> <p>Our average process takes around 3-4 weeks but we will always work around your availability. You will have the chance to speak to our recruitment team at various points during your process but if you do have any specific questions ahead of this please contact us on <a href=\"mailto:tech-hiring@monzo.com\">tech-hiring@monzo.com</a>. Please also use that email to let us know if there's anything we can do to make your application process easier for you, because of disability, neurodiversity or any other personal reason.<br><br></p> <p><strong>How we work 💻:</strong></p> <p><strong>Locations &amp; Flexible Working (If you're in the UK) :&nbsp;</strong></p> <p>Our main tech hub is in London, but our engineers live everywhere in the UK— from Brighton to the Western Isles.&nbsp;</p> <p>We value meeting in person but there’s no pressure to come into the office, even if you're nearby. We believe you'll do your best work if you are where you want to be. If you live outside of London and we ask you to come into the office, Monzo will support you with the costs. ✨</p> <p>Our offices are naturally social, especially Tuesdays, Wednesdays and Thursdays, which happen to line up with our twice-weekly Monzo lunches &amp; treat Thursdays 🍽️. Teams also schedule time together often for work and play – in or around the office, or online.</p> <p><strong>Set up a work schedule that delivers impact and fits your life.</strong></p> <p>At Monzo, we value connections, flexibility, and wellbeing. We keep our meetings during core hours to stay connected and believe in maintaining work/life balance.&nbsp;</p> <p>You’ll be empowered to manage your work in a way that suits you and your team, giving you the freedom for children drop-offs and pick-ups, walking your dog or adventurous cat, avoiding peak commuting times or gym slots, appointments, or supporting your family in an emergency. 🕒✨</p> <p>Work the way that works for you with Monzo! 💼</p> <h3><strong>What’s in it for you</strong></h3> <p>✈️ We can help you relocate to the UK or Spain</p> <p>✅ We can sponsor visas for the UK (not Spain)</p> <p>📍This role can be based in our London office, but we're open to distributed working within the UK (with ad hoc meetings in London).</p> <p>⏰ We offer flexible working hours and trust you to work enough hours to do your job well, at times that suit you and your team.</p> <p>📚Learning budget of £1,000 ( a year for books, training courses and conferences</p> <p>#LI-AL1 #LI-REMOTE</p><div class=\"content-conclusion\"><hr> <p><strong>Equal opportunities for everyone</strong></p> <p>Diversity and inclusion are a priority for us and we’re making sure we have lots of support for all of our people to grow at Monzo. At Monzo, we’re embracing diversity by fostering an inclusive environment for all people to do the best work of their lives with us. This is integral to our mission of making money work for everyone. You can read more in our <a href=\"https://monzo.com/blog/diversity-and-inclusion\">blog</a>, 2026 <a href=\"https://monzo.com/blog/our-2026-diversity-and-inclusion-report\" target=\"_blank\">Diversity and Inclusion Report</a> and 2025 <a href=\"https://monzo.com/blog/gender-pay-gap-report-2025\">Gender Pay Gap Report.</a></p> <p>We’re an equal opportunity employer. All applicants will be considered for employment without attention to age, ethnicity, religion, sex, sexual orientation, gender identity, family or parental status, national origin, or veteran, neurodiversity or disability status.</p> <p>If you have a preferred name, please use it to apply. We don't need full or birth names at application stage 😊</p></div>",
+    "posted_at": "2026-10-20T12:30:50-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-20T18:51:31.037Z"
+  },
+  {
+    "id": 24,
+    "external_id": "5213322007",
+    "source": "greenhouse",
+    "company": "Together AI",
+    "title": "Senior or Staff Software Engineer, Inference / Compute Infrastructure Engineering",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/togetherai/jobs/5213322007",
+    "description": "<h3><strong>About the Role</strong></h3> <p>We're looking for a Software Engineer to build the systems that treat infrastructure as software. This role owns the software state machines that provision hardware, bring it into service, and manage its full lifecycle — turning racks of GPUs into <strong>running inference clusters</strong> without a human touching a runbook. The Research and Inference team is your customer: today they file tickets and wait; the target state is that they issue a single API call to stand up, scale, or tear down a cluster, and the system takes care of the rest. The platform is manifest-driven such that teams declare the desired state of a cluster or host — shape, topology, software stack — and the system is responsible for reconciling reality to that manifest, continuously, through every stage of its lifecycle. You will design the engines that manifest the schema, the engines that execute against it, and the workflows that carry a piece of hardware or a cluster from one state to the next—taking it from bare metal to a fully functioning AI cluster for training or inference.</p> <p>You'll write production code which is typed, tested, versioned, and deployed through CI/CD that models infrastructure state and reconciles it, the same way a Kubernetes controller reconciles a cluster's desired state. Success looks like eliminating manual provisioning work, not documenting it better.</p> <p>A product mindset - you've built internal platforms or APIs consumed by other engineering teams and care about the developer experience of what you ship.<strong>You build it, you own it.</strong> You are not only responsible for delivering the software but also for operating and supporting it in production.</p> <h3><strong>Responsibilities</strong></h3> <ul> <li><strong>Build the provisioning state machine: </strong>design and implement the software that models the full lifecycle of a physical host from discovery, inference bring-up to GPU driver/CUDA stack, health validation, and decommission/RMA — as explicit, versioned states and transitions.</li> <li><strong>Build the self-service API: </strong>design declarative APIs and a control plane so the inference team can request, scale, and tear down inference clusters with one API call — no ticket, no human in the loop.</li> <li><strong>Automate self-healing: </strong>detect degraded or failed nodes, drain them safely, trigger repair or replacement, and reintroduce healthy capacity into the pool automatically.</li> <li><strong>Own reliability of the pipeline: </strong>idempotency, retries, rollback, and drift detection so the provisioning system is as dependable as any other production service.</li> <li><strong>Partner with the inference/ML platform team: </strong>understand the cluster shapes they need — topology, interconnect, scheduling constraints — and encode them as first-class abstractions in the platform.</li> <li><strong>Engineer it like software: </strong>strong typing, automated tests, code review, versioning, and CI/CD for infrastructure code — this is a product, not a collection of Ansible playbooks.</li> </ul> <h3><strong>Requirements</strong></h3> <p>Core requirements (all levels):</p> <ul> <li>Strong software engineering background in Go, Python, Rust, or similar — you write and test real software for a living.</li> <li>Experience with durable workflow orchestration tools such as Temporal, Cadence, or equivalent to run long-lived, manifest-driven workflows that survive failures and resume mid-execution.</li> <li>Experience building software control planes or orchestration systems that model state and reconcile it over time (e.g., Kubernetes controllers/operators, custom reconciliation loops, workflow engines).</li> <li>Experience with event-driven systems — designing and building software around message queues, event streams, or pub/sub (e.g., Kafka, NATS, SQS) rather than polling or cron-driven scripts.</li> <li>A product mindset. You’ve built internal platforms or APIs consumed by other engineering teams and care about the developer experience of what you ship.</li> </ul> <p>Nice to have:</p> <ul> <li>Exposure to bare-metal provisioning (PXE/iPXE, Redfish/IPMI, BMC) and/or networking fundamentals (VLANs, BGP, fabric design), or GPU/accelerator infrastructure.</li> <li>Experience with GPU cluster software stacks (NCCL, CUDA, InfiniBand/RoCE).</li> <li>Prior work at a hyperscaler, GPU cloud, or datacenter-scale infrastructure organization.</li> <li>Systems programming in Rust or Go.</li> </ul> <h3><strong>About Together AI</strong></h3> <p>Together AI, the AI Native Cloud, is purpose-built for AI engineers. AI application developers get high-performance inference that scales reliably, fine-tuning and reinforcement learning for creating frontier-level specialized models, and pre-training at massive scale for fully custom intelligence, all around a marketplace of leading open models that teams can run, adapt, and own. Trusted by Cursor, Decagon, ElevenLabs, Salesforce, and Zoom, Together serves 400+ trillion tokens a month.</p> <h3><strong>Equal Opportunity</strong></h3> <p>Together AI is an Equal Opportunity Employer and is proud to offer equal employment opportunity to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and more.</p> <p>Please see our privacy policy at<a href=\"https://www.together.ai/privacy\">&nbsp;https://www.together.ai/privacy</a>.&nbsp;&nbsp;</p>",
+    "posted_at": "2026-10-20T12:29:33-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-20T18:51:31.037Z"
   }
 ]
