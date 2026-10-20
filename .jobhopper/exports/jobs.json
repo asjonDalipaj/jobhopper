@@ -722,7 +722,7 @@
     "reasoning": null
   },
   {
-    "id": 11,
+    "id": 16,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -735,7 +735,7 @@
     "posted_at": "2026-10-20T08:53:23-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, IaC (Terraform), and Kafka, areas where the candidate lacks direct experience. The candidate's fintech background aligns with the company's focus on data and observability, but the specific technical requirements create a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, IaC (Terraform), and Kafka, areas where the candidate lacks direct experience. Although the candidate's fintech background and full-stack capabilities are relevant, the specific technical requirements present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-20T14:01:47.636Z"
   },
@@ -1208,7 +1208,7 @@
     "reasoning": null
   },
   {
-    "id": 54,
+    "id": 10,
     "external_id": "8232358",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1218,10 +1218,12 @@
     "employment_type": "Intern",
     "url": "https://stripe.com/jobs/search?gh_jid=8232358",
     "description": "<h2><strong>Who we are</strong></h2> <h3><strong>About Stripe</strong></h3> <p>Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.</p> <h3><strong>About the team&nbsp;</strong></h3> <p>Collecting and filing sales &amp; indirect taxes is a classic area for technology disruption. Companies selling across countries, states, and even smaller jurisdictions have to navigate through a myriad of tax rates, product-level tax exemptions, filing requirements, and registration obligations. The rules are constantly changing, and not accurately calculating and filing tax can have legal ramifications.</p> <p>It’s no surprise then that solving for tax compliance is a top user ask. We launched Stripe Tax as a new SaaS product in 2021 to help solve this pain point and make tax compliance as effortless as possible. The Stripe Tax CoreXP team engineers sophisticated solutions to help our merchants grow and expand with confidence and minimal friction. The team builds solutions for monitoring tax compliance requirements, and provides solutions for registering and filing taxes.</p> <h2><strong>What you’ll do</strong></h2> <p>We’re looking for software engineers who are interested in building software services and platforms that impact millions of Stripe users. You will be working alongside a diverse set of peers spanning design, product and engineering to identify, build and maintain solutions that empower thousands of merchants to grow their business with confidence.</p> <h3><strong>Responsibilities</strong></h3> <ul> <li>Operate with limited oversight and own end-to-end the delivery of projects, including independently scoping, designing, implementing, and productionizing features</li> <li>Collaborate with stakeholders across the organization such as product, design, infrastructure, marketing and operations</li> <li>Debug production issues across services and improve the team's overall operational health</li> <li>Develop and execute against both short- and long-term goals</li> <li>Establish and uphold best practices in engineering, security, and technical design</li> </ul> <h2><strong>Who you are</strong></h2> <p>We're looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</p> <h3><strong>Minimum requirements</strong></h3> <ul> <li>2+ years of industry software engineering experience (does not include internships or co-ops)</li> <li>Strong coding skills in any programming language <em>(we understand new languages can be learned on the job so our interview process is language agnostic)</em></li> <li>Strong collaboration skills, can work across workstreams within your team and contribute to your peers’ success</li> <li>Have the ability to thrive on a high level of autonomy, responsibility, and think of yourself as entrepreneurial</li> <li>Have the ability to communicate effectively with internal and external cross discipline stakeholders</li> <li>Interest in working as a generalist across varying technologies and stacks to solve problems and delight both internal and external users</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>Track record of working directly with customers and ability to influence product decisions</li> <li>Experience in integrating robustly with external systems and/or APIs&nbsp;</li> <li>Experience in both frontend and backend development</li> </ul>",
-    "posted_at": "2026-10-07T19:02:27-04:00",
+    "posted_at": "2026-10-20T17:25:59-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-20T23:34:43.583Z"
   },
   {
     "id": 7,
@@ -1700,7 +1702,7 @@
     "reasoning": null
   },
   {
-    "id": 53,
+    "id": 9,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1710,10 +1712,12 @@
     "employment_type": null,
     "url": "https://stripe.com/jobs/search?gh_jid=8130927",
     "description": "<h2><strong>Who we are</strong></h2> <h3><strong>About Stripe</strong></h3> <p>Stripe is a technology company focused on improving the conditions for economic growth and prosperity. We build programmable financial infrastructure, rethinking from first principles how financial services should work, to make it easier and cheaper for any business to start and scale. More than 10 million <a href=\"https://stripe.com/customers\">businesses</a> build on Stripe, spanning the economic frontier—from solo founders to established enterprises—united by a practical focus on growth. The most ambitious companies in the world use Stripe as core infrastructure to grow faster. They process trillions of dollars a year on Stripe, equivalent to around 1.6% of global GDP. While economic growth makes everyone better off, open markets also enable greater variety. When any business can easily serve a global customer base, the quality and diversity of products in the world increase, and craft and creativity are unleashed into the smallest niches. Our own growth is wholly contingent on the success of the businesses building on Stripe. We therefore invest back into our technology at an unusual rate. We make <a href=\"https://stripe.com/roadmap\">upgrades to our products</a> every single day to deliver compounding gains to our customers. We maintain some of the most <a href=\"https://status.stripe.com/\">reliable APIs</a> on the internet. We build entirely new <a href=\"https://tempo.xyz/\">pieces</a> of <a href=\"https://mpp.dev/\">financial</a> <a href=\"https://joinopenstandard.com/\">infrastructure</a> to enable new ideas. And our significant advances in <a href=\"https://stripe.com/radar\">risk and fraud</a> infrastructure over many years are making the internet economy safer and more accessible.&nbsp;</p> <p>Though people at Stripe don’t tend to take themselves seriously, Stripe is a fairly serious place: our customers are depending on us for their livelihoods. We admire ambition, intensity, curiosity, humility, and rigor. The most effective people become knowledgeable about many domains besides their own. Any company is an applied exercise in understanding some aspect of society or the market. In working with so many (especially the new and innovative ones), we think that Stripe is one of the very best places to learn about how the world works.</p> <h2><strong>Your role</strong><strong><br></strong></h2> <p>Stripe is large enough that individual products and projects can be rapidly deployed to a meaningful fraction of the world’s businesses, but small enough that individual agency still has outsized impact. Small teams can impact how millions of businesses grow. Right now the global economy is replatforming around AI, creating new opportunities for growth. We’re at the center of this, and we think the best work is still in front of us.</p> <p>To meet this moment, we’re looking for people who move with urgency, like hard problems, and want their work to matter at a time of great change. If that’s you, there’s no better place to build your career.</p> <h2><strong>Who you are</strong></h2> <ul> <li>Ambitious builder: You’re energized by building solutions without clear precedent and solving problems with far-reaching consequences. Successful Stripes are deeply curious, and prefer the joy of discovery to the comfort of certainty.</li> <li>Rigorous thinker: You appreciate that things worth doing are rarely simple. You enjoy working on problems that have never been tackled before.&nbsp;</li> <li>Adaptable problem solver: You adapt quickly and treat obstacles as opportunities.&nbsp; At Stripe we embrace kindness while encouraging Stripes to take measured risks and act boldly, even in the absence of consensus.</li> </ul> <h3><strong>Minimum requirements</strong></h3> <ul> <li>A Bachelor’s or Master’s degree in computer science or a directly related field, obtained by summer 2027, or equivalent work experience; New grad candidates should have no more than 18 months of professional experience (excluding internship experience).</li> <li>Experience and familiarity with programming, either through side projects or classwork. We work mostly in Java, Ruby, JavaScript, Scala, and Go. We believe new programming languages can be learned if the fundamentals and general knowledge are present.</li> <li>Experience from either previous internships or working collaboratively on multi-person coding projects (in a university or professional setting).</li> <li>Ability to learn unfamiliar systems and form an understanding of those systems, through independent research and working with a mentor or subject matter experts.</li> <li>Clear written communication skills, with the ability to explain your work to stakeholders, team members, and other Stripes.</li> <li>Ability to leverage AI tools to accelerate development while applying rigorous critical thinking and professional judgement to review, refine, and validate all outputs.</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>One or more areas of specialized knowledge (frontend, backend, infrastructure or other technologies) balanced with general skills and knowledge.&nbsp;</li> <li>Experience in code review practices, and an understanding of how to safely update production systems.</li> <li>Familiarity with navigating and managing work in large code bases.</li> <li>Experience leading small projects independently, and contributing to larger projects alongside peers.</li> <li>Ability to operate with high agency in navigating complex technical obstacles independently, knowing precisely when to unblock oneself and when to ask for help.</li> </ul>",
-    "posted_at": "2026-10-07T19:02:27-04:00",
+    "posted_at": "2026-10-20T17:25:50-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-20T23:34:43.583Z"
   },
   {
     "id": 86,
@@ -1976,7 +1980,7 @@
     "reasoning": "Head of Legal Engineering, Spain is a country-level leadership role centered on legal domain expertise, not a senior full-stack or backend product engineering IC role the candidate seeks. The Madrid location conflicts with the candidate's Utrecht / Netherlands base and preference for Netherlands on-site/hybrid or EU-remote work. While the candidate has 10+ years engineering, mentoring developers on WebRatio, and Python/AI scripting from the REA bot, he has no legal background, Spanish legal-market experience, or Head-level management track record."
   },
   {
-    "id": 21,
+    "id": 23,
     "external_id": "6200725004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -1989,7 +1993,7 @@
     "posted_at": "2026-10-17T22:00:31-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders, which is not explicitly demonstrated in the candidate's CV. The candidate's experience is primarily as a software engineer rather than in a managerial capacity. Additionally, the job emphasizes a strong technical foundation in modern web or frontend systems, which the candidate has, but lacks specific experience in leading frontend teams or working with large-scale frontend ecosystems like TypeScript, which is preferred for this role.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, this role is focused on engineering management, requiring significant experience in managing teams and developing technical leaders. The candidate's experience is primarily as a software engineer rather than in a managerial capacity, which is a key requirement for this position. Additionally, the role emphasizes experience with modern web or frontend systems and AI integration, which the candidate has some exposure to but lacks direct management experience in these areas.",
     "applied_at": null,
     "first_seen": "2026-10-18T02:29:13.338Z"
   },
@@ -2026,7 +2030,7 @@
     "reasoning": null
   },
   {
-    "id": 19,
+    "id": 21,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2039,12 +2043,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority level. Additionally, the focus on digital marketing and advertising does not match the candidate's strong background in software engineering and fintech.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate who is currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority. Additionally, the focus on digital marketing and advertising does not match the candidate's strong background in software engineering and fintech.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 18,
+    "id": 20,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2057,7 +2061,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior positions, making this opportunity completely misaligned with their career level and aspirations.",
+    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The candidate has over 10 years of experience and is not interested in entry-level positions, making this opportunity completely mismatched. Additionally, the role requires enrollment in an educational institution, which does not align with the candidate's current professional status.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2078,7 +2082,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 18,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2091,12 +2095,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which is not highlighted in the candidate's profile.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which does not match the candidate's stated preferences for software engineering roles.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 15,
+    "id": 17,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2109,7 +2113,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant, but the gaps in specific analytics experience and language proficiency lead to a weak fit overall.",
+    "reasoning": "While the candidate has strong experience in software engineering and relevant skills in Java, SQL, and React, the job posting for an Analytics Engineer requires specific experience in analytics engineering, dbt, and marketing technology, which the candidate does not explicitly possess. Additionally, the requirement for fluent Dutch is a significant gap, as the candidate's language proficiency is not mentioned. Therefore, while there are some relevant skills, the overall fit is limited by these gaps.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2574,7 +2578,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 17,
+    "id": 19,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2587,7 +2591,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate's background as a senior full-stack software engineer with expertise in Java, SQL, and React does not align with the requirements of this role, which emphasizes analytical skills in media and data-driven insights. Additionally, the job does not leverage the candidate's extensive software development experience, making it a poor fit.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not require software development skills, which are the candidate's primary strengths.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -3036,7 +3040,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 13,
+    "id": 15,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3432,7 +3436,7 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "8223520",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3445,7 +3449,7 @@
     "posted_at": "2026-10-20T10:31:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are critical for this role. While the candidate's background in fintech and full-stack development is relevant, the job requires substantial experience in a browser-engine context, which the candidate does not have. Additionally, the role focuses heavily on testing and debugging within a mature codebase, areas where the candidate's experience may not align directly.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are crucial for this role. While they have a solid background in writing tests and working with JavaScript, the requirement for substantial experience in a browser-engine codebase, especially with Firefox/Gecko, is a significant gap. Additionally, the role emphasizes debugging skills in a large codebase, which is not explicitly mentioned in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
@@ -3756,7 +3760,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 20,
+    "id": 22,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3769,12 +3773,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes experience with Python and AWS, which the candidate does not explicitly list as part of their core competencies, focusing instead on Java and SQL. The requirement for designing multi-region, multi-tenant platforms also presents a gap in the candidate's experience.",
+    "reasoning": "The job posting for Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes proficiency in Python and experience with AWS and Kubernetes, which are not highlighted in the candidate's profile. While the candidate has strong backend experience and a fintech background, the geographical constraint and specific technical requirements make this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 10,
+    "id": 14,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3792,7 +3796,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 9,
+    "id": 13,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3828,7 +3832,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 14,
+    "id": 12,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3841,7 +3845,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, as it requires specific expertise in machine learning and AI frameworks, which the candidate does not possess. The candidate has strong experience in full-stack development and fintech but lacks the necessary qualifications in machine learning, Python proficiency in ML frameworks, and experience with NLP libraries. Additionally, the role is focused on AI-powered features, which is outside the candidate's stated areas of interest and expertise.",
+    "reasoning": "The job posting is for a Machine Learning Engineer role, which requires specific expertise in machine learning, including experience with ML frameworks like PyTorch or TensorFlow, and familiarity with NLP libraries. The candidate's background is primarily in full-stack software engineering with a focus on Java, React, and CI/CD, lacking the necessary machine learning experience and skills. Additionally, the role is remote but based in Spain, which does not align with the candidate's preference for remote roles anywhere in Europe without specific location constraints.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3882,7 +3886,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 22,
+    "id": 24,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3895,12 +3899,12 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting specifically focuses on security assurance, which is not a highlighted area in the candidate's CV. The candidate lacks direct experience with security frameworks and standards mentioned in the posting, such as ISO 27001 and SOC 2, and does not have experience with Go or TypeScript, which are preferred programming languages for this role. Additionally, the role emphasizes cloud-native security and compliance automation, which the candidate has not explicitly demonstrated expertise in.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, this role focuses heavily on security assurance and compliance within a cloud-native environment. The candidate lacks specific experience with security frameworks and standards mentioned in the job posting, such as ISO 27001 and SOC 2, which are critical for this position. Additionally, the role requires knowledge of Go and Kubernetes, which the candidate does not have. Therefore, while there are relevant skills, the gaps in security experience and specific technologies make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 23,
+    "id": 25,
     "external_id": "33dd68d3-cd02-47ee-b3ec-24f39d51308d",
     "source": "ashby",
     "company": "ICEYE",
@@ -3936,7 +3940,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 24,
+    "id": 26,
     "external_id": "5213322007",
     "source": "greenhouse",
     "company": "Together AI",
