@@ -270,7 +270,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 5,
+    "id": 4,
     "external_id": "6720006",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1144,7 +1144,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 8,
     "external_id": "8138757",
     "source": "greenhouse",
     "company": "N26",
@@ -1154,10 +1154,12 @@
     "employment_type": "Intern",
     "url": "https://n26.com/en-eu/careers/positions/8138757?gh_jid=8138757",
     "description": "<h2><strong>About the opportunity</strong></h2> <p>As an IT Solutions Engineer (Google Cloud) within N26 Internal IT, you will be the primary architect, engineer, and guardian of our Google Workspace and Google Cloud Platform (GCP) corporate ecosystem.</p> <p>We aren’t looking for traditional system administrators. We need a modern, engineering-focused professional who treats our Google environment as a programmable platform. You will bridge the gap between corporate productivity, identity management, and cloud infrastructure—ensuring our global workforce is secure, highly automated, and empowered by next-generation AI integrations.</p> <h2><strong>In this role, you will:</strong></h2> <ul> <li> <p>Infrastructure &amp; Governance: Manage the full lifecycle of our enterprise Google Workspace organization. Design and maintain complex GCP project structures, organizational units (OUs), Cloud Identity, and Chrome Enterprise across the company.</p> </li> <li> <p>Automation &amp; Development: Eliminate manual overhead by building robust, custom automation workflows. Leverage Google Apps Script, Python, and REST APIs to seamlessly integrate Workspace with internal tools, HRIS platforms, and Identity providers.</p> </li> <li> <p>Next-Gen Productivity: Lead the rollout, adoption, and ongoing optimization of Gemini Enterprise, driving organizational productivity through emerging AI capabilities.</p> </li> <li> <p>Security &amp; Compliance: Design and enforce Data Loss Prevention (DLP) rules, Context-Aware Access (CAA), and secure BYOD (Bring Your Own Device) policies that balance \"Security first\" with \"Employee Experience.\"</p> </li> <li> <p>eDiscovery &amp; Compliance: Serve as the technical owner for Google Vault. Define and manage data retention policies, execute precise legal holds, and lead matter-based exports to meet strict financial regulatory and audit requirements.</p> </li> </ul> <h2><strong>What you need to be successful:</strong></h2> <ul> <li> <p>Google Workspace &amp; GCP Expertise: Deep, hands-on experience administering Google Workspace at an enterprise scale, combined with solid foundational knowledge of GCP (IAM hierarchies, Service Accounts, VPCs, and Organization Policies).</p> </li> <li> <p>Automation Mindset: Proven track record of automating repetitive IT workflows using Python, JavaScript, or Google Apps Script, and interacting with RESTful APIs.</p> </li> <li> <p>Infrastructure as Code Skills: Practical experience (or strong familiarity) using Terraform to manage SaaS or cloud environments.</p> </li> <li> <p>Security &amp; Identity Focus: Deep understanding of modern identity management, SAML/OIDC protocols, and Zero Trust security architectures (specifically Google’s Context-Aware Access and BeyondCorp models).</p> </li> <li> <p>Chrome Enterprise Management: Proven experience configuring Chrome as a secure enterprise browser, including the deployment of Chrome Enterprise Premium security controls.</p> </li> <li> <p>Analytical &amp; Compliance-Minded: Familiarity with compliance standards (e.g., GDPR, SOC2) and the operational workflows of Google Vault for legal and audit discovery.</p> </li> <li> <p>Collaborative Spirit: Strong communication skills with the ability to translate complex technical requirements into user-friendly solutions for a diverse global team.</p> </li> </ul> <h3>Nice to Have</h3> <ul> <li> <p>Professional Certifications: Google Cloud Professional Collaboration Engineer, Google Cloud Professional Cloud Architect, or equivalent security certifications.</p> </li> <li> <p>Fintech Experience: Experience working in highly regulated industries (banking, fintech, or healthcare) with stringent data governance requirements.</p> </li> </ul> <h2><strong>What’s in it for you:</strong></h2> <ul> <li>Accelerate your career growth by joining one of Europe’s most talked about disruptors 🚀.</li> <li>Employee benefits that range from a competitive personal development budget, work from home budget, discounts to fitness &amp; wellness memberships, language apps and public transportation.&nbsp;</li> <li>As an N26 employee you will have access to a Premium subscription on your personal N26 bank account. As well as subscriptions for friends and family members.&nbsp;&nbsp;&nbsp;&nbsp;</li> <li>Additional day of annual leave for each year of service.&nbsp;&nbsp;</li> <li>A high degree of autonomy and access to cutting edge technologies - all while working with a friendly team of peers of diverse nationalities, experiences, and backgrounds.&nbsp;</li> <li>A relocation package with visa support for those who need it.</li> </ul> <h2><strong>Who we are</strong></h2> <p>N26 has reimagined banking for today’s digital world. Technology and design empower<a href=\"https://n26.com/en-eu/blog\"> everything we do</a> and it’s how we are building the global banking platform the world loves to use.</p> <p>We've eliminated physical branches, paperwork, and hidden fees for an elegant digital experience and supreme savings. Giving people the power to live and bank their way is what gets us out of bed in the morning and inspires the work that we do.&nbsp;</p> <p>We are headquartered in Berlin with offices in multiple cities across Europe, including Vienna and Barcelona, and a 1,500-strong team of more than 80 nationalities.&nbsp;</p> <p><strong>Do you see yourself thriving in this role? </strong>We’d love to see your application even if you don’t meet 100% of the criteria. You may just be the right fit for this or other roles!</p> <p><strong>Equal opportunities for all</strong></p> <p>At N26, we believe our strength lies in our people and the varied perspectives they bring. We strive to build diverse teams that drive innovation and business success. We actively seek talent from all backgrounds and welcome applications from all genders, cultures, sexual orientations, abilities, neurodiversities, and ages.</p> <p>We are committed to providing an excellent and accessible candidate experience. If you require any accommodations to make this process work for you, please let us know. We’re here to support you!</p> <p>Discover more about Diversity &amp; Inclusion at N26:<a href=\"https://n26.com/en-eu/diversity-and-inclusion\"> https://n26.com/en-eu/diversity-and-inclusion</a></p> <p>&nbsp;</p>",
-    "posted_at": "2026-10-01T09:10:42-04:00",
+    "posted_at": "2026-10-21T05:37:41-04:00",
     "tags": null,
     "verdict": null,
-    "reasoning": null
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
     "id": 23,
@@ -1326,7 +1328,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 6,
+    "id": 5,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2030,7 +2032,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 22,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2043,12 +2045,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which the candidate does not meet. Therefore, this position is not suitable for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not suitable for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 24,
+    "id": 21,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2061,7 +2063,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The candidate has over 10 years of experience and is seeking senior-level positions, making this opportunity completely mismatched with their career stage and expectations.",
+    "reasoning": "This job posting is for an internship position, which is not aligned with the candidate's seniority level and explicit constraints against junior or entry-level roles. The candidate has over 10 years of experience as a senior full-stack software engineer, making this internship position unsuitable. Additionally, the role requires enrollment in an educational institution, which the candidate does not meet.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2082,7 +2084,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 19,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2095,12 +2097,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for Digital Video & Audio Specialist at WPP Media is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in fintech and software development. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's core competencies. Additionally, the position does not align with the candidate's preference for software engineering roles, making it a mismatch.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic media planning, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not require the technical skills or experience that the candidate possesses, such as Java, SQL, or React development.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 21,
+    "id": 18,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2113,7 +2115,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a solid background in fintech, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not indicate they possess. The candidate's skills in Java, SQL, and React are relevant but do not align closely with the primary focus of this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not meet. The candidate's skills in Java, SQL, and React are relevant but do not align closely enough with the specific analytics focus of the position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2578,7 +2580,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 23,
+    "id": 20,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2591,7 +2593,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Digital Video & Audio Specialist, which is primarily focused on digital marketing, media planning, and campaign management rather than software engineering. The candidate has a strong background in software engineering, particularly in fintech, but lacks the specific experience and interest in digital media and advertising that this role requires. Additionally, the role does not align with the candidate's preference for full-stack or backend engineering positions.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, media planning, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and programmatic advertising, areas where the candidate has not indicated experience or interest.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2650,7 +2652,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 7,
+    "id": 6,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3040,7 +3042,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 14,
+    "id": 17,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3449,7 +3451,7 @@
     "posted_at": "2026-10-20T10:31:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in Java and JavaScript, particularly in frontend development with React, but lacks specific experience with C++ and browser-engine codebases, which are critical for this role. While the candidate's background in fintech and full-stack development is relevant, the job requires substantial experience with Firefox/Gecko and automated testing in a browser-engine context, which the candidate does not possess. Additionally, the focus on debugging within a large codebase is not highlighted in the candidate's experience.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are critical for this role. While the candidate's background in JavaScript and testing aligns with some responsibilities, the requirement for substantial experience in a browser-engine codebase and proficiency in C++ presents significant gaps. Additionally, the focus on automated testing for a browser engine is not reflected in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
@@ -3742,7 +3744,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 8,
+    "id": 7,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3760,7 +3762,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 17,
+    "id": 23,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3773,12 +3775,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's preference for roles in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength, and emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's background. Furthermore, the requirement for on-call rotation may not align with the candidate's preferences.",
+    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength, and it emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's profile. Therefore, the position does not align with the candidate's location preference and lacks required technical skills.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 16,
+    "id": 15,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3796,7 +3798,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 15,
+    "id": 14,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3845,7 +3847,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in Python with ML frameworks. The candidate's expertise does not align with the specific qualifications needed for this role, such as experience with NLP libraries and developing ML services. Additionally, the role focuses heavily on machine learning, which is outside the candidate's stated interests and experience.",
+    "reasoning": "This job posting for a Machine Learning Engineer at Twilio is a poor fit for the candidate, as it requires specific expertise in machine learning, including proficiency in Python and experience with ML frameworks such as PyTorch or TensorFlow. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and React, lacking the necessary machine learning experience and skills. Additionally, the role is focused on AI and ML, which is not aligned with the candidate's stated interests in fintech and product engineering.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3886,7 +3888,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 18,
+    "id": 24,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3899,12 +3901,12 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting is focused on security assurance, which requires specific knowledge of security standards and frameworks that the candidate does not explicitly mention. The candidate's experience with Java, React, and CI/CD aligns with the technical requirements, but the lack of direct experience in security programs and cloud-native security practices presents a significant gap. Additionally, the role emphasizes knowledge of Go and TypeScript, which the candidate does not list as part of their skill set.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting specifically focuses on security assurance and requires knowledge of security frameworks and cloud-native applications, which the candidate does not explicitly mention. The candidate's experience with Java, React, and CI/CD aligns with the development aspect of the role, but the lack of direct experience in security programs and the specific technologies mentioned (like Go and Kubernetes) presents a significant gap. Additionally, the role is more focused on security than the candidate's background suggests.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 19,
+    "id": 26,
     "external_id": "33dd68d3-cd02-47ee-b3ec-24f39d51308d",
     "source": "ashby",
     "company": "ICEYE",
@@ -3922,7 +3924,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 4,
+    "id": 9,
     "external_id": "8025854",
     "source": "greenhouse",
     "company": "Monzo",
@@ -3940,7 +3942,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 20,
+    "id": 28,
     "external_id": "5213322007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -3956,5 +3958,77 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-20T18:51:31.037Z"
+  },
+  {
+    "id": 25,
+    "external_id": "68eacfb3-4b22-4f6b-969c-8dcb97e9238f",
+    "source": "ashby",
+    "company": "HappyRobot Inc.",
+    "title": "Forward Deployed Engineer",
+    "location": "Spain",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/happyrobot.ai/68eacfb3-4b22-4f6b-969c-8dcb97e9238f",
+    "description": "",
+    "posted_at": "2026-10-21T10:00:59.346+00:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "The job posting for a Forward Deployed Engineer at HappyRobot Inc. is not suitable for the candidate as it is located in Spain and does not align with their preference for roles based in or targeting the Netherlands. Additionally, there is no specific information about the technical requirements or responsibilities in the job description, making it difficult to assess fit. Given the candidate's constraints, particularly their unwillingness to relocate to the US or work on-site in a different country, this opportunity is not a match.",
+    "applied_at": null,
+    "first_seen": "2026-10-21T14:16:46.373Z"
+  },
+  {
+    "id": 29,
+    "external_id": "5028749007",
+    "source": "greenhouse",
+    "company": "Together AI",
+    "title": "Staff Engineer, Distributed Storage,HPC & AI Infrastructure",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/togetherai/jobs/5028749007",
+    "description": "<h3><strong>About the Role</strong></h3> <p>In this role, you will design and deliver multi-petabyte storage systems purpose-built for the world’s largest AI training and inference workloads. You’ll architect high-performance parallel filesystems and object stores, evaluate and integrate cutting-edge technologies such as WekaFS, Ceph, and Lustre, and drive aggressive cost optimization-routinely achieving 30-50% savings through intelligent tiering, lifecycle policies, capacity forecasting, and right-sizing.&nbsp;</p> <p>You will also build Kubernetes-native storage operators and self-service platforms that provide automated provisioning, strict multi-tenancy, performance isolation, and quota enforcement at cluster scale. Day-to-day, you’ll optimize end-to-end data paths for 10-50 GB/s per node, design multi-tier caching architectures, implement intelligent prefetching and model-weight distribution, and tune parallel filesystems for AI workloads.&nbsp;</p> <p>Hybrid Working 2 days a week at our offices in Amsterdam</p> <p><strong>Responsibilities</strong></p> <ul> <li>Design multi-petabyte AI/ML storage systems; integrate WekaFS, Ceph, etc.; lead capacity planning and cost optimization (30-50% savings via tiering, lifecycle policies, right-sizing).</li> <li>Design/optimize RDMA, InfiniBand, 400GbE networks; tune for max throughput/min latency; implement NVMe-oF/iSCSI; troubleshoot bottlenecks; optimize TCP/IP for storage.</li> <li>Build Kubernetes storage operators/controllers; enable automated provisioning, self-service abstractions, multi-tenant isolation, quotas; create reusable Helm/Terraform patterns.</li> <li>Deliver 10-50 GB/s per GPU node; optimize caching (weights/datasets/checkpoints), parallel filesystems, and data paths; troubleshoot with profiling tools; scale to thousands of nodes.</li> <li>Build multi-tier caches (local NVMe, distributed, object); optimize data locality and model-weight distribution; implement smart prefetching/eviction.</li> <li>Implement monitoring, alerting, SLOs; design DR/backups with runbooks; run chaos engineering; ensure 99.9%+ uptime via proactive/automated remediation.</li> <li>Partner with ML/SRE teams; mentor on storage best practices; contribute to open-source; write docs, postmortems, and public learnings.</li> </ul> <h3><strong>Requirements</strong></h3> <ul> <li>8+ years in storage engineering with 3+ years managing distributed storage at multi-petabyte scale</li> </ul> <ul> <li>Proven track record deploying and operating high-performance storage for GPU/HPC clusters</li> </ul> <ul> <li>Deep Kubernetes and cloud-native storage experience in production environments</li> </ul> <ul> <li>Strong coding skills in Go and Python with demonstrated ability to build production-grade tools</li> </ul> <ul> <li>BS/MS in Computer Science, Engineering, or equivalent practical experience</li> </ul> <ul> <li>History of technical leadership: designing systems that significantly improved performance (>3x), reliability (99.9%+ uptime), or cost efficiency</li> </ul> <ul> <li>Distributed Storage Systems: Deep expertise in WekaFS, Lustre, GPFS, BeeGFS, or similar parallel filesystems at multi-petabyte scale</li> </ul> <ul> <li>Object Storage: Production experience with S3, MinIO, Ceph, or R2 including performance optimization and cost management</li> </ul> <ul> <li>Kubernetes Storage: CSI drivers, StatefulSets, PersistentVolumes, storage operators, and custom controllers</li> </ul> <ul> <li>Storage optimization for GPU workloads, RDMA/InfiniBand networking, parallel filesystem optimization (100+ GB/s aggregate cluster throughput)</li> </ul> <ul> <li>Programming: Go and Python for automation, operators, and tooling</li> </ul> <ul> <li>Infrastructure as Code: Terraform, Ansible, Helm, GitOps (ArgoCD)</li> </ul> <ul> <li>Linux Storage Stack: Advanced knowledge of filesystems (ext4, xfs), LVM, NVMe optimization, RAID configurations</li> </ul> <ul> <li>Observability: Prometheus, Grafana, Thanos architecture and operations</li> </ul> <h3><strong>Nice to Have Skills</strong></h3> <ul> <li>GPU Direct Storage (GDS), NVMe-oF, storage networking (100GbE/400GbE)</li> </ul> <ul> <li>ML/AI storage patterns (model weights, checkpointing, dataset caching)</li> </ul> <ul> <li>Kubernetes operator development (controller-runtime, kubebuilder)</li> </ul> <ul> <li>Storage snapshots, cloning, and thin provisioning</li> </ul> <ul> <li>Backup and disaster recovery (Velero, Restic, cross-region replication)</li> </ul> <ul> <li>Storage encryption (at-rest and in-transit), security and compliance</li> <li>Storage benchmarking and profiling tools (fio, iperf3, iostat, blktrace)</li> </ul> <p><strong>About Together AI</strong></p> <p>Together AI is a research-driven artificial intelligence company. We believe open and transparent AI systems will drive innovation and create the best outcomes for society, and together we are on a mission to significantly lower the cost of modern AI systems by co-designing software, hardware, algorithms, and models. We have contributed to leading open-source research, models, and datasets to advance the frontier of AI, and our team has been behind technological advancement such as FlashAttention, Hyena, FlexGen, and RedPajama. We invite you to join a passionate group of researchers in our journey in building the next generation AI infrastructure.</p> <h3><strong>Equal Opportunity</strong></h3> <p>Together AI is an Equal Opportunity Employer and is proud to offer equal employment opportunity to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and more.</p> <p>Please see our privacy policy at <a href=\"https://www.together.ai/privacy\">https://www.together.ai/privacy</a>&nbsp;&nbsp;</p>",
+    "posted_at": "2026-10-21T08:30:12-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-21T14:16:46.373Z"
+  },
+  {
+    "id": 16,
+    "external_id": "8888205002",
+    "source": "greenhouse",
+    "company": "Vonage",
+    "title": "Senior Director, BSS Engineering & Product​",
+    "location": "Work from Home - Spain",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/vonage/jobs/8888205002",
+    "description": "<div class=\"content-intro\"><h2><strong>Join Vonage and help us innovate cloud communications for businesses worldwide!</strong></h2></div><p>&nbsp;</p> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">Why this role matters:</h2> <p class=\"p8i6j03 paragraph\">BSS Engineering and Product is a critical enabler of Vonage's commercial platform, ensuring our business support systems are scalable, reliable, commercially aligned, and able to support growth across products, regions, and customer segments. As Senior Director, BSS Engineering &amp; Product, you will lead the global BSS function across engineering ownership, product direction, platform strategy, and delivery for billing, rating, provisioning, ordering, revenue management, customer lifecycle management, and related integrations.<br><br></p> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">Your key responsibilities:</h2> <p class=\"p8i6j03 paragraph\"><strong>BSS Engineering Leadership</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Lead the global BSS engineering organization, owning architecture, delivery, quality, resilience, technical standards, and platform performance across core BSS systems</li> <li class=\"p8i6j0c\">Define engineering practices across solution design, integration, release management, test automation, observability, and technical debt management</li> <li class=\"p8i6j0c\">Ensure BSS platforms support scale, availability, security, compliance, and the needs of a multi-product, multi-region commercial model.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>BSS Product Ownership &amp; Roadmap</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Own the BSS product strategy and roadmap, prioritizing capabilities against commercial, customer, operational, regulatory, and finance needs</li> <li class=\"p8i6j0c\">Translate business requirements into a clear product backlog across billing, rating, mediation, ordering, CPQ, revenue management, customer lifecycle management, and related integrations</li> <li class=\"p8i6j0c\">Establish governance, prioritization forums, success measures, and communication rhythms, including the use of AI-enabled insight and automation to improve delivery, decision-making, and platform optimisation.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>Team Leadership &amp; Operating Cadence</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Lead and develop a global BSS Engineering and Product team, including engineering managers, product owners, platform leads, architects, and delivery specialists</li> <li class=\"p8i6j0c\">Run an effective operating cadence across roadmap planning, delivery governance, platform health, stakeholder prioritisation, risk management, and product delivery progress</li> <li class=\"p8i6j0c\">Build organisational capability through hiring, succession planning, team structure design, globally distributed delivery, and practical AI enablement across engineering and product ways of working.<br><br></li> </ul> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">What you'll bring:</h2> <p class=\"p8i6j03 paragraph\"><strong>Required:</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Senior BSS engineering and product leadership experience in global telecommunications, CPaaS, cloud communications, or enterprise SaaS</li> <li class=\"p8i6j0c\">Deep BSS domain expertise, including platforms such as Amdocs, Oracle Communications, CSGi, NetCracker, Zuora, Optiva, Salesforce CPQ, or equivalent</li> <li class=\"p8i6j0c\">Experience leading BSS platform delivery, including migrations, integrations, data improvement, release planning, and API-led or cloud-native architectures where appropriate</li> <li class=\"p8i6j0c\">Strong product ownership capability, with experience translating commercial, finance, regulatory, operational, and customer needs into a clear roadmap and measurable outcomes</li> <li class=\"p8i6j0c\">Experience leading geographically distributed engineering, product, architecture, and delivery teams in a matrixed environment, with a track record of using AI, automation, or data-driven tooling to improve productivity, quality, and platform outcomes.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>Experience we consider a plus:</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Experience in CPaaS, UCaaS, CCaaS, or Tier 1/Tier 2 telecommunications</li> <li class=\"p8i6j0c\">Experience with API monetisation, partner billing, usage-based charging, subscription management, or digital self-service.<br><br></li> </ul> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">How you'll benefit</h2> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Private Medical Insurance: Adeslas</li> <li class=\"p8i6j0c\">Group Pension Plan: Generali</li> <li class=\"p8i6j0c\">Life Insurance and Group Personal Accident: VidaCaixa</li> <li class=\"p8i6j0c\">Ericsson Care Line</li> <li class=\"p8i6j0c\">Discretionary Time Off (DTO)/Hourly Paid Time Off (PTO)</li> <li class=\"p8i6j0c\">Volunteer Time (VTO)</li> <li class=\"p8i6j0c\">Additional benefits and perks will be shared and discussed with you by the recruiter during the interview process.</li> </ul> <p class=\"p8i6j03 paragraph\"><span style=\"color: rgb(255, 255, 255);\">#LI-KF1</span></p> <p>&nbsp;</p><div class=\"content-conclusion\"><p><strong>There’s no perfect candidate.</strong> You don't need all the preferred qualifications to make a valuable impact on our team. Our employees and customers come from diverse backgrounds, so if you're passionate about what you could achieve at Vonage, we'd love to hear from you.</p> <p>To learn how we process your personal data during the recruitment process, please refer to our <a href=\"https://www.vonage.com/legal/careers-privacy-notice/\"><span class=\"s1\"><strong>Privacy Notice</strong></span></a>.&nbsp;</p> <p><strong>Who we are:</strong></p> <p>Vonage is a global cloud communications leader. And your talent will further help brands - such as Airbnb, Viber, WhatsApp, and Snapchat - accelerate their digital transformation through our fully programmable-based unified communications, contact center solutions, and communications APIs. Ready to innovate? Then join us today.</p> <p><span style=\"font-size: 8pt;\">Note: The purpose of this profile is to provide a general summary of essential responsibilities for the position and is not meant as an exhaustive list. Assignments may differ for individuals within the same role based on business conditions, departmental need or geographic location.&nbsp;</span></p></div>",
+    "posted_at": "2026-10-21T06:05:30-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Senior Director role in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and deep domain expertise in BSS platforms. The candidate, while experienced as a full-stack software engineer with a strong fintech background, lacks the necessary senior leadership experience in the telecommunications sector and specific BSS domain knowledge required for this position. Additionally, the role is focused on product ownership and strategic leadership rather than hands-on engineering, which does not align with the candidate's profile.",
+    "applied_at": null,
+    "first_seen": "2026-10-21T14:16:46.373Z"
+  },
+  {
+    "id": 27,
+    "external_id": "5255300007",
+    "source": "greenhouse",
+    "company": "Zscaler",
+    "title": "Sales Engineer - Spain",
+    "location": "Remote - Spain",
+    "workplace_type": "Remote",
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5255300007",
+    "description": "<div class=\"content-intro\"><p data-pm-slice=\"1 1 []\">Zscaler (NASDAQ: ZS) accelerates digital transformation so customers can be more agile, efficient, resilient, and secure. The Zscaler Zero Trust Exchange platform protects thousands of customers from cyberattacks and data loss by securely connecting users, devices, and applications in any location. Distributed across 200+ public data centers globally and thousands of private sites at the edge, the SASE-based Zero Trust Exchange is the world’s largest in-line cloud security platform.</p> <p>We believe the future of work is Human + AI and are building an AI-native enterprise where human potential is amplified by machine intelligence to solve the world’s hardest security challenges. Driven by deep customer obsession, we are committed to the mission, outcome, and to each other. We bring these commitments to life through three core behaviors: ownership and collaboration, trust through outcomes and impact, and a challenge culture with ongoing feedback. Ready to make an impact at the company pioneering security transformation in the AI era? Join us at Zscaler.</p></div><p><strong>About the Role</strong><strong><br></strong>We are looking for a Sales Engineer to join our team. This is a remote role based out of Madrid, Spain, reporting to the Senior Sales Engineering Manager in the Solutions Consulting department. In this role, you will serve as the technical pivot point for our sales process, presenting the Zscaler cloud security platform to prospective customers and translating their business goals into enticing, high-impact recommendations. As a trusted advisor, you will guide clients through their digital transformation journeys, gathering technical requirements and driving proof-of-concept engagements, presentations, and custom demonstrations that clearly articulate our value proposition while collaborating closely with Account Executives and cross-functional teams to shape comprehensive account strategies.</p> <p><strong>What you’ll do (Role Expectations)</strong></p> <ul> <li>Present the Zscaler cloud security platform to prospective customers to demonstrate clear business value</li> <li>Set the technical vision and translate customer goals into enticing, relevant recommendations</li> <li>Act as a trusted advisor to clients, guiding and aiding them through their transformational security journey</li> <li>Gather customer technical requirements and promote the value proposition through presentations, demonstrations, and proof-of-concept engagements</li> <li>Partner closely with Account Executives, cross-functional specialists, and extended teams to shape strategic account plans</li> </ul> <p><strong>Who You Are (Success Profile)</strong></p> <ul> <li>You thrive in ambiguity. You're comfortable building the path as you walk it. You thrive in a dynamic environment, seeing ambiguity not as a hindrance, but as the raw material to build something meaningful.</li> <li>You act like an owner. Your passion for the mission fuels your bias for action. You operate with integrity because you genuinely care about the outcome. True ownership involves leveraging dynamic range: the ability to navigate seamlessly between high-level strategy and hands-on execution.</li> <li>You are a problem-solver. You love running towards the challenges because you are laser-focused on finding the solution, knowing that solving the hard problems delivers the biggest impact.</li> <li>You are a high-trust collaborator. You are ambitious for the team, not just yourself. You embrace our challenge culture by giving and receiving ongoing feedback—knowing that candor delivered with clarity and respect is the truest form of teamwork and the fastest way to earn trust.</li> <li>You are a learner. You have a true growth mindset and are obsessed with your own development, actively seeking feedback to become a better partner and a stronger teammate. You love what you do and you do it with purpose.</li> </ul> <p><strong>What We’re Looking for (Minimum Qualifications)</strong></p> <ul> <li>5+ years of experience as a Sales Engineer or Systems Integrator</li> <li>Deep knowledge of enterprise network or cloud security technologies</li> <li>Proven experience working with Value Selling Methodologies</li> <li>Demonstrated ability to produce high-impact presentations, technical demonstrations, and partner with sales teams to deliver proof-of-concept engagements</li> <li>Foundational understanding of AI/ML technologies and experience leveraging, securing, or positioning AI-driven solutions to optimize outcomes within your functional domain</li> </ul> <p><strong>What Will Make You Stand Out (Preferred Qualifications)</strong></p> <ul> <li>Experience demonstrating or positioning AI-powered threat detection, predictive security analytics, or AI-driven data protection features to enterprise clients</li> <li>Cloud Platform or other relevant industry certifications such as CISSP or CCNP, alongside domain expertise in SASE, Identity, Proxy technology, Cybersecurity, DLP, CASB, or CNAPP</li> <li>Professional fluency in English combined with a proven track record of supporting and winning large enterprise accounts</li> </ul> <p>#LI-Remote<br>#LI-LJ1</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p><span data-sheets-root=\"1\">Zscaler’s salary ranges are benchmarked and determined by role and level. The range displayed on this job posting reflects the minimum and maximum target for new hire base salaries for this position across all Spain locations. Individual pay placement within this range is determined based on objective, gender-neutral criteria including job-related skills, relevant experience, and education or training. The base salary range listed for this full-time position excludes commission/bonus/equity (if applicable) and benefits. </span></p></div><div class=\"title\">Base Pay Range</div><div class=\"pay-range\"><span>€63.000</span><span class=\"divider\">&mdash;</span><span>€90.000 EUR</span></div></div></div><div class=\"content-conclusion\"><p data-pm-slice=\"1 3 []\">At Zscaler, we are committed to building a team that reflects the communities we serve and the customers we work with. We foster an inclusive environment that values all backgrounds and perspectives, emphasizing collaboration and belonging. Join us in our mission to make doing business seamless and secure.</p> <p>Our Benefits program is one of the most important ways we support our employees. Zscaler proudly offers comprehensive and inclusive benefits to meet the diverse needs of our employees and their families throughout their life stages, including:</p> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <ul> <li>Various health plans</li> <li>Time off plans for vacation and sick time</li> <li>Parental leave options</li> <li>Retirement options</li> <li>Education reimbursement</li> <li>In-office perks, and more!</li> </ul> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <p data-pm-slice=\"1 1 []\">Learn more about Zscaler's hybrid working model and benefits&nbsp;<a href=\"https://www.zscaler.com/candidate-resource-hub\" target=\"_blank\">here</a>.</p> </div> </div> <p>By applying for this role, you adhere to applicable laws, regulations, and Zscaler policies, including those related to security and privacy standards and guidelines.</p> <p class=\"p1\">Zscaler is committed to providing equal employment opportunities to all individuals. We strive to create a workplace where employees are treated with respect and have the chance to succeed. All qualified applicants will be considered for employment without regard to race, color, religion, sex (including pregnancy or related medical conditions), age, national origin, sexual orientation, gender identity or expression, genetic information, disability status, protected veteran status, or any other characteristic protected by federal, state, or local laws. <em>See more information by clicking on the </em><a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\"><em>Know Your Rights: Workplace Discrimination is Illegal </em></a><em>link.</em></p> <p>Pay Transparency</p> <p>Zscaler complies with all applicable federal, state, and local pay transparency rules.</p> <p>Zscaler is committed to providing reasonable support (called accommodations or adjustments) in our recruiting processes for candidates who are differently abled, have long term conditions, mental health conditions or sincerely held religious beliefs, or who are neurodivergent or require pregnancy-related support.</p></div>",
+    "posted_at": "2026-10-21T04:38:27-04:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Sales Engineer role, which is not aligned with the candidate's background as a full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required experience in sales engineering or systems integration. Additionally, the role requires deep knowledge of enterprise network or cloud security technologies, which is not mentioned in the candidate's profile. Therefore, this position does not fit the candidate's skills or career aspirations.",
+    "applied_at": null,
+    "first_seen": "2026-10-21T14:16:46.373Z"
   }
 ]
