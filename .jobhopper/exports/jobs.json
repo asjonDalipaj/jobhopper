@@ -722,7 +722,7 @@
     "reasoning": null
   },
   {
-    "id": 16,
+    "id": 11,
     "external_id": "8167769",
     "source": "greenhouse",
     "company": "Elastic",
@@ -735,7 +735,7 @@
     "posted_at": "2026-10-20T08:53:23-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires intermediate to expert skills in Go, which the candidate does not possess. Additionally, the role emphasizes experience with Kubernetes, IaC (Terraform), and Kafka, areas where the candidate lacks direct experience. Although the candidate's fintech background and full-stack capabilities are relevant, the specific technical requirements present significant gaps.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting requires intermediate to expert skills in Go, Kubernetes, and Kafka, which the candidate does not possess. Additionally, the role emphasizes observability and telemetry, areas where the candidate has limited experience. However, the candidate's strong backend and frontend skills, along with their experience in CI/CD and DevOps, do align with some of the job's requirements.",
     "applied_at": null,
     "first_seen": "2026-10-20T14:01:47.636Z"
   },
@@ -1208,7 +1208,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 15,
     "external_id": "8232358",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1702,7 +1702,7 @@
     "reasoning": null
   },
   {
-    "id": 9,
+    "id": 14,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -2043,7 +2043,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. The role requires a candidate who is currently enrolled in a relevant educational program, which does not align with the candidate's extensive experience and seniority. Additionally, the focus on digital marketing and advertising does not match the candidate's strong background in software engineering and fintech.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires a candidate currently enrolled in a relevant educational program, which the candidate does not meet. Therefore, this position is not suitable for the candidate.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2061,7 +2061,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The candidate has over 10 years of experience and is not interested in entry-level positions, making this opportunity completely mismatched. Additionally, the role requires enrollment in an educational institution, which does not align with the candidate's current professional status.",
+    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires the candidate to be enrolled in an educational institution, which the candidate does not meet. Therefore, this position is completely mismatched with the candidate's experience and preferences.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2095,7 +2095,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which does not match the candidate's stated preferences for software engineering roles.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and campaign management rather than software engineering. The candidate has a strong background in full-stack software engineering, particularly in fintech, but lacks the specific experience and interest in digital media and advertising required for this role. Additionally, the position does not align with the candidate's preference for senior software engineering roles.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2113,7 +2113,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and relevant skills in Java, SQL, and React, the job posting for an Analytics Engineer requires specific experience in analytics engineering, dbt, and marketing technology, which the candidate does not explicitly possess. Additionally, the requirement for fluent Dutch is a significant gap, as the candidate's language proficiency is not mentioned. Therefore, while there are some relevant skills, the overall fit is limited by these gaps.",
+    "reasoning": "While the candidate has strong experience in software engineering and a solid fintech background, the job posting for an Analytics Engineer requires specific expertise in analytics engineering, data modeling, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. The candidate's experience with APIs and data management is relevant, but the gaps in required analytics skills and language proficiency lead to a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2591,7 +2591,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position does not require software development skills, which are the candidate's primary strengths.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media is not aligned with the candidate's background and preferences. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in full-stack software engineering and fintech. Additionally, the position does not leverage the candidate's strong technical skills in backend and frontend development, nor does it match their interest in product engineering and technical ownership.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -3040,7 +3040,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 15,
+    "id": 16,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3436,7 +3436,7 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 11,
+    "id": 12,
     "external_id": "8223520",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3449,7 +3449,7 @@
     "posted_at": "2026-10-20T10:31:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are crucial for this role. While they have a solid background in writing tests and working with JavaScript, the requirement for substantial experience in a browser-engine codebase, especially with Firefox/Gecko, is a significant gap. Additionally, the role emphasizes debugging skills in a large codebase, which is not explicitly mentioned in the candidate's experience.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and JavaScript, but lacks specific experience with C++ and browser-engine codebases, which are critical for this role. While the candidate's background in fintech and software engineering is relevant, the job requires substantial experience in a browser-engine context, which is not present in their profile. Additionally, the focus on writing automated tests for a browser engine is a specialized skill that the candidate does not explicitly demonstrate.",
     "applied_at": null,
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
@@ -3773,12 +3773,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes proficiency in Python and experience with AWS and Kubernetes, which are not highlighted in the candidate's profile. While the candidate has strong backend experience and a fintech background, the geographical constraint and specific technical requirements make this position unsuitable.",
+    "reasoning": "The job posting for Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the role emphasizes proficiency in Python or Kotlin, which the candidate does not list as a strong skill, focusing instead on Java and React. The requirement for experience with AWS and Kubernetes is also not mentioned in the candidate's background, indicating a significant gap in relevant experience.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 14,
+    "id": 10,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3796,7 +3796,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 13,
+    "id": 9,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3832,7 +3832,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 12,
+    "id": 13,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3845,7 +3845,7 @@
     "posted_at": "2026-10-19T10:33:15-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Machine Learning Engineer role, which requires specific expertise in machine learning, including experience with ML frameworks like PyTorch or TensorFlow, and familiarity with NLP libraries. The candidate's background is primarily in full-stack software engineering with a focus on Java, React, and CI/CD, lacking the necessary machine learning experience and skills. Additionally, the role is remote but based in Spain, which does not align with the candidate's preference for remote roles anywhere in Europe without specific location constraints.",
+    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in relevant ML frameworks like PyTorch or TensorFlow. Additionally, the role requires specific expertise in NLP libraries and AI/ML pipelines, which are not mentioned in the candidate's profile. The candidate's focus on fintech and full-stack development does not align with the machine learning focus of this position.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3886,7 +3886,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 24,
+    "id": 23,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3899,12 +3899,12 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, this role focuses heavily on security assurance and compliance within a cloud-native environment. The candidate lacks specific experience with security frameworks and standards mentioned in the job posting, such as ISO 27001 and SOC 2, which are critical for this position. Additionally, the role requires knowledge of Go and Kubernetes, which the candidate does not have. Therefore, while there are relevant skills, the gaps in security experience and specific technologies make this a weak fit.",
+    "reasoning": "While the candidate has a strong background in software engineering with expertise in Java, SQL, and React, the job posting focuses heavily on security assurance and compliance within a cloud-native environment. The candidate lacks specific experience in security frameworks and standards mentioned in the job description, such as ISO 27001 or SOC 2, which are crucial for this role. Additionally, the role requires experience with Go and TypeScript, which the candidate does not list as part of their skill set. Therefore, while there are relevant skills, the gaps in security experience and specific technologies make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 25,
+    "id": 24,
     "external_id": "33dd68d3-cd02-47ee-b3ec-24f39d51308d",
     "source": "ashby",
     "company": "ICEYE",
@@ -3940,7 +3940,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 26,
+    "id": 25,
     "external_id": "5213322007",
     "source": "greenhouse",
     "company": "Together AI",
