@@ -270,7 +270,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 4,
+    "id": 6,
     "external_id": "6720006",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1144,7 +1144,7 @@
     "reasoning": null
   },
   {
-    "id": 9,
+    "id": 4,
     "external_id": "8138757",
     "source": "greenhouse",
     "company": "N26",
@@ -1210,7 +1210,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 17,
     "external_id": "8232358",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1328,7 +1328,7 @@
     "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the role of Customer Success Engineer at JetBrains focuses more on technical consulting and customer relationship management rather than direct software development. The candidate lacks specific experience in customer-facing technical roles and technical consulting, which are crucial for this position. Additionally, the job requires strong presentation skills and the ability to convey technical concepts to a diverse audience, which may not align with the candidate's primarily development-focused background."
   },
   {
-    "id": 5,
+    "id": 7,
     "external_id": "8106754",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1704,7 +1704,7 @@
     "reasoning": null
   },
   {
-    "id": 14,
+    "id": 16,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1882,7 +1882,7 @@
     "reasoning": null
   },
   {
-    "id": 18,
+    "id": 21,
     "external_id": "4405791009",
     "source": "greenhouse",
     "company": "Redwood Software",
@@ -1895,7 +1895,7 @@
     "posted_at": "2026-10-21T12:47:32-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, React, and CI/CD, which aligns with the job's requirements, there are significant gaps in SAP connectivity and experience with AI tools specifically mentioned in the posting. The role emphasizes a deep understanding of SAP ECC and S/4HANA, which the candidate does not have. Additionally, the job requires familiarity with advanced AI tools and techniques for code generation and optimization, which is not highlighted in the candidate's background.",
+    "reasoning": "While the candidate has strong experience in Java, React, and CI/CD practices, the job requires specific expertise in SAP environments and AI-enhanced development practices that the candidate does not possess. The role emphasizes SAP connectivity and clean core architecture, which are not mentioned in the candidate's background. Additionally, the requirement for familiarity with advanced AI tools and prompt engineering techniques presents a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
@@ -2034,7 +2034,7 @@
     "reasoning": null
   },
   {
-    "id": 24,
+    "id": 26,
     "external_id": "5186216008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2047,12 +2047,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a stagiair(e) position, which is an internship role, and the candidate is explicitly not interested in junior or entry-level roles. The requirements also specify that the candidate must be enrolled in an educational institution, which does not align with the candidate's profile as a senior full-stack software engineer with over 10 years of experience. Therefore, this position is entirely unrelated to the candidate's career level and interests.",
+    "reasoning": "This job posting is for an internship position, which is explicitly outside the candidate's interest as they are looking for senior roles. The role requires a candidate currently enrolled in a relevant educational program, which the candidate does not meet. Additionally, the focus on digital marketing and advertising does not align with the candidate's strong background in software engineering and fintech.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 23,
+    "id": 25,
     "external_id": "5180483008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2065,7 +2065,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an internship position, which is explicitly against the candidate's constraints as they are not interested in junior or entry-level roles. Additionally, the role requires the candidate to be enrolled in an educational institution, which does not align with the candidate's profile as a seasoned professional with over 10 years of experience. Therefore, this position is not a fit for the candidate.",
+    "reasoning": "This job posting is for an internship position, which is not suitable for the candidate who has over 10 years of experience and is looking for senior roles. The candidate's extensive background in software engineering and fintech does not align with the entry-level nature of this internship. Additionally, the role requires the candidate to be enrolled in an educational institution, which is not applicable to someone with the candidate's experience level.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2086,7 +2086,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 23,
     "external_id": "5148575008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2099,12 +2099,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Digital Video & Audio Specialist, which focuses on digital marketing, programmatic advertising, and campaign management, rather than software engineering. The candidate has a strong background in full-stack software engineering, particularly in fintech, but lacks the specific experience and passion for digital media and marketing that this role requires. Additionally, the job does not align with the candidate's preference for senior software engineering roles.",
+    "reasoning": "The job posting for a Digital Video & Audio Specialist at WPP Media does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are not areas of expertise for the candidate. Additionally, the candidate is looking for software engineering roles, while this position is more aligned with marketing and media analytics. There are no relevant technical skills or experiences that match the requirements of this role.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 20,
+    "id": 22,
     "external_id": "5378900008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2117,12 +2117,12 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a solid fintech background, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not explicitly mention. Additionally, fluency in Dutch is a strict requirement for this role, which the candidate does not indicate they possess. Therefore, while there are relevant skills, the gaps in required experience and language make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering and relevant skills in Java, SQL, and React, the job posting for an Analytics Engineer requires specific experience in analytics engineering, marketing technology, and tools like dbt, which the candidate does not mention. Additionally, fluency in Dutch is a hard requirement for this role, which the candidate does not meet. There are overlaps in API integrations and automated data flows, but the gaps in specific experience and language requirements lead to a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 27,
+    "id": 32,
     "external_id": "5435390008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2135,7 +2135,7 @@
     "posted_at": "2026-10-21T17:08:04-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for IT Engineer 3 at Quince is primarily focused on IT support and infrastructure management, which is not aligned with the candidate's expertise as a senior full-stack software engineer. The role requires specific IT support experience and responsibilities such as user access provisioning and hardware configuration, which are not part of the candidate's background. Additionally, the candidate is looking for roles in software engineering, particularly in fintech, which does not match the nature of this position.",
+    "reasoning": "This job posting is for an IT Engineer role focused on IT support and infrastructure management, which is not aligned with the candidate's background as a senior full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but this role requires a specific focus on IT operations, user support, and asset management, which the candidate does not have. Additionally, the job is located in Germany and Spain, while the candidate is based in the Netherlands and is open to remote roles, but this position does not offer that flexibility.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2366,7 +2366,7 @@
     "reasoning": null
   },
   {
-    "id": 28,
+    "id": 33,
     "external_id": "5373589008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2379,7 +2379,7 @@
     "posted_at": "2026-10-21T17:08:04-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The role requires expertise in leather material development, sourcing, and quality assurance, which are not within the candidate's skill set. Additionally, the candidate has a strong focus on software engineering, particularly in fintech, which does not align with the responsibilities outlined in this position.",
+    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The candidate specializes in software development, particularly in fintech, with strong skills in Java, SQL, and React, while the job requires expertise in leather material development, sourcing, and quality assurance, which the candidate does not possess. Additionally, the role requires a degree in Textile Engineering or a related field, which the candidate lacks.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2582,7 +2582,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 22,
+    "id": 24,
     "external_id": "5399314008",
     "source": "greenhouse",
     "company": "WPP Media",
@@ -2595,7 +2595,7 @@
     "posted_at": "2026-10-19T10:47:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Digital Video & Audio Specialist does not align with the candidate's background as a senior full-stack software engineer. The role focuses on digital marketing, programmatic advertising, and campaign management, which are outside the candidate's expertise in software engineering and fintech. Additionally, the position requires a strong interest in online marketing and digital media, which is not highlighted in the candidate's profile. Therefore, this opportunity is not suitable for the candidate.",
+    "reasoning": "This job posting is for a Digital Video & Audio Specialist, which is focused on digital marketing, programmatic advertising, and campaign management. The candidate, while experienced as a full-stack software engineer with a strong background in fintech, does not have the relevant experience or interest in digital media and advertising required for this role. Additionally, the position does not align with the candidate's preference for software engineering roles.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2654,7 +2654,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 6,
+    "id": 8,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2882,7 +2882,7 @@
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 26,
+    "id": 31,
     "external_id": "5299904008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2895,7 +2895,7 @@
     "posted_at": "2026-10-21T17:08:04-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a software engineer. The role focuses on quality control and technical specifications for cashmere fibers and yarns, which requires expertise in textile engineering and material science. The candidate's experience in software engineering, particularly in fintech and full-stack development, does not align with the requirements of this position.",
+    "reasoning": "The job posting for a Cashmere Engineer Specialist is entirely unrelated to the candidate's background as a software engineer. The role focuses on quality control and material science specific to cashmere fibers, which does not align with the candidate's expertise in software development, particularly in fintech and full-stack engineering. Additionally, the position is located in Italy, while the candidate is based in the Netherlands and is open to remote roles, but this job does not offer that flexibility.",
     "applied_at": null,
     "first_seen": "2026-10-13T04:53:53.308Z"
   },
@@ -2972,7 +2972,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 13,
+    "id": 14,
     "external_id": "8276131",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2982,10 +2982,10 @@
     "employment_type": null,
     "url": "https://jobs.elastic.co/jobs?gh_jid=8276131&gh_jid=8276131",
     "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><h3><strong>What is The Role</strong></h3> <p>We're looking for a Senior Software Engineer to join our Streams UI team, where you'll have the chance to shape and enhance our user interface, making it more intuitive and engaging for our users. In this role, you'll work on Fleet. Fleet is the central management experience for Elastic Agent in Kibana. You'll also work on Streams. Streams is our new tool for handling log data. This includes ingesting, organizing, parsing, enriching, and setting retention for the data. You will be part of a skilled group of engineers and designers. You will contribute your expertise and learn from others. If you enjoy tackling complex challenges and want to make a meaningful impact on our product, we’d love to hear from you.</p> <h3><strong>What You Will Be Doing</strong></h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"4ui2f-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"4ui2f-0-0\"><span data-offset-key=\"4ui2f-0-0\"><span data-text=\"true\">Design and implement intuitive user interface components that enhance user commitment, using TypeScript, React, and Node.js. Integrate front-end elements seamlessly with back-end services to ensure a smooth user experience. Conduct usability testing and gather user feedback to drive continuous improvements.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"80cku-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"80cku-0-0\"><span data-offset-key=\"80cku-0-0\"><span data-text=\"true\">Own complex, loosely-defined problems end-to-end: shape the approach, split the work if needed, make the key technical decisions, and deliver.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"ad2pt-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ad2pt-0-0\"><span data-offset-key=\"ad2pt-0-0\"><span data-text=\"true\">Lead discussions on architecture and system design. During these discussions, consider trade-offs. Also, think about backwards compatibility, performance, and scale.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"e1619-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"e1619-0-0\"><span data-offset-key=\"e1619-0-0\"><span data-text=\"true\">Establish coding standards and ensure the team adheres to them throughout the development process. Promote reusable components to improve efficiency and implement automated testing and deployment to maintain code quality. Evaluate new technologies for potential integration and document best practices to facilitate team-wide knowledge sharing.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"9s3kf-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9s3kf-0-0\"><span data-offset-key=\"9s3kf-0-0\"><span data-text=\"true\">Conduct thorough code reviews to ensure adherence to coding standards and best practices. Offer constructive feedback and identify potential security vulnerabilities in the codebase. Focus on maintaining code readability and facilitate discussions with team members to address any findings from the code review.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"5fjf1-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5fjf1-0-0\"><span data-offset-key=\"5fjf1-0-0\"><span data-text=\"true\">Collaborate async across timezones with a fully-distributed team, working in the open on GitHub and in Slack.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"phju-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"phju-0-0\"><span data-offset-key=\"phju-0-0\"><span data-text=\"true\">Partner closely with designers and product managers to apprehend user experience goals and translate their mockups into functional UI components. Ensure a consistent visual design across all UI elements. Participate in brainstorming sessions to generate innovative ideas for enhancing the user interface.</span></span></div> </li> </ul> <h3>What You Bring&nbsp;</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"524h3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"524h3-0-0\"><span data-offset-key=\"524h3-0-0\"><span data-text=\"true\">Solid production experience with full-stack JavaScript, preferably TypeScript ; React on the front end and Node.js on the back end. Some experience with Reactflow is a plus.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"14stj-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"14stj-0-0\"><span data-offset-key=\"14stj-0-0\"><span data-text=\"true\">A track record of leading non-trivial projects end-to-end, with real design ownership and minimal guidance.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"4ee9-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"4ee9-0-0\"><span data-offset-key=\"4ee9-0-0\"><span data-text=\"true\">Proficient architecture and system-design judgment, including in large, existing codebases.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"ankh8-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ankh8-0-0\"><span data-offset-key=\"ankh8-0-0\"><span data-text=\"true\">Successfully designed and launched multiple user interface components that significantly increased user commitment</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"49vbs-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"49vbs-0-0\"><span data-offset-key=\"49vbs-0-0\"><span data-text=\"true\">You should have experience using AI-assisted development tools. These tools can help you develop features faster, fix complex systems, and improve existing codebases.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"arhui-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"arhui-0-0\"><span data-offset-key=\"arhui-0-0\"><span data-text=\"true\">Exemplary written and verbal communication, and a genuine excitement for async collaboration and knowledge-sharing.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"58r80-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"58r80-0-0\"><span data-offset-key=\"58r80-0-0\"><span data-text=\"true\">A multiplier mindset ! you make the engineers around you better.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"5agq\" data-offset-key=\"fgvt8-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fgvt8-0-0\"><span data-offset-key=\"fgvt8-0-0\"><span data-text=\"true\">A generalist streak and a user-focused mindset, with consideration for the people using your software.</span></span></div> </li> </ul> <h3>Bonus Points</h3> <ul> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"273u-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"273u-0-0\"><span data-offset-key=\"273u-0-0\"><span data-text=\"true\">Experience with the Elastic stack, observability tooling, or log/data-ingestion pipelines.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"eta1o-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"eta1o-0-0\"><span data-offset-key=\"eta1o-0-0\"><span data-text=\"true\">Go, Kubernetes, or cloud-native application development experience.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"8pprh-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"8pprh-0-0\"><span data-offset-key=\"8pprh-0-0\"><span data-text=\"true\">Experience building large user interfaces that manage a lot of data. This includes skills in search, filtering, and tables. You should also have experience working with streaming or real-time data.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"5p5jp-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"5p5jp-0-0\"><span data-offset-key=\"5p5jp-0-0\"><span data-text=\"true\">Prior open-source / working-in-the-open experience, or time on a developer-facing platform team.</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"4ifbk\" data-offset-key=\"7orvr-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"7orvr-0-0\"><span data-offset-key=\"7orvr-0-0\"><span data-text=\"true\">Experience mentoring engineers or leading a small project team.</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€67.000</span><span class=\"divider\">&mdash;</span><span>€106.000 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
-    "posted_at": "2026-10-13T06:33:51-04:00",
+    "posted_at": "2026-10-22T02:13:44-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in full-stack development with expertise in Java, React, and CI/CD, which aligns well with the job requirements. However, the role specifically requires experience with TypeScript and Node.js, which the candidate does not explicitly mention. Additionally, while the candidate has experience in leading projects, the job emphasizes a strong focus on user interface design and architecture discussions, areas where the candidate may need to demonstrate more direct experience. Overall, the candidate is a realistic fit but would need to bridge some gaps in specific technologies and UI design experience.",
+    "reasoning": "The candidate has a strong background in full-stack development with expertise in Java, React, and CI/CD, which aligns well with the job requirements. However, the job specifically mentions a preference for TypeScript and Node.js, which the candidate does not have experience in. Additionally, while the candidate has led product initiatives, the role emphasizes leading discussions on architecture and system design, which may require more specific experience than the candidate's background suggests. Overall, the candidate is a realistic fit but would need to bridge some gaps.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -3440,7 +3440,7 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 13,
+    "id": 12,
     "external_id": "8223520",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3453,7 +3453,7 @@
     "posted_at": "2026-10-20T10:31:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and JavaScript, this role specifically requires substantial experience with a browser-engine codebase, particularly Firefox/Gecko, which the candidate lacks. Additionally, proficiency in C++ is a hard requirement for this position, and the candidate's background does not indicate experience in this area. The candidate's fintech focus and full-stack capabilities do not align closely with the specialized needs of this role.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and JavaScript, the job requires substantial experience specifically in a browser-engine codebase, particularly with Firefox/Gecko, which the candidate does not possess. Additionally, proficiency in C++ is a hard requirement for this role, and the candidate's background does not indicate experience in this area. The candidate's fintech focus and full-stack capabilities do not align closely with the specific needs of this position.",
     "applied_at": null,
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
@@ -3746,7 +3746,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 7,
+    "id": 10,
     "external_id": "8207626",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3764,7 +3764,7 @@
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 34,
+    "id": 29,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3777,12 +3777,12 @@
     "posted_at": "2026-10-19T12:14:38-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Software Engineer position at Affirm, which is remote but specifically requires the candidate to be based in Spain. The candidate is based in the Netherlands and is not willing to relocate to Spain, making this opportunity unsuitable. Additionally, the role emphasizes experience with Python and AWS, which the candidate does not explicitly mention, further contributing to the mismatch.",
+    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's preference for roles in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strong skill. The requirement for experience with AWS, DynamoDB, and Kubernetes also presents a gap, as these technologies are not mentioned in the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
   {
-    "id": 31,
+    "id": 28,
     "external_id": "4ba29c5d-326e-4b9c-82ff-e4e2edef5d80",
     "source": "lever",
     "company": "Job&Talent",
@@ -3800,7 +3800,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 30,
+    "id": 27,
     "external_id": "4f0b8fae-b8f0-4174-aee6-4a0267ebacac",
     "source": "lever",
     "company": "Job&Talent",
@@ -3836,7 +3836,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 16,
+    "id": 18,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3849,7 +3849,7 @@
     "posted_at": "2026-10-21T10:31:57-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React. The role requires specific experience in machine learning engineering, proficiency in Python, and familiarity with ML frameworks and NLP libraries, which the candidate does not possess. Additionally, the candidate's focus is on full-stack and backend roles, while this position is strictly within the machine learning domain.",
+    "reasoning": "The job posting is for a Machine Learning Engineer position, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has no experience in machine learning engineering or applied ML, which is a core requirement for this role. Additionally, the job requires proficiency in specific ML frameworks and libraries that the candidate does not mention in their CV. This role also involves a focus on AI/ML pipelines and conversational AI, areas not covered in the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3890,7 +3890,7 @@
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 25,
+    "id": 30,
     "external_id": "6228510004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -3903,12 +3903,12 @@
     "posted_at": "2026-10-19T14:25:07-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, this role focuses heavily on security assurance and compliance, which is not a primary area of expertise for the candidate. The job requires experience with security frameworks and cloud-native applications, which the candidate does not explicitly mention. Additionally, the role emphasizes knowledge of specific security standards and automated security processes, which may not align with the candidate's background.",
+    "reasoning": "While the candidate has a strong background in software engineering with experience in Java, SQL, and React, the job posting focuses heavily on security assurance and compliance within a cloud-native environment, which the candidate lacks direct experience in. The role requires knowledge of security frameworks and standards, as well as experience in automating security processes, which are not highlighted in the candidate's profile. Additionally, the primary programming languages mentioned for the role are Go and TypeScript, which the candidate does not list as part of their skill set.",
     "applied_at": null,
     "first_seen": "2026-10-19T21:55:18.274Z"
   },
   {
-    "id": 32,
+    "id": 35,
     "external_id": "33dd68d3-cd02-47ee-b3ec-24f39d51308d",
     "source": "ashby",
     "company": "ICEYE",
@@ -3926,7 +3926,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 8,
+    "id": 5,
     "external_id": "8025854",
     "source": "greenhouse",
     "company": "Monzo",
@@ -3944,7 +3944,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 36,
+    "id": 38,
     "external_id": "5213322007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -3962,7 +3962,7 @@
     "first_seen": "2026-10-20T18:51:31.037Z"
   },
   {
-    "id": 29,
+    "id": 34,
     "external_id": "68eacfb3-4b22-4f6b-969c-8dcb97e9238f",
     "source": "ashby",
     "company": "HappyRobot Inc.",
@@ -3975,12 +3975,12 @@
     "posted_at": "2026-10-21T10:00:59.346+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Forward Deployed Engineer at HappyRobot Inc. is not a fit for the candidate due to the location being in Spain, which does not align with the candidate's preference for roles in the Netherlands or remote positions. Additionally, the job description lacks specific technical requirements or responsibilities that match the candidate's extensive experience in full-stack development, particularly in fintech. The candidate is also not interested in roles that do not specify clear employment terms, which this posting does not provide.",
+    "reasoning": "This job posting is for a Forward Deployed Engineer located in Spain, which does not align with the candidate's preference for roles based in or targeting the Netherlands. Additionally, the role does not specify any remote work options, which is a significant constraint for the candidate. The candidate is also not interested in roles that do not meet their seniority level, and this position does not provide enough detail to confirm it meets that requirement.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 37,
+    "id": 39,
     "external_id": "5028749007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -3998,7 +3998,7 @@
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 17,
+    "id": 20,
     "external_id": "8888205002",
     "source": "greenhouse",
     "company": "Vonage",
@@ -4011,12 +4011,12 @@
     "posted_at": "2026-10-21T06:05:30-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Director role in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and specific BSS domain expertise that the candidate does not possess. The candidate has a strong background in software engineering and fintech but lacks the necessary senior product leadership experience and deep knowledge of BSS platforms like Amdocs or Oracle Communications. Additionally, the role's focus on strategic leadership and team management is beyond the candidate's stated experience level.",
+    "reasoning": "The job posting for Senior Director, BSS Engineering & Product at Vonage requires extensive leadership experience in BSS engineering within telecommunications or cloud communications, which is not aligned with the candidate's background. The candidate has strong technical skills in software engineering and fintech but lacks the senior product leadership experience and deep BSS domain expertise required for this role. Additionally, the position is at a director level, which exceeds the candidate's current experience level as a senior engineer.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 33,
+    "id": 36,
     "external_id": "5255300007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -4029,12 +4029,12 @@
     "posted_at": "2026-10-21T04:38:27-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Sales Engineer position, which is not aligned with the candidate's background as a software engineer. The role requires specific experience in sales engineering, enterprise network or cloud security technologies, and value selling methodologies, none of which are mentioned in the candidate's CV. Additionally, the candidate is looking for full-stack or backend engineering roles, making this position unrelated to their career goals.",
+    "reasoning": "This job posting is for a Sales Engineer role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required experience as a Sales Engineer or Systems Integrator. Additionally, the role focuses on sales and customer engagement rather than technical development, which does not match the candidate's career preferences and constraints.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 35,
+    "id": 37,
     "external_id": "b8a111fa-9fd5-44d0-97ed-8fd1280be4ef",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -4047,12 +4047,12 @@
     "posted_at": "2026-10-21T14:47:12.926+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for an Applied AI Engineer does not align closely with the candidate's core competencies, which are primarily in full-stack software engineering with a strong focus on Java, SQL, and React. While the candidate has experience with AI-powered services in a side project, the role likely requires more specialized knowledge in AI and machine learning, which is not evident in the candidate's background. Additionally, the job may involve responsibilities that extend beyond the candidate's stated preferences for fintech and product engineering.",
+    "reasoning": "The job posting for an Applied AI Engineer at Eleven Labs does not align closely with the candidate's primary expertise in full-stack software engineering, particularly in Java and React. While the candidate has experience with AI through personal projects, the role likely requires a deeper focus on AI technologies and methodologies that are not explicitly mentioned in the candidate's background. Additionally, the job title suggests a specialization that may not fully utilize the candidate's strengths in fintech and product engineering.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 10,
+    "id": 13,
     "external_id": "8306618",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4065,12 +4065,12 @@
     "posted_at": "2026-10-21T13:17:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in performance benchmarking, distributed systems, and tools like Elasticsearch, which the candidate does not explicitly mention. The role's focus on competitive benchmarking and performance analysis is a significant gap compared to the candidate's experience primarily in application development and CI/CD. Additionally, the position is based in Spain, which may not align with the candidate's preference for roles in the Netherlands.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires specific expertise in performance benchmarking, distributed systems, and tools like Elasticsearch, which the candidate does not explicitly mention. The role also emphasizes technical publishing and deep performance analysis, areas that are not highlighted in the candidate's experience. Therefore, while there are relevant skills, the gaps in specific experience and knowledge make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "8223398",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -4083,12 +4083,12 @@
     "posted_at": "2026-10-21T12:25:38-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in web development, particularly with JavaScript, HTML, CSS, and backend technologies like Java and Python, which aligns with the job's requirements. However, the role emphasizes building dashboards and working with specific tools like Django and Bugzilla, which the candidate does not explicitly mention experience with. Additionally, while the candidate has a solid background in fintech and product engineering, the focus on tooling and automation in this role may require some adjustment.",
+    "reasoning": "The candidate has strong experience in web development with JavaScript, HTML, CSS, and has worked with Python, which aligns with the job's requirements. However, the role emphasizes building dashboards and data views, which is not explicitly mentioned in the candidate's experience. Additionally, familiarity with WebCompat workflows and Bugzilla, as well as experience with screenshot automation pipelines, are preferred qualifications that the candidate does not appear to have. Overall, while there are relevant skills, there are meaningful gaps that would require the candidate to stretch to fit this role.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 11,
+    "id": 15,
     "external_id": "8311494",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4100,13 +4100,13 @@
     "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d5mja-0-0\"><strong><span data-offset-key=\"d5mja-0-0\"><span data-text=\"true\">What is The Role</span></span></strong></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d5mja-0-0\">&nbsp;</div> <div class=\"p\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"do176-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"do176-0-0\"><span data-offset-key=\"do176-0-0\"><span data-text=\"true\">As a Software Engineer on our Control Plane - Hosted team, you will be </span></span><span id=\"popover-trigger-:r11:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"do176-1-0\"><span data-text=\"true\">responsible for</span></span></span><span data-offset-key=\"do176-2-0\"><span data-text=\"true\"> technical design and work in key functional areas of Elastic’s Cloud offerings. You will participate in coding, crafting solutions, debugging sophisticated failure scenarios, and prioritizing bug fixes and features. You’ll analyze the current system, its strength and limitations.</span></span></div> </div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9gsve-0-0\">&nbsp;</div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9gsve-0-0\"><strong><span data-offset-key=\"9gsve-0-0\"><span data-text=\"true\">What You Will Be Doing</span></span></strong></div> <ul class=\"public-DraftStyleDefault-ul\" data-offset-key=\"fm1gk-0-0\"> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"fm1gk-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fm1gk-0-0\"><span data-offset-key=\"fm1gk-0-0\"><span data-text=\"true\">Guide cross-team technical designs and help create a team-wide high level architecture</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"p3oi-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"p3oi-0-0\"><span data-offset-key=\"p3oi-0-0\"><span data-text=\"true\">Lead best practices for development, ensuring a reliable, scalable foundation and an engaging user experience for our customers</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"6s51t-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6s51t-0-0\"><span data-offset-key=\"6s51t-0-0\"><span data-text=\"true\">Contribute and lead technical plans and direction within our team and across other product teams in Elastic</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"d8fap-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d8fap-0-0\"><span data-offset-key=\"d8fap-0-0\"><span data-text=\"true\">Be part of a distributed team of engineers from all across the globe</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"6oqm3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6oqm3-0-0\"><span data-offset-key=\"6oqm3-0-0\"><span data-text=\"true\">Collaborate with other teams within Elastic. Examples include helping Support engineers in diagnosing problems or advising the Elasticsearch engineers with designing new features</span></span></div> </li> </ul> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"62dm4-0-0\"><strong><span data-offset-key=\"62dm4-0-0\"><span data-text=\"true\">What You Bring</span></span></strong></div> <ul class=\"public-DraftStyleDefault-ul\" data-offset-key=\"dte59-0-0\"> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"dte59-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"dte59-0-0\"><span data-offset-key=\"dte59-0-0\"><span data-text=\"true\">5+ years of experience as a software engineer, with a track record of delivering high-quality code</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"ecgp3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ecgp3-0-0\"><span data-offset-key=\"ecgp3-0-0\"><span data-text=\"true\">Previous experience providing </span></span><span id=\"popover-trigger-:r13:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"ecgp3-1-0\"><span data-text=\"true\">pragmatic</span></span></span><span data-offset-key=\"ecgp3-2-0\"><span data-text=\"true\"> technical </span></span><span id=\"popover-trigger-:r15:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"ecgp3-3-0\"><span data-text=\"true\">leadership</span></span></span><span data-offset-key=\"ecgp3-4-0\"><span data-text=\"true\"> for a group of engineers</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"cmett-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cmett-0-0\"><span data-offset-key=\"cmett-0-0\"><span data-text=\"true\">Knowledge of back-end languages such as Scala, Java or Go</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"emso2-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"emso2-0-0\"><span data-offset-key=\"emso2-0-0\"><span data-text=\"true\">Technical depth in one or more technologies relevant for SaaS (orchestration, networking, containers, etc.)</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"85ip6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"85ip6-0-0\"><span id=\"popover-trigger-:r17:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"85ip6-0-0\"><span data-text=\"true\">Passion</span></span></span><span data-offset-key=\"85ip6-1-0\"><span data-text=\"true\"> for automation and quality</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€76.000</span><span class=\"divider\">&mdash;</span><span>€98.400 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
     "posted_at": "2026-10-21T19:31:09-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has over 10 years of experience as a full-stack software engineer with strong skills in Java and React, the job posting requires specific experience in Scala or Go, which the candidate lacks. Additionally, the role emphasizes technical leadership and guiding cross-team designs, which may stretch the candidate's experience in leading teams beyond their current scope. The candidate's fintech background aligns with the company's focus on cloud solutions, but the gaps in required technologies and leadership experience make this a weak fit overall.",
+    "verdict": "fair",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and React, which aligns well with the job's requirements. They have experience in leading product initiatives and managing DevOps tasks, which is relevant to the role's focus on technical design and leadership. However, the job requires knowledge of back-end languages such as Scala or Go, which the candidate does not possess. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote work in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-21T23:51:44.214Z"
   },
   {
-    "id": 38,
+    "id": 40,
     "external_id": "7498103003",
     "source": "greenhouse",
     "company": "Telnyx",
@@ -4122,5 +4122,23 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-22T02:51:43.637Z"
+  },
+  {
+    "id": 9,
+    "external_id": "8276205",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "People Technology Data Engineer",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8276205",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <h3><strong>Join the People Technology Team at Adyen</strong></h3> <p>At Adyen, we believe people are our greatest asset and we want to ensure we deliver the best employee experience globally. People Technology is evolving rapidly from a traditional HRIS function into a high-leverage Product &amp; Engineering Engine. As part of our Build HR Technology &amp; Analytics team, we are looking for a People Technology Data Engineer based out of our Amsterdam office.</p> <p>In this role, you will lead the data engineering and analytics infrastructure layer for our People organization. You will design, build, and maintain high-performance data pipelines, scalable data models, and automated transformations that ingest employee data from Workday and satellite systems into our central enterprise big-data platform. Your mission is to make People data reliable, scalable, governed, and consumable for People Analytics, workforce planning, executive reporting, and downstream AI applications.</p> <h3><strong>Key Responsibilities</strong></h3> <ul> <li><strong>Build &amp; scale People data pipelines:</strong> Design, develop, and maintain high-volume ETL/ELT pipelines to extract, transform, and ingest data from Workday (via RaaS/WQL/APIs) and other People platforms into our central enterprise data warehouse.</li> <li><strong>Architect People data models &amp; data marts:</strong> Create clean, scalable data models, schemas, and data marts optimized for People Analytics, executive dashboards, workforce modeling, and programmatic consumers.</li> <li><strong>Ensure data quality, lineage &amp; performance:</strong> Implement automated data quality checks, testing frameworks (e.g., dbt test, Great Expectations), anomaly detection, and end-to-end lineage tracking across all People data workflows.</li> <li><strong>Embed security, privacy &amp; data governance:</strong> Enforce strict data governance, fine-grained access controls, automated data masking, and retention rules across sensitive employee data (PII) in compliance with global privacy standards (GDPR/CCPA).</li> <li><strong>Power analytics &amp; AI use cases:</strong> Turn raw transactional data into reusable data products and API endpoints that feed BI dashboards, predictive workforce analytics, and generative AI features (e.g., Gemini Enterprise).</li> <li><strong>Partner across Data &amp; Analytics:</strong> Collaborate closely with People Analysts, Enterprise Data Engineering, Applications Engineers, and Security teams to align on data governance and eliminate manual data extracts.</li> </ul> <h3><strong>Qualifications</strong></h3> <ul> <li><strong>Data Engineering Expertise:</strong> 5+ years of hands-on data engineering experience building complex ETL/ELT pipelines, data warehouses, and data models in an international environment.</li> <li><strong>Core Technical Stack:</strong> Advanced proficiency in SQL and Python for data transformation, workflow orchestration (e.g., Airflow/Dagster), transformation frameworks (e.g., dbt), and cloud data platforms (Snowflake/BigQuery).</li> <li><strong>Software Engineering &amp; CI/CD:</strong> Experience applying software engineering best practices to data development, including version control (Git), automated testing, and CI/CD pipelines for data workflows.</li> <li><strong>HRIS Data &amp; API Foundations:</strong> Demonstrated experience extracting and modeling HR data from Workday using RaaS reports, WQL, REST/SOAP APIs, and custom REST endpoints/webhooks.</li> <li><strong>Data Observability &amp; Testing:</strong> Hands-on experience with data quality testing frameworks (e.g., dbt test, Great Expectations) and data observability tools to guarantee data accuracy.</li> <li><strong>Security &amp; Privacy Focus:</strong> Deep knowledge of employee data privacy principles (GDPR), encryption, role-based access controls, and data anonymization/masking techniques.</li> <li><strong>Systems Architecture Thinking:</strong> Strong grasp of dimensional data modeling, data warehousing methodologies, historical snapshotting, and robust data quality frameworks.</li> <li><strong>Collaborative Communication:</strong> Excellent ability to translate complex data structures into understandable concepts for People Analytics partners and non-technical stakeholders.</li> </ul> <h3><strong>How You Work</strong></h3> <ul> <li>You treat data quality, privacy, and governance as baseline engineering requirements rather than afterthoughts.</li> <li>You build for scale and reuse, systematically replacing one-off manual spreadsheets with automated, self-healing data pipelines.</li> <li>You move comfortably between writing complex SQL/Python pipelines and discussing strategic workforce metrics with analytical partners.</li> <li>You are curious about modern data stack practices and explore how data foundations enable generative AI and advanced analytics.</li> </ul> <h3><strong>What Success Looks Like</strong></h3> <ul> <li>People data flows seamlessly, securely, and reliably from Workday into the central data platform without manual intervention.</li> <li>The People Analytics team and leadership have instant access to standardized, high-quality data marts for reporting and strategic decision-making.</li> <li>Data pipelines strictly enforce security and GDPR boundaries, providing complete visibility into data lineage and access logs.</li> <li>Reusable data products and schemas enable rapid exploration of new AI capabilities, workforce analytics, and automation.</li> </ul> <p><strong>Diversity, Equity, and Inclusion at Adyen</strong></p> <p>We actively seek different perspectives to sharpen our ideas. Our unique culture is a product of our diverse backgrounds and experiences. No matter who you are or where you’re from, you’re welcome to be your true self at Adyen.&nbsp;</p> <p><em>If you need accommodations or support during the recruitment process to perform at your best, you’ll have the opportunity to let our team know in your application. We encourage people from all backgrounds and abilities to apply.</em></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
+    "posted_at": "2026-10-22T04:02:53-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-22T08:12:26.117Z"
   }
 ]
