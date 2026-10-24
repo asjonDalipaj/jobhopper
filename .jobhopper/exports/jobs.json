@@ -170,7 +170,7 @@
     "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns with some aspects of the job. However, the role specifically requires at least two years of experience with TypeScript and Node.js, which the candidate does not have. Additionally, the focus on AI and observability systems is a significant shift from the candidate's fintech background, creating a gap in relevant experience. Overall, while there are some relevant skills, the missing key technologies and domain knowledge lead to a weak fit."
   },
   {
-    "id": 24,
+    "id": 25,
     "external_id": "8018517",
     "source": "greenhouse",
     "company": "Reddit",
@@ -183,7 +183,7 @@
     "posted_at": "2026-10-23T10:06:06-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting is for a Staff Machine Learning Engineer role, which requires specific expertise in machine learning, NLP, and deep learning frameworks like PyTorch or TensorFlow. The candidate's experience does not explicitly include these areas, particularly in the context of machine learning model development and deployment. Additionally, the role emphasizes technical leadership in ML projects, which may not align with the candidate's primary focus on full-stack development.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting is for a Staff Machine Learning Engineer role that requires specific expertise in machine learning, particularly in NLP and deep learning frameworks like PyTorch or TensorFlow. The candidate's experience does not indicate a strong background in machine learning or the required technologies, which creates a significant gap. Additionally, the role emphasizes technical leadership in ML projects, which may not align with the candidate's primary focus on full-stack development.",
     "applied_at": null,
     "first_seen": "2026-10-14T08:16:56.953Z"
   },
@@ -2135,7 +2135,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for the IT Engineer role at Quince is not aligned with the candidate's background and preferences. The position focuses on IT support, user onboarding, and hardware management, which falls outside the candidate's expertise in full-stack software engineering and fintech. Additionally, the role requires 4-8 years of IT support experience, which the candidate does not possess, as they have primarily worked in software engineering roles. This mismatch in job function and required experience makes it an unsuitable fit.",
+    "reasoning": "The job posting for IT Engineer 3 focuses on IT support and infrastructure management, which is not aligned with the candidate's background as a senior full-stack software engineer. The role requires specific experience in IT support, user access provisioning, and managing IT assets, which the candidate does not possess. Additionally, the candidate is looking for roles in software engineering, particularly in fintech, which is not relevant to this position.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2379,7 +2379,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background in software engineering and fintech. The role requires expertise in leather material development, sourcing, and quality assurance, which are not within the candidate's skill set. Additionally, the candidate is looking for software engineering roles, making this position a poor fit overall.",
+    "reasoning": "The job posting for a Leather Material Developer is entirely unrelated to the candidate's expertise in software engineering. The candidate specializes in full-stack development, particularly in fintech, and has extensive experience with Java, SQL, and React, which are not relevant to the responsibilities of developing leather materials. Additionally, the qualifications required for this role, such as a degree in Textile Engineering or Leather Technology and experience in leather sourcing, are not aligned with the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2737,7 +2737,7 @@
     "posted_at": "2026-10-22T09:47:21-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Sales Engineer role, which is focused on sales and customer engagement rather than software engineering. The candidate has a strong background in software engineering, particularly in fintech, but lacks the required experience in sales engineering and customer-facing roles. Additionally, the position requires deep knowledge of enterprise network or cloud security technologies and experience with value selling methodologies, which are not mentioned in the candidate's profile.",
+    "reasoning": "The job posting is for a Senior Sales Engineer role, which is focused on sales, customer engagement, and technical presentations rather than software engineering. The candidate is a senior full-stack software engineer with a strong technical background but lacks experience in sales engineering or systems integration, which are critical for this position. Additionally, the role requires deep knowledge of enterprise network or cloud security technologies, which is not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-22T14:16:35.038Z"
   },
@@ -2897,7 +2897,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a software engineer. The role focuses on quality control and technical specifications for cashmere fibers and yarns, requiring expertise in textile engineering and material science, which the candidate does not possess. Additionally, the candidate's experience is primarily in software development, particularly in fintech, which does not align with the responsibilities outlined in this position.",
+    "reasoning": "The job posting for a Cashmere Engineer Specialist is entirely unrelated to the candidate's background as a software engineer. The role requires expertise in textile engineering and quality control of cashmere fibers, which does not align with the candidate's experience in software development, particularly in fintech and full-stack engineering. Additionally, the candidate is based in the Netherlands, while the job is located in Italy, which does not meet their preference for remote work or roles within the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-13T04:53:53.308Z"
   },
@@ -2987,7 +2987,7 @@
     "posted_at": "2026-10-22T02:13:44-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in full-stack development, particularly with Java and React, which aligns well with the job's requirements for UI component design and integration with backend services. However, the job specifically mentions a preference for TypeScript and Node.js, which the candidate does not explicitly list as experience. Additionally, while the candidate has experience in leading projects, the job emphasizes architecture discussions and system design, which may require deeper expertise than the candidate has demonstrated. Overall, this role represents a realistic stretch for the candidate.",
+    "reasoning": "The candidate has a strong background in full-stack development with expertise in Java and React, which aligns well with the job's requirements for designing user interfaces and integrating front-end elements with back-end services. However, the job specifically requires experience with TypeScript and Node.js, which the candidate does not explicitly mention. Additionally, the role involves working with observability tools and log/data-ingestion pipelines, areas where the candidate lacks direct experience. Overall, while there are significant matches, the gaps in specific technologies and experience with observability tools make this a fair fit.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -3257,7 +3257,7 @@
     "posted_at": "2026-10-23T11:31:54-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in C++ and systems programming, which the candidate does not possess. Additionally, the focus on database query engines and performance tuning is not aligned with the candidate's experience primarily in Java and web technologies. The remote location in Spain is acceptable, but the technical requirements present significant gaps.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires significant expertise in C++ and systems programming, which the candidate does not possess. Additionally, the role focuses on database query execution, which is not directly aligned with the candidate's fintech and full-stack experience. The remote location in Spain is acceptable, but the technical requirements present a substantial gap.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -3275,7 +3275,7 @@
     "posted_at": "2026-10-23T11:31:54-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. Additionally, the role focuses on database query engines and performance tuning, areas that are not highlighted in the candidate's experience. Although the candidate's fintech background aligns with the industry, the specific technical requirements for this position present a substantial gap.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and a strong background in Java and SQL, the job posting requires significant expertise in C++ and systems programming, which the candidate lacks. Additionally, the role focuses on database query engines and performance optimization, areas that are not highlighted in the candidate's experience. The candidate's fintech background is relevant, but the specific technical requirements for this position do not align well with their skill set.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -3838,7 +3838,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 23,
+    "id": 24,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3851,7 +3851,7 @@
     "posted_at": "2026-10-23T10:35:50-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer position, which is outside the candidate's expertise and experience in full-stack software engineering. The candidate has strong skills in Java, SQL, and React but lacks the required experience in machine learning, Python proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role requires specific qualifications in machine learning engineering that the candidate does not possess.",
+    "reasoning": "This job posting is for a Machine Learning Engineer role, which is not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate has no experience in machine learning engineering or the required ML frameworks, which are critical for this position. Additionally, the role requires a background in AI and NLP, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -4103,7 +4103,7 @@
     "posted_at": "2026-10-22T17:25:26-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has over 10 years of experience as a full-stack software engineer and strong skills in Java and SQL, the job posting requires knowledge of back-end languages such as Scala or Go, which the candidate lacks. Additionally, the role emphasizes technical leadership and experience in SaaS technologies, which are not explicitly covered in the candidate's background. The position is also located in Spain, which may not align with the candidate's preference for roles based in the Netherlands, although remote work is an option.",
+    "reasoning": "While the candidate has over 10 years of experience as a full-stack software engineer and strong skills in Java and SQL, which align with the job's requirements, there are significant gaps. The job specifically mentions a need for experience with Scala or Go, which the candidate lacks. Additionally, the role is based in Spain, which may not align with the candidate's preference for positions in the Netherlands. The requirement for technical leadership experience is also present, but the candidate's experience in leading teams is not explicitly highlighted.",
     "applied_at": null,
     "first_seen": "2026-10-21T23:51:44.214Z"
   },
@@ -4193,7 +4193,7 @@
     "posted_at": "2026-10-22T10:00:15.732Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong technical skills in Java, SQL, and React, which align with some of the job requirements, they lack direct experience in a management role, which is a key aspect of the Engineering Manager position. Additionally, the job emphasizes web scraping and data acquisition, areas where the candidate has limited experience despite having developed a web scraper as a side project. The candidate's fintech background is relevant, but the managerial and operational aspects of the role represent significant gaps.",
+    "reasoning": "While the candidate has strong technical skills in Java, React, and CI/CD, which align with some of the job's requirements, they lack direct experience in managing software engineers or leading teams, which is a critical aspect of the Engineering Manager role. Additionally, the job emphasizes web scraping and data acquisition, areas where the candidate has limited experience despite their project involving web scraping. The candidate's fintech background is relevant, but the managerial and operational aspects of the role present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-22T14:16:35.038Z"
   },
@@ -4229,7 +4229,7 @@
     "posted_at": "2026-10-22T18:10:57.051+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting does not specify a clear role or responsibilities, making it difficult to assess its relevance to the candidate's profile. Additionally, the location options include the US, which the candidate explicitly stated they are not willing to relocate to or work on-site. This violates the candidate's constraints, leading to a verdict of 'no'.",
+    "reasoning": "The job posting does not specify a clear role or responsibilities, making it difficult to assess fit. However, it is located in multiple countries including the US, which violates the candidate's constraint of not wanting to relocate to the US or work on-site there. Additionally, the lack of specific technical requirements or alignment with the candidate's fintech background further distances this opportunity from being a suitable match.",
     "applied_at": null,
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
@@ -4265,7 +4265,7 @@
     "posted_at": "2026-10-23T04:04:18-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Software Engineering Manager requires specific experience in identity and access management (IAM) and cloud-based technologies, which the candidate does not explicitly demonstrate. Additionally, the role involves managerial responsibilities that may not align with the candidate's current focus on software development. The candidate's experience in leading teams and product initiatives is a plus, but the lack of direct IAM experience is a significant gap.",
+    "reasoning": "While the candidate has over 10 years of experience in software engineering and a strong background in fintech, the job posting for a Software Engineering Manager requires specific experience in identity and access management (IAM) and cloud-based technologies, which the candidate does not explicitly mention. Additionally, the role involves leadership responsibilities that may exceed the candidate's current experience level as a software engineer. The candidate's skills in Java, SQL, and React are relevant, but the lack of IAM experience and managerial background creates a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
@@ -4301,7 +4301,7 @@
     "posted_at": "2026-10-22T15:51:11-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Site Reliability Engineer role, which typically requires deeper expertise in cloud environments and operational systems. The candidate's background is more focused on full-stack development in fintech rather than the specific tools and systems mentioned in the posting, such as Terraform and C++ or Rust. Additionally, the role emphasizes experience in deploying and operating production systems, which may not align perfectly with the candidate's experience.",
+    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Staff Site Reliability Engineer role which requires specific expertise in deploying and operating production systems in cloud environments, particularly with infrastructure as code tools like Terraform. The candidate's experience does not explicitly mention cloud environments or the required programming languages such as Python or TypeScript, which are crucial for this role. Additionally, the focus on developer tooling and operational problems may not align closely with the candidate's fintech background.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -4319,7 +4319,7 @@
     "posted_at": "2026-10-22T15:51:09-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a background in fintech, the job posting is for a Staff Site Reliability Engineer role, which requires specific expertise in deploying and operating production systems in cloud environments, as well as experience with infrastructure as code tools like Terraform. The candidate's experience is more focused on full-stack development rather than site reliability engineering, which presents a significant gap. Additionally, the role emphasizes familiarity with Python or JavaScript/TypeScript, while the candidate's primary backend language is Java, which may not align perfectly with the expectations.",
+    "reasoning": "The candidate has strong experience in software engineering and a solid background in fintech, which aligns with some aspects of the role. However, the job requires specific expertise in site reliability engineering, cloud environments, and tools like Terraform, which the candidate does not explicitly mention. Additionally, the role emphasizes experience with Python or JavaScript/TypeScript, while the candidate's primary focus is on Java and React. Overall, while there are relevant skills, the gaps in required experience and specific technologies make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -4337,7 +4337,7 @@
     "posted_at": "2026-10-22T15:48:46-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a senior full-stack software engineer and a strong background in Java and SQL, the job posting requires significant expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's experience. Although the candidate's fintech background and full-stack capabilities are relevant, the specific technical requirements create a mismatch.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and React, the job posting requires significant expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy and browser architecture, areas that are not explicitly covered in the candidate's background. Although the candidate has a solid fintech background and experience with CI/CD, the specific technical requirements for this position create a mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -4355,7 +4355,7 @@
     "posted_at": "2026-10-22T15:48:43-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job requires significant expertise in C++ and Rust, which the candidate lacks. Additionally, the role focuses on privacy and browser architecture, areas not explicitly mentioned in the candidate's experience. The candidate's fintech background and full-stack capabilities are relevant, but the specific technical requirements and focus on privacy protections create a mismatch.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting specifically requires expertise in C++ and Rust, which the candidate lacks. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's experience. The candidate's fintech background is relevant but does not align closely with the specific requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -4409,7 +4409,7 @@
     "posted_at": "2026-10-23T09:16:10-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in Java and backend development, which aligns well with the job's requirements for backend services. Their fintech background and experience with APIs are relevant to Vonage's focus on communications APIs. However, the job requires experience with Kotlin, Docker, and Kubernetes, which the candidate does not explicitly mention. Additionally, the role emphasizes multi-threaded architectures and cloud experience with AWS, areas where the candidate may need to adapt or learn.",
+    "reasoning": "The candidate has strong experience in Java and a solid background in software engineering, which aligns well with the job's requirements for backend services. However, the job emphasizes the need for experience with Kotlin, Docker, and Kubernetes, which the candidate does not explicitly mention. Additionally, while the candidate has experience in CI/CD and DevOps, the role's focus on cloud technologies like AWS and tools such as Kafka and Redis may require further adaptation. Overall, the candidate is a realistic fit but would need to bridge some gaps.",
     "applied_at": null,
     "first_seen": "2026-10-23T13:59:40.827Z"
   },
@@ -4427,12 +4427,12 @@
     "posted_at": "2026-10-23T08:26:59-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has a strong background in full-stack development with expertise in Java and React, the job requires specific skills in TypeScript (NestJS, ExpressJS) which the candidate does not possess. Additionally, the role emphasizes experience with cloud technologies like AWS and Kubernetes, which are not mentioned in the candidate's profile. The candidate's fintech experience aligns with the company's focus on cloud communications, but the gaps in required technologies and frameworks make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in full-stack development, particularly with Java and React, the job requires TypeScript (NestJS, ExpressJS) skills which the candidate does not possess. Additionally, the role emphasizes AI-driven software development and cloud technologies like AWS and Kubernetes, areas where the candidate's experience is not clearly aligned. The candidate's fintech background is relevant, but the specific requirements for this position present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-23T13:59:40.827Z"
   },
   {
-    "id": 25,
+    "id": 23,
     "external_id": "8305790",
     "source": "greenhouse",
     "company": "Datadog",
@@ -4445,7 +4445,7 @@
     "posted_at": "2026-10-23T05:53:45-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting specifically requires significant experience in distributed systems and backend programming in languages like Go, Rust, or C++. The candidate's experience is primarily in Java and does not mention distributed systems, which is a key focus of the role. Additionally, the role emphasizes building high-performance systems, which may not align with the candidate's past experiences. Therefore, while there are relevant skills, the gaps in specific requirements make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting emphasizes building high-performance distributed systems, which is not explicitly mentioned in the candidate's experience. The role also requires significant experience with Go, Rust, or C++, which the candidate lacks. Additionally, the focus on AI tools and enhancing software engineering practices is a gap for the candidate, who has not highlighted such experience. The candidate's fintech background aligns with the company's focus, but the technical requirements present meaningful gaps.",
     "applied_at": null,
     "first_seen": "2026-10-23T13:59:40.827Z"
   },
@@ -4463,7 +4463,7 @@
     "posted_at": "2026-10-23T16:36:50.253Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, but the job requires significant expertise in Angular and Python, which the candidate lacks. Additionally, the role emphasizes specific technologies like PostgreSQL, TypeScript, and Docker/Kubernetes, none of which are mentioned in the candidate's profile. While the candidate has a solid fintech background and experience with CI/CD, the mismatch in required frontend frameworks and backend languages makes this a weak fit.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns with some aspects of the job. However, the job requires extensive experience with Angular and Python, which the candidate lacks. Additionally, the role emphasizes specific technologies like PostgreSQL and Docker/Kubernetes, which are not mentioned in the candidate's profile. The candidate's fintech background is relevant, but the mismatch in required technologies and frameworks makes this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
@@ -4481,7 +4481,7 @@
     "posted_at": "2026-10-23T14:40:43-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong technical skills in software engineering, particularly in Java and React, and has experience in fintech, which aligns with the company's focus. However, the role is for a Software Engineering Manager, requiring previous management experience of engineering teams and a focus on design systems, which the candidate does not explicitly demonstrate. Additionally, the candidate's experience does not indicate a history of managing delivery cadences or building design systems, which are critical for this position.",
+    "reasoning": "The candidate has strong technical skills in software engineering, particularly in Java and React, and has experience in fintech, which aligns with some aspects of the job. However, the role is for a Software Engineering Manager, requiring prior management experience and a focus on design systems, which the candidate does not explicitly demonstrate. Additionally, the job emphasizes stakeholder management and team culture building in a distributed environment, areas where the candidate's experience may not fully meet the expectations.",
     "applied_at": null,
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
@@ -4553,7 +4553,7 @@
     "posted_at": "2026-10-23T16:29:42-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the role of Principal Technical Marketing Engineer at Grafana Labs focuses heavily on technical marketing, demo creation, and customer engagement, which are not highlighted in the candidate's experience. The candidate lacks specific experience in technical product marketing, sales engineering, or presenting technical content in a marketing context. Additionally, the job requires a strong understanding of observability concepts and tools, which the candidate does not explicitly mention.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting is for a Principal Technical Marketing Engineer role, which requires a focus on technical marketing, demos, and customer engagement rather than traditional engineering tasks. The candidate's experience does not directly align with the marketing and presentation aspects of the role, particularly in creating buyer-focused demos and leading technical workshops. Additionally, the role emphasizes a strong understanding of observability concepts and tools, which the candidate lacks.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
@@ -4571,7 +4571,7 @@
     "posted_at": "2026-10-23T15:01:38-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires deep expertise in TypeScript and experience in building design systems at scale, which the candidate does not explicitly demonstrate. The role also emphasizes technical leadership in a UX context, which may not align with the candidate's primary focus on backend and full-stack development. Additionally, the candidate's experience with React is relevant, but the lack of specific mention of TypeScript and design system architecture is a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in React and Java, the job requires deep expertise in TypeScript and experience leading design systems at scale, which the candidate does not explicitly mention. Additionally, the role emphasizes technical leadership and mentoring within a UX context, which may not align with the candidate's experience primarily in backend and full-stack roles. The candidate's fintech background is relevant, but the specific focus on UX and design systems presents a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   }
