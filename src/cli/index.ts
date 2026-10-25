@@ -9,7 +9,7 @@ import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '..
 import { scanCompanies } from '../sources/scan.js';
 import { DEFAULT_COMPANIES } from '../sources/companies.js';
 import { readFileSync, existsSync, writeFileSync, mkdirSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { getPaths, ensureDirs } from '../storage/paths.js';
 import { importCvPdf, readCvText, readProfileDoc, writeProfileDoc, profileFiles } from '../profile/cv.js';
 import { judgePosting } from '../judge/openrouter.js';
@@ -18,6 +18,11 @@ import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec
 import { runJob, runAllJobs } from '../jobs/run.js';
 import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, type HtmlRow } from '../export/html.js';
 import { startWebServer } from './serve.js';
+import { parseCv } from '../cv/schema.js';
+import { renderCvPdf } from '../cv/render.js';
+import { checkFacts } from '../cv/facts.js';
+import { tailorCv } from '../cv/tailor.js';
+import { artifactStem } from '../cv/text.js';
 
 
 const program = new Command();
@@ -731,9 +736,99 @@ Commands:
   judgments [--verdict <v>]          list stored verdicts
   tab create/list/add/get/rm         manage shortlists
   export [tab] [-o out.html]         build a clickable HTML dashboard
+  cv render | cv tailor <id>         render or tailor your CV from profile/cv.json
   status                             show DB / config status
 
 Common filters: --country <name> --remote --contract --unjudged --limit <n>`);
+  });
+
+
+// ---------- cv: render and tailor from profile/cv.json ----------
+
+const cvPath = () => join(getPaths().profileDir, 'cv.json');
+
+function loadCv() {
+  const file = cvPath();
+  if (!existsSync(file)) throw new Error(`No CV found at ${file}. Write your structured CV there first.`);
+  const { doc, errors } = parseCv(readFileSync(file, 'utf8'));
+  if (errors.length) throw new Error(`Invalid ${file}:\n  - ${errors.join('\n  - ')}`);
+  return doc;
+}
+
+function writeCvPdf(bytes: Uint8Array, target: string): void {
+  mkdirSync(dirname(target), { recursive: true });
+  writeFileSync(target, bytes);
+}
+
+function reportCvCheck(doc: ReturnType<typeof loadCv>, rendered: string): void {
+  const check = checkFacts(rendered, doc);
+  for (const warning of check.warnings) console.log(pc.yellow('warn: ') + warning);
+  if (!check.ok) {
+    for (const error of check.errors) console.error(pc.red('fact check: ') + error);
+    throw new Error('CV failed the fact check, refusing to write it');
+  }
+}
+
+const cv = program.command('cv').description('Render and tailor your CV from profile/cv.json');
+
+cv.command('render')
+  .description('Render profile/cv.json to a one-page PDF')
+  .option('-o, --out <path>', 'output PDF path')
+  .action(async (opts: { out?: string }) => {
+    const doc = loadCv();
+    const result = await renderCvPdf(doc);
+    const target = opts.out ?? join(getPaths().profileDir, 'cv.pdf');
+    reportCvCheck(doc, result.text);
+    writeCvPdf(result.bytes, target);
+    console.log(pc.green('Wrote ') + target);
+    if (result.dropped.length) console.log(dim(`trimmed ${result.dropped.length} bullet(s) to fit one page`));
+  });
+
+cv.command('tailor <id>')
+  .description('Tailor the CV to a stored posting and render it next to the job')
+  .option('-o, --out <dir>', 'output directory')
+  .option('-m, --model <id>', 'OpenRouter model override')
+  .action(async (id: string, opts: { out?: string; model?: string }) => {
+    const job = getJob(Number(id));
+    if (!job) throw new Error(`No job with id ${id}. Try \`jobhopper list\`.`);
+    const doc = loadCv();
+    const tailored = await tailorCv(
+      {
+        company: job.company,
+        title: job.title,
+        location: job.location,
+        description: job.description,
+        url: job.url,
+      },
+      doc,
+      { model: opts.model },
+    );
+    const result = await renderCvPdf(doc, tailored.plan);
+    const dir =
+      opts.out ?? join(getPaths().root, 'applications', artifactStem(job.source, job.external_id, job.company, job.title));
+    const pdfPath = join(dir, 'cv.pdf');
+    reportCvCheck(doc, result.text);
+    writeCvPdf(result.bytes, pdfPath);
+    writeFileSync(
+      join(dir, 'plan.json'),
+      JSON.stringify(
+        {
+          job: { id: job.id, source: job.source, external_id: job.external_id, company: job.company, title: job.title },
+          model: tailored.model,
+          rationale: tailored.rationale,
+          plan: tailored.plan,
+        },
+        null,
+        2,
+      ) + '\n',
+    );
+
+    for (const rejected of tailored.warnings) console.log(pc.yellow('rejected: ') + rejected);
+    for (const fixed of tailored.fixes) console.log(dim('fixed: ' + fixed));
+    console.log(pc.green('Wrote ') + pdfPath);
+    if (tailored.rationale) console.log(dim('angle: ' + tailored.rationale));
+    if (tailored.keywords.length) console.log(dim('keywords: ' + tailored.keywords.join(', ')));
+    if (result.dropped.length) console.log(dim(`trimmed ${result.dropped.length} bullet(s) to fit one page`));
   });
 
 program.parseAsync().then(() => closeDb()).catch((err) => {

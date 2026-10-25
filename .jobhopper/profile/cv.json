@@ -1,0 +1,93 @@
+{
+  "name": "Asjon Dalipaj",
+  "headline": "Software Engineer  ·  Enterprise platforms, integration and AI-assisted development",
+  "location": "Utrecht, Netherlands  ·  open to Amsterdam, Berlin or London",
+  "contact": {
+    "email": "asjon.dalipaj@gmail.com",
+    "phone": "+31 683 715 213",
+    "linkedin": "linkedin.com/in/asjon-dalipaj",
+    "github": "github.com/asjonDalipaj"
+  },
+  "summary": "Ten years building production systems, eight of them on site at Rabobank as a consultant. I write the code and I answer the questions around it, from a product owner asking why a release slipped to a new developer trying to get their first change through. Most of my work sits between a backend that has collected nine years of business logic, the CI/CD pipeline that ships it, and the people who use it every day. I have been building with LLM APIs and agentic coding tools for a while now, and that is the work I want to do next, with customers in the room.",
+  "skills": [
+    { "label": "Platform", "items": ["WebRatio, model-driven development (primary tool, ten years)"] },
+    { "label": "Frontend", "items": ["HTML", "CSS", "JavaScript", "AngularJS", "React", "TypeScript"] },
+    { "label": "Backend", "items": ["Java", "REST and SOAP APIs", "Python"] },
+    { "label": "Data", "items": ["SQL", "PL/SQL", "MySQL", "SQL Server", "Oracle"] },
+    { "label": "Delivery", "items": ["Azure DevOps", "CI/CD pipelines", "Talend", "Git", "Scrum"] },
+    { "label": "AI tooling", "items": ["LLM APIs", "agentic coding assistants", "MCP tooling", "crawl4ai"] },
+    { "label": "People", "items": ["customer-facing delivery", "stakeholder demos", "proof-of-concept lead", "mentoring"] }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "org": "Rabobank",
+      "note": "consultant via Finomnia",
+      "place": "Eindhoven, NL",
+      "start": "04/2018",
+      "end": "Present",
+      "bullets": [
+        "Embedded consultant on a loan and lease contract system that around 70 people use daily. Nine years of business logic live in it, and the system is now in long-term maintenance.",
+        "Go-to person on the WebRatio side for both junior and senior developers.",
+        "Turn loosely written business requests into work we can scope and ship, and push back when a request would cost more than it returns.",
+        "Lead proof-of-concept work and present demos to stakeholders.",
+        "Represent the team in technical discussions across the tribe.",
+        "Own DevOps and the CI/CD pipeline for the team, from build and release to environment changes.",
+        "Integrate large third-party components over REST and SOAP.",
+        "Fix the critical production bugs, and profile the BPM framework to find where it slows users down.",
+        "Mentor junior developers, review their work, and help them land their first changes in a nine-year-old codebase."
+      ]
+    },
+    {
+      "role": "Application Developer",
+      "org": "Finomnia",
+      "place": "Milan, IT",
+      "start": "01/2017",
+      "end": "04/2018",
+      "bullets": [
+        "Built finance web application pages and backend services with WebRatio, AngularJS and Java.",
+        "Wrote and tuned queries across PL/SQL, MySQL and SQL Server.",
+        "Streamlined a core process for roughly 20% efficiency gain.",
+        "Handled post-go-live support and bug fixing directly with the client at DLL Italy."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "org": "Lanzi Innovazione",
+      "place": "Sondrio, IT",
+      "start": "03/2015",
+      "end": "01/2017",
+      "bullets": [
+        "Built Java services for account management and frontend pages on WebRatio.",
+        "First point of contact for frontend changes and UI improvements."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "REA Bot",
+      "meta": "Python, crawl4ai, LLM API  ·  github.com/asjonDalipaj",
+      "bullets": [
+        "Scraper for rental listings across several real-estate sites, with a separate adapter per broker so a new source plugs in without touching the core.",
+        "An LLM API turns the scraped listings into structured records. They go into a database, come back out over REST, and land in a Telegram channel as they appear."
+      ]
+    },
+    {
+      "name": "JobHopper",
+      "meta": "TypeScript, Node, React, SQLite  ·  github.com/asjonDalipaj/jobhopper",
+      "bullets": [
+        "Local-first job search: a CLI scans employer ATS boards (Greenhouse, Lever, Ashby, Workable, Teamtailor, Recruitee, SmartRecruiters) and stores postings in SQLite.",
+        "Each posting is judged against my profile by an LLM, then published as a filterable static board on Cloudflare Pages behind access control, refreshed by a scheduled CI scan."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Secondary School Diploma in Information Technology",
+      "school": "I.I.S. Galileo Galilei, Crema, Italy",
+      "years": "2009 - 2015"
+    }
+  ],
+  "languages": "Italian (native)  ·  English (fluent)  ·  Albanian  ·  Spanish (basic).",
+  "beyond": "Outside work I am on stage for improvisation at a local theatre, and I take photographs, hike and travel."
+}

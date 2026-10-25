@@ -182,3 +182,59 @@ Saved 2026-10-10. Working tree clean at `4cc0465`.
 
 8. **Caveman code review. (QUEUED — after all other todos.)**
    Full `/caveman-review` pass over the finished work, per user request.
+
+## Plan — Automated CV tailoring (added 2026-10-25, after main @ `8ba9207`)
+
+**State of things:** CVs are hand-made PDFs in `~/Desktop/Personal/Documents/Curriculum`
+(12 variants), and `profile/cv.txt` is flat text used only for judging. Nothing in
+the CLI can produce a CV, so every application means a manual re-tailor. Judging
+already has the LLM plumbing (`src/judge/openrouter.ts`) and profile ownership
+(`src/profile/cv.ts`).
+
+**Approach:** the model selects and orders; it never writes facts. A structured
+document feeds a deterministic renderer, and a fact gate re-reads the rendered
+text before the file is written.
+
+1. **`profile/cv.json` is the source of truth.** Employers, dates, a bullet pool
+   per role, skills rows, projects, education. Committed like the rest of
+   `profile/`.
+2. **`src/cv/render.ts`** renders one A4 page with pdf-lib (new dependency).
+   Fixed layout, so the same document and plan always produce the same PDF. If
+   content overflows, bullets are trimmed from the longest role but never below
+   3 (current role) or 2 (older roles), and the trim is reported, never silent.
+3. **`src/cv/tailor.ts`** asks the model for a plan (`headline`, `summary`,
+   `skillOrder`, `experienceOrder`, `bulletOrder`, `projectNames`, `keywords`).
+   `validatePlan` rejects any employer, skill label, project or bullet string
+   that is not verbatim in `cv.json`, caps bullets at 5 (current) / 3 (older),
+   and repairs em/en dashes into parentheses or commas.
+4. **`src/cv/facts.ts`** re-checks the rendered text: years and percentages must
+   exist in `cv.json`, an em or en dash fails the render, dropped employers and
+   projects warn. A failed check refuses to write the PDF.
+5. **CLI:** `cv render [-o path]` for the base CV, `cv tailor <id> [-o dir]` to
+   write `applications/<company>_<title>_<source>_<external_id>/cv.pdf` plus
+   `plan.json` (the plan is an artifact, so a bad selection can be inspected
+   without paying for another call).
+
+**Acceptance (verified 2026-10-25):**
+- `npm test` green, 9 new cases covering wrapping, schema errors, the fact gate,
+  plan validation and a real PDF render.
+- `cv render` produces a one-page PDF matching the hand-made 2026 CV layout.
+- `cv tailor 7109` and `cv tailor 7113` produced different, posting-specific
+  plans from the same document; both passed the fact gate on first write.
+- The gate caught two real model errors during the run: an em dash in a summary,
+  and a project name typo ("RA Bot" for "REA Bot") which was rejected.
+
+**Decisions:**
+- **Selection, not generation.** The model may re-word only the headline and
+  summary; bullets must be copied verbatim, which is why `bulletOrder` matching
+  is exact-after-normalisation.
+- **The gate is fatal, not advisory.** Same reasoning as the judging verdicts:
+  a CV that claims something the profile cannot back is worse than no CV.
+- **No cover letter yet.** Deliberate: prove the CV path first (it is the artifact
+  every application needs).
+- **Render failures stay loud.** A CV that will not fit one page throws with the
+  reason instead of silently shipping two pages.
+
+**Next:** cover letter from the same plan, then the apply adapter
+(`apply <id>`): ATS detection from the URL, form fill, upload of
+`applications/<stem>/cv.pdf`, stop before the bot check.
