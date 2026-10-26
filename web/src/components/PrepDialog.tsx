@@ -238,14 +238,12 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
           <div className="mt-5 space-y-4 border-t border-ink/10 pt-4">
             {submitted ? (
               <div className="relative overflow-hidden rounded-xl border border-mint/60 bg-mint/25">
-                <Fireworks className="pointer-events-none absolute inset-0 h-full w-full" />
+                <Fireworks />
                 <div className="relative flex items-start gap-3 px-3 py-4">
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink" aria-hidden="true" />
                   <div>
                     <p className="text-sm font-semibold text-ink">Submitted</p>
-                    <p className="mt-0.5 text-sm text-ink-soft">
-                      {result.confirmation ?? 'Confirmation page detected.'} It is on your applied list.
-                    </p>
+                    <p className="mt-0.5 text-sm text-ink-soft">It is on your applied list.</p>
                   </div>
                 </div>
               </div>
@@ -254,7 +252,13 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
                 <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-ink-faint" aria-hidden="true" />
                 <div>
                   <p className="text-sm font-semibold text-ink">Closed without submitting</p>
-                  <p className="mt-0.5 text-sm text-ink-soft">{result.confirmation ?? 'No confirmation page appeared.'}</p>
+                  <p className="mt-0.5 text-sm text-ink-soft">
+                    {result.confirmation === 'window closed before a confirmation appeared'
+                      ? 'The window was closed before the confirmation page appeared, so this is not recorded as applied.'
+                      : result.confirmation === 'timed out waiting for the reviewer'
+                        ? 'The window stayed open for 45 minutes without a confirmation, so this is not recorded as applied.'
+                        : 'No confirmation page appeared, so this is not recorded as applied.'}
+                  </p>
                 </div>
               </div>
             )}

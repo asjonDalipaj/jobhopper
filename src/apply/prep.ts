@@ -389,7 +389,7 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         if (!review) artifacts.screenshot = result.screenshot;
         const blanks = result.missing.length ? ` · ${result.missing.length} left blank` : '';
         if (review) {
-          return result.submitted ? 'submitted' : result.confirmation ?? 'not submitted';
+          return result.submitted ? 'submitted' : 'not submitted';
         }
         return `${result.filled.length} filled${blanks}`;
       });
