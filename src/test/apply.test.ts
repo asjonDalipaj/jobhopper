@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { detectAts, resolveAts, SUPPORTED } from '../apply/ats.js';
-import { splitName } from '../apply/applicant.js';
+import { salaryMarket, questionsFor, splitName } from '../apply/applicant.js';
 import { sameValue } from '../apply/greenhouse.js';
 import { descriptionHash } from '../apply/prep.js';
 import { validateLetter } from '../cv/letter.js';
@@ -81,4 +81,31 @@ test('validateLetter repairs dashes and rejects a stub letter', () => {
   const stub = validateLetter({ paragraphs: ['Too short.'] }, job);
   assert.ok(stub.errors.some((e) => e.includes('at least 3 paragraphs')));
   assert.ok(stub.errors.some((e) => e.includes('too short')));
+});
+
+test('salaryMarket maps posting locations to the right expectation', () => {
+  assert.equal(salaryMarket('Amsterdam'), 'NL');
+  assert.equal(salaryMarket('Utrecht, Netherlands'), 'NL');
+  assert.equal(salaryMarket('Madrid, Spain'), 'ES');
+  assert.equal(salaryMarket('Milan, Italy'), 'IT');
+  assert.equal(salaryMarket('Berlin, Germany'), 'default');
+  assert.equal(salaryMarket(null), 'default');
+});
+
+test('questionsFor adds based-in and market salary, and keeps explicit answers', () => {
+  const applicant = {
+    country: 'Netherlands',
+    phoneNational: '1',
+    preferredLocation: 'Amsterdam',
+    city: 'Utrecht',
+    howDidYouHear: 'LinkedIn',
+    consentRetention: true,
+    questions: [{ match: 'notice period', answer: '1 month' }],
+    salaryByCountry: { NL: '€95,000', ES: '€70,000–75,000', IT: '€60,000–70,000', default: '€90,000' },
+  };
+  const nl = questionsFor(applicant, 'Amsterdam');
+  assert.deepEqual(nl.find((q) => /based/i.test(q.match))?.answer, 'Utrecht, Netherlands');
+  assert.deepEqual(nl.find((q) => /salary/i.test(q.match))?.answer, '€95,000');
+  assert.deepEqual(questionsFor(applicant, 'Madrid, Spain').find((q) => /salary/i.test(q.match))?.answer, '€70,000–75,000');
+  assert.deepEqual(questionsFor(applicant, 'Berlin, Germany').find((q) => /salary/i.test(q.match))?.answer, '€90,000');
 });

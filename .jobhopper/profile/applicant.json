@@ -5,8 +5,16 @@
   "city": "Utrecht",
   "howDidYouHear": "LinkedIn",
   "consentRetention": true,
+  "salaryByCountry": {
+    "NL": "€95,000",
+    "ES": "€70,000–75,000",
+    "IT": "€60,000–70,000",
+    "default": "€90,000"
+  },
   "questions": [
     { "match": "willing to work four days per week", "answer": "No" },
-    { "match": "require a sponsorship", "answer": "No" }
+    { "match": "require a sponsorship", "answer": "No" },
+    { "match": "notice period", "answer": "1 month" },
+    { "match": "unrestricted right to work", "answer": "Everywhere" }
   ]
 }

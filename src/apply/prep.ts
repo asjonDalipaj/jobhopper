@@ -21,7 +21,7 @@ import { writeCoverLetter, lintLetter } from '../cv/letter.js';
 import { renderCvPdf, type TailorPlan } from '../cv/render.js';
 import { renderLetterPdf } from '../cv/letter-render.js';
 import { checkFacts } from '../cv/facts.js';
-import { loadApplicant } from './applicant.js';
+import { loadApplicant, questionsFor } from './applicant.js';
 import { resolveAts, SUPPORTED } from './ats.js';
 import { applyGreenhouse } from './greenhouse.js';
 import { resolveBrowser } from './browser.js';
@@ -324,8 +324,9 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
     const fillStep = step(run, 'fill');
     if (fillStep.status !== 'skipped') {
       await timed(fillStep, async () => {
-        const { applicant, errors } = loadApplicant();
+        const { applicant: base, errors } = loadApplicant();
         if (errors.length) throw new Error(errors.join('\n'));
+        const applicant = { ...base, questions: questionsFor(base, job.location) };
         const detected = resolveAts(job.url, job.source);
         if (!detected) throw new Error(`Could not tell which ATS ${job.url} uses`);
         if (!SUPPORTED.includes(detected)) throw new Error(`${detected} is detected but has no adapter yet`);

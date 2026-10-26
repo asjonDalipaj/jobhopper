@@ -26,6 +26,11 @@ export interface Applicant {
    * currently decline (US office days, US sponsorship).
    */
   questions: Array<{ match: string; answer: string }>;
+  /**
+   * Salary expectation per market, keyed NL/ES/IT with a `default` for the rest
+   * of the EU. The same question gets a different answer per posting location.
+   */
+  salaryByCountry?: Record<string, string>;
 }
 
 export const DEFAULT_APPLICANT: Applicant = {
@@ -36,6 +41,39 @@ export const DEFAULT_APPLICANT: Applicant = {
   consentRetention: false,
   questions: [],
 };
+
+/** Market for a posting, from the free-text location the board gave us. */
+export function salaryMarket(location: string | null | undefined): 'NL' | 'ES' | 'IT' | 'default' {
+  const value = (location ?? '').toLowerCase();
+  if (/netherlands|amsterdam|utrecht|rotterdam|the hague|eindhoven|delft|hague/.test(value)) return 'NL';
+  if (/spain|madrid|barcelona|valencia|m[aá]laga|seville|bilbao/.test(value)) return 'ES';
+  if (/italy|milan|milano|rome|roma|turin|torino|bologna|florence/.test(value)) return 'IT';
+  return 'default';
+}
+
+/**
+ * Per-posting questions: the fixed profile answers plus the ones that depend on
+ * where the job is (currently based, salary expectation).
+ */
+export function questionsFor(
+  applicant: Applicant,
+  location: string | null | undefined,
+): Array<{ match: string; answer: string }> {
+  const questions = [...(applicant.questions ?? [])];
+  const has = (pattern: RegExp) => questions.some((q) => pattern.test(q.match));
+
+  if (!has(/currently based/i)) {
+    questions.push({
+      match: 'where are you currently based',
+      answer: `${applicant.city ?? applicant.preferredLocation}, ${applicant.country}`,
+    });
+  }
+  const salary = applicant.salaryByCountry?.[salaryMarket(location)] ?? applicant.salaryByCountry?.['default'];
+  if (salary && !has(/salary/i)) {
+    questions.push({ match: 'salary expectations', answer: salary });
+  }
+  return questions;
+}
 
 export function applicantPath(): string {
   return join(getPaths().profileDir, 'applicant.json');

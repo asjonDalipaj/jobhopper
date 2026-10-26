@@ -335,10 +335,11 @@ Live-tested headless: Elastic 11 fields, N26 10, Datadog 10.
 
 **Remaining, in priority order**
 
-1. **Profile answers, not code** (blocks two of the three above): right-to-work countries
-   (Elastic), currently based in / notice period / salary expectations (N26). Add them to
-   `profile/applicant.json` `questions` once the user provides the values. Datadog's
-   demographic-survey consent stays unticked on purpose.
+1. **Profile answers — done 2026-10-26.** `questions` now carries notice period (1 month)
+   and right-to-work ("Everywhere"); `questionsFor()` derives "currently based" from
+   city+country and picks the salary expectation from `salaryByCountry` (NL/ES/IT/default)
+   using the posting location. Per-application `answers.json` still wins for one-offs.
+   Datadog's demographic-survey consent stays unticked on purpose.
 2. **Ashby adapter (8 jobs).** Hosted app at `jobs.ashbyhq.com/<org>/<id>/application`.
    Probe its field ids, then implement the same `ApplyResult` contract.
 3. **SmartRecruiters (1 job).** Probe whether it serves a fillable form or a one-click UI.

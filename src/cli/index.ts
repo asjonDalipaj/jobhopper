@@ -26,7 +26,7 @@ import { artifactStem } from '../cv/text.js';
 import { writeCoverLetter, lintLetter } from '../cv/letter.js';
 import { renderLetterPdf } from '../cv/letter-render.js';
 import { applyGreenhouse } from '../apply/greenhouse.js';
-import { loadApplicant } from '../apply/applicant.js';
+import { loadApplicant, questionsFor } from '../apply/applicant.js';
 import { resolveAts, SUPPORTED } from '../apply/ats.js';
 import { resolveBrowser } from '../apply/browser.js';
 import { artifactDir, readPlan } from '../apply/prep.js';
@@ -931,7 +931,7 @@ program
     const answersFile = join(dir, 'answers.json');
     const applicant = {
       ...base,
-      questions: [...(base.questions ?? []), ...readAnswers(dir)],
+      questions: [...questionsFor(base, job.location), ...readAnswers(dir)],
     };
     const cvPath = join(dir, 'cv.pdf');
     if (!existsSync(cvPath)) throw new Error(`No tailored CV in ${dir}. Run \`jobhopper cv tailor ${id}\` first.`);
