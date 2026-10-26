@@ -303,6 +303,7 @@ const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$
  */
 async function groupOption(page: Page, question: RegExp, answer: string): Promise<Locator | null> {
   const option = new RegExp(`^${escapeRegex(answer)}$`, 'i');
+  // Nested wrappers match too; document order puts the innermost block last.
   const group = page
     .locator('div', { hasText: question })
     .filter({ has: page.locator('label', { hasText: option }) })
@@ -359,6 +360,27 @@ async function answerQuestions(
  * Questions the form marks required but left empty. Reported, never guessed:
  * visa and office-attendance answers belong to the applicant, not the filler.
  */
+/**
+ * Required checkbox groups ("How should we communicate with you?") have no
+ * label[for], so the label scan cannot see them. For every visible checkbox,
+ * the nearest ancestor whose text carries an asterisk is the group block;
+ * report its header when nothing inside is ticked.
+ */
+async function requiredGroupsUnanswered(page: Page): Promise<string[]> {
+  const out = new Set<string>();
+  const boxes = page.locator('input[type="checkbox"]:visible');
+  const count = await boxes.count();
+  for (let i = 0; i < count; i += 1) {
+    const group = boxes.nth(i).locator('xpath=ancestor::div[contains(., "*")][1]');
+    if (!(await group.count())) continue;
+    const header = (((await group.innerText().catch(() => '')) ?? '').split('\n')[0] ?? '').trim();
+    if (!/\*\s*$/.test(header) || out.has(header)) continue;
+    if ((await group.locator('input[type="checkbox"]:checked').count()) > 0) continue;
+    out.add(header.replace(/\s*\*$/, ''));
+  }
+  return [...out];
+}
+
 async function requiredUnanswered(page: Page, skipIds: string[]): Promise<string[]> {
   const out: string[] = [];
   const labels = page.locator('label');
@@ -385,7 +407,7 @@ async function requiredUnanswered(page: Page, skipIds: string[]): Promise<string
           : ((await field.inputValue().catch(() => '')) ?? '').trim() !== '';
     if (!answered) out.push(text.replace(/\s*\*$/, ''));
   }
-  return [...new Set(out)].slice(0, 8);
+  return [...new Set([...out, ...(await requiredGroupsUnanswered(page))])].slice(0, 8);
 }
 
 const CONFIRMATION = /thank you for applying|application (has been )?(submitted|received)|thanks for applying/i;
