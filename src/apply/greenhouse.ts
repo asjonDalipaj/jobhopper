@@ -6,7 +6,7 @@
  * Nothing here clicks Submit unless the caller asked for it.
  */
 
-import { chromium, type Page } from 'playwright-core';
+import { chromium, type Locator, type Page } from 'playwright-core';
 import { basename, join } from 'node:path';
 import type { CvDocument } from '../cv/schema.js';
 import type { Applicant } from './applicant.js';
@@ -297,6 +297,21 @@ const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$
  * questions the profile declares are answered; anything else stays blank and is
  * reported by requiredUnanswered rather than guessed.
  */
+/**
+ * Checkbox groups ("How should we communicate with you?") have no label[for],
+ * so match the question text and the option text, then tick that option.
+ */
+async function groupOption(page: Page, question: RegExp, answer: string): Promise<Locator | null> {
+  const option = new RegExp(`^${escapeRegex(answer)}$`, 'i');
+  const group = page
+    .locator('div', { hasText: question })
+    .filter({ has: page.locator('label', { hasText: option }) })
+    .last();
+  if (!(await group.count())) return null;
+  const id = await group.locator('label', { hasText: option }).first().getAttribute('for');
+  return id ? page.locator(`[id="${id}"]`) : null;
+}
+
 async function answerQuestions(
   page: Page,
   questions: Array<{ match: string; answer: string }>,
@@ -305,7 +320,16 @@ async function answerQuestions(
 ): Promise<void> {
   for (const question of questions) {
     const id = await labelFor(page, new RegExp(question.match, 'i'));
-    if (!id) continue;
+    if (!id) {
+      const box = await groupOption(page, new RegExp(question.match, 'i'), question.answer);
+      if (box) {
+        await box.check().catch(() => undefined);
+        (await box.isChecked().catch(() => false))
+          ? filled.push(`answer: ${question.match} → ${question.answer}`)
+          : missing.push(`answer: ${question.match} → ${question.answer}`);
+      }
+      continue;
+    }
     const field = page.locator(`[id="${id}"]`);
     if (!(await field.count())) continue;
 
@@ -352,11 +376,12 @@ async function requiredUnanswered(page: Page, skipIds: string[]): Promise<string
     if ((await field.getAttribute('aria-required')) === 'false') continue;
     const type = await field.getAttribute('type');
     const classes = (await field.getAttribute('class')) ?? '';
+    const selected = classes.includes('select__input') ? await selectValue(page, id) : '';
     const answered =
       type === 'checkbox' || type === 'radio'
         ? await field.isChecked().catch(() => false)
         : classes.includes('select__input')
-          ? (await selectValue(page, id)) !== ''
+          ? selected !== '' && !/^select\.{0,3}$/i.test(selected)
           : ((await field.inputValue().catch(() => '')) ?? '').trim() !== '';
     if (!answered) out.push(text.replace(/\s*\*$/, ''));
   }

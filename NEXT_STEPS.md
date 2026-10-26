@@ -340,10 +340,14 @@ Live-tested headless: Elastic 11 fields, N26 10, Datadog 10.
    city+country and picks the salary expectation from `salaryByCountry` (NL/ES/IT/default)
    using the posting location. Per-application `answers.json` still wins for one-offs.
    Datadog's demographic-survey consent stays unticked on purpose.
-2. **Ashby adapter (8 jobs).** Hosted app at `jobs.ashbyhq.com/<org>/<id>/application`.
+2. **Answers for required react-selects — done 2026-10-26.** A placeholder ("Select...")
+   used to read as a value, so required dropdowns were never reported; fixed, and the
+   sponsorship/citizenship/residency/located-in answers plus the "how should we communicate"
+   checkbox group are filled. Elastic now 18 fields / 0 blank, N26 13 / 0.
+3. **Ashby adapter (8 jobs).** Hosted app at `jobs.ashbyhq.com/<org>/<id>/application`.
    Probe its field ids, then implement the same `ApplyResult` contract.
-3. **SmartRecruiters (1 job).** Probe whether it serves a fillable form or a one-click UI.
-4. **Lever / Workable / Teamtailor / Recruitee.** No current rows; add adapters when they
+4. **SmartRecruiters (1 job).** Probe whether it serves a fillable form or a one-click UI.
+5. **Lever / Workable / Teamtailor / Recruitee.** No current rows; add adapters when they
    appear, behind a capability registry so "no adapter" is reported, not faked.
 
 **Shape.** Split `src/apply/greenhouse.ts` into provider modules behind a common interface
