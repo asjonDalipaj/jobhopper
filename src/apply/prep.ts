@@ -38,12 +38,8 @@ export interface PrepStep {
 }
 
 export interface PrepArtifacts {
-  dir: string;
   cv?: string;
   letter?: string;
-  letterTxt?: string;
-  plan?: string;
-  screenshot?: string;
 }
 
 export interface PrepResult {
@@ -51,7 +47,6 @@ export interface PrepResult {
   filled: string[];
   missing: string[];
   warnings: string[];
-  ats: string | null;
   /** True only when a human submitted in the review window and the thank-you page appeared. */
   submitted: boolean;
   confirmation: string | null;
@@ -251,9 +246,8 @@ export function startPrep(job: Job, options: PrepOptions = {}): PrepRun {
 async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<void> {
   const force = Boolean(options.force);
   const dir = artifactDir(job);
-  const artifacts: PrepArtifacts = { dir };
+  const artifacts: PrepArtifacts = {};
   const warnings: string[] = [];
-  let ats: string | null = null;
   let submitted = false;
   let confirmation: string | null = null;
   let filled: string[] = [];
@@ -295,7 +289,6 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         return `${tailored.model}${trimmed}`;
       });
     }
-    artifacts.plan = join(dir, 'plan.json');
     if (existsSync(join(dir, 'cv.pdf'))) artifacts.cv = join(dir, 'cv.pdf');
 
     const letterStep = step(run, 'letter');
@@ -324,7 +317,6 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
           [letter.salutation, ...letter.paragraphs, letter.signoff, doc.name].join('\n\n') + '\n',
         );
         artifacts.letter = join(dir, 'letter.pdf');
-        artifacts.letterTxt = join(dir, 'letter.txt');
         return 'letter.pdf';
       });
     }
@@ -337,7 +329,6 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         const detected = resolveAts(job.url, job.source);
         if (!detected) throw new Error(`Could not tell which ATS ${job.url} uses`);
         if (!SUPPORTED.includes(detected)) throw new Error(`${detected} is detected but has no adapter yet`);
-        ats = detected;
 
         const cvPath = join(dir, 'cv.pdf');
         if (!existsSync(cvPath)) throw new Error(`No tailored CV in ${dir}`);
@@ -390,7 +381,6 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         missing = result.missing;
         submitted = result.submitted;
         confirmation = result.confirmation;
-        if (!review) artifacts.screenshot = result.screenshot;
         const blanks = result.missing.length ? ` · ${result.missing.length} left blank` : '';
         if (review) {
           return result.submitted ? 'submitted' : 'not submitted';
@@ -404,7 +394,6 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
       filled,
       missing,
       warnings,
-      ats,
       submitted,
       confirmation,
     };
@@ -413,7 +402,7 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
     run.awaitingReview = false;
     run.error = err instanceof Error ? err.message : String(err);
     run.stage = 'failed';
-    run.result = { artifacts, filled, missing, warnings, ats, submitted: false, confirmation: null };
+    run.result = { artifacts, filled, missing, warnings, submitted: false, confirmation: null };
   } finally {
     run.finishedAt = new Date().toISOString();
   }

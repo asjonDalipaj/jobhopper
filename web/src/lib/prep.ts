@@ -21,12 +21,8 @@ export interface PrepStep {
 }
 
 export interface PrepArtifacts {
-  dir: string;
   cv?: string;
   letter?: string;
-  letterTxt?: string;
-  plan?: string;
-  screenshot?: string;
 }
 
 export interface PrepResult {
@@ -34,7 +30,6 @@ export interface PrepResult {
   filled: string[];
   missing: string[];
   warnings: string[];
-  ats: string | null;
   /** True only when the human submitted in the review window and the thank-you page appeared. */
   submitted: boolean;
   confirmation: string | null;

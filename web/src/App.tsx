@@ -84,31 +84,10 @@ export function App() {
     return run?.result?.artifacts.cv ? 'ready' : 'none';
   };
 
-  // Review runs can sit open for a while, so keep the card chips fresh while
-  // anything is in flight (the dialog also polls its own run).
-  const anyRunning = Object.values(preps).some((run) => run.stage === 'running');
-  useEffect(() => {
-    if (!prepBase || !anyRunning) return;
-    const timer = window.setInterval(() => {
-      void latestPreps(prepBase).then((runs) => {
-        // Merge: latestPreps only returns finished runs, so replacing the map
-        // would drop the run that is currently waiting for you.
-        setPreps((prev) => {
-          const next = { ...prev };
-          for (const run of runs) next[`${run.source}:${run.externalId}`] = run;
-          return next;
-        });
-      });
-    }, 4000);
-    return () => window.clearInterval(timer);
-  }, [prepBase, anyRunning]);
-
-  const prepFinished = useCallback((run: PrepRun) => {
-    setPreps((prev) => ({ ...prev, [`${run.source}:${run.externalId}`]: run }));
+  // A confirmed submission is an application: record it like the Apply toast
+  // does (localStorage for the static site, DB when the local server runs).
+  const recordSubmission = useCallback((run: PrepRun) => {
     if (!run.result?.submitted) return;
-
-    // A confirmed submission is an application: record it like the Apply toast
-    // does (localStorage for the static site, DB when the local server runs).
     const key = `${run.source}-${run.externalId}`;
     const appliedAt = run.finishedAt ?? new Date().toISOString();
     setApplied((prev) => {
@@ -123,6 +102,34 @@ export function App() {
       body: JSON.stringify({ source: run.source, externalId: run.externalId, appliedAt }),
     }).catch(() => undefined);
   }, []);
+
+  const prepFinished = useCallback((run: PrepRun) => {
+    setPreps((prev) => ({ ...prev, [`${run.source}:${run.externalId}`]: run }));
+    recordSubmission(run);
+  }, [recordSubmission]);
+
+  // Review runs can sit open for a while, so keep the card chips fresh while
+  // anything is in flight (the dialog also polls its own run).
+  const anyRunning = Object.values(preps).some((run) => run.stage === 'running');
+  useEffect(() => {
+    // Same-origin base is '' (truthy check would disable polling here).
+    if (prepBase === null || !anyRunning) return;
+    const timer = window.setInterval(() => {
+      void latestPreps(prepBase).then((runs) => {
+        // Merge: latestPreps only returns finished runs, so replacing the map
+        // would drop the run that is currently waiting for you.
+        setPreps((prev) => {
+          const next = { ...prev };
+          for (const run of runs) next[`${run.source}:${run.externalId}`] = run;
+          return next;
+        });
+        // The dialog may be closed while the review window is submitted, so the
+        // applied flag must not depend on it being open.
+        for (const run of runs) recordSubmission(run);
+      });
+    }, 4000);
+    return () => window.clearInterval(timer);
+  }, [prepBase, anyRunning, recordSubmission]);
 
   useEffect(() => {
     async function loadData() {
