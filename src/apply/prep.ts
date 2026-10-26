@@ -151,6 +151,10 @@ interface SavedPlan {
   plan?: TailorPlan;
 }
 
+export function readPlan(dir: string): TailorPlan | null {
+  return readSavedPlan(dir)?.plan ?? null;
+}
+
 function readSavedPlan(dir: string): SavedPlan | null {
   const file = join(dir, 'plan.json');
   if (!existsSync(file)) return null;

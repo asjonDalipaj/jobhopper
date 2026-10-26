@@ -55,6 +55,7 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
   const begin = useCallback(
     async (options: { steps?: ('cv' | 'letter' | 'fill')[]; force?: boolean; mode?: 'fill' | 'review' }) => {
       setError(null);
+      setNoDisplay(false);
       setStarting(true);
       try {
         const started = await startPrep(base, job, options);
@@ -280,6 +281,15 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
                 </a>
               )}
             </div>
+
+            {result.warnings.length > 0 && (
+              <details className="rounded-xl bg-white/60 px-3 py-2 text-sm text-ink-soft">
+                <summary className="cursor-pointer font-medium text-ink">{result.warnings.length} note(s)</summary>
+                <ul className="mt-2 ml-4 list-disc space-y-1">
+                  {result.warnings.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </details>
+            )}
 
             {result.missing.length > 0 && (
               <div>

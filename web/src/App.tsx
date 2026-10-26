@@ -91,7 +91,13 @@ export function App() {
     if (!prepBase || !anyRunning) return;
     const timer = window.setInterval(() => {
       void latestPreps(prepBase).then((runs) => {
-        setPreps(Object.fromEntries(runs.map((run) => [`${run.source}:${run.externalId}`, run])));
+        // Merge: latestPreps only returns finished runs, so replacing the map
+        // would drop the run that is currently waiting for you.
+        setPreps((prev) => {
+          const next = { ...prev };
+          for (const run of runs) next[`${run.source}:${run.externalId}`] = run;
+          return next;
+        });
       });
     }, 4000);
     return () => window.clearInterval(timer);

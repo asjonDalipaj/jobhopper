@@ -28,7 +28,8 @@ import { renderLetterPdf } from '../cv/letter-render.js';
 import { applyGreenhouse } from '../apply/greenhouse.js';
 import { loadApplicant } from '../apply/applicant.js';
 import { resolveAts, SUPPORTED } from '../apply/ats.js';
-import type { TailorPlan } from '../cv/render.js';
+import { resolveBrowser } from '../apply/browser.js';
+import { artifactDir, readPlan } from '../apply/prep.js';
 import { createInterface } from 'node:readline/promises';
 
 
@@ -841,19 +842,6 @@ cv.command('tailor <id>')
 
 // ---------- cv letter + apply ----------
 
-const artifactDir = (job: { source: string; external_id: string; company: string; title: string }) =>
-  join(getPaths().root, 'applications', artifactStem(job.source, job.external_id, job.company, job.title));
-
-function readPlan(dir: string): TailorPlan | null {
-  const file = join(dir, 'plan.json');
-  if (!existsSync(file)) return null;
-  try {
-    return (JSON.parse(readFileSync(file, 'utf8')) as { plan?: TailorPlan }).plan ?? null;
-  } catch {
-    return null;
-  }
-}
-
 /** Per-application answers. A malformed file is a hard error: skipping it would
  * submit a form with required answers silently blank. */
 function readAnswers(dir: string): Array<{ match: string; answer: string }> {
@@ -867,23 +855,6 @@ function readAnswers(dir: string): Array<{ match: string; answer: string }> {
     throw new Error(`${file}: every question needs a match and an answer.`);
   }
   return questions as Array<{ match: string; answer: string }>;
-}
-
-function resolveBrowser(explicit?: string): string {
-  const candidates = [
-    explicit,
-    process.env['JOBHOPPER_BROWSER'],
-    '/opt/brave-bin/brave',
-    '/usr/bin/brave-browser',
-    '/usr/bin/google-chrome',
-    '/usr/bin/chromium',
-    '/usr/bin/chromium-browser',
-  ].filter((value): value is string => Boolean(value));
-  const found = candidates.find((candidate) => existsSync(candidate));
-  if (!found) {
-    throw new Error('No browser found. Pass --browser <path> or set JOBHOPPER_BROWSER.');
-  }
-  return found;
 }
 
 async function askVerificationCode(): Promise<string> {

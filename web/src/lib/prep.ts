@@ -63,18 +63,18 @@ const LOCAL_ORIGIN = 'http://localhost:3333';
 
 export const prepKey = (job: Pick<Job, 'source' | 'external_id'>) => `${job.source}:${job.external_id}`;
 
-async function probe(base: string, timeoutMs: number): Promise<{ ok: boolean; display: boolean }> {
+async function probe(base: string, timeoutMs: number): Promise<boolean> {
   const controller = new AbortController();
   const timer = window.setTimeout(() => controller.abort(), timeoutMs);
   try {
     const res = await fetch(`${base}/api/status`, { signal: controller.signal, cache: 'no-store' });
-    if (!res.ok) return { ok: false, display: false };
+    if (!res.ok) return false;
     // A static host may answer 200 with index.html for unknown paths.
-    if (!(res.headers.get('content-type') ?? '').includes('application/json')) return { ok: false, display: false };
-    const body = (await res.json()) as { ok?: boolean; prep?: boolean; display?: boolean };
-    return { ok: body.ok === true && body.prep === true, display: body.display === true };
+    if (!(res.headers.get('content-type') ?? '').includes('application/json')) return false;
+    const body = (await res.json()) as { ok?: boolean; prep?: boolean };
+    return body.ok === true && body.prep === true;
   } catch {
-    return { ok: false, display: false };
+    return false;
   } finally {
     window.clearTimeout(timer);
   }
@@ -85,8 +85,8 @@ let resolved: Promise<string | null> | undefined;
 /** '' means same origin; a full localhost URL means the hosted-page bridge. */
 export function localBase(): Promise<string | null> {
   resolved ??= (async () => {
-    if ((await probe('', 1500)).ok) return '';
-    if ((await probe(LOCAL_ORIGIN, 2500)).ok) return LOCAL_ORIGIN;
+    if (await probe('', 1500)) return '';
+    if (await probe(LOCAL_ORIGIN, 2500)) return LOCAL_ORIGIN;
     return null;
   })();
   return resolved;
