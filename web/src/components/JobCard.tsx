@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag, Check } from 'lucide-react';
+import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag, Check, Loader2, Wand2 } from 'lucide-react';
 import type { Job } from '../types';
 import { VerdictBadge } from './VerdictBadge';
 import { formatDate, isNewJob } from '../utils';
@@ -12,11 +12,17 @@ interface JobCardProps {
   appliedAt?: string | null;
   /** Fired when the Apply link is clicked (opens the posting in a new tab). */
   onApplyClick?: (job: Job) => void;
+  /** True when a local `jobhopper ui` server answered the bridge probe. */
+  prepAvailable?: boolean;
+  /** 'ready' = a tailored CV exists, 'running' = a prep run is in flight. */
+  prepState?: 'none' | 'ready' | 'running' | 'waiting' | 'submitted';
+  /** Fired when the Auto-fill button is clicked. */
+  onPrep?: (job: Job) => void;
 }
 
 const cardTints = ['card-tint-blue', 'card-tint-mint', 'card-tint-pink', 'card-tint-lilac', 'card-tint-slate', 'card-tint-peach'];
 
-export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApplyClick }) => {
+export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApplyClick, prepAvailable, prepState = 'none', onPrep }) => {
   const [expanded, setExpanded] = useState(false);
   const tint = cardTints[index % cardTints.length];
   const isNewRow = isNewJob(job);
@@ -40,6 +46,21 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
           {appliedAt && (
             <span className="inline-flex items-center gap-1 rounded-full bg-mint px-2.5 py-1 text-[11px] font-semibold text-ink" title={`Marked applied ${new Date(appliedAt).toLocaleDateString()}`}>
               <Check className="h-3 w-3" /> Applied
+            </span>
+          )}
+          {prepState === 'ready' && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-white/85 px-2.5 py-1 text-[11px] font-semibold text-ink" title="Tailored CV and cover letter saved locally">
+              <Sparkles className="h-3 w-3" /> CV ready
+            </span>
+          )}
+          {prepState === 'waiting' && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-butter px-2.5 py-1 text-[11px] font-semibold text-ink" title="The filled form is open in a browser window, waiting for you">
+              <Loader2 className="h-3 w-3 animate-spin" /> Waiting for you
+            </span>
+          )}
+          {prepState === 'submitted' && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-mint px-2.5 py-1 text-[11px] font-semibold text-ink" title="Submitted in the review window">
+              <Check className="h-3 w-3" /> Submitted
             </span>
           )}
         </div>
@@ -78,6 +99,25 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
             Apply <ExternalLink className="h-3.5 w-3.5" />
           </a>}
         </div>
+
+        <button
+          type="button"
+          onClick={() => onPrep?.(job)}
+          disabled={!prepAvailable || prepState === 'running' || prepState === 'waiting'}
+          title={
+            !prepAvailable
+              ? 'Auto-fill runs on your machine. Start `jobhopper ui` to enable it.'
+              : 'Tailor the CV, write the cover letter and open the filled form in your browser — you click Submit'
+          }
+          className="mt-2 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-xl border border-dashed border-ink/25 bg-white/20 px-3 text-sm font-medium text-ink transition-colors hover:bg-white/55 disabled:cursor-not-allowed disabled:opacity-45 disabled:hover:bg-white/20"
+        >
+          {prepState === 'running' || prepState === 'waiting' ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />}
+          {prepState === 'running'
+            ? 'Preparing application…'
+            : prepState === 'waiting'
+              ? 'Waiting for you to submit…'
+              : 'Auto-fill & apply'}
+        </button>
 
         <AnimatePresence initial={false}>
           {expanded && <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.18 }} className="overflow-hidden">

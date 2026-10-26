@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
 import { loadConfig, saveConfig, resolveApiKey, hasApiKey } from '../config/config.js';
-import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket } from '../db/jobs-repo.js';
+import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket, setJobApplied } from '../db/jobs-repo.js';
 import { storeJudgment, listJudgments, getJudgment } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
 import { scanCompanies } from '../sources/scan.js';
@@ -23,6 +23,13 @@ import { renderCvPdf } from '../cv/render.js';
 import { checkFacts } from '../cv/facts.js';
 import { tailorCv } from '../cv/tailor.js';
 import { artifactStem } from '../cv/text.js';
+import { writeCoverLetter, lintLetter } from '../cv/letter.js';
+import { renderLetterPdf } from '../cv/letter-render.js';
+import { applyGreenhouse } from '../apply/greenhouse.js';
+import { loadApplicant } from '../apply/applicant.js';
+import { resolveAts, SUPPORTED } from '../apply/ats.js';
+import type { TailorPlan } from '../cv/render.js';
+import { createInterface } from 'node:readline/promises';
 
 
 const program = new Command();
@@ -829,6 +836,199 @@ cv.command('tailor <id>')
     if (tailored.rationale) console.log(dim('angle: ' + tailored.rationale));
     if (tailored.keywords.length) console.log(dim('keywords: ' + tailored.keywords.join(', ')));
     if (result.dropped.length) console.log(dim(`trimmed ${result.dropped.length} bullet(s) to fit one page`));
+  });
+
+
+// ---------- cv letter + apply ----------
+
+const artifactDir = (job: { source: string; external_id: string; company: string; title: string }) =>
+  join(getPaths().root, 'applications', artifactStem(job.source, job.external_id, job.company, job.title));
+
+function readPlan(dir: string): TailorPlan | null {
+  const file = join(dir, 'plan.json');
+  if (!existsSync(file)) return null;
+  try {
+    return (JSON.parse(readFileSync(file, 'utf8')) as { plan?: TailorPlan }).plan ?? null;
+  } catch {
+    return null;
+  }
+}
+
+/** Per-application answers. A malformed file is a hard error: skipping it would
+ * submit a form with required answers silently blank. */
+function readAnswers(dir: string): Array<{ match: string; answer: string }> {
+  const file = join(dir, 'answers.json');
+  if (!existsSync(file)) return [];
+  const parsed = JSON.parse(readFileSync(file, 'utf8')) as {
+    questions?: Array<{ match?: string; answer?: string }>;
+  };
+  const questions = parsed.questions ?? [];
+  if (questions.some((q) => !q.match || !q.answer)) {
+    throw new Error(`${file}: every question needs a match and an answer.`);
+  }
+  return questions as Array<{ match: string; answer: string }>;
+}
+
+function resolveBrowser(explicit?: string): string {
+  const candidates = [
+    explicit,
+    process.env['JOBHOPPER_BROWSER'],
+    '/opt/brave-bin/brave',
+    '/usr/bin/brave-browser',
+    '/usr/bin/google-chrome',
+    '/usr/bin/chromium',
+    '/usr/bin/chromium-browser',
+  ].filter((value): value is string => Boolean(value));
+  const found = candidates.find((candidate) => existsSync(candidate));
+  if (!found) {
+    throw new Error('No browser found. Pass --browser <path> or set JOBHOPPER_BROWSER.');
+  }
+  return found;
+}
+
+async function askVerificationCode(): Promise<string> {
+  const rl = createInterface({ input: process.stdin, output: process.stdout });
+  try {
+    return await rl.question(pc.bold('Verification code from your email: '));
+  } finally {
+    rl.close();
+  }
+}
+
+cv.command('letter <id>')
+  .description('Write the cover letter for a stored posting next to its tailored CV')
+  .option('-o, --out <dir>', 'output directory')
+  .option('-m, --model <id>', 'OpenRouter model override')
+  .action(async (id: string, opts: { out?: string; model?: string }) => {
+    const job = getJob(Number(id));
+    if (!job) throw new Error(`No job with id ${id}. Try \`jobhopper list\`.`);
+    const doc = loadCv();
+    const dir = opts.out ?? artifactDir(job);
+    const plan = readPlan(dir);
+    if (!plan) throw new Error(`No tailoring plan in ${dir}. Run \`jobhopper cv tailor ${id}\` first.`);
+
+    const letter = await writeCoverLetter(
+      { company: job.company, title: job.title, location: job.location, description: job.description, url: job.url },
+      doc,
+      plan,
+      { model: opts.model },
+    );
+    for (const fixed of letter.fixes) console.log(dim('fixed: ' + fixed));
+    for (const problem of letter.errors) console.log(pc.yellow('letter: ') + problem);
+
+    const styleIssues = lintLetter([letter.salutation, ...letter.paragraphs].join(' '));
+    for (const issue of new Set(styleIssues)) console.log(pc.yellow('style: ') + issue);
+
+    const rendered = await renderLetterPdf(doc, letter);
+    // The letter prints its own date; that year is not a CV claim.
+    const body = rendered.text.split(rendered.date).join(' ');
+    const check = checkFacts(body, doc, { requireEmployers: false });
+    for (const warning of check.warnings) console.log(pc.yellow('warn: ') + warning);
+    if (!check.ok) {
+      for (const error of check.errors) console.error(pc.red('fact check: ') + error);
+      throw new Error('cover letter failed the fact check, refusing to write it');
+    }
+
+    writeCvPdf(rendered.bytes, join(dir, 'letter.pdf'));
+    writeFileSync(
+      join(dir, 'letter.txt'),
+      [letter.salutation, ...letter.paragraphs, letter.signoff, doc.name].join('\n\n') + '\n',
+    );
+    console.log(pc.green('Wrote ') + join(dir, 'letter.pdf'));
+  });
+
+program
+  .command('apply <id>')
+  .description('Fill the application form for a stored posting (Greenhouse supported)')
+  .option('--submit', 'click Submit, prompting for the emailed code when asked')
+  .option('--review', 'fill, then leave the window open for you to review and submit yourself')
+  .option('--headed', 'show the browser window')
+  .option('--browser <path>', 'browser executable')
+  .option('-o, --out <dir>', 'artifacts directory')
+  .action(async (id: string, opts: { submit?: boolean; review?: boolean; headed?: boolean; browser?: string; out?: string }) => {
+    const job = getJob(Number(id));
+    if (!job) throw new Error(`No job with id ${id}. Try \`jobhopper list\`.`);
+
+    const doc = loadCv();
+    const { applicant: base, errors } = loadApplicant();
+    if (errors.length) throw new Error(errors.join('\n'));
+
+    const dir = opts.out ?? artifactDir(job);
+    // Board-specific answers are per application, not per person: "what appeals
+    // to you about this job" cannot live in a static profile. They sit next to
+    // plan.json so a bad answer is inspectable and diffable like the rest.
+    const answersFile = join(dir, 'answers.json');
+    const applicant = {
+      ...base,
+      questions: [...(base.questions ?? []), ...readAnswers(dir)],
+    };
+    const cvPath = join(dir, 'cv.pdf');
+    if (!existsSync(cvPath)) throw new Error(`No tailored CV in ${dir}. Run \`jobhopper cv tailor ${id}\` first.`);
+    const letterPath = existsSync(join(dir, 'letter.pdf')) ? join(dir, 'letter.pdf') : undefined;
+
+    const ats = resolveAts(job.url, job.source);
+    if (!ats) throw new Error(`Could not tell which ATS ${job.url} uses.`);
+    if (!SUPPORTED.includes(ats)) {
+      throw new Error(`${ats} is detected but has no adapter yet. Supported: ${SUPPORTED.join(', ')}.`);
+    }
+
+    const submit = Boolean(opts.submit);
+    const review = Boolean(opts.review);
+    if (review && submit) throw new Error('--review and --submit are mutually exclusive: review mode never clicks Submit.');
+    const headed = review || Boolean(opts.headed);
+    console.log(pc.bold(`${job.company} · ${job.title}`));
+    console.log(
+      dim(
+        `ats: ${ats}  ·  artifacts: ${dir}  ·  ${
+          submit ? 'will submit' : review ? 'fill, then you review and submit' : 'fill only'
+        }`,
+      ),
+    );
+    if (review) {
+      console.log(pc.bold('A browser window opens with the form filled.'));
+      console.log(dim('Check every field, then click Submit Application yourself. Close the window when you are done.'));
+    }
+
+    const result = await applyGreenhouse({
+      url: job.url,
+      doc,
+      applicant,
+      cvPath,
+      letterPath,
+      browserPath: resolveBrowser(opts.browser),
+      headless: !headed,
+      submit,
+      review,
+      outDir: dir,
+      askCode: submit && process.stdin.isTTY ? askVerificationCode : undefined,
+    });
+
+    console.log(pc.green('filled: ') + result.filled.join(', '));
+    if (result.missing.length) console.log(pc.yellow('left blank: ') + result.missing.join(', '));
+    console.log(dim('screenshot: ' + result.screenshot));
+
+    // Only a confirmed submission counts: a form left open, or one the reviewer
+    // closed, must not show up in the dashboard as applied.
+    if (result.submitted) {
+      setJobApplied(job.source, job.external_id, new Date().toISOString());
+      console.log(dim('recorded as applied in the local database'));
+    }
+
+    if (review) {
+      if (result.submitted) console.log(pc.green('submitted: ') + result.confirmation);
+      else console.log(pc.yellow('not submitted: ') + (result.confirmation ?? 'no confirmation'));
+    } else if (!submit) {
+      console.log(dim('form not submitted. Re-run with --review to finish it yourself, or --submit to send it.'));
+    } else if (result.submitted) {
+      console.log(pc.green('submitted: ') + result.confirmation);
+    } else if (result.needsCode) {
+      console.log(
+        pc.yellow('Submission needs the emailed security code. ') +
+          'Re-run with --submit from an interactive terminal to enter it, or finish in a browser.',
+      );
+    } else {
+      console.log(pc.yellow('No confirmation detected. ') + 'Check ' + result.screenshot);
+    }
   });
 
 program.parseAsync().then(() => closeDb()).catch((err) => {

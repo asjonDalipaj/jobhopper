@@ -238,3 +238,83 @@ text before the file is written.
 **Next:** cover letter from the same plan, then the apply adapter
 (`apply <id>`): ATS detection from the URL, form fill, upload of
 `applications/<stem>/cv.pdf`, stop before the bot check.
+
+## Feature — Auto-fill from the job cards (added 2026-10-26)
+
+**What ships.** A third action on every card, *Auto-fill & apply*, opens a
+dialog that runs tailor → cover letter → **a visible browser window with the form
+filled**. The human reviews and clicks Submit there; the tool never clicks Submit.
+The dialog flips to "Submitted" when the confirmation page appears, and the card
+keeps a matching chip ("Waiting for you" → "Submitted"). Artifacts land where the
+CLI puts them: `applications/<company>_<title>_<source>_<external_id>/`.
+
+There is still a headless mode (`mode: "fill"`, no window, never submits) for
+artifact-only prep; the card action uses `mode: "review"`.
+
+**Where it runs.** The work is local: it needs the CV, `profile/applicant.json`
+and a headless browser. `jobhopper ui` owns it; the dialog talks to that server.
+
+Two origins, one feature:
+- **Local UI** (`jobhopper ui`): same-origin `/api/*`.
+- **Hosted UI** (jobhopper.pages.dev): the static page first probes
+  `/api/status` on its own origin (404 there), then `http://localhost:3333`.
+  With the local server running, the hosted card is a thin client and fills the
+  form on the user's machine. Without it, the button is disabled with
+  "Auto-fill runs on your machine: start `jobhopper ui`", and a hint under the
+  results count explains it. On a phone or another computer there is no local
+  server, so the hosted button stays disabled — by design, not by accident.
+- Brave/Chrome may ask for local-network permission (Private Network Access).
+  The server answers the PNA preflight (`Access-Control-Allow-Private-Network`),
+  and a blocked probe degrades to the disabled state.
+
+**API (local server):**
+
+| Endpoint | Purpose |
+|---|---|
+| `POST /api/prep` `{source, externalId, steps?, force?, mode?: "fill" \| "review"}` | Start a run → `202 {runId}`; `409` if one is running; `409 {code:"no-display"}` when review needs a desktop |
+| `GET /api/prep/:id` | Poll `{run}` (status per step, result) |
+| `GET /api/prep/latest[?source&externalId]` | Hydrate card chips in one request |
+| `GET /api/artifacts?source&externalId&file=` | `cv.pdf`, `letter.pdf`, `letter.txt`, `form.png`, `plan.json` only |
+| `GET /api/status` | Bridge probe, answers `{ok, app, prep, display}` JSON |
+
+**Implementation.** `src/apply/prep.ts` owns the run registry and the sequence;
+`serve.ts` exposes it; `web/src/lib/prep.ts` is the client (probe, start, poll,
+artifact URLs); `PrepDialog.tsx` renders progress and results; `JobCard` renders
+the button and the "CV ready" chip; `App.tsx` probes once and keeps a
+`prepByKey` map.
+
+**Caching.** `plan.json` now stores `descriptionHash`. Re-clicking a card reuses
+the CV and letter when the description is unchanged (0 model calls, ~40 s for the
+fill only). `force: true` (or the dialog's "Force re-prep") re-runs the model.
+The fill runs one at a time; tailoring can overlap.
+
+**Verification (2026-10-26):**
+- API: 7239 `[cv, letter]` → done in 120 s; second run → both steps reused, 0 ms.
+- API: 7238 `[fill]` → 11 filled, 0 blockers (the two US questions answered "No"
+  from `profile/applicant.json`).
+- UI on `localhost:3333`: dialog ran cached CV + letter + 36 s fill, 9 filled,
+  screenshot rendered, no console errors.
+- UI on a second origin (`:4173`, static `web/dist` + `jobs.json`, the same shape
+  as the hosted deploy): bridge probe resolved `localhost:3333`, button enabled,
+  run completed with the screenshot. A job present only in the snapshot (not the
+  local DB) returns 404 and the dialog says to run `jobhopper scan` — honest,
+  because prep needs the description.
+- `npm test`: 67 pass (added `descriptionHash`), `tsc` and `vite build` clean.
+
+**Decisions:**
+- **Submit stays human, but it is a button now.** `runPrep` never clicks Submit;
+  `mode: "review"` opens the filled form and watches for the confirmation page
+  (45 min cap). The CLI's `apply --review` runs the same path, so there is one
+  implementation.
+- **A waiting review must not block other fills.** Review runs bypass the
+  headless fill queue (they are idle while a human reads); headless fills stay
+  serialised.
+- **No display, no dead end.** Without `DISPLAY`/`WAYLAND_DISPLAY` the endpoint
+  answers `409 no-display` and the dialog shows the exact `apply <id> --review`
+  command with a copy button. The job id only appears in that fallback.
+- **Honest blanks.** Only fields the form actually has are reported as blank;
+  absent optional fields (GitHub, consent) are not "missing".
+- **Cache on description hash, not timestamps.** Editing the posting re-tailors;
+  an unchanged posting never pays twice.
+- **Local-only by construction.** Nothing is uploaded; the hosted page only ever
+  calls the user's own machine.

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
@@ -9,6 +9,8 @@ import type { Job, FilterState } from './types';
 import { toLocalDay, isNewJob } from './utils';
 import { appliedKey, loadApplied, saveApplied } from './utils/applied';
 import { ApplyToast } from './components/ApplyToast';
+import { PrepDialog } from './components/PrepDialog';
+import { latestPreps, localBase, prepKey, type PrepRun } from './lib/prep';
 import { ActivityPanel } from './components/ActivityPanel';
 import { Inbox, SlidersHorizontal } from 'lucide-react';
 
@@ -30,6 +32,31 @@ export function App() {
   const [applied, setApplied] = useState<Record<string, string>>(() => loadApplied());
   const [toastJob, setToastJob] = useState<Job | null>(null);
   const [showActivity, setShowActivity] = useState(false);
+  const [prepBase, setPrepBase] = useState<string | null>(null);
+  const [prepProbed, setPrepProbed] = useState(false);
+  const [preps, setPreps] = useState<Record<string, PrepRun>>({});
+  const [prepJob, setPrepJob] = useState<Job | null>(null);
+
+  // Auto-fill needs the local CLI. Same origin when served by `jobhopper ui`;
+  // the hosted build reaches the same server through http://localhost:3333.
+  useEffect(() => {
+    let alive = true;
+    void localBase().then(async (base) => {
+      if (!alive) return;
+      setPrepBase(base);
+      if (base === null) {
+        setPrepProbed(true);
+        return;
+      }
+      const runs = await latestPreps(base);
+      if (!alive) return;
+      setPreps(Object.fromEntries(runs.map((run) => [`${run.source}:${run.externalId}`, run])));
+      setPrepProbed(true);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   const markApplied = (job: Job) => {
     const appliedAt = new Date().toISOString();
@@ -48,6 +75,48 @@ export function App() {
   /** localStorage wins (device-specific), snapshot value as fallback. */
   const effectiveAppliedAt = (job: Job): string | null =>
     applied[appliedKey(job)] ?? job.applied_at ?? null;
+
+  const prepStateFor = (job: Job): 'none' | 'ready' | 'running' | 'waiting' | 'submitted' => {
+    const run = preps[prepKey(job)];
+    if (run?.result?.submitted) return 'submitted';
+    if (run?.awaitingReview) return 'waiting';
+    if (run?.stage === 'running') return 'running';
+    return run?.result?.artifacts.cv ? 'ready' : 'none';
+  };
+
+  // Review runs can sit open for a while, so keep the card chips fresh while
+  // anything is in flight (the dialog also polls its own run).
+  const anyRunning = Object.values(preps).some((run) => run.stage === 'running');
+  useEffect(() => {
+    if (!prepBase || !anyRunning) return;
+    const timer = window.setInterval(() => {
+      void latestPreps(prepBase).then((runs) => {
+        setPreps(Object.fromEntries(runs.map((run) => [`${run.source}:${run.externalId}`, run])));
+      });
+    }, 4000);
+    return () => window.clearInterval(timer);
+  }, [prepBase, anyRunning]);
+
+  const prepFinished = useCallback((run: PrepRun) => {
+    setPreps((prev) => ({ ...prev, [`${run.source}:${run.externalId}`]: run }));
+    if (!run.result?.submitted) return;
+
+    // A confirmed submission is an application: record it like the Apply toast
+    // does (localStorage for the static site, DB when the local server runs).
+    const key = `${run.source}-${run.externalId}`;
+    const appliedAt = run.finishedAt ?? new Date().toISOString();
+    setApplied((prev) => {
+      if (prev[key]) return prev;
+      const next = { ...prev, [key]: appliedAt };
+      saveApplied(next);
+      return next;
+    });
+    void fetch('/api/applied', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source: run.source, externalId: run.externalId, appliedAt }),
+    }).catch(() => undefined);
+  }, []);
 
   useEffect(() => {
     async function loadData() {
@@ -240,6 +309,9 @@ export function App() {
               <div>
                 <h3 className="text-lg font-semibold">Open roles <span className="ml-1 text-sm font-normal text-ink-soft">({filteredJobs.length})</span></h3>
                 <p className="mt-1 text-xs text-ink-soft">Showing {filteredJobs.length} of {jobs.length} · newest first</p>
+                {prepProbed && prepBase === null && (
+                  <p className="mt-1 text-xs text-ink-faint">Auto-fill runs on your machine: start <code className="rounded bg-white/70 px-1">jobhopper ui</code> to enable it.</p>
+                )}
               </div>
               {hasActiveFilters && <button type="button" onClick={clearFilters} className="inline-flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2 text-xs font-medium text-ink-soft hover:text-ink"><SlidersHorizontal className="h-3.5 w-3.5" /> Clear filters</button>}
             </div>
@@ -248,7 +320,7 @@ export function App() {
               <div className="rounded-2xl border border-line bg-surface py-24 text-center text-sm text-ink-soft">Loading roles…</div>
             ) : filteredJobs.length > 0 ? (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filteredJobs.map((job, index) => <JobCard key={`${job.source}-${job.external_id}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} />)}
+                {filteredJobs.map((job, index) => <JobCard key={`${job.source}-${job.external_id}`} job={job} index={index} appliedAt={effectiveAppliedAt(job)} onApplyClick={setToastJob} prepAvailable={prepBase !== null} prepState={prepStateFor(job)} onPrep={setPrepJob} />)}
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-line-strong bg-surface p-12 text-center">
@@ -265,6 +337,18 @@ export function App() {
       <footer className="mt-8 border-t border-line bg-surface/60 py-5 text-center text-xs text-ink-faint">
         <span className="font-display font-medium text-ink-soft">JobHopper</span> · Local data stays on your machine
       </footer>
+
+      <AnimatePresence>
+        {prepJob && prepBase !== null && (
+          <PrepDialog
+            key={prepKey(prepJob)}
+            job={prepJob}
+            base={prepBase}
+            onClose={() => setPrepJob(null)}
+            onRun={prepFinished}
+          />
+        )}
+      </AnimatePresence>
 
       <AnimatePresence>
         {toastJob && (

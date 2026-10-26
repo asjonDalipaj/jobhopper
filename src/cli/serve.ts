@@ -1,8 +1,9 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
 import { existsSync, readFileSync, statSync } from 'node:fs';
-import { join, resolve, extname } from 'node:path';
+import { extname, join, resolve } from 'node:path';
 import pc from 'picocolors';
-import { listJobs, setJobApplied } from '../db/jobs-repo.js';
+import { getJobByExternal, listJobs, setJobApplied } from '../db/jobs-repo.js';
+import { activeRun, artifactDir, finishedPreps, getPrepRun, hasDisplay, latestPrep, startPrep, type PrepStepId } from '../apply/prep.js';
 import { htmlToPlainText } from '../sources/html.js';
 
 const MIME_TYPES: Record<string, string> = {
@@ -15,8 +16,24 @@ const MIME_TYPES: Record<string, string> = {
   '.jpeg': 'image/jpeg',
   '.ico': 'image/x-icon',
   '.json': 'application/json; charset=utf-8',
+  '.pdf': 'application/pdf',
+  '.txt': 'text/plain; charset=utf-8',
   '.woff2': 'font/woff2',
 };
+
+/** Files the artifacts endpoint may serve, by exact name. No paths. */
+const ARTIFACT_FILES = new Set(['cv.pdf', 'letter.pdf', 'letter.txt', 'form.png', 'plan.json']);
+
+function sendJson(res: ServerResponse, status: number, body: unknown): void {
+  res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
+  res.end(JSON.stringify(body));
+}
+
+async function readJsonBody<T>(req: IncomingMessage): Promise<T> {
+  const chunks: Buffer[] = [];
+  for await (const chunk of req) chunks.push(chunk as Buffer);
+  return JSON.parse(Buffer.concat(chunks).toString('utf8')) as T;
+}
 
 /**
  * Start a minimal local web server serving the React frontend and local SQLite jobs API.
@@ -29,6 +46,11 @@ export function startWebServer(port = 3333): void {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    // Chrome's Private Network Access: a page on a public origin (e.g. the
+    // hosted Cloudflare build) may only call localhost if it opts in here.
+    if (req.headers['access-control-request-private-network'] === 'true') {
+      res.setHeader('Access-Control-Allow-Private-Network', 'true');
+    }
 
     if (req.method === 'OPTIONS') {
       res.writeHead(204);
@@ -112,9 +134,114 @@ export function startWebServer(port = 3333): void {
       return;
     }
 
+    // Local bridge handshake. The hosted build probes this same-origin first,
+    // then http://localhost:3333; only a JSON answer counts as "local running".
+    if (url.pathname === '/api/status') {
+      sendJson(res, 200, { ok: true, app: 'jobhopper', prep: true, display: hasDisplay() });
+      return;
+    }
+
+    // Start a prep run (tailor + letter + fill). Returns immediately; the UI
+    // polls /api/prep/:id. mode 'review' opens a visible window and lets the
+    // human submit; mode 'fill' (default) is headless and never submits.
+    if (url.pathname === '/api/prep' && req.method === 'POST') {
+      void (async () => {
+        try {
+          const body = await readJsonBody<{
+            source?: string;
+            externalId?: string;
+            steps?: PrepStepId[];
+            force?: boolean;
+            mode?: 'fill' | 'review';
+          }>(req);
+          const { source, externalId } = body;
+          if (!source || !externalId) {
+            sendJson(res, 400, { error: 'source and externalId are required' });
+            return;
+          }
+          const job = getJobByExternal(source, externalId);
+          if (!job) {
+            sendJson(res, 404, { error: 'unknown job' });
+            return;
+          }
+          const running = activeRun(source, externalId);
+          if (running) {
+            sendJson(res, 409, { error: 'a prep run is already in progress', runId: running.id, run: running });
+            return;
+          }
+          const mode = body.mode === 'review' ? 'review' : 'fill';
+          if (mode === 'review' && !hasDisplay()) {
+            sendJson(res, 409, {
+              code: 'no-display',
+              error: 'No desktop display for the review window. Start `jobhopper ui` from your terminal.',
+            });
+            return;
+          }
+          const steps = Array.isArray(body.steps)
+            ? body.steps.filter((s): s is PrepStepId => s === 'cv' || s === 'letter' || s === 'fill')
+            : undefined;
+          const run = startPrep(job, { steps, force: body.force, mode });
+          sendJson(res, 202, { runId: run.id, run });
+        } catch (err) {
+          sendJson(res, 400, { error: err instanceof Error ? err.message : 'invalid request' });
+        }
+      })();
+      return;
+    }
+
+    if (url.pathname === '/api/prep/latest' && req.method === 'GET') {
+      const source = url.searchParams.get('source');
+      const externalId = url.searchParams.get('externalId');
+      if (source && externalId) {
+        sendJson(res, 200, { run: latestPrep(source, externalId) ?? null });
+      } else {
+        sendJson(res, 200, { runs: finishedPreps() });
+      }
+      return;
+    }
+
+    if (url.pathname.startsWith('/api/prep/') && req.method === 'GET') {
+      const id = url.pathname.slice('/api/prep/'.length);
+      const run = getPrepRun(id);
+      if (!run) {
+        sendJson(res, 404, { error: 'unknown run' });
+        return;
+      }
+      sendJson(res, 200, { run });
+      return;
+    }
+
+    // Generated artifacts for one job. Exact filenames only, resolved inside
+    // that job's own applications directory.
+    if (url.pathname === '/api/artifacts' && req.method === 'GET') {
+      const source = url.searchParams.get('source') ?? '';
+      const externalId = url.searchParams.get('externalId') ?? '';
+      const file = url.searchParams.get('file') ?? '';
+      if (!source || !externalId || !ARTIFACT_FILES.has(file)) {
+        sendJson(res, 400, { error: 'source, externalId and a known file are required' });
+        return;
+      }
+      const job = getJobByExternal(source, externalId);
+      if (!job) {
+        sendJson(res, 404, { error: 'unknown job' });
+        return;
+      }
+      const dir = resolve(artifactDir(job));
+      const target = resolve(dir, file);
+      if (!target.startsWith(`${dir}/`) || !existsSync(target)) {
+        sendJson(res, 404, { error: 'artifact not found' });
+        return;
+      }
+      res.writeHead(200, {
+        'Content-Type': MIME_TYPES[extname(target).toLowerCase()] ?? 'application/octet-stream',
+        'Cache-Control': 'no-store',
+      });
+      res.end(readFileSync(target));
+      return;
+    }
+
     // Serve built web frontend if dist exists
-    if (existsSync(webDist)) {
-      const sanitizedPath = url.pathname === '/' ? '/index.html' : url.pathname;
+    if (existsSync(webDist)) {      const sanitizedPath = url.pathname === '/' ? '/index.html' : url.pathname;
       const targetPath = resolve(webDist, '.' + sanitizedPath);
 
       // Prevent directory traversal attacks

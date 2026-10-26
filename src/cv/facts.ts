@@ -29,12 +29,12 @@ function percentsIn(text: string): string[] {
 }
 
 /** Every fact the document authorises, as plain strings to search for. */
-function authorisedYears(doc: CvDocument): Set<string> {
+export function authorisedYears(doc: CvDocument): Set<string> {
   const blob = JSON.stringify(doc);
   return new Set(yearsIn(blob));
 }
 
-function authorisedPercents(doc: CvDocument): Set<string> {
+export function authorisedPercents(doc: CvDocument): Set<string> {
   return new Set(percentsIn(JSON.stringify(doc)));
 }
 
@@ -42,7 +42,11 @@ function authorisedPercents(doc: CvDocument): Set<string> {
  * Compare rendered CV text against the document it came from.
  * Errors mean the output claims something the profile does not support.
  */
-export function checkFacts(rendered: string, doc: CvDocument): FactCheck {
+export function checkFacts(
+  rendered: string,
+  doc: CvDocument,
+  options: { requireEmployers?: boolean } = {},
+): FactCheck {
   const errors: string[] = [];
   const warnings: string[] = [];
 
@@ -61,11 +65,14 @@ export function checkFacts(rendered: string, doc: CvDocument): FactCheck {
   const haystack = normalizeLine(rendered);
   if (!haystack.includes(normalizeLine(doc.name))) errors.push('candidate name is missing from the rendered CV');
 
-  for (const job of doc.experience) {
-    if (!haystack.includes(normalizeLine(job.org))) warnings.push(`employer dropped: ${job.org}`);
-  }
-  for (const project of doc.projects) {
-    if (!haystack.includes(normalizeLine(project.name))) warnings.push(`project dropped: ${project.name}`);
+  // A cover letter never lists every employer, so those warnings are CV-only.
+  if (options.requireEmployers !== false) {
+    for (const job of doc.experience) {
+      if (!haystack.includes(normalizeLine(job.org))) warnings.push(`employer dropped: ${job.org}`);
+    }
+    for (const project of doc.projects) {
+      if (!haystack.includes(normalizeLine(project.name))) warnings.push(`project dropped: ${project.name}`);
+    }
   }
 
   return { ok: errors.length === 0, errors, warnings };

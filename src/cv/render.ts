@@ -31,6 +31,9 @@ const C = {
   rule: hex('#CFDEDA'),
 };
 
+/** Shared palette so the letter and the CV look like one set. */
+export const PALETTE = C;
+
 export interface TailorPlan {
   headline?: string;
   summary?: string;
@@ -150,7 +153,7 @@ function orderBy<T>(items: T[], wanted: string[] | undefined, key: (item: T) => 
 export function selectContent(doc: CvDocument, plan: TailorPlan): Selection {
   const skills = orderBy(doc.skills, plan.skillOrder, (row) => row.label);
   const jobs = orderBy(doc.experience, plan.experienceOrder, (job) => job.org).map((job) => {
-    const wanted = plan.bulletOrder?.[job.org];
+    const wanted = plan.bulletOrder?.[jobKey(job)];
     if (!wanted?.length) return { ...job, bullets: [...job.bullets] };
     const pool = new Map(job.bullets.map((b) => [normalizeLine(b), b]));
     const picked = wanted.map((b) => pool.get(normalizeLine(b))).filter((b): b is string => Boolean(b));
@@ -169,6 +172,11 @@ export function selectContent(doc: CvDocument, plan: TailorPlan): Selection {
     jobs,
     projects,
   };
+}
+
+/** Bullet overrides are keyed by employer; org is the stable handle. */
+export function jobKey(job: CvExperience): string {
+  return job.org;
 }
 
 async function paint(doc: CvDocument, selection: Selection): Promise<{ pdf: PDFDocument; text: string }> {
@@ -206,7 +214,10 @@ async function paint(doc: CvDocument, selection: Selection): Promise<{ pdf: PDFD
   for (const row of selection.skills) {
     p.fits(12.6);
     p.text(row.label, M.left, 9.1, { font: bold, color: C.ink });
+    // value column: draw paragraph without moving the label
+    const y0 = p.y;
     p.paragraph(row.items.join(', '), { size: 9.1, lh: 12.2, x: M.left + LABEL_W, width: WIDTH - LABEL_W });
+    if (p.y > y0 - 12.2) p.y = y0 - 12.2;
   }
 
   p.section('Experience');

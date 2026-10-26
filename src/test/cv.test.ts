@@ -79,6 +79,12 @@ test('fact gate rejects em dashes and warns about dropped employers', () => {
   assert.ok(check.warnings.some((w) => w.includes('Small Shop')));
 });
 
+test('fact gate skips CV-only warnings for a letter', () => {
+  const check = checkFacts('Test Person wrote about Acme Bank 2018', doc, { requireEmployers: false });
+  assert.equal(check.ok, true);
+  assert.deepEqual(check.warnings, []);
+});
+
 test('plan validation drops bullets that are not verbatim in the document', () => {
   const { plan, errors, fixes } = validatePlan(
     {

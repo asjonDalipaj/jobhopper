@@ -1,0 +1,12 @@
+{
+  "country": "Netherlands",
+  "phoneNational": "683715213",
+  "preferredLocation": "Amsterdam",
+  "city": "Utrecht",
+  "howDidYouHear": "LinkedIn",
+  "consentRetention": true,
+  "questions": [
+    { "match": "willing to work four days per week", "answer": "No" },
+    { "match": "require a sponsorship", "answer": "No" }
+  ]
+}
