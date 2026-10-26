@@ -1556,7 +1556,7 @@
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1569,12 +1569,12 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's background as a full-stack software engineer with a focus on fintech and product engineering. The candidate lacks the necessary experience in managing security incidents, expertise with security information and event management (SIEM) systems, and knowledge of security orchestration and automation platforms. Additionally, the role requires specific security-related skills that the candidate does not possess.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate has extensive experience in software development, particularly in Java and React, but lacks the specific security incident management experience and knowledge of security operations centers that this role requires. Additionally, the candidate's background does not indicate any experience with security information and event management (SIEM) systems or incident response, which are critical for this position.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 13,
+    "id": 10,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1587,7 +1587,7 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate has strong skills in Java, SQL, and React, but lacks the specific security incident management experience and knowledge of security operations centers required for this position. Additionally, the role is focused on security, which does not match the candidate's stated interests in product engineering and technical ownership.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has no demonstrated experience in security incident management, security operations, or the specific tools and technologies required for this position, such as SIEM systems and EDR tools. Additionally, the role requires a focus on security, which does not align with the candidate's fintech and software development background.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -2122,7 +2122,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 24,
+    "id": 16,
     "external_id": "5435390008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2135,7 +2135,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for IT Engineer 3 at Quince is not a fit for the candidate as it focuses on IT support roles rather than software engineering. The candidate is seeking senior full-stack or backend software engineering positions, while this role emphasizes IT infrastructure management, user support, and onboarding processes, which do not align with the candidate's expertise in software development and product engineering. Additionally, the candidate's extensive experience in fintech and software engineering does not match the IT support requirements outlined in the job description.",
+    "reasoning": "The job posting for IT Engineer 3 at Quince is not a fit for the candidate as it focuses on IT support roles rather than software engineering. The responsibilities outlined, such as managing employee onboarding, IT asset lifecycle, and providing day-to-day technical support, do not align with the candidate's expertise in full-stack software engineering and fintech. Additionally, the role requires 4-8 years of IT support experience, which the candidate does not possess, as their background is primarily in software development.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2366,7 +2366,7 @@
     "reasoning": null
   },
   {
-    "id": 25,
+    "id": 17,
     "external_id": "5373589008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2379,7 +2379,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The candidate specializes in full-stack development with a focus on fintech, Java, SQL, and React, while the job requires expertise in leather material development, sourcing, and quality assurance, which the candidate does not possess. Additionally, the role is not aligned with the candidate's preferences for software engineering positions.",
+    "reasoning": "The job posting for a Leather Material Developer is completely unrelated to the candidate's background as a software engineer. The candidate specializes in software development, particularly in fintech, with expertise in Java, SQL, and React, while this role requires a background in textile engineering or leather technology. Additionally, the responsibilities and qualifications outlined in the job posting do not align with the candidate's skills or experience.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2884,7 +2884,7 @@
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
   {
-    "id": 23,
+    "id": 15,
     "external_id": "5299904008",
     "source": "greenhouse",
     "company": "Quince",
@@ -2897,7 +2897,7 @@
     "posted_at": "2026-10-23T15:16:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a software engineer. The role requires expertise in textile engineering, fiber quality control, and cashmere processing, which are not within the candidate's skill set or experience. Additionally, the candidate has a strong focus on software development in fintech, while this position is centered around material science and quality assurance in the textile industry.",
+    "reasoning": "The job posting for a Cashmere Engineer Specialist is completely unrelated to the candidate's background as a software engineer. The role requires expertise in textile engineering, fiber quality control, and cashmere processing, none of which align with the candidate's skills in software development, particularly in fintech and full-stack engineering. Additionally, the position is based in Italy, while the candidate is targeting opportunities in the Netherlands, which further adds to the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-13T04:53:53.308Z"
   },
@@ -3370,7 +3370,7 @@
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 9,
+    "id": 7,
     "external_id": "4814057101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -3383,7 +3383,7 @@
     "posted_at": "2026-10-25T04:55:37-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has a strong background in software engineering with expertise in Java, SQL, and React, which aligns with some of the technical requirements of the role. However, the position emphasizes experience in consulting and customer-facing roles, particularly in deploying complex systems in enterprise environments, which the candidate's experience does not fully cover. Additionally, the role requires familiarity with AI-native development and governance, areas where the candidate lacks direct experience. Overall, while there are relevant skills, the gaps in consulting experience and AI-specific knowledge make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the role at JetBrains requires extensive experience in consulting and customer-facing environments, which is not explicitly highlighted in the candidate's background. The position also emphasizes familiarity with AI-native development and integration into enterprise environments, areas where the candidate has limited experience. Additionally, the role seems to target individuals with experience in solutions engineering or forward-deployed engineering, which the candidate does not clearly possess.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
@@ -3838,7 +3838,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 15,
+    "id": 12,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3848,10 +3848,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
     "description": "<div class=\"content-intro\"><p><strong>Who we are&nbsp;</strong></p> <p>At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to<a class=\"c-link\" href=\"https://customers.twilio.com/\" target=\"_blank\" data-stringify-link=\"https://customers.twilio.com/\" data-sk=\"tooltip_parent\">&nbsp;hundreds of thousands of businesses&nbsp;</a>and empower millions of developers worldwide to craft personalized customer experiences.</p> <p>Our dedication to <a class=\"c-link\" href=\"https://www.twilio.com/en-us/blog/open-work\" target=\"_blank\" data-stringify-link=\"https://www.twilio.com/en-us/blog/open-work\" data-sk=\"tooltip_parent\">remote-first work</a>, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.<br><span style=\"color: rgb(255, 255, 255);\">.</span></p> <p><strong>Hiring and how we work</strong></p> <p>We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp;</p> <p>Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp;<br><span style=\"color: rgb(255, 255, 255);\">.</span></p></div><p><strong>See yourself at Twilio</strong></p> <p>Join the team as Twilio’s next Machine Learning Engineer.</p> <p><strong>About the job</strong></p> <p>This position is to design and engineer AI powered features that makes every customer conversation smarter. As a Machine Learning Engineer on the Conversation Intelligence team, you'll develop and deploy solutions that extract meaning from voice and messaging data at Twilio scale. You'll work alongside experienced ML practitioners to ship real features - from model pipelines to production inference - that directly shape how businesses understand their customers.</p> <p><strong>Responsibilities</strong></p> <p>In this role, you’ll:</p> <ul> <li>Design and development of machine learning solutions, ensuring accuracy, performance, security, and scalability.</li> <li>Implement and maintain end-to-end AI/ML pipelines - from data ingestion and feature engineering through to model development, validation, and deployment with guidance from senior engineers on complex architectural decisions</li> <li>Instrument AI/ML services with appropriate metrics, logging, and telemetry to monitor model performance and operational health against defined SLOs</li> <li>Participate in on-call rotations, executing progressive rollouts and applying standard mitigation strategies to keep production inference services healthy</li> <li>Collaborate across planning, design, and code review phases contributing to product and technical discussions, while helping raise overall code quality through thoughtful review feedback</li> </ul> <p><strong>Qualifications&nbsp;</strong></p> <p>Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!</p> <p><strong>*Required:</strong></p> <ul> <li>Bachelor's degree in Computer Science, Mathematics, Statistics, or a related quantitative field, or equivalent practical experience</li> <li>2+ years of experience in machine learning engineering or applied ML, with demonstrated proficiency in Python and at least one ML framework (PyTorch, TensorFlow, or JAX) and familiarity with NLP libraries such as Hugging Face Transformers, NLTK, or SpaCy.</li> <li>Experience developing, testing, and deploying small-to-medium scoped ML services or features in a collaborative engineering environment, including model versioning, experiment tracking, and cloud-based infrastructure (AWS, GCP, or Azure)</li> <li>Proficiency in Python (preferred) or similar OO language.</li> <li>Experience utilizing Large (or Small) Language Models within software systems.</li> <li>Excellent written and verbal communication skills with the ability to articulate complex technical concepts to both technical and non-technical audiences.</li> </ul> <p><strong>Desired:</strong></p> <ul> <li>Hands-on experience with conversational AI, or LLM fine-tuning and prompt engineering in a production&nbsp; context</li> <li>Exposure to agentic AI frameworks such as LangGraph, AutoGen, CrewAI</li> <li>Familiarity with MLOps/LLMOps tooling related to maintaining models in production such as testing, versioning, model registry, retraining, and monitoring.</li> </ul> <p><strong>Location</strong></p> <ol> <li>This role will be remote from Ireland.</li> </ol> <p><strong>Travel&nbsp;</strong></p> <p>We prioritize connection and opportunities to build relationships with our customers and each other. For this role, you may be required to travel occasionally to participate in project or team in-person meetings.</p> <p><strong>What We Offer</strong></p> <p>Working at Twilio offers many benefits, including competitive pay, generous time off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.</p><div class=\"content-conclusion\"><p><strong>Twilio thinks big. Do you?</strong></p> <p>We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call <a href=\"https://www.twilio.com/company/values\">Twilio Magic</a>. Additionally, we empower employees to build <a href=\"https://twilio.org/support-and-resources/impact-fund\">positive change in their communities</a> by supporting their volunteering and donation efforts.</p> <p>So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, <a href=\"https://www.twilio.com/company/jobs#open-positions\">please consider other open positions.</a></p> <p><strong><span style=\"color: rgb(255, 255, 255);\">.</span></strong></p> <p><strong>Stay alert to recruitment fraud</strong></p> <p>We care about your safety. Scammers sometimes impersonate Twilio recruiters through fake job postings, emails, websites, or messages. Please ensure you are engaging with an official @<a href=\"http://twilio.com\">twilio.com</a> email address. We will never ask for payment, gift cards, cryptocurrency, or banking information during the recruiting process. We do not make job offers without a formal interview process or conduct interviews exclusively through text-based messaging apps.<br><br><span style=\"color: rgb(255, 255, 255);\">.</span><strong> </strong></p> <p><strong>Twilio is proud to be an equal opportunity employer.</strong> We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E-Verify program in certain locations, as required by law.</p></div>",
-    "posted_at": "2026-10-23T10:35:50-04:00",
+    "posted_at": "2026-10-26T10:35:46-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, as it requires specific expertise in machine learning, including proficiency in Python and experience with ML frameworks like PyTorch or TensorFlow, which the candidate does not possess. Additionally, the role focuses on AI and ML solutions, while the candidate's background is primarily in full-stack software engineering and fintech, lacking the necessary machine learning experience. Furthermore, the job is located in Spain, which may not align with the candidate's preference for roles based in the Netherlands.",
+    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in Python with ML frameworks. The role specifically requires 2+ years of experience in machine learning and familiarity with NLP libraries, which the candidate does not possess. Additionally, the candidate's focus is on full-stack and backend roles, not machine learning.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -4000,7 +4000,7 @@
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 32,
+    "id": 13,
     "external_id": "8888205002",
     "source": "greenhouse",
     "company": "Vonage",
@@ -4010,10 +4010,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/vonage/jobs/8888205002",
     "description": "<div class=\"content-intro\"><h2><strong>Join Vonage and help us innovate cloud communications for businesses worldwide!</strong></h2></div><p>&nbsp;</p> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">Why this role matters:</h2> <p class=\"p8i6j03 paragraph\">BSS Engineering and Product is a critical enabler of Vonage's commercial platform, ensuring our business support systems are scalable, reliable, commercially aligned, and able to support growth across products, regions, and customer segments. As Senior Director, BSS Engineering &amp; Product, you will lead the global BSS function across engineering ownership, product direction, platform strategy, and delivery for billing, rating, provisioning, ordering, revenue management, customer lifecycle management, and related integrations.<br><br></p> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">Your key responsibilities:</h2> <p class=\"p8i6j03 paragraph\"><strong>BSS Engineering Leadership</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Lead the global BSS engineering organization, owning architecture, delivery, quality, resilience, technical standards, and platform performance across core BSS systems</li> <li class=\"p8i6j0c\">Define engineering practices across solution design, integration, release management, test automation, observability, and technical debt management</li> <li class=\"p8i6j0c\">Ensure BSS platforms support scale, availability, security, compliance, and the needs of a multi-product, multi-region commercial model.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>BSS Product Ownership &amp; Roadmap</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Own the BSS product strategy and roadmap, prioritizing capabilities against commercial, customer, operational, regulatory, and finance needs</li> <li class=\"p8i6j0c\">Translate business requirements into a clear product backlog across billing, rating, mediation, ordering, CPQ, revenue management, customer lifecycle management, and related integrations</li> <li class=\"p8i6j0c\">Establish governance, prioritization forums, success measures, and communication rhythms, including the use of AI-enabled insight and automation to improve delivery, decision-making, and platform optimisation.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>Team Leadership &amp; Operating Cadence</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Lead and develop a global BSS Engineering and Product team, including engineering managers, product owners, platform leads, architects, and delivery specialists</li> <li class=\"p8i6j0c\">Run an effective operating cadence across roadmap planning, delivery governance, platform health, stakeholder prioritisation, risk management, and product delivery progress</li> <li class=\"p8i6j0c\">Build organisational capability through hiring, succession planning, team structure design, globally distributed delivery, and practical AI enablement across engineering and product ways of working.<br><br></li> </ul> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">What you'll bring:</h2> <p class=\"p8i6j03 paragraph\"><strong>Required:</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Senior BSS engineering and product leadership experience in global telecommunications, CPaaS, cloud communications, or enterprise SaaS</li> <li class=\"p8i6j0c\">Deep BSS domain expertise, including platforms such as Amdocs, Oracle Communications, CSGi, NetCracker, Zuora, Optiva, Salesforce CPQ, or equivalent</li> <li class=\"p8i6j0c\">Experience leading BSS platform delivery, including migrations, integrations, data improvement, release planning, and API-led or cloud-native architectures where appropriate</li> <li class=\"p8i6j0c\">Strong product ownership capability, with experience translating commercial, finance, regulatory, operational, and customer needs into a clear roadmap and measurable outcomes</li> <li class=\"p8i6j0c\">Experience leading geographically distributed engineering, product, architecture, and delivery teams in a matrixed environment, with a track record of using AI, automation, or data-driven tooling to improve productivity, quality, and platform outcomes.</li> </ul> <p class=\"p8i6j03 paragraph\"><strong>Experience we consider a plus:</strong></p> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Experience in CPaaS, UCaaS, CCaaS, or Tier 1/Tier 2 telecommunications</li> <li class=\"p8i6j0c\">Experience with API monetisation, partner billing, usage-based charging, subscription management, or digital self-service.<br><br></li> </ul> <h2 class=\"_9k2iva0 p8i6j0e _1ibi0s3e heading3 _9k2iva1\">How you'll benefit</h2> <ul class=\"p8i6j09 p8i6j04\"> <li class=\"p8i6j0c\">Private Medical Insurance: Adeslas</li> <li class=\"p8i6j0c\">Group Pension Plan: Generali</li> <li class=\"p8i6j0c\">Life Insurance and Group Personal Accident: VidaCaixa</li> <li class=\"p8i6j0c\">Ericsson Care Line</li> <li class=\"p8i6j0c\">Discretionary Time Off (DTO)/Hourly Paid Time Off (PTO)</li> <li class=\"p8i6j0c\">Volunteer Time (VTO)</li> <li class=\"p8i6j0c\">Additional benefits and perks will be shared and discussed with you by the recruiter during the interview process.</li> </ul> <p class=\"p8i6j03 paragraph\"><span style=\"color: rgb(255, 255, 255);\">#LI-KF1</span></p> <p>&nbsp;</p><div class=\"content-conclusion\"><p><strong>There’s no perfect candidate.</strong> You don't need all the preferred qualifications to make a valuable impact on our team. Our employees and customers come from diverse backgrounds, so if you're passionate about what you could achieve at Vonage, we'd love to hear from you.</p> <p>To learn how we process your personal data during the recruitment process, please refer to our <a href=\"https://www.vonage.com/legal/careers-privacy-notice/\"><span class=\"s1\"><strong>Privacy Notice</strong></span></a>.&nbsp;</p> <p><strong>Who we are:</strong></p> <p>Vonage is a global cloud communications leader. And your talent will further help brands - such as Airbnb, Viber, WhatsApp, and Snapchat - accelerate their digital transformation through our fully programmable-based unified communications, contact center solutions, and communications APIs. Ready to innovate? Then join us today.</p> <p><span style=\"font-size: 8pt;\">Note: The purpose of this profile is to provide a general summary of essential responsibilities for the position and is not meant as an exhaustive list. Assignments may differ for individuals within the same role based on business conditions, departmental need or geographic location.&nbsp;</span></p></div>",
-    "posted_at": "2026-10-21T06:05:30-04:00",
+    "posted_at": "2026-10-26T05:17:31-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Director position in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and specific domain expertise in BSS platforms like Amdocs or Oracle Communications. The candidate, while experienced as a senior full-stack engineer, does not have the necessary senior leadership experience or the specific BSS domain knowledge required for this role. Additionally, the candidate's background is primarily in fintech rather than telecommunications, making this position a poor fit.",
+    "reasoning": "The job posting for Senior Director, BSS Engineering & Product at Vonage is a leadership role that requires extensive experience in BSS engineering and product leadership specifically within global telecommunications or cloud communications. The candidate, while experienced as a senior full-stack software engineer in fintech, lacks the required senior BSS domain expertise and leadership experience in the telecommunications sector. Additionally, the role demands a deep understanding of specific BSS platforms and product ownership capabilities that the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
@@ -4450,7 +4450,7 @@
     "first_seen": "2026-10-23T13:59:40.827Z"
   },
   {
-    "id": 28,
+    "id": 20,
     "external_id": "744000157527725",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -4463,12 +4463,12 @@
     "posted_at": "2026-10-23T16:36:50.253Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, which aligns with the role's requirements. However, the job posting emphasizes a need for extensive experience with Angular and Python, which the candidate lacks. Additionally, the role requires specific knowledge of tools and technologies like PostgreSQL, Alembic migrations, and Docker/Kubernetes, which are not mentioned in the candidate's profile. Overall, while there are relevant skills, the gaps in required technologies and frameworks make this a weak fit.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and React, but lacks specific experience with Angular, which is a primary requirement for this role. Additionally, while the candidate has backend experience, the job requires significant expertise in Python and PostgreSQL, which the candidate does not possess. The role also emphasizes accessibility standards (WCAG 2.1 AA) and specific testing frameworks (Playwright or Cypress), which are not mentioned in the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
   {
-    "id": 11,
+    "id": 9,
     "external_id": "8301334",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4481,7 +4481,7 @@
     "posted_at": "2026-10-23T14:40:43-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position is for a Software Engineering Manager role, which requires prior experience managing engineering teams specifically focused on design systems and UI component libraries. The candidate has strong technical skills and a solid background in software engineering, but lacks direct management experience and has not held a leadership role that involves overseeing a team or managing design systems. Additionally, the role is based in Spain, which may not align with the candidate's preference for positions in the Netherlands or remote roles.",
+    "reasoning": "This position is for a Software Engineering Manager role, which requires prior experience managing engineering teams specifically focused on design systems and component libraries. The candidate has a strong technical background but lacks explicit management experience and leadership in a design system context, which is a core requirement for this role. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote work or their current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
@@ -4504,7 +4504,7 @@
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
   {
-    "id": 5,
+    "id": 6,
     "external_id": "8219953",
     "source": "greenhouse",
     "company": "N26",
@@ -4522,7 +4522,7 @@
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
   {
-    "id": 4,
+    "id": 5,
     "external_id": "7774526",
     "source": "greenhouse",
     "company": "N26",
@@ -4540,7 +4540,7 @@
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
   {
-    "id": 22,
+    "id": 14,
     "external_id": "6233333004",
     "source": "greenhouse",
     "company": "Grafana Labs",
@@ -4553,12 +4553,12 @@
     "posted_at": "2026-10-23T16:29:42-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the role of Principal Technical Marketing Engineer at Grafana Labs requires a specific focus on technical marketing, product positioning, and customer engagement which is not evident in the candidate's profile. The candidate's experience is primarily in software development rather than in a marketing or sales engineering context. Additionally, the role emphasizes the need for strong presentation skills and experience with observability tools, which the candidate lacks.",
+    "reasoning": "While the candidate has a strong technical background in software engineering, particularly in Java and React, the job posting is for a Principal Technical Marketing Engineer role, which requires a focus on technical marketing, demo creation, and customer engagement rather than pure engineering. The candidate lacks direct experience in technical marketing, sales engineering, or creating buyer-focused demos, which are critical for this position. Additionally, the role emphasizes strong communication and presentation skills in a marketing context, which may not align with the candidate's primarily engineering-focused experience.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
   {
-    "id": 10,
+    "id": 8,
     "external_id": "8075239",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4571,12 +4571,12 @@
     "posted_at": "2026-10-23T15:01:38-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly with React and Java, they lack specific expertise in TypeScript and component library architecture, which are critical for this Principal Software Engineer role. The position requires deep experience in building and operating design systems at scale, which is not explicitly demonstrated in the candidate's background. Additionally, the role emphasizes technical leadership and mentoring within a UX context, which may not align perfectly with the candidate's previous experiences focused more on backend and general software engineering.",
+    "reasoning": "While the candidate has strong experience in full-stack development with a focus on Java and React, the job requires deep expertise in TypeScript and experience building design systems at scale, which the candidate lacks. Additionally, the role emphasizes technical leadership in a UX context, which may stretch the candidate's experience in that specific area. The candidate's fintech background aligns with the company's focus, but the gaps in required technologies and specific leadership experience result in a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
   {
-    "id": 26,
+    "id": 18,
     "external_id": "5226095007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -4594,7 +4594,7 @@
     "first_seen": "2026-10-25T13:29:52.048Z"
   },
   {
-    "id": 27,
+    "id": 19,
     "external_id": "5214645007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -4612,7 +4612,7 @@
     "first_seen": "2026-10-25T13:29:52.048Z"
   },
   {
-    "id": 6,
+    "id": 2,
     "external_id": "7369512",
     "source": "greenhouse",
     "company": "Adyen",
@@ -4628,5 +4628,59 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-26T08:21:51.149Z"
+  },
+  {
+    "id": 3,
+    "external_id": "8207624",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Partner Solutions Engineer - Cellular Connectivity",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8207624",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Senior Partner Solutions Engineer, Cellular Connectivity&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">As a Senior Partner Solutions Engineer, Cellular Connectivity within Hardware Partner Engineering, you will own the technical relationship with Adyen’s cellular connectivity partners throughout the service lifecycle.<br>Cellular connectivity is a critical dependency for payment terminals operating globally. The environment is technically complex and highly distributed: an issue may involve the terminal, SIM/eSIM, connectivity provider, roaming partner, local mobile operator, network configuration or Adyen systems.<br>You will act as Adyen’s primary technical counterpart to these partners, combining technical understanding with partner management. You will drive technical priorities, service improvements, complex investigations, incidents, RCA and corrective actions, while helping ensure that connectivity solutions remain reliable and suitable as Adyen’s terminal fleet and provider landscape evolve.<br>You will work closely with Product, Engineering, Support, Supply Chain, Procurement and Commercial Partnership.<br>You are not expected to gatekeep direct engineer-to-engineer collaboration. Your role is to create clarity around technical ownership, connect the right people, establish priorities and commitments, and ensure important actions are driven to closure.<br></span></p> <p><span style=\"font-weight: 400;\"><strong>What you'll do</strong><br></span></p> <ul> <li><span style=\"font-weight: 400;\">Own the technical relationship with Adyen’s cellular connectivity partners, establishing clear priorities, commitments, governance and escalation paths.<br></span></li> <li><span style=\"font-weight: 400;\">Lead complex connectivity investigations and incidents across terminals, SIM/eSIM platforms, connectivity providers, roaming partners, mobile operators and Adyen systems.<br></span></li> <li><span style=\"font-weight: 400;\">Drive partners toward credible RCA, corrective actions and preventive measures, challenging incomplete technical explanations and tracking actions through closure.<br></span></li> <li><span style=\"font-weight: 400;\">Maintain visibility of technical issues, risks, dependencies and partner commitments, while ensuring Adyen-side actions do not become blockers.<br></span></li> <li><span style=\"font-weight: 400;\">Assess significant provider, network, SIM/eSIM and platform changes, and provide technical input into new provider evaluation, onboarding and connectivity solutions.<br></span></li> <li><span style=\"font-weight: 400;\">Work with Product, Engineering, Support, Supply Chain, Procurement and Commercial Partnership to align technical expectations, priorities, trade-offs and decisions.<br></span></li> <li><span style=\"font-weight: 400;\">Identify recurring reliability and service-performance patterns and translate them into structural improvements in partner processes, technical solutions and ways of working.</span></li> </ul> <p><span style=\"font-weight: 400;\"><strong>Who you are</strong><br></span></p> <ul> <li><span style=\"font-weight: 400;\">Experience in partner engineering, telecom engineering, technical account management, solutions engineering, or a similar partner-facing technical role.<br></span></li> <li><span style=\"font-weight: 400;\">Proven experience owning complex external technical relationships and driving partners toward clear commitments and resolution.<br></span></li> <li><span style=\"font-weight: 400;\">Strong understanding of cellular connectivity, including LTE/4G/5G, SIM/eSIM, roaming, APNs, mobile networks, IoT connectivity, or managed connectivity platforms.<br></span></li> <li><span style=\"font-weight: 400;\">Strong troubleshooting skills across distributed connectivity environments involving multiple technical domains and external parties.<br></span></li> <li><span style=\"font-weight: 400;\">Experience with incident and problem management, RCA, corrective actions, and challenging incomplete technical explanations.<br></span></li> <li><span style=\"font-weight: 400;\">Strong stakeholder-management and communication skills across technical, product, operational, and commercial teams.<br></span></li> <li><span style=\"font-weight: 400;\">Structured, pragmatic, and comfortable creating clarity and scalable ways of working in ambiguous environments.<br></span></li> <li><span style=\"font-weight: 400;\">Comfortable working independently across time zones and traveling to partner locations when needed.<br></span></li> </ul> <p><span style=\"font-weight: 400;\"><strong>What success looks like</strong><br>You create predictable and technically credible relationships with Adyen’s cellular connectivity partners.<br>Partners understand Adyen’s priorities and technical expectations; commitments have clear ownership; significant incidents are investigated effectively; RCA and corrective actions are credible and completed; service changes are technically assessed; and recurring issues result in measurable improvements rather than repeated escalations.<br>As the connectivity landscape grows, the operating model scales with it without making Hardware Partnership Engineering a gatekeeper or the owner of work that belongs with the connectivity provider or another Adyen team.</span></p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p> <p>&nbsp;</p>",
+    "posted_at": "2026-10-26T08:34:41-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-26T15:42:34.411Z"
+  },
+  {
+    "id": 4,
+    "external_id": "7607691",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Platform Engineer - Observability",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/7607691",
+    "description": "<h1><strong>This is Adyen</strong></h1> <p>Adyen provides payments, data, and financial products in a single solution for customers like Facebook, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. The people of Adyen are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h1><strong>Senior Platform Engineer - Observability</strong></h1> <p>We are looking for an experienced Observability Infrastructure Engineer to join our Platform Engineering organization. You will be part of the team responsible for building and running Observability pillars on premise and on Kubernetes. Our systems collect, process, and store the logs, metrics, and traces that allow hundreds of product teams to monitor their services in real time.</p> <p>This is a role for a builder and a problem solver who enjoys deep technical troubleshooting across distributed systems and then turns recurring issues into automated, repeatable solutions. You will work in a large-scale environment where we manage petabytes of data and thousands of servers. We are currently in the middle of a major transformation:&nbsp; focusing on automation of operations and enabling self service for our users.</p> <h2><strong>What you will do</strong></h2> <ul> <li><strong>Build the next generation of our platform: </strong>Design and implement the future architecture of our logging and metrics systems. You will play a key role in redesigning our infrastructure to support new global regions, ensuring data isolation and regulatory compliance in different geographies, and more.</li> <li><strong>Own infrastructure operations:</strong> You will take full ownership of our hybrid infrastructure, managing the lifecycle of over 1,500 servers across both bare-metal and Kubernetes environments.</li> <li><strong>Automate to reduce toil: </strong>You will write code in Go or Python to eliminate manual operational tasks. Your goal is to build self-healing systems that do not require manual intervention during the night. You will improve our CI pipelines to ensure that changes to our clusters are safe, predictable, and automated.&nbsp;</li> <li><strong>Optimize for scale and performance: </strong>You will dive deep into performance bottlenecks within our distributed tracing and logging pipelines. We deal with high-volume data streams that can overwhelm standard configurations. You will tune our Elasticsearch clusters, optimize Prometheus and VictoriaMetrics storage, and ensure our OpenTelemetry implementation can handle peak traffic without missing a beat.</li> <li><strong>Reliability and Engineering</strong>: You will participate in on-call rotations, but your primary focus will be engineering solutions that stop alerts from firing in the first place. You will help us upgrade our stack to the latest versions and ensure our platform remains secure and performant. You will improve the self-service experience by implementing automated guardrails and quota management to prevent noisy tenants from destabilizing the platform, while designing safer API access patterns for our users.</li> </ul> <h2><strong>What you bring</strong></h2> <ul> <li>10+ years of experience in the observability domain or in a relevant platform/infrastructure domain.</li> <li><strong>Observability Stack Expertise</strong>: You have hands-on experience operating core telemetry data stores at scale e.g. Elasticsearch/Opensearch/VictoriaLogs/Clickhouse for logging, Prometheus/ VictoriaMetrics for metrics and Grafana Tempo for distributed tracing.</li> <li><strong>Linux Experience</strong>: You understand the operating system at a kernel level and can debug complex networking, file system, and performance issues on both bare metal and virtualized hardware .</li> <li><strong>Production Kubernetes Experience:</strong> Proven hands-on experience operating, and troubleshooting production workloads on Kubernetes (on-prem and/or cloud), including strong day-to-day use of kubectl and Kubernetes primitives (e.g. Namespaces, Pods, Deployments/StatefulSets, Services, Ingress, ConfigMaps/Secrets)</li> <li><strong>Software Engineering Mindset:</strong> You are proficient in Go or Python and do not just write scripts; you build tools and automation platforms that treat infrastructure as code.</li> </ul> <h2><strong>Nice to have</strong></h2> <ul> <li>Experience with large scale, multi tenant isolation and quota or cost governance approaches for telemetry platforms.​</li> <li>Familiarity with regulated environments where security, audibility, and data handling requirements shape platform design decisions.​</li> </ul> <h1><strong>Our Diversity, Equity, and Inclusion commitments</strong></h1> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you're from, we welcome you to be your true self at Adyen.</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</p> <h1><strong>What's next?</strong></h1> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 10 business days. Our interview process tends to take about 4 weeks to complete but may fluctuate depending on the role. Learn more about our hiring process <a href=\"https://careers.adyen.com/faqs\">here</a>. Don't be afraid to let us know if you need more flexibility.</p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p>",
+    "posted_at": "2026-10-26T05:16:37-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-26T15:42:34.411Z"
+  },
+  {
+    "id": 1,
+    "external_id": "8163866",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "GenAI Platform Engineer - Madrid OR Amsterdam",
+    "location": "Amsterdam; Madrid",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8163866",
+    "description": "<h1><strong>GenAI Platform Engineer - Madrid OR Amsterdam</strong></h1> <p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>What you'll will be doing:</strong></p> <p>As a <strong>GenAI Platform Engineer</strong>, you will help build and scale the platform capabilities that enable teams across the company to develop, deploy, and operate LLM-powered applications, agents, and MCP-based integrations.</p> <p>The team focuses on making it easier for engineers to build reliable GenAI systems in production, with strong foundations around developer experience, infrastructure, observability, security, and scalability. You will work on platform capabilities that can be reused across different teams and business use cases, helping engineers move faster without having to solve the same infrastructure problems repeatedly.</p> <p>This is a highly technical role at the intersection of platform engineering, distributed systems, and GenAI.</p> <ul> <li>Develop tooling and infrastructure that improves the developer experience for building, testing, deploying, and operating GenAI systems.</li> <li>Design and operate services that handle areas such as model access, tool integration, orchestration, evaluation, observability, and runtime infrastructure.</li> <li>Build scalable and reliable infrastructure on Kubernetes.</li> <li>Work closely with engineering teams to understand their use cases and turn common requirements into reusable platform capabilities.</li> <li>Support technically complex and high-impact use cases, helping teams move from experimentation to production.</li> <li>Own projects end to end, from architecture and design through implementation, deployment, and operation.</li> <li>Identify areas of the platform that can be simplified, standardized, or made more reliable and scalable.</li> <li>Work in a cross-functional and cross-border environment with engineers and teams in locations such as Amsterdam, Madrid, San Francisco, and Bangalore.</li> <li>Collaborate closely with other platform, infrastructure, security, and product teams.</li> <li>Launch early, iterate often, and use feedback from internal developers to continuously improve the platform.</li> <li>Contribute to technical design discussions, code reviews, and engineering standards across the organization.</li> </ul> <p><strong>Who you are</strong></p> <ul> <li>4+ years of professional experience in Platform Engineering, DevOps, Data Platform Engineering, MLOps, Backend Engineering, ML Engineering, or a similar role.</li> <li>You have hands-on experience on Linux system administration, both in cloud and on-premises environments.</li> <li>You have strong engineering skills, including version control, coding best practices, debugging, testing, and production readiness.</li> <li>You have hands-on experience building or operating LLM-powered applications, agents, or GenAI platforms in production.</li> <li>Strong platform engineering experience with Kubernetes, Helm, Argo CD, and GitOps practices.</li> <li>Experience with observability tools such as Prometheus, Grafana, Kibana, or similar.</li> <li>You are proficient in Python and comfortable working with backend services and APIs.</li> <li>You have experience on DevEx and paving the SDLC for users setting up applications on top of your platform.</li> <li>You have a good understanding of LLM application architectures, including concepts such as tool calling, RAG, agent workflows, model gateways, and evaluation.</li> <li>You can diagnose and resolve issues related to reliability, latency, scalability, cost, and deployment of GenAI systems.</li> <li>You understand the importance of security, access control, data privacy, and governance when building shared AI platform capabilities.</li> <li>You have an experimental mindset and are comfortable launching early, learning from usage, and iterating quickly.</li> <li>You are a strong team player with good communication skills and can explain technical trade-offs to different audiences.</li> <li>You are comfortable collaborating with cross-functional teams and helping define standards and best practices for building and operating GenAI systems.</li> </ul> <p>&nbsp;</p> <p><strong>Desirable additional qualifications:</strong></p> <ul> <li>You have experience working with MCPs.</li> <li>Experience with LLM gateways and model abstraction layers such as <strong>LiteLLM</strong>, including routing, fallbacks, rate limits, cost controls, and multi-provider setups.</li> <li>Experience with LLM observability and evaluation tooling such as <strong>Langfuse</strong>, including tracing, prompt/version tracking, latency and cost monitoring, and production debugging.</li> <li>Experience with high-performance LLM serving frameworks such as <strong>vLLM</strong>, including GPU-backed inference, batching, throughput optimization, and serving OpenAI-compatible APIs is a plus.</li> </ul> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you're from, we welcome you to be your true self at Adyen.&nbsp;</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</p> <p><strong>What's next?</strong></p> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. <a href=\"https://careers.adyen.com/how-we-hire\">Learn more about our hiring process here</a>. Don't be afraid to let us know if you need more flexibility.</p> <p><em>Adyen is an equal opportunity employer. We do not discriminate based on race, color, ethnicity, ancestry, national origin, religion, sex, gender, gender identity, gender expression, sexual orientation, age, disability, veteran status, genetic information, marital status or any legally protected status.</em></p> <p><em>All your information will be kept confidential according to EEO guidelines.</em></p> <p>This role is based out of either our Madrid or Amsterdam offices. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p>",
+    "posted_at": "2026-10-26T05:11:32-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-26T15:42:34.411Z"
   }
 ]
