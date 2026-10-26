@@ -45,6 +45,67 @@ export interface ApplyResult {
 
 const SELECT_CONTROL = '[class*="select__option"]';
 
+
+/**
+ * Custom-hosted Greenhouse boards (jobs.elastic.co, n26.com, datadoghq.com …)
+ * keep the real form on job-boards.greenhouse.io/embed/job_app. Find it: on the
+ * page, in an embed iframe, or behind the Apply link/button. Ends on the page
+ * that holds the standard form; the caller's normal mount wait does the rest.
+ */
+async function openApplicationForm(page: Page): Promise<void> {
+  const embedSrc = async (): Promise<string | null> => {
+    const iframe = page.locator('iframe[src*="/embed/job_app"]').first();
+    if (!(await iframe.count())) return null;
+    const src = await iframe.getAttribute('src');
+    return src ? new URL(src, page.url()).toString() : null;
+  };
+
+  const attempt = async (): Promise<boolean> => {
+    if (await page.locator('#first_name').count()) return true;
+
+    const embed = await embedSrc();
+    if (embed) {
+      await page.goto(embed, { waitUntil: 'load', timeout: 60000 });
+      return true;
+    }
+
+    // Prefer an Apply link that points at a form; nav links say "Apply" too.
+    const applyLinks = page.locator('a', { hasText: /^apply\b/i });
+    const linkCount = await applyLinks.count();
+    for (let i = 0; i < linkCount; i += 1) {
+      const href = await applyLinks.nth(i).getAttribute('href').catch(() => null);
+      if (!href || !/(form|apply|gh_jid|greenhouse)/i.test(href)) continue;
+      await page.goto(new URL(href, page.url()).toString(), { waitUntil: 'load', timeout: 60000 });
+      if (await page.locator('#first_name').count()) return true;
+      const afterLink = await embedSrc();
+      if (afterLink) {
+        await page.goto(afterLink, { waitUntil: 'load', timeout: 60000 });
+        return true;
+      }
+      return false;
+    }
+
+    // Last resort: a JS-driven Apply button (Okta, Stripe …). In-page only.
+    const button = page.locator('button', { hasText: /^apply\b/i }).first();
+    if (await button.count()) {
+      await button.click({ timeout: 5000 }).catch(() => undefined);
+      await page.waitForTimeout(2500);
+      if (await page.locator('#first_name').count()) return true;
+      const afterButton = await embedSrc();
+      if (afterButton) {
+        await page.goto(afterButton, { waitUntil: 'load', timeout: 60000 });
+        return true;
+      }
+    }
+    return false;
+  };
+
+  if (await attempt()) return;
+  // Client-rendered careers pages mount the Apply link after the first paint.
+  await page.waitForTimeout(3000);
+  await attempt();
+}
+
 async function labelFor(page: Page, pattern: RegExp): Promise<string | null> {
   const labels = page.locator('label').filter({ hasText: pattern });
   const count = await labels.count();
@@ -371,6 +432,7 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
     const page = await browser.newPage({ viewport: { width: 1280, height: 1000 }, locale: 'en-GB' });
     page.setDefaultTimeout(20000);
     await page.goto(ctx.url, { waitUntil: 'load', timeout: 60000 });
+    await openApplicationForm(page);
 
     // The form is React-rendered below the posting, so give it time to mount
     // and nudge the page in case it renders on scroll.
@@ -406,7 +468,9 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
     await sleep(page, 800);
 
     const cvAttached = await attachFile(page, 'resume', ctx.cvPath);
-    const letterAttached = ctx.letterPath ? await attachFile(page, 'cover_letter', ctx.letterPath) : false;
+    // Not every board asks for a letter; a missing field is not a blank.
+    const asksForLetter = (await page.locator('#cover_letter').count()) > 0;
+    const letterAttached = ctx.letterPath && asksForLetter ? await attachFile(page, 'cover_letter', ctx.letterPath) : false;
 
     // Country before the text fields: its re-render clears the city input, and the
     // phone widget needs the dial code before it will format the national number.
@@ -417,6 +481,9 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
       { id: 'last_name', value: last, label: 'last name' },
       { id: 'email', value: ctx.doc.contact.email, label: 'email' },
     ];
+    if (await page.locator('#preferred_name').count()) {
+      texts.push({ id: 'preferred_name', value: first.split(/\s+/)[0] ?? first, label: 'preferred first name' });
+    }
     if (ctx.applicant.phoneNational) {
       texts.push({ id: 'phone', value: ctx.applicant.phoneNational, label: 'phone' });
     } else {
@@ -461,10 +528,23 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
     }
 
     if (ctx.applicant.consentRetention) {
-      // Same rule as the links: a board without a consent box is not a blank.
-      if (await labelFor(page, /retain my data|privacy|consent|acknowledge/i)) {
-        if (await checkByLabel(page, /retain my data|privacy|consent|acknowledge/i)) filled.push('retention consent');
-        else missing.push('retention consent');
+      // Prefer Greenhouse's retention box by id: a broad "consent" label also
+      // matches demographic-survey consents, which we deliberately leave alone.
+      const gdpr = page.locator('[id^="gdpr_retention_consent"]').first();
+      const hasBox = (await gdpr.count()) > 0 || Boolean(await labelFor(page, /retain my data/i));
+      if (hasBox) {
+        let checked = false;
+        if (await gdpr.count()) {
+          await gdpr.check({ force: true }).catch(() => undefined);
+          if (!(await gdpr.isChecked().catch(() => false))) {
+            const id = await gdpr.getAttribute('id');
+            if (id) await page.locator(`label[for="${id}"]`).click({ force: true }).catch(() => undefined);
+          }
+          checked = await gdpr.isChecked().catch(() => false);
+        } else {
+          checked = await checkByLabel(page, /retain my data/i);
+        }
+        (checked ? filled : missing).push('retention consent');
       }
     }
 
@@ -494,7 +574,7 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
 
     (country ? filled : missing).push(country ? `country (${country})` : 'country');
     (cvAttached ? filled : missing).push(cvAttached ? 'CV' : 'CV (upload did not register)');
-    if (ctx.letterPath) {
+    if (ctx.letterPath && asksForLetter) {
       (letterAttached ? filled : missing).push(letterAttached ? 'cover letter' : 'cover letter (upload did not register)');
     }
 

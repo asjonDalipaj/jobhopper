@@ -318,3 +318,34 @@ The fill runs one at a time; tailoring can overlap.
   an unchanged posting never pays twice.
 - **Local-only by construction.** Nothing is uploaded; the hosted page only ever
   calls the user's own machine.
+
+
+## Plan — Provider coverage for auto-fill (added 2026-10-26)
+
+**Survey of the local DB (140 rows).** `greenhouse` 131: 62 on job-boards.greenhouse.io
+and 69 embedded on company domains (Elastic 32, Datadog 17, N26 12, Okta/MongoDB/Stripe/Airbnb 8).
+`ashby` 8. `smartrecruiters` 1. The registry also lists lever/workable/teamtailor/recruitee
+boards with no current rows.
+
+**Done (`feat(apply): resolve custom-hosted Greenhouse forms`).** The filler now finds the
+real form instead of assuming it is on the posting URL: page form → `embed/job_app` iframe →
+Apply link → Apply button, with one retry for client-rendered careers pages. It ends on the
+standard Greenhouse embed page, so the existing fill/verify logic is unchanged.
+Live-tested headless: Elastic 11 fields, N26 10, Datadog 10.
+
+**Remaining, in priority order**
+
+1. **Profile answers, not code** (blocks two of the three above): right-to-work countries
+   (Elastic), currently based in / notice period / salary expectations (N26). Add them to
+   `profile/applicant.json` `questions` once the user provides the values. Datadog's
+   demographic-survey consent stays unticked on purpose.
+2. **Ashby adapter (8 jobs).** Hosted app at `jobs.ashbyhq.com/<org>/<id>/application`.
+   Probe its field ids, then implement the same `ApplyResult` contract.
+3. **SmartRecruiters (1 job).** Probe whether it serves a fillable form or a one-click UI.
+4. **Lever / Workable / Teamtailor / Recruitee.** No current rows; add adapters when they
+   appear, behind a capability registry so "no adapter" is reported, not faked.
+
+**Shape.** Split `src/apply/greenhouse.ts` into provider modules behind a common interface
+(`resolveUrl(job)`, `fill(page, ctx)`), with the shared attach/verify/answer helpers kept once.
+`resolveProvider(job)` stays the single entry point; unsupported ATS still produce the CV and
+letter and report the gap. Nothing in the pipeline ever clicks Submit.
