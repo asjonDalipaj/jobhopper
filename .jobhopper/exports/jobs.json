@@ -204,7 +204,7 @@
     "reasoning": "This job posting is for a Lead Physical Security Engineer role, which is unrelated to the candidate's background in software engineering. The candidate has extensive experience in full-stack development, particularly in fintech, but lacks any qualifications or experience in physical security management, crisis management, or security technologies. Additionally, the role requires a bachelor's degree in criminal justice or security management, which the candidate does not possess."
   },
   {
-    "id": 19,
+    "id": 6,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -214,10 +214,12 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/7342887",
     "description": "<p><strong>This is Adyen</strong></p> <p>Adyen provides payments, data, and financial products in a single solution for customers like Facebook, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. The people of Adyen are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <p><strong>Unified Platform&nbsp;</strong></p> <p>The Unified Platform is at the heart of Adyen’s infrastructure, bringing together accounting, reporting, billing, pricing, reconciliation, and configuration into one streamlined experience. It enables us to stay agile and innovative while running a scalable, efficient business. As part of this initiative, we’re rethinking five core product areas:</p> <ul> <li><strong>Platform experience</strong> – Creating a unified and intuitive backend experience across Adyen products</li> <li><strong>Accounting systems</strong> – Defining a cohesive and high-performing financial architecture</li> <li><strong>Reporting &amp; reconciliation</strong> – Making financial data more accurate, accessible, and satisfying for customers and regulators</li> <li><strong>Billing &amp; pricing infrastructure</strong> – Simplifying pricing and automating invoicing at scale</li> <li><strong>Observability &amp; tooling </strong>– Strengthening visibility and control of money movement through advanced tooling</li> </ul> <p>.While all roles share a strong technical foundation, each team brings a unique focus in scaling our unified platform, We'll explore the best team fit together throughout the interview process.</p> <p><strong>What you’ll do:</strong></p> <ul> <li>Work on complex technical projects from requirements analysis through design, implementation, testing and launch into production.</li> <li>Be hands-on and contribute to the implementation.</li> <li>Identify and improve parts of the platform to make it more robust and scalable.</li> <li>Bring your own point of view on best engineering practices.&nbsp;</li> <li>Your code will be used at scale and you are expected to think in that mindset when building features.</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring live functionalities that impact many merchants and shoppers.&nbsp;</li> <li>Build APIs and tooling according to quality principles such as performance and code quality.</li> <li>Collaborate across teams and time zones to get projects over the finish line.</li> </ul> <p><strong>Who you are:</strong></p> <ul> <li>Familiar with complex large scale distributed systems.</li> <li>You have experience with Java, Web Services, REST Apis, Webhooks and SQL/PostgreSql.</li> <li>You have a good understanding of Software Engineering practices and interest in product knowledge.</li> <li>You enjoy working in a cross-functional team with roles like Data Science, Frontend, and Product.</li> <li>You value involving other people to hear different perspectives.</li> <li>You have an experimental mindset with a launch fast and iterate mentality.</li> </ul> <p><strong>Minimum qualifications:</strong></p> <ul> <li>6+ years of experience in software development industry in a fast paced tech environment</li> <li>Full professional proficiency in English</li> <li>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application.</p> <p><strong>What’s next?</strong></p> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role.<a href=\"https://careers.adyen.com/faqs/\"> Learn more about our hiring process here</a>. Don’t be afraid to let us know if you need more flexibility.</p>",
-    "posted_at": "2026-10-06T16:41:21-04:00",
+    "posted_at": "2026-10-27T04:48:34-04:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "Candidate exceeds the 6+ year senior requirement with 10+ years including Java, REST/SOAP web services and SQL in fintech at Rabobank and Finomia, directly aligning with Adyen's Unified Platform fintech focus. Amsterdam office-first location is commutable from Utrecht and fits the Netherlands hybrid/on-site preference with no hard-constraint violation. Experience leading developers, driving Scrum product initiatives, and managing CI/CD matches the hands-on ownership and cross-functional expectations. Main stretches are PostgreSQL vs MySQL/PL/SQL background and proving large-scale distributed systems experience at Adyen scale."
+    "reasoning": "Candidate exceeds the 6+ year senior requirement with 10+ years including Java, REST/SOAP web services and SQL in fintech at Rabobank and Finomia, directly aligning with Adyen's Unified Platform fintech focus. Amsterdam office-first location is commutable from Utrecht and fits the Netherlands hybrid/on-site preference with no hard-constraint violation. Experience leading developers, driving Scrum product initiatives, and managing CI/CD matches the hands-on ownership and cross-functional expectations. Main stretches are PostgreSQL vs MySQL/PL/SQL background and proving large-scale distributed systems experience at Adyen scale.",
+    "applied_at": null,
+    "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
     "id": 75,
@@ -1556,7 +1558,7 @@
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 7,
+    "id": 8,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1569,12 +1571,12 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has no demonstrated experience in security incident management, SIEM systems, or incident response, which are critical for this role. Additionally, the position requires specific security-related skills and experience that the candidate does not possess.",
+    "reasoning": "The job posting for a Senior Security Engineer at Mozilla is not a fit for the candidate, as it requires extensive experience in security incident management and specific expertise in security operations, which the candidate does not possess. The candidate's background is primarily in full-stack software engineering with a focus on fintech, Java, and React, rather than security engineering. Additionally, the role demands knowledge of security information and event management systems and incident response teams, which are not mentioned in the candidate's experience.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 8,
+    "id": 9,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1587,7 +1589,7 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role focused on incident response and security operations, which is not aligned with the candidate's background as a full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required security incident management experience and specific security-related skills such as expertise with SIEM systems and incident response teams. Additionally, the role requires a strong focus on security operations, which is outside the candidate's stated interests and expertise.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has no demonstrated experience in security incident management, security operations, or the specific security tools and practices required for this position. Additionally, the role requires a focus on security operations and incident response, which does not align with the candidate's fintech and software development background.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -3370,7 +3372,7 @@
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 6,
+    "id": 7,
     "external_id": "4814057101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -3383,7 +3385,7 @@
     "posted_at": "2026-10-25T04:55:37-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the role at JetBrains requires significant experience in consulting and customer-facing environments, which is not explicitly highlighted in the candidate's background. The position also emphasizes familiarity with AI-native development and integration into enterprise environments, areas where the candidate has limited direct experience. Additionally, the role seems to require a more senior level of leadership and mentoring than the candidate's current experience suggests.",
+    "reasoning": "While the candidate has extensive experience in software engineering, particularly in fintech, they lack direct experience in AI-native software development and consulting environments, which are crucial for this role. The job requires familiarity with AI/LLM platforms and experience in solutions engineering, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes mentoring and working closely with customers in a consulting capacity, which may stretch the candidate's current experience.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
@@ -3820,7 +3822,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 11,
+    "id": 14,
     "external_id": "34e9f726-4461-4ef7-9724-a0aba8c72a76",
     "source": "ashby",
     "company": "Oyster HR, Inc",
@@ -3832,13 +3834,13 @@
     "description": "",
     "posted_at": "2026-10-26T19:58:44.165+00:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The job posting for a Senior AI Solutions Engineer does not align closely with the candidate's core competencies, which are primarily focused on full-stack software engineering with a strong emphasis on Java, SQL, and React. While the candidate has experience in product initiatives and technical ownership, the role's focus on AI solutions may require additional expertise in AI technologies that the candidate does not explicitly possess. Furthermore, the candidate's fintech background does not directly match the AI-centric nature of this position.",
+    "verdict": "no",
+    "reasoning": "The job posting for a Senior AI Solutions Engineer does not align with the candidate's expertise in full-stack and backend software engineering, particularly in fintech. The role appears to focus on AI solutions, which is not mentioned in the candidate's background or preferences. Additionally, the candidate is specifically looking for roles in fintech and product engineering, making this position unrelated to their career goals.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 9,
+    "id": 12,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3851,7 +3853,7 @@
     "posted_at": "2026-10-26T10:35:46-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Machine Learning Engineer role, which is outside the candidate's expertise and focus on full-stack and backend development. The candidate has strong experience in Java, SQL, and React, but lacks the required machine learning experience, proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role requires a background in AI/ML engineering, which the candidate does not possess.",
+    "reasoning": "The job posting is for a Machine Learning Engineer position, which requires specific expertise in machine learning, AI, and proficiency in Python with ML frameworks like PyTorch or TensorFlow. The candidate's background is primarily in full-stack software engineering with a focus on Java, React, and SQL, lacking the necessary machine learning experience and skills. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote roles in the Netherlands or elsewhere in Europe.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -4000,7 +4002,7 @@
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 10,
+    "id": 13,
     "external_id": "8888205002",
     "source": "greenhouse",
     "company": "Vonage",
@@ -4013,7 +4015,7 @@
     "posted_at": "2026-10-26T05:17:31-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Director role in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and deep domain expertise in BSS platforms. The candidate, while experienced as a software engineer with a strong background in fintech, does not possess the necessary senior leadership experience or specific BSS domain knowledge required for this position. Additionally, the role is focused on product strategy and team leadership at a high level, which does not align with the candidate's current profile as a full-stack engineer.",
+    "reasoning": "The job posting for Senior Director, BSS Engineering & Product at Vonage requires extensive experience in BSS engineering leadership within telecommunications or cloud communications, which is not aligned with the candidate's background. The candidate has a strong software engineering background in fintech but lacks the specific BSS domain expertise and leadership experience in a global telecommunications context. Additionally, the seniority level of this role exceeds the candidate's current profile as a senior full-stack engineer.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
@@ -4576,7 +4578,7 @@
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
   {
-    "id": 13,
+    "id": 16,
     "external_id": "5226095007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -4594,7 +4596,7 @@
     "first_seen": "2026-10-25T13:29:52.048Z"
   },
   {
-    "id": 14,
+    "id": 17,
     "external_id": "5214645007",
     "source": "greenhouse",
     "company": "Together AI",
@@ -4684,7 +4686,7 @@
     "first_seen": "2026-10-26T15:42:34.411Z"
   },
   {
-    "id": 12,
+    "id": 15,
     "external_id": "e53c5be6-5c1a-4870-ad85-8397a1f201de",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -4697,7 +4699,7 @@
     "posted_at": "2026-10-26T19:22:26.739+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for a Data Engineer at Eleven Labs does not align closely with the candidate's expertise as a full-stack software engineer. While the candidate has strong backend skills in Java and SQL, the role appears to focus more on data engineering, which may require additional specialized skills in data processing and analytics that are not highlighted in the candidate's profile. Furthermore, the candidate's primary interest lies in fintech and product engineering, which may not fully overlap with the responsibilities of a data engineering position.",
+    "reasoning": "The job posting for a Data Engineer at Eleven Labs does not align closely with the candidate's background as a full-stack software engineer. While the candidate has strong experience in backend development and a fintech background, the role appears to focus more on data engineering, which may require specific skills in data processing and analytics that are not highlighted in the candidate's CV. Additionally, the candidate's preference for full-stack or backend roles suggests that this position may not fully meet their career aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-26T22:09:38.694Z"
   },
@@ -4718,5 +4720,41 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-26T22:09:38.694Z"
+  },
+  {
+    "id": 10,
+    "external_id": "8212319",
+    "source": "greenhouse",
+    "company": "Stripe",
+    "title": "Backend Engineer, UI Platform",
+    "location": "Barcelona, Spain",
+    "workplace_type": null,
+    "employment_type": "Intern",
+    "url": "https://stripe.com/jobs/search?gh_jid=8212319",
+    "description": "<h2><strong>Who we are&nbsp;</strong></h2> <h3><strong>About Stripe</strong></h3> <p>Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.</p> <h3><strong>About the team</strong></h3> <p>The UI Platform team, known as Sail, builds the foundations behind Stripe’s Dashboard and many other user interfaces. Sail Services owns the systems that evaluate feature flags and experiments, ingest frontend analytics, and improve Dashboard load times for Stripe’s largest merchants.</p> <p>We build backend-for-frontend capabilities that connect Stripe’s backend systems to its UI platform. This gives product teams a consistent way to build and operate user experiences without recreating the same infrastructure.</p> <h2><strong>What you’ll do</strong></h2> <p>As a Backend Engineer on the Sail Services team, you’ll help build and evolve the systems that power Stripe’s user interfaces. You’ll independently drive software projects from problem definition through production, working closely with other UI Platform engineers, product teams, and infrastructure partners. Your work will range from APIs and GraphQL integrations to edge systems, architectural migrations, and the tooling needed to operate them safely at scale.</p> <h3><strong>Responsibilities</strong></h3> <ul> <li>Take end-to-end ownership of software projects, aligning on priorities and then independently scoping problems and carrying solutions through design, implementation, testing, rollout, and operation</li> <li>Design, build, and operate reliable, scalable APIs and backend systems that support Stripe’s Dashboard, mobile applications, and other user interfaces</li> <li>Help modernize Stripe’s UI architecture through incremental migrations, automated validation, shadow traffic, and carefully controlled production rollouts</li> <li>Improve the reliability, observability, performance, and operability of services on critical user paths</li> <li>Partner with frontend, backend, and infrastructure engineers to understand their needs and turn recurring problems into reusable platform capabilities</li> <li>Use AI-assisted and agentic development workflows to improve implementation, testing, validation, and delivery</li> <li>Contribute thoughtful code reviews, technical discussions, documentation, and runbooks that improve the quality of the team’s work</li> </ul> <h2><strong>Who you are</strong></h2> <p>We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</p> <h3><strong>Minimum requirements</strong></h3> <ul> <li>Fluency in using AI-assisted and agentic development tools as part of day-to-day software engineering, including critically reviewing, validating, and improving generated code</li> <li>2+ years of professional software engineering experience, or equivalent practical experience, building, shipping, and operating production systems</li> <li>Strong knowledge of backend technologies and infrastructure, including the fundamentals of APIs, data storage, distributed systems, and production operations</li> <li>Ability to independently scope and deliver open-ended software projects, making practical technical and product tradeoffs with limited oversight</li> <li>Strong problem-solving and debugging skills, with attention to testing, maintainability, reliability, and user impact</li> <li>Strong written and verbal communication skills and the ability to collaborate effectively with frontend engineers, product engineers, and infrastructure partners</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li> <ul> <li>Experience building backend-for-frontend systems, UI platform services, developer platforms, or shared infrastructure</li> <li>Experience designing or integrating APIs, including GraphQL APIs</li> <li>Experience with high-throughput event ingestion, feature flag or experimentation systems, or other latency-sensitive platform services</li> <li>Familiarity with caching, asynchronous systems, configuration systems, or data-consistency tradeoffs</li> <li>Experience executing large migrations using automated validation, shadow traffic, feature flags, or staged rollouts</li> <li>Experience using data, developer feedback, or operational signals to improve a platform or developer-facing product</li> </ul> </li> </ul>",
+    "posted_at": "2026-10-27T05:37:14-04:00",
+    "tags": null,
+    "verdict": "fair",
+    "reasoning": "The candidate has strong experience in backend development with Java and APIs, which aligns well with the job's requirements for building reliable, scalable APIs and backend systems. Their familiarity with AI-assisted development tools also matches the job's emphasis on using such technologies. However, the role specifically mentions experience with GraphQL and backend-for-frontend systems, which the candidate does not explicitly list in their background. Additionally, while the candidate has experience in fintech, the job is focused on UI platform services, which may require a deeper understanding of frontend integration than the candidate has highlighted.",
+    "applied_at": null,
+    "first_seen": "2026-10-27T11:23:00.760Z"
+  },
+  {
+    "id": 11,
+    "external_id": "8226890",
+    "source": "greenhouse",
+    "company": "Stripe",
+    "title": "Frontend Engineer, UI Platform",
+    "location": "Barcelona",
+    "workplace_type": null,
+    "employment_type": "Intern",
+    "url": "https://stripe.com/jobs/search?gh_jid=8226890",
+    "description": "<h2>Who we are</h2> <h3>About Stripe</h3> <p>Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.</p> <h3>About the team</h3> <p>The UI Platform team, known as Sail, builds the foundations that support Stripe’s Dashboard and many of Stripe’s other user interfaces. The Sail UI team owns Stripe’s design system, helping Stripe engineers create consistent, accessible, performant, and high-quality experiences at scale.</p> <p>We build and maintain reusable components, design tokens, theming capabilities, documentation, and developer tooling used by engineers and designers across Stripe. We are currently focused on two major projects. First, we are building Sail for Agents: the generation infrastructure, documentation systems, agent integrations, and automated quality checks that help AI coding agents build high-quality Stripe interfaces safely and consistently at scale. Second, we are evolving the visual language of the Dashboard, one of Stripe’s largest UI surfaces, while modernizing its underlying codebase.</p> <h2>What you’ll do</h2> <p>As a Frontend Engineer on the Sail UI team, you’ll help build and evolve Stripe’s design system and the tools that enable engineers and AI coding agents to create high-quality user interfaces. You’ll independently drive frontend projects from problem definition through rollout, working closely with designers, product engineers, and other Sail engineers. Your work will range from reusable components, themes, and documentation to agentic tooling, automated quality checks, and modernizing the foundations of Stripe’s Dashboard.</p> <h3>Responsibilities</h3> <ul> <li>Take end-to-end ownership of software projects, independently scoping problems and carrying solutions through design, implementation, testing, and rollout</li> <li>Build and maintain accessible, performant, and well-tested components, themes, and frontend APIs used across Stripe</li> <li>Build tooling, documentation, and automated quality checks that help engineers and AI coding agents use Sail effectively and meet Stripe’s UI quality bar</li> <li>Partner with product designers and engineers to understand their needs and turn recurring UI patterns into reusable design-system capabilities</li> <li>Help evolve the visual language of Stripe’s Dashboard while modernizing its underlying codebase and migrating legacy UI patterns</li> <li>Improve the accessibility, internationalization, observability, performance, reliability, and developer experience of the design system</li> <li>Contribute thoughtful code reviews, technical discussions, and documentation that improve the quality of the team’s work</li> </ul> <h2><strong>Who you are</strong></h2> <p><span style=\"font-weight: 400;\">We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</span></p> <h3>Minimum requirements</h3> <ul> <li>Fluency in using AI-assisted and agentic development tools as part of day-to-day software engineering, including critically reviewing, validating, and improving generated code</li> <li>2+ years of professional frontend engineering experience, or equivalent practical experience, building, shipping, and debugging web applications</li> <li>Strong knowledge of modern frontend technologies and frameworks, including browser fundamentals, responsive design, and accessibility</li> <li>Ability to independently scope and deliver open-ended frontend projects, making practical technical and product tradeoffs with limited oversight</li> <li>Strong problem-solving and debugging skills, with attention to testing, maintainability, and the quality of the resulting user experience</li> <li>Strong written and verbal communication skills and the ability to collaborate effectively with designers, product engineers, and other partners</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>Experience working on a design system, frontend platform, or shared component library</li> <li>Experience with developer tooling such as build tools, package managers, codemods, lint rules, or large monorepos</li> <li>Experience building tools, integrations, or automated evaluation and quality systems for AI coding agents</li> <li>Experience using documentation, developer feedback, or adoption data to improve a developer-facing product</li> </ul>",
+    "posted_at": "2026-10-27T05:21:13-04:00",
+    "tags": null,
+    "verdict": null,
+    "reasoning": null,
+    "applied_at": null,
+    "first_seen": "2026-10-27T11:23:00.760Z"
   }
 ]
