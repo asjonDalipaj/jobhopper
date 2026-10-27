@@ -1569,7 +1569,7 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role focused on incident response and security operations, which is not aligned with the candidate's background in full-stack software engineering and fintech. The candidate lacks the required experience in managing security incidents, expertise in security information and event management (SIEM) systems, and knowledge of security orchestration and automation platforms. Additionally, the role requires a strong focus on security, which is outside the candidate's stated interests and expertise.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has no demonstrated experience in security incident management, SIEM systems, or incident response, which are critical for this role. Additionally, the position requires specific security-related skills and experience that the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1587,7 +1587,7 @@
     "posted_at": "2026-10-26T03:19:44-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's background in full-stack software engineering and fintech. The candidate has no experience in security incident management, security operations centers, or the specific security tools and technologies mentioned in the job description. Additionally, the role requires expertise in security incident response, which is outside the candidate's stated competencies.",
+    "reasoning": "This job posting is for a Senior Security Engineer role focused on incident response and security operations, which is not aligned with the candidate's background as a full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required security incident management experience and specific security-related skills such as expertise with SIEM systems and incident response teams. Additionally, the role requires a strong focus on security operations, which is outside the candidate's stated interests and expertise.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -3383,7 +3383,7 @@
     "posted_at": "2026-10-25T04:55:37-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the role at JetBrains requires significant experience in consulting and customer-facing environments, which is not explicitly highlighted in the candidate's background. The position also emphasizes familiarity with AI-native development and integration into enterprise environments, areas where the candidate has limited direct experience. Additionally, the role seems to target individuals with higher-level titles such as Principal or CTO, which may not align with the candidate's current experience level.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and full-stack development, the role at JetBrains requires significant experience in consulting and customer-facing environments, which is not explicitly highlighted in the candidate's background. The position also emphasizes familiarity with AI-native development and integration into enterprise environments, areas where the candidate has limited direct experience. Additionally, the role seems to require a more senior level of leadership and mentoring than the candidate's current experience suggests.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
@@ -3832,8 +3832,8 @@
     "description": "",
     "posted_at": "2026-10-26T19:58:44.165+00:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The job posting for Senior AI Solutions Engineer does not align with the candidate's expertise in full-stack software engineering, particularly in fintech. The role appears to focus on AI solutions, which is not mentioned in the candidate's background or preferences. Additionally, the candidate is specifically targeting roles in software engineering, while this position seems to diverge from that path. There are also no specified locations that match the candidate's preference for the Netherlands or remote roles in Europe.",
+    "verdict": "weak",
+    "reasoning": "The job posting for a Senior AI Solutions Engineer does not align closely with the candidate's core competencies, which are primarily focused on full-stack software engineering with a strong emphasis on Java, SQL, and React. While the candidate has experience in product initiatives and technical ownership, the role's focus on AI solutions may require additional expertise in AI technologies that the candidate does not explicitly possess. Furthermore, the candidate's fintech background does not directly match the AI-centric nature of this position.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -3851,7 +3851,7 @@
     "posted_at": "2026-10-26T10:35:46-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong focus on Java, SQL, and React. The role requires specific experience in machine learning engineering, including proficiency in Python and ML frameworks like PyTorch or TensorFlow, which the candidate does not possess. Additionally, the candidate's background does not indicate experience with AI/ML pipelines or conversational AI, making this position unrelated to their expertise.",
+    "reasoning": "This job posting is for a Machine Learning Engineer role, which is outside the candidate's expertise and focus on full-stack and backend development. The candidate has strong experience in Java, SQL, and React, but lacks the required machine learning experience, proficiency in ML frameworks, and familiarity with NLP libraries. Additionally, the role requires a background in AI/ML engineering, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -4013,7 +4013,7 @@
     "posted_at": "2026-10-26T05:17:31-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position is for a Senior Director role in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and deep domain expertise in BSS platforms. The candidate, while experienced as a full-stack software engineer in fintech, does not possess the necessary senior leadership experience or specific BSS domain knowledge required for this role. Additionally, the candidate's background does not align with the telecommunications focus of the position, making it a poor fit.",
+    "reasoning": "The job posting is for a Senior Director role in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and deep domain expertise in BSS platforms. The candidate, while experienced as a software engineer with a strong background in fintech, does not possess the necessary senior leadership experience or specific BSS domain knowledge required for this position. Additionally, the role is focused on product strategy and team leadership at a high level, which does not align with the candidate's current profile as a full-stack engineer.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
@@ -4697,7 +4697,7 @@
     "posted_at": "2026-10-26T19:22:26.739+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for a Data Engineer does not align closely with the candidate's background as a full-stack software engineer. While the candidate has strong experience in backend development and databases, the role appears to focus more on data engineering, which may require specific skills in data pipelines and processing that are not highlighted in the candidate's CV. Additionally, the candidate's primary interest lies in fintech and product engineering, which may not be the focus of this position.",
+    "reasoning": "The job posting for a Data Engineer at Eleven Labs does not align closely with the candidate's expertise as a full-stack software engineer. While the candidate has strong backend skills in Java and SQL, the role appears to focus more on data engineering, which may require additional specialized skills in data processing and analytics that are not highlighted in the candidate's profile. Furthermore, the candidate's primary interest lies in fintech and product engineering, which may not fully overlap with the responsibilities of a data engineering position.",
     "applied_at": null,
     "first_seen": "2026-10-26T22:09:38.694Z"
   },
