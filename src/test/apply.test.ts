@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { detectAts, resolveAts, SUPPORTED } from '../apply/ats.js';
 import { salaryMarket, questionsFor, splitName } from '../apply/applicant.js';
-import { sameValue } from '../apply/greenhouse.js';
+import { briefError, sameValue } from '../apply/greenhouse.js';
 import { descriptionHash } from '../apply/prep.js';
 import { validateLetter } from '../cv/letter.js';
 
@@ -108,4 +108,15 @@ test('questionsFor adds based-in and market salary, and keeps explicit answers',
   assert.deepEqual(nl.find((q) => /salary/i.test(q.match))?.answer, '€95,000');
   assert.deepEqual(questionsFor(applicant, 'Madrid, Spain').find((q) => /salary/i.test(q.match))?.answer, '€70,000–75,000');
   assert.deepEqual(questionsFor(applicant, 'Berlin, Germany').find((q) => /salary/i.test(q.match))?.answer, '€90,000');
+});
+
+test('briefError keeps only the line a person can act on', () => {
+  const playwright = new Error(
+    'locator.click: Timeout 20000ms exceeded. Call log:\n  - waiting for locator("[role=\'option\']").nth(152)\n  - element is not visible',
+  );
+  assert.equal(briefError(playwright), 'locator.click: Timeout 20000ms exceeded. Call log:');
+  assert.equal(briefError('plain failure'), 'plain failure');
+  const long = briefError(new Error('x'.repeat(500)));
+  assert.ok(long.length <= 241, `expected a capped message, got ${long.length}`);
+  assert.ok(long.endsWith('…'));
 });

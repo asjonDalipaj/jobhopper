@@ -30,6 +30,11 @@ export interface ApplyContext {
   outDir: string;
   /** Called once the form is filled and the review window is waiting on a human. */
   onReviewReady?: () => void;
+  /**
+   * Called instead of throwing when a step fails in review mode, so the caller
+   * can report what stopped while the human finishes the form.
+   */
+  onFillError?: (message: string) => void;
   /** Called only when the form demands an emailed verification code. */
   askCode?: () => Promise<string>;
 }
@@ -41,6 +46,18 @@ export interface ApplyResult {
   submitted: boolean;
   needsCode: boolean;
   confirmation: string | null;
+  /** Set when automation stopped early and a human was handed the form. */
+  fillError: string | null;
+}
+
+/**
+ * Playwright errors carry a multi-kilobyte call log. The first line is the
+ * message; the rest is noise a person cannot act on.
+ */
+export function briefError(err: unknown): string {
+  const raw = err instanceof Error ? err.message : String(err);
+  const line = raw.split('\n').map((part) => part.trim()).find(Boolean) ?? raw;
+  return line.length > 240 ? `${line.slice(0, 237)}…` : line;
 }
 
 const SELECT_CONTROL = '[class*="select__option"]';
@@ -237,17 +254,31 @@ async function pickCountry(page: Page, country: string): Promise<string | null> 
   await sleep(page, 300);
   await page.keyboard.type(country, { delay: 40 });
   await sleep(page, 800);
-  const options = page.locator('[class*="select__option"], [role="option"]');
-  const texts = await options.allInnerTexts();
-  const index = texts.findIndex((text) => exact.test(text.trim()));
-  if (index < 0) {
+  // The phone widget renders 150+ hidden <li role="option"> country rows, so a
+  // bare [role="option"] match lands on one of those (iti__country) and the
+  // click times out on an invisible element. Only the open react-select menu
+  // can hold the option we actually want.
+  const options = page.locator('[class*="select__menu"] [role="option"], [class*="select__option"]');
+  const count = await options.count();
+  let chosen: Locator | null = null;
+  let label = '';
+  for (let i = 0; i < count; i += 1) {
+    const option = options.nth(i);
+    const text = (await option.innerText().catch(() => '')).trim();
+    if (!exact.test(text)) continue;
+    if (!(await option.isVisible().catch(() => false))) continue;
+    chosen = option;
+    label = text;
+    break;
+  }
+  if (!chosen) {
     await page.keyboard.press('Escape');
     return null;
   }
-  await options.nth(index).click();
+  await chosen.click({ timeout: 5000 }).catch(() => undefined);
   await page.keyboard.press('Escape');
   await sleep(page, 300);
-  return texts[index]?.trim() ?? null;
+  return label;
 }
 
 /** The label a react-select actually stores, as opposed to its search input. */
@@ -456,6 +487,145 @@ async function waitForOperator(
   return { submitted: false, needsCode, confirmation: 'timed out waiting for the reviewer' };
 }
 
+/**
+ * Fill every field the profile can answer.
+ *
+ * Throws on the first step that cannot complete: the caller decides whether
+ * that is fatal (headless) or a hand-off to a human who can finish the form.
+ */
+async function fillApplicationForm(
+  page: Page,
+  ctx: ApplyContext,
+  filled: string[],
+  missing: string[],
+): Promise<void> {
+  const { first, last } = splitName(ctx.doc.name);
+
+  // The form hydrates after first paint; anything typed before that is wiped by
+  // the next render. Files go first (attaching triggers that render), then text,
+  // then every value is read back before we believe it.
+  await page.waitForLoadState('networkidle').catch(() => {});
+  await sleep(page, 800);
+
+  const cvAttached = await attachFile(page, 'resume', ctx.cvPath);
+  // Not every board asks for a letter; a missing field is not a blank.
+  const asksForLetter = (await page.locator('#cover_letter').count()) > 0;
+  const letterAttached = ctx.letterPath && asksForLetter ? await attachFile(page, 'cover_letter', ctx.letterPath) : false;
+
+  // Country before the text fields: its re-render clears the city input, and the
+  // phone widget needs the dial code before it will format the national number.
+  const country = await pickCountry(page, ctx.applicant.country);
+
+  const texts: Array<{ id: string; value: string; label: string }> = [
+    { id: 'first_name', value: first, label: 'first name' },
+    { id: 'last_name', value: last, label: 'last name' },
+    { id: 'email', value: ctx.doc.contact.email, label: 'email' },
+  ];
+  if (await page.locator('#preferred_name').count()) {
+    texts.push({ id: 'preferred_name', value: first.split(/\s+/)[0] ?? first, label: 'preferred first name' });
+  }
+  if (ctx.applicant.phoneNational) {
+    texts.push({ id: 'phone', value: ctx.applicant.phoneNational, label: 'phone' });
+  } else {
+    missing.push('phone (set phoneNational in profile/applicant.json)');
+  }
+  const links: Array<[RegExp, string, string]> = [
+    [/linkedin/i, ctx.doc.contact.linkedin ?? '', 'LinkedIn'],
+    [/(website|portfolio|github)/i, ctx.doc.contact.github ?? '', 'website/GitHub'],
+  ];
+  const linkIds: string[] = [];
+  const bodyText = await page.locator('body').innerText();
+  for (const [pattern, value, label] of links) {
+    if (!value) continue;
+    const id = await labelFor(page, pattern);
+    if (!id) {
+      // Only report a link as blank when the form actually has that field.
+      if (bodyText.includes(label.split('/')[0] as string)) missing.push(label);
+      continue;
+    }
+    linkIds.push(id);
+    texts.push({ id, value: value.startsWith('http') ? value : `https://${value}`, label });
+  }
+
+  for (const field of texts) await setText(page, field.id, field.value);
+
+  const hearId = await labelFor(page, /how did you hear/i);
+  if (hearId) {
+    const picked = await pickOption(page, hearId, new RegExp(ctx.applicant.howDidYouHear, 'i'), ctx.applicant.howDidYouHear);
+    if (picked) filled.push(`heard via (${picked})`);
+    else missing.push('how did you hear');
+  }
+
+  // Only boards that actually ask for a preferred location get the checkbox;
+  // "Amsterdam" also appears in the on-site question on other forms.
+  const asksLocation = (await page.locator('body').innerText()).includes('Preferred location');
+  if (asksLocation) {
+    if (await checkByLabel(page, new RegExp(ctx.applicant.preferredLocation, 'i'))) {
+      filled.push(`location (${ctx.applicant.preferredLocation})`);
+    } else {
+      missing.push('preferred location');
+    }
+  }
+
+  if (ctx.applicant.consentRetention) {
+    // Prefer Greenhouse's retention box by id: a broad "consent" label also
+    // matches demographic-survey consents, which we deliberately leave alone.
+    const gdpr = page.locator('[id^="gdpr_retention_consent"]').first();
+    const hasBox = (await gdpr.count()) > 0 || Boolean(await labelFor(page, /retain my data/i));
+    if (hasBox) {
+      let checked = false;
+      if (await gdpr.count()) {
+        await gdpr.check({ force: true }).catch(() => undefined);
+        if (!(await gdpr.isChecked().catch(() => false))) {
+          const id = await gdpr.getAttribute('id');
+          if (id) await page.locator(`label[for="${id}"]`).click({ force: true }).catch(() => undefined);
+        }
+        checked = await gdpr.isChecked().catch(() => false);
+      } else {
+        checked = await checkByLabel(page, /retain my data/i);
+      }
+      (checked ? filled : missing).push('retention consent');
+    }
+  }
+
+  // City last: picking its suggestion re-renders the form, so it must not be
+  // able to disturb the fields that the readback then checks.
+  const city = ctx.applicant.city ?? ctx.applicant.preferredLocation;
+  const cityFilled = (await page.locator('#candidate-location').count()) ? await fillCity(page, city) : false;
+
+  // Profile answers for board-specific questions (visa, office days). Runs
+  // before the readback so any re-render it triggers is repaired below.
+  await answerQuestions(page, ctx.applicant.questions ?? [], filled, missing);
+
+  // Readback pass: whatever a late re-render dropped is set once more, then
+  // reported as it really is. Earlier steps never count as proof.
+  await sleep(page, 500);
+  for (const field of texts) {
+    let ok = sameValue(field.id, field.value, (await readText(page, field.id)) ?? '');
+    if (!ok && (await setText(page, field.id, field.value))) {
+      ok = sameValue(field.id, field.value, (await readText(page, field.id)) ?? '');
+    }
+    (ok ? filled : missing).push(ok ? field.label : `${field.label} (reverted after fill)`);
+  }
+
+  if (await page.locator('#candidate-location').count()) {
+    (cityFilled ? filled : missing).push(cityFilled ? `location (city: ${city})` : `location (city: ${city} not committed)`);
+  }
+
+  (country ? filled : missing).push(country ? `country (${country})` : 'country');
+  (cvAttached ? filled : missing).push(cvAttached ? 'CV' : 'CV (upload did not register)');
+  if (ctx.letterPath && asksForLetter) {
+    (letterAttached ? filled : missing).push(letterAttached ? 'cover letter' : 'cover letter (upload did not register)');
+  }
+
+  // Required questions we have no answer source for (visa, office days) are
+  // blockers, not silent omissions.
+  const managed = ['first_name', 'last_name', 'email', 'phone', 'country', 'candidate-location', 'resume', 'cover_letter', hearId ?? '', ...linkIds];
+  for (const label of await requiredUnanswered(page, managed)) missing.push(`required: ${label}`);
+
+  await page.waitForTimeout(300);
+}
+
 export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
   const filled: string[] = [];
   const missing: string[] = [];
@@ -506,133 +676,21 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
       throw new Error(`no application form found at ${ctx.url}. The board may serve this job without an inline form.`);
     }
 
-    const { first, last } = splitName(ctx.doc.name);
+    let fillError: string | null = null;
+    let screenshot = join(ctx.outDir, 'form.png');
 
-    // The form hydrates after first paint; anything typed before that is wiped by
-    // the next render. Files go first (attaching triggers that render), then text,
-    // then every value is read back before we believe it.
-    await page.waitForLoadState('networkidle').catch(() => {});
-    await sleep(page, 800);
-
-    const cvAttached = await attachFile(page, 'resume', ctx.cvPath);
-    // Not every board asks for a letter; a missing field is not a blank.
-    const asksForLetter = (await page.locator('#cover_letter').count()) > 0;
-    const letterAttached = ctx.letterPath && asksForLetter ? await attachFile(page, 'cover_letter', ctx.letterPath) : false;
-
-    // Country before the text fields: its re-render clears the city input, and the
-    // phone widget needs the dial code before it will format the national number.
-    const country = await pickCountry(page, ctx.applicant.country);
-
-    const texts: Array<{ id: string; value: string; label: string }> = [
-      { id: 'first_name', value: first, label: 'first name' },
-      { id: 'last_name', value: last, label: 'last name' },
-      { id: 'email', value: ctx.doc.contact.email, label: 'email' },
-    ];
-    if (await page.locator('#preferred_name').count()) {
-      texts.push({ id: 'preferred_name', value: first.split(/\s+/)[0] ?? first, label: 'preferred first name' });
+    try {
+      await fillApplicationForm(page, ctx, filled, missing);
+      await page.screenshot({ path: screenshot, fullPage: true });
+    } catch (err) {
+      // A half-filled form is still worth a human's time: in review mode the
+      // window stays open and they finish what automation could not. Headless
+      // and auto-submit runs still fail loudly - nobody is there to repair them.
+      if (!ctx.review || ctx.submit) throw err;
+      fillError = briefError(err);
+      ctx.onFillError?.(fillError);
+      await page.screenshot({ path: screenshot, fullPage: true }).catch(() => undefined);
     }
-    if (ctx.applicant.phoneNational) {
-      texts.push({ id: 'phone', value: ctx.applicant.phoneNational, label: 'phone' });
-    } else {
-      missing.push('phone (set phoneNational in profile/applicant.json)');
-    }
-    const links: Array<[RegExp, string, string]> = [
-      [/linkedin/i, ctx.doc.contact.linkedin ?? '', 'LinkedIn'],
-      [/(website|portfolio|github)/i, ctx.doc.contact.github ?? '', 'website/GitHub'],
-    ];
-    const linkIds: string[] = [];
-    const bodyText = await page.locator('body').innerText();
-    for (const [pattern, value, label] of links) {
-      if (!value) continue;
-      const id = await labelFor(page, pattern);
-      if (!id) {
-        // Only report a link as blank when the form actually has that field.
-        if (bodyText.includes(label.split('/')[0] as string)) missing.push(label);
-        continue;
-      }
-      linkIds.push(id);
-      texts.push({ id, value: value.startsWith('http') ? value : `https://${value}`, label });
-    }
-
-    for (const field of texts) await setText(page, field.id, field.value);
-
-    const hearId = await labelFor(page, /how did you hear/i);
-    if (hearId) {
-      const picked = await pickOption(page, hearId, new RegExp(ctx.applicant.howDidYouHear, 'i'), ctx.applicant.howDidYouHear);
-      if (picked) filled.push(`heard via (${picked})`);
-      else missing.push('how did you hear');
-    }
-
-    // Only boards that actually ask for a preferred location get the checkbox;
-    // "Amsterdam" also appears in the on-site question on other forms.
-    const asksLocation = (await page.locator('body').innerText()).includes('Preferred location');
-    if (asksLocation) {
-      if (await checkByLabel(page, new RegExp(ctx.applicant.preferredLocation, 'i'))) {
-        filled.push(`location (${ctx.applicant.preferredLocation})`);
-      } else {
-        missing.push('preferred location');
-      }
-    }
-
-    if (ctx.applicant.consentRetention) {
-      // Prefer Greenhouse's retention box by id: a broad "consent" label also
-      // matches demographic-survey consents, which we deliberately leave alone.
-      const gdpr = page.locator('[id^="gdpr_retention_consent"]').first();
-      const hasBox = (await gdpr.count()) > 0 || Boolean(await labelFor(page, /retain my data/i));
-      if (hasBox) {
-        let checked = false;
-        if (await gdpr.count()) {
-          await gdpr.check({ force: true }).catch(() => undefined);
-          if (!(await gdpr.isChecked().catch(() => false))) {
-            const id = await gdpr.getAttribute('id');
-            if (id) await page.locator(`label[for="${id}"]`).click({ force: true }).catch(() => undefined);
-          }
-          checked = await gdpr.isChecked().catch(() => false);
-        } else {
-          checked = await checkByLabel(page, /retain my data/i);
-        }
-        (checked ? filled : missing).push('retention consent');
-      }
-    }
-
-    // City last: picking its suggestion re-renders the form, so it must not be
-    // able to disturb the fields that the readback then checks.
-    const city = ctx.applicant.city ?? ctx.applicant.preferredLocation;
-    const cityFilled = (await page.locator('#candidate-location').count()) ? await fillCity(page, city) : false;
-
-    // Profile answers for board-specific questions (visa, office days). Runs
-    // before the readback so any re-render it triggers is repaired below.
-    await answerQuestions(page, ctx.applicant.questions ?? [], filled, missing);
-
-    // Readback pass: whatever a late re-render dropped is set once more, then
-    // reported as it really is. Earlier steps never count as proof.
-    await sleep(page, 500);
-    for (const field of texts) {
-      let ok = sameValue(field.id, field.value, (await readText(page, field.id)) ?? '');
-      if (!ok && (await setText(page, field.id, field.value))) {
-        ok = sameValue(field.id, field.value, (await readText(page, field.id)) ?? '');
-      }
-      (ok ? filled : missing).push(ok ? field.label : `${field.label} (reverted after fill)`);
-    }
-
-    if (await page.locator('#candidate-location').count()) {
-      (cityFilled ? filled : missing).push(cityFilled ? `location (city: ${city})` : `location (city: ${city} not committed)`);
-    }
-
-    (country ? filled : missing).push(country ? `country (${country})` : 'country');
-    (cvAttached ? filled : missing).push(cvAttached ? 'CV' : 'CV (upload did not register)');
-    if (ctx.letterPath && asksForLetter) {
-      (letterAttached ? filled : missing).push(letterAttached ? 'cover letter' : 'cover letter (upload did not register)');
-    }
-
-    // Required questions we have no answer source for (visa, office days) are
-    // blockers, not silent omissions.
-    const managed = ['first_name', 'last_name', 'email', 'phone', 'country', 'candidate-location', 'resume', 'cover_letter', hearId ?? '', ...linkIds];
-    for (const label of await requiredUnanswered(page, managed)) missing.push(`required: ${label}`);
-
-    await page.waitForTimeout(300);
-    const screenshot = join(ctx.outDir, 'form.png');
-    await page.screenshot({ path: screenshot, fullPage: true });
 
     let submitted = false;
     let needsCode = false;
@@ -677,7 +735,15 @@ export async function applyGreenhouse(ctx: ApplyContext): Promise<ApplyResult> {
       await page.screenshot({ path: join(ctx.outDir, 'submitted.png'), fullPage: true });
     }
 
-    return { filled: [...new Set(filled)], missing: [...new Set(missing)], screenshot, submitted, needsCode, confirmation };
+    return {
+      filled: [...new Set(filled)],
+      missing: [...new Set(missing)],
+      screenshot,
+      submitted,
+      needsCode,
+      confirmation,
+      fillError,
+    };
   } finally {
     await browser.close();
   }

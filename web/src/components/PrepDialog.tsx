@@ -123,7 +123,12 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
   const result = run?.result;
   const done = run?.stage === 'done';
   const submitted = Boolean(result?.submitted);
-  const failed = run?.stage === 'failed' || Boolean(error);
+
+  /** Server messages are already one line; run.error can still be a call log. */
+  const firstLine = (text: string) => {
+    const line = text.split('\n').map((part) => part.trim()).find(Boolean) ?? text;
+    return line.length > 240 ? `${line.slice(0, 237)}…` : line;
+  };
 
   const copy = async () => {
     try {
@@ -180,7 +185,9 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
                 {(() => {
                   const detail =
                     step.id === 'fill' && run?.awaitingReview
-                      ? 'window open — waiting for you to submit'
+                      ? run.fillError
+                        ? 'auto-fill stopped — the form is open, finish it yourself'
+                        : 'window open — waiting for you to submit'
                       : step.detail;
                   if (!detail) return null;
                   return (
@@ -202,14 +209,30 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
         )}
 
         {run?.awaitingReview && (
-          <div className="mt-5 flex items-start gap-3 rounded-xl border border-teal/30 bg-teal/10 px-3 py-3">
-            <MonitorUp className="mt-0.5 h-4 w-4 shrink-0 text-teal" aria-hidden="true" />
+          <div className={`mt-5 flex items-start gap-3 rounded-xl border px-3 py-3 ${run.fillError ? 'border-coral/40 bg-coral/10' : 'border-teal/30 bg-teal/10'}`}>
+            <MonitorUp className={`mt-0.5 h-4 w-4 shrink-0 ${run.fillError ? 'text-coral' : 'text-teal'}`} aria-hidden="true" />
             <div>
-              <p className="text-sm font-semibold text-ink">The form is open in your browser</p>
-              <p className="mt-1 text-sm leading-6 text-ink-soft">
-                Check every field — the CV and letter are attached — then click <span className="font-medium text-ink">Submit Application</span> there.
-                This panel updates when the confirmation page appears.
+              <p className="text-sm font-semibold text-ink">
+                {run.fillError ? 'The form is open, but auto-fill stopped' : 'The form is open in your browser'}
               </p>
+              <p className="mt-1 text-sm leading-6 text-ink-soft">
+                {run.fillError ? (
+                  <>
+                    <span className="font-medium text-ink">{run.fillError}</span> — finish the rest by hand; the CV and letter are attached.
+                    Then click <span className="font-medium text-ink">Submit Application</span> and this panel will record it.
+                  </>
+                ) : (
+                  <>
+                    Check every field — the CV and letter are attached — then click <span className="font-medium text-ink">Submit Application</span> there.
+                    This panel updates when the confirmation page appears.
+                  </>
+                )}
+              </p>
+              {run.fillError && (
+                <p className="mt-1 text-xs text-ink-faint">
+                  Rather start over? Close the browser window — this panel will then offer <span className="font-medium">Open the form again</span>.
+                </p>
+              )}
             </div>
           </div>
         )}
@@ -311,7 +334,61 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
           </div>
         )}
 
-        {failed && !error && run?.error && <p className="mt-4 text-sm text-ink-soft">{run.error}</p>}
+        {run?.stage === 'failed' && (
+          <div className="mt-5 space-y-3 border-t border-ink/10 pt-4">
+            <div className="flex items-start gap-2 rounded-xl border border-coral/40 bg-coral/10 px-3 py-2.5 text-sm text-ink">
+              <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-coral" aria-hidden="true" />
+              <div className="min-w-0">
+                <p className="font-semibold">Auto-fill stopped</p>
+                <p className="mt-0.5 break-words text-ink-soft">
+                  {firstLine(run.fillError ?? run.error ?? 'The run failed before the form was ready.')}
+                </p>
+              </div>
+            </div>
+
+            {(run.error ?? '').length > 160 && (
+              <details className="rounded-xl bg-white/60 px-3 py-2 text-xs text-ink-soft">
+                <summary className="cursor-pointer font-medium text-ink">Technical detail</summary>
+                <pre className="mt-2 max-h-48 overflow-auto whitespace-pre-wrap break-all">{run.error}</pre>
+              </details>
+            )}
+
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => void begin({ mode: 'review' })}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-ink/20 bg-white/70 px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-white"
+              >
+                <RefreshCw className="h-3.5 w-3.5" /> Open the form again
+              </button>
+              <button
+                type="button"
+                onClick={() => void begin({ force: true, mode: 'review' })}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-ink/20 bg-white/70 px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-white"
+              >
+                Re-tailor and retry
+              </button>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              {run.result?.artifacts.cv && (
+                <a className="inline-flex items-center gap-1.5 rounded-lg bg-white/70 px-2.5 py-1.5 text-ink" href={artifactUrl(base, job, 'cv.pdf')} target="_blank" rel="noopener noreferrer">
+                  <FileText className="h-3.5 w-3.5" /> CV
+                </a>
+              )}
+              {run.result?.artifacts.letter && (
+                <a className="inline-flex items-center gap-1.5 rounded-lg bg-white/70 px-2.5 py-1.5 text-ink" href={artifactUrl(base, job, 'letter.pdf')} target="_blank" rel="noopener noreferrer">
+                  <FileText className="h-3.5 w-3.5" /> Letter
+                </a>
+              )}
+              {job.url && (
+                <a className="inline-flex items-center gap-1.5 rounded-lg bg-white/70 px-2.5 py-1.5 text-ink" href={job.url} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-3.5 w-3.5" /> Apply on the posting
+                </a>
+              )}
+            </div>
+          </div>
+        )}
       </motion.div>
     </motion.div>
   );

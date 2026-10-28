@@ -50,6 +50,11 @@ export interface PrepRun {
   finishedAt?: string;
   /** The review window is filled and waiting for the human to submit. */
   awaitingReview?: boolean;
+  /**
+   * Automation stopped early, but the window is open for the human to finish.
+   * Kept separate from `error` so the run is not terminal.
+   */
+  fillError?: string;
 }
 
 export type PrepMode = 'fill' | 'review';

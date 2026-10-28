@@ -354,3 +354,36 @@ Live-tested headless: Elastic 11 fields, N26 10, Datadog 10.
 (`resolveUrl(job)`, `fill(page, ctx)`), with the shared attach/verify/answer helpers kept once.
 `resolveProvider(job)` stays the single entry point; unsupported ATS still produce the CV and
 letter and report the gap. Nothing in the pipeline ever clicks Submit.
+
+## Fix — a failed fill hands the form to you (added 2026-10-28)
+
+**Symptom.** On Planet Labs PBC the fill died with `locator.click: Timeout 20000ms exceeded`,
+resolved to `li#iti-0__item-nl.iti__country` — and the dialog offered no way forward, so the
+application could not be retried at all.
+
+**Root cause.** `pickCountry` matched `[class*="select__option"], [role="option"]`. Greenhouse's
+phone widget (`intl-tel-input`) keeps 150+ hidden `<li class="iti__country" role="option">` rows
+in the DOM, so "Netherlands" resolved to the phone widget's invisible item instead of the
+react-select option. Clicking it could only time out.
+
+The reported trigger was the reviewer typing into the page while the fill ran, which closes the
+react-select menu; with no `select__option` left, the union selector matched the phone widget's
+rows. Typing explains the trigger, not the failure mode: a closed menu should make the country
+blank, never hang on a hidden element. Both the selector and the 20 s click were bugs.
+
+**Behavior now.**
+1. `pickCountry` reads only the open react-select menu and requires the option to be visible.
+   A hidden match returns `null` (country reported blank), never a 20 s click timeout.
+2. Any failure after the form has mounted is non-fatal in review mode: the browser stays open
+   at the partially filled form, `run.fillError` says what stopped, and the dialog switches to
+   "The form is open, but auto-fill stopped — finish the rest by hand". Headless and
+   auto-submit runs still fail loudly.
+3. A failed run is no longer terminal: the dialog shows *Open the form again* (reuses the
+   cached CV/letter) and *Re-tailor and retry*, plus CV/letter/posting links. The full
+   Playwright call log moves behind a "Technical detail" disclosure; the step line keeps only
+   the first sentence (`briefError`).
+
+**Verification.** A DOM fixture with 152 hidden `iti__country` rows reproduced the old
+resolution (`index 152`, `#iti-0__item-c152`, invisible) while the new locator picked the
+visible `select__option`. `npm test` 70 pass, `npm run build:web` clean. Live re-run of the
+Planet Labs posting still needs a human submit, as before.

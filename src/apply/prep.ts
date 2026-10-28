@@ -23,7 +23,7 @@ import { renderLetterPdf } from '../cv/letter-render.js';
 import { checkFacts } from '../cv/facts.js';
 import { loadApplicant, questionsFor } from './applicant.js';
 import { resolveAts, SUPPORTED } from './ats.js';
-import { applyGreenhouse } from './greenhouse.js';
+import { applyGreenhouse, briefError } from './greenhouse.js';
 import { resolveBrowser } from './browser.js';
 
 export type PrepStepId = 'cv' | 'letter' | 'fill';
@@ -67,6 +67,11 @@ export interface PrepRun {
   finishedAt?: string;
   /** The review window is filled and waiting for the human to submit. */
   awaitingReview?: boolean;
+  /**
+   * Automation stopped early, but the window is open for the human to finish.
+   * Kept separate from `error` so the run is not terminal.
+   */
+  fillError?: string;
 }
 
 export interface PrepOptions {
@@ -192,7 +197,9 @@ async function timed(stepRef: PrepStep, work: () => Promise<string>): Promise<vo
     stepRef.status = 'done';
   } catch (err) {
     stepRef.status = 'failed';
-    stepRef.detail = err instanceof Error ? err.message : String(err);
+    // The full Playwright call log stays in `run.error`; the step line gets the
+    // one sentence a person can act on.
+    stepRef.detail = briefError(err);
     throw err;
   } finally {
     stepRef.ms = Date.now() - started;
@@ -358,6 +365,10 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
             onReviewReady: () => {
               run.awaitingReview = true;
             },
+            onFillError: (message) => {
+              // The human still gets the window; the run stays alive.
+              run.fillError = message;
+            },
           });
 
         // A review run spends most of its life idle, waiting for the human, so it
@@ -382,9 +393,14 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         missing = result.missing;
         submitted = result.submitted;
         confirmation = result.confirmation;
+        if (result.fillError) {
+          run.fillError = result.fillError;
+          warnings.push(`auto-fill stopped: ${result.fillError}`);
+        }
         const blanks = result.missing.length ? ` · ${result.missing.length} left blank` : '';
         if (review) {
-          return result.submitted ? 'submitted' : 'not submitted';
+          if (result.submitted) return 'submitted';
+          return result.fillError ? 'auto-fill stopped — not submitted' : 'not submitted';
         }
         return `${result.filled.length} filled${blanks}`;
       });
