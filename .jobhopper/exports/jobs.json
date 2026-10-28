@@ -120,7 +120,7 @@
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
   {
-    "id": 12,
+    "id": 11,
     "external_id": "8745623002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -133,7 +133,7 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a solid background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies (like Terraform and Ansible) and experience with GitLab deployments, which the candidate does not explicitly possess. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align with the candidate's primarily development-focused background. There are relevant skills, but the gaps in required technologies and customer engagement experience are significant.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly mention. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align perfectly with the candidate's experience focused more on development and backend systems. However, the candidate's strong communication skills and experience in managing projects could be beneficial.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -1540,7 +1540,7 @@
     "reasoning": null
   },
   {
-    "id": 10,
+    "id": 9,
     "external_id": "8522265002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -1553,12 +1553,12 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting requires specific expertise in Ruby on Rails or Go, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnostics, areas where the candidate has limited direct experience. However, the candidate's skills in Java, React, and CI/CD align with some of the job's requirements, but the gaps in required technologies and specific experience with GitLab's ecosystem make this a weak fit overall.",
+    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job requires specific expertise in Ruby on Rails or Go, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnostics, areas where the candidate's experience may not fully align. The candidate's fintech background is relevant, but the focus on strategic customer engagement and high-level technical stewardship may stretch their current capabilities.",
     "applied_at": null,
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 18,
+    "id": 14,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1571,12 +1571,12 @@
     "posted_at": "2026-10-27T12:52:07-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role, which is focused on incident response and security operations. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, SQL, and React, but lacks specific experience in security incident management, security operations centers, and the required security tools and technologies mentioned in the job description. Additionally, the candidate's experience does not align with the security-focused nature of this role, making it a poor fit.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on incident response and security operations, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has no demonstrated experience in security incident management, SIEM systems, or the specific security tools mentioned in the job description. Additionally, the role requires a strong background in security operations, which the candidate does not possess, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 17,
+    "id": 13,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1589,7 +1589,7 @@
     "posted_at": "2026-10-27T12:52:07-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's background in full-stack software engineering and fintech. The candidate lacks the required experience in managing security incidents, expertise in security information and event management (SIEM) systems, and knowledge of security orchestration and automation platforms. Additionally, the candidate's experience does not include the necessary security-focused skills or roles, making this position a poor fit.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is focused on security incident response and requires specific expertise in security operations, incident management, and security tools that the candidate does not possess. The candidate's background is primarily in full-stack software engineering with a strong focus on fintech, Java, and React, but lacks the necessary experience in security operations centers (SOC) or related security roles. Additionally, the role is not aligned with the candidate's preferences for full-stack or backend engineering positions.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1902,7 +1902,7 @@
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 34,
+    "id": 35,
     "external_id": "5432726008",
     "source": "greenhouse",
     "company": "Geotab",
@@ -1915,7 +1915,7 @@
     "posted_at": "2026-10-27T11:30:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for an Embedded Developer at Geotab is not a fit for the candidate, as it requires specific experience in embedded systems design, including proficiency in C, C++, and Rust, which the candidate does not possess. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and React, rather than embedded systems. Additionally, the role is based in Madrid, Spain, which may not align with the candidate's preference for opportunities in the Netherlands or remote roles.",
+    "reasoning": "The job posting for an Embedded Developer at Geotab requires expertise in C, C++, and Rust for firmware development, which is not part of the candidate's skill set. The candidate has a strong background in Java, SQL, and React, but lacks the necessary experience in embedded systems and the specific programming languages required for this role. Additionally, the position is located in Madrid, Spain, which may not align with the candidate's preference for roles based in the Netherlands or remote opportunities.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -2386,7 +2386,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 32,
+    "id": 33,
     "external_id": "8233192",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2398,13 +2398,13 @@
     "description": "<div class=\"content-intro\"><p><strong>Welcome to Planet. We believe in using space to help life on Earth.</strong></p> <p>Planet designs, builds, and operates the largest constellation of imaging satellites in history. This constellation delivers an unprecedented dataset of empirical information via a revolutionary cloud-based platform to authoritative figures in commercial, environmental, and humanitarian sectors. We are both a space company and data company all rolled into one.</p> <p>Customers and users across the globe use Planet's data to develop new technologies, drive revenue, power research, and solve our world’s toughest obstacles.</p> <p>As we control every component of hardware design, manufacturing, data processing, and software engineering, our office is a truly inspiring mix of experts from a variety of domains.</p> <p>We have a people-centric approach toward culture and community and we strive to iterate in a way that puts our team members first and prepares our company for growth. Join Planet and be a part of our mission to change the way people see the world.</p> <p>Planet is a global company with employees working remotely world wide and joining us from offices in San Francisco, Washington DC, Germany, Austria, Slovenia, and The Netherlands.</p></div><p><strong>About the Role:&nbsp;</strong></p> <p>Planet’s <a href=\"https://www.planet.com/products/planet-insights-platform/\">Platform</a> teams build and operate systems that enable customers to access and analyze Planet's daily and high resolution imagery, as well as derived products like Basemaps. We enable customers to browse <a href=\"https://docs.planet.com/platform/get-started/access-data/data-collections/\">data catalogs</a>, <a href=\"https://docs.planet.com/platform/get-started/access-data/search-and-preview/\">stream data via tile services</a>, and orchestrate <a href=\"https://docs.planet.com/platform/get-started/analyze-data/\">geospatial analysis</a>.</p> <p>This position is to be a contributing member of our Platform teams, developing and deploying imagery access and analysis capabilities for our customers using a tech stack that includes Go, Python, Java, Postgres and Kubernetes on major cloud platforms like Google Cloud. We emphasize scalable, observable systems leveraging open source technologies and standards when applicable.</p> <p>The team is distributed throughout Europe and North America and thrives on clear asynchronous communication. Success in this role requires strong collaborative communication skills to build coworker relationships across several time zones as well as the ability to contribute to occasional team on-sites hosted in Planet’s global offices.&nbsp;</p> <p>This is a full-time, hybrid role which will require you to work from our Haarlem 3 days per week.</p> <p><strong>Impact You’ll Own:</strong></p> <ul> <li>Build, deploy and maintain performant, distributed large-scale services and highly-available APIs in Go, Java and/or Python with a strong emphasis on customer experience</li> <li>Work closely with engineers and product managers across multiple cross-functional teams to align product &amp; engineering goals and objectives</li> <li>Write high-quality, maintainable, observable, and well-documented production code</li> <li>Participate in code reviews to maintain high code quality and standards</li> <li>Use AI tooling throughout the development lifecycle and holding AI-assisted work to the same bar as anything you'd write by hand</li> <li>Learn and grow as a developer while making a positive impact on our products and customers; bringing the team along with you as your expertise grows</li> <li>Own the operation of these APIs and services by embracing Site Reliability Engineering culture, measuring performance, load testing, creating and fine-tuning alerts, dashboards, runbooks, and responding to incidents</li> <li>Participate in rapid response on-call rotation in support of the team’s external and internal services</li> </ul> <p><strong>What You Bring:</strong></p> <ul> <li>4+ years of experience in software development within a production environment working preferably with Python, Java and/or Go</li> <li>Bachelor’s degree in a technical field such as Computer Science, Geosciences, or a related discipline, or equivalent practical experience</li> <li>Solid understanding of software engineering best practices and development methodologies</li> <li>Excellent teamwork and collaboration skills - written and verbal; you are comfortable writing an engineering design proposal and soliciting feedback to drive collaborative decisions</li> <li>Familiarity with GCP or AWS</li> <li>Ability to learn new technologies quickly and independently, navigate uncertain and sometimes ambiguous problem spaces, and take calculated risks</li> <li>Experience working with diverse data storage systems such as relational databases, document stores, and key-value stores</li> <li>Excellent problem-solving, analytical, and communication skills</li> <li>Experience with Git, large codebases, reviewing merge requests, and running complex CI/CD pipelines</li> <li>Comfortable working with Docker containers</li> <li>Solid intuition of when AI is useful in software development and when it is not</li> <li>Experience deploying to Kubernetes</li> </ul> <p><strong>What Makes You Stand Out:</strong></p> <ul> <li>Familiarity with geospatial concepts and standards; you’ve worked with GeoTIFFs, GeoJSON, and STAC</li> <li>Familiarity with remotely sensed products and associated metadata; you know why someone wants an ortho-rectified product</li> <li>Worked with observability platforms such as Grafana</li> </ul> <p><strong>Application Deadline:</strong></p> <p>11:45p / 23:45 CET on the date stated below. Applications are reviewed on a rolling basis. This posting may be removed earlier than projected if a suitable pool of applications has been received. For this reason, we recommend applying as soon as you are able to.</p> <p><strong>Benefits While Working at Planet:</strong></p> <p><em>These offerings are dependent on employment type and geographical location, based upon applicable law or company policy.</em></p> <ul> <li>Paid time off including vacation, holidays and company-wide days off&nbsp;</li> <li>Employee Wellness Program&nbsp;</li> <li>Home Office Reimbursement</li> <li>Monthly Phone and Internet Reimbursement</li> <li>Tuition Reimbursement and access to LinkedIn Learning</li> <li>Equity&nbsp;</li> <li>Volunteering Paid Time Off</li> </ul> <p><strong>Compensation:</strong></p> <p>The expected starting gross salary range for this role is listed below. Individual placement within this range is determined objectively based on gender-neutral criteria such as your skills, qualifications, and professional experience. This position may also be eligible for discretionary bonuses and/or equity.</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">Netherlands Salary Range</div><div class=\"pay-range\"><span>€59.200</span><span class=\"divider\">&mdash;</span><span>€74.000 EUR</span></div></div></div><div class=\"content-conclusion\"><p><strong>San Francisco Fair Chance Ordinance<br></strong>Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.<strong><br></strong></p> <p><strong>Why we care so much about Belonging.&nbsp;<br></strong>We’re dedicated to helping the whole Planet, and to do that we must strive to represent all of it within each of our offices and on all of our teams. That’s why Planet is guided by an ultimate north star of Belonging—dreaming big as we approach our ongoing work.&nbsp; If this job intrigues you, but you’re thinking you might not have all the qualifications, please... do apply!&nbsp; At Planet, we are looking for well-rounded people from around the world who can contribute to more ways than just what is listed in this job description.&nbsp; We don’t just fill positions, we aspire to fulfill people’s careers, most excited about folks who are motivated by our underlying humanitarian efforts.&nbsp; We are a few orbits around the sun before we get to where we want to be, so we hope you’re excited to come along for the ride.&nbsp;</p> <p><strong>EEO statement: <br></strong>Planet is committed to building a community where everyone belongs and we invite people from all backgrounds to apply. Planet is an equal opportunity employer, and committed to providing employment opportunities regardless of race, religious creed, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, pregnancy, childbirth and breastfeeding, age, sexual orientation, military or veteran status, or any other protected classification, in accordance with applicable federal, state, and local laws. <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12.pdf\">Know Your Rights.</a></p> <p><strong>Accommodations:&nbsp;<br></strong>Planet is an inclusive community and we know that everyone has their own needs. If you have a disability or special need that requires accommodation during the hiring process, please reach out to accommodations@planet.com or contact your recruiter with your request. Your message will be confidential and we will be happy to assist you.</p> <p><strong>Privacy Policy</strong>: By clicking \"Apply Now\" at the top of this job posting, I acknowledge that I have read the <a href=\"https://www.planet.com/privacy/#california\">Planet Data Privacy Notice for California Staff Members and Applicants</a>, and hereby consent to the collection, processing, use, and storage of my personal information as described therein.</p> <p><strong>Privacy Policy (European Applicants):</strong> By clicking \"Apply Now\" at the top of this job posting, I acknowledge that I have read the <a href=\"https://www.planet.com/privacy/\">Candidate Privacy Notice GDPR Planet Labs Europe</a>, and hereby consent to the collection, processing, use, and storage of my personal information as described therein.</p> <p><strong>AI in Our Interviewing Process</strong>: Planet is committed to providing an exceptional interview experience for all candidates. We currently use <a href=\"https://www.metaview.ai/\" target=\"_blank\">Metaview</a> to better focus on candidates and less on trying to capture notes. As such, with the candidate's consent, select interviews may be recorded and include a \"Planet AI Notetaker\" for transcription and summarization purposes. Should an interview involve use of AI interview technologies, the candidate will receive notification and have the ability to opt out both in advance and/or real-time. Opting out will not affect one's candidacy.</p> <p><strong>Candidate AI Policy</strong>: Planet embraces Artificial Intelligence (AI) tools, and we encourage its responsible use. We understand that candidates may use various resources, including AI tools, to <em>prepare</em> for interviews and assessments. However, <em>during any live interview stage or when actively completing assessments for this position, the use of AI tools—e.g. Large Language Models (LLMs), deep fake technology, etc.—is strictly prohibited unless explicitly prompted by an interviewer or assessment instructions</em>. If you are unsure about acceptable use, please contact your recruiter for clarification. If an AI tool or similar technology is desired as an accommodation, please contact accommodations@planet.com with your request for assistance. Your message will be confidential, and we will be happy to assist you. Violation of this policy may result in disqualification of your application.</p></div>",
     "posted_at": "2026-10-27T13:09:32-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, SQL, and React, which aligns with some of the job requirements, they lack direct experience with Go and Kubernetes, which are critical for this role. Additionally, the job emphasizes familiarity with geospatial concepts and standards, an area not mentioned in the candidate's background. The requirement for a Bachelor's degree in a technical field is also a potential gap, as the candidate's education is not specified as such. Overall, there are significant gaps that would require the candidate to stretch to fit this role.",
+    "verdict": "fair",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. However, the role emphasizes experience with Go and Kubernetes, which the candidate does not explicitly mention. Additionally, while the candidate has experience in CI/CD and DevOps, the job requires familiarity with cloud platforms like GCP or AWS, which is not confirmed in the candidate's profile. Overall, the candidate is a realistic fit but would need to address these gaps.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 31,
+    "id": 32,
     "external_id": "8233190",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2417,7 +2417,7 @@
     "posted_at": "2026-10-27T13:09:41-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. However, the job emphasizes experience with Go and Kubernetes, which the candidate does not explicitly mention. Additionally, while the candidate has experience in CI/CD and DevOps, the role requires familiarity with cloud platforms like GCP or AWS, which is not confirmed in the candidate's profile. Overall, the candidate is a realistic fit but would need to address these gaps.",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java, which aligns well with the job's requirements. They also possess experience in CI/CD and DevOps, which is relevant for the role. However, the job emphasizes familiarity with Go and Kubernetes, which the candidate does not explicitly mention in their CV. Additionally, the role requires experience with GCP or AWS, which is not confirmed in the candidate's background. Overall, while there are significant matches, the gaps in specific technologies and cloud experience make this a fair fit.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -2533,7 +2533,7 @@
     "posted_at": "2026-10-27T11:58:25-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in Java and extensive experience in software engineering, which aligns well with the job's requirements. They have over 10 years of experience, including working in fintech, which is relevant to Doctolib's healthcare focus. However, the job requires familiarity with Microsoft technologies (C# and .NET) and Kotlin, which the candidate does not explicitly mention in their experience. Additionally, the position is based in Milan, which may not align with the candidate's preference for remote roles, although they are open to hybrid work.",
+    "reasoning": "The candidate has a strong background in Java and experience in full-stack development, which aligns well with the job's requirements. However, the job emphasizes experience with Microsoft technologies (C# and .NET) and Kotlin, which the candidate lacks. Additionally, while the candidate has extensive experience in fintech, the role is focused on healthcare, which may require some adjustment. Overall, the candidate is a realistic fit but would need to bridge some gaps in specific technologies.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -3054,7 +3054,7 @@
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
   {
-    "id": 33,
+    "id": 19,
     "external_id": "8258710",
     "source": "greenhouse",
     "company": "MongoDB",
@@ -3360,7 +3360,7 @@
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 38,
+    "id": 39,
     "external_id": "969bbf7d-037c-4965-812e-442105ce58c1",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -3373,7 +3373,7 @@
     "posted_at": "2026-10-28T13:39:17.876+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for Developer Advocate does not align with the candidate's preferences for senior full-stack or backend software engineering roles. The role appears to focus on advocacy rather than software development, which does not match the candidate's expertise or interest in technical ownership and product engineering. Additionally, the candidate is not interested in roles that do not involve direct software development, making this position unsuitable.",
+    "reasoning": "The job posting for Developer Advocate does not align with the candidate's preference for senior full-stack or backend software engineering roles. The role appears to focus on advocacy rather than development, which does not match the candidate's technical background or career aspirations. Additionally, the candidate is not interested in roles that do not involve direct software engineering responsibilities, making this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
@@ -3558,7 +3558,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 27,
+    "id": 28,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3571,7 +3571,7 @@
     "posted_at": "2026-10-27T09:55:39-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's location in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also be a concern for the candidate, who has not indicated comfort with such responsibilities.",
+    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's preference for roles based in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not align with the candidate's preferences. Overall, the geographical and technical mismatches make this opportunity unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
@@ -3720,7 +3720,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 25,
+    "id": 26,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3733,7 +3733,7 @@
     "posted_at": "2026-10-27T09:54:20-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires experience with technologies like Python, Kotlin, AWS, and Kubernetes, which the candidate does not explicitly list in their profile. While the candidate has strong Java and SQL skills, the specific requirements of this role do not align with their experience or location preferences.",
+    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work remotely from the Netherlands. Additionally, the role emphasizes experience with technologies like Python, Kotlin, AWS, and Kubernetes, which are not mentioned in the candidate's profile, indicating a significant gap in required technical skills. The candidate's strong background in Java and SQL, while relevant, does not align with the specific requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
@@ -3828,7 +3828,7 @@
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 22,
+    "id": 23,
     "external_id": "34e9f726-4461-4ef7-9724-a0aba8c72a76",
     "source": "ashby",
     "company": "Oyster HR, Inc",
@@ -3841,12 +3841,12 @@
     "posted_at": "2026-10-26T19:58:44.165+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Senior AI Solutions Engineer does not align with the candidate's expertise in full-stack software engineering, particularly in fintech. The candidate specializes in Java, SQL, and React, while the job title suggests a focus on AI solutions, which may require different skills and experience not mentioned in the candidate's profile. Additionally, the candidate is not interested in roles that do not match their specific background in software engineering.",
+    "reasoning": "The job posting for a Senior AI Solutions Engineer does not align with the candidate's background in full-stack software engineering, particularly in fintech. The candidate specializes in Java and SQL with a strong focus on frontend technologies like React, but the role appears to be centered around AI solutions, which may not match the candidate's expertise. Additionally, the candidate's preference for fintech and product engineering does not align with the AI focus of this position.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
   {
-    "id": 20,
+    "id": 16,
     "external_id": "7996774",
     "source": "greenhouse",
     "company": "Twilio",
@@ -3859,7 +3859,7 @@
     "posted_at": "2026-10-28T10:32:50-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks the required experience in machine learning engineering and proficiency in ML frameworks such as PyTorch or TensorFlow. The role specifically requires 2+ years of applied ML experience and familiarity with NLP libraries, which the candidate does not possess. Additionally, the position is focused on AI/ML solutions, which is outside the candidate's stated expertise in fintech and full-stack development.",
+    "reasoning": "The job posting for a Machine Learning Engineer at Twilio is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React, but lacks specific experience in machine learning engineering. The role requires 2+ years of experience in machine learning, proficiency in Python and ML frameworks, and familiarity with NLP libraries, none of which are indicated in the candidate's profile. Additionally, the candidate's focus is on fintech and product engineering, which does not align with the AI-centric responsibilities of this position.",
     "applied_at": null,
     "first_seen": "2026-10-19T16:05:37.461Z"
   },
@@ -4008,7 +4008,7 @@
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 21,
+    "id": 20,
     "external_id": "8888205002",
     "source": "greenhouse",
     "company": "Vonage",
@@ -4021,7 +4021,7 @@
     "posted_at": "2026-10-28T09:13:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Director position in BSS Engineering & Product, which requires extensive leadership experience in global telecommunications and specific domain expertise in BSS platforms like Amdocs or Oracle Communications. The candidate, while experienced as a software engineer with a strong fintech background, does not possess the necessary senior leadership experience or the specific BSS domain knowledge required for this role. Additionally, the candidate is looking for full-stack or backend engineering roles, not a director-level position.",
+    "reasoning": "The job posting for Senior Director, BSS Engineering & Product at Vonage requires extensive experience in BSS engineering leadership within global telecommunications or cloud communications, which is not aligned with the candidate's background. The candidate has a strong software engineering background in fintech but lacks the specific BSS domain expertise and leadership experience in telecommunications required for this role. Additionally, the seniority level of this position exceeds the candidate's current role as a software engineer, making it a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
@@ -4098,7 +4098,7 @@
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 14,
+    "id": 22,
     "external_id": "8311494",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4110,8 +4110,8 @@
     "description": "<div class=\"content-intro\"><p>Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision of search and the intelligence of AI to enable everyone to accelerate the results that matter. By taking advantage of all structured and unstructured data — securing and protecting private information more effectively — Elastic’s complete, cloud-based solutions for search, security, and observability help organizations deliver on the promise of AI.</p></div><div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d5mja-0-0\"><strong><span data-offset-key=\"d5mja-0-0\"><span data-text=\"true\">What is The Role</span></span></strong></div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d5mja-0-0\">&nbsp;</div> <div class=\"p\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"do176-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"do176-0-0\"><span data-offset-key=\"do176-0-0\"><span data-text=\"true\">As a Software Engineer on our Control Plane - Hosted team, you will be </span></span><span id=\"popover-trigger-:r11:\" class=\"chakra-text css-8zk7oi\"><span data-offset-key=\"do176-1-0\"><span data-text=\"true\">responsible for</span></span></span><span data-offset-key=\"do176-2-0\"><span data-text=\"true\"> technical design and work in key functional areas of Elastic’s Cloud offerings. You will participate in coding, crafting solutions, debugging sophisticated failure scenarios, and prioritizing bug fixes and features. You’ll analyze the current system, its strength and limitations.</span></span></div> </div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9gsve-0-0\">&nbsp;</div> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"9gsve-0-0\"><strong><span data-offset-key=\"9gsve-0-0\"><span data-text=\"true\">What You Will Be Doing</span></span></strong></div> <ul class=\"public-DraftStyleDefault-ul\" data-offset-key=\"fm1gk-0-0\"> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"fm1gk-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"fm1gk-0-0\"><span data-offset-key=\"fm1gk-0-0\"><span data-text=\"true\">Guide cross-team technical designs and help create a team-wide high level architecture</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"p3oi-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"p3oi-0-0\"><span data-offset-key=\"p3oi-0-0\"><span data-text=\"true\">Lead best practices for development, ensuring a reliable, scalable foundation and an engaging user experience for our customers</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"6s51t-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6s51t-0-0\"><span data-offset-key=\"6s51t-0-0\"><span data-text=\"true\">Contribute and lead technical plans and direction within our team and across other product teams in Elastic</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"d8fap-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"d8fap-0-0\"><span data-offset-key=\"d8fap-0-0\"><span data-text=\"true\">Be part of a distributed team of engineers from all across the globe</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"6oqm3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"6oqm3-0-0\"><span data-offset-key=\"6oqm3-0-0\"><span data-text=\"true\">Collaborate with other teams within Elastic. Examples include helping Support engineers in diagnosing problems or advising the Elasticsearch engineers with designing new features</span></span></div> </li> </ul> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"62dm4-0-0\"><strong><span data-offset-key=\"62dm4-0-0\"><span data-text=\"true\">What You Bring</span></span></strong></div> <ul class=\"public-DraftStyleDefault-ul\" data-offset-key=\"dte59-0-0\"> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"dte59-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"dte59-0-0\"><span data-offset-key=\"dte59-0-0\"><span data-text=\"true\">5+ years of experience as a software engineer, with a track record of delivering high-quality code</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"ecgp3-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"ecgp3-0-0\"><span data-offset-key=\"ecgp3-0-0\"><span data-text=\"true\">Previous experience providing </span></span><span id=\"popover-trigger-:r13:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"ecgp3-1-0\"><span data-text=\"true\">pragmatic</span></span></span><span data-offset-key=\"ecgp3-2-0\"><span data-text=\"true\"> technical </span></span><span id=\"popover-trigger-:r15:\" class=\"chakra-text css-1j6t0d7\"><span data-offset-key=\"ecgp3-3-0\"><span data-text=\"true\">leadership</span></span></span><span data-offset-key=\"ecgp3-4-0\"><span data-text=\"true\"> for a group of engineers</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"cmett-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"cmett-0-0\"><span data-offset-key=\"cmett-0-0\"><span data-text=\"true\">Knowledge of back-end languages such as Scala, Java or Go</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"emso2-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"emso2-0-0\"><span data-offset-key=\"emso2-0-0\"><span data-text=\"true\">Technical depth in one or more technologies relevant for SaaS (orchestration, networking, containers, etc.)</span></span></div> </li> <li class=\"public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR\" data-block=\"true\" data-editor=\"1khjv\" data-offset-key=\"85ip6-0-0\"> <div class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\" data-offset-key=\"85ip6-0-0\"><span id=\"popover-trigger-:r17:\" class=\"chakra-text css-1h4n5cs\"><span data-offset-key=\"85ip6-0-0\"><span data-text=\"true\">Passion</span></span></span><span data-offset-key=\"85ip6-1-0\"><span data-text=\"true\"> for automation and quality</span></span></div> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation for this role is in the form of base salary.&nbsp; This role does not have a variable compensation component.&nbsp;&nbsp;</p> <p>At Elastic, our compensation philosophy aims to provide fair, competitive and transparent remuneration. Salary ranges are established based on a combination of external market benchmarks, internal pay equity considerations, and the responsibilities and complexity associated with each role. This approach helps ensure consistency across comparable roles while remaining competitive within the relevant labour markets.</p> <p>The final compensation offered within the applicable range will be determined based on several objective factors, including relevant professional experience, level of skills and expertise, alignment with the role requirements, and the overall scope and complexity of the position.</p></div><div class=\"title\">The typical starting salary range for this role is:</div><div class=\"pay-range\"><span>€76.000</span><span class=\"divider\">&mdash;</span><span>€98.400 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Additional Information - We Take Care of Our People</strong></h2> <p>As a distributed company, diversity drives our identity. Whether you’re looking to launch a new career or grow an existing one, Elastic is the type of company where you can balance great work with great life. Your age is only a number. It doesn’t matter if you’re just out of college or your children are; we need you for what you can do.</p> <p>We strive to have parity of benefits across regions and while regulations differ from place to place, we believe taking care of our people is the right thing to do.</p> <ul> <li>Competitive pay based on the work you do here and not your previous salary</li> <li>Health coverage for you and your family in many locations</li> <li>Ability to craft your calendar with flexible locations and schedules for many roles</li> <li>Generous number of vacation days each year</li> <li>Increase your impact - We match up to $2000 (or local currency equivalent) for financial donations and service</li> <li>Up to 40 hours each year to use toward volunteer projects you love</li> <li>Embracing parenthood with minimum of 16 weeks of parental leave</li> </ul> <p>Different people approach problems differently. We need that. Elastic is an equal opportunity employer and is committed to creating an inclusive culture that celebrates different perspectives, experiences, and backgrounds. Qualified applicants will receive consideration for employment without regard to race, ethnicity, color, religion, sex, pregnancy, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, disability status, or any other basis protected by federal, state or local law, ordinance or regulation.</p> <p>We welcome individuals with disabilities and strive to create an accessible and inclusive experience for all individuals. To request an accommodation during the application or the recruiting process, please email <a href=\"mailto:candidate_accessibility@elastic.co\" target=\"_blank\">candidate_accessibility@elastic.co</a><span class=\"gmail_default\">.</span>&nbsp;We will reply to your request within 24 business hours of submission.</p> <p><span style=\"color: #000000;\">Applicants have rights under Federal Employment Laws, view posters linked below:</span> <a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf\" target=\"_blank\">Family and Medical Leave Act (FMLA)</a> <span style=\"color: #000000;\">Poster;</span><span style=\"color: #000000;\">&nbsp;<a href=\"https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf\" target=\"_blank\">Pay Transparency Nondiscrimination Provision</a> Poster; </span><a href=\"https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppabw.pdf\" target=\"_blank\">Employee Polygraph Protection Act (EPPA)</a> <span style=\"color: #000000;\">Poster and <a href=\"https://www.dol.gov/sites/dolgov/files/OFCCP/regs/compliance/posters/pdf/22-088_EEOC_KnowYourRights.pdf\" target=\"_blank\">Know Your Rights</a> (Poster)</span></p> <p><span style=\"color: #000000;\">Elasticsearch develops and distributes technology and information that is subject to U.S. and other countries’ export controls and licensing requirements for individuals who are located in or are nationals of the following sanctioned countries and regions: Belarus, Cuba, Iran, North Korea, Syria, or Russia, including the Ukrainian territories annexed by Russia (The Crimea region of Ukraine, The Donetsk People's Republic (DNR), The Luhansk People's Republic (LNR), Kherson or Zaporizhzhia). If you are located in or are a national of one of the listed countries or regions, an export license may be required as a condition of your employment in this role. Please note that national origin and/or nationality do not affect eligibility for employment with Elastic.</span></p> <p>Please see&nbsp;<a href=\"https://www.elastic.co/legal/applicant-privacy-statement\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=https://www.elastic.co/legal/applicant-privacy-statement&amp;source=gmail&amp;ust=1611068262479000&amp;usg=AFQjCNG3orAPk5sJIr9WVm0ZDxYw82c5DA\">here</a>&nbsp;for our Privacy Statement.</p></div>",
     "posted_at": "2026-10-27T20:02:04-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has over 10 years of experience as a full-stack software engineer and is proficient in Java and SQL, which aligns with the job's backend requirements, the role specifically mentions a preference for Scala or Go, which the candidate lacks. Additionally, the position emphasizes technical leadership and guiding cross-team designs, which may stretch the candidate's experience in leading teams at a high level. The job is also based in Spain, which may not align with the candidate's preference for roles in the Netherlands, though remote work is an option.",
+    "verdict": "fair",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and React, which aligns well with the job's requirements. They have experience in leading product initiatives and managing DevOps tasks, which is relevant to the role's emphasis on technical leadership and collaboration. However, the job posting specifies a need for knowledge in back-end languages such as Scala or Go, which the candidate does not possess. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote or hybrid roles in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-21T23:51:44.214Z"
   },
@@ -4566,7 +4566,7 @@
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
   {
-    "id": 13,
+    "id": 21,
     "external_id": "8075239",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4579,7 +4579,7 @@
     "posted_at": "2026-10-27T14:22:20-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly with React and Java, the job posting requires deep expertise in TypeScript and experience in leading design systems at scale, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes technical leadership and mentoring within a UX context, which may not align with the candidate's primarily backend and fintech-focused experience. The candidate's experience in CI/CD and DevOps is relevant, but the gaps in design system leadership and TypeScript expertise are significant.",
+    "reasoning": "While the candidate has strong experience in full-stack development, particularly with React and Java, the job posting requires deep expertise in TypeScript and experience leading design systems at scale, which the candidate does not explicitly demonstrate. The role is also focused on technical leadership within a UX context, which may not align with the candidate's background primarily in backend and general software engineering. Additionally, the candidate's experience does not mention working with component libraries or design systems, which is a key requirement for this position.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
@@ -4692,7 +4692,7 @@
     "first_seen": "2026-10-26T15:42:34.411Z"
   },
   {
-    "id": 36,
+    "id": 37,
     "external_id": "e53c5be6-5c1a-4870-ad85-8397a1f201de",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -4705,7 +4705,7 @@
     "posted_at": "2026-10-26T19:22:26.739+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for a Data Engineer at Eleven Labs does not align closely with the candidate's background as a full-stack software engineer. While the candidate has strong experience in backend development and fintech, the focus on data engineering may require additional specific skills in data processing and analytics that are not highlighted in the candidate's profile. Furthermore, the job title suggests a more specialized role that may not leverage the candidate's full-stack capabilities.",
+    "reasoning": "The job posting for a Data Engineer at Eleven Labs does not align closely with the candidate's expertise as a full-stack software engineer. While the candidate has strong backend skills in Java and SQL, the role appears to focus more on data engineering, which may require additional specific skills in data processing and analytics that are not highlighted in the candidate's profile. Furthermore, the candidate's primary interest lies in fintech and product engineering, which may not fully overlap with the responsibilities of a data engineering position.",
     "applied_at": null,
     "first_seen": "2026-10-26T22:09:38.694Z"
   },
@@ -4728,7 +4728,7 @@
     "first_seen": "2026-10-26T22:09:38.694Z"
   },
   {
-    "id": 15,
+    "id": 17,
     "external_id": "8212319",
     "source": "greenhouse",
     "company": "Stripe",
@@ -4741,12 +4741,12 @@
     "posted_at": "2026-10-27T05:37:14-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in backend development with Java and APIs, which aligns well with the requirements for building reliable, scalable systems at Stripe. Their experience in fintech and ownership of product initiatives matches the role's emphasis on driving software projects independently. However, the job requires specific experience with GraphQL APIs and backend-for-frontend systems, which the candidate does not explicitly mention. Additionally, while they are proficient with AI-assisted tools, the job emphasizes fluency in these tools as a minimum requirement, which may not be fully demonstrated in the candidate's profile.",
+    "reasoning": "The candidate has a strong background in backend development, particularly with Java and APIs, which aligns well with the job's requirements for building reliable, scalable APIs and backend systems. Their experience in fintech is a plus, given Stripe's focus on financial infrastructure. However, the job emphasizes experience with GraphQL and backend-for-frontend systems, areas where the candidate may need to stretch their skills. Additionally, while the candidate has experience with AI-assisted tools, the job requires fluency in using these tools as part of day-to-day engineering, which may not be fully demonstrated in their background.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 16,
+    "id": 18,
     "external_id": "8226890",
     "source": "greenhouse",
     "company": "Stripe",
@@ -4764,7 +4764,7 @@
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 35,
+    "id": 36,
     "external_id": "1102b455-bc29-4db3-947e-81056a37b99c",
     "source": "ashby",
     "company": "ICEYE",
@@ -4782,7 +4782,7 @@
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 39,
+    "id": 40,
     "external_id": "744000158060521",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -4795,12 +4795,12 @@
     "posted_at": "2026-10-27T14:16:26.298Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Senior Antibot Engineer at NielsenIQ is highly specialized in reverse engineering, cryptography, and advanced security protocols, which are not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate's experience focuses on software development, particularly in Java and React, rather than the specific skills required for analyzing and bypassing security mechanisms. Additionally, the role's emphasis on reverse engineering and custom tool development does not match the candidate's background or interests.",
+    "reasoning": "The job posting for a Senior Antibot Engineer at NielsenIQ is highly specialized in reverse engineering, cryptography, and advanced security protocols, which are not part of the candidate's expertise. While the candidate has strong experience in software engineering and fintech, their background does not align with the specific skills required for this role, such as proficiency in tools like IDA Pro or Ghidra, and expertise in bypassing anti-bot mechanisms. Additionally, the focus on stealthy scraping techniques and deep knowledge of web and network protocols is outside the candidate's stated experience.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 30,
+    "id": 31,
     "external_id": "8324235",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -4813,12 +4813,12 @@
     "posted_at": "2026-10-27T11:04:08-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position is for a Senior Director of Engineering, which requires extensive leadership experience managing large teams (70+ engineers) and a strong background in geospatial platforms and government solutions. The candidate has 10+ years of software engineering experience but lacks the required supervisory experience at the level of managing multiple layers of engineering management and does not have a background in building civil government solutions. Additionally, the role requires a hybrid work model with in-office presence, which may not align with the candidate's preferences for remote work.",
+    "reasoning": "The position of Senior Director of Engineering requires extensive leadership experience managing large teams (70+ engineers) and a strong background in geospatial platforms or government technology solutions, which the candidate does not possess. While the candidate has significant software engineering experience, they lack the necessary supervisory experience and specific domain knowledge required for this role. Additionally, the role is a senior leadership position, which is a mismatch for the candidate's current focus on full-stack engineering roles.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 26,
+    "id": 27,
     "external_id": "8040380003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4831,12 +4831,12 @@
     "posted_at": "2026-10-27T09:28:02-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job requires proficiency in Python or Kotlin for backend systems, which the candidate lacks. Additionally, the role is based in Spain, which does not align with the candidate's preference for remote work from the Netherlands. The requirement for experience in mobile applications using React Native is also a gap for the candidate.",
+    "reasoning": "While the candidate has extensive experience in full-stack development and a strong fintech background, the job posting specifically requires experience with mobile applications using React Native, which the candidate does not possess. Additionally, the role emphasizes collaboration with product management and design, which may stretch the candidate's experience in those areas. The requirement for on-call rotation may also be a concern if the candidate is not accustomed to such responsibilities.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 28,
+    "id": 29,
     "external_id": "8040394003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4849,12 +4849,12 @@
     "posted_at": "2026-10-27T09:27:01-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer II position based in Spain, which does not align with the candidate's preference for roles based in the Netherlands or remote roles anywhere in Europe. Additionally, the job requires only 1.5+ years of experience, while the candidate has over 10 years, making this position a mismatch in terms of seniority. The requirement for on-call rotation may also not align with the candidate's preferences.",
+    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference for roles in the Netherlands. Additionally, the position is labeled as Software Engineer II, which suggests a level of experience that may not align with the candidate's seniority and extensive background. The requirement for 1.5+ years of experience is significantly lower than the candidate's 10+ years, indicating a mismatch in seniority expectations.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 29,
+    "id": 30,
     "external_id": "8034645003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4867,12 +4867,12 @@
     "posted_at": "2026-10-27T09:26:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Staff Software Engineer position based in Spain, which does not align with the candidate's preference to work in the Netherlands. Additionally, the role requires proficiency in Python, Kotlin, AWS, and Kubernetes, which are not mentioned in the candidate's skill set. The requirement for on-call rotation and the specific focus on recovery systems may also not match the candidate's experience in fintech and full-stack development.",
+    "reasoning": "The job posting for the Staff Software Engineer at Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the role emphasizes experience with Python, Kotlin, AWS, and Kubernetes, which are not highlighted in the candidate's profile. While the candidate has a strong background in Java and SQL, the specific technologies and location requirement make this opportunity unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 23,
+    "id": 24,
     "external_id": "8041432003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4885,12 +4885,12 @@
     "posted_at": "2026-10-27T09:26:04-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Manager, Machine Learning Engineering position, which requires significant experience in machine learning and managing a team of engineers. The candidate has a strong background in software engineering and fintech but lacks specific experience in machine learning techniques and team management, as well as the requirement to be based in Spain. Additionally, the role involves leading ML projects, which is outside the candidate's stated expertise.",
+    "reasoning": "This job posting is for a Manager, Machine Learning Engineering position, which requires a strong background in machine learning and experience managing a team of engineers. The candidate, while experienced in software engineering and fintech, does not have the required machine learning expertise or management experience specified in the posting. Additionally, the role is remote but based in Spain, which does not align with the candidate's preference for roles based in the Netherlands or remote roles anywhere in Europe.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 24,
+    "id": 25,
     "external_id": "8043027003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4903,12 +4903,12 @@
     "posted_at": "2026-10-27T08:29:34-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Manager position requiring extensive management experience, specifically 5+ years managing engineering teams and 2+ years managing managers. The candidate has strong technical skills and over 10 years of software engineering experience but lacks the necessary managerial experience and leadership roles required for this position. Additionally, the role is based in Spain, which does not align with the candidate's preference for remote work in the Netherlands.",
+    "reasoning": "This position requires significant management experience, specifically 5+ years managing engineering teams and 2+ years managing managers, which the candidate does not possess. While the candidate has over 10 years of software engineering experience, they have not held a managerial role or led a multi-team engineering organization. Additionally, the job is based in Spain and requires the candidate to be located there, which does not align with the candidate's current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 37,
+    "id": 38,
     "external_id": "13fcee94-512f-4229-b7ab-f91d3fdd24e3",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -4921,12 +4921,12 @@
     "posted_at": "2026-10-27T17:20:05.729+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Content Creator & Strategist at Eleven Labs is unrelated to the candidate's expertise in software engineering. The candidate has a strong background in full-stack development, particularly in fintech, while this role appears to focus on content creation and strategy, which does not align with their skills or career goals. Additionally, the candidate is not interested in roles outside of software engineering, making this position a poor fit.",
+    "reasoning": "This job posting is for a Content Creator & Strategist role, which is unrelated to the candidate's expertise in software engineering. The candidate has a strong background in full-stack development, particularly in fintech, but this position does not align with their skills or career goals. Additionally, the role does not specify any technical requirements that match the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-27T21:40:53.174Z"
   },
   {
-    "id": 9,
+    "id": 12,
     "external_id": "8330526",
     "source": "greenhouse",
     "company": "Typeform",
@@ -4939,12 +4939,12 @@
     "posted_at": "2026-10-28T07:16:00-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong technical skills in software engineering, particularly in Java, SQL, and React, which are relevant to the role. However, the job is focused on IT engineering and service management, requiring specific experience with ITIL practices, corporate IT systems, and tools like Okta and Google Workspace, which the candidate does not explicitly possess. Additionally, the role emphasizes automation and AI in IT operations, areas where the candidate has some experience but not the depth required for this position.",
+    "reasoning": "While the candidate has strong experience in software engineering and a solid background in fintech, the job posting is for a Senior IT Engineer role focused on IT operations, service management, and automation, which diverges from the candidate's core competencies. The candidate lacks specific experience with ITIL principles, corporate IT systems, and the technologies mentioned (e.g., Apple devices, Okta, Google Workspace). Additionally, the role emphasizes IT service management rather than software development, which may not align with the candidate's career goals.",
     "applied_at": null,
     "first_seen": "2026-10-28T11:55:48.258Z"
   },
   {
-    "id": 19,
+    "id": 15,
     "external_id": "8330469",
     "source": "greenhouse",
     "company": "Reddit",
@@ -4956,13 +4956,13 @@
     "description": "<div class=\"content-intro\"><div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <div class=\"p-rich_text_section\">Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit <a class=\"c-link\" href=\"http://www.redditinc.com/\" target=\"_blank\" data-stringify-link=\"http://redditinc.com\" data-sk=\"tooltip_parent\">www.redditinc.com</a>.</div> </div> </div> </div> </div> </div></div><p><strong>This role is open to candidates based in the UK or the Netherlands.&nbsp;</strong></p> <p>Our ads team is developing Dynamic Product Ads, enabling us to match users to specific advertiser products. Our vision is for Reddit’s product ads to be highly relevant and contextual. A user browsing r/golf sees ads for popular golf clubs. A user reading a thread on r/buyitforlife about sunglasses sees ads for the exact models being discussed, just a few clicks away from a purchase. To achieve this vision, we need a highly scalable catalog infrastructure and intuitive user experience to onboard thousands of advertisers and ingest millions of products into our systems.</p> <p>As the Engineering Manager for the Product Catalogs team at Reddit, you will lead the full stack team responsible for our entire advertiser-facing experience. You will build UIs, APIs, and backend systems that manage advertiser’s products. The team also works closely with the knowledge graph teams to power organic shopping. This role combines technical expertise, leadership abilities, and drive to understand and deliver on customer needs.</p> <p><strong>Responsibilities:</strong></p> <ul> <li>Create a world class catalogs system that can scale to support billions of products</li> <li>Work closely with product managers and designers to craft compelling user experiences</li> <li>Collaborate with a wide range of teams from Ad Formats to Ad Delivery to ensure successful end-to-end delivery of product ads</li> <li>Establish and manage to SLAs within your team</li> <li>Be a strong mentor and cross-functional advocate for your team</li> <li>Contribute meaningfully to team strategy. We give everyone a seat at the table and encourage active participation in planning for the future. Don’t just come along for the ride.</li> </ul> <p><strong>Required Qualifications:</strong></p> <ul> <li>7+ years of experience in backend or full stack product development</li> <li>2+ years of experience managing engineering teams</li> <li>You're highly technical, enough to solve almost any problem your team has yourself, but you prefer to guide your team into solving them.</li> <li>Ability to work independently. You’ll be working with stakeholders that are mostly based in North America. You need to be able to make decisions and solve problems autonomously.</li> <li>Excellent communication skills. You must be able to collaborate effectively with teams in a fully-remote environment and discuss complex topics with technical and non-technical audiences.</li> </ul> <p><strong>Benefits:</strong></p> <ul> <li data-renderer-start-pos=\"3156\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support</li> <li data-renderer-start-pos=\"3273\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Family Planning Support</li> <li data-renderer-start-pos=\"3301\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Gender-Affirming Care</li> <li data-renderer-start-pos=\"3326\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Mental Health &amp; Coaching Benefits</li> <li data-renderer-start-pos=\"3363\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Private Pension plan with Employer-matching</li> <li data-renderer-start-pos=\"3410\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">100% employer-sponsored group medical plan</li> <li data-renderer-start-pos=\"3458\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Income Replacement Programs</li> <li data-renderer-start-pos=\"3489\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Flexible Vacation &amp; Paid Volunteer Time Off</li> <li data-renderer-start-pos=\"3536\" data-local-id=\"8c5ff10a-7296-4539-815b-c31a42a4d2d0\">Generous Paid Parental Leave</li> </ul><div class=\"content-conclusion\"><p>In select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.</p> <p><span style=\"font-weight: 400;\">During the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable.&nbsp; We will not sell your personal information or disclose it to any third party for their marketing purposes.&nbsp; We will delete any recording of your interview promptly after making a hiring decision.&nbsp; For more information about how we will handle your personal information, including our retention of it, please refer to our <a href=\"https://redditinc.com/policies/candidate-privacy-policy\">Candidate Privacy Policy for Potential Employees and Contractors</a>.</span></p> <p><em><span style=\"font-weight: 400;\">Reddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve.&nbsp; Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.</span></em></p></div>",
     "posted_at": "2026-10-28T06:20:40-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong fintech background, the job posting is for an Engineering Manager position, which requires at least 2 years of experience managing engineering teams. The candidate's CV does not indicate any formal management experience, which is a significant gap. Additionally, the role emphasizes creating scalable systems and leading a full stack team, which may stretch the candidate's current experience focused more on development rather than leadership.",
+    "verdict": "fair",
+    "reasoning": "The candidate has a strong background in full-stack development with over 10 years of experience, particularly in fintech, which aligns well with Reddit's focus on product catalogs. However, the role requires 2+ years of experience managing engineering teams, which is not explicitly mentioned in the candidate's experience. While the candidate has led initiatives and supported teams, they may need to demonstrate more formal leadership experience to fully meet the requirements. Additionally, the candidate's experience with product development and APIs is relevant, but they may need to adapt to the specific challenges of a large-scale catalog system.",
     "applied_at": null,
     "first_seen": "2026-10-28T11:55:48.258Z"
   },
   {
-    "id": 11,
+    "id": 10,
     "external_id": "8916753002",
     "source": "greenhouse",
     "company": "GitLab",
@@ -4975,7 +4975,7 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong technical background, the job posting is for a managerial role focused on leading a team of Professional Services Engineers, which requires significant experience in managing teams and customer-facing engagements. The candidate's experience is primarily as a software engineer rather than in a managerial capacity, which presents a gap. Additionally, the role emphasizes customer service and consulting skills, which are not highlighted in the candidate's profile.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting is for a managerial role focused on leading a team of Professional Services Engineers, which requires significant experience in managing technical teams and customer-facing engagements. The candidate's experience is primarily as a software engineer and does not explicitly demonstrate leadership in a professional services context. Additionally, the role emphasizes customer engagement and delivery management, areas where the candidate has less direct experience.",
     "applied_at": null,
     "first_seen": "2026-10-28T17:47:00.729Z"
   },
@@ -4996,5 +4996,23 @@
     "reasoning": null,
     "applied_at": null,
     "first_seen": "2026-10-28T17:47:00.729Z"
+  },
+  {
+    "id": 34,
+    "external_id": "f6653a8d-b498-425e-850b-c6a760eb88b3",
+    "source": "ashby",
+    "company": "Tempo Software",
+    "title": "Senior Backend Developer ",
+    "location": "Canada; United Kingdom; Spain; Portugal",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/tempo-io/f6653a8d-b498-425e-850b-c6a760eb88b3",
+    "description": "",
+    "posted_at": "2026-10-28T21:52:04.653+00:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is not suitable for the candidate as it is located in Canada, the United Kingdom, Spain, or Portugal, while the candidate is based in the Netherlands and is open to remote roles but not to relocating. Additionally, the job does not specify remote work options, which is a significant constraint for the candidate. Therefore, the location and potential work arrangement make this opportunity a mismatch.",
+    "applied_at": null,
+    "first_seen": "2026-10-28T22:05:11.407Z"
   }
 ]
