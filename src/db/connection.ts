@@ -1,5 +1,6 @@
 import { DatabaseSync } from 'node:sqlite';
 import { getPaths, ensureDirs } from '../storage/paths.js';
+import { matchesCountry } from '../market.js';
 
 let _db: DatabaseSync | null = null;
 
@@ -11,6 +12,14 @@ export function getDb(): DatabaseSync {
   _db.exec('PRAGMA journal_mode = WAL;');
   _db.exec('PRAGMA foreign_keys = ON;');
   _db.exec(SCHEMA);
+  // One country rule for the scan gate and SQL: "Milano" is Italy in both.
+  // Without this, the country filter falls back to LIKE '%Italy%' and silently
+  // drops every posting that names only a city.
+  _db.function('matches_country', { deterministic: true }, (location, country) => {
+    const loc = typeof location === 'string' ? location : '';
+    const ctry = typeof country === 'string' ? country : '';
+    return matchesCountry(loc, ctry) ? 1 : 0;
+  });
   for (const column of [
     'category TEXT',
     'normalized_locations TEXT',

@@ -3,7 +3,7 @@
     {
       "name": "italy-roles",
       "country": "Italy",
-      "limit": 30,
+      "limit": 100,
       "output": ".jobhopper/exports/italy-roles.html",
       "title": "Italy engineering roles",
       "description": "Software engineering roles in Italy, last 30 days",

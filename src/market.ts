@@ -4,11 +4,27 @@
  * rules — one place to widen the market or loosen the cutoff later.
  */
 
-/** Countries jobhopper currently targets (substring-matched against location text). */
+/** Countries jobhopper currently targets. */
 export const TARGET_COUNTRIES = ['Italy', 'Spain', 'Netherlands'] as const;
+export type TargetCountry = (typeof TARGET_COUNTRIES)[number];
 
-const COUNTRY_ALIASES: Record<(typeof TARGET_COUNTRIES)[number], string[]> = {
-  Italy: ['italia', 'milano', 'milan', 'roma', 'rome', 'torino', 'turin', 'napoli', 'naples', 'bologna'],
+/**
+ * City/region spellings that boards actually use. The scan gate and the DB
+ * country filter both read this list, so "Milano" counts as Italy everywhere.
+ */
+const COUNTRY_ALIASES: Record<TargetCountry, string[]> = {
+  Italy: [
+    'italia', 'italy',
+    'milano', 'milan', 'roma', 'rome', 'torino', 'turin', 'napoli', 'naples', 'bologna',
+    'firenze', 'florence', 'genova', 'genoa', 'venezia', 'venice', 'verona', 'padova', 'padua',
+    'bari', 'palermo', 'catania', 'messina', 'cagliari', 'sassari', 'perugia', 'ancona',
+    'pescara', 'lecce', 'taranto', 'reggio calabria', 'reggio emilia', 'modena', 'parma',
+    'piacenza', 'brescia', 'bergamo', 'monza', 'varese', 'novara', 'udine', 'trieste',
+    'trento', 'bolzano', 'trentino', 'alto adige', 'lombardia', 'piemonte', 'veneto',
+    'toscana', 'lazio', 'campania', 'puglia', 'sicilia', 'sardegna', 'liguria', 'friuli',
+    'marche', 'umbria', 'abruzzo', 'molise', 'basilicata', 'calabria', 'emilia romagna',
+    'emilia-romagna',
+  ],
   Spain: ['españa', 'espana', 'madrid', 'barcelona', 'valencia', 'sevilla', 'seville', 'bilbao', 'malaga'],
   Netherlands: ['nederland', 'amsterdam', 'rotterdam', 'utrecht', 'den haag', 'the hague', 'eindhoven', 'groningen'],
 };
@@ -17,17 +33,40 @@ const COUNTRY_ALIASES: Record<(typeof TARGET_COUNTRIES)[number], string[]> = {
 export const MAX_JOB_AGE_DAYS = 30;
 export const TARGET_MARKET_MAX_AGE_DAYS = 3;
 
-/** True if `location` mentions at least one target country. */
-export function isTargetMarket(location: string | null | undefined): boolean {
-  if (!location) return false;
-  const lower = location.toLowerCase();
-  // Whole-word match: plain substring matching let "manufacturing" hit "turin".
-  const terms = TARGET_COUNTRIES.flatMap((c) => [c.toLowerCase(), ...COUNTRY_ALIASES[c]]);
-  return terms.some((term) => new RegExp(`(^|[^\\p{L}])${escapeRegExp(term)}($|[^\\p{L}])`, 'u').test(lower));
+const escapeRegExp = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const wholeWord = (term: string) => new RegExp(`(^|[^\\p{L}])${escapeRegExp(term)}($|[^\\p{L}])`, 'u');
+
+/** Precompiled per country: the English name plus every alias. */
+const COUNTRY_MATCHERS: Record<TargetCountry, RegExp[]> = Object.fromEntries(
+  TARGET_COUNTRIES.map((country) => [
+    country,
+    [country, ...COUNTRY_ALIASES[country]].map((term) => wholeWord(term.toLowerCase())),
+  ]),
+) as Record<TargetCountry, RegExp[]>;
+
+/** True when `country` names one of the target markets (case-insensitive). */
+export function isTargetCountry(country: string | null | undefined): country is TargetCountry {
+  if (!country) return false;
+  const lower = country.trim().toLowerCase();
+  return TARGET_COUNTRIES.some((c) => c.toLowerCase() === lower);
 }
 
-function escapeRegExp(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+/**
+ * True if `location` is in `country`, matching its city/region aliases with
+ * whole words ("Manufacturing" is not Turin, "Bolognaise" is not Bologna).
+ */
+export function matchesCountry(location: string | null | undefined, country: string): boolean {
+  if (!location || !country) return false;
+  const lower = location.toLowerCase();
+  const target = TARGET_COUNTRIES.find((c) => c.toLowerCase() === country.trim().toLowerCase());
+  const matchers = target ? COUNTRY_MATCHERS[target] : [wholeWord(country.trim().toLowerCase())];
+  return matchers.some((re) => re.test(lower));
+}
+
+/** True if `location` mentions at least one target country. */
+export function isTargetMarket(location: string | null | undefined): boolean {
+  return TARGET_COUNTRIES.some((country) => matchesCountry(location, country));
 }
 
 /**
@@ -46,9 +85,13 @@ export function isFresh(postedAt: string | null | undefined, now: Date = new Dat
 
 const ENGINEERING_KEYWORDS = [
   'engineer', 'developer', 'software', 'frontend', 'front-end', 'backend', 'back-end',
-  'full-stack', 'fullstack', 'devops', 'sre', 'site reliability', 'data engineer',
+  'full-stack', 'fullstack', 'full stack', 'devops', 'sre', 'site reliability', 'data engineer',
   'ml engineer', 'machine learning engineer', 'platform engineer', 'infrastructure engineer',
   'qa engineer', 'test engineer', 'security engineer', 'systems engineer',
+  // Italian titles. The gate used to be English-only, so these never reached the
+  // judge. Broad on purpose: the judge is the quality gate, this only decides
+  // what is worth a model call.
+  'sviluppator', 'programmator', 'sviluppo software', 'ingegnere informatico',
 ];
 const MUSIC_KEYWORDS = [
   'music', 'audio', 'a&r', 'sound design', 'sound engineer', 'composer', 'mastering',

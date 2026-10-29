@@ -1,7 +1,7 @@
 import { getDb } from './connection.js';
 import type { Job, SearchRow, Verdict } from './types.js';
 import type { SQLInputValue } from 'node:sqlite';
-import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
+import { isTargetMarket, isFresh, isRelevantRole, isTargetCountry } from '../market.js';
 
 export interface InsertJobInput {
   externalId: string;
@@ -170,8 +170,15 @@ function buildListSql(filters: ListFilters): { sql: string; params: SQLInputValu
   const conds: string[] = [];
   const params: SQLInputValue[] = [];
   if (filters.country) {
-    conds.push('location LIKE ?');
-    params.push(`%${filters.country}%`);
+    // Target markets match city/region aliases too ("Milano" = Italy); other
+    // country names keep the plain substring filter.
+    if (isTargetCountry(filters.country)) {
+      conds.push('matches_country(location, ?) = 1');
+      params.push(filters.country);
+    } else {
+      conds.push('location LIKE ?');
+      params.push(`%${filters.country}%`);
+    }
   }
   if (filters.remote) {
     conds.push("(workplace_type IS NOT NULL AND (workplace_type LIKE '%Remote%' OR workplace_type LIKE '%remote%'))");
@@ -245,8 +252,13 @@ export function searchJobs(options: {
   conds.push('jobs_fts MATCH ?');
   params.push(sanitizeFtsQuery(options.query));
   if (options.country) {
-    conds.push('jobs.location LIKE ?');
-    params.push(`%${options.country}%`);
+    if (isTargetCountry(options.country)) {
+      conds.push('matches_country(jobs.location, ?) = 1');
+      params.push(options.country);
+    } else {
+      conds.push('jobs.location LIKE ?');
+      params.push(`%${options.country}%`);
+    }
   }
   if (options.remote) {
     conds.push("(jobs.workplace_type IS NOT NULL AND (jobs.workplace_type LIKE '%Rem%'))");

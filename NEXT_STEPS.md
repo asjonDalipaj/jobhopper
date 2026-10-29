@@ -447,3 +447,92 @@ URL, so no stale tab), `favicon-32.png` (transparent) and `apple-touch-icon.png`
 **Verification.** Playwright header captures at 1000px light, 1000px dark and 390px mobile; a fresh
 profile requests `/jobhopper-mark.svg` (the cache-busted URL); PNG and SVG render at 16/32px and the
 touch icon at 96px; all three assets serve 200 from `web/dist`.
+
+## Plan — Italy coverage: boards, adapters and the judging cap (added 2026-10-29)
+
+**Why now.** Italy is the thinnest market, and the snapshot shows three separate causes, not one.
+
+**Measured today** (`.jobhopper/exports/jobs.json`, 292 rows):
+- 51 rows are Italy-ish (17%). By source: ashby 26, greenhouse 23, workable 1, smartrecruiters 1;
+  lever / teamtailor / recruitee contribute zero.
+- Their verdicts: 15 `no`, 23 unjudged, 11 `weak`, 2 `fair` — only 13 of 51 are usable.
+- `jobs.json` caps `italy-roles` at `limit: 30`; `run` rebuilds that tab from the cap and the
+  workflow judges `judge --tab italy-roles`. With 51 Italy rows, ~21 never get a verdict.
+- `isRelevantRole` matches English titles only: "Sviluppatore Backend" / "Ingegnere del Software"
+  are dropped at scan time, before the judge sees them.
+- `COUNTRY_ALIASES.Italy` has 9 cities; Bergamo, Brescia, Trento, Bolzano, Trieste, Parma,
+  Cagliari, Bari, Palermo, Catania, Lecce, Pescara, Ancona, Udine, Monza, Varese are missing.
+- One 3-day freshness window applies to every market; Italian boards often post weekly.
+
+**The tracker** (6,427 rows) is a careers-page/ATS census, not a platform list: Workday 454,
+Greenhouse 273, Ashby 224, Workable 156, Lever 134, iCIMS 73, BambooHR 72, SmartRecruiters 47,
+Teamtailor 37, Personio 11, Recruitee 10. Only 32 rows are Italian-ish and most are unsupported
+(intervieweb, Taleo, custom .it sites). Useful for ATS priority and for harvesting companies on
+supported ATSs; not an Italian source by itself.
+
+### A. Stop losing the jobs we already have (½ day)
+1. `italy-roles` `limit: 30 → 100`; judge every Italy row, not just tab members
+   (`judge --all --limit 200` after the tab pass).
+2. Italian title keywords in `isRelevantRole`: sviluppatore/sviluppatrice, ingegnere/ingegnera,
+   programmatore, software, backend, frontend, full stack, devops, site reliability, data engineer,
+   machine learning, QA, sicurezza informatica, sistemista. Keep the gate broad; the judge still
+   filters civil/mechanical "ingegnere".
+3. Expand Italy aliases with the full city list plus "italia"/"italy".
+4. Acceptance: 100% of Italy rows judged; ≥ 35 non-`no` Italy verdicts; before/after counts here.
+
+### B. Widen the Italian employer base on existing adapters (1–2 days)
+Seven adapters already exist; the gap is the ~60-entry, NL-centric company list.
+1. One-off `scripts/discover-boards.ts`: read a careers-URL list, normalize to (ats, token), probe
+   the public feed, keep boards with ≥ 1 posting located in Italy.
+2. Input lists: the tracker's ~860 supported-ATS rows + Italian startup/scaleup lists.
+   Add the resulting ~30–60 boards to `DEFAULT_COMPANIES` under an "Italy — live-verified" comment.
+3. Acceptance: registry grows only with boards that return Italy rows; `companies verify` shows no
+   dead tokens; scan stays under ~10 min.
+
+### C. New adapters, in reachability order
+1. **Workday** (`/wday/cxs/<tenant>/<site>/jobs`, public JSON; 454 companies in the tracker and
+   common in Italian enterprises). Company entry = tenant + site; POST search with pagination.
+2. **BambooHR** (`<company>.bamboohr.com/careers/list`) and **Personio**
+   (`<company>.jobs.personio.de/search.json`) — small public JSON, EU SMBs.
+3. **Careerjet** (affiliate API, 70 markets incl. Italy; free `ak`) and **Jooble** (REST key) —
+   whole-market aggregators, `fetchAll` scoped to Italy.
+4. **InfoJobs Italia** (developer.infojobs.net) — OAuth/partner access; probe before committing.
+5. **Inrecruiting / intervieweb** (Italian ATS: Fineco, Bonatti…) — custom HTML/JSON; probe.
+6. Last resort: Italian portals without APIs (Trovolavoro, Lavoro24, Monster IT, Almalaurea,
+   Bakeca) — only with a robots/ToS check and fixture-tested parsers.
+Avoid: LinkedIn, Indeed, Glassdoor (no public API; ToS).
+
+### D. Freshness and language policy
+- Try 7 days for Italy/Spain (weekly boards), keeping 3 for NL — then measure noise.
+- Italian postings may prefer an Italian CV/letter; separate decision, today everything is English.
+
+**Order.** A (immediate, measurable) → B (cheap coverage) → C1 Workday → C3 Careerjet → C2/C5 → D.
+Every adapter gets a fixture test and a `verify` entry; no scraping without a robots/ToS check.
+
+**Overall acceptance.** Italy rows/week ≥ 3× baseline; judged share 100%; ≥ 3 new sources live;
+scan under 15 min; no duplicate external ids; every parser covered by tests.
+
+**Open questions.** (1) remote-Italy roles included, or on-site/hybrid only? (2) OK to register
+Careerjet/Jooble/InfoJobs partner keys? (3) startups only, or enterprises too (Workday)? (4) is a
+7-day Italy window acceptable? (5) Italian-language CV/letter wanted later?
+
+### Phase A — done 2026-10-29
+
+The leak was worse than the tab cap: `listJobs` filtered country with `location LIKE '%Italy%'`, so a
+posting in "Milano" or "Roma" never entered `italy-roles` — and the judge only sees tab members. The
+scan gate (aliases) had accepted those rows, which is why they sat unjudged in the snapshot.
+
+- `matchesCountry()` is now the single country rule; `getDb()` registers it as the SQLite function
+  `matches_country(location, country)`, and both `listJobs` and `searchJobs` use it for target
+  countries (other countries keep the substring filter).
+- Italy aliases grew to 60+ cities/regions (Bergamo, Brescia, Trento, Bari, Palermo… plus
+  lombardia/piemonte/…); whole-word matching still rejects "Manufacturing", "Romania", "Barilla".
+- Italian title stems in `isRelevantRole`: sviluppator, programmator, sviluppo software,
+  ingegnere informatico — the gate used to be English-only.
+- `italy-roles` `limit: 30 → 100`, so the tab (dashboard + judge) covers the whole market.
+- Tests: 75 pass, including a DB test that "Milano, Lombardia"/"Bergamo" match Italy and
+  "Berlin, Germany" does not.
+
+Local DB is stale (165 rows vs the 292-row snapshot): 14 Italy rows, and "Rome"/"Milan" were invisible
+to the old filter. The real before/after comes from the next CI scan (dispatched after the push):
+51 Italy rows / 23 unjudged before; acceptance is 0 unjudged and ≥ 35 non-`no`.

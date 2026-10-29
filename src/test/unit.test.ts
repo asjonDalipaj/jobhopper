@@ -93,6 +93,9 @@ test('isTargetMarket matches Italy/Spain/Netherlands substrings, case-insensitiv
   assert.equal(isTargetMarket('Milano'), true);
   assert.equal(isTargetMarket('Madrid'), true);
   assert.equal(isTargetMarket('Utrecht, Nederland'), true);
+  assert.equal(isTargetMarket('Bergamo, Lombardia'), true);
+  assert.equal(isTargetMarket('Bari, Puglia'), true);
+  assert.equal(isTargetMarket('Trento'), true);
   assert.equal(isTargetMarket('Berlin, Germany'), false);
   assert.equal(isTargetMarket(''), false);
   assert.equal(isTargetMarket(null), false);
@@ -103,6 +106,10 @@ test('isTargetMarket matches whole words only (no substring false positives)', (
   assert.equal(isTargetMarket('Manufacturing & Distribution'), false); // contains "turin"
   assert.equal(isTargetMarket('Remote - Manufacturing'), false);
   assert.equal(isTargetMarket('Bolognaise Foods'), false); // contains "bologna"
+  assert.equal(isTargetMarket('Romania'), false); // contains "roma"
+  assert.equal(isTargetMarket('Barilla'), false); // contains "bari"
+  assert.equal(isTargetMarket('Parmalat'), false); // contains "parma"
+  assert.equal(isTargetMarket('Marchetti Srl'), false); // contains "marche"
   assert.equal(isTargetMarket('Torino, Italy'), true);
   assert.equal(isTargetMarket('Remote (Italia)'), true);
   assert.equal(isTargetMarket('Barcelona, España'), true);
@@ -123,6 +130,12 @@ test('isRelevantRole keeps engineering and music titles, rejects unrelated roles
   assert.equal(isRelevantRole('Senior Backend Engineer'), true);
   assert.equal(isRelevantRole('Music Producer'), true);
   assert.equal(isRelevantRole('Audio Engineer'), true);
+  assert.equal(isRelevantRole('Sviluppatore Backend'), true);
+  assert.equal(isRelevantRole('Sviluppatore Full Stack'), true);
+  assert.equal(isRelevantRole('Ingegnere Informatico'), true);
+  assert.equal(isRelevantRole('Programmatore Java'), true);
+  assert.equal(isRelevantRole('Ingegnere Civile'), false);
+  assert.equal(isRelevantRole('Impiegato Amministrativo'), false);
   assert.equal(isRelevantRole('Sales Development Representative'), false);
   assert.equal(isRelevantRole('Product Manager'), false);
 });
