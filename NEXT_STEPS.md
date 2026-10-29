@@ -536,3 +536,28 @@ scan gate (aliases) had accepted those rows, which is why they sat unjudged in t
 Local DB is stale (165 rows vs the 292-row snapshot): 14 Italy rows, and "Rome"/"Milan" were invisible
 to the old filter. The real before/after comes from the next CI scan (dispatched after the push):
 51 Italy rows / 23 unjudged before; acceptance is 0 unjudged and ≥ 35 non-`no`.
+
+### Phase A — measured (scan 40955668545, 2026-10-29)
+
+Like-for-like with `matchesCountry` on the previous vs new snapshot:
+
+| snapshot | Italy rows | no | unjudged | weak | fair | usable |
+|---|---|---|---|---|---|---|
+| before | 32 | 14 | 9 | 7 | 2 | 9 |
+| after | 32 | 16 | 6 | 8 | 2 | 10 |
+
+The fresh `italy-roles` tab now holds 7 rows (city-only locations included). The scan fetched 15,351
+postings, kept 44 target-market/fresh/relevant, and dropped 14,439 off-market + 103 off-role.
+
+**What this means.** The alias/judge leak is fixed (unjudged 9 → 6), but the ceiling is supply and
+freshness, not filtering:
+- CI rebuilds the DB every run, so the tab and judge only see this run's 44 inserts. The 6 remaining
+  unjudged rows are historical snapshot rows older than the 3-day window, so they are never re-fetched
+  and never judged.
+- Only 7 fresh Italy rows existed this run; the other 25 in the snapshot are history.
+- The `Docebo — Biassono, Italy; [object Object]` location is stale data from before the Ashby
+  `secondaryLocations` fix; the live board returns plain strings. Not a live bug.
+
+**Next levers, in order.** (a) Backfill judgments for historical snapshot rows (the 6, and any future
+ones) so the UI never shows an unjudged role; (b) Phase B boards — the real volume; (c) decide the
+7-day Italy window, which trades freshness for volume; the judge is the quality gate either way.
