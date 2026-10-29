@@ -3,7 +3,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import { extname, join, resolve } from 'node:path';
 import pc from 'picocolors';
 import { getJobByExternal, listJobs, setJobApplied } from '../db/jobs-repo.js';
-import { activeRun, artifactDir, finishedPreps, getPrepRun, hasDisplay, latestPrep, startPrep, type PrepStepId } from '../apply/prep.js';
+import { activeRun, artifactDir, finishedPreps, getPrepRun, hasDisplay, jobFromPayload, latestPrep, startPrep, type PrepStepId } from '../apply/prep.js';
 import { htmlToPlainText } from '../sources/html.js';
 
 const MIME_TYPES: Record<string, string> = {
@@ -24,14 +24,35 @@ const MIME_TYPES: Record<string, string> = {
 /** Files the artifacts endpoint may serve, by exact name. No paths. */
 const ARTIFACT_FILES = new Set(['cv.pdf', 'letter.pdf', 'letter.txt', 'form.png', 'plan.json']);
 
+/** The only non-loopback page allowed to drive this server. */
+const HOSTED_ORIGIN = 'https://jobhopper.pages.dev';
+
+/**
+ * Loopback pages (local UI, Vite dev) and the hosted build; nothing else.
+ * A request with no Origin (curl, same-origin GET) is local by definition.
+ */
+function originAllowed(origin: string | undefined): boolean {
+  if (!origin) return true;
+  if (origin === HOSTED_ORIGIN) return true;
+  return /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin);
+}
+
 function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
   res.end(JSON.stringify(body));
 }
 
+/** A prep payload is a snapshot row; anything larger is not one. */
+const MAX_BODY_BYTES = 1_000_000;
+
 async function readJsonBody<T>(req: IncomingMessage): Promise<T> {
   const chunks: Buffer[] = [];
-  for await (const chunk of req) chunks.push(chunk as Buffer);
+  let size = 0;
+  for await (const chunk of req) {
+    size += (chunk as Buffer).length;
+    if (size > MAX_BODY_BYTES) throw new Error('request body too large');
+    chunks.push(chunk as Buffer);
+  }
   return JSON.parse(Buffer.concat(chunks).toString('utf8')) as T;
 }
 
@@ -42,8 +63,22 @@ export function startWebServer(port = 3333): void {
   const webDist = resolve(process.cwd(), 'web', 'dist');
 
   const server = createServer((req: IncomingMessage, res: ServerResponse) => {
-    // CORS headers for Vite dev server proxy
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    const host = req.headers.host || 'localhost';
+    const url = new URL(req.url ?? '/', `http://${host}`);
+    const origin = req.headers.origin;
+
+    // Refuse a foreign origin before reading the body. With an accepted job
+    // payload, a remote page could otherwise point the filler — and your CV —
+    // at a form of its choosing. Preview deployments are deliberately excluded.
+    if (!originAllowed(origin)) {
+      res.writeHead(403, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ error: 'origin not allowed' }));
+      return;
+    }
+    if (origin) {
+      res.setHeader('Access-Control-Allow-Origin', origin);
+      res.setHeader('Vary', 'Origin');
+    }
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     // Chrome's Private Network Access: a page on a public origin (e.g. the
@@ -57,9 +92,6 @@ export function startWebServer(port = 3333): void {
       res.end();
       return;
     }
-
-    const host = req.headers.host || 'localhost';
-    const url = new URL(req.url ?? '/', `http://${host}`);
 
     // Record an "applied" flag from the web UI (works on the local server;
     // the static hosted site stores it in localStorage instead).
@@ -153,13 +185,18 @@ export function startWebServer(port = 3333): void {
             steps?: PrepStepId[];
             force?: boolean;
             mode?: 'fill' | 'review';
+            /** The snapshot row the hosted page rendered; used only when the DB has no row. */
+            job?: unknown;
           }>(req);
           const { source, externalId } = body;
           if (!source || !externalId) {
             sendJson(res, 400, { error: 'source and externalId are required' });
             return;
           }
-          const job = getJobByExternal(source, externalId);
+          // The local row wins (stable id, applied flag, freshest description).
+          // The snapshot copy lets a role this machine never scanned — or one
+          // purge removed — still be prepared from the hosted page.
+          const job = getJobByExternal(source, externalId) ?? jobFromPayload(body.job, source, externalId);
           if (!job) {
             sendJson(res, 404, { error: 'unknown job' });
             return;
@@ -174,6 +211,8 @@ export function startWebServer(port = 3333): void {
             sendJson(res, 409, {
               code: 'no-display',
               error: 'No desktop display for the review window. Start `jobhopper ui` from your terminal.',
+              // 0 marks a snapshot-only role: there is no local id to print.
+              jobId: job.id > 0 ? job.id : null,
             });
             return;
           }
@@ -222,11 +261,15 @@ export function startWebServer(port = 3333): void {
         return;
       }
       const job = getJobByExternal(source, externalId);
-      if (!job) {
+      // A snapshot-only role has no DB row; its artifact directory comes from
+      // the same three identity fields the client rendered, so accept them.
+      const company = job?.company ?? (url.searchParams.get('company') ?? '').trim();
+      const title = job?.title ?? (url.searchParams.get('title') ?? '').trim();
+      if (!company || !title) {
         sendJson(res, 404, { error: 'unknown job' });
         return;
       }
-      const dir = resolve(artifactDir(job));
+      const dir = resolve(artifactDir({ source, external_id: externalId, company, title }));
       const target = resolve(dir, file);
       if (!target.startsWith(`${dir}/`) || !existsSync(target)) {
         sendJson(res, 404, { error: 'artifact not found' });

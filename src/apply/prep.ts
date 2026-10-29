@@ -116,6 +116,49 @@ export function artifactDir(job: Pick<Job, 'source' | 'external_id' | 'company' 
   return join(getPaths().root, 'applications', artifactStem(job.source, job.external_id, job.company, job.title));
 }
 
+/** Long JDs are truncated before the model call anyway; this is the transport cap. */
+const MAX_PAYLOAD_DESCRIPTION = 60_000;
+
+/**
+ * A job the hosted snapshot knows but this database does not.
+ *
+ * The page sends the row it rendered, so a role that was never scanned locally
+ * can still be tailored and filled. `id: 0` marks it as not local: it must
+ * never be used for a database write, and the CLI hint is hidden for it.
+ */
+export function jobFromPayload(raw: unknown, source: string, externalId: string): Job | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const value = raw as Record<string, unknown>;
+  if (value['source'] !== source || value['external_id'] !== externalId) return null;
+
+  const text = (key: string): string => (typeof value[key] === 'string' ? (value[key] as string) : '');
+  const company = text('company').trim();
+  const title = text('title').trim();
+  const url = text('url').trim();
+  if (!company || !title || !/^https?:\/\//i.test(url)) return null;
+
+  return {
+    id: 0,
+    external_id: externalId,
+    source,
+    company,
+    title,
+    location: text('location').trim(),
+    workplace_type: null,
+    employment_type: null,
+    url,
+    description: text('description').slice(0, MAX_PAYLOAD_DESCRIPTION),
+    posted_at: null,
+    created_at: '',
+    applied_at: null,
+    tags: null,
+    category: null,
+    normalized_locations: null,
+    extracted_workplace_type: null,
+    extraction_model: null,
+  };
+}
+
 export function activeRun(source: string, externalId: string): PrepRun | undefined {
   const run = latestPrep(source, externalId);
   return run?.stage === 'running' ? run : undefined;

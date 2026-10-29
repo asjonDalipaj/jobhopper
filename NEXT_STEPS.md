@@ -387,3 +387,40 @@ blank, never hang on a hidden element. Both the selector and the 20 s click were
 resolution (`index 152`, `#iti-0__item-c152`, invisible) while the new locator picked the
 visible `select__option`. `npm test` 70 pass, `npm run build:web` clean. Live re-run of the
 Planet Labs posting still needs a human submit, as before.
+
+## Fix — prepare a snapshot-only role without a local scan (added 2026-10-29)
+
+**Symptom.** The hosted page lists roles from the committed snapshot; the popup posts only
+`{source, externalId}` to the local server, which resolves it against the local SQLite. A role
+CI found but this machine never scanned (or one purge removed) returns 404, and the dialog says
+to run `jobhopper scan` — advice that cannot work for a posting older than the 3-day ingest
+window.
+
+**Approach.** Let the page send the row it already rendered. The server still prefers the local
+row (its id, applied flag, freshest description) and falls back to a validated payload with
+`id: 0`; nothing may write to the DB with that id. Artifacts are addressed by
+`source + external_id + company + title`, so CV/letter links work for non-local rows too.
+
+1. `jobFromPayload()`: source/external_id must match the request, company/title/http(s) url
+   required, description capped at 60k.
+2. `serve.ts`: `getJobByExternal() ?? jobFromPayload(body.job)`; the `409 no-display` carries
+   the local id (or `null`); `/api/artifacts` accepts company+title for unknown rows.
+3. Web: `startPrep` sends the job; `artifactUrl` adds company+title; the no-display CLI hint
+   uses the server-resolved id and is hidden when the role is not local.
+4. Tests for the validator; Playwright check of the handoff/failed dialog states.
+
+**Acceptance.** A role present only in `jobs.json` runs prep from the hosted page with the local
+server running; CV and letter links open; a failed run still offers retry.
+
+**Hardening (from review).** The server used to answer `Access-Control-Allow-Origin: *`. With the
+job payload in the request, a remote page could POST `{mode:"fill", job:{url:<its own form>}}` and
+the filler would attach the CV there (`resolveAts` falls back to `source` for company-hosted
+boards). Now only `https://jobhopper.pages.dev` and loopback origins (`localhost`/`127.0.0.1`, any
+port) may call the server; everything else gets 403 before the body is read. Preview deployments
+are excluded on purpose, and bodies are capped at 1 MB.
+
+**Verification.** 73 node:test cases pass (3 new: accept + mark non-local, reject mismatch/blank/
+`javascript:`, cap description). Playwright against a stub bridge: a failed run renders both retry
+actions with the call log collapsed; the handoff state renders the warning and the "start over"
+hint; no-display renders the no-CLI-id message with no `<pre>`. Live curl: no Origin 200,
+`pages.dev` + `localhost:5173` 200 with echoed ACAO, foreign origin 403 for GET, OPTIONS and POST.

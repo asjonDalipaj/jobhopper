@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { detectAts, resolveAts, SUPPORTED } from '../apply/ats.js';
 import { salaryMarket, questionsFor, splitName } from '../apply/applicant.js';
 import { briefError, sameValue } from '../apply/greenhouse.js';
-import { descriptionHash } from '../apply/prep.js';
+import { descriptionHash, jobFromPayload } from '../apply/prep.js';
 import { validateLetter } from '../cv/letter.js';
 
 const job = { company: 'Acme', title: 'Staff Engineer' };
@@ -119,4 +119,55 @@ test('briefError keeps only the line a person can act on', () => {
   const long = briefError(new Error('x'.repeat(500)));
   assert.ok(long.length <= 241, `expected a capped message, got ${long.length}`);
   assert.ok(long.endsWith('…'));
+});
+
+test('jobFromPayload accepts a snapshot row and marks it non-local', () => {
+  const job = jobFromPayload(
+    {
+      source: 'greenhouse',
+      external_id: '9',
+      company: ' Acme ',
+      title: ' Engineer ',
+      location: 'Remote',
+      url: 'https://boards.greenhouse.io/acme/jobs/9',
+      description: '<p>hi</p>',
+    },
+    'greenhouse',
+    '9',
+  );
+  assert.ok(job);
+  assert.equal(job.id, 0);
+  assert.equal(job.company, 'Acme');
+  assert.equal(job.title, 'Engineer');
+  assert.equal(job.description, '<p>hi</p>');
+  assert.equal(job.applied_at, null);
+});
+
+test('jobFromPayload rejects a row that does not match or cannot be filled', () => {
+  const base = { source: 'greenhouse', external_id: '9', company: 'Acme', title: 'Engineer', url: 'https://x.test/9' };
+  assert.equal(jobFromPayload(null, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload('nope', 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, source: 'lever' }, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, external_id: '10' }, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, company: '  ' }, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, title: '' }, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, url: 'javascript:alert(1)' }, 'greenhouse', '9'), null);
+  assert.equal(jobFromPayload({ ...base, url: '' }, 'greenhouse', '9'), null);
+});
+
+test('jobFromPayload caps the description before it reaches the model', () => {
+  const job = jobFromPayload(
+    {
+      source: 'greenhouse',
+      external_id: '9',
+      company: 'Acme',
+      title: 'Engineer',
+      url: 'https://x.test/9',
+      description: 'x'.repeat(100_000),
+    },
+    'greenhouse',
+    '9',
+  );
+  assert.ok(job);
+  assert.equal(job.description.length, 60_000);
 });

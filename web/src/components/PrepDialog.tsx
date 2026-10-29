@@ -42,6 +42,8 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
   const [noDisplay, setNoDisplay] = useState(false);
   const [starting, setStarting] = useState(true);
   const [copied, setCopied] = useState(false);
+  /** Only the server knows the local id; a snapshot-only role has none. */
+  const [cliJobId, setCliJobId] = useState<number | null>(null);
 
   // The parent recreates its callback every render; the start/poll effects must
   // not restart on that, or they would re-run the whole prep in a loop.
@@ -50,12 +52,13 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
     onRunRef.current = onRun;
   }, [onRun]);
 
-  const command = `node dist/cli/index.js apply ${job.id} --review`;
+  const command = cliJobId ? `node dist/cli/index.js apply ${cliJobId} --review` : null;
 
   const begin = useCallback(
     async (options: { steps?: ('cv' | 'letter' | 'fill')[]; force?: boolean; mode?: 'fill' | 'review' }) => {
       setError(null);
       setNoDisplay(false);
+      setCliJobId(null);
       setStarting(true);
       try {
         const started = await startPrep(base, job, options);
@@ -63,8 +66,11 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
         // Let the card show "running"/"waiting" even if the dialog is closed.
         onRunRef.current(started);
       } catch (err) {
-        const failure = err as Error & { code?: string };
-        if (failure.code === 'no-display') setNoDisplay(true);
+        const failure = err as Error & { code?: string; jobId?: number | null };
+        if (failure.code === 'no-display') {
+          setNoDisplay(true);
+          setCliJobId(typeof failure.jobId === 'number' && failure.jobId > 0 ? failure.jobId : null);
+        }
         setError(failure.message);
       } finally {
         setStarting(false);
@@ -131,6 +137,7 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
   };
 
   const copy = async () => {
+    if (!command) return;
     try {
       await navigator.clipboard.writeText(command);
       setCopied(true);
@@ -246,15 +253,25 @@ export const PrepDialog: React.FC<PrepDialogProps> = ({ job, base, onClose, onRu
 
         {noDisplay && (
           <div className="mt-3 rounded-xl bg-white/70 p-3">
-            <p className="text-xs text-ink-soft">No window from this server. Run it yourself instead:</p>
-            <pre className="mt-2 overflow-x-auto rounded-lg bg-ink px-3 py-2 text-xs text-surface">{command}</pre>
-            <button
-              type="button"
-              onClick={() => void copy()}
-              className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-ink/20 bg-white px-2.5 py-1.5 text-xs font-medium text-ink"
-            >
-              <ClipboardCopy className="h-3.5 w-3.5" /> {copied ? 'Copied' : 'Copy command'}
-            </button>
+            {command ? (
+              <>
+                <p className="text-xs text-ink-soft">No window from this server. Run it yourself instead:</p>
+                <pre className="mt-2 overflow-x-auto rounded-lg bg-ink px-3 py-2 text-xs text-surface">{command}</pre>
+                <button
+                  type="button"
+                  onClick={() => void copy()}
+                  className="mt-2 inline-flex items-center gap-1.5 rounded-lg border border-ink/20 bg-white px-2.5 py-1.5 text-xs font-medium text-ink"
+                >
+                  <ClipboardCopy className="h-3.5 w-3.5" /> {copied ? 'Copied' : 'Copy command'}
+                </button>
+              </>
+            ) : (
+              <p className="text-xs leading-5 text-ink-soft">
+                No window from this server, and this role is not in your local database, so there is no CLI id to
+                run. Start <span className="font-medium text-ink">jobhopper ui</span> on a desktop, or run{' '}
+                <span className="font-medium text-ink">jobhopper scan</span> once, then retry.
+              </p>
+            )}
           </div>
         )}
 

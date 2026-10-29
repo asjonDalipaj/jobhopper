@@ -103,22 +103,41 @@ async function readJson<T>(res: Response): Promise<T> {
 
 export async function startPrep(
   base: string,
-  job: Pick<Job, 'source' | 'external_id'>,
+  job: Job,
   options: { steps?: PrepStepId[]; force?: boolean; mode?: PrepMode } = {},
 ): Promise<PrepRun> {
   const res = await fetch(`${base}/api/prep`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ source: job.source, externalId: job.external_id, ...options }),
+    // The server has no row for roles that only exist in the hosted snapshot,
+    // so send the card's own data. A local row still wins when it exists.
+    body: JSON.stringify({
+      source: job.source,
+      externalId: job.external_id,
+      job: {
+        source: job.source,
+        external_id: job.external_id,
+        company: job.company,
+        title: job.title,
+        location: job.location,
+        url: job.url,
+        description: job.description,
+      },
+      ...options,
+    }),
   });
-  const body = await readJson<{ run?: PrepRun; error?: string; code?: string }>(res);
+  const body = await readJson<{ run?: PrepRun; error?: string; code?: string; jobId?: number | null }>(res);
   if (res.status === 409 && body.run) return body.run;
   if (res.status === 404) {
-    throw new Error('This role is not in your local database yet — run `jobhopper scan`, then retry.');
+    throw new Error('This role is not in your local database yet — restart `jobhopper ui` (or run `jobhopper scan`), then retry.');
   }
   if (!res.ok || !body.run) {
-    const error = new Error(body.error ?? `prep failed (HTTP ${res.status})`) as Error & { code?: string };
+    const error = new Error(body.error ?? `prep failed (HTTP ${res.status})`) as Error & {
+      code?: string;
+      jobId?: number | null;
+    };
     error.code = body.code;
+    error.jobId = body.jobId ?? null;
     throw error;
   }
   return body.run;
@@ -149,9 +168,17 @@ export async function latestPrep(base: string, job: Pick<Job, 'source' | 'extern
 
 export function artifactUrl(
   base: string,
-  job: Pick<Job, 'source' | 'external_id'>,
+  job: Pick<Job, 'source' | 'external_id' | 'company' | 'title'>,
   file: 'cv.pdf' | 'letter.pdf' | 'letter.txt' | 'form.png' | 'plan.json',
 ): string {
-  const params = new URLSearchParams({ source: job.source, externalId: job.external_id, file });
+  // company+title address the applications/<stem> directory for roles that have
+  // no local row (the server falls back to them when the DB lookup misses).
+  const params = new URLSearchParams({
+    source: job.source,
+    externalId: job.external_id,
+    company: job.company,
+    title: job.title,
+    file,
+  });
   return `${base}/api/artifacts?${params.toString()}`;
 }
