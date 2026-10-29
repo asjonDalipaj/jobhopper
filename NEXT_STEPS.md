@@ -613,3 +613,12 @@ So the ATS layer reachable from this sheet really is thin for Italy; the missing
 aggregators (Careerjet, Jooble, InfoJobs) and Italian-native boards, not in more company harvesting.
 The Workday adapter ships anyway (token `tenant|shard|site`, no key, list paging with details only
 for target-market postings) and Ciena is registered; it is ready for any tenant we learn about.
+
+## Change — the confetti waits for the tab (added 2026-10-29)
+
+The Submitted burst mounted with the result, which arrives while the job window usually still has
+focus — so the user never saw it. `Fireworks` now fires immediately only when JobHopper is visible
+and focused, otherwise it waits for `visibilitychange`/`focus` and unsubscribes on unmount.
+
+Verified with Playwright against the local UI: hidden at mount → 0 canvases, after `visibilitychange`
+→ 1 (screenshot `fireworks-return.png`); visible + focused at mount → 1 immediately.
