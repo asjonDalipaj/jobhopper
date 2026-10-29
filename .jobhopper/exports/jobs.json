@@ -133,7 +133,7 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior Professional Services Engineer at GitLab requires specific expertise in infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly mention. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align with the candidate's primarily development-focused experience. However, the candidate's strong communication skills and experience in managing projects could be beneficial.",
+    "reasoning": "While the candidate has a strong background in software engineering, particularly in fintech and full-stack development, the job posting for a Senior Professional Services Engineer at GitLab requires specific experience with infrastructure as code technologies like Terraform and Ansible, which the candidate does not explicitly mention. Additionally, the role emphasizes customer-facing services and advisory engagements, which may not align directly with the candidate's experience primarily in development and technical support. However, the candidate's strong communication skills and experience in managing projects could be beneficial.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -204,7 +204,7 @@
     "reasoning": "This job posting is for a Lead Physical Security Engineer role, which is unrelated to the candidate's background in software engineering. The candidate has extensive experience in full-stack development, particularly in fintech, but lacks any qualifications or experience in physical security management, crisis management, or security technologies. Additionally, the role requires a bachelor's degree in criminal justice or security management, which the candidate does not possess."
   },
   {
-    "id": 6,
+    "id": 5,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -216,8 +216,8 @@
     "description": "<p><strong>This is Adyen</strong></p> <p>Adyen provides payments, data, and financial products in a single solution for customers like Facebook, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. The people of Adyen are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <p><strong>Unified Platform&nbsp;</strong></p> <p>The Unified Platform is at the heart of Adyen’s infrastructure, bringing together accounting, reporting, billing, pricing, reconciliation, and configuration into one streamlined experience. It enables us to stay agile and innovative while running a scalable, efficient business. As part of this initiative, we’re rethinking five core product areas:</p> <ul> <li><strong>Platform experience</strong> – Creating a unified and intuitive backend experience across Adyen products</li> <li><strong>Accounting systems</strong> – Defining a cohesive and high-performing financial architecture</li> <li><strong>Reporting &amp; reconciliation</strong> – Making financial data more accurate, accessible, and satisfying for customers and regulators</li> <li><strong>Billing &amp; pricing infrastructure</strong> – Simplifying pricing and automating invoicing at scale</li> <li><strong>Observability &amp; tooling </strong>– Strengthening visibility and control of money movement through advanced tooling</li> </ul> <p>.While all roles share a strong technical foundation, each team brings a unique focus in scaling our unified platform, We'll explore the best team fit together throughout the interview process.</p> <p><strong>What you’ll do:</strong></p> <ul> <li>Work on complex technical projects from requirements analysis through design, implementation, testing and launch into production.</li> <li>Be hands-on and contribute to the implementation.</li> <li>Identify and improve parts of the platform to make it more robust and scalable.</li> <li>Bring your own point of view on best engineering practices.&nbsp;</li> <li>Your code will be used at scale and you are expected to think in that mindset when building features.</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring live functionalities that impact many merchants and shoppers.&nbsp;</li> <li>Build APIs and tooling according to quality principles such as performance and code quality.</li> <li>Collaborate across teams and time zones to get projects over the finish line.</li> </ul> <p><strong>Who you are:</strong></p> <ul> <li>Familiar with complex large scale distributed systems.</li> <li>You have experience with Java, Web Services, REST Apis, Webhooks and SQL/PostgreSql.</li> <li>You have a good understanding of Software Engineering practices and interest in product knowledge.</li> <li>You enjoy working in a cross-functional team with roles like Data Science, Frontend, and Product.</li> <li>You value involving other people to hear different perspectives.</li> <li>You have an experimental mindset with a launch fast and iterate mentality.</li> </ul> <p><strong>Minimum qualifications:</strong></p> <ul> <li>6+ years of experience in software development industry in a fast paced tech environment</li> <li>Full professional proficiency in English</li> <li>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application.</p> <p><strong>What’s next?</strong></p> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role.<a href=\"https://careers.adyen.com/faqs/\"> Learn more about our hiring process here</a>. Don’t be afraid to let us know if you need more flexibility.</p>",
     "posted_at": "2026-10-27T04:48:34-04:00",
     "tags": null,
-    "verdict": "strong",
-    "reasoning": "Candidate exceeds the 6+ year senior requirement with 10+ years including Java, REST/SOAP web services and SQL in fintech at Rabobank and Finomia, directly aligning with Adyen's Unified Platform fintech focus. Amsterdam office-first location is commutable from Utrecht and fits the Netherlands hybrid/on-site preference with no hard-constraint violation. Experience leading developers, driving Scrum product initiatives, and managing CI/CD matches the hands-on ownership and cross-functional expectations. Main stretches are PostgreSQL vs MySQL/PL/SQL background and proving large-scale distributed systems experience at Adyen scale.",
+    "verdict": "no",
+    "reasoning": "This job posting requires in-person collaboration at the Amsterdam office, which contradicts the candidate's preference for remote work. Additionally, the role emphasizes a strong focus on large-scale distributed systems, which is not explicitly mentioned in the candidate's experience. While the candidate has relevant skills in Java, SQL, and APIs, the requirement for office presence makes this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
@@ -1050,7 +1050,7 @@
     "reasoning": null
   },
   {
-    "id": 15,
+    "id": 17,
     "external_id": "8224018",
     "source": "greenhouse",
     "company": "Elastic",
@@ -1063,7 +1063,7 @@
     "posted_at": "2026-10-29T10:39:18-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Principal AI Engineer requires specific expertise in AI-driven products, particularly in building agents with state and memory, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes experience with TypeScript and designing telemetry for AI systems, areas where the candidate's experience is less clear. The candidate's strong backend and frontend skills are relevant, but there are significant gaps in the specific AI and product evaluation experience required for this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Principal AI Engineer requires specific expertise in AI-driven products, particularly with public APIs and data models that evolve without breaking customer contracts. The candidate lacks direct experience with AI systems, telemetry design for AI, and familiarity with the specific tools and frameworks mentioned, such as TypeScript and MCP. Additionally, the role is more focused on AI and data science, which does not align closely with the candidate's primary strengths in full-stack development.",
     "applied_at": null,
     "first_seen": "2026-10-29T20:00:56.817Z"
   },
@@ -1214,7 +1214,7 @@
     "reasoning": null
   },
   {
-    "id": 22,
+    "id": 25,
     "external_id": "8232358",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1226,8 +1226,8 @@
     "description": "<h2><strong>Who we are</strong></h2> <h3><strong>About Stripe</strong></h3> <p>Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.</p> <h3><strong>About the team&nbsp;</strong></h3> <p>Collecting and filing sales &amp; indirect taxes is a classic area for technology disruption. Companies selling across countries, states, and even smaller jurisdictions have to navigate through a myriad of tax rates, product-level tax exemptions, filing requirements, and registration obligations. The rules are constantly changing, and not accurately calculating and filing tax can have legal ramifications.</p> <p>It’s no surprise then that solving for tax compliance is a top user ask. We launched Stripe Tax as a new SaaS product in 2021 to help solve this pain point and make tax compliance as effortless as possible. The Stripe Tax CoreXP team engineers sophisticated solutions to help our merchants grow and expand with confidence and minimal friction. The team builds solutions for monitoring tax compliance requirements, and provides solutions for registering and filing taxes.</p> <h2><strong>What you’ll do</strong></h2> <p>We’re looking for software engineers who are interested in building software services and platforms that impact millions of Stripe users. You will be working alongside a diverse set of peers spanning design, product and engineering to identify, build and maintain solutions that empower thousands of merchants to grow their business with confidence.</p> <h3><strong>Responsibilities</strong></h3> <ul> <li>Operate with limited oversight and own end-to-end the delivery of projects, including independently scoping, designing, implementing, and productionizing features</li> <li>Collaborate with stakeholders across the organization such as product, design, infrastructure, marketing and operations</li> <li>Debug production issues across services and improve the team's overall operational health</li> <li>Develop and execute against both short- and long-term goals</li> <li>Establish and uphold best practices in engineering, security, and technical design</li> </ul> <h2><strong>Who you are</strong></h2> <p>We're looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</p> <h3><strong>Minimum requirements</strong></h3> <ul> <li>2+ years of industry software engineering experience (does not include internships or co-ops)</li> <li>Strong coding skills in any programming language <em>(we understand new languages can be learned on the job so our interview process is language agnostic)</em></li> <li>Strong collaboration skills, can work across workstreams within your team and contribute to your peers’ success</li> <li>Have the ability to thrive on a high level of autonomy, responsibility, and think of yourself as entrepreneurial</li> <li>Have the ability to communicate effectively with internal and external cross discipline stakeholders</li> <li>Interest in working as a generalist across varying technologies and stacks to solve problems and delight both internal and external users</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>Track record of working directly with customers and ability to influence product decisions</li> <li>Experience in integrating robustly with external systems and/or APIs&nbsp;</li> <li>Experience in both frontend and backend development</li> </ul>",
     "posted_at": "2026-10-29T10:42:09-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "strong",
+    "reasoning": "The candidate has over 10 years of experience in software engineering, particularly in fintech, which aligns well with Stripe's focus on financial infrastructure. They possess strong skills in both frontend (ReactJS) and backend (Java, REST APIs) development, matching the job's requirements for a generalist across varying technologies. Additionally, their experience in managing product initiatives and collaborating with diverse teams fits well with the role's emphasis on autonomy and cross-functional collaboration. The only minor gap is the specific mention of tax compliance experience, which is not explicitly required but could enhance their fit.",
     "applied_at": null,
     "first_seen": "2026-10-20T23:34:43.583Z"
   },
@@ -1555,12 +1555,12 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development, particularly in Java and React, the job requires staff-level experience with Ruby on Rails or Go, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnostics, areas where the candidate has limited direct experience. The candidate's fintech background aligns with GitLab's focus on operational efficiency, but the specific technical requirements create a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering, particularly in fintech and full-stack development, the job posting requires strong Ruby on Rails or Go experience, which the candidate lacks. Additionally, the role emphasizes AI adoption and complex system diagnosis, areas where the candidate has limited direct experience. However, the candidate's background in CI/CD, DevOps, and product ownership aligns with some aspects of the role, making it a tangential fit.",
     "applied_at": null,
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 24,
+    "id": 16,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1573,12 +1573,12 @@
     "posted_at": "2026-10-27T12:52:07-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's expertise in full-stack software engineering and fintech. The candidate has no demonstrated experience in security incident management, security operations centers, or the specific security technologies mentioned in the job description. Additionally, the role requires a strong background in security practices that the candidate does not possess.",
+    "reasoning": "This job posting is for a Senior Security Engineer role, which is not aligned with the candidate's background as a full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the specific security incident management experience and expertise in security operations that this role requires. Additionally, the job emphasizes skills in security information and event management (SIEM) systems and incident response, which are not mentioned in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 23,
+    "id": 15,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1591,7 +1591,7 @@
     "posted_at": "2026-10-27T12:52:07-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role, which is outside the candidate's expertise in full-stack and backend software engineering. The candidate has no experience in security incident management, security operations centers, or the specific security technologies mentioned in the job description. Additionally, the role requires a strong focus on security, which does not align with the candidate's fintech and software development background.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on incident response and security operations, which is outside the candidate's expertise in full-stack software engineering and fintech. The candidate has a strong background in software development, particularly in Java and React, but lacks the required experience in security incident management, SIEM systems, and security operations centers. Additionally, the role is specifically focused on security, which does not align with the candidate's stated interests in fintech and product engineering.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1708,7 +1708,7 @@
     "reasoning": null
   },
   {
-    "id": 21,
+    "id": 24,
     "external_id": "8130927",
     "source": "greenhouse",
     "company": "Stripe",
@@ -1720,8 +1720,8 @@
     "description": "<h2><strong>Who we are</strong></h2> <h3><strong>About Stripe</strong></h3> <p>Stripe is a technology company focused on improving the conditions for economic growth and prosperity. We build programmable financial infrastructure, rethinking from first principles how financial services should work, to make it easier and cheaper for any business to start and scale. More than 10 million <a href=\"https://stripe.com/customers\">businesses</a> build on Stripe, spanning the economic frontier—from solo founders to established enterprises—united by a practical focus on growth. The most ambitious companies in the world use Stripe as core infrastructure to grow faster. They process trillions of dollars a year on Stripe, equivalent to around 1.6% of global GDP. While economic growth makes everyone better off, open markets also enable greater variety. When any business can easily serve a global customer base, the quality and diversity of products in the world increase, and craft and creativity are unleashed into the smallest niches. Our own growth is wholly contingent on the success of the businesses building on Stripe. We therefore invest back into our technology at an unusual rate. We make <a href=\"https://stripe.com/roadmap\">upgrades to our products</a> every single day to deliver compounding gains to our customers. We maintain some of the most <a href=\"https://status.stripe.com/\">reliable APIs</a> on the internet. We build entirely new <a href=\"https://tempo.xyz/\">pieces</a> of <a href=\"https://mpp.dev/\">financial</a> <a href=\"https://joinopenstandard.com/\">infrastructure</a> to enable new ideas. And our significant advances in <a href=\"https://stripe.com/radar\">risk and fraud</a> infrastructure over many years are making the internet economy safer and more accessible.&nbsp;</p> <p>Though people at Stripe don’t tend to take themselves seriously, Stripe is a fairly serious place: our customers are depending on us for their livelihoods. We admire ambition, intensity, curiosity, humility, and rigor. The most effective people become knowledgeable about many domains besides their own. Any company is an applied exercise in understanding some aspect of society or the market. In working with so many (especially the new and innovative ones), we think that Stripe is one of the very best places to learn about how the world works.</p> <h2><strong>Your role</strong><strong><br></strong></h2> <p>Stripe is large enough that individual products and projects can be rapidly deployed to a meaningful fraction of the world’s businesses, but small enough that individual agency still has outsized impact. Small teams can impact how millions of businesses grow. Right now the global economy is replatforming around AI, creating new opportunities for growth. We’re at the center of this, and we think the best work is still in front of us.</p> <p>To meet this moment, we’re looking for people who move with urgency, like hard problems, and want their work to matter at a time of great change. If that’s you, there’s no better place to build your career.</p> <h2><strong>Who you are</strong></h2> <ul> <li>Ambitious builder: You’re energized by building solutions without clear precedent and solving problems with far-reaching consequences. Successful Stripes are deeply curious, and prefer the joy of discovery to the comfort of certainty.</li> <li>Rigorous thinker: You appreciate that things worth doing are rarely simple. You enjoy working on problems that have never been tackled before.&nbsp;</li> <li>Adaptable problem solver: You adapt quickly and treat obstacles as opportunities.&nbsp; At Stripe we embrace kindness while encouraging Stripes to take measured risks and act boldly, even in the absence of consensus.</li> </ul> <h3><strong>Minimum requirements</strong></h3> <ul> <li>A Bachelor’s or Master’s degree in computer science or a directly related field, obtained by summer 2027, or equivalent work experience; New grad candidates should have no more than 18 months of professional experience (excluding internship experience).</li> <li>Experience and familiarity with programming, either through side projects or classwork. We work mostly in Java, Ruby, JavaScript, Scala, and Go. We believe new programming languages can be learned if the fundamentals and general knowledge are present.</li> <li>Experience from either previous internships or working collaboratively on multi-person coding projects (in a university or professional setting).</li> <li>Ability to learn unfamiliar systems and form an understanding of those systems, through independent research and working with a mentor or subject matter experts.</li> <li>Clear written communication skills, with the ability to explain your work to stakeholders, team members, and other Stripes.</li> <li>Ability to leverage AI tools to accelerate development while applying rigorous critical thinking and professional judgement to review, refine, and validate all outputs.</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>One or more areas of specialized knowledge (frontend, backend, infrastructure or other technologies) balanced with general skills and knowledge.&nbsp;</li> <li>Experience in code review practices, and an understanding of how to safely update production systems.</li> <li>Familiarity with navigating and managing work in large code bases.</li> <li>Experience leading small projects independently, and contributing to larger projects alongside peers.</li> <li>Ability to operate with high agency in navigating complex technical obstacles independently, knowing precisely when to unblock oneself and when to ask for help.</li> </ul>",
     "posted_at": "2026-10-29T10:42:09-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a New Grad position, which explicitly requires candidates to have no more than 18 months of professional experience. The candidate has over 10 years of experience, making them ineligible for this role. Additionally, the focus on recent graduates does not align with the candidate's seniority and expertise in software engineering.",
     "applied_at": null,
     "first_seen": "2026-10-20T23:34:43.583Z"
   },
@@ -1904,7 +1904,7 @@
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 39,
+    "id": 38,
     "external_id": "5432726008",
     "source": "greenhouse",
     "company": "Geotab",
@@ -1917,7 +1917,7 @@
     "posted_at": "2026-10-27T11:30:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting for an Embedded Developer is not a fit for the candidate, who is a senior full-stack software engineer with a strong background in Java, SQL, and React. The role requires expertise in embedded systems, specifically programming in C, C++, and Rust, which the candidate does not possess. Additionally, the position is focused on firmware development and requires experience with real-time operating systems, which is outside the candidate's experience in fintech and full-stack development.",
+    "reasoning": "The job posting for an Embedded Developer at Geotab requires expertise in C, C++, and Rust for firmware development, which is outside the candidate's skill set focused on Java, SQL, and React. Additionally, the role emphasizes experience in embedded systems design and real-time operating systems, areas where the candidate has no demonstrated experience. The candidate's background in fintech and full-stack development does not align with the specific requirements of this embedded systems position.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -2388,7 +2388,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 37,
+    "id": 36,
     "external_id": "8233192",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2401,12 +2401,12 @@
     "posted_at": "2026-10-27T13:09:32-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. They also have experience with CI/CD and DevOps, which is relevant for the role. However, the job requires familiarity with Go and Kubernetes, which the candidate does not explicitly mention in their experience. Additionally, the role emphasizes geospatial concepts and technologies, an area where the candidate lacks direct experience. Overall, while there are significant matches, the gaps in specific technologies and domain knowledge make this a fair fit.",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. However, the job emphasizes experience with Go and Kubernetes, which the candidate does not explicitly mention. Additionally, while the candidate has experience with CI/CD and DevOps, the role requires familiarity with Google Cloud Platform (GCP), which is not confirmed in the candidate's profile. Overall, while there are significant matches, the gaps in specific technologies and platforms make this a fair fit.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 36,
+    "id": 35,
     "external_id": "8233190",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -2419,7 +2419,7 @@
     "posted_at": "2026-10-27T13:09:41-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. They also have experience in CI/CD and DevOps, which is relevant for the role. However, the job emphasizes experience with Go and Kubernetes, which the candidate does not explicitly mention, representing a significant gap. Additionally, the role requires familiarity with geospatial concepts, which is not part of the candidate's background. Overall, while there are strong matches, the gaps in specific technologies and domain knowledge make this a fair fit.",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and SQL, which aligns well with the job's requirements. However, the job emphasizes experience with Go and Kubernetes, which the candidate does not explicitly mention. Additionally, while the candidate has experience in CI/CD and cloud platforms, familiarity with GCP or AWS is a requirement that is not confirmed in their profile. Overall, the candidate is a realistic fit but would need to address these gaps.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -2522,7 +2522,7 @@
     "reasoning": null
   },
   {
-    "id": 9,
+    "id": 8,
     "external_id": "7985189003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2535,7 +2535,7 @@
     "posted_at": "2026-10-27T11:58:25-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in Java and experience with cloud infrastructure, which aligns well with the job requirements. However, the job specifies a need for experience with Kotlin and Microsoft technologies, which the candidate does not possess. Additionally, while the candidate has extensive experience in fintech, the role is focused on healthcare, which may require some adjustment. Overall, the candidate is a realistic fit but would need to bridge some gaps.",
+    "reasoning": "The candidate has a strong background in Java and experience with cloud infrastructure, which aligns well with the job requirements. However, the job emphasizes the use of Kotlin and Microsoft technologies, which the candidate does not explicitly mention in their experience. Additionally, while the candidate has extensive experience in fintech and product engineering, the specific focus on healthcare technology at Doctolib may require some adjustment. Overall, the candidate is a realistic fit but would need to bridge some gaps in technology familiarity.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -2664,7 +2664,7 @@
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
   {
-    "id": 5,
+    "id": 4,
     "external_id": "6761873",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2676,8 +2676,8 @@
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Java Software Engineer / Senior Java Engineer</strong></p> <p>Our engineers are reshaping the payments landscape. We’re looking for more talented problem solvers to help us address a unique set of challenges.</p> <p><strong>We are looking for Mid level and Senior Java Engineers for a number of positions in the teams within our Customer Experience Solution.</strong></p> <p>As an engineer at Adyen , you will be<strong> </strong>responsible for the full development cycle from software design to testing and ensuring everything works as expected in production. You will work with one of the biggest PostgreSQL databases out there, focusing on maintaining the platform's performance and reliability.</p> <p><strong>Who you are:</strong></p> <ul> <li>You have experience with Java, web services, REST APIs and SQL / PostgreSQL</li> <li>You have worked with and deployed high-throughput and highly reliable services</li> <li>You are proactive, you take ownership and you strive for quality, from both a technical and product perspective</li> <li>You have excellent communication skills and you can explain complex, technical concepts to a non-technical audience</li> <li>You are a team player who knows when and how to involve other people to hear different perspectives</li> <li>You know how to evaluate tradeoffs and how to balance speed vs tech debt</li> <li>You enjoy working on a global product that impacts millions of people everyday</li> <li>Nice to have: experience with RabbitMQ, Kafka, Elasticsearch</li> </ul> <p>&nbsp;</p> <p><strong>What you’ll do:</strong></p> <ul> <li>You will build and maintain our distributed high-performance platform</li> <li>You will be part of a diverse and inclusive team</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring code live that impacts many businesses and shoppers</li> <li>You will be fully responsible from its initial design to bringing new functionality live</li> <li>Identify and improve parts of the platform to make it more robust and scalable</li> <li>Collaborate across teams and time zones to make things happen, review code and be open to feedback</li> </ul> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p>&nbsp;</p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.<br><br></span></p> <p><span style=\"font-weight: 400;\">Note: This role is based out of our&nbsp;<strong>Amsterdam</strong> office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.<br>&nbsp;</span></p>",
     "posted_at": "2026-10-29T10:10:41-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "This job posting is not a fit for the candidate due to the explicit requirement for in-person collaboration in Amsterdam, which contradicts the candidate's preference for remote work. Additionally, the role is focused on high-throughput services and PostgreSQL, while the candidate's experience is primarily with Java and SQL without specific mention of PostgreSQL or the other technologies listed as nice to have. Therefore, the mismatch in location and specific technology experience leads to a 'no' verdict.",
     "applied_at": null,
     "first_seen": "2026-10-11T17:10:12.781Z"
   },
@@ -2734,7 +2734,7 @@
     "reasoning": "This job posting is for a Senior Cloud Engineer position, which does not align with the candidate's focus on full-stack or backend software engineering roles. Additionally, the location in Italy may pose a challenge for the candidate, who is based in the Netherlands and is open to remote roles but not specifically targeting positions in Italy. The candidate's constraints also include not wanting to relocate to the US or work US-on-site, which is irrelevant here but indicates a preference for remote opportunities."
   },
   {
-    "id": 32,
+    "id": 41,
     "external_id": "5235352007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -2744,10 +2744,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/zscaler/jobs/5235352007",
     "description": "<div class=\"content-intro\"><p data-pm-slice=\"1 1 []\">Zscaler (NASDAQ: ZS) accelerates digital transformation so customers can be more agile, efficient, resilient, and secure. The Zscaler Zero Trust Exchange platform protects thousands of customers from cyberattacks and data loss by securely connecting users, devices, and applications in any location. Distributed across 200+ public data centers globally and thousands of private sites at the edge, the SASE-based Zero Trust Exchange is the world’s largest in-line cloud security platform.</p> <p>We believe the future of work is Human + AI and are building an AI-native enterprise where human potential is amplified by machine intelligence to solve the world’s hardest security challenges. Driven by deep customer obsession, we are committed to the mission, outcome, and to each other. We bring these commitments to life through three core behaviors: ownership and collaboration, trust through outcomes and impact, and a challenge culture with ongoing feedback. Ready to make an impact at the company pioneering security transformation in the AI era? Join us at Zscaler.</p></div><p><strong>Role</strong><br><br>We are looking for a Senior Sales Engineer to join our team. This is a Hybrid role, based in the Netherlands, reporting to the Sales Engineering Manager in the Sales Engineering department. The Zscaler Sales and Go-to-Market team is a global group of professionals who are passionate about delighting our customers, nurturing trusted partnerships, and sharing their expertise to drive a secure, cloud-enabled digital future. Working within a collaborative, fast-paced environment, you will act as a pivotal technical partner to demonstrate the power and agility of Zscaler cloud transformation to the world.</p> <p><strong data-path-to-node=\"2\" data-index-in-node=\"0\">What you’ll do (Role Expectations)</strong></p> <ul data-path-to-node=\"3\"> <li>Present the Zscaler cloud security platform to prospective customers</li> <li>Set the vision and translate goals into enticing and relevant recommendations</li> <li>Act as a trusted advisor to clients while aiding their transformational journey</li> <li>Gather customer technical requirements and promote the value proposition in POV, presentations, and demos with prospects and customers</li> </ul> <p><strong data-path-to-node=\"4\" data-index-in-node=\"0\">Who You Are (Success Profile)</strong></p> <ul data-path-to-node=\"5\"> <li>You thrive in ambiguity. You're comfortable building the path as you walk it and seeing uncertainty as a raw canvas to build something meaningful.</li> <li>You act like an owner. Your passion for the mission fuels your bias for action, navigating seamlessly between high-level strategy and hands-on execution.</li> <li>You are a problem-solver. You actively seek out challenges because you are energized by finding solutions, knowing that solving the hard problems delivers the biggest impact.</li> <li>You are customer-obsessed. You build deep empathy for our partners and anchor your decisions in solving their real-world technical problems.</li> <li>You lead with integrity. You hold yourself and others to a high standard of accountability, building trust through consistent, transparent action.</li> </ul> <p><strong data-path-to-node=\"6\" data-index-in-node=\"0\">What We’re Looking for (Minimum Qualifications)</strong></p> <ul data-path-to-node=\"7\"> <li>Foundational understanding of AI/ML technologies and experience leveraging, securing, or positioning AI-driven solutions to optimize outcomes within your functional domain</li> <li>At least 8 years of experience as a Sales Engineer or Systems Integrator</li> <li>Deep knowledge of enterprise network or cloud security technologies</li> <li>Proven experience working with Value Selling Methodologies</li> <li>Demonstrated proficiency producing technical presentations and product demonstrations</li> <li>Solid experience collaborating with sales to qualify opportunities, build territory plans, and deliver proof of concept engagements</li> </ul> <p><strong data-path-to-node=\"8\" data-index-in-node=\"0\">What Will Make You Stand Out (Preferred Qualifications)</strong></p> <ul data-path-to-node=\"9\"> <li>Demonstrate strong AI fluency by leveraging coding assistants, LLMs, and Generative AI tools to accelerate troubleshooting, solution design, automation, and customer problem-solving, while applying sound technical judgment to validate AI-generated recommendations and outputs</li> <li>Possession of Cloud Platform and other relevant certifications such as CISSP or CCNP</li> <li>Strong technical experience in SASE, Proxy technology, Cybersecurity, IPS, DLP, CASB, or CNAPP</li> <li>Native or bilingual fluency in Dutch alongside a track record of working with enterprise accounts in the region</li> </ul> <p>#LI-LS2</p> <p>#LI-Hybrid</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p><span data-sheets-root=\"1\">Zscaler’s salary ranges are benchmarked and determined by role and level. The range displayed on this job posting reflects the minimum and maximum target for new hire base salaries for this position across all Netherlands locations. Individual pay placement within this range is determined based on objective, gender-neutral criteria including job-related skills, relevant experience, and education or training. The base salary range listed for this full-time position excludes commission/bonus/equity (if applicable) and benefits. </span></p></div><div class=\"title\">Base Pay Range</div><div class=\"pay-range\"><span>€89.250</span><span class=\"divider\">&mdash;</span><span>€127.500 EUR</span></div></div></div><div class=\"content-conclusion\"><p data-pm-slice=\"1 3 []\">At Zscaler, we are committed to building a team that reflects the communities we serve and the customers we work with. We foster an inclusive environment that values all backgrounds and perspectives, emphasizing collaboration and belonging. Join us in our mission to make doing business seamless and secure.</p> <p>Our Benefits program is one of the most important ways we support our employees. Zscaler proudly offers comprehensive and inclusive benefits to meet the diverse needs of our employees and their families throughout their life stages, including:</p> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <ul> <li>Various health plans</li> <li>Time off plans for vacation and sick time</li> <li>Parental leave options</li> <li>Retirement options</li> <li>Education reimbursement</li> <li>In-office perks, and more!</li> </ul> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <p data-pm-slice=\"1 1 []\">Learn more about Zscaler's hybrid working model and benefits&nbsp;<a href=\"https://www.zscaler.com/candidate-resource-hub\" target=\"_blank\">here</a>.</p> </div> </div> <p>By applying for this role, you adhere to applicable laws, regulations, and Zscaler policies, including those related to security and privacy standards and guidelines.</p> <p class=\"p1\">Zscaler is committed to providing equal employment opportunities to all individuals. We strive to create a workplace where employees are treated with respect and have the chance to succeed. All qualified applicants will be considered for employment without regard to race, color, religion, sex (including pregnancy or related medical conditions), age, national origin, sexual orientation, gender identity or expression, genetic information, disability status, protected veteran status, or any other characteristic protected by federal, state, or local laws. <em>See more information by clicking on the </em><a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\"><em>Know Your Rights: Workplace Discrimination is Illegal </em></a><em>link.</em></p> <p>Pay Transparency</p> <p>Zscaler complies with all applicable federal, state, and local pay transparency rules.</p> <p>Zscaler is committed to providing reasonable support (called accommodations or adjustments) in our recruiting processes for candidates who are differently abled, have long term conditions, mental health conditions or sincerely held religious beliefs, or who are neurodivergent or require pregnancy-related support.</p></div>",
-    "posted_at": "2026-10-22T09:47:21-04:00",
+    "posted_at": "2026-10-29T16:28:18-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Sales Engineer role, which is primarily focused on sales and customer engagement rather than software engineering. The candidate is a senior full-stack software engineer with a strong technical background in software development, but lacks the required experience as a Sales Engineer or Systems Integrator. Additionally, the role demands deep knowledge of enterprise network or cloud security technologies, which is not mentioned in the candidate's profile. Therefore, this position does not align with the candidate's skills and career aspirations.",
+    "reasoning": "The job posting is for a Senior Sales Engineer role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech, but lacks the required experience in sales engineering, customer-facing roles, and deep knowledge of enterprise network or cloud security technologies. Additionally, the role requires at least 8 years of experience specifically as a Sales Engineer or Systems Integrator, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-22T14:16:35.038Z"
   },
@@ -2786,7 +2786,7 @@
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 11,
+    "id": 10,
     "external_id": "8000653003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2799,12 +2799,12 @@
     "posted_at": "2026-10-29T06:02:13-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly a junior role and not aligned with the candidate's seniority level of over 10 years of experience. The candidate is looking for senior full-stack or backend roles, making this internship unsuitable. Additionally, the position requires candidates to be in their final year of a degree program, which does not match the candidate's background.",
+    "reasoning": "This job posting is for a Software Engineering Intern position, which is explicitly a junior role. The candidate has over 10 years of experience and is seeking senior-level positions, making this role a significant mismatch in terms of seniority. Additionally, the candidate is not interested in internships or entry-level roles, further solidifying that this opportunity does not align with their career goals.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
   {
-    "id": 10,
+    "id": 9,
     "external_id": "8006520003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -2817,7 +2817,7 @@
     "posted_at": "2026-10-29T06:09:33-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Software Engineering Intern position, which is explicitly aimed at candidates in their final year of study and looking for an internship. This does not align with the candidate's profile as they are a senior full-stack software engineer with over 10 years of experience, seeking senior roles. Additionally, the candidate has constraints against junior or internship roles, making this position completely unsuitable.",
+    "reasoning": "The job posting is for a Software Engineering Intern position, which is explicitly a junior role and not aligned with the candidate's seniority level of over 10 years of experience. The candidate is looking for senior full-stack or backend roles, making this internship opportunity unsuitable. Additionally, the candidate has constraints against accepting junior or entry-level positions, further solidifying the mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T12:07:13.067Z"
   },
@@ -3068,8 +3068,8 @@
     "description": "<h3>About the team</h3> <p>MongoDB Technical Services Engineers will combine exceptional problem solving and communication skills with deep technical experience to advise customers and solve complex MongoDB problems.&nbsp;</p> <p>They are experts in components of the MongoDB ecosystem - database server, drivers, our management suite, and services such as Cloud Manager (the online product we developed for customers for automation, backup, monitoring, and analysis of their MongoDB systems), and MongoDB Atlas. They combine their MongoDB expertise with passion, initiative, teamwork and a great sense of humor to achieve exceptional results for our customers.</p> <p>We are looking to speak to candidates who are based in Milan for our hybrid working model (Tues-Sat Shift).</p> <h3>Cool things you’ll do</h3> <p>MongoDB is on a mission to change the way people think about databases. Along the way, our customers encounter questions and issues about how our approach to databases works for their use case. In Technical Services, it's our job to help these people. You'll be working alongside our largest customers, solving their complex challenges - resolving questions on architecture, performance, recovery, security, and everything in between. You'll be an expert resource on best practices in running MongoDB at scale, whatever that scale may be. You'll be an advocate for customers' needs - interfacing with our product management and development teams on their behalf. And you'll contribute to internal projects, including software development of support tools for performance, benchmarking, and diagnostics.</p> <p>In this specific role, starting from the MongoDB database, you will also focus on the performance of our Cloud platform Atlas and its supported services. You will help both frontend and backend developers build next generation applications on MongoDB platform.</p> <p>Finally, MongoDB Technical Services puts a strong focus on engineers enabling their peers to be successful by sharing newly gained technical knowledge with the team, either via informal one-to-one conversations, or training and workshop sessions. By documenting solutions in our knowledge base system, Technical Services Engineers will increase the efficiency of our customers, other team members and departments throughout MongoDB.&nbsp;</p> <h3>What you need</h3> <p>We are looking for curious, and multi-faceted teammates who are driven to serve our customers.&nbsp;</p> <p>The ideal candidate should have a mix of experience in most of the following areas. We are open to training people up in certain areas, so don't worry about ticking every box!</p> <ul> <li>3–4 years of experience in a technical support, solutions support, or customer-facing engineering role</li> <li>Distributed systems, Database architecture and administration, Application architecture, Data architecture</li> <li>Experience supporting complex mission-critical product applications and database systems (RDMBS or NoSQL or both)</li> <li>Supporting Cloud and/or Enterprise grade applications</li> <li>Strong diagnostics and troubleshooting experience, with the ability to analyze issues holistically, from the application tier, to database to storage</li> <li>Broad awareness of customer workloads and use cases, including performance, availability, and scalability</li> <li>Systems administration experience, including Linux performance, memory management, I/O tuning, configuration, security, networking, clusters, and troubleshooting</li> <li>Ability to read code, and basic coding/scripting ability in one or more languages: Java, Python, Ruby, C, C++, C#, Javascript, node.js, Go, etc</li> <li>Good understanding of Networking concepts and protocols (DNS, TCP/IP, SSL/TLS, etc.)</li> <li>Storage engineering experience, including NAS, RAID, SAN, SSD, multi-pathing, and caching</li> <li>Working with real time stream processing using Kafka.</li> <li>Serverless computing services such as AWS Lambda, Azure functions.</li> </ul> <p>As this role is technical but also about helping our customers, we are looking for:</p> <ul> <li>Excellent communication skills, both written and verbal</li> <li>Genuine desire to help people</li> <li>Desire and ability to rapidly learn a wide variety of new technical skills</li> <li>Uncontrollable urge to investigate and solve problems, with advanced diagnostic and troubleshooting skills</li> <li>Ability to think on your feet, remain calm under pressure, and solve problems in real-time</li> <li>Strong teamwork: willingness and ability to get help from team members when required, and the good judgment to know when to seek help</li> <li>Good written and verbal skills in Italian &amp; English</li> </ul> <h3>Bonus Points</h3> <ul> <li>Server side troubleshooting</li> <li>Deep understanding of at least object-oriented programming language.</li> <li>Deep understanding of connection pools.</li> <li>Experience with Apache Spark.</li> <li>Experience with authentication systems such as LDAP, Kerberos, AD</li> <li>Experience using or managing MongoDB</li> <li>Experience using distributed version control systems, and in particular git</li> <li>Experience using any cloud services stack such as AWS, Azure or GCP</li> <li>Experience with Kubernetes or other orchestration systems using vendor-specific Enterprise operators</li> </ul> <h3>Success Measures&nbsp;</h3> <ul> <li>In 3 months, you’ll have gained a deep understanding of MongoDB and its ecosystem. You will complete New Hire Training</li> <li>In 6 months, you will be comfortable working directly with our customers. You will also complete the MongoDB Certified DBA Associate exam</li> <li>In 12 months, you will work on gaining expertise to be a part of a technical experts group within the MongoDB ecosystem and will be helping your peer engineers in advance diagnostics. Also, you will be encouraged to handle technical escalations independently</li> </ul> <h3>About MongoDB</h3> <p>MongoDB is built for change, empowering our customers and our people to innovate at the speed of the market. We have redefined the data platform for the AI era, enabling builders to create, transform, and disrupt industries with software. MongoDB’s unified data platform, the most widely available, globally distributed data platform on the market, helps organizations modernize legacy workloads, embrace innovation, and unleash AI. Our cloud-native platform, MongoDB Atlas, is the only globally distributed, multi-cloud data platform and is available across AWS, Google Cloud, and Microsoft Azure.</p> <p>With offices worldwide and over 67,000 customers, including AI-native startups and approximately 75% of the Fortune 100, relying on MongoDB for their most important applications, we’re powering the next era of software.</p> <p>Our compass at MongoDB is our <a href=\"https://www.mongodb.com/company\">Leadership Commitment,</a> guiding how and why we make decisions, show up for each other, and win. It’s what makes us MongoDB.&nbsp;</p> <p>To drive the personal growth and business impact of our employees, we’re committed to developing a supportive and enriching culture for everyone. <a href=\"https://www.mongodb.com/company/blog/culture/employee-benefits-that-make-a-difference-at-mongodb\">From employee affinity groups, to fertility assistance and a generous parental leave policy</a>, we value our employees’ wellbeing and want to support them along every step of their professional and personal journeys.<a href=\"https://www.mongodb.com/blog/channel/culture\"> Learn more about what it’s like to work at MongoDB</a>, and help us make an impact on the world!</p> <p>MongoDB is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request an accommodation due to a disability, please inform your recruiter.</p> <p>MongoDB is an equal opportunities employer.</p> <p><em>Req ID: 3273573571</em></p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>EU Pay Transparency Information: MongoDB’s base salary range for this role is posted below. Compensation at the time of offer is unique to each candidate and based on a variety of factors such as skill set, experience, qualifications, and work location.&nbsp;</p> <p>&nbsp;</p> <p>Salary is one part of MongoDB’s total compensation and benefits package. Other benefits for eligible employees may include: equity, participation in the employee stock purchase program, financial protection benefits, paid time off, a minimum of 20 weeks fully-paid gender-neutral parental leave (inclusive of and running concurrently with statutory leave), fertility and adoption assistance, mental health counseling and other health benefits offerings.</p> <p>&nbsp;</p> <p>We are committed to providing a well-rounded compensation and benefits program that supports our employees in every stage of life. Please note, the base salary range listed below and the benefits in this paragraph are only applicable to Italy based candidates.</p></div><div class=\"title\">MongoDB’s base salary range for this role in Italy is:</div><div class=\"pay-range\"><span>€46.000</span><span class=\"divider\">&mdash;</span><span>€68.000 EUR</span></div></div></div>",
     "posted_at": "2026-10-28T13:44:05-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "weak",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in fintech, and is proficient in Java and SQL, which aligns with some of the technical requirements. However, the job posting is for a Technical Services Engineer role that emphasizes customer-facing support, database architecture, and specific knowledge of MongoDB, which the candidate lacks. Additionally, the requirement for 3-4 years in a technical support role is not met, and the candidate's preference for senior full-stack or backend roles does not align with this position's focus.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -3158,8 +3158,8 @@
     "description": "",
     "posted_at": "2026-10-29T12:42:41.103+00:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "The job posting for Platform Engineer II - Infrastructure Governance at Mollie does not align with the candidate's background or preferences. The role appears to focus on infrastructure governance, which is not mentioned in the candidate's experience or interests. Additionally, the candidate is specifically looking for senior full-stack or backend roles, while this position does not fit that criteria. Furthermore, the location in Milan may not be suitable for the candidate, who is based in the Netherlands and open to remote roles.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -3362,7 +3362,7 @@
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 42,
+    "id": 43,
     "external_id": "969bbf7d-037c-4965-812e-442105ce58c1",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -3375,7 +3375,7 @@
     "posted_at": "2026-10-28T13:39:17.876+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The Developer Advocate position at Eleven Labs does not align with the candidate's preferences and constraints. The role is likely focused on advocacy and community engagement rather than hands-on software engineering, which does not match the candidate's desire for senior full-stack or backend engineering roles. Additionally, the job is located in the UK and other countries, which may not be suitable given the candidate's preference for roles specifically in the Netherlands or remote options. There is also no clear indication of technical ownership or product engineering responsibilities, which are important to the candidate.",
+    "reasoning": "The Developer Advocate position does not align with the candidate's expertise as a senior full-stack software engineer. The role likely emphasizes advocacy and community engagement rather than hands-on software development, which is the candidate's primary strength. Additionally, the candidate is not interested in roles that do not involve direct software engineering responsibilities, making this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-15T13:51:03.006Z"
   },
@@ -3560,7 +3560,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 32,
+    "id": 31,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3573,7 +3573,7 @@
     "posted_at": "2026-10-27T09:55:39-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a position based in Spain, which does not align with the candidate's preference to work remotely from the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend development, while the candidate's primary backend expertise is in Java. The requirement for on-call rotation may also not suit the candidate's preferences.",
+    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's location in the Netherlands. Additionally, the role requires proficiency in Python or Kotlin for backend systems, while the candidate's primary expertise is in Java. The requirement for on-call rotation may also not suit the candidate's preferences, as it was not mentioned in their background. Overall, the location constraint and specific technical requirements make this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
@@ -3722,7 +3722,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 30,
+    "id": 29,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -3735,7 +3735,7 @@
     "posted_at": "2026-10-27T09:54:20-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a remote position based in Spain, which does not align with the candidate's location in the Netherlands. Additionally, the role requires experience with technologies such as Kotlin and AWS, which are not mentioned in the candidate's profile. Although the candidate has strong backend experience with Java and SQL, the specific requirements for this position and the geographical constraint make it a poor fit.",
+    "reasoning": "The job posting is for a Senior Software Engineer position based in Spain, which is not suitable for the candidate who is based in the Netherlands and is not willing to relocate to Spain. Additionally, the role requires experience with technologies like Python, Kotlin, AWS, and Kubernetes, which are not mentioned in the candidate's skill set. While the candidate has strong experience in Java and SQL, the specific requirements of this position do not align with their background.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
@@ -4028,7 +4028,7 @@
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
   {
-    "id": 42,
+    "id": 40,
     "external_id": "5255300007",
     "source": "greenhouse",
     "company": "Zscaler",
@@ -4038,10 +4038,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/zscaler/jobs/5255300007",
     "description": "<div class=\"content-intro\"><p data-pm-slice=\"1 1 []\">Zscaler (NASDAQ: ZS) accelerates digital transformation so customers can be more agile, efficient, resilient, and secure. The Zscaler Zero Trust Exchange platform protects thousands of customers from cyberattacks and data loss by securely connecting users, devices, and applications in any location. Distributed across 200+ public data centers globally and thousands of private sites at the edge, the SASE-based Zero Trust Exchange is the world’s largest in-line cloud security platform.</p> <p>We believe the future of work is Human + AI and are building an AI-native enterprise where human potential is amplified by machine intelligence to solve the world’s hardest security challenges. Driven by deep customer obsession, we are committed to the mission, outcome, and to each other. We bring these commitments to life through three core behaviors: ownership and collaboration, trust through outcomes and impact, and a challenge culture with ongoing feedback. Ready to make an impact at the company pioneering security transformation in the AI era? Join us at Zscaler.</p></div><p><strong>About the Role</strong><strong><br></strong>We are looking for a Sales Engineer to join our team. This is a remote role based out of Madrid, Spain, reporting to the Senior Sales Engineering Manager in the Solutions Consulting department. In this role, you will serve as the technical pivot point for our sales process, presenting the Zscaler cloud security platform to prospective customers and translating their business goals into enticing, high-impact recommendations. As a trusted advisor, you will guide clients through their digital transformation journeys, gathering technical requirements and driving proof-of-concept engagements, presentations, and custom demonstrations that clearly articulate our value proposition while collaborating closely with Account Executives and cross-functional teams to shape comprehensive account strategies.</p> <p><strong>What you’ll do (Role Expectations)</strong></p> <ul> <li>Present the Zscaler cloud security platform to prospective customers to demonstrate clear business value</li> <li>Set the technical vision and translate customer goals into enticing, relevant recommendations</li> <li>Act as a trusted advisor to clients, guiding and aiding them through their transformational security journey</li> <li>Gather customer technical requirements and promote the value proposition through presentations, demonstrations, and proof-of-concept engagements</li> <li>Partner closely with Account Executives, cross-functional specialists, and extended teams to shape strategic account plans</li> </ul> <p><strong>Who You Are (Success Profile)</strong></p> <ul> <li>You thrive in ambiguity. You're comfortable building the path as you walk it. You thrive in a dynamic environment, seeing ambiguity not as a hindrance, but as the raw material to build something meaningful.</li> <li>You act like an owner. Your passion for the mission fuels your bias for action. You operate with integrity because you genuinely care about the outcome. True ownership involves leveraging dynamic range: the ability to navigate seamlessly between high-level strategy and hands-on execution.</li> <li>You are a problem-solver. You love running towards the challenges because you are laser-focused on finding the solution, knowing that solving the hard problems delivers the biggest impact.</li> <li>You are a high-trust collaborator. You are ambitious for the team, not just yourself. You embrace our challenge culture by giving and receiving ongoing feedback—knowing that candor delivered with clarity and respect is the truest form of teamwork and the fastest way to earn trust.</li> <li>You are a learner. You have a true growth mindset and are obsessed with your own development, actively seeking feedback to become a better partner and a stronger teammate. You love what you do and you do it with purpose.</li> </ul> <p><strong>What We’re Looking for (Minimum Qualifications)</strong></p> <ul> <li>5+ years of experience as a Sales Engineer or Systems Integrator</li> <li>Deep knowledge of enterprise network or cloud security technologies</li> <li>Proven experience working with Value Selling Methodologies</li> <li>Demonstrated ability to produce high-impact presentations, technical demonstrations, and partner with sales teams to deliver proof-of-concept engagements</li> <li>Foundational understanding of AI/ML technologies and experience leveraging, securing, or positioning AI-driven solutions to optimize outcomes within your functional domain</li> </ul> <p><strong>What Will Make You Stand Out (Preferred Qualifications)</strong></p> <ul> <li>Experience demonstrating or positioning AI-powered threat detection, predictive security analytics, or AI-driven data protection features to enterprise clients</li> <li>Cloud Platform or other relevant industry certifications such as CISSP or CCNP, alongside domain expertise in SASE, Identity, Proxy technology, Cybersecurity, DLP, CASB, or CNAPP</li> <li>Professional fluency in English combined with a proven track record of supporting and winning large enterprise accounts</li> </ul> <p>#LI-Remote<br>#LI-LJ1</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p><span data-sheets-root=\"1\">Zscaler’s salary ranges are benchmarked and determined by role and level. The range displayed on this job posting reflects the minimum and maximum target for new hire base salaries for this position across all Spain locations. Individual pay placement within this range is determined based on objective, gender-neutral criteria including job-related skills, relevant experience, and education or training. The base salary range listed for this full-time position excludes commission/bonus/equity (if applicable) and benefits. </span></p></div><div class=\"title\">Base Pay Range</div><div class=\"pay-range\"><span>€63.000</span><span class=\"divider\">&mdash;</span><span>€90.000 EUR</span></div></div></div><div class=\"content-conclusion\"><p data-pm-slice=\"1 3 []\">At Zscaler, we are committed to building a team that reflects the communities we serve and the customers we work with. We foster an inclusive environment that values all backgrounds and perspectives, emphasizing collaboration and belonging. Join us in our mission to make doing business seamless and secure.</p> <p>Our Benefits program is one of the most important ways we support our employees. Zscaler proudly offers comprehensive and inclusive benefits to meet the diverse needs of our employees and their families throughout their life stages, including:</p> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <ul> <li>Various health plans</li> <li>Time off plans for vacation and sick time</li> <li>Parental leave options</li> <li>Retirement options</li> <li>Education reimbursement</li> <li>In-office perks, and more!</li> </ul> <div class=\"has-nudge\" data-nudge-id=\"5eb9419b-6a4d-4451-bfa6-e2eb96084be0\"> <p data-pm-slice=\"1 1 []\">Learn more about Zscaler's hybrid working model and benefits&nbsp;<a href=\"https://www.zscaler.com/candidate-resource-hub\" target=\"_blank\">here</a>.</p> </div> </div> <p>By applying for this role, you adhere to applicable laws, regulations, and Zscaler policies, including those related to security and privacy standards and guidelines.</p> <p class=\"p1\">Zscaler is committed to providing equal employment opportunities to all individuals. We strive to create a workplace where employees are treated with respect and have the chance to succeed. All qualified applicants will be considered for employment without regard to race, color, religion, sex (including pregnancy or related medical conditions), age, national origin, sexual orientation, gender identity or expression, genetic information, disability status, protected veteran status, or any other characteristic protected by federal, state, or local laws. <em>See more information by clicking on the </em><a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\"><em>Know Your Rights: Workplace Discrimination is Illegal </em></a><em>link.</em></p> <p>Pay Transparency</p> <p>Zscaler complies with all applicable federal, state, and local pay transparency rules.</p> <p>Zscaler is committed to providing reasonable support (called accommodations or adjustments) in our recruiting processes for candidates who are differently abled, have long term conditions, mental health conditions or sincerely held religious beliefs, or who are neurodivergent or require pregnancy-related support.</p></div>",
-    "posted_at": "2026-10-21T04:38:27-04:00",
+    "posted_at": "2026-10-29T16:28:18-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Sales Engineer position, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in full-stack development and fintech but lacks the required experience in sales engineering, cloud security technologies, and value selling methodologies. Additionally, the role is based in Spain, which does not match the candidate's preference for roles in the Netherlands or remote positions within Europe.",
+    "reasoning": "This job posting is for a Sales Engineer position, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in full-stack development and fintech, but lacks the required experience in sales engineering, cloud security technologies, and value selling methodologies. Additionally, the role is based in Spain, while the candidate is targeting opportunities in the Netherlands, which further misaligns with their preferences.",
     "applied_at": null,
     "first_seen": "2026-10-21T14:16:46.373Z"
   },
@@ -4100,7 +4100,7 @@
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
   {
-    "id": 17,
+    "id": 19,
     "external_id": "8311494",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4113,7 +4113,7 @@
     "posted_at": "2026-10-27T20:02:04-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in Java and React, which aligns well with the requirements of the role at Elastic. They have experience in leading product initiatives and working in a collaborative environment, which matches the job's emphasis on guiding technical designs and cross-team collaboration. However, the job specifically mentions a preference for knowledge in Scala or Go, which the candidate lacks, and it is based in Spain, which may not align with the candidate's preference for roles in the Netherlands or remote opportunities.",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in fintech, which aligns well with the role's requirements. They possess expertise in Java and have experience with CI/CD and DevOps, which are relevant to the job. However, the job posting emphasizes knowledge of back-end languages like Scala or Go, which the candidate lacks. Additionally, while the candidate has led product initiatives, the role requires more explicit technical leadership experience across teams, which may be a gap.",
     "applied_at": null,
     "first_seen": "2026-10-21T23:51:44.214Z"
   },
@@ -4208,7 +4208,7 @@
     "first_seen": "2026-10-22T14:16:35.038Z"
   },
   {
-    "id": 4,
+    "id": 3,
     "external_id": "8229821",
     "source": "greenhouse",
     "company": "Adyen",
@@ -4220,8 +4220,8 @@
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Why join Identity &amp; Verification Services</strong></p> <p>Every business that joins Adyen has to be verified before it can accept its first payment. Identity &amp; Verification Services is the team that makes that possible. It is part of Adyen’s Unified Platform organization, and is responsible for:</p> <ul> <li>the systems that verify the businesses on our platform;</li> <li>the legal entity data behind them, across every jurisdiction and merchant type we serve.</li> </ul> <p>The team has built the verification framework that powers our KYC processes, flexible enough to run hundreds of different checks. These include automated checks with third-party data providers, document reviews, and checks handled by our operations teams.</p> <p><strong>What you’ll do</strong></p> <ul> <li>Lead, coach and grow a team of 7 engineers.</li> <li>Own the team’s execution and roadmap together with Product, making sure the team delivers on what matters most.</li> <li>Act as a technical partner to your engineers. You’ll engage in system design and architecture discussions, ask the right questions and validate key decisions. This is not a hands-on coding role, but it is a technical one.</li> <li>Shape how the platform scales. That includes migrating existing checks, introducing versioning, simplifying how new checks are built, and opening the platform up to use cases beyond KYC.</li> <li>Work with leaders across Unified Platform and the product teams in other organizations who depend on verification, aligning with them on priorities and technical direction.</li> <li>Create an environment where engineers feel safe to take ownership and run with their own initiatives, with clear goals and priorities.</li> <li>Hire and develop engineers who thrive in a fast-moving environment.</li> </ul> <p><strong>Your first six months</strong></p> <p>In your first month you’ll focus on learning the platform, the domain and the people. You’ll build relationships with your team, Product and partner teams. By three to six months, you’ll own the team’s execution and roadmap, have earned the team’s trust, and be shaping how the platform should scale next.</p> <p><strong>Who you are</strong></p> <ul> <li>An experienced engineering manager who leads by empowering people. You bring clarity, give engineers room to own their work, and build a team where people feel safe to speak up.</li> <li>Technically credible with senior engineers. You come from a strong backend background and understand distributed systems well enough to review designs, challenge trade-offs and spot risks.</li> <li>Experienced with systems built for meaningful scale, in an organisation beyond the early-startup stage.</li> <li>Comfortable taking ownership quickly in an established team, and building trust while doing it.</li> <li>A strong collaborator who works well with Product and with peer engineering leaders, and can align stakeholders around technical decisions.</li> <li>A clear communicator who can explain complex technical topics to both engineers and non-technical audiences.</li> </ul> <p><strong>Minimum qualifications</strong></p> <ul> <li>2+ years of people management experience leading software engineering teams, including performance management, career development and hiring.</li> <li>7+ years of experience in software engineering, primarily in backend development.</li> <li>Experience with distributed systems running in production at scale, in any modern backend language.</li> </ul> <p><strong>Nice to have</strong></p> <ul> <li>Experience with Java.</li> <li>Exposure to KYC, identity verification, onboarding or compliance-driven systems.</li> <li>Experience building B2B platforms.</li> </ul> <p>&nbsp;</p> <p><strong>Diversity, Equity, and Inclusion at Adyen</strong></p> <p>We actively seek different perspectives to sharpen our ideas. Our unique culture is a product of our diverse backgrounds and experiences. No matter who you are or where you’re from, you’re welcome to be your true self at Adyen.&nbsp;</p> <p><em>If you need accommodations or support during the recruitment process to perform at your best, you’ll have the opportunity to let our team know in your application. We encourage people from all backgrounds and abilities to apply.</em></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>&nbsp;</p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
     "posted_at": "2026-10-29T08:04:03-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for an Engineering Manager position, which requires at least 2 years of people management experience leading software engineering teams. The candidate's profile does not indicate any management experience, making this role unsuitable. Additionally, the position is office-first and does not offer remote-only roles, which contradicts the candidate's preference for remote work. Therefore, the candidate is not a fit for this position.",
     "applied_at": null,
     "first_seen": "2026-10-22T14:16:35.038Z"
   },
@@ -4568,7 +4568,7 @@
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
   {
-    "id": 16,
+    "id": 18,
     "external_id": "8075239",
     "source": "greenhouse",
     "company": "Elastic",
@@ -4581,7 +4581,7 @@
     "posted_at": "2026-10-27T14:22:20-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering, particularly in fintech and full-stack development, the job requires deep expertise in TypeScript and experience with component library architecture, which the candidate does not explicitly mention. Additionally, the role is focused on technical leadership within a design system, which may stretch the candidate's experience in leading such initiatives at scale. The candidate's background in React is a match, but the lack of specific experience with TypeScript and design systems creates a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in React and Java, the job requires deep expertise in TypeScript and experience leading design systems at scale, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes technical leadership and mentoring within a design system context, which may not align with the candidate's current focus on backend and full-stack development. The candidate's fintech experience is relevant, but the specific requirements for this position present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-23T23:42:32.596Z"
   },
@@ -4730,7 +4730,7 @@
     "first_seen": "2026-10-26T22:09:38.694Z"
   },
   {
-    "id": 19,
+    "id": 22,
     "external_id": "8212319",
     "source": "greenhouse",
     "company": "Stripe",
@@ -4743,12 +4743,12 @@
     "posted_at": "2026-10-29T10:42:09-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in backend development with Java and APIs, which aligns well with the job's focus on building reliable, scalable backend systems. Their fintech background is a good match for Stripe's financial infrastructure platform. However, the job requires specific experience with GraphQL APIs and backend-for-frontend systems, which the candidate does not explicitly mention. Additionally, while they have experience with AI-assisted tools, the job emphasizes fluency in these tools as a minimum requirement, which may not be fully demonstrated in the candidate's profile.",
+    "reasoning": "The candidate has a strong background in backend development with Java and experience in building APIs, which aligns well with the job's requirements for backend technologies and API design. Their experience in CI/CD and DevOps also matches the need for operational capabilities. However, the job emphasizes building backend-for-frontend systems and experience with GraphQL, which the candidate does not explicitly mention. Additionally, the role is located in Barcelona, which may not align with the candidate's preference for remote or hybrid roles, although they are open to remote positions.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 20,
+    "id": 23,
     "external_id": "8226890",
     "source": "greenhouse",
     "company": "Stripe",
@@ -4760,13 +4760,13 @@
     "description": "<h2>Who we are</h2> <h3>About Stripe</h3> <p>Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.</p> <h3>About the team</h3> <p>The UI Platform team, known as Sail, builds the foundations that support Stripe’s Dashboard and many of Stripe’s other user interfaces. The Sail UI team owns Stripe’s design system, helping Stripe engineers create consistent, accessible, performant, and high-quality experiences at scale.</p> <p>We build and maintain reusable components, design tokens, theming capabilities, documentation, and developer tooling used by engineers and designers across Stripe. We are currently focused on two major projects. First, we are building Sail for Agents: the generation infrastructure, documentation systems, agent integrations, and automated quality checks that help AI coding agents build high-quality Stripe interfaces safely and consistently at scale. Second, we are evolving the visual language of the Dashboard, one of Stripe’s largest UI surfaces, while modernizing its underlying codebase.</p> <h2>What you’ll do</h2> <p>As a Frontend Engineer on the Sail UI team, you’ll help build and evolve Stripe’s design system and the tools that enable engineers and AI coding agents to create high-quality user interfaces. You’ll independently drive frontend projects from problem definition through rollout, working closely with designers, product engineers, and other Sail engineers. Your work will range from reusable components, themes, and documentation to agentic tooling, automated quality checks, and modernizing the foundations of Stripe’s Dashboard.</p> <h3>Responsibilities</h3> <ul> <li>Take end-to-end ownership of software projects, independently scoping problems and carrying solutions through design, implementation, testing, and rollout</li> <li>Build and maintain accessible, performant, and well-tested components, themes, and frontend APIs used across Stripe</li> <li>Build tooling, documentation, and automated quality checks that help engineers and AI coding agents use Sail effectively and meet Stripe’s UI quality bar</li> <li>Partner with product designers and engineers to understand their needs and turn recurring UI patterns into reusable design-system capabilities</li> <li>Help evolve the visual language of Stripe’s Dashboard while modernizing its underlying codebase and migrating legacy UI patterns</li> <li>Improve the accessibility, internationalization, observability, performance, reliability, and developer experience of the design system</li> <li>Contribute thoughtful code reviews, technical discussions, and documentation that improve the quality of the team’s work</li> </ul> <h2><strong>Who you are</strong></h2> <p><span style=\"font-weight: 400;\">We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.</span></p> <h3>Minimum requirements</h3> <ul> <li>Fluency in using AI-assisted and agentic development tools as part of day-to-day software engineering, including critically reviewing, validating, and improving generated code</li> <li>2+ years of professional frontend engineering experience, or equivalent practical experience, building, shipping, and debugging web applications</li> <li>Strong knowledge of modern frontend technologies and frameworks, including browser fundamentals, responsive design, and accessibility</li> <li>Ability to independently scope and deliver open-ended frontend projects, making practical technical and product tradeoffs with limited oversight</li> <li>Strong problem-solving and debugging skills, with attention to testing, maintainability, and the quality of the resulting user experience</li> <li>Strong written and verbal communication skills and the ability to collaborate effectively with designers, product engineers, and other partners</li> </ul> <h3><strong>Preferred qualifications</strong></h3> <ul> <li>Experience working on a design system, frontend platform, or shared component library</li> <li>Experience with developer tooling such as build tools, package managers, codemods, lint rules, or large monorepos</li> <li>Experience building tools, integrations, or automated evaluation and quality systems for AI coding agents</li> <li>Experience using documentation, developer feedback, or adoption data to improve a developer-facing product</li> </ul>",
     "posted_at": "2026-10-29T10:42:09-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "weak",
+    "reasoning": "While the candidate has strong frontend skills with React and a solid background in software engineering, the job posting specifically requires 2+ years of professional frontend engineering experience, which the candidate meets. However, the role focuses heavily on building and maintaining a design system and tooling for AI coding agents, areas where the candidate lacks direct experience. Additionally, the emphasis on accessibility and modern frontend technologies may require a deeper understanding than the candidate has demonstrated.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 40,
+    "id": 39,
     "external_id": "1102b455-bc29-4db3-947e-81056a37b99c",
     "source": "ashby",
     "company": "ICEYE",
@@ -4778,13 +4778,13 @@
     "description": "",
     "posted_at": "2026-10-27T14:29:01.217+00:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "The job posting for a Sales Engineer at ICEYE is not aligned with the candidate's background as a senior full-stack software engineer. The candidate specializes in software development, particularly in fintech, while the Sales Engineer role likely requires a focus on sales and technical support rather than software engineering. Additionally, the candidate's constraints explicitly state a preference for engineering roles, making this position unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 43,
+    "id": 44,
     "external_id": "744000158060521",
     "source": "smartrecruiters",
     "company": "NielsenIQ",
@@ -4797,12 +4797,12 @@
     "posted_at": "2026-10-27T14:16:26.298Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Senior Antibot Engineer at NielsenIQ is highly specialized in reverse engineering, cryptography, and advanced security protocols, which are not part of the candidate's expertise. The candidate has a strong background in full-stack development, particularly in fintech, but lacks the specific skills required for reverse engineering and bypassing security mechanisms. Additionally, the role is focused on security and anti-bot mechanisms, which diverges significantly from the candidate's experience in software engineering and product initiatives.",
+    "reasoning": "This job posting is for a Senior Antibot Engineer, which focuses on reverse engineering, cryptographic functions, and advanced security protocols. The candidate's background is primarily in full-stack software engineering with a strong emphasis on fintech, Java, and React, but lacks experience in reverse engineering and the specific security skills required for this role. Additionally, the job is located in Barcelona, which may not align with the candidate's preference for remote or hybrid roles in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 35,
+    "id": 34,
     "external_id": "8324235",
     "source": "greenhouse",
     "company": "Planet Labs PBC",
@@ -4815,12 +4815,12 @@
     "posted_at": "2026-10-27T11:04:08-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position is for a Senior Director of Engineering, which requires extensive leadership experience managing large teams (70+ engineers) and a strong background in AI and geospatial platforms. The candidate has 10+ years of software engineering experience but lacks the necessary supervisory experience and the specific domain expertise in geospatial solutions and AI adoption at a leadership level. Additionally, the role requires a commitment to working on-site in Haarlem for three days a week, which may not align with the candidate's preference for remote work.",
+    "reasoning": "This position is for a Senior Director of Engineering, which requires extensive leadership experience managing large teams (70+ engineers) and a strong background in geospatial platforms and government solutions. The candidate, while having significant software engineering experience, does not demonstrate the required supervisory experience at the level needed for this role, nor does he have a background in civil government solutions or the specific AI tools mentioned. Additionally, the role requires a hybrid work setup in Haarlem, which may not align with the candidate's preference for remote work.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 31,
+    "id": 30,
     "external_id": "8040380003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4833,12 +4833,12 @@
     "posted_at": "2026-10-27T09:28:02-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in full-stack development and a strong background in fintech, the job posting specifically requires experience with mobile applications using React Native, which the candidate does not possess. Additionally, the role emphasizes a need for proficiency in Python or Kotlin for backend development, whereas the candidate's primary backend expertise is in Java. The requirement for being based in Spain also conflicts with the candidate's current location in the Netherlands.",
+    "reasoning": "While the candidate has extensive experience in full-stack development and a strong fintech background, the job posting specifically requires experience with mobile applications using React Native, which the candidate lacks. Additionally, the role is based in Spain, and while remote work is offered, the requirement for being based in Spain may pose a challenge for the candidate who is based in the Netherlands. The candidate's skills in Java and React align well with the job, but the gaps in mobile development and location requirements lead to a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 33,
+    "id": 32,
     "external_id": "8040394003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4851,12 +4851,12 @@
     "posted_at": "2026-10-27T09:27:01-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to remain in the Netherlands. Additionally, the role specifies a minimum of 1.5 years of experience, which is significantly lower than the candidate's 10+ years, but the geographical constraint is the primary reason for the 'no' verdict.",
+    "reasoning": "This position requires the candidate to be based in Spain, which directly conflicts with the candidate's location in the Netherlands. Additionally, the job specifies a minimum of 1.5 years of experience, which is significantly lower than the candidate's 10+ years, indicating a mismatch in seniority expectations. Furthermore, the role requires proficiency in Python or Kotlin, which the candidate does not list as a strength.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 34,
+    "id": 33,
     "external_id": "8034645003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4869,12 +4869,12 @@
     "posted_at": "2026-10-27T09:26:42-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for the Staff Software Engineer at Affirm requires the candidate to be based in Spain, which directly conflicts with the candidate's preference to work from the Netherlands. Additionally, the role emphasizes experience with Python, Kotlin, AWS, and Kubernetes, which are not highlighted in the candidate's background. While the candidate has strong experience in Java and SQL, the specific technologies and location requirements make this position unsuitable.",
+    "reasoning": "The job posting for the Staff Software Engineer position at Affirm requires the candidate to be based in Spain, which is a direct conflict with the candidate's preference to work from the Netherlands or remotely anywhere in Europe. Additionally, the role emphasizes experience with Python, Kotlin, AWS, and Kubernetes, which are not mentioned in the candidate's skill set. While the candidate has a strong background in Java and SQL, the specific requirements for this position do not align with their expertise.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 28,
+    "id": 27,
     "external_id": "8041432003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4887,12 +4887,12 @@
     "posted_at": "2026-10-27T09:26:04-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Manager, Machine Learning Engineering role, which requires specific expertise in machine learning techniques and experience managing a team of engineers. The candidate has a strong background in software engineering and fintech but lacks the necessary experience in machine learning and team management as specified in the job description. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's current location in the Netherlands.",
+    "reasoning": "This job posting is for a Manager of Machine Learning Engineering, which requires a strong background in machine learning, specifically in areas like tree-based models and deep learning. The candidate's experience is primarily in software engineering with a focus on full-stack development and fintech, but lacks the necessary machine learning expertise and management experience required for this role. Additionally, the position is remote but specifically requires the candidate to be based in Spain, which does not align with the candidate's current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 29,
+    "id": 28,
     "external_id": "8043027003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -4905,12 +4905,12 @@
     "posted_at": "2026-10-27T08:29:34-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Manager, Software Engineering role that requires 5+ years of managing engineering teams and experience leading a multi-team organization, which the candidate does not possess. The candidate has strong technical skills and relevant experience in software engineering, but lacks the necessary management experience and the specific requirement of being based in Spain. Additionally, the role involves responsibilities that extend beyond the candidate's stated preferences for senior full-stack or backend engineering roles.",
+    "reasoning": "The job posting is for a Senior Manager, Software Engineering position that requires 5+ years of managing engineering teams and experience leading multi-team organizations. The candidate, while having 10+ years of software engineering experience, does not indicate any management experience or leadership of engineering teams, which is a critical requirement for this role. Additionally, the position is based in Spain and requires the candidate to be located there, which does not align with the candidate's current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 41,
+    "id": 42,
     "external_id": "13fcee94-512f-4229-b7ab-f91d3fdd24e3",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -4923,12 +4923,12 @@
     "posted_at": "2026-10-27T17:20:05.729+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Content Creator & Strategist role, which is unrelated to the candidate's background as a senior full-stack software engineer. The candidate specializes in software development, particularly in fintech, while this position does not require technical engineering skills or experience. Additionally, the candidate has explicitly stated they are not interested in roles outside of software engineering, making this opportunity a poor fit.",
+    "reasoning": "The job posting for a Content Creator & Strategist at Eleven Labs is completely unrelated to the candidate's background as a senior full-stack software engineer. The candidate specializes in software engineering, particularly in fintech, and has extensive experience in backend and frontend development, which does not align with a content creation or strategy role. Additionally, the candidate's constraints explicitly rule out any roles that do not match their technical expertise, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-27T21:40:53.174Z"
   },
   {
-    "id": 7,
+    "id": 11,
     "external_id": "8330526",
     "source": "greenhouse",
     "company": "Typeform",
@@ -4941,12 +4941,12 @@
     "posted_at": "2026-10-28T07:16:00-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting for a Senior IT Engineer at Typeform focuses heavily on IT operations, service management, and automation within corporate IT environments. The candidate's experience is more aligned with software development rather than IT service management, which is a significant gap. Additionally, the requirement for ITIL certification and specific experience with corporate IT systems and tools like Okta and Google Workspace is not met by the candidate.",
+    "reasoning": "While the candidate has strong technical skills in software engineering, particularly in Java and React, the job posting is focused on IT engineering and service management, which is a different domain. The role requires ITIL certification and experience in corporate IT systems, which the candidate does not explicitly possess. Additionally, the emphasis on automation and AI in IT operations may not align with the candidate's primary experience in software development rather than IT service management.",
     "applied_at": null,
     "first_seen": "2026-10-28T11:55:48.258Z"
   },
   {
-    "id": 25,
+    "id": 21,
     "external_id": "8330469",
     "source": "greenhouse",
     "company": "Reddit",
@@ -4959,7 +4959,7 @@
     "posted_at": "2026-10-28T06:20:40-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong full-stack experience with over 10 years in software engineering, particularly in fintech, which aligns well with Reddit's focus on product catalogs. However, the role requires 2+ years of experience managing engineering teams, which the candidate does not explicitly demonstrate. While the candidate has led product initiatives and worked in collaborative environments, the lack of direct management experience is a significant gap. Additionally, the candidate's experience with backend systems and APIs is relevant, but the role's emphasis on building scalable systems for billions of products may require further expertise.",
+    "reasoning": "The candidate has over 10 years of experience in software engineering, strong skills in Java and React, and a background in fintech, which aligns well with the technical requirements of the Engineering Manager role at Reddit. However, the candidate lacks direct experience in managing engineering teams for over 2 years, which is a key requirement for this position. Additionally, while the candidate has experience in product initiatives, the role emphasizes leadership and strategic contributions that may require further development.",
     "applied_at": null,
     "first_seen": "2026-10-28T11:55:48.258Z"
   },
@@ -4977,7 +4977,7 @@
     "posted_at": "2026-10-28T12:23:39-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, the job posting is for a managerial role focused on leading a team of Professional Services Engineers, which requires significant experience in managing technical teams and customer-facing environments. The candidate's experience is primarily as a software engineer rather than in a managerial capacity, which presents a gap. Additionally, the role emphasizes delivery outcomes and customer engagement, areas where the candidate has limited direct experience.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong technical background, the job posting is for a managerial role focused on leading a team of Professional Services Engineers, which requires significant experience in managing high-performing technical teams in a customer-facing environment. The candidate's experience is primarily as a software engineer rather than in a managerial capacity, which presents a gap. Additionally, the role emphasizes customer engagement and delivery outcomes, areas where the candidate has limited direct experience as a manager.",
     "applied_at": null,
     "first_seen": "2026-10-28T17:47:00.729Z"
   },
@@ -5000,7 +5000,7 @@
     "first_seen": "2026-10-28T17:47:00.729Z"
   },
   {
-    "id": 38,
+    "id": 37,
     "external_id": "f6653a8d-b498-425e-850b-c6a760eb88b3",
     "source": "ashby",
     "company": "Tempo Software",
@@ -5013,12 +5013,12 @@
     "posted_at": "2026-10-28T21:52:04.653+00:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Backend Developer position located in Canada, the United Kingdom, Spain, or Portugal, which does not align with the candidate's preference for roles based in or targeting the Netherlands. Additionally, the candidate is not willing to relocate to the US or work US-on-site, and this position does not offer remote work options that fit their constraints. Therefore, it is a clear mismatch.",
+    "reasoning": "This job posting is not suitable for the candidate as it is located in Canada, the United Kingdom, Spain, or Portugal, while the candidate is based in the Netherlands and is open to remote roles but not to relocating. Additionally, the job does not specify remote work options, which is a key preference for the candidate. Therefore, it does not align with the candidate's constraints.",
     "applied_at": null,
     "first_seen": "2026-10-28T22:05:11.407Z"
   },
   {
-    "id": 3,
+    "id": 6,
     "external_id": "6674282",
     "source": "greenhouse",
     "company": "Monzo",
@@ -5030,13 +5030,13 @@
     "description": "<div class=\"content-intro\"><p><strong><em>🚀 We’re on a mission to make money work for everyone.</em></strong></p> <p>We’re waving goodbye to the complicated and confusing ways of traditional banking.</p> <p>After starting as a prepaid card, our product offering has grown a lot in the last 10 years in the UK. As well as&nbsp;<a href=\"https://monzo.com/current-account/personal\">personal</a> and <a href=\"https://monzo.com/business-banking\">business</a> bank accounts, we offer <a href=\"https://monzo.com/current-account/joint-account\">joint accounts</a>, <a href=\"https://monzo.com/current-account/16-17\">accounts for 16-17 year olds</a>, a <a href=\"https://monzo.com/current-account/under-16s\">free kids account</a> and <a href=\"https://monzo.com/flex\">credit cards</a> in the UK, with more exciting things to come beyond. Our UK customers can also <a href=\"https://monzo.com/savings\">save</a>, <a href=\"https://monzo.com/investments\">invest </a>and&nbsp;<a href=\"https://monzo.com/pensions\">combine their pensions</a> with us.&nbsp;</p> <p>With our hot coral cards and get-paid-early feature, combined with financial education on social media and our award winning customer service, we have a long history of creating magical moments for our customers!</p> <p>We’re not about selling products - we want to solve problems and change lives through Monzo ❤️</p> <hr> <p>&nbsp;</p></div><p>📍Barcelona, Spain | 💰 Base salary for this role is depending on experience&nbsp;+<em> </em>Incentive Awards tied to your performance<em> </em>&nbsp;+ benefits&nbsp;<br>Hybrid model: 3 days a week in the office</p> <p>&nbsp;</p> <p><strong>About our Mobile Engineering discipline</strong></p> <p><strong>Our mobile engineers have a variety of different backgrounds</strong></p> <p>There are ~60 Android engineers at Monzo and we’re looking for more to join the team. We have several non-graduates; only some of us studied Computer Science; some of us have worked in huge companies; some have only ever worked in startups; others are former consultants. As long as you enjoy learning new things, we’d love to talk to you.</p> <p>&nbsp;<strong>Monzo works in small, interdisciplinary teams</strong></p> <p>We have around 650 engineers out of roughly 5,500 people in total - and we have big ambitions. There are many interesting challenges ahead, and we're happy for people to move between teams or to specialise, whatever you prefer. As an engineer here you'd be able to work directly with anyone across the company, and we run regular knowledge-sharing sessions so you’ll learn heaps about everything from how banks work to effective communication.</p> <h3><strong>🔑 You’ll play a key role by...</strong></h3> <p>We’re searching for&nbsp;<strong>product-focused Android engineers</strong>&nbsp;to evolve our native mobile app.<strong>&nbsp;</strong>You’ll take pride in building polished user experiences, and you’ll balance the need for well-tested resilient code with moving fast and iterating.&nbsp;</p> <p>You’ll be working on a product that is a part of day to day life for more than 11 million people already, and your work here will shape the way that people interact with their finances.</p> <p>As an Android Engineer at Monzo you'll work in a small, autonomous product squad alongside iOS Engineers, Backend Engineers, User Researchers, Product Designers, Product Managers, QA Testers, and Data Scientists.</p> <p>You and your team will be responsible for an overall company goal, rather than building a specific feature - you'll have the opportunity to have impact on both&nbsp;<em>what</em>&nbsp;we build, and&nbsp;<em>how</em>&nbsp;we build it. Mobile engineers at Monzo work on everything from the personal banking product to customer support tools. We also have a small mobile platform squad dedicated to enabling other engineers to move faster.</p> <p>Every week we meet as an Android discipline to discuss tools, techniques, problems we're encountering across the company and work together to improve our codebase and processes.</p> <p>You'll report to an engineering manager who will meet with you every 1-2 weeks 1:1. They’re dedicated to helping you grow and develop as an engineer.</p> <h3>Our Android app</h3> <p>Our app is 100% Kotlin, built using MVVM (Model View ViewModel) and Coordinators, and modularised by product feature.</p> <p>We use RxJava, Retrofit and Moshi for API calls and Dagger for dependency injection. We’re starting to use Coroutines for most new features. Room is our choice for persistence, and we use repositories for interacting with data. We’ve built out our design system with Compose.&nbsp;</p> <p>We use GitHub Pull Requests to do code reviews, and write unit tests for our ViewModels, Coordinators, and any other classes which contain logic. We write tests for all of our Compose screens and snapshot test them with Happo. We also use Espresso to test flows, which are executed via our continuous integration system.</p> <p>We’ve previously written about&nbsp;<a href=\"https://monzo.com/blog/2019/02/11/building-monzo-chat-on-android\">building Monzo Chat</a>&nbsp;on Android, which goes into detail on some of these elements.</p> <h3><strong>🤩 We’d love to hear from you if…</strong></h3> <ul> <li>You care about the impact your work has on our customers, and optimise for outcomes rather than the number of lines of code you output</li> <li>You’re excited about and have experience in programming in Kotlin</li> <li>You’ve shipped and iterated on at least one app in the Play Store</li> <li>You have a product mindset: you care about customer outcomes and you want to make data-informed decisions</li> <li>You love turning excellent design into beautiful products</li> <li>You’re comfortable working in a team that deals with ambiguity</li> <li>You have an understanding computer science principles</li> </ul> <h3><strong>🙌 What’s in it for you:</strong></h3> <p>💰 Base salary for this role is depending on experience +<em> </em>Incentive Awards tied to your performance<em> </em>&nbsp;+ benefits&nbsp;</p> <p>📍Barcelona, ESP</p> <p>⏰ We offer flexible working hours and trust you to work enough hours to do your job well, at times that suit you and your team.</p> <p>📚Learning budget of €1,200 a year for books, training courses and conferences</p> <h3><strong>🌈</strong><strong> The application journey has 3 key steps</strong></h3> <p>Our interview process involves three main stages:&nbsp;</p> <ol> <li>Initial Call&nbsp;</li> <li>Take home task or pair coding exercise&nbsp;</li> <li>Final interview including a system design and a behavioural interview&nbsp;</li> </ol> <p>This process should take around 2-3 weeks - your schedule is really important to us, so we promise to be as flexible as possible!&nbsp;<br><br></p> <p>We have some guidelines on using Artificial Intelligence (AI) to ace an application and interview at Monzo. <a href=\"https://monzo.com/blog/the-ultimate-guide-on-using-ai-to-ace-an-interview-at-monzo\">You can read them here.</a></p> <p>There’s a detailed blog on&nbsp;<a href=\"https://monzo.com/blog/2022/03/22/preparing-for-mobile-interviews-at-monzo\">the interview process</a>, for extra details, hints and tips.</p> <p>We’ll only close this role once we have enough applications for the next stage. Please submit your application as soon as possible to make sure you don’t miss out.&nbsp;</p> <p>If you're successful in applying for this role, we'll work with you to find a start date. In some cases, there might be a delay in when you can be released from your current role so that we can make sure things continue to run smoothly. We’ll be sure to communicate this with you and keep you updated.</p> <div id=\"1740415782.814699\" class=\"c-virtual_list__item\" data-qa=\"virtual-list-item\" data-item-key=\"1740415782.814699\"> <div class=\"c-message_kit__background p-message_pane_message__message c-message_kit__message\" data-qa=\"message_container\" data-qa-unprocessed=\"false\" data-qa-placeholder=\"false\"> <div class=\"c-message_kit__hover\" data-qa-hover=\"true\"> <div class=\"c-message_kit__actions c-message_kit__actions--default\"> <div class=\"c-message_kit__gutter\"> <div class=\"c-message_kit__gutter__right\" data-qa=\"message_content\"> <div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <div class=\"p-rich_text_section\">LI-JS1</div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div><div class=\"content-conclusion\"><hr> <p><strong>Equal opportunities for everyone</strong></p> <p>Diversity and inclusion are a priority for us and we’re making sure we have lots of support for all of our people to grow at Monzo. At Monzo, we’re embracing diversity by fostering an inclusive environment for all people to do the best work of their lives with us. This is integral to our mission of making money work for everyone. You can read more in our <a href=\"https://monzo.com/blog/diversity-and-inclusion\">blog</a>, 2026 <a href=\"https://monzo.com/blog/our-2026-diversity-and-inclusion-report\" target=\"_blank\">Diversity and Inclusion Report</a> and 2025 <a href=\"https://monzo.com/blog/gender-pay-gap-report-2025\">Gender Pay Gap Report.</a></p> <p>We’re an equal opportunity employer. All applicants will be considered for employment without attention to age, ethnicity, religion, sex, sexual orientation, gender identity, family or parental status, national origin, or veteran, neurodiversity or disability status.</p> <p>If you have a preferred name, please use it to apply. We don't need full or birth names at application stage 😊</p></div>",
     "posted_at": "2026-10-29T07:09:02-04:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Senior Android Engineer role, which is not aligned with the candidate's expertise in full-stack and backend development. The candidate specializes in Java and React, while the role requires proficiency in Kotlin and Android development. Additionally, the position is based in Barcelona, which does not fit the candidate's preference for roles in the Netherlands or remote opportunities. Overall, the mismatch in technical focus and location makes this a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-29T12:04:55.092Z"
   },
   {
-    "id": 18,
+    "id": 20,
     "external_id": "8333737",
     "source": "greenhouse",
     "company": "Datadog",
@@ -5048,13 +5048,13 @@
     "description": "<p>The Agent Data Plane team is building the next foundation for the Datadog Agent: a new Rust-based platform for the telemetry pipelines (logs, metrics, traces, checks, and more) that run on our customers' infrastructure. Designed for performance, a small and predictable resource footprint, and resiliency, Agent Data Plane will take over the Agent's existing Go-based data pipelines. See a recent episode of Datadog On to hear more about the origins of this project from its technical lead: <a href=\"https://datadogon.datadoghq.com/episodes/datadog-on-rust-return-of-rust/\">Datadog On: Return of Rust</a>.</p> <p>&nbsp;</p> <p>As the team's first dedicated Engineering Manager, you'll guide a team of five engineers, partner closely with the project's technical lead, and help other Agent teams build their pipelines on the platform. Your work will lower the cost customers pay to run the Agent, reduce Datadog's own infrastructure costs, and make the Agent's performance and reliability a lasting competitive advantage. This is also a very public evolution of the Agent's architecture: <a href=\"https://github.com/datadog/saluki\">the codebase</a> is open source, and the work lends itself to technical blog posts and conference talks. As the Agent organization grows, you'll have the opportunity to take on broader scope and grow into the next level of engineering management.</p> <p>&nbsp;</p> <p><em>At Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.</em></p> <p>&nbsp;</p> <p><strong>What You'll Do:</strong></p> <ul> <li>Lead, mentor, and grow a team of five engineers across Madrid and the US, ranging from early-career to senior, helping each of them build their impact and career</li> <li>Own planning and delivery for Agent Data Plane, including the phased migration of the Datadog Agent's data pipelines from Go to Rust</li> <li>Build strong relationships with the teams that own the logs, metrics, traces, and checks pipelines built on Agent Data Plane, as well as the APM Agent team, aligning priorities and working through competing requests</li> <li>Evolve Agent Data Plane into a true platform that other teams can build on with minimal support, while staying consistent with the project's architecture and goals</li> <li>Partner with the technical lead and senior engineers on design decisions, bringing your own technical judgment to performance, resource usage, and reliability tradeoffs</li> <li>Represent the team in cross-team and technical discussions, and help shape the team's new on-call rotation</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li>You have 2+ years of experience managing software engineering teams</li> <li>You have a strong individual contributor background (typically 5+ years) and the technical depth to earn the trust of senior engineers, including those who know more about the details than you do</li> <li>You have 2+ years of hands-on systems programming experience in a language such as Rust, C++, Go, or C</li> <li>You've owned systems that other teams or customers depend on, and you've guided your team through incidents when things broke</li> <li>You've led a team through a significant migration or the replacement of widely used technology, communicating clearly with the teams affected</li> </ul> <p>&nbsp;</p> <p><strong>Nice to Have:</strong></p> <ul> <li>Experience with Rust</li> <li>Experience building software that runs on customer infrastructure, such as agents or collectors, rather than internal services</li> <li>Experience on a platform team whose work other teams build on</li> <li>Experience with open source software, such as working with external contributors and maintaining public repositories</li> </ul> <p>&nbsp;</p> <p><em>Datadog values people from all walks of life. We understand not everyone will meet all the above qualifications on day one. That's okay. If you're passionate about technology and want to grow your skills, we encourage you to apply.</em></p> <p>&nbsp;</p> <p><strong>Benefits and Growth:</strong></p> <ul> <li>New hire stock equity (RSUs) and employee stock purchase plan (ESPP)</li> <li>Continuous professional development, product training, and career pathing</li> <li>Intradepartmental mentor and buddy program for in-house networking</li> <li>An inclusive company culture, ability to join our Community Guilds (Datadog employee resource groups)</li> <li>Access to Inclusion Talks, our internal panel discussions</li> <li>Free, global mental health benefits for employees and dependents age 6+</li> <li>Competitive global benefits</li> </ul> <p>&nbsp;</p> <p><em>Benefits and Growth listed above may vary based on the country of your employment and the nature of your employment with Datadog.</em></p> <p style=\"color: white;\">#LI-Hybrid</p><div class=\"content-conclusion\"><hr> <p><strong>About Datadog:&nbsp;</strong></p> <p>Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence. Learn more about #DatadogLife on <a href=\"https://www.instagram.com/datadoghq/?hl=en\" target=\"_blank\">Instagram</a>, <a href=\"https://www.linkedin.com/company/datadog\" target=\"_blank\">LinkedIn,</a> and <a href=\"https://learn.datadoghq.com/\" target=\"_blank\">Datadog Learning Center. </a></p> <hr> <p data-renderer-start-pos=\"215\"><strong data-renderer-mark=\"true\">Equal Opportunity at Datadog:</strong></p> <p>Datadog is proud to offer <a href=\"https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf\" target=\"_blank\">equal employment opportunity</a> to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and other characteristics protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. Here are our <a href=\"https://www.datadoghq.com/legal/candidate-legal-notices/\" target=\"_blank\">Candidate Legal Notices</a> for your reference.&nbsp;</p> <p>Datadog endeavors to make our Careers Page accessible to all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please complete <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeoJeduEZ2NdZF_65uZmWUrCM-zee7yADXX1s6Xr9zAGq8iKA/viewform\" target=\"_blank\">this form</a>. This form is for accommodation requests only and cannot be used to inquire about the status of applications.&nbsp;</p> <p data-renderer-start-pos=\"662\"><strong data-renderer-mark=\"true\">Privacy and AI Guidelines:</strong></p> <p data-renderer-start-pos=\"662\">Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s&nbsp;<a class=\"c-link\" href=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" target=\"_blank\" data-stringify-link=\"https://www.datadoghq.com/legal/applicant-candidate-privacy/\" data-sk=\"tooltip_parent\">Applicant and Candidate Privacy Notice</a>. For information on our AI policy, please visit <a href=\"https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/\" target=\"_blank\">Interviewing at Datadog AI Guidelines</a>.</p></div>",
     "posted_at": "2026-10-29T09:17:35-04:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The candidate has extensive experience as a software engineer and a strong background in fintech, which aligns with some aspects of the job. However, the role requires 2+ years of management experience and hands-on systems programming experience in Rust, which the candidate lacks. Additionally, the position is focused on leading a team and managing a significant migration project, which may not match the candidate's current experience level as an individual contributor. Thus, while there are relevant skills, the gaps in management and specific technical expertise in Rust make this a weak fit.",
+    "verdict": "no",
+    "reasoning": "This position is for a Manager role requiring 2+ years of experience managing software engineering teams and hands-on systems programming experience in Rust, C++, Go, or C. The candidate has extensive experience as a software engineer but does not have management experience or expertise in Rust, which is a critical requirement for this role. Additionally, the job is located in Madrid, Spain, which may not align with the candidate's preference for remote roles or their current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-29T20:00:56.817Z"
   },
   {
-    "id": 8,
+    "id": 7,
     "external_id": "7739616003",
     "source": "greenhouse",
     "company": "Doctolib",
@@ -5067,7 +5067,7 @@
     "posted_at": "2026-10-29T09:03:33-04:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate is a senior full-stack software engineer with over 10 years of experience, which aligns well with the job's requirement for 5+ years in a similar role. They have strong expertise in Java and React, matching the core technologies needed for the position. Additionally, their experience in fintech and managing product initiatives fits well with Doctolib's focus on healthcare solutions. The candidate's familiarity with CI/CD and cloud infrastructure, although not explicitly stated as AWS, indicates a strong capability to adapt to the tech environment at Doctolib.",
+    "reasoning": "The candidate has over 10 years of experience as a full-stack software engineer, with strong skills in Java and React, which are essential for the role at Doctolib. Their background in fintech aligns well with the healthcare sector's needs for secure and efficient communication solutions. The candidate's experience in managing product initiatives and working in agile environments matches the responsibilities outlined in the job description. However, the candidate lacks specific experience with TypeScript and cloud infrastructure, which could be a minor gap but does not significantly detract from their overall fit.",
     "applied_at": null,
     "first_seen": "2026-10-29T20:00:56.817Z"
   },
@@ -5084,8 +5084,8 @@
     "description": "",
     "posted_at": "2026-10-27T12:32:34.070+00:00",
     "tags": null,
-    "verdict": null,
-    "reasoning": null,
+    "verdict": "no",
+    "reasoning": "The job posting is for a Senior Application Engineer position located in Milan, which does not align with the candidate's preference for roles based in or targeting the Netherlands. Additionally, the candidate is open to remote roles, but the job does not specify remote work options. Therefore, this opportunity is not suitable for the candidate's constraints and preferences.",
     "applied_at": null,
     "first_seen": "2026-10-29T20:00:56.817Z"
   }
