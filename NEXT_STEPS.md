@@ -622,3 +622,33 @@ and focused, otherwise it waits for `visibilitychange`/`focus` and unsubscribes 
 
 Verified with Playwright against the local UI: hidden at mount → 0 canvases, after `visibilitychange`
 → 1 (screenshot `fireworks-return.png`); visible + focused at mount → 1 immediately.
+
+### Scraping policy — decision (2026-10-29)
+
+**Verdict.** Scraping is a last-resort *discovery* channel, never an apply channel. APIs first:
+Careerjet/Jooble/InfoJobs partner feeds give structured rows plus canonical URLs and are sanctioned.
+Checked today: `careerjet.it` robots and `trovolavoro.it` robots disallow `/` for generic crawlers;
+`it.jooble.org` disallows the apply/redirect paths; `infojobs.it` serves no usable robots. None of
+those four should be scraped.
+
+**Where scraping is acceptable.** Only a board whose robots *and* ToS allow it, at a low rate, with
+an identifying UA, cached responses, and public listing data only (no login walls). `lavoro24.it`
+robots allows most paths (only the report form is disallowed) — ToS still needs a read before adding.
+
+**Binding to auto-apply.** Key on the destination, not the source: resolve the final URL, detect the
+ATS, then
+- supported ATS — today only `greenhouse` (`SUPPORTED` in `src/apply/ats.ts`): prep can fill, a human
+  still submits;
+- unsupported ATS or board-hosted form: open in review mode for a human; never automate
+  LinkedIn/Indeed/InfoJobs application flows (login, CAPTCHA, ToS).
+
+So "scrape + auto-apply" only becomes real after the filler supports more ATSs (Lever, Ashby,
+Workday), and even then only for jobs that end on those ATSs.
+
+**Quality rules.** A scraped row enters the DB only with a canonical employer URL (not an aggregator
+redirect), a full description (fetched from the employer page when the board truncates), a stable id
+(URL or board id) and source attribution. Dedupe on canonical URL + company/title/location, not the
+board id. Track per-source verdict distribution and applied rate; downweight noisy sources.
+
+**Order.** APIs with keys → measure → add ATS fillers (Lever, Ashby, Workday) → scraping only if a
+board that matters allows it and has no feed.
