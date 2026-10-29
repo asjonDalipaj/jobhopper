@@ -425,16 +425,19 @@ actions with the call log collapsed; the handoff state renders the warning and t
 hint; no-display renders the no-CLI-id message with no `<pre>`. Live curl: no Origin 200,
 `pages.dev` + `localhost:5173` 200 with echoed ACAO, foreign origin 403 for GET, OPTIONS and POST.
 
-## Change — the mark: a hermit crab carrying a briefcase (added 2026-10-29)
+## Change — the mark: the supplied crab-and-briefcase artwork (added 2026-10-29)
 
 **Why.** The tab icon was a purple gradient and the header a lucide briefcase on a dark disc:
-neither said "JobHopper", and the purple fought the warm palette. The new mark keeps the
-briefcase (the work) and adds the crab (a creature that carries its home), in a flat,
-thick-monoline style: one amber disc, white-filled case, black line art, four energy dashes.
+neither said "JobHopper", and the purple fought the warm palette. The final mark is the artwork
+supplied as `job_hopper_logo_v2.svg`: a black briefcase with an orange crab (claws, eyes) on a
+yellow disc and speed lines.
 
-**Where.** `web/public/favicon.svg` is the single source — the tab icon and the header `<img>`
-(44px) both use it, and `theme-color` is #FFC53D for mobile chrome. The disc colour is the
-brand yellow, one step brighter than `--brand` so the black reads at 16px.
+**Where.** The supplied file is a VTracer trace (41 paths, 1024px, no viewBox) with the wordmark,
+a #FDFDF9 background and a drop shadow baked in. `web/public/favicon.svg` is that trace cropped to
+the emblem (`viewBox="168 74 636 636"`), with the background and shadow paths removed so it works
+on light and dark surfaces; the wordmark is omitted because the header already sets "JobHopper".
+The untraced source lives at `web/src/assets/jobhopper-logo-source.svg` (not deployed). The header
+`<img>` is 44px, and `theme-color` is #FDCF26, the disc colour.
 
 **Verification.** Playwright header captures at 1000px light, 1000px dark and 390px mobile;
-favicon served as `image/svg+xml`; legibility checked at 320/96/64/40/32/16px.
+favicon served as `image/svg+xml` from `web/dist`; legibility checked at 300/96/64/44/32/16px.
