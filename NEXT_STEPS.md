@@ -595,3 +595,21 @@ ATS boards (no public API; [robots.txt](https://hiringcafe.com/robots.txt) disal
 `/company/`, `/b/`, `/req/`, and its terms do not invite scraping) — the same layer our adapters read.
 Use the sheet as an ATS census only (Workday 454, Greenhouse 273 …), and source the Italian company
 universe elsewhere (aggregators, Italian startup lists, Workday tenants). Do not scrape hiring.cafe.
+
+### Better universe — measured (2026-10-29)
+
+Two passes beyond the sheet:
+
+1. **Italian employers' own domains** (40 picked by hand: fintech, SaaS, marketplaces, scaleups).
+   Four supported boards detected — Scalapay (Lever), Job&Talent (Lever, already known), Cleafy
+   (Workable, dead) and one Teamtailor false positive on `app.teamtailor.com`. **Zero** fresh Italian
+   software roles. Most Italian careers pages are JS-rendered or run on Italian ATSs (intervieweb,
+   Taleo, Infor) that the detector cannot see.
+2. **Workday tenants from the tracker** (386 probed, one list page each). Exactly **one** board had
+   fresh Italian roles: Ciena — two Milan roles (software/firmware + mechanical), both with dates and
+   descriptions when fetched through the new adapter.
+
+So the ATS layer reachable from this sheet really is thin for Italy; the missing volume sits in
+aggregators (Careerjet, Jooble, InfoJobs) and Italian-native boards, not in more company harvesting.
+The Workday adapter ships anyway (token `tenant|shard|site`, no key, list paging with details only
+for target-market postings) and Ciena is registered; it is ready for any tenant we learn about.

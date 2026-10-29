@@ -8,6 +8,7 @@ import { workable } from './workable.js';
 import { teamtailor } from './teamtailor.js';
 import { recruitee } from './recruitee.js';
 import { smartrecruiters } from './smartrecruiters.js';
+import { workday } from './workday.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
@@ -25,6 +26,7 @@ const SOURCES: Record<string, JobSource> = {
   teamtailor,
   recruitee,
   smartrecruiters,
+  workday,
   [remotive.name]: remotive,
   [remoteok.name]: remoteok,
 };

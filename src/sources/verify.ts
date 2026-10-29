@@ -1,5 +1,6 @@
 import type { CompanyEntry } from './companies.js';
 import { fetchWithTimeout } from './html.js';
+import { parseWorkdayToken, workdayCxs } from './workday.js';
 
 const BASE_URLS: Record<string, (token: string) => string> = {
   greenhouse: (t) => `https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(t)}/jobs`,
@@ -18,6 +19,19 @@ const BASE_URLS: Record<string, (token: string) => string> = {
  * serving GET fine, which would falsely prune live boards.
  */
 export async function verifyCompanyBoard(company: CompanyEntry): Promise<boolean> {
+  if (company.ats === 'workday') {
+    // Workday's board check is a POST, not a GET.
+    try {
+      const res = await fetchWithTimeout(`${workdayCxs(parseWorkdayToken(company.token))}/jobs`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' },
+        body: JSON.stringify({ appliedFacets: {}, limit: 1, offset: 0, searchText: '' }),
+      });
+      return res.ok;
+    } catch {
+      return false;
+    }
+  }
   const makeUrl = BASE_URLS[company.ats];
   if (!makeUrl) return false;
   try {

@@ -1,4 +1,4 @@
-export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee' | 'smartrecruiters';
+export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee' | 'smartrecruiters' | 'workday';
 
 export interface CompanyEntry {
   name: string;
@@ -20,6 +20,9 @@ function wk(name: string, token: string): CompanyEntry {
 }
 function as(name: string, token: string): CompanyEntry {
   return { name, ats: 'ashby', token };
+}
+function wd(name: string, tenant: string, shard: string, site: string): CompanyEntry {
+  return { name, ats: 'workday', token: `${tenant}|${shard}|${site}` };
 }
 function rc(name: string, token: string): CompanyEntry {
   return { name, ats: 'recruitee', token };
@@ -50,6 +53,8 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   gh('Wallapop', 'wallapop'),
   // Italy — found by the public tracker discovery (fresh Italian role, 2026-10-29)
   as('Docker', 'docker'),
+  // Workday — 386 tenants probed, the only one with fresh Italian roles (2026-10-29)
+  wd('Ciena', 'ciena', 'wd5', 'Careers'),
 
   // Netherlands — live-verified --------------------------------------------------------------
   gh('Adyen', 'adyen'),
