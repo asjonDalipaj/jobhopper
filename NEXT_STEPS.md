@@ -424,3 +424,17 @@ are excluded on purpose, and bodies are capped at 1 MB.
 actions with the call log collapsed; the handoff state renders the warning and the "start over"
 hint; no-display renders the no-CLI-id message with no `<pre>`. Live curl: no Origin 200,
 `pages.dev` + `localhost:5173` 200 with echoed ACAO, foreign origin 403 for GET, OPTIONS and POST.
+
+## Change — the mark: a hermit crab carrying a briefcase (added 2026-10-29)
+
+**Why.** The tab icon was a purple gradient and the header a lucide briefcase on a dark disc:
+neither said "JobHopper", and the purple fought the warm palette. The new mark keeps the
+briefcase (the work) and adds the crab (a creature that carries its home), in a flat,
+thick-monoline style: one amber disc, white-filled case, black line art, four energy dashes.
+
+**Where.** `web/public/favicon.svg` is the single source — the tab icon and the header `<img>`
+(44px) both use it, and `theme-color` is #FFC53D for mobile chrome. The disc colour is the
+brand yellow, one step brighter than `--brand` so the black reads at 16px.
+
+**Verification.** Playwright header captures at 1000px light, 1000px dark and 390px mobile;
+favicon served as `image/svg+xml`; legibility checked at 320/96/64/40/32/16px.
