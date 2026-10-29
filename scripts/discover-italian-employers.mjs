@@ -73,7 +73,7 @@ for (const [name, domain] of COMPANIES) {
       const key = `${ats}:${token}`;
       if (!found.has(key)) {
         found.set(key, { name, ats, token });
-        console.log(`+ ${name} -> ${ats}:${token} (from ${url.replace(domain, domain)})`);
+        console.log(`+ ${name} -> ${ats}:${token} (from ${url})`);
       }
     }
   }

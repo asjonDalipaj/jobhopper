@@ -35,7 +35,7 @@ test('workdayJob maps a list posting plus detail into a normalized job', () => {
     },
   );
   assert.ok(job);
-  assert.equal(job.externalId, '/job/Milan/Senior-Engineer_R-1');
+  assert.equal(job.externalId, 'matthey|Ext_Career_Site|/job/Milan/Senior-Engineer_R-1');
   assert.equal(job.source, 'workday');
   assert.equal(job.company, 'Matthey');
   assert.equal(job.title, 'Senior Engineer');

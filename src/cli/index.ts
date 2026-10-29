@@ -458,7 +458,8 @@ program
       }
     }
     if (judged > 0) writeFileSync(path, `${JSON.stringify(rows, null, 2)}\n`);
-    console.log(dim(`judged ${judged}, failed ${failed}, still unjudged ${pendingSnapshotRows(rows).length}`));
+    const still = rows.filter((row) => !row.verdict).length;
+    console.log(dim(`judged ${judged}, failed ${failed}, still unjudged ${still}`));
   });
 
 /* ------------------------------------------------------------------ *

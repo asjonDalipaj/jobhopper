@@ -72,7 +72,7 @@ export function workdayJob(
   const location = info.location ?? posting.locationsText ?? '';
   const description = stripHtml(info.jobDescription ?? '');
   return {
-    externalId: posting.externalPath,
+    externalId: `${token.tenant}|${token.site}|${posting.externalPath}`,
     source: 'workday',
     company: company.name,
     title: info.title ?? posting.title ?? 'Untitled',
@@ -97,10 +97,12 @@ async function postJson<T>(url: string, body: unknown): Promise<T> {
   return (await res.json()) as T;
 }
 
-async function getJson<T>(url: string): Promise<T> {
-  const res = await fetchWithTimeout(url, {
-    headers: { Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' },
-  });
+async function getJson<T>(url: string, timeoutMs = 20_000): Promise<T> {
+  const res = await fetchWithTimeout(
+    url,
+    { headers: { Accept: 'application/json', 'User-Agent': 'jobhopper/0.1' } },
+    timeoutMs,
+  );
   if (!res.ok) throw new Error(`workday: HTTP ${res.status}`);
   return (await res.json()) as T;
 }
@@ -119,6 +121,8 @@ export const workday: JobSource = {
     let offset = 0;
     let total = Number.POSITIVE_INFINITY;
     let details = 0;
+    let attempts = 0;
+    const maxAttempts = MAX_DETAILS * 2;
     while (offset < total && offset < MAX_LISTED) {
       const page = await postJson<WorkdayListPage>(`${cxs}/jobs`, {
         appliedFacets: {},
@@ -130,19 +134,23 @@ export const workday: JobSource = {
       const postings = page.jobPostings ?? [];
       if (!postings.length) break;
       for (const posting of postings) {
-        if (details >= MAX_DETAILS) break;
-        if (!isTargetMarket(posting.locationsText)) continue;
+        if (details >= MAX_DETAILS || attempts >= maxAttempts) break;
+        // "2 Locations" hides the country in the list; pay for the detail and
+        // re-check the resolved location before dropping it.
+        const vague = /^\d+\s+locations?$/i.test(posting.locationsText ?? '');
+        if (!posting.externalPath || (!vague && !isTargetMarket(posting.locationsText))) continue;
+        attempts += 1;
         try {
-          const detail = await getJson<WorkdayDetail>(`${cxs}${posting.externalPath}`);
+          const detail = await getJson<WorkdayDetail>(`${cxs}${posting.externalPath}`, 10_000);
           const job = workdayJob(company, posting, detail);
-          if (job) {
-            jobs.push(job);
-            details += 1;
-          }
+          if (!job || !isTargetMarket(job.location)) continue;
+          jobs.push(job);
+          details += 1;
         } catch {
           // One unreadable detail must not drop the board.
         }
       }
+      if (details >= MAX_DETAILS || attempts >= maxAttempts) break;
       offset += postings.length;
     }
     return jobs;

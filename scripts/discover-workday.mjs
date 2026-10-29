@@ -7,6 +7,7 @@
  *   node scripts/discover-workday.mjs [csv] [out.json]
  */
 import { readFileSync, writeFileSync } from 'node:fs';
+import { parseCsv } from './lib/csv.mjs';
 import { matchesCountry, isRelevantRole, isFresh } from '../dist/market.js';
 import { workdayCxs, parseWorkdayToken, workdayJob } from '../dist/sources/workday.js';
 import { DEFAULT_COMPANIES } from '../dist/sources/companies.js';
@@ -14,20 +15,6 @@ import { DEFAULT_COMPANIES } from '../dist/sources/companies.js';
 const csvPath = process.argv[2] ?? '.jobhopper/tmp-e2e/platforms.csv';
 const outPath = process.argv[3] ?? '.jobhopper/tmp-e2e/workday-hits.json';
 
-function parseCsv(text) {
-  const rows = []; let row = []; let field = ''; let quoted = false;
-  for (let i = 0; i < text.length; i += 1) {
-    const c = text[i];
-    if (quoted) {
-      if (c === '"') { if (text[i + 1] === '"') { field += '"'; i += 1; } else quoted = false; } else field += c;
-    } else if (c === '"') quoted = true;
-    else if (c === ',') { row.push(field); field = ''; }
-    else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
-    else if (c !== '\r') field += c;
-  }
-  if (field || row.length) { row.push(field); rows.push(row); }
-  return rows;
-}
 
 function workdayToken(raw) {
   let url;
