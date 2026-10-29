@@ -48,6 +48,8 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   as('Bynder', 'bynder'),
   lv('Job&Talent', 'jobandtalent'),
   gh('Wallapop', 'wallapop'),
+  // Italy — found by the public tracker discovery (fresh Italian role, 2026-10-29)
+  as('Docker', 'docker'),
 
   // Netherlands — live-verified --------------------------------------------------------------
   gh('Adyen', 'adyen'),

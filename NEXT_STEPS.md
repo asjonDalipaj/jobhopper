@@ -561,3 +561,22 @@ freshness, not filtering:
 **Next levers, in order.** (a) Backfill judgments for historical snapshot rows (the 6, and any future
 ones) so the UI never shows an unjudged role; (b) Phase B boards — the real volume; (c) decide the
 7-day Italy window, which trades freshness for volume; the judge is the quality gate either way.
+
+### Phase B — measured (2026-10-29)
+
+Normalised the public tracker (6,427 companies) to supported ATS boards: 668 new boards after
+removing the 145 already in the registry. Probing all of them with the real gate (Italy + role +
+3-day freshness) left **4 boards / 5 roles**: AECOM (mechanical/electrical engineer), Intuitive
+(field service), Camunda (sales engineer) — none software — and Docker (one forward-deployed
+engineer, EMEA). Only Docker was added.
+
+The tracker is a US-centric hiring.cafe census: useful as an ATS-priority map (Workday 454,
+Greenhouse 273, Ashby 224, Workable 156, Lever 134, iCIMS 73, BambooHR 72, SmartRecruiters 47,
+Teamtailor 37, Personio 11), not as an Italian employer source. Phase B cannot move Italy; volume
+lives in Phase C (Workday + aggregators) and in the freshness decision.
+
+### Backfill — verified
+
+The 21:19 scan (run 40956992126) judged 50 snapshot rows, 0 failures; Italy unjudged fell 6 → 3 and
+80 rows across all markets remain because of the `--limit` cap. The CI call now passes
+`--limit 200`, so the next run clears the backlog in one pass.

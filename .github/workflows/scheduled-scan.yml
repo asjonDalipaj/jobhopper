@@ -72,7 +72,7 @@ jobs:
             # Historical rows (older than the 3-day scan window) only exist in the
             # snapshot, so judge --tab can never reach them. Judge them in place;
             # the commit below picks up the verdicts.
-            node dist/cli/index.js backfill --snapshot .jobhopper/exports/jobs.json --quick
+            node dist/cli/index.js backfill --snapshot .jobhopper/exports/jobs.json --quick --limit 200
           else
             echo "No OpenRouter API key reached this step - skipping judgment."
             echo "Check Settings -> Secrets and variables -> Actions:"
