@@ -580,3 +580,18 @@ lives in Phase C (Workday + aggregators) and in the freshness decision.
 The 21:19 scan (run 40956992126) judged 50 snapshot rows, 0 failures; Italy unjudged fell 6 → 3 and
 80 rows across all markets remain because of the `--limit` cap. The CI call now passes
 `--limit 200`, so the next run clears the backlog in one pass.
+
+### What the tracker actually is (2026-10-29)
+
+It is a **hiring.cafe coverage worklist**, not a platform list and not hiring.cafe's index. Status
+counts over its 6,427 companies: 3,341 "Supported/Already Live (>= hiringcafe)", 532 "Missing Jobs
+(< hiringcafe)" (hiring.cafe has *more* jobs than the tracker's fleet), 591 "Deferred (No US jobs;
+international gap + fix noted)", 305 "Unsupported … (Not English)", 546 "disqualified by fleet
+triage". Only 2 `.nl` hosts and 32 Italian-ish rows.
+
+So the sheet is US-first by construction — non-US employers were deferred or blacklisted, which is
+why it understates hiring.cafe's NL/IT coverage. hiring.cafe itself indexes employer career sites and
+ATS boards (no public API; [robots.txt](https://hiringcafe.com/robots.txt) disallows `?searchState=*`,
+`/company/`, `/b/`, `/req/`, and its terms do not invite scraping) — the same layer our adapters read.
+Use the sheet as an ATS census only (Workday 454, Greenhouse 273 …), and source the Italian company
+universe elsewhere (aggregators, Italian startup lists, Workday tenants). Do not scrape hiring.cafe.
