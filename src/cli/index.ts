@@ -9,7 +9,7 @@ import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '..
 import { scanCompanies } from '../sources/scan.js';
 import { DEFAULT_COMPANIES } from '../sources/companies.js';
 import { readFileSync, existsSync, writeFileSync, mkdirSync, statSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve } from 'node:path';
 import { getPaths, ensureDirs } from '../storage/paths.js';
 import { importCvPdf, readCvText, readProfileDoc, writeProfileDoc, profileFiles } from '../profile/cv.js';
 import { judgePosting } from '../judge/openrouter.js';
@@ -17,6 +17,7 @@ import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
 import { runJob, runAllJobs } from '../jobs/run.js';
 import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, type HtmlRow } from '../export/html.js';
+import { pendingSnapshotRows, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
 import { startWebServer } from './serve.js';
 import { parseCv } from '../cv/schema.js';
 import { renderCvPdf } from '../cv/render.js';
@@ -416,6 +417,48 @@ program
         console.error(pc.red(`  failed ${job.title}: `) + (err instanceof Error ? err.message : String(err)));
       }
     }
+  });
+
+/* ------------------------------------------------------------------ *
+ * backfill
+ * ------------------------------------------------------------------ */
+program
+  .command('backfill')
+  .description('Judge snapshot rows with no verdict (roles older than the scan window)')
+  .option('--snapshot <path>', 'snapshot JSON to update', '.jobhopper/exports/jobs.json')
+  .option('--limit <n>', 'max rows to judge', '50')
+  .option('--rejudge', 'also re-judge rows that already have a verdict')
+  .option('--quick', 'use the cheaper quick model')
+  .action(async (opts: { snapshot: string; limit: string; rejudge?: boolean; quick?: boolean }) => {
+    requireKey();
+    const path = resolve(opts.snapshot);
+    if (!existsSync(path)) {
+      console.error(pc.red(`No snapshot at ${path}.`));
+      process.exit(1);
+    }
+    const rows = JSON.parse(readFileSync(path, 'utf8')) as SnapshotRow[];
+    const pending = pendingSnapshotRows(rows, { rejudge: Boolean(opts.rejudge), limit: Number(opts.limit) });
+    if (!pending.length) {
+      console.log(dim('Nothing to backfill.'));
+      return;
+    }
+    console.log(pc.cyan(`Judging ${pending.length} snapshot row(s) with no verdict…`));
+    let judged = 0;
+    let failed = 0;
+    for (const row of pending) {
+      try {
+        const result = await judgePosting(snapshotTarget(row), { quick: Boolean(opts.quick) });
+        row.verdict = result.verdict;
+        row.reasoning = result.reasoning;
+        judged += 1;
+        console.log(`${verdictColor(result.verdict.toUpperCase())}  ${row.company} — ${row.title}  ${dim(`[${result.model}]`)}`);
+      } catch (err) {
+        failed += 1;
+        console.error(pc.red(`  failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+      }
+    }
+    if (judged > 0) writeFileSync(path, `${JSON.stringify(rows, null, 2)}\n`);
+    console.log(dim(`judged ${judged}, failed ${failed}, still unjudged ${pendingSnapshotRows(rows).length}`));
   });
 
 /* ------------------------------------------------------------------ *
