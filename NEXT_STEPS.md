@@ -439,5 +439,11 @@ on light and dark surfaces; the wordmark is omitted because the header already s
 The untraced source lives at `web/src/assets/jobhopper-logo-source.svg` (not deployed). The header
 `<img>` is 44px, and `theme-color` is #FDCF26, the disc colour.
 
-**Verification.** Playwright header captures at 1000px light, 1000px dark and 390px mobile;
-favicon served as `image/svg+xml` from `web/dist`; legibility checked at 300/96/64/44/32/16px.
+**Tab icon.** One SVG is not enough: Safari and iOS want a raster, and `/favicon.svg` was the URL
+browsers had cached the old purple mark under. The mark now ships as `jobhopper-mark.svg` (a new
+URL, so no stale tab), `favicon-32.png` (transparent) and `apple-touch-icon.png` (180px, full-bleed
+#FDCF26 so iOS does not composite it on black); all three are linked in `index.html`.
+
+**Verification.** Playwright header captures at 1000px light, 1000px dark and 390px mobile; a fresh
+profile requests `/jobhopper-mark.svg` (the cache-busted URL); PNG and SVG render at 16/32px and the
+touch icon at 96px; all three assets serve 200 from `web/dist`.
