@@ -116,7 +116,7 @@
     "reasoning": "This job posting is for a Lead Physical Security Engineer role, which is unrelated to the candidate's background in software engineering. The candidate has extensive experience in full-stack development, particularly in fintech, but lacks any qualifications or experience in physical security management, crisis management, or security technologies. Additionally, the role requires a bachelor's degree in criminal justice or security management, which the candidate does not possess."
   },
   {
-    "id": 23,
+    "id": 18,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -129,7 +129,7 @@
     "posted_at": "2026-11-02T06:57:54-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is not a fit for the candidate due to the requirement for in-person collaboration in Amsterdam, which contradicts the candidate's preference for remote work. Additionally, the role emphasizes working in an office-first environment, which does not align with the candidate's openness to remote roles anywhere in Europe. While the candidate has relevant experience in Java and SQL, the location constraint makes this opportunity unsuitable.",
+    "reasoning": "This job posting requires in-person collaboration at the Amsterdam office, which contradicts the candidate's preference for remote or hybrid roles. Additionally, while the candidate has strong experience in Java and SQL, the requirement for familiarity with complex large-scale distributed systems and the specific focus on Adyen's Unified Platform may not align with the candidate's recent experience in fintech and enterprise platforms. Overall, the location constraint makes this opportunity unsuitable.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
@@ -692,7 +692,7 @@
     "first_seen": "2026-10-20T23:34:43.583Z"
   },
   {
-    "id": 7,
+    "id": 22,
     "external_id": "8105603",
     "source": "greenhouse",
     "company": "Adyen",
@@ -702,10 +702,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8105603",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <h4><strong>Supply Chain Data Engineer &amp; Integration Specialist, Amsterdam</strong></h4> <p>Adyen is looking for a <strong>Supply Chain Data Engineer &amp; Integration Specialist</strong> to join our team in Amsterdam. This high-impact role is positioned at the center of our operational systems landscape. You will own the technical architecture and data pipelines connecting our new Enterprise Performance Management (EPM) platform, Pigment, with our broader enterprise layers (Workday, Salesforce, Big Data Platform, Looker) and our global third-party logistics (3PL) warehouse networks.</p> <p>This is an exceptional opportunity to build sustainable, long-term technical capability within our Supply Chain function. You will lead the technical integrations for upcoming warehouse expansions in key growth markets, directly enabling business expansion.</p> <h4><strong>What you’ll do</strong></h4> <ul> <li><strong>Build &amp; Maintain Data Pipelines:</strong> Architect, implement, and monitor robust, production-grade data pipelines that feed our planning platforms, ensuring that clean operational data reliably reaches Pigment in the exact shape required.</li> <li><strong>Industrialize POC Integrations:</strong> Take our initial automated prototype connections and harden them into scalable, secure, and production-ready enterprise integrations.</li> <li><strong>Integrate Key Enterprise Systems:</strong> Establish and maintain seamless system-to-system connections linking Pigment with Workday (Finance &amp; Procurement), Salesforce (CRM), Big Data Platform, and reporting interfaces (Looker).</li> <li><strong>Connect Logistics Networks (3PLs):</strong> Build and maintain direct integrations with external warehouse management systems and global logistics partners (e.g., DHL APIs) to support real-time inventory tracking and automated stock reconciliation.</li> <li><strong>Drive Data Quality &amp; MDM:</strong> Work closely with the Central Data Platform team to enforce Master Data Management (MDM) at the source systems before data flows into down-stream planning modules.</li> <li><strong>Support Global Expansion:</strong> Serve as the technical integration lead for our global warehouse expansions, ensuring robust local warehouse configurations from day one.</li> </ul> <h4><strong>Who you are</strong></h4> <ul> <li>You have 4+ years of experience in data engineering, backend integration development, or a systems integration role.</li> <li>You are highly motivated, proactive, and a natural problem solver with an eagerness to master supply chain, financial, and warehouse logistics systems.</li> <li>You are highly proficient in database structures, SQL, and programming languages commonly used in data pipelines (e.g., Python, Apache Airflow, PySpark).</li> <li>You have deep experience building API integrations (REST, SOAP), handling data transformation formats (JSON, XML, CSV), and managing enterprise connectors.</li> <li>You bring an architectural mindset. You naturally engineer for pipeline resilience, including automated alerting, transaction retries, error-logging, and comprehensive unit/UAT testing.</li> <li>You have a Data Governance and Architectural Mindset.&nbsp;</li> <li>You are a self-starter who actively seeks out inefficiencies, takes technical ownership of solutions, and delivers results without requiring constant hand-holding.</li> <li>You can explain complex data architectures and pipeline failures clearly to operational planners and business stakeholders.</li> <li>You are familiar with numerous AI models and embed AI usage in your daily work.&nbsp;</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-10-12T10:03:49-04:00",
+    "posted_at": "2026-11-02T07:54:37-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is not a fit for the candidate due to the requirement for in-person collaboration in Amsterdam, while the candidate is open to remote roles. Additionally, the role focuses heavily on data engineering and integration, which is not the candidate's primary expertise as they are more focused on full-stack development and fintech. The candidate's experience in backend integration is relevant but does not align closely with the specific requirements of this position.",
+    "reasoning": "This job posting is not a fit for the candidate due to the requirement for in-office presence in Amsterdam, which contradicts the candidate's openness to remote roles. Additionally, the role focuses heavily on data engineering and integration management, which may not align closely with the candidate's primary experience in software engineering and product ownership. The candidate's background in fintech and API integrations is relevant, but the specific emphasis on supply chain data engineering is a significant mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-12T14:05:34.157Z"
   },
@@ -1024,7 +1024,7 @@
     "reasoning": "This job posting is for an Android Engineer position, which is not aligned with the candidate's expertise as a full-stack software engineer with a focus on backend and frontend development using Java and React. The candidate does not have experience in Android development or Kotlin, which are essential for this role. Additionally, the position is located in Barcelona, which does not meet the candidate's preference for roles in the Netherlands or remote opportunities."
   },
   {
-    "id": 14,
+    "id": 29,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1037,12 +1037,12 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in Java, SQL, and CI/CD, which aligns well with the requirements of the Mozilla role. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in mentoring and stakeholder engagement, the role emphasizes building and improving internal tools and platforms, which may require a deeper familiarity with the specific systems used at Mozilla. Overall, while there are significant matches, the gaps in Python experience and specific platform knowledge make this a fair fit.",
+    "reasoning": "The candidate has a strong background in software engineering with relevant experience in Java, SQL, and CI/CD, which aligns well with the requirements for the Senior Software Engineer position at Mozilla. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in mentoring and stakeholder engagement, the role emphasizes building and improving systems for add-ons, which may require a deeper understanding of the specific technologies and practices used at Mozilla.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 15,
+    "id": 28,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1055,7 +1055,7 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in software engineering, particularly with Java, SQL, and CI/CD, which aligns well with the requirements of the Mozilla position. They also have experience in customer-facing roles and mentoring, which is beneficial for collaboration in the team environment described. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate does not explicitly list in their skills. Additionally, while they have experience with CI/CD, the role emphasizes improving automated testing and deployment workflows, an area where the candidate may need to further develop their expertise.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in Java, SQL, and CI/CD, which aligns well with the requirements of the Mozilla role. However, the job emphasizes Python/Django experience, which the candidate lacks. Additionally, while the candidate has experience with CI/CD and DevOps, the specific focus on automated moderation systems and internal developer platforms may require a learning curve. Overall, the candidate's background is relevant, but there are meaningful gaps in specific technologies and systems used at Mozilla.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
@@ -1092,7 +1092,7 @@
     "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs is weakly aligned with the candidate's profile. While the candidate has extensive experience in full-stack development and a strong background in Java and React, the job is located in multiple countries including the US, which the candidate is not willing to relocate to. Additionally, the job does not specify remote work options, which is a key preference for the candidate. The candidate's fintech experience is relevant but not explicitly mentioned in the job description."
   },
   {
-    "id": 33,
+    "id": 36,
     "external_id": "4405791009",
     "source": "greenhouse",
     "company": "Redwood Software",
@@ -1105,7 +1105,7 @@
     "posted_at": "2026-10-30T10:07:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, CI/CD, and full-stack development, they lack specific experience with SAP environments and the Spring ecosystem, which are critical for this role. The job emphasizes AI-enhanced development and SAP connectivity, areas where the candidate's experience is not directly aligned. Additionally, the requirement for familiarity with advanced AI tools and prompt engineering techniques may stretch the candidate's current skill set.",
+    "reasoning": "While the candidate has strong experience in Java, CI/CD, and full-stack development, the job requires specific expertise in SAP environments and the Spring ecosystem, which the candidate does not explicitly mention. The role also emphasizes AI-enhanced development and prompt engineering, areas where the candidate has some experience but may not fully meet the expectations outlined. Additionally, the requirement for familiarity with SAP Clean Core architecture and specific cloud platforms like AWS presents a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
@@ -1504,7 +1504,7 @@
     "first_seen": "2026-10-12T14:05:34.157Z"
   },
   {
-    "id": 7,
+    "id": 12,
     "external_id": "8167155",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1514,10 +1514,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8167155",
     "description": "<p>&nbsp;</p> <p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition. </span><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>&nbsp;</p> <p><strong>Engineering Manager - Android / iOS</strong></p> <p data-pm-slice=\"1 1 []\">We're looking for experienced Engineering Managers to lead one of our Android or iOS teams within Channels, part of our Payment Engineering organization. These teams build and operate Adyen’s in-store payment method integrations, focusing on low-level integration layers, including payment kernels and compliance with global PCI standards. Their work forms the foundation of reliable, secure payments for retailers around the world.In this role, you’ll drive technical strategy, build and develop a high-performing engineering team, and shape the evolution of our platform as Adyen continues to scale globally.</p> <p>&nbsp;</p> <p><strong>What you'll do</strong></p> <ul> <li><strong>Lead and develop a high-performing team: </strong>manage engineers across all levels, owning day-to-day operations, planning, and hiring for our office in Amsterdam. Setting clear individual and team goals that align with our strategic engineering ambitions and create an inspiring and collaborative team environment with an open communication / feedback culture.</li> <li><strong>Work cross-functionally:</strong> closely collaborate with our design, product, data, and engineer teams and other key stakeholders within Payments.</li> <li><strong>Act as a multiplier:</strong> by motivating team members and providing coaching in areas including but not limited to: engineering best practices,<br>scalable architecture design, product roadmap discussions.</li> <li><strong>Bring structure and process to execution:</strong> Collaborate with different teams to design and implement new services with reliability/infra/data/dev in mind.</li> <li><strong>Foster a culture of technical excellence: </strong>Drive globally optimized technical decisions with a focus on automation, partnering with other leads to evolve<br>our solutions to process payments in store.</li> </ul> <p>&nbsp;</p> <p><strong>Who you are</strong></p> <ul> <li><strong>Experienced engineering leader:</strong> you bring a wealth of knowledge, with 7+ years in the Mobile (Android &amp; iOS) and/or IoT software development industry within a fast-paced tech environment and 2+ years in a people management position.&nbsp;</li> <li><strong>Technical leader with a strong engineering perspective:</strong> you've led Mobile strategy, shape technical direction, improve reliability and performance, and ensure solutions are scalable and maintainable with a focus on automation.</li> <li><strong>Hands-on when needed:</strong> while this is a management role, you're comfortable in technical discussions to guide your team and ensure sound decisions, and can partner across development teams to diagnose and resolve issues when needed.</li> <li><strong>Technical skills:&nbsp;</strong>the team will primarily code in Android, iOS or Kotlin. You have significant experience with one of these languages.&nbsp;</li> <li><strong>In store domain expertise:</strong> your team will own payment method integrations&nbsp;for in store payments, this includes knowledge around payment kernels, pci,&nbsp;p2pe and pci pin. Having experience with these protocols will be a&nbsp;significant benefit, however a technical mind who can quickly learn new low&nbsp;level technologies would also work.</li> </ul> <p>&nbsp;</p> <p><strong><br>Diversity, Equity, and Inclusion at Adyen</strong></p> <p>We actively seek different perspectives to sharpen our ideas. Our unique culture is a product of our diverse backgrounds and experiences. No matter who you are or where you’re from, you’re welcome to be your true self at Adyen.&nbsp;</p> <p><em>If you need accommodations or support during the recruitment process to perform at your best, you’ll have the opportunity to let our team know in your application. We encourage people from all backgrounds and abilities to apply.</em></p> <p>&nbsp;</p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p> <p>&nbsp;</p> <p>&nbsp;</p>",
-    "posted_at": "2026-10-22T12:44:55-04:00",
+    "posted_at": "2026-11-02T07:59:19-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Engineering Manager role focused on Android development, which requires significant experience in mobile software development and people management, specifically in the Android and iOS domains. The candidate, while experienced in full-stack development and fintech, does not have the required mobile development experience or management experience in that specific context. Additionally, the role is office-first in Amsterdam, which contradicts the candidate's preference for remote work.",
+    "reasoning": "This job posting is for an Engineering Manager role focused on Android and iOS development, which is outside the candidate's expertise in full-stack development primarily using Java and SQL. The candidate does not have experience in mobile development or managing teams, which is a key requirement for this position. Additionally, the role is office-first in Amsterdam, while the candidate is open to remote roles and is based in Utrecht, which does not align with the job's location constraints.",
     "applied_at": null,
     "first_seen": "2026-10-12T22:21:14.146Z"
   },
@@ -1612,7 +1612,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 7,
+    "id": 14,
     "external_id": "8002425",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1622,10 +1622,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8002425",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h3><strong>Senior Forward Deployed Engineer</strong></h3> <p>Adyen’s Business Enablement Engineering Team is looking for a Senior Forward Deployed Engineer who has a deep passion for AI and Automation. They will work on improving how teams work using their day to day productivity tooling by applying AI and automation where it has a huge effect and value.</p> <p>You will be the primary driver of internal teams adopting and taking full advantage of our productivity tooling landscape. Operating as a highly technical expert, specialized, engineer, you will work with and dive deep into non-technical functions such as Legal, Support, and Operations to understand their operational toil, architect the right solutions, to reduce manual work in key business workflows, with the goal of speeding up the teams overall day to day work.&nbsp;</p> <p>This isn't just about coding, it's about deeply understanding our internal team's most complex problems, leading the end-to-end technical delivery of innovative AI solutions, and empowering these teams to operate faster and smarter. You will be a hands-on engineer, shaping technical strategy and ensuring successful outcomes from initial concept to handover while increasing overall adoption of our tooling ecosystem.</p> <h3><strong>What you will do</strong></h3> <ul> <li>You build robust and resilient systems where maintenance is lower or non-existent. You build on top of our existing internal ecosystem or stakeholder tooling to accelerate teams productivity and user experience.&nbsp;</li> <li>You create long-term high-quality documentation and runbooks. You hand ownership back to the function/team before moving on to your next project.</li> <li>You identify repeated patterns of stakeholder issues or asks that feed back into Business Enablements Tooling roadmap.</li> <li>Automate complex internal processes using Google Vertex AI, Google’s Agent Development Kit (ADK), and software engineering to provide solutions(e.g., automated support agents, intelligent documentation retrieval, contract review automations).</li> <li>Be responsible for the end-to-end technical delivery of complex technical solutions. You will personally write critical code, configure systems, and troubleshoot issues to ensure successful deployment and measurable business impact.</li> <li>Embrace Adyen's \"launch fast\" formula. Quickly develop proofs-of-concept and minimum viable products, translating non-technical business requirements into technical solutions, and gathering feedback along the way.</li> <li>Identify, analyze, and directly resolve the most complex technical challenges during all phases of the project, from complex data integrations on GCP/Kubernetes to advanced AI agent orchestration.</li> </ul> <h3><strong>Who you are</strong></h3> <ul> <li>You are an expert in Software Engineering and bring strong automation skills, with the ability to build, troubleshoot, and scale scripts and tools independently.</li> <li>You have client facing experiences like Solutions Architect, Solutions Engineers</li> <li>You have a deep understanding of LLMs, prompt engineering, and applied ML workflows. You have hands-on experience integrating third-party AI models (e.g., Gemini) and using agentic orchestration frameworks (e.g., LangChain, LlamaIndex, Google ADK).</li> <li>You have hands-on experience with Google Cloud Platform (GCP) especially integrating applications across services like Vertex AI as well as deploying to on-premise infrastructure such as K8S, Postgres, Redis etc.</li> <li>You’ve successfully rolled out and maintained integrations across a variety of enterprise applications (Slack Enterprise Grid, Zoom, Atlassian suite).</li> <li>You are great at understanding and translating non-technical issues into technical requirements. You can confidently navigate stakeholder conversations, present complex concepts simply, and create high-quality documentation.</li> <li>You apply a security-first mindset, designing solutions that safeguard data and systems while maintaining a seamless user experience.</li> <li>You have a \"get-things-done\" mentality, focusing on fast and impactful delivery, and the proven ability to lead technical initiatives autonomously.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-10-23T06:59:43-04:00",
+    "posted_at": "2026-11-02T07:48:18-05:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting requires in-person collaboration in Amsterdam, which contradicts the candidate's preference for remote work. Additionally, the role emphasizes deep expertise in AI, automation, and Google Cloud Platform (GCP), areas where the candidate does not demonstrate specific experience. While the candidate has strong software engineering skills and a fintech background, the significant focus on AI and the requirement for client-facing experience in a solutions architect capacity are not aligned with the candidate's profile.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in fintech and AI tooling, the job at Adyen requires specific expertise in Google Cloud Platform (GCP) and advanced AI integration that the candidate does not explicitly demonstrate. Additionally, the role emphasizes a strong focus on internal team productivity tooling and client-facing roles, which may not align perfectly with the candidate's background. The requirement for in-office presence in Amsterdam also conflicts with the candidate's openness to remote work.",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -1648,7 +1648,7 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 52,
+    "id": 56,
     "external_id": "10e6475e-67ef-4621-8718-7b087c354651",
     "source": "ashby",
     "company": "Eleven Labs",
@@ -1661,7 +1661,7 @@
     "posted_at": "2026-11-02T11:58:53.345+00:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs is a remote position, which aligns with the candidate's preference for remote roles. However, the specific technologies and frameworks used by Eleven Labs are not mentioned, making it difficult to assess a strong match with the candidate's skills in Java, SQL, React, and CI/CD. Additionally, the candidate's fintech background may not directly align with the company's focus, which is not specified. Overall, while there is some alignment, the lack of detailed requirements and potential misalignment with the company's domain leads to a weak fit.",
+    "reasoning": "While the candidate has extensive experience as a full-stack engineer and is open to remote roles, the job posting does not specify the technology stack or specific requirements that align with the candidate's skills in Java, SQL, and React. Additionally, the candidate's preference for roles in the Netherlands, Italy, or Spain may not align with the listed locations, which include Croatia, Poland, Sweden, and the UK. This creates a mismatch in geographical preference, even though remote work is an option.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -1846,7 +1846,7 @@
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 16,
+    "id": 30,
     "external_id": "8282264",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1858,13 +1858,13 @@
     "description": "<div class=\"gmail_default\" style=\"font-size: small;\"> <div> <p><strong>Why Mozilla?</strong></p> <p><span style=\"font-weight: 400;\">Mozilla Corporation is the non-profit-backed technology company that has shaped the internet for the better over the last 25 years. We make pioneering brands like Firefox, the privacy-minded web browser. Now, with more than 225 million people around the world using our products each month, we’re shaping the next 25 years of technology and helping to reclaim an internet built for people, not companies. Our work focuses on diverse areas including AI, social media, security and more. And we’re doing this while never losing our focus on our core mission – to make the internet better for people.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">The Mozilla Corporation is wholly owned by the non-profit 501(c) Mozilla Foundation. This means we aren’t beholden to any shareholders — only to our mission. Along with thousands of volunteer contributors and collaborators all over the world, Mozillians design, build and distribute </span><strong>open-source</strong><span style=\"font-weight: 400;\"> software that enables people to enjoy the internet on their terms.&nbsp;</span></p> <strong>What you’ll do:</strong> <ul> <li style=\"font-weight: 400;\"><strong>Design, build and implement security and hardening features for enterprise users:</strong><span style=\"font-weight: 400;\"> Design, implement, test, and ship cutting-edge security features that strengthen Firefox’s security posture.</span></li> <li style=\"font-weight: 400;\"><strong>Advance Firefox’s security architecture across multiple operating systems: </strong><span style=\"font-weight: 400;\">Contribute to and drive cutting-edge improvements to Firefox’s core security posture, by building privilege isolation and moving trust boundaries </span><strong>or Strengthen Firefox’s security architecture:</strong><span style=\"font-weight: 400;\"> Improve Firefox’s core security mechanisms including cryptographic protocols, WebPKI, and security-sensitive web APIs.</span></li> <li style=\"font-weight: 400;\"><strong>Contribute to our security initiatives:</strong><span style=\"font-weight: 400;\"> Work across teams to investigate security issues, identify root causes, and deliver robust, maintainable fixes.</span></li> <li style=\"font-weight: 400;\"><strong>Improve browser reliability and performance:</strong><span style=\"font-weight: 400;\"> Diagnose and resolve issues affecting stability, correctness, performance, and memory usage in a complex, multithreaded environment.</span></li> </ul> <p><strong>What you’ll bring:</strong></p> <ul> <li style=\"font-weight: 400;\"><strong>Systems programming experience and security knowledge:</strong><span style=\"font-weight: 400;\"> 3+ years of experience in low-level software engineering, strong proficiency in C and/or C++, and a solid understanding of security fundamentals.</span></li> <li style=\"font-weight: 400;\"><strong>Debugging and problem-solving skills:</strong><span style=\"font-weight: 400;\"> Experience diagnosing and resolving issues in multithreaded, cross-platform native applications, including memory and performance challenges.</span></li> <li style=\"font-weight: 400;\"><strong>Web platform and modern systems experience: </strong><span style=\"font-weight: 400;\">Familiarity with web technologies (HTML, CSS, JavaScript) and interest or experience in Rust; ability to work effectively within large, complex, multi-language codebases.</span></li> <li style=\"font-weight: 400;\"><strong>Effective collaboration and communication:</strong><span style=\"font-weight: 400;\"> Experience working with distributed teams and communicating technical ideas clearly in writing and conversation.</span></li> </ul> <p><strong>What you’ll get:</strong></p> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Generous performance-based bonus plans to all eligible employees - we share in our success as one team</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Generous retirement contributions with 100% immediate vesting (regardless of whether you contribute)</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Quarterly all-company wellness days where everyone takes a pause together</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Country specific holidays plus a day off for your birthday</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">One-time home office stipend</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Annual professional development budget</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Quarterly well-being stipend</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Considerable paid parental leave</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Employee referral bonus program</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Other benefits (life/AD&amp;D, disability, EAP, etc. - varies by country)</span></li> </ul> <p><strong>About Mozilla&nbsp;</strong></p> <p>Mozilla exists to build the Internet as a public resource accessible to all because we believe that open and free is better than closed and controlled. When you work at Mozilla, you give yourself a chance to make a difference in the lives of Web users everywhere. And you give us a chance to make a difference in your life every single day. Join us to work on the Web as the platform and help create more opportunity and innovation for everyone online.</p> <p><strong>Commitment to diversity, equity, inclusion, and belonging</strong></p> <p>Mozilla understands that valuing diverse creative practices and forms of knowledge are crucial to and enrich the company’s core mission.&nbsp; We encourage applications from everyone, including members of all equity-seeking communities, such as (but certainly not limited to) women, racialized and Indigenous persons, persons with disabilities, persons of all sexual orientation<span style=\"color: #003366;\">s, </span>gender identities, and expressions.</p> <p>We will ensure that qualified individuals with disabilities are provided reasonable accommodations to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment, as appropriate. Please contact us at <a class=\"external-link\" href=\"mailto:hiringaccommodation@mozilla.com\">hiringaccommodation@mozilla.com</a> to request accommodation.</p> <p>We are an equal opportunity employer. We do not discriminate on the basis of race (including hairstyle and texture), religion (including religious grooming and dress practices), gender, gender identity, gender expression, color, national origin, pregnancy, ancestry, domestic partner status, disability, sexual orientation, age, genetic predisposition, medical condition, marital status, citizenship status, military or veteran status, or any other basis covered by applicable laws.&nbsp; Mozilla will not tolerate discrimination or harassment based on any of these characteristics or any other unlawful behavior, conduct, or purpose.</p> <p>Group: D</p> <p>#LI-REMOTE</p> <p>Req ID: R3247</p> </div> </div><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p><strong>Hiring Ranges:</strong></p></div><div class=\"title\">Remote Netherlands</div><div class=\"pay-range\"><span>€66.000</span><span class=\"divider\">&mdash;</span><span>€88.000 EUR</span></div></div></div>",
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting is for a Senior Software Engineer focused on Firefox Security, requiring strong proficiency in C and/or C++, along with experience in low-level software engineering and security knowledge. The candidate's background is primarily in Java, SQL, and web technologies, with no mention of C/C++ or security-focused experience, which are critical for this role. Additionally, the candidate's experience does not align with the specific security architecture and systems programming requirements outlined in the job description.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has significant experience as a software engineer and a strong background in Java, SQL, and frontend technologies, the job posting requires specific expertise in systems programming, particularly in C and/or C++, which the candidate does not possess. Additionally, the role focuses heavily on security features and low-level software engineering, areas that are not highlighted in the candidate's experience. The candidate's fintech background and familiarity with web technologies are relevant, but the gaps in required skills for this position are substantial.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 17,
+    "id": 31,
     "external_id": "8282262",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1877,7 +1877,7 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and frontend technologies like React, the job at Mozilla requires specific expertise in low-level programming with C or C++, which the candidate does not possess. Additionally, the role focuses heavily on security architecture and systems programming, areas that are not highlighted in the candidate's experience. The candidate's fintech background and interest in AI tools do not align closely with the security-focused responsibilities of this position.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and frontend technologies, this position at Mozilla requires specific systems programming experience in C or C++, which the candidate lacks. Additionally, the role focuses heavily on security architecture and low-level software engineering, areas that are not highlighted in the candidate's experience. The candidate's fintech background and interest in AI tools do not align closely with the security-focused nature of this role.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
@@ -1954,7 +1954,7 @@
     "first_seen": "2026-10-16T02:36:59.403Z"
   },
   {
-    "id": 4,
+    "id": 15,
     "external_id": "8288674",
     "source": "greenhouse",
     "company": "Adyen",
@@ -1964,10 +1964,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8288674",
     "description": "<p><strong>This is Adyen</strong></p> <p>At Adyen, we’re engineered for ambition. We empower our teams with the culture and support they need to own their careers. The people of Adyen are motivated problem-solvers who tackle unique technical challenges at scale, delivering innovative and ethical solutions to help businesses achieve their ambitions faster.</p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <p><strong>Senior Machine Learning Engineer</strong><strong><br></strong><strong><br></strong>Adyen is looking for a Senior Machine Learning Engineer to join our Anti-Money Laundering team in Amsterdam, someone with experience of building and operating robust machine learning systems at scale in production environments.&nbsp;</p> <p>The Anti-Money Laundering team processes a massive transaction volume (over 800B euro in H1 2026) to detect complex financial crime and cover a wide range of customer risks. We currently run a hybrid stack of business rules and machine learning models, with a clear mission to systematically reduce our dependence on static rules and transition to a modern, model-first detection engine.</p> <p><strong>In this role, you will:&nbsp;</strong></p> <ul> <li>Develop and maintain production ML pipelines for data ingestion, training, validation, and deployment</li> <li>Help us upgrade an existing rules-heavy system to a modern automated AI/ML engine</li> <li>Collaborate with data engineers and data analysts to develop best in class Fintech models</li> <li>Collaborate with operations and compliance teams to ensure Adyen’s models operate worldwide without a hitch</li> <li>Tackle difficult technical challenges like extreme class imbalance and incomplete ground truth</li> <li>Support and encourage good engineering practices</li> </ul> <p><strong>Who You Are:</strong></p> <ul> <li>You have 7+ years of experience as an engineer working in the machine learning domain;</li> <li>You are a strong Python programmer;</li> <li>You have experience with the full machine learning model lifecycle in production flows;</li> <li>You have experience leveraging big data to create the pipelines needed to feed the models with appropriate data;</li> <li>You have a strong understanding of good software engineering practices as well as data engineering and MLOps principles;</li> <li>You have knowledge of data science, statistics and machine learning techniques;</li> <li>You have strong familiarity with the standard data science toolkit in python, such as (py)spark, (Trino) SQL, Tensorflow, PyTorch, XGBoost/LightGBM, Pandas, MLFlow or similar MLOps frameworks, and Airflow;</li> <li>You have knowledge/experience of working with ML infrastructure components with tools such as k8s, docker, airflow, argo-workflows, prometheus, grafana</li> <li>You have an experimental mindset with a launch fast and iterate mentality;</li> <li>You proactively take the lead in projects, from ideation to deployment. You have experience working with a wide range of stakeholders and can clearly communicate complex outcomes over a wide range of audiences.</li> </ul> <p><strong>Nice to Have:</strong></p> <ul> <li>Deep PySpark expertise&nbsp;</li> <li>Finance domain experience</li> <li>Worked with extremely unbalanced data</li> <li>Production LLM experience</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments</strong></p> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</p> <p><strong>What’s next?</strong></p> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. <a href=\"https://careers.adyen.com/how-we-hire\">Learn more about our hiring process here</a>. Don’t be afraid to let us know if you need more flexibility.</p> <p>This is a full-time position based in our Amsterdam office, and it requires relocation if you are currently living outside of the Netherlands.</p>",
-    "posted_at": "2026-10-16T06:39:37-04:00",
+    "posted_at": "2026-11-02T07:59:14-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Machine Learning Engineer role, which requires extensive experience in machine learning, data science, and specific tools and frameworks that the candidate does not possess. The candidate has a strong background in software engineering and fintech but lacks the necessary machine learning experience and expertise in tools like TensorFlow, PyTorch, and MLOps frameworks. Additionally, the role is based in Amsterdam and requires relocation, which does not align with the candidate's constraints.",
+    "reasoning": "This position is for a Senior Machine Learning Engineer, which requires extensive experience in machine learning systems, Python programming, and familiarity with data science tools and practices. The candidate has a strong software engineering background but lacks specific experience in machine learning, data pipelines, and the required tools such as TensorFlow, PyTorch, and MLOps frameworks. Additionally, the role is based in Amsterdam and requires relocation, which contradicts the candidate's preference for remote or hybrid work.",
     "applied_at": null,
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
@@ -2008,7 +2008,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 44,
+    "id": 47,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2021,12 +2021,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java and SQL, the job requires proficiency in Python or Kotlin, which the candidate does not list as a skill. Additionally, the role is specifically remote in Spain, which may not align with the candidate's preference for remote roles in the Netherlands or Italy. The requirement for on-call rotation may also be a concern for the candidate, as it is not mentioned in their background.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in backend development with Java and SQL, the job specifically requires proficiency in Python or Kotlin, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's current location in the Netherlands. The candidate's fintech experience is a positive match, but the gaps in required technologies and location make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
   {
-    "id": 48,
+    "id": 51,
     "external_id": "7931494003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2039,12 +2039,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in backend development and a strong fintech background, the job requires specific experience with Python or Kotlin, which the candidate does not explicitly list. Additionally, the role emphasizes experience with AWS, Spark, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with Java and SQL is relevant, but the gaps in required technologies and specific backend system experience make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in backend systems, the job posting specifically requires expertise in Python or Kotlin, and experience with AWS, Spark, and Kubernetes, which the candidate does not explicitly demonstrate. Additionally, the role emphasizes setting technical strategy and leading teams, which may require more seniority in a leadership capacity than the candidate has indicated. The remote location requirement in Spain also poses a constraint since the candidate is based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 47,
+    "id": 50,
     "external_id": "7820451003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2056,13 +2056,13 @@
     "description": "<div class=\"content-intro\"><p>At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.</p></div><p>We are reinventing credit cards entirely. We are working directly with card issuers to change how credit is used throughout the world, creating new types of cards that work for both their everyday lives and large purchases with extremely straightforward, flexible terms. You will be the lead engineer for our EU teams.&nbsp; You will be responsible for architecture across cards and relationships with our EU counterparts.&nbsp; You'll work across stacks and across the company, working both in just-in-time transaction processing that has to take place in milliseconds, along with our ledgering and reconciliation systems in post-transaction processing. This is some of the more difficult, exciting, experimental engineering work in Affirm. Join us and our team in Spain and Poland to help us revolutionize payments!</p> <h4>What you'll do</h4> <p>· You will be responsible for setting technical strategy for your team on a year-long time scale, and help your team tie it together with critical, business-impacting projects.<br>· You will be the lead software engineer for all cards in the EU.<br>· You will collaborate across teams in the product development lifecycle by collaborating with product management, design &amp; analytics to ensure technical sustainability, risks and trade-offs are well understood and managed.<br>· You will act as a force-multiplier for your team through your definition and advocacy of technical solutions and operational processes.<br>· You take ownership of your team’s operations and availability by ensuring you have the right monitoring, triage rotations, playbooks, policies, testing and alerting in place to support “keep the lights on” &amp; on-call efforts.<br>· You will foster a culture of quality and ownership on your team by setting code review and design standards for your team, and advocating for them beyond your team through your writing and tech talks.<br>· You will help develop talent on your team by providing feedback and guidance, and leading by example.<br>· On-Call Rotation - There would be an on-call rotation for this role as a requirement.</p> <h4>What we look for</h4> <p>· You have a total of 8+ years of experience as a software engineer.<br>· You are proficient in designing, developing and launching backend systems at scale technologies like Python, Kotlin, AWS, MySQL, and Kubernetes<br>· You are proficient in developing front end applications.<br>· You have experience delivering major features, system components or deprecating existing functionality in a system through the definition of a technical and execution plan. You write high quality code that is easily understood and used by others.<br>· You thrive in ambiguity, and are comfortable moving from low level language idioms all the way to the architecture of large systems to understand how they work.<br>· Your growth and impact trajectory demonstrates that you have mastered gathering and iterating on feedback from your engineering and cross-functional peers.<br>· You have strong verbal and written communication skills that support effective collaboration with our global engineering team.</p> <div> <h2><strong><span style=\"font-size: 14px;\">Compensation &amp; Benefits</span></strong></h2> <div> <p><strong>Base Pay Grade</strong>&nbsp;<strong>- P</strong></p> <p><strong>Equity Grade</strong>&nbsp;<strong>- 6</strong></p> <p>Employees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.&nbsp;</p> <p>Base pay is part of a total compensation package that may include monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents). In addition, the employees may be eligible for equity rewards offered by Affirm Holdings, Inc. (parent company).</p> <p>ESP base pay range per year: <strong>€103,000 &nbsp;- &nbsp;€139,000 </strong>&nbsp; &nbsp;</p> <p>Additional benefits include:</p> <ul> <li>Flexible Spending Wallets for tech, food and lifestyle</li> <li>Away Days - wellness days to take off work and recharge</li> <li>Learning &amp; Development programs</li> <li>Parental benefit</li> <li>Employee Resource &amp; Community Groups</li> </ul> <p>We are able to offer visa sponsorship for this role, but do require that someone is based in Spain for the role.</p> <div> <div> <p><strong>Location - Remote Spain</strong></p> </div> <div><strong>#LI-Remote</strong></div> </div> </div> </div><div class=\"content-conclusion\"><div> <p><strong>Remote-first with flexibility built in</strong><strong><br></strong>Affirm is proud to be a remote-first company. Most roles can be done from almost anywhere within the country of employment. Some positions may occasionally require in-person work at an Affirm office, and a few are office-based due to the nature of the work. All new hires will be invited to attend an in-person onboarding experience.</p> <p><strong>Benefits designed for you</strong><strong><br></strong>Our benefits reflect our commitment to care, transparency, and flexibility. Here are a few highlights:</p> <ul> <li>Health coverage at no cost: We cover 100% of premiums for employees and their dependents.</li> <li>Spending stipends: Monthly stipends support your tech setup, and the ability to choose health and wellness options that are right for you.</li> <li>Time off to recharge: Flexible time off and generous holiday calendars help you rest when you need to.</li> <li>Own a piece of what you build: Our employee stock purchase plan (ESPP) lets you buy Affirm stock at a discount.</li> </ul> <p>We’re committed to providing an inclusive interview process, including accommodations for candidates with disabilities. If you need support, we’re happy to help.</p> <p>For positions based in San Francisco or Los Angeles: Affirm considers qualified applicants with arrest and conviction records, as required by law.</p> </div> <div> <p>By clicking \"Submit Application,\" you acknowledge that you have read Affirm's&nbsp;<a href=\"https://www.affirm.com/global-candidate-privacy-notice\" target=\"_blank\">Global Candidate Privacy Notice</a> and consent to the use of your personal information as described.</p> </div></div>",
     "posted_at": "2026-11-02T04:46:45-05:00",
     "tags": null,
-    "verdict": "fair",
-    "reasoning": "The candidate has over 10 years of experience as a software engineer, which aligns well with the job's requirement of 8+ years. They have strong skills in Java and SQL, which are relevant, but the job specifically mentions proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role requires leading technical strategy and operations, which may be a stretch for the candidate given their current experience level. However, their background in fintech and customer-facing delivery is a good match for the company's focus on reinventing credit cards.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has over 10 years of experience as a software engineer and strong skills in Java and SQL, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role is focused on backend systems at scale and requires experience in just-in-time transaction processing, which may not align with the candidate's background primarily in fintech and enterprise platforms. The remote location requirement in Spain also poses a constraint since the candidate is based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 45,
+    "id": 48,
     "external_id": "7799346003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2075,12 +2075,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in backend systems, the job posting specifically requires proficiency in Python or Kotlin, which the candidate does not list as a skill. Additionally, the role emphasizes experience with distributed systems and technologies like AWS and Spark, which are not mentioned in the candidate's profile. The candidate's fintech background aligns well with Affirm's focus, but the gaps in required technologies and specific experience make this a weak fit.",
+    "reasoning": "While the candidate has significant experience in software engineering and a strong background in backend development, the job requires specific experience in Python or Kotlin, which the candidate does not explicitly list. Additionally, the role emphasizes familiarity with AWS and Spark, which are not mentioned in the candidate's skills. The candidate's fintech background aligns well with Affirm's focus, but the gaps in required technologies and experience may hinder a strong fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 43,
+    "id": 46,
     "external_id": "7807506003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2093,12 +2093,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level of over 10 years. Additionally, the role requires the candidate to be based in Spain, which is not a location the candidate is currently targeting as they are based in the Netherlands. The requirement for on-call rotation and the specific technologies mentioned (Kotlin) may also not match the candidate's expertise.",
+    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not match the candidate's seniority level of over 10 years of experience. Additionally, the position requires being based in Spain, while the candidate is currently located in the Netherlands and is open to remote roles across Europe, but not specifically in Spain. Therefore, this opportunity does not align with the candidate's preferences and constraints.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 42,
+    "id": 45,
     "external_id": "7799935003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2111,7 +2111,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering, particularly in Java and SQL, the job posting specifically requires expertise in React Native, which the candidate does not mention in their CV. Additionally, the role emphasizes mobile application development, an area where the candidate's experience appears limited. Although the candidate has strong full-stack capabilities and a fintech background, the lack of direct experience with mobile frameworks and React Native is a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job specifically requires expertise in React Native, which the candidate does not mention in their CV. Additionally, the role emphasizes mobile application development and ownership of user journeys, areas where the candidate's experience may not align directly. The candidate's fintech background is a plus, but the lack of mobile-specific experience is a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
@@ -2134,7 +2134,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 40,
+    "id": 43,
     "external_id": "7801373003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2147,12 +2147,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in backend development with Java and Python, the job specifically requires proficiency in Kotlin, which the candidate lacks. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's background. The candidate's fintech experience aligns well with Affirm's focus, but the requirement for specific technologies and the need for a presence in Spain create significant gaps.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in backend development with Java and SQL, the job specifically requires proficiency in Kotlin, which the candidate does not mention. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not highlighted in the candidate's profile. The candidate's experience in fintech aligns well with Affirm's focus, but the specific technology stack and requirements present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 39,
+    "id": 42,
     "external_id": "7806679003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2165,12 +2165,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and SQL, the job requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength. Additionally, the role emphasizes experience with distributed systems and AWS, which are not mentioned in the candidate's background. The candidate's fintech experience aligns well with the company's focus, but the specific requirements for fraud prevention and real-time decisioning systems present a gap.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job requires specific expertise in Python or Kotlin for backend systems, which the candidate does not explicitly list as a strength. Additionally, the role emphasizes experience with distributed systems and AWS, which are not mentioned in the candidate's profile. The candidate's experience with SQL and CI/CD practices aligns well, but the gaps in required technologies and specific domain experience in fraud prevention make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 37,
+    "id": 40,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2183,12 +2183,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java and SQL, the job posting specifically requires experience with Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's preference for remote roles anywhere in Europe. The candidate's fintech background is a plus, but the gaps in required technologies and location constraints lead to a weak fit overall.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in backend development with Java and SQL, the job posting specifically requires experience with Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's preference for the Netherlands or Italy. The candidate's experience in fintech and CI/CD aligns well with the company's focus, but the gaps in required technologies and location make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 34,
+    "id": 37,
     "external_id": "7916080003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2201,12 +2201,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly with Java, SQL, and CI/CD, the job posting for an Analytics Engineer II focuses heavily on analytics engineering, data modeling, and BI tools, which are not explicitly mentioned in the candidate's experience. The role requires familiarity with dbt, data visualization tools, and building semantic layers for AI, which the candidate does not demonstrate. Additionally, the requirement for 3+ years in an analytics engineering role is a gap for the candidate, who has primarily worked in software engineering and fintech.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting for an Analytics Engineer II focuses heavily on analytics engineering, data modeling, and BI tools, which are not the candidate's primary strengths. The candidate has experience with SQL and Python, but lacks specific experience with dbt, BI tools like Looker/Tableau, and cloud data warehouses like Snowflake, which are critical for this role. Additionally, the role requires 3+ years in analytics engineering, which the candidate does not explicitly demonstrate.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 38,
+    "id": 41,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2219,7 +2219,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in backend development, the job requires proficiency in modern programming languages such as Python or Kotlin, which the candidate does not explicitly list as a strength. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with CI/CD and DevOps aligns well with the job's requirements, but the gaps in specific technologies and the need for multi-region, multi-tenant platform experience present significant challenges.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java and SQL, the job posting requires proficiency in Python, Kotlin, or similar modern programming languages, which the candidate does not explicitly list. Additionally, the role emphasizes experience with AWS, DynamoDB, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with CI/CD and DevOps aligns with the job's requirements, but the gaps in specific technologies and programming languages make this a weak fit overall.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
@@ -2404,7 +2404,7 @@
     "first_seen": "2026-10-22T08:12:26.117Z"
   },
   {
-    "id": 4,
+    "id": 13,
     "external_id": "7953778",
     "source": "greenhouse",
     "company": "Adyen",
@@ -2414,15 +2414,15 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/7953778",
     "description": "<h3><span style=\"font-size: 12pt;\"><strong>This is Adyen</strong></span></h3> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <h3><strong> Head of Forward Deployed Engineering - Operations&nbsp;</strong></h3> <p>This role focuses on moving beyond isolated pilots and volunteer-led activity, and building a more deliberate approach to re-engineering work through AI, automation, and better operating design.</p> <p>This role will lead that for Ops. It will set the direction for what an AI-native, and highly leveraged operations model should look like, help identify where the biggest opportunities sit, and create the structure that allows domain-owned use cases to turn into real outcomes.</p> <p>Domain leads will remain accountable for the impact delivered in their own areas. This role exists to bring the thought leadership, technical credibility, outside-in perspective, and driving force needed to help make that happen across the function.&nbsp;</p> <h3><span style=\"font-size: 12pt;\"><strong>&nbsp;Head of </strong>Forward Deployed Engineering - Operations&nbsp;</span></h3> <ul> <li>Set the AI and innovation direction for Operations, with a clear view of what will create the most meaningful step change in customer experience, productivity, quality, and scalability.</li> <li>Work with the domains to identify and prioritise the use cases that matter most, based on business value, feasibility, and readiness.</li> <li>Lead the central Ops innovation model, including the structure, ways of working, and foundations needed for domain-led re-engineering to succeed.</li> <li>Lead a small team of Forward Deployed AI specialists to turn ideas into real, scalable solutions.</li> <li>Build credibility for AI across Ops through clear thinking, practical examples, and a strong view of where the real value is and where the risks are.</li> <li>Stay current on the AI landscape, emerging patterns, and market developments, and translate that into practical implications for how Ops should evolve.</li> <li>Work with central business enablement and capability teams so that new capabilities landing across the company are connected to Ops needs, and the right upskilling happens as use cases scale.</li> <li>Represent Operations in central engineering, making sure that Ops priorities are well understood, well framed, and well supported.</li> <li>Track progress and value delivered, and keep the focus on outcomes rather than activity.</li> </ul> <h3><span style=\"font-size: 12pt;\"><strong>What good looks like</strong></span></h3> <ul> <li>Ops has a clear and credible point of view on where AI should and should not be applied.</li> <li>The Domains have better clarity on where to focus and what will drive the biggest outcomes.&nbsp;</li> <li>High-value use cases move fast from idea to implementation.</li> <li>The relationship between Ops and central engineering is stronger, with clearer translation between operational needs and technical delivery.</li> <li>AI adoption in Ops is deliberate, practical, connected to real workflow improvement.</li> <li>We build scalable solutions that drive meaningful outcomes.</li> <li>Teams are better equipped to work differently as new tools and workflows land.</li> </ul> <h3><span style=\"font-size: 12pt;\"><strong>What you bring</strong></span></h3> <ul> <li>Strong operational judgement. You understand how real work happens, where friction sits, and what it takes to redesign workflows in practice.</li> <li>Enough technical depth to have credibility with engineers and technical partners. You do not need to be the hands-on builder for every solution, but you do need to understand architectures, trade-offs, risks, and what good looks like.</li> <li>Deep curiosity in AI and adjacent technology. You naturally keep up with the space, understand where the market is moving, and can separate substance from hype.</li> <li>The ability to turn ideas into outcomes. You can move from concept to prioritisation to implementation, and you know how to avoid getting stuck in pilot mode.</li> <li>Strong executive presence. You can command respect with senior stakeholders, challenge constructively, and represent Operations well in cross-functional discussions.</li> <li>A practical, creative, solution-oriented mindset.&nbsp;</li> <li>Long-term thinking. You can look beyond the next pilot or tool and help shape the foundations for where Ops needs to go over time.</li> <li>Strong cross-functional instincts. You are comfortable working across operations, engineering, data, product, enablement, and capability teams.</li> </ul> <h3><span style=\"font-size: 12pt;\"><strong>Who you are</strong></span></h3> <ul> <li>Led meaningful transformation in an operations or service environment.</li> <li>Built or scaled AI, automation, or digital workflow improvements beyond small experiments.</li> <li>Worked closely with engineering or technical teams and can hold your own in those conversations.</li> <li>Influenced senior leaders and moved cross-functional agendas forward without relying only on formal authority.</li> <li>Helped shape operating models, governance, or delivery mechanisms that made change more repeatable.</li> <li>Worked in an environment where pace, ambiguity, and practical execution all mattered.</li> </ul> <h3><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></h3> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <h3><strong>What’s next?</strong></h3> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p>",
-    "posted_at": "2026-10-22T14:04:47-04:00",
+    "posted_at": "2026-11-02T07:46:18-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Head of Forward Deployed Engineering role at Adyen, which requires significant leadership experience in operations and AI, as well as a strong executive presence. The candidate, while experienced as a senior full-stack software engineer, does not have the necessary operational leadership or experience in scaling AI and automation initiatives beyond small experiments. Additionally, the role is office-first and does not offer remote-only options, which contradicts the candidate's preference for remote work.",
+    "reasoning": "This role is not a fit for the candidate as it is a leadership position requiring significant experience in operational transformation and managing teams, which the candidate does not have. Additionally, the job is based in Amsterdam and emphasizes in-person collaboration, while the candidate is open to remote roles. The candidate's experience is more focused on software engineering rather than operational leadership, making this position misaligned with their background and career aspirations.",
     "applied_at": null,
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
   {
-    "id": 9,
+    "id": 11,
     "external_id": "8301329",
     "source": "greenhouse",
     "company": "Elastic",
@@ -2435,7 +2435,7 @@
     "posted_at": "2026-10-30T15:55:24-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and has held roles that involve mentoring and leading teams, they lack specific experience in identity and access management (IAM) systems, which is a critical requirement for this position. Additionally, the job requires 3+ years in IAM, which the candidate does not meet. The candidate's strong background in Java, SQL, and CI/CD aligns with the technical aspects of the role, but the gaps in IAM experience and leadership in that specific domain limit the fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, they lack specific experience in identity and access management (IAM), which is a critical requirement for this role. The job also emphasizes leadership and team management, which the candidate has some experience in but not at the level required for a managerial position. Additionally, the candidate's experience with cloud-based technologies is not explicitly mentioned, which is another gap for this role.",
     "applied_at": null,
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
@@ -2458,7 +2458,7 @@
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
   {
-    "id": 21,
+    "id": 35,
     "external_id": "8315195",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2471,12 +2471,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Staff Site Reliability Engineer, which requires specific expertise in deploying and operating production systems in cloud environments and familiarity with infrastructure as code tools like Terraform. The candidate's experience is primarily in backend development and fintech, which may not fully align with the broader operational focus of this role. Additionally, the requirement for experience with C++ or Rust is a gap for the candidate.",
+    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Site Reliability Engineer role, which typically requires deeper expertise in operational systems and cloud infrastructure that the candidate may not fully possess. The candidate's experience is primarily in software development rather than site reliability, and they lack specific experience with tools like Terraform and C++ or Rust, which are mentioned as beneficial for this role. Additionally, the focus on telemetry and metrics analysis may not align perfectly with the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 20,
+    "id": 34,
     "external_id": "8315192",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2489,12 +2489,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering, particularly in Java and SQL, the job posting is for a Site Reliability Engineer role, which emphasizes operational systems and cloud environments. The candidate's background is more focused on application development and integration rather than the specific SRE skills required, such as experience with infrastructure as code and production system reliability. Additionally, the role requires familiarity with C++ or Rust, which the candidate does not possess.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and SQL, the job posting is for a Site Reliability Engineer role, which requires specific expertise in deploying and operating production systems in cloud environments, as well as familiarity with tools like Terraform and C++ or Rust. The candidate's background does not explicitly mention experience with these technologies or the operational aspects required for this role. Additionally, the focus on developer tooling and workflow automation may not align closely with the candidate's experience, which is more centered on backend development and integration.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 18,
+    "id": 32,
     "external_id": "8315350",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2507,12 +2507,12 @@
     "posted_at": "2026-10-30T09:09:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and frontend technologies, the job posting specifically requires expertise in C++ and Rust, which the candidate lacks. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's experience. Although the candidate's experience in fintech and customer-facing roles is relevant, the significant gap in required programming languages and specific domain knowledge leads to a weak fit.",
+    "reasoning": "While the candidate has strong experience in software engineering and a solid background in Java and SQL, the job requires significant expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy protections and browser architecture, areas that are not explicitly covered in the candidate's experience. The candidate's fintech background and interest in AI are relevant but do not align closely with the specific requirements of this position.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 19,
+    "id": 33,
     "external_id": "8315278",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2525,7 +2525,7 @@
     "posted_at": "2026-10-30T09:09:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and is open to remote roles, the job at Mozilla requires specific expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's background. However, the candidate's experience with Java and web technologies could be beneficial, but the lack of required programming languages and specific domain knowledge creates a significant gap.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in Java, SQL, and CI/CD, the job at Mozilla requires specific expertise in C++ and Rust, which the candidate lacks. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's experience. The candidate's fintech background and interest in AI tools do not align closely with the core responsibilities of this position.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -2800,7 +2800,7 @@
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 41,
+    "id": 44,
     "external_id": "8040380003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2813,12 +2813,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in full-stack development and a strong background in Java and SQL, the job posting specifically requires experience with mobile applications and proficiency in Python or Kotlin, which the candidate lacks. Additionally, the role is based in Spain, and while the candidate is open to remote roles, they are not currently based in Spain, which could complicate eligibility. The candidate's fintech experience aligns well with Affirm's focus, but the gaps in required technologies and location make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and is proficient in Java and SQL, the job posting specifically requires experience with mobile applications and proficiency in Python or Kotlin, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's current location in the Netherlands. The candidate's fintech background and experience in product ownership are relevant, but the gaps in required technologies and location make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 46,
+    "id": 49,
     "external_id": "8040394003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2831,12 +2831,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and a strong background in Java and SQL, the job posting requires at least 1.5 years of experience, which the candidate exceeds. However, the role specifically mentions proficiency in Python or Kotlin for backend development, which the candidate lacks. Additionally, the requirement for experience in mobile applications using React Native is a gap for the candidate. The remote location requirement in Spain also poses a challenge since the candidate is based in the Netherlands.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and strong skills in Java and SQL, the job requires proficiency in Python or Kotlin, which the candidate does not possess. Additionally, the role specifies a minimum of 1.5 years of experience, which the candidate exceeds, but the focus on mobile application development is not aligned with their background. The remote work location is suitable, but the specific requirement for being based in Spain is a constraint for the candidate, who is currently in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 49,
+    "id": 52,
     "external_id": "8034645003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2849,12 +2849,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has over 10 years of experience in software engineering and a strong background in backend systems, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which are not explicitly mentioned in the candidate's skill set. Additionally, the role emphasizes experience with correctness-sensitive systems and complex integrations, which may not align perfectly with the candidate's fintech-focused background. The remote location requirement in Spain also poses a constraint, as the candidate is based in the Netherlands.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java and SQL, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role emphasizes designing and operating correctness-sensitive systems and complex integrations, areas where the candidate's experience may not fully align. The remote work aspect is a match, but the specific technical requirements present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 35,
+    "id": 38,
     "external_id": "8041432003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2867,12 +2867,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a fintech background, the job posting is for a managerial role focused on machine learning engineering, which requires specific expertise in machine learning techniques and experience managing a team of engineers. The candidate's experience does not indicate a strong background in machine learning or team management, which are critical for this position. Additionally, the role is based in Spain, which may not align with the candidate's preference for remote work across Europe.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a fintech background, this role is focused on machine learning engineering management, which requires specific expertise in machine learning techniques and managing a team of engineers. The candidate lacks direct experience in machine learning and team management, as their roles have primarily been in software development and consulting. Additionally, the requirement for a bachelor's degree in a technical field and 3+ years of management experience does not align with the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 36,
+    "id": 39,
     "external_id": "8043027003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2885,7 +2885,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Manager, Software Engineering role, which requires significant management experience (5+ years managing engineering teams and 2+ years managing managers). The candidate, while experienced as a software engineer, does not have the requisite management experience or leadership role that this position demands. Additionally, the role is specifically remote in Spain, which does not align with the candidate's preference for remote work anywhere in Europe, as they are not based in Spain.",
+    "reasoning": "This position is for a Senior Manager of Software Engineering, which requires at least 5 years of managing engineering teams and 2 years of managing managers. The candidate has extensive software engineering experience but does not have the managerial experience required for this role. Additionally, the job is based in Spain, and while the candidate is open to remote roles, they are not based in Spain, which is a strict requirement for this position.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -2962,7 +2962,7 @@
     "first_seen": "2026-10-30T00:32:21.750Z"
   },
   {
-    "id": 51,
+    "id": 55,
     "external_id": "5083170007",
     "source": "greenhouse",
     "company": "Foundation Risk Partners",
@@ -2975,12 +2975,12 @@
     "posted_at": "2026-10-30T09:43:24-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Insurance Sales Producer role, which is unrelated to the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but this position requires skills in sales, client relationship management, and insurance knowledge, none of which are present in the candidate's profile. Additionally, the job is located in the US, which violates the candidate's constraint of not wanting to relocate or work on-site in the US.",
+    "reasoning": "This job posting is entirely unrelated to the candidate's background as a software engineer. The role is focused on insurance sales, requiring specific qualifications such as a California Department of Insurance license, which the candidate does not possess. Additionally, the position is based in the United States, contradicting the candidate's preference to work in the Netherlands, Italy, or Spain, and their explicit constraint against relocating to the US.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 50,
+    "id": 54,
     "external_id": "5032985007",
     "source": "greenhouse",
     "company": "Foundation Risk Partners",
@@ -2993,12 +2993,12 @@
     "posted_at": "2026-10-30T09:43:24-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Insurance Sales Producer role, which is unrelated to the candidate's background as a software engineer. The position requires specific qualifications in insurance sales, including licenses and experience in that field, which the candidate does not possess. Additionally, the job is located in California, which contradicts the candidate's preference for roles in the Netherlands, Italy, or Spain, and their constraint against relocating to the US.",
+    "reasoning": "This job posting is for an Insurance Sales Producer role, which is entirely unrelated to the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but this position requires skills in sales, client relationship management, and insurance knowledge, none of which are present in the candidate's profile. Additionally, the role is located in California, which contradicts the candidate's preference for positions in the Netherlands, Italy, or Spain.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 25,
+    "id": 20,
     "external_id": "8003083",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3008,15 +3008,15 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/8003083",
     "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>&nbsp;</p> <p><strong>Staff Java Engineer - Fraud Intelligence</strong></p> <p>As a Staff Software Engineer in the Fraud Intelligence group, you will serve as the core architect and strategic engineering partner for our fraud detection and mitigation ecosystems. You will define the long-term technical vision across 2–3 engineering teams, ensuring our Platforms can detect and prevent evolving fraud vectors at scale. Beyond technical leadership, you will be a key force multiplier, acting as a strategic advisor to engineering leadership, bridging the gap between business strategy and execution, and actively mentoring and growing our senior Individual Contributors (ICs).</p> <p>&nbsp;</p> <p><strong>What you'll do</strong></p> <ul> <li><strong>Technical Strategic &amp; Architecture:</strong> Own the multi-year technical north star vision for the group, together with the technical leads of each team in the group. Design and evolve high-throughput, low-latency distributed systems capable of processing real-time merchant transactions, integrating complex machine learning models, and handling massive big data pipelines.</li> <li><strong>Leadership Partnership:</strong> Partner closely with the Director of Engineering to assess organizational health, surface systemic engineering bottlenecks, and align long-term technical investments with Merchant protection goals.</li> <li><strong>Product Strategy:</strong> Shape the strategic roadmap alongside the Director of Engineering, fellow Staff Engineers, and Product leadership.</li> <li><strong>Cross-Team Alignment:</strong> Establish consistent architectural patterns, engineering practices, and quality bars across 3 fraud-focused teams. Bring clarity to ambiguity as new fraud vectors and product requirements emerge.&nbsp;</li> <li><strong>Talent Multiplier &amp; Mentorship:</strong> Sponsor and mentor senior engineers, build clear growth paths, model high engineering standards, and foster a culture of engineering excellence and psychological safety.</li> <li><strong>ML &amp; Data Infrastructure Evolution:</strong> Partner with Data Science and ML Engineering so infrastructure supports fast model deployment, feature stores, and real-time inference, without compromising latency or reliability.</li> <li><strong>Fraud Ops Collaboration</strong>: Work closely with Fraud Operations to translate emerging fraud patterns and investigative findings into platform and tooling requirements. Ensure engineering systems give Fraud Ops the visibility, control, and response speed they need to act on evolving threats</li> </ul> <p>&nbsp;</p> <p><strong>Who You Are:</strong></p> <ul> <li><strong>Technical leader: </strong>A track record of setting technical strategy through architectural judgment and clear communication via influence, not organizational authority.</li> <li><strong>Distributed Systems Expertise</strong>: Deep experience designing and operating large-scale, production-grade distributed systems with a focus on reliability, performance, and resilience.</li> <li><strong>ML Systems Experience</strong>: Comfortable architecting the infrastructure layer around ML workloads (e.g., feature stores, real-time inference pipelines, model serving) even without being an ML practitioner yourself; strong appetite for close, ongoing collaboration with Data Science/ML Engineering.</li> <li><strong>Operationally Minded</strong>: Experience partnering with operational teams (e.g., Fraud Ops, Compliance) to turn real-world investigative signals into scalable engineering solutions; basic familiarity with security-by-design and regulated data handling is a plus.</li> <li><strong>Proactive relationship-builder:</strong> led partnerships across SWE, MLE, Product, Operations, and Compliance to align technical direction, drive clarity through ambiguity, and balance immediate product needs with long-term platform investments.</li> <li><strong>Applied ML/AI Experience (nice to have):</strong> You have experience in building production-grade interfaces powered by LLMs, including harnesses, policy enforcement, evals, RAG architectures and secure data handling.</li> </ul> <p>&nbsp;</p> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p>&nbsp;</p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p> <p>&nbsp;</p> <p>&nbsp;</p>",
-    "posted_at": "2026-10-30T09:24:14-04:00",
+    "posted_at": "2026-11-02T07:48:23-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position at Adyen requires a Staff Software Engineer focused on fraud intelligence, which involves significant leadership responsibilities and a strong emphasis on distributed systems and machine learning infrastructure. The candidate, while experienced in software engineering and fintech, does not have the required seniority or specific expertise in fraud detection systems or the operational aspects of fraud management. Additionally, the role is office-first in Amsterdam, which conflicts with the candidate's preference for remote work options.",
+    "reasoning": "This position at Adyen is for a Staff Software Engineer focused on Fraud Intelligence, requiring significant leadership and architectural experience in distributed systems and machine learning infrastructure. The candidate, while experienced, does not demonstrate the required level of leadership or expertise in ML systems as outlined in the job description. Additionally, the role is office-first based in Amsterdam, which conflicts with the candidate's openness to remote roles but not to on-site positions in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 24,
+    "id": 19,
     "external_id": "8081186",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3028,13 +3028,13 @@
     "description": "<div><strong>This is Adyen</strong></div> <div>&nbsp;</div> <div>Adyen provides payments, data, and financial products in a single solution for customers like Facebook, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.</div> <div><br>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. The people of Adyen are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</div> <div>&nbsp;</div> <div><strong>Financial Products&nbsp;</strong></div> <div><br>The Financial Products solution is responsible for all financial products that we offer on top of payments processing to our customers. Examples of these are our Banking, Issuing, Fx, and Capital products. Whether we work with large partner platforms, medium sized local merchants, or major international enterprise businesses, our products need to meet our clients expectations and seamlessly fit into their systems.</div> <div>&nbsp;</div> <div><strong>What you’ll do:</strong></div> <ul data-list-tree=\"true\" data-indent=\"0\" data-border=\"0\"> <li>Work on complex technical projects from requirements analysis through design, implementation, testing and launch into production.</li> <li>Be hands-on and contribute to the implementation.</li> <li>Identify and improve parts of the platform to make it more robust and scalable.</li> <li>Bring your own point of view on best engineering practices.</li> <li>Your code will be used at scale and you are expected to think in that mindset when building features.</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring live functionalities that impact many merchants and shoppers.</li> <li>Build APIs and tooling according to quality principles such as performance and code quality.</li> <li>Collaborate across teams and time zones to get projects over the finish line.</li> </ul> <div><strong>Who you are:</strong></div> <ul data-list-tree=\"true\" data-indent=\"0\" data-border=\"0\"> <li>Familiar with complex large scale distributed systems.</li> <li>You have experience with Java, Web Services, REST Apis, Webhooks and SQL/PostgreSql.</li> <li>You have a good understanding of Software Engineering practices and interest in product knowledge.</li> <li>You enjoy working in a cross-functional team with roles like Data Science, Frontend, and Product.</li> <li>You value involving other people to hear different perspectives.</li> <li>You have an experimental mindset with a launch fast and iterate mentality.</li> </ul> <div><strong>Minimum qualifications:</strong></div> <ul data-list-tree=\"true\" data-indent=\"0\" data-border=\"0\"> <li>3+ years of experience in software development industry in a fast paced tech environment</li> <li>Full professional proficiency in English</li> <li>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration (3 days in the office); we do not offer remote-only roles.</li> </ul> <div><strong>Our Diversity, Equity and Inclusion commitments </strong><br>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.<br>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application.</div> <div>&nbsp;</div> <div><strong>What’s next?</strong><br>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role.<a href=\"https://careers.adyen.com/faqs/\" target=\"_blank\" data-sk=\"tooltip_parent\"> Learn more about our hiring process here</a>. Don’t be afraid to let us know if you need more flexibility.</div>",
     "posted_at": "2026-11-01T18:00:00-05:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting requires in-person collaboration at the Amsterdam office for three days a week, which contradicts the candidate's preference for remote work or flexibility in location. Additionally, while the candidate has extensive experience in software engineering and relevant skills in Java and SQL, the requirement for a minimum of 3 years in a fast-paced tech environment may not align with the candidate's specific experience in fintech consulting. Overall, the location constraint makes this opportunity unsuitable.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has strong experience in Java, SQL, and working with APIs, the job at Adyen requires a commitment to in-office work three days a week, which does not align with the candidate's preference for remote or hybrid roles. Additionally, the candidate's experience in fintech and product engineering is relevant, but the role emphasizes working in a fast-paced tech environment and large-scale distributed systems, which may require more specific experience than the candidate has demonstrated.",
     "applied_at": null,
     "first_seen": "2026-11-02T00:06:55.149Z"
   },
   {
-    "id": 22,
+    "id": 17,
     "external_id": "7573921",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3047,12 +3047,12 @@
     "posted_at": "2026-11-01T18:00:00-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, SQL, and full-stack development, the job at Adyen requires a commitment to in-office work three days a week, which conflicts with the candidate's preference for remote or hybrid roles. Additionally, the role emphasizes experience with large-scale distributed systems, which is not explicitly mentioned in the candidate's background. The candidate's fintech experience aligns well with Adyen's focus, but the in-office requirement is a significant gap.",
+    "reasoning": "While the candidate has strong experience in Java, SQL, and full-stack development, the job at Adyen requires in-person collaboration three days a week in Amsterdam, which conflicts with the candidate's preference for remote or flexible work arrangements. Additionally, the role emphasizes experience with large-scale distributed systems and specific financial product knowledge, which may not align perfectly with the candidate's fintech background. The candidate's experience with REST APIs and CI/CD is relevant, but the requirement for familiarity with PostgreSQL is a gap.",
     "applied_at": null,
     "first_seen": "2026-11-02T00:06:55.149Z"
   },
   {
-    "id": 8,
+    "id": 10,
     "external_id": "8314141",
     "source": "greenhouse",
     "company": "Elastic",
@@ -3065,12 +3065,12 @@
     "posted_at": "2026-11-02T04:50:14-05:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate has a solid background in full-stack development with over ten years of experience, particularly in Java, SQL, React, and CI/CD, which aligns well with the requirements for the Senior Full Stack Engineer role at Elastic. Their experience in leading projects and mentoring junior developers matches the job's emphasis on ownership and collaboration. Additionally, the candidate's familiarity with AI-assisted development tools complements the role's focus on enhancing user interfaces and improving user experience. However, the candidate lacks specific experience with Node.js and the Elastic stack, which are preferred but not mandatory.",
+    "reasoning": "The candidate has a solid background in full-stack development with extensive experience in Java, React, and CI/CD, which aligns well with the requirements of the Senior Full Stack Engineer role at Elastic. Their experience in leading projects end-to-end and mentoring junior developers matches the job's emphasis on ownership and collaboration. Additionally, the candidate's familiarity with AI-assisted development tools is a plus, as the role seeks someone who can leverage such technologies. However, the candidate lacks specific experience with the Elastic stack and observability tooling, which could be a minor gap.",
     "applied_at": null,
     "first_seen": "2026-11-02T10:24:37.121Z"
   },
   {
-    "id": 7,
+    "id": 9,
     "external_id": "4769511101",
     "source": "greenhouse",
     "company": "JetBrains",
@@ -3083,12 +3083,12 @@
     "posted_at": "2026-11-02T04:47:44-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for the Founding ML Engineer at JetBrains requires a proven track record as an ML/AI Lead with extensive experience in ML/AI systems, particularly with LLMs and generative AI. The candidate, while experienced in software engineering and AI tooling, does not have the required background in ML/AI leadership or the specific experience with LLMs and generative AI that this role demands. Additionally, the candidate's focus has been more on software engineering and integration rather than on the specialized ML/AI engineering stack outlined in the job description.",
+    "reasoning": "The job posting for a Founding ML Engineer at JetBrains is not a fit for the candidate, Asjon Dalipaj, as it requires a proven track record as an ML/AI Lead with extensive experience specifically in ML/AI systems and LLMs, which the candidate does not possess. While Asjon has experience with LLM APIs and AI-assisted development, they lack the required depth in machine learning, prompt engineering, and agentic frameworks. Additionally, the role demands a strong focus on ML/AI leadership and strategic thinking in product-led AI, which is outside the candidate's stated expertise.",
     "applied_at": null,
     "first_seen": "2026-11-02T10:24:37.121Z"
   },
   {
-    "id": 11,
+    "id": 27,
     "external_id": "8153435",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3101,12 +3101,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Product Manager role, which is a significant departure from the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in backend and full-stack roles, but lacks the necessary product management experience and skills required for this position. Additionally, the role focuses on mobile app management and user experience, areas that are not highlighted in the candidate's CV. Therefore, this position does not align with the candidate's expertise or career aspirations.",
+    "reasoning": "This job posting is for a Senior Product Manager role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in backend and full-stack roles, but lacks the necessary product management experience and skills required for this position. Additionally, the focus on mobile app management and user experience optimization does not match the candidate's expertise in enterprise platforms and integration.",
     "applied_at": null,
     "first_seen": "2026-11-02T11:30:04.843Z"
   },
   {
-    "id": 10,
+    "id": 26,
     "external_id": "8153458",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3119,7 +3119,7 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Product Manager role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but lacks the required product management experience and skills specific to mobile app management. Additionally, the role focuses on user experience and product strategy rather than technical development, which does not match the candidate's expertise.",
+    "reasoning": "This job posting is for a Senior Product Manager role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but lacks the necessary product management experience and skills required for this position. Additionally, the role focuses on mobile app management and user experience, which does not match the candidate's expertise in backend and full-stack development.",
     "applied_at": null,
     "first_seen": "2026-11-02T11:30:04.843Z"
   },
@@ -3155,12 +3155,12 @@
     "posted_at": "2026-11-02T10:19:32.651Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job posting requires expertise in .NET and C#, which the candidate does not possess, as their experience is primarily with Java and Python. While the candidate has strong frontend skills with Angular and React, the requirement for backend development specifically in .NET is a significant gap. Additionally, the position is on-site in Madrid, which may not align with the candidate's preference for remote or flexible work arrangements. Overall, while there are some relevant skills, the critical gaps in technology stack and location make this a weak fit.",
+    "reasoning": "The job posting requires expertise in .NET and C#, which the candidate does not possess, as their primary backend experience is in Java and Python. While the candidate has strong frontend skills in Angular and React, the requirement for .NET specifically is a significant gap. Additionally, the role is on-site in Madrid, which may not align with the candidate's preference for remote or flexible work arrangements. Overall, while there are some relevant skills, the core requirements do not match the candidate's background.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 26,
+    "id": 21,
     "external_id": "7124398",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3173,12 +3173,12 @@
     "posted_at": "2026-11-02T07:39:01-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position at Adyen requires 15+ years of hands-on development experience and a strong technical leadership background, which exceeds the candidate's 10 years of experience. Additionally, the role is office-first and does not offer remote-only options, conflicting with the candidate's preference for remote work. The requirement for extensive experience in the financial industry, particularly in banking, also presents a gap as the candidate has only worked in fintech roles without the specified banking experience.",
+    "reasoning": "This position at Adyen requires 15+ years of hands-on development experience and a strong technical leadership background, which exceeds the candidate's 10 years of experience. Additionally, the role is office-first and does not offer remote-only options, conflicting with the candidate's preference for remote work. The candidate also lacks the required 2+ years of experience specifically in the financial industry, particularly in banking or fintech, which is essential for this role.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 5,
+    "id": 8,
     "external_id": "8902352002",
     "source": "greenhouse",
     "company": "Bol.com",
@@ -3191,12 +3191,12 @@
     "posted_at": "2026-11-02T07:35:36-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Marketing Automation & Messaging Specialist is completely unrelated to the candidate's background as a senior full-stack software engineer. The candidate has extensive experience in software development, particularly in fintech and product engineering, while this role focuses on marketing automation and messaging, which does not align with their skills or career goals. Additionally, the candidate is not interested in roles outside of software engineering.",
+    "reasoning": "The job posting for a Marketing Automation & Messaging Specialist does not align with the candidate's background as a senior full-stack software engineer. The role appears to focus on marketing and messaging rather than software engineering, which is outside the candidate's expertise and interests. Additionally, the candidate is looking for roles that involve technical ownership and product engineering, which this position does not offer.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 30,
+    "id": 23,
     "external_id": "744000158811729",
     "source": "smartrecruiters",
     "company": "Everience",
@@ -3209,12 +3209,12 @@
     "posted_at": "2026-10-30T17:42:51.081Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly with Java and SQL, the job posting specifically requires a Data Engineer with at least 3 years of experience in that role, which the candidate does not possess. Additionally, the role emphasizes experience with ETL/ELT processes and modern data platforms like Databricks or Azure Synapse, which are not highlighted in the candidate's background. The candidate's experience is more aligned with software development and fintech rather than data engineering in the energy sector.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in Java and SQL, and has worked extensively with CI/CD and DevOps, which are relevant to the job. However, the role specifically requires 3+ years of experience as a Data Engineer and expertise in building ETL/ELT pipelines, which the candidate does not explicitly demonstrate. Additionally, the job focuses on the energy sector, an area where the candidate lacks direct experience. While the candidate's skills in Python and cloud technologies are relevant, the gaps in specific data engineering experience and sector knowledge make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 31,
+    "id": 24,
     "external_id": "744000158807174",
     "source": "smartrecruiters",
     "company": "Everience",
@@ -3227,12 +3227,12 @@
     "posted_at": "2026-10-30T17:35:06.469Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in full-stack development and relevant technologies like Angular and TypeScript, this position is focused primarily on front-end development, which may not align with their preference for senior full-stack or backend roles. Additionally, the requirement for professional proficiency in Dutch is a significant gap, as the candidate's language skills do not meet this criterion. The candidate's experience with CI/CD and customer-facing roles is a match, but the specific focus on A/B testing and analytics tagging tools may require additional experience.",
+    "reasoning": "The candidate has strong experience in full-stack development, particularly with Java and SQL, and has worked with Angular and TypeScript. However, the job posting specifically requires a minimum of 5 years of experience with Angular (v20+) and familiarity with state management and testing frameworks like Jest/Vitest, which the candidate does not explicitly mention. Additionally, the role requires professional working proficiency in Dutch, which the candidate does not possess. While there are some relevant skills, the gaps in required experience and language proficiency make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 32,
+    "id": 25,
     "external_id": "744000158795069",
     "source": "smartrecruiters",
     "company": "Everience",
@@ -3245,12 +3245,12 @@
     "posted_at": "2026-10-30T16:18:03.297Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD and DevOps practices, they lack specific experience with Docker, Kubernetes, and Infrastructure as Code tools like Terraform or Ansible, which are critical for the DevOps Engineer role. Additionally, the job requires 3+ years of dedicated DevOps experience, whereas the candidate's background is more focused on software engineering with a significant portion in fintech. The candidate's experience in banking and financial services is a plus, but the gaps in required technologies and specific DevOps experience make this a weak fit.",
+    "reasoning": "While the candidate has strong experience in CI/CD and DevOps practices, they lack specific experience with Docker, Kubernetes, and Infrastructure as Code technologies like Terraform or Ansible, which are critical for this DevOps Engineer role. Additionally, the job requires 3+ years of dedicated DevOps experience, while the candidate's background is more focused on software engineering with a strong emphasis on backend and frontend development. The candidate's fintech experience is a plus, but the gaps in required DevOps skills and tools make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 27,
+    "id": 5,
     "external_id": "744000158783629",
     "source": "smartrecruiters",
     "company": "SIA",
@@ -3262,13 +3262,13 @@
     "description": "Most GenAI never leaves the demo. We hire for the people who get it into production, and into daily use. The Forward Deployed Engineer closes that gap: a field engineer who builds GenAI applications (agents, RAG pipelines, copilots) and makes sure they get adopted, embedded in daily workflows, and deliver measurable value. You quickly grasp a client's operational challenges, design a tailored response, deploy it, and bring teams along in the transformation.&#xa0; You will operate at the intersection of Data Science, ML/Platform Engineering, and client delivery, helping customers find the right level of sophistication, semantic search, RAG, agents, or fine-tuning, deliver measurable ROI in the most cost-effective way. Beyond crafting prompts, you will design and build robust, scalable products: benchmarking candidate Foundation Models across the model stack (from GPT-x, Claude, and Gemini to edge models like Mistral), rapidly iterating prototypes, and validating ideas directly with users using frameworks such as LangChain, LlamaIndex, and pgvector.&#xa0; We work closely with leading technology partners including Anthropic (Claude), OpenAI, Databricks, and AWS. In practice that means early access to new model releases, direct engineering channels to the labs, funded certifications, and the freedom to pick the right tool, not just the one you're locked into.&#xa0; What you'll actually do&#xa0; Sit with a client's team, work out where AI actually earns its keep (and where it doesn't), and turn that into something you can ship.&#xa0; Design and implement LLM-based systems: autonomous agents, RAG pipelines, workflow automation, and conversational interfaces.&#xa0; Integrate these solutions into clients' existing environments (APIs, databases, business tools), complying with applicable regulations (GDPR, EU AI Act, model licenses, etc.).&#xa0; Get people to actually use what you built: training, winning sceptics over, and iterating until it sticks rather than sits.&#xa0; Iterate quickly with stakeholders to refine solutions in production and maximize their impact.&#xa0; Be the person in the room who can talk to the engineers and to the board, and be believed by both.&#xa0;\n\nYou'll thrive here if&#xa0; Have a grounding in computer science, AI, or a related technical field. A degree is the usual route, but we care that you can build.&#xa0; 5+ years of professional experience. We hire for trajectory, so strong graduates with serious LLM projects behind them are genuinely encouraged to apply&#xa0;&#xa0; Have hands-on experience building with LLMs, whether in production, in research, or in substantial personal projects: advanced prompting, RAG, fine-tuning, agent orchestration, and systematic evaluation of model outputs (evaluation sets, regression testing).&#xa0; Write Python you'd be happy to hand to someone else and can pick up whatever language the client's stack demands.&#xa0; Are comfortable integrating APIs and connecting heterogeneous systems.&#xa0; Have a strong sense of client context: you identify what's genuinely useful, prioritize, and deliver value quickly.&#xa0; Can bring non-technical teams along in a transformation, with teaching ability, active listening, and an ability to communicate ideas across a wide range of expertise.&#xa0; Want to quickly take on responsibility for high-value engagements, within a dynamic, fast-growing AI practice.&#xa0; Are fluent in English and Dutch; German is a strong advantage, and we support you in learning it if you are not there yet.&#xa0; Bonus points for&#xa0; Experience with applied AI frameworks (LangChain, LlamaIndex, OpenAI SDK, Anthropic SDK, etc.).&#xa0; Experience deploying and operating solutions in a cloud environment (AWS, Azure, or GCP).&#xa0; Exposure to MLOps/LLMOps practices (CI/CD for models, prompt versioning, evaluation pipelines, observability).&#xa0; Strong understanding of vector databases and related concepts (e.g., embeddings, neural networks, latent space).\n\nWhy join Sia&#xa0; You ship. Engagements are measured in weeks, not quarters, and your work goes live in front of real users, with the client's team, not behind a glass wall.&#xa0; Range without job-hopping. You will touch several industries and several architectures a year, which is the fastest way to build judgement about what actually works.&#xa0; A practice that is growing, not maintaining. The AI practice is young enough that you shape how it delivers, and senior enough that you are never the only person who has solved the problem before.&#xa0; Direct exposure. You sit with business decision-makers from day one, the fastest route to seniority we know.&#xa0; What we offer&#xa0; A competitive salary with great advantages, including hospital insurance, performance -related bonus and more. A dedicated learning budget, funded partner certifications (Anthropic, AWS, Databricks), and paid conference time.&#xa0; Hybrid working from our Amsterdam office, with real flexibility on where the deep work happens.&#xa0; A mentor from day one and a clear path from delivery to lead engineer or client-facing architect.&#xa0; We are unable to provide a work permit for this position. Sia is an equal opportunity employer. All aspects of employment, including hiring, promotion, remuneration, or discipline, are based solely on performance, competence, conduct, or business needs.&#xa0; Sia is an equal opportunity employer. All aspects of employment, including hiring, promotion, remuneration, or discipline, are based solely on performance, competence, conduct, or business needs.&#xa0; Sia is an equal opportunity employer. All aspects of employment, including hiring, promotion, remuneration, or discipline, are based solely on performance, competence, conduct, or business needs.&#xa0;",
     "posted_at": "2026-10-30T15:38:12.590Z",
     "tags": null,
-    "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering with significant experience in backend development, CI/CD, and client-facing roles, which aligns well with the job's requirements. They have worked with LLM APIs and have experience in integrating systems, which is relevant to the Forward Deployed Engineer role. However, the job requires fluency in Dutch, which the candidate does not possess, and it emphasizes hands-on experience with specific AI frameworks and practices that the candidate may not fully meet. Overall, while there are strong matches, the gaps in language and specific AI experience make this a fair fit.",
+    "verdict": "weak",
+    "reasoning": "While the candidate has a strong background in software engineering and experience with AI tooling, the job requires specific hands-on experience with LLMs in production and familiarity with frameworks like LangChain and LlamaIndex, which are not explicitly mentioned in the candidate's CV. Additionally, the role emphasizes client engagement and transformation, which may require more direct experience in that area than the candidate has demonstrated. The requirement for fluency in Dutch is also a gap for this candidate.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 28,
+    "id": 6,
     "external_id": "744000158782369",
     "source": "smartrecruiters",
     "company": "SIA",
@@ -3281,7 +3281,7 @@
     "posted_at": "2026-10-30T15:35:11.879Z",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in software engineering, particularly with LLM APIs and backend technologies, which aligns well with the job's focus on deploying GenAI applications. However, the role requires fluency in Dutch, which the candidate does not possess, and a deeper experience with specific AI frameworks and MLOps practices that may not be fully covered in their background. While the candidate's experience in client-facing roles and mentoring is a plus, the gaps in language proficiency and specific AI tool familiarity present meaningful challenges.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly with AI tooling and backend development, which aligns well with the job's focus on building GenAI applications. Their experience with LLM APIs and integration of systems is a good match for the role's requirements. However, the job emphasizes a need for fluency in Dutch, which the candidate does not possess, and it also requires specific experience with frameworks like LangChain and LlamaIndex, which are not mentioned in the candidate's background. Overall, while there are significant matches, the gaps in language and specific framework experience make this a fair fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
@@ -3299,12 +3299,12 @@
     "posted_at": "2026-10-30T15:32:16-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has significant experience as a senior software engineer, particularly in fintech, which aligns well with the role's requirements. They have a strong background in Python and experience with AI tools, which is relevant to the position's focus on building AI-driven solutions. However, the job requires specific experience with LLM orchestration frameworks and Kubernetes, which the candidate does not explicitly mention. Additionally, the role involves frequent travel to client sites, which may not align with the candidate's preferences for remote work.",
+    "reasoning": "The candidate has a strong background in software engineering with over 10 years of experience, particularly in fintech, which aligns well with the role's requirements. They possess relevant skills in Python and have experience with AI tooling, which is a key focus of the position. However, the job requires significant experience with specific AI frameworks for agentic platforms and Kubernetes, which the candidate does not explicitly mention. Additionally, the requirement for frequent travel to client sites may be a concern depending on the candidate's willingness to travel frequently.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
   {
-    "id": 29,
+    "id": 7,
     "external_id": "744000158743908",
     "source": "smartrecruiters",
     "company": "SIA",
@@ -3317,7 +3317,7 @@
     "posted_at": "2026-10-30T13:26:14.038Z",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has a strong background in software engineering, particularly with LLM APIs and integration, which aligns with the job's focus on deploying GenAI applications. They have experience in client-facing roles and mentoring, which is beneficial for the collaborative aspects of the position. However, the job requires fluency in Dutch, which the candidate does not possess, and there is a heavier emphasis on advanced LLM techniques and frameworks that the candidate may not have fully demonstrated in their experience.",
+    "reasoning": "The candidate has a strong background in software engineering with significant experience in backend development, CI/CD, and client-facing roles, which aligns well with the job's requirements. However, the role emphasizes hands-on experience with LLMs and advanced AI frameworks, which the candidate has some exposure to but may not fully meet the depth required. Additionally, the job requires fluency in Dutch, which the candidate does not possess, creating a meaningful gap.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
@@ -3335,7 +3335,7 @@
     "posted_at": "2026-10-30T11:15:32-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in CI/CD, Python, and AI-assisted development, they lack specific experience with Yocto, which is a must-have for this role. Additionally, the job requires familiarity with embedded platforms and low-level development, areas where the candidate does not demonstrate expertise. The candidate's background in fintech and full-stack development is relevant but does not align closely with the embedded systems focus of this position.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in CI/CD and backend development, they lack specific experience with Yocto, which is a must-have for this role. Additionally, the job emphasizes embedded platform experience and low-level development, areas where the candidate's background does not align closely. The candidate's skills in AI-assisted development and CI/CD are relevant, but the significant gaps in embedded systems and tooling for hardware integration make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
@@ -3353,7 +3353,7 @@
     "posted_at": "2026-10-30T10:23:23-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting for a Senior Embedded Linux Engineer at Hudl is not a fit for the candidate, Asjon Dalipaj, as it requires deep embedded Linux experience and expertise in C/C++ development, which are not present in his background. Asjon's experience is primarily in software engineering with a focus on enterprise platforms, integration, and AI-assisted development, rather than embedded systems. Additionally, the role emphasizes hardware interface knowledge and Linux kernel development, areas where Asjon does not have demonstrated experience.",
+    "reasoning": "This job posting is for a Senior Embedded Linux Engineer, which requires deep embedded Linux experience and expertise in C/C++ development, Linux kernel knowledge, and hardware interface knowledge. The candidate's background is primarily in full-stack software engineering with a focus on Java, SQL, and web technologies, lacking the specific embedded systems and Linux kernel experience required for this role. Additionally, the candidate has not indicated any experience with embedded Linux or relevant hardware interfaces, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
@@ -3371,8 +3371,26 @@
     "posted_at": "2026-10-30T10:19:16-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in backend development, APIs, and CI/CD, the job requires specific experience with GraphQL, which the candidate does not mention. The role also emphasizes a collaborative environment and product mindset, which aligns with the candidate's background. However, the requirement for three or more years in backend-heavy environments may not fully align with the candidate's experience, as their recent role has been more focused on integration and maintenance rather than building new backend systems. Additionally, the job is located in Chiavari, Italy, which may not be ideal for the candidate who is open to remote work but prefers not to relocate.",
+    "reasoning": "While the candidate has strong experience in backend development, APIs, and cloud services, the job requires a specific focus on building data APIs and GraphQL schemas, which the candidate has not explicitly demonstrated. Additionally, the role is located in Chiavari, Italy, which may not align with the candidate's preference for remote work or flexibility in location. The salary range also appears to be lower than what a senior engineer with the candidate's experience might expect.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
+  },
+  {
+    "id": 16,
+    "external_id": "8164042",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Product Manager - Data, Machine Learning & GenAI Platform",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8164042",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Senior Product Manager - Data, Machine Learning and GenAI Platform</strong></p> <p>20 years of payments data is a powerful asset. But only combined with the proper platform and solid processes, it can release its full potential. That’s why the Big Data, Machine Learning and GenAI platforms, within the Application Intelligence portfolio, are key for Adyen’s success.</p> <p>Platform Engineering builds Adyen’s internal developer platform as a Product, enabling our internal developers&nbsp; to autonomously build, run and maintain secure, scalable, and reliable applications with high speed and quality. Our data platform supports the creation and evolution of different data products (<em>e.g.</em> Machine Learning models, GenAI apps, data pipeline, insights dashboards), impacting both merchants and key internal processes.&nbsp;</p> <p>The platform is currently serving 600+ active users including Data Engineers, Machine Learning Scientists, Applied AI Engineers or Data Analysts. All of them use data as their main asset, at the same time they all have different needs. As a Senior Product Manager, you will directly interact with this group&nbsp; to understand their user journeys and identify and prioritize opportunities for the platform to improve. Your goal is to bring the data developer experience (DevEx) to the next level, setting every user persona for success while keeping shared, high-quality standards.&nbsp;&nbsp;&nbsp;</p> <p><strong>What you’ll do</strong></p> <ul> <li>Own the strategy and vision for Adyen’s Data Developer Experience, ensuring it delivers a scalable, and intuitive experience across all roles and user journeys.&nbsp;</li> <li>Define priorities balancing short-term needs with long-term transformation, consolidating fragmented tools and processes into a cohesive ecosystem.</li> <li>Shape and drive the platform roadmap to reduce friction for users, directly impacting the velocity of Adyen’s data and AI products delivery.</li> <li>Partner with platform teams to design developer experiences that prioritize autonomy and control, while simultaneously elevating developer accountability for system performance and output quality.</li> <li>Proactively identify emerging trends in the data domain to future-proof our platform roadmap, ensuring Adyen remains at the forefront of data developer productivity.</li> <li>Assess the needs of non-technical customers —such as product managers and second-line teams— and design capabilities that facilitate their ability to effectively interact with and utilize our data products.</li> </ul> <p><strong>Who you are:</strong></p> <ul> <li>5+ years of experience as a (senior) Product Manager with a track record of delivering outcomes in the data domain.</li> <li>Strong data foundation knowledge, enabling you to collaborate effectively with users (Data Engineers, Machine Learning Scientists and GenAI Engineers) and platform teams.&nbsp;</li> <li>Ability to make strategic trade-offs, balancing immediate operational needs with long-term platform investments as well as competing stakeholder demands.</li> <li>Excellent leadership and collaboration skills, capable of driving alignment across product, engineering, and operational stakeholders.</li> <li>Data-driven approach, capable of translating subjective user feedback and quantitative data into clear impact insights to lead decision making.</li> <li>Experience driving adoption of platform solutions and embedding them into developer workflows.</li> <li>Demonstrate a high degree of autonomy in leading initiatives and decision-making, while remaining a collaborative team player who thrives in cross-functional environments and actively contributes to a supportive culture.</li> </ul> <p><strong>Bonus points for:</strong></p> <ul> <li>Previous hands-on experience as Data Engineer, Machine Learning Scientist or similar roles.</li> <li>Background in platform engineering or developer experience roles.</li> <li>Prior experience in fintech or other high-reliability regulated industries.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p> <p>&nbsp;</p>",
+    "posted_at": "2026-11-02T07:58:39-05:00",
+    "tags": null,
+    "verdict": "no",
+    "reasoning": "This job posting is for a Senior Product Manager role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development and engineering, particularly in fintech, but lacks the required experience in product management and the specific qualifications for leading product initiatives. Additionally, the role is office-first in Amsterdam, while the candidate is open to remote roles and not interested in relocating for an office-based position.",
+    "applied_at": null,
+    "first_seen": "2026-11-02T13:02:43.059Z"
   }
 ]
