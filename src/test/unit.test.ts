@@ -147,6 +147,14 @@ test('isRelevantRole keeps engineering and music titles, rejects unrelated roles
   assert.equal(isRelevantRole('Cloud Engineer'), true);
   assert.equal(isRelevantRole('Site Reliability Engineer'), true);
   assert.equal(isRelevantRole('QA Automation Engineer'), true);
+  assert.equal(isRelevantRole('Desarrollador Backend'), true);
+  assert.equal(isRelevantRole('Ontwikkelaar Java'), true);
+  assert.equal(isRelevantRole('Ingeniero Civil'), false);
+  assert.equal(isRelevantRole('PSICÓLOGOS SANITARIOS GENERALES'), false);
+  assert.equal(isRelevantRole('FARMACÉUTICO/A ADJUNTO'), false);
+  assert.equal(isRelevantRole('TÈCNICS/ES D\'ATENCIÓ SOCIOSANITÀRIA'), false);
+  assert.equal(isRelevantRole('iOS Developer'), true);
+  assert.equal(isRelevantRole('QA Automation Engineer'), true);
   assert.equal(isRelevantRole('Sales Development Representative'), false);
   assert.equal(isRelevantRole('Product Manager'), false);
 });

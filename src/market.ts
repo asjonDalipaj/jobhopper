@@ -85,20 +85,22 @@ export function isFresh(postedAt: string | null | undefined, now: Date = new Dat
 
 /**
  * Software-engineering titles only. Bare "engineer"/"developer" used to let in
- * sales, consulting, mechanical and fashion roles ("Cashmere Engineer",
- * "Business Developer"); the compounds below keep the real ones. The judge is
- * still the quality gate — this only decides what is worth a model call.
+ * sales, consulting, mechanical and fashion roles. Matching is word-boundary
+ * based: "ios" must not hit "sanitari-os" and "dj" must not hit "a-dj-unto".
+ * The judge is still the quality gate; this only decides what is worth a call.
  */
 const ENGINEERING_KEYWORDS = [
   'software', 'frontend', 'front-end', 'backend', 'back-end', 'full-stack', 'fullstack', 'full stack',
   'devops', 'sre', 'site reliability', 'platform engineer', 'infrastructure engineer',
   'data engineer', 'ml engineer', 'machine learning', 'qa', 'sdet', 'test automation', 'test engineer',
-  'security engineer', 'cyber', 'systems engineer', 'cloud engineer', 'mobile', 'ios', 'android',
+  'security engineer', 'cybersecurity', 'systems engineer', 'cloud engineer', 'mobile', 'ios', 'android',
   'embedded', 'firmware', 'ai engineer', 'forward deployed',
   // Italian titles. The gate used to be English-only, so these never reached the
   // judge. Broad on purpose: the judge is the quality gate.
-  'sviluppator', 'programmator', 'sviluppo software', 'ingegnere informatico',
+  'sviluppo software', 'ingegnere informatico',
 ];
+/** Stems: the word continues after the stem (sviluppatore, desarrolladora…). */
+const ENGINEERING_STEMS = ['sviluppator', 'programmator', 'desarrollador', 'ontwikkelaar', 'programmeur'];
 /** Music-industry production roles; "music" alone matched marketing/creator jobs. */
 const MUSIC_KEYWORDS = [
   'music producer', 'music licensing', 'music supervisor', 'sound design', 'sound engineer',
@@ -107,12 +109,17 @@ const MUSIC_KEYWORDS = [
 /** The profile excludes junior/intern roles; drop them before the judge. */
 const EXCLUDED_TITLE = /\b(intern|internship|tirocinio|stage|junior|graduate|apprentice)\b/i;
 
+const wordMatcher = (term: string) => new RegExp(`(^|[^\\p{L}])${escapeRegExp(term)}($|[^\\p{L}])`, 'u');
+const stemMatcher = (stem: string) => new RegExp(`(^|[^\\p{L}])${escapeRegExp(stem)}`, 'u');
+const KEYWORD_MATCHERS = [...ENGINEERING_KEYWORDS, ...MUSIC_KEYWORDS].map(wordMatcher);
+const STEM_MATCHERS = ENGINEERING_STEMS.map(stemMatcher);
+
 /** True when title is a software-engineering or music-production role. */
 export function isRelevantRole(title: string | null | undefined): boolean {
   if (!title) return false;
   if (EXCLUDED_TITLE.test(title)) return false;
   const lower = title.toLowerCase();
-  return ENGINEERING_KEYWORDS.some((keyword) => lower.includes(keyword)) || MUSIC_KEYWORDS.some((keyword) => lower.includes(keyword));
+  return KEYWORD_MATCHERS.some((re) => re.test(lower)) || STEM_MATCHERS.some((re) => re.test(lower));
 }
 
 /**

@@ -704,3 +704,16 @@ scrape: we target three countries. Copy the company index and the feed breadth:
 
 **Acceptance.** Italian employers with live boards added; EURES live; Italy rows/week up without
 lowering the judge's bar; scan under 15 min; every new source fixture-tested.
+
+## EURES — probed, not enabled (added 2026-11-02)
+
+The API works (unauthenticated `POST /api/jv-searchengine/public/jv-search/search`, `LAST_WEEK`,
+1,211 Italian rows/week), but it is not a software source: 400 Italian rows and 100 Spanish/Dutch
+rows contained **zero** software titles, and only 19 rows were genuinely *created* in three days
+(the rest are old vacancies republished in bulk). The 1.49M EURES rows in the open dataset are
+history, not fresh openings. Adapter + 5 tests are kept in `src/sources/eures.ts`, deliberately **not
+wired into the scan** (a 20s fetch that the role gate drops is pure cost).
+
+The probe also caught two gate false positives — `ios` inside "sanitari-os" and `dj` inside
+"a-dj-unto". `isRelevantRole` now matches keywords on word boundaries (stems like sviluppator /
+desarrollador keep prefix matching) and the Spanish/Dutch stems were added.
