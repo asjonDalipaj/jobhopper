@@ -1,6 +1,8 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 
+import { isTargetMarket, isRelevantRole } from '../market.js';
+
 export interface HtmlRow {
   company: string;
   title: string;
@@ -10,6 +12,16 @@ export interface HtmlRow {
   source?: string | null;
   verdict?: string | null;
   posted_at?: string | null;
+}
+
+/** Rows the snapshot may keep: current market+role gate, plus anything applied to. */
+export function inSnapshotScope(row: {
+  location?: string | null;
+  title?: string | null;
+  applied_at?: string | null;
+}): boolean {
+  if (row.applied_at) return true;
+  return isTargetMarket(row.location) && isRelevantRole(row.title);
 }
 
 function esc(s: string | null | undefined): string {

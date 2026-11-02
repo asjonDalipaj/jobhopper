@@ -6,7 +6,7 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
-import { mergeSnapshotRows } from '../export/html.js';
+import { mergeSnapshotRows, inSnapshotScope } from '../export/html.js';
 
 type SnapRow = {
   source: string;
@@ -136,8 +136,26 @@ test('isRelevantRole keeps engineering and music titles, rejects unrelated roles
   assert.equal(isRelevantRole('Programmatore Java'), true);
   assert.equal(isRelevantRole('Ingegnere Civile'), false);
   assert.equal(isRelevantRole('Impiegato Amministrativo'), false);
+  assert.equal(isRelevantRole('Mechanical Engineer'), false);
+  assert.equal(isRelevantRole('Sales Engineer'), false);
+  assert.equal(isRelevantRole('Engineering Manager'), false);
+  assert.equal(isRelevantRole('Business Developer'), false);
+  assert.equal(isRelevantRole('Content Creator & Strategist'), false);
+  assert.equal(isRelevantRole('Software Engineer Intern'), false);
+  assert.equal(isRelevantRole('Junior Cloud Engineer'), false);
+  assert.equal(isRelevantRole('Mobile Engineer'), true);
+  assert.equal(isRelevantRole('Cloud Engineer'), true);
+  assert.equal(isRelevantRole('Site Reliability Engineer'), true);
+  assert.equal(isRelevantRole('QA Automation Engineer'), true);
   assert.equal(isRelevantRole('Sales Development Representative'), false);
   assert.equal(isRelevantRole('Product Manager'), false);
+});
+
+test('inSnapshotScope keeps current-gate roles and applied rows only', () => {
+  assert.equal(inSnapshotScope({ location: 'Milan', title: 'Backend Engineer', applied_at: null }), true);
+  assert.equal(inSnapshotScope({ location: 'Milan', title: 'Mechanical Engineer', applied_at: null }), false);
+  assert.equal(inSnapshotScope({ location: 'Berlin', title: 'Backend Engineer', applied_at: null }), false);
+  assert.equal(inSnapshotScope({ location: 'Berlin', title: 'Mechanical Engineer', applied_at: '2026-01-01' }), true);
 });
 
 test('mergeSnapshotRows dedupes on source+external_id and prefers a fresh verdict', () => {

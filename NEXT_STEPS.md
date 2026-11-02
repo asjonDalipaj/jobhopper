@@ -652,3 +652,21 @@ board id. Track per-source verdict distribution and applied rate; downweight noi
 
 **Order.** APIs with keys → measure → add ATS fillers (Lever, Ashby, Workday) → scraping only if a
 board that matters allows it and has no feed.
+
+## Change — the board is software-only (added 2026-11-02)
+
+The Italy list mixed sales, consulting, mechanical, fashion, creator and intern roles: `isRelevantRole`
+matched bare "engineer"/"developer" and the generic word "music". Three layers now:
+
+- **Gate** (`src/market.ts`): bare "engineer"/"developer" are gone; software compounds stay
+  (software, front/back/full-stack, devops, SRE, data/ML/AI/cloud/platform/infra/security/QA,
+  mobile/iOS/Android, embedded/firmware) plus Italian stems. Intern/junior/graduate titles are dropped
+  outright. Music keeps production roles only, so "Content Creator & Strategist" at a music company
+  no longer qualifies.
+- **Snapshot scope** (`inSnapshotScope`, used by `run -j`): the merge no longer carries rows that fail
+  the current gate; applied rows are always kept. This cleans the rows scanned under the old gate.
+- **UI** (`App.tsx`): the default match filter is now "Hide rejected" (`relevant`), so `no` roles are
+  hidden on first load; "All roles" is one click away.
+
+Verified: 81 tests; Playwright against the built app: 157 of 308 rows by default, 11 of 34 for Italy;
+the new gate drops 23 of the 34 current Italy rows, and the scope filter leaves 6 software roles.

@@ -24,7 +24,7 @@ export interface Job {
 
 export interface FilterState {
   search: string;
-  verdict: 'all' | 'strong' | 'fair' | 'weak' | 'no' | 'unjudged';
+  verdict: 'all' | 'relevant' | 'strong' | 'fair' | 'weak' | 'no' | 'unjudged';
   /** A continent ("Europe") or country ("Netherlands") to filter by. */
   country: string;
   /** YYYY-MM-DD lower bound for the posting date (inclusive). */

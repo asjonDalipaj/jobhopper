@@ -16,7 +16,7 @@ import { judgePosting } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
 import { runJob, runAllJobs } from '../jobs/run.js';
-import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, type HtmlRow } from '../export/html.js';
+import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, inSnapshotScope, type HtmlRow } from '../export/html.js';
 import { pendingSnapshotRows, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
 import { startWebServer } from './serve.js';
 import { parseCv } from '../cv/schema.js';
@@ -707,7 +707,7 @@ program
       for (const row of rows) {
         row.first_seen = prevFirstSeen.get(`${row.source}:${row.external_id}`) ?? nowISO;
       }
-      exportJobsToJsonFile(mergeSnapshotRows(existing, rows), jsonPath);
+      exportJobsToJsonFile(mergeSnapshotRows(existing, rows).filter(inSnapshotScope), jsonPath);
       const newCount = rows.filter((r) => prevFirstSeen.get(`${r.source}:${r.external_id}`) === null || prevFirstSeen.get(`${r.source}:${r.external_id}`) === undefined).length;
       console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}` + (existing.length ? dim(` (${newCount} new since last snapshot)`) : ''));
     }

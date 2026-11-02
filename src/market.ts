@@ -83,24 +83,34 @@ export function isFresh(postedAt: string | null | undefined, now: Date = new Dat
   return ageMs <= maxDays * 24 * 60 * 60 * 1000;
 }
 
+/**
+ * Software-engineering titles only. Bare "engineer"/"developer" used to let in
+ * sales, consulting, mechanical and fashion roles ("Cashmere Engineer",
+ * "Business Developer"); the compounds below keep the real ones. The judge is
+ * still the quality gate — this only decides what is worth a model call.
+ */
 const ENGINEERING_KEYWORDS = [
-  'engineer', 'developer', 'software', 'frontend', 'front-end', 'backend', 'back-end',
-  'full-stack', 'fullstack', 'full stack', 'devops', 'sre', 'site reliability', 'data engineer',
-  'ml engineer', 'machine learning engineer', 'platform engineer', 'infrastructure engineer',
-  'qa engineer', 'test engineer', 'security engineer', 'systems engineer',
+  'software', 'frontend', 'front-end', 'backend', 'back-end', 'full-stack', 'fullstack', 'full stack',
+  'devops', 'sre', 'site reliability', 'platform engineer', 'infrastructure engineer',
+  'data engineer', 'ml engineer', 'machine learning', 'qa', 'sdet', 'test automation', 'test engineer',
+  'security engineer', 'cyber', 'systems engineer', 'cloud engineer', 'mobile', 'ios', 'android',
+  'embedded', 'firmware', 'ai engineer', 'forward deployed',
   // Italian titles. The gate used to be English-only, so these never reached the
-  // judge. Broad on purpose: the judge is the quality gate, this only decides
-  // what is worth a model call.
+  // judge. Broad on purpose: the judge is the quality gate.
   'sviluppator', 'programmator', 'sviluppo software', 'ingegnere informatico',
 ];
+/** Music-industry production roles; "music" alone matched marketing/creator jobs. */
 const MUSIC_KEYWORDS = [
-  'music', 'audio', 'a&r', 'sound design', 'sound engineer', 'composer', 'mastering',
-  'mixing engineer', 'dj', 'producer', 'music licensing', 'music supervisor',
+  'music producer', 'music licensing', 'music supervisor', 'sound design', 'sound engineer',
+  'audio engineer', 'a&r', 'composer', 'mastering', 'mixing engineer', 'dj', 'producer',
 ];
+/** The profile excludes junior/intern roles; drop them before the judge. */
+const EXCLUDED_TITLE = /\b(intern|internship|tirocinio|stage|junior|graduate|apprentice)\b/i;
 
-/** True when title is an engineering or music role. */
+/** True when title is a software-engineering or music-production role. */
 export function isRelevantRole(title: string | null | undefined): boolean {
   if (!title) return false;
+  if (EXCLUDED_TITLE.test(title)) return false;
   const lower = title.toLowerCase();
   return ENGINEERING_KEYWORDS.some((keyword) => lower.includes(keyword)) || MUSIC_KEYWORDS.some((keyword) => lower.includes(keyword));
 }

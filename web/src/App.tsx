@@ -16,7 +16,7 @@ import { Inbox, SlidersHorizontal } from 'lucide-react';
 
 const initialFilters: FilterState = {
   search: '',
-  verdict: 'all',
+  verdict: 'relevant',
   country: '',
   dateFrom: '',
   dateTo: '',
@@ -177,7 +177,10 @@ export function App() {
   }, []);
 
   const filteredJobs = useMemo(() => jobs.filter((job) => {
-    if (filters.verdict !== 'all') {
+    if (filters.verdict === 'relevant') {
+      // The default view: rejected roles stay out of the way, unjudged ones stay in.
+      if (job.verdict === 'no') return false;
+    } else if (filters.verdict !== 'all') {
       if (filters.verdict === 'unjudged') {
         if (job.verdict) return false;
       } else if (job.verdict !== filters.verdict) return false;
@@ -215,6 +218,7 @@ export function App() {
   const locationOptions = useMemo(() => getLocationFilterOptions(jobs), [jobs]);
   const verdictCounts = useMemo(() => ({
     all: jobs.length,
+    relevant: jobs.filter((job) => job.verdict !== 'no').length,
     strong: jobs.filter((job) => job.verdict === 'strong').length,
     fair: jobs.filter((job) => job.verdict === 'fair').length,
     weak: jobs.filter((job) => job.verdict === 'weak').length,
@@ -223,7 +227,7 @@ export function App() {
   }), [jobs]);
 
   const clearFilters = () => setFilters(initialFilters);
-  const hasActiveFilters = filters.search || filters.verdict !== 'all' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
+  const hasActiveFilters = filters.search || filters.verdict !== 'relevant' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
 
   return (
     <div className="app-shell min-h-screen bg-canvas text-ink">
@@ -275,7 +279,7 @@ export function App() {
                 <legend className="mb-3 text-sm font-semibold">Match</legend>
                 <div className="space-y-2.5">
                   {([
-                    ['all', 'All roles'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['no', 'Pass'], ['unjudged', 'Not reviewed'],
+                    ['all', 'All roles'], ['relevant', 'Hide rejected'], ['strong', 'Strong match'], ['fair', 'Fair match'], ['weak', 'Weak match'], ['no', 'Pass'], ['unjudged', 'Not reviewed'],
                   ] as const).map(([value, label]) => (
                     <label key={value} className="flex cursor-pointer items-center justify-between gap-2 text-sm text-ink-soft hover:text-ink">
                       <span className="flex items-center gap-2"><input type="radio" name="verdict" value={value} checked={filters.verdict === value} onChange={() => setFilters({ ...filters, verdict: value })} />{label}</span>
