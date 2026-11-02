@@ -670,3 +670,37 @@ matched bare "engineer"/"developer" and the generic word "music". Three layers n
 
 Verified: 81 tests; Playwright against the built app: 157 of 308 rows by default, 11 of 34 for Italy;
 the new gate drops 23 of the 34 current Italy rows, and the scope filter leaves 6 software roles.
+
+## Company discovery — what the big boards actually do (added 2026-11-02)
+
+**hiring.cafe, from the founders themselves.** The [scaling post](https://blog.hiring.cafe/p/scaling-hiringcafe-from-0-to-1m-users)
+says every job is scraped from employers' career pages, never user-posted; it started as a
+spreadsheet of hundreds of employers plus search dorks like `"job openings" site:greenhouse.io`.
+In the [4.1M-jobs Reddit thread](https://www.reddit.com/r/ChatGPT/comments/1mt2trl/) co-founder
+u/hamed_n adds the pipeline: crawled the internet for company URLs, verified ~100K career pages
+(Mechanical Turk + Dunn & Bradstreet), an agent finds each career page, crawls them **3×/day**
+through residential proxies, and feeds raw postings to ChatGPT for structured JSON (salary, remote,
+location). No LinkedIn or Indeed.
+
+**The open-source counterpoint.** [ats-scrapers](https://github.com/kalil0321/ats-scrapers) publishes
+a free dataset with **5.06M jobs, 80,390 companies, 64 sources** (MIT): EURES 1.49M, Bundesagentur
+1.01M, Workday 728K, SuccessFactors 321K, Oracle 297K, SmartRecruiters 244K, iCIMS 211K, Greenhouse
+179K, Lever 72K, Welcome to the Jungle 90K. Its schema carries `country_iso` and `apply_url`, and it
+ships per-ATS tenant lists (`name,slug,url`) — i.e. a ready company index.
+
+**The shared architecture.** (1) a large verified **company index** with ATS/slug/URL, (2) **source
+adapters** — ATS JSON APIs and public feeds first, HTML only for the tail, (3) one normalized schema
+with LLM extraction for messy fields, (4) frequent polling + liveness + dedupe on canonical URL.
+
+**What JobHopper copies, and what it skips.** Skip the 100K pages, residential proxies and 3×/day
+scrape: we target three countries. Copy the company index and the feed breadth:
+1. **Italian company index from the MIT dataset** — filter `country_iso=IT` on the per-ATS CSVs,
+   take `company + ats + apply_url`, probe with the adapters we already have, keep the live ones.
+   One-off job, committed as a curated list; refresh monthly.
+2. **EURES adapter** — the EU public employment feed (1.49M rows in that dataset, covers IT/ES/NL).
+   This is the single biggest sanctioned coverage lever, bigger than any Italian board.
+3. **Welcome to the Jungle** next (EU tech, 90K rows), then Workday tenants from the index.
+4. Scraping stays last: only a board that matters, robots/ToS permitting, discovery only.
+
+**Acceptance.** Italian employers with live boards added; EURES live; Italy rows/week up without
+lowering the judge's bar; scan under 15 min; every new source fixture-tested.
