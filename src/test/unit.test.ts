@@ -164,6 +164,7 @@ test('inSnapshotScope keeps current-gate roles and applied rows only', () => {
   assert.equal(inSnapshotScope({ location: 'Milan', title: 'Mechanical Engineer', applied_at: null }), false);
   assert.equal(inSnapshotScope({ location: 'Berlin', title: 'Backend Engineer', applied_at: null }), false);
   assert.equal(inSnapshotScope({ location: 'Berlin', title: 'Mechanical Engineer', applied_at: '2026-01-01' }), true);
+  assert.equal(inSnapshotScope({ location: 'Milan, Italy; [object Object]', title: 'Backend Engineer', applied_at: null }), false);
 });
 
 test('mergeSnapshotRows dedupes on source+external_id and prefers a fresh verdict', () => {

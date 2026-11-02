@@ -21,6 +21,9 @@ export function inSnapshotScope(row: {
   applied_at?: string | null;
 }): boolean {
   if (row.applied_at) return true;
+  // Malformed legacy locations ("Milan; [object Object]") cannot pass the
+  // market gate and render badly; drop them like off-market rows.
+  if (!row.location || row.location.includes('[object Object]')) return false;
   return isTargetMarket(row.location) && isRelevantRole(row.title);
 }
 
