@@ -116,7 +116,7 @@
     "reasoning": "This job posting is for a Lead Physical Security Engineer role, which is unrelated to the candidate's background in software engineering. The candidate has extensive experience in full-stack development, particularly in fintech, but lacks any qualifications or experience in physical security management, crisis management, or security technologies. Additionally, the role requires a bachelor's degree in criminal justice or security management, which the candidate does not possess."
   },
   {
-    "id": 3,
+    "id": 2,
     "external_id": "7342887",
     "source": "greenhouse",
     "company": "Adyen",
@@ -126,10 +126,10 @@
     "employment_type": null,
     "url": "https://job-boards.greenhouse.io/adyen/jobs/7342887",
     "description": "<p><strong>This is Adyen</strong></p> <p>Adyen provides payments, data, and financial products in a single solution for customers like Facebook, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. The people of Adyen are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <p><strong>Unified Platform&nbsp;</strong></p> <p>The Unified Platform is at the heart of Adyen’s infrastructure, bringing together accounting, reporting, billing, pricing, reconciliation, and configuration into one streamlined experience. It enables us to stay agile and innovative while running a scalable, efficient business. As part of this initiative, we’re rethinking five core product areas:</p> <ul> <li><strong>Platform experience</strong> – Creating a unified and intuitive backend experience across Adyen products</li> <li><strong>Accounting systems</strong> – Defining a cohesive and high-performing financial architecture</li> <li><strong>Reporting &amp; reconciliation</strong> – Making financial data more accurate, accessible, and satisfying for customers and regulators</li> <li><strong>Billing &amp; pricing infrastructure</strong> – Simplifying pricing and automating invoicing at scale</li> <li><strong>Observability &amp; tooling </strong>– Strengthening visibility and control of money movement through advanced tooling</li> </ul> <p>.While all roles share a strong technical foundation, each team brings a unique focus in scaling our unified platform, We'll explore the best team fit together throughout the interview process.</p> <p><strong>What you’ll do:</strong></p> <ul> <li>Work on complex technical projects from requirements analysis through design, implementation, testing and launch into production.</li> <li>Be hands-on and contribute to the implementation.</li> <li>Identify and improve parts of the platform to make it more robust and scalable.</li> <li>Bring your own point of view on best engineering practices.&nbsp;</li> <li>Your code will be used at scale and you are expected to think in that mindset when building features.</li> <li>We launch fast and iterate often. Concretely, this means that within your first few weeks, you will bring live functionalities that impact many merchants and shoppers.&nbsp;</li> <li>Build APIs and tooling according to quality principles such as performance and code quality.</li> <li>Collaborate across teams and time zones to get projects over the finish line.</li> </ul> <p><strong>Who you are:</strong></p> <ul> <li>Familiar with complex large scale distributed systems.</li> <li>You have experience with Java, Web Services, REST Apis, Webhooks and SQL/PostgreSql.</li> <li>You have a good understanding of Software Engineering practices and interest in product knowledge.</li> <li>You enjoy working in a cross-functional team with roles like Data Science, Frontend, and Product.</li> <li>You value involving other people to hear different perspectives.</li> <li>You have an experimental mindset with a launch fast and iterate mentality.</li> </ul> <p><strong>Minimum qualifications:</strong></p> <ul> <li>6+ years of experience in software development industry in a fast paced tech environment</li> <li>Full professional proficiency in English</li> <li>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p>Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</p> <p>Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application.</p> <p><strong>What’s next?</strong></p> <p>Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role.<a href=\"https://careers.adyen.com/faqs/\"> Learn more about our hiring process here</a>. Don’t be afraid to let us know if you need more flexibility.</p>",
-    "posted_at": "2026-11-02T05:37:15-05:00",
+    "posted_at": "2026-11-02T06:57:54-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job at Adyen requires in-person collaboration in Amsterdam, which contradicts the candidate's preference for remote or hybrid roles. Additionally, the role emphasizes experience with large-scale distributed systems and PostgreSQL, which are not explicitly mentioned in the candidate's background. While the candidate has strong Java and SQL experience, the requirement for an office-first approach and specific database expertise makes this position unsuitable.",
+    "reasoning": "This job posting requires in-person collaboration at the Amsterdam office, which contradicts the candidate's preference for remote or hybrid work. Additionally, while the candidate has strong experience in Java and SQL, the requirement for familiarity with complex large-scale distributed systems and specific experience with PostgreSQL is not explicitly mentioned in the candidate's profile. Therefore, the role is not a suitable match for the candidate's constraints and preferences.",
     "applied_at": null,
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
@@ -842,7 +842,7 @@
     "first_seen": "2026-10-15T23:30:01.309Z"
   },
   {
-    "id": 13,
+    "id": 11,
     "external_id": "8237818",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -855,12 +855,12 @@
     "posted_at": "2026-10-30T08:43:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's background in software engineering and fintech. The candidate has extensive experience in full-stack development, particularly in Java and SQL, but lacks the specific security incident management experience and expertise in security tools required for this position. Additionally, the role emphasizes security operations and incident response, which are outside the candidate's stated interests and expertise.",
+    "reasoning": "The job posting is for a Senior Security Engineer role focused on security operations, which is not aligned with the candidate's expertise in software engineering and fintech. The candidate has extensive experience in software development, particularly in backend and frontend technologies, but lacks the required security incident management experience and knowledge of security operations centers (SOC). Additionally, the role requires specific skills in security information and event management (SIEM) systems and endpoint detection, which the candidate does not possess.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
   {
-    "id": 14,
+    "id": 12,
     "external_id": "8237816",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -873,7 +873,7 @@
     "posted_at": "2026-10-30T08:43:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Security Engineer role, which is focused on security incident response and requires extensive experience in security operations, including managing security incidents and expertise with SIEM systems. The candidate's background is primarily in software engineering with a focus on full-stack development, Java, SQL, and frontend technologies, but lacks the specific security experience and skills required for this role. Additionally, the candidate has not indicated any interest or experience in security engineering, making this position a poor fit.",
+    "reasoning": "The job posting is for a Senior Security Engineer role, which is focused on security incident response and requires extensive experience in security operations, incident management, and specific security tools. The candidate's background is primarily in software engineering with a strong focus on full-stack development, Java, SQL, and CI/CD, but lacks the necessary security experience and expertise in security operations centers (SOC) or incident response teams. Additionally, the candidate has not indicated any specific experience or interest in security engineering, making this role a poor fit.",
     "applied_at": null,
     "first_seen": "2026-10-17T12:37:14.056Z"
   },
@@ -1024,7 +1024,7 @@
     "reasoning": "This job posting is for an Android Engineer position, which is not aligned with the candidate's expertise as a full-stack software engineer with a focus on backend and frontend development using Java and React. The candidate does not have experience in Android development or Kotlin, which are essential for this role. Additionally, the position is located in Barcelona, which does not meet the candidate's preference for roles in the Netherlands or remote opportunities."
   },
   {
-    "id": 15,
+    "id": 14,
     "external_id": "8188887",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1037,12 +1037,12 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in software engineering, particularly with Java, SQL, and CI/CD, which aligns well with the requirements of the Mozilla position. However, the job specifically calls for strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in mentoring and stakeholder engagement, the role emphasizes collaboration with designers and product managers, which may require additional adaptation. Overall, the candidate is a realistic fit but would need to address the Python/Django gap.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in Java, SQL, and CI/CD, which aligns well with the requirements of the Mozilla role. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in DevOps and CI/CD, the role emphasizes observability and automated moderation systems, areas where the candidate may need to further develop expertise.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 16,
+    "id": 13,
     "external_id": "8188889",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1055,7 +1055,7 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate has strong experience in software engineering, particularly in Java, SQL, and CI/CD, which aligns well with the requirements for the Senior Software Engineer role at Mozilla. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in mentoring and stakeholder engagement, the role emphasizes a need for familiarity with automated moderation systems and observability practices, which may require further development on the candidate's part.",
+    "reasoning": "The candidate has strong experience in software engineering, particularly in Java, SQL, and CI/CD, which aligns well with the requirements for the Senior Software Engineer role at Mozilla. However, the job specifically requires strong hands-on experience with Python/Django, which the candidate lacks. Additionally, while the candidate has experience in mentoring and stakeholder engagement, the role emphasizes building and maintaining production applications with a focus on observability and automated moderation systems, areas where the candidate may need to adapt their skills.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
@@ -1092,7 +1092,7 @@
     "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs is weakly aligned with the candidate's profile. While the candidate has extensive experience in full-stack development and a strong background in Java and React, the job is located in multiple countries including the US, which the candidate is not willing to relocate to. Additionally, the job does not specify remote work options, which is a key preference for the candidate. The candidate's fintech experience is relevant but not explicitly mentioned in the job description."
   },
   {
-    "id": 23,
+    "id": 21,
     "external_id": "4405791009",
     "source": "greenhouse",
     "company": "Redwood Software",
@@ -1105,7 +1105,7 @@
     "posted_at": "2026-10-30T10:07:49-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, CI/CD, and full-stack development, they lack specific experience with SAP systems, which is a critical requirement for this role. The job emphasizes AI-enhanced development and SAP connectivity, areas where the candidate has limited exposure. Additionally, the requirement for proficiency in the Spring ecosystem and familiarity with AWS cloud services are not explicitly mentioned in the candidate's background, indicating a potential gap in meeting the job's technical qualifications.",
+    "reasoning": "While the candidate has strong experience in Java, CI/CD, and frontend technologies, they lack specific experience with SAP environments and the Spring ecosystem, which are critical for this role. The job emphasizes AI-enhanced development and SAP connectivity, areas where the candidate's background does not provide direct experience. Additionally, the requirement for familiarity with advanced AI tools and prompt engineering techniques is not clearly demonstrated in the candidate's profile.",
     "applied_at": null,
     "first_seen": "2026-10-21T19:04:26.091Z"
   },
@@ -1648,20 +1648,20 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 42,
+    "id": 40,
     "external_id": "10e6475e-67ef-4621-8718-7b087c354651",
     "source": "ashby",
     "company": "Eleven Labs",
     "title": "Full-Stack Engineer - Productions",
-    "location": "Remote; Dublin; Denmark; United Kingdom; Stockholm; London; Amsterdam; Berlin",
+    "location": "Remote; Croatia; Poland; Sweden; United Kingdom; Amsterdam",
     "workplace_type": "Remote",
     "employment_type": null,
     "url": "https://jobs.ashbyhq.com/elevenlabs/10e6475e-67ef-4621-8718-7b087c354651",
     "description": "",
-    "posted_at": "2026-10-13T14:11:32.386+00:00",
+    "posted_at": "2026-11-02T11:58:53.345+00:00",
     "tags": null,
-    "verdict": "strong",
-    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs aligns well with the candidate's extensive experience in full-stack development, particularly in Java and React, which are crucial for this role. The candidate's background in fintech and product engineering matches the company's focus, and their experience with CI/CD and DevOps complements the requirements for a production environment. Additionally, the remote work option fits perfectly with the candidate's preference for remote roles in Europe.",
+    "verdict": "weak",
+    "reasoning": "The job posting for a Full-Stack Engineer at Eleven Labs is a remote position, which aligns with the candidate's preference for remote work. However, the specific technologies and requirements for this role are not detailed in the posting, making it difficult to assess a strong fit. The candidate has extensive experience in Java, SQL, and React, but without knowing the specific tech stack or requirements for the position, it's hard to determine if they meet the essential criteria. Additionally, the candidate's fintech background may not directly align with Eleven Labs' focus, which could be in a different domain.",
     "applied_at": null,
     "first_seen": "2026-10-13T20:28:05.417Z"
   },
@@ -1846,7 +1846,7 @@
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 17,
+    "id": 15,
     "external_id": "8282264",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1859,12 +1859,12 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in Java, SQL, and frontend technologies, the job at Mozilla requires specific expertise in systems programming, particularly in C and/or C++, which the candidate lacks. Additionally, the role focuses heavily on security features and low-level software engineering, areas that are not highlighted in the candidate's experience. The candidate's fintech background and interest in AI are relevant, but they do not align closely with the core responsibilities of this position.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and frontend technologies, the job at Mozilla requires specific expertise in systems programming, particularly in C and C++, which the candidate does not possess. Additionally, the role focuses heavily on security features and low-level software engineering, areas that are not highlighted in the candidate's background. The candidate's experience in fintech and customer-facing roles is valuable, but it does not align closely with the security-centric focus of this position.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
   {
-    "id": 18,
+    "id": 16,
     "external_id": "8282262",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -1877,7 +1877,7 @@
     "posted_at": "2026-10-30T09:09:26-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and SQL, the job at Mozilla requires specific expertise in systems programming with C and/or C++, which the candidate lacks. Additionally, the role focuses heavily on security features and architecture, areas that are not highlighted in the candidate's experience. Although the candidate has a solid background in full-stack development and CI/CD, the significant gaps in required skills for this position make it a weak fit.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and frontend technologies, this role at Mozilla requires specific expertise in systems programming, particularly in C and C++, which the candidate does not possess. Additionally, the focus on security features and low-level software engineering is not aligned with the candidate's background in enterprise platforms and fintech applications. The candidate's experience with web technologies is relevant, but the lack of direct experience in security architecture and debugging multithreaded applications presents significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-15T02:41:09.731Z"
   },
@@ -2008,7 +2008,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 34,
+    "id": 32,
     "external_id": "8006329003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2021,12 +2021,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and CI/CD, the job specifically requires proficiency in Python or Kotlin, which the candidate does not possess. Additionally, the role is based in Spain, which may not align with the candidate's current location in the Netherlands, despite their openness to remote work. The requirement for on-call rotation may also be a concern for the candidate, as it is not mentioned in their preferences.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java and SQL, the job specifically requires proficiency in Python or Kotlin, which the candidate does not possess. Additionally, the role emphasizes experience with distributed systems and technologies like AWS and Kubernetes, which are not mentioned in the candidate's profile. The candidate's fintech background aligns well with Affirm's focus, but the specific technical requirements present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-16T18:33:42.094Z"
   },
   {
-    "id": 38,
+    "id": 36,
     "external_id": "7931494003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2039,12 +2039,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in backend systems, the job requires specific expertise in Python or Kotlin, which the candidate does not explicitly list as a strength. Additionally, the role emphasizes experience with AWS, Spark, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience in fintech and customer-facing roles aligns well with the company's mission, but the gaps in required technologies and specific backend experience limit the fit.",
+    "reasoning": "While the candidate has significant experience in backend development, particularly with Java and SQL, the job posting specifically requires expertise in Python or Kotlin, which the candidate does not possess. Additionally, the role emphasizes experience with AWS, Spark, and Kubernetes, which are not mentioned in the candidate's profile. The candidate's strong background in fintech and CI/CD aligns with the company's focus, but the gaps in required technologies and specific experience with distributed systems limit the fit.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 37,
+    "id": 35,
     "external_id": "7820451003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2057,12 +2057,12 @@
     "posted_at": "2026-11-02T04:46:45-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has over ten years of experience in software engineering and a strong background in backend development with Java and SQL, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the position is for a lead engineer role that demands experience in setting technical strategies and managing teams, which may be a stretch for the candidate given their current role as a consultant. The remote location requirement in Spain also poses a challenge since the candidate is based in the Netherlands.",
+    "reasoning": "While the candidate has over 10 years of experience as a software engineer and strong skills in Java and SQL, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role is for a lead engineer position, which may require more extensive experience in setting technical strategy and leading teams than the candidate's current experience suggests. The remote location requirement in Spain also poses a challenge as the candidate is based in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 35,
+    "id": 33,
     "external_id": "7799346003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2075,12 +2075,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and CI/CD, the job posting requires proficiency in Python or Kotlin, which the candidate does not explicitly list. Additionally, the role emphasizes experience with AWS and Spark, which are not mentioned in the candidate's background. The on-call rotation requirement may also be a concern for the candidate, depending on their preferences. Overall, there are several key skills missing that would make this a challenging fit.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in backend development with Java and SQL, the job posting specifically requires proficiency in Python or Kotlin, which the candidate does not list as a skill. Additionally, the role emphasizes experience with distributed systems and technologies like AWS and Spark, which are not mentioned in the candidate's profile. The candidate's fintech background aligns with the company's focus, but the specific technical requirements present a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 33,
+    "id": 31,
     "external_id": "7807506003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2093,12 +2093,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level. The candidate has over 10 years of experience as a senior full-stack software engineer, while this position is targeted at less experienced individuals. Additionally, the role requires being based in Spain, which may not fit the candidate's current location in the Netherlands and their openness to remote roles across Europe but not specifically tied to Spain.",
+    "reasoning": "This job posting is for a Software Engineer I position, which is an entry-level role that does not align with the candidate's seniority and experience level. The candidate has over ten years of experience and is seeking senior roles, making this position unsuitable. Additionally, the job requires being based in Spain, which may not fit the candidate's current location preference in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 32,
+    "id": 30,
     "external_id": "7799935003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2111,7 +2111,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and a strong background in Java, SQL, and React, the job specifically requires expertise in React Native development, which the candidate does not mention. Additionally, the role emphasizes mobile application development and experience with declarative UI frameworks, areas where the candidate's experience may not align closely. The candidate's fintech background is a plus, but the gaps in mobile-specific skills and React Native experience make this a weak fit.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in Java, SQL, and React, the job specifically requires expertise in React Native development, which the candidate does not mention in their CV. Additionally, the role emphasizes mobile application development and ownership of user journeys, areas where the candidate's experience is less directly aligned. The candidate's fintech background is a plus, but the lack of mobile-specific experience and the focus on React Native creates a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
@@ -2134,7 +2134,7 @@
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 30,
+    "id": 28,
     "external_id": "7801373003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2147,12 +2147,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in backend development, particularly with Java and SQL, the job specifically requires expertise in Python and Kotlin, which the candidate does not explicitly list as a strong skill. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's background. The candidate's fintech experience aligns well with Affirm's focus, but the gaps in required technologies and specific experience with distributed systems limit the fit.",
+    "reasoning": "While the candidate has strong experience in backend development with Java and Python, the job specifically requires proficiency in Kotlin, which the candidate lacks. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's background. The candidate's experience in fintech aligns well with Affirm's focus, but the specific technical requirements and the need for a presence in Spain create a mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 29,
+    "id": 27,
     "external_id": "7806679003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2165,12 +2165,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and SQL, the job specifically requires expertise in Python or Kotlin for backend systems, which the candidate lacks. Additionally, the role emphasizes experience with distributed systems and AWS, which are not mentioned in the candidate's background. The candidate's fintech experience is a plus, but the specific focus on fraud prevention and real-time decisioning systems is not directly aligned with their past roles.",
+    "reasoning": "While the candidate has strong experience in software engineering, particularly in Java and SQL, the job requires expertise in Python or Kotlin for backend development, which the candidate lacks. Additionally, the role emphasizes experience with distributed systems and AWS, which is not mentioned in the candidate's background. The candidate's fintech experience aligns well with the company's focus, but the specific requirements for fraud prevention and real-time decisioning systems present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 27,
+    "id": 25,
     "external_id": "7820446003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2183,12 +2183,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and React, the job posting specifically emphasizes backend systems development using Python, Kotlin, AWS, and Kubernetes, which the candidate does not list as primary skills. Additionally, the role requires experience in just-in-time transaction processing and on-call responsibilities, which may not align with the candidate's background. The candidate's fintech experience is a plus, but the specific technology stack and requirements present significant gaps.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java, SQL, and React, the job posting specifically requires experience with Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's preference for the Netherlands or Italy. The candidate's fintech background is a plus, but the specific technology stack and location requirements create a significant gap.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 24,
+    "id": 22,
     "external_id": "7916080003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2201,12 +2201,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting is for an Analytics Engineer role, which focuses more on data modeling, analytics, and BI tools rather than full-stack development. The candidate lacks specific experience with dbt, BI tools like Looker or Tableau, and cloud data warehouses such as Snowflake, which are critical for this position. Additionally, the role requires 3+ years in analytics engineering, which the candidate does not explicitly demonstrate.",
+    "reasoning": "While the candidate has strong experience in software engineering and a fintech background, the job posting is for an Analytics Engineer role that requires specific expertise in analytics engineering, data modeling, and BI tools like dbt and Tableau, which the candidate does not explicitly mention. The candidate's experience with SQL and Python is relevant, but they lack the required 3+ years in an analytics engineering role and familiarity with tools like Snowflake and Salesforce. Additionally, the role is remote but requires the candidate to be based in Spain, which may not align with the candidate's current location in the Netherlands.",
     "applied_at": null,
     "first_seen": "2026-10-16T23:11:46.716Z"
   },
   {
-    "id": 28,
+    "id": 26,
     "external_id": "8034649003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2219,7 +2219,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in software engineering, particularly in backend development and fintech, the job posting requires proficiency in modern programming languages such as Python or Kotlin, with a focus on developing highly available distributed systems. The candidate's experience is primarily in Java and SQL, which may not fully align with the specific tech stack mentioned. Additionally, the role is based in Spain, which may not be ideal for the candidate who is open to remote roles but is currently based in the Netherlands. There are also gaps in experience with AWS, DynamoDB, and Kubernetes, which are highlighted as important for this position.",
+    "reasoning": "While the candidate has significant experience in backend development and a strong fintech background, the job requires proficiency in Python or Kotlin, which the candidate does not explicitly list as a strength. Additionally, the role emphasizes experience with AWS and Kubernetes, which are not mentioned in the candidate's profile. The candidate's experience with CI/CD and messaging systems is relevant, but the gaps in specific technologies and the requirement for multi-region, multi-tenant platform experience create a mismatch.",
     "applied_at": null,
     "first_seen": "2026-10-19T08:21:26.918Z"
   },
@@ -2435,7 +2435,7 @@
     "posted_at": "2026-10-30T15:55:24-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and has held roles that involve mentoring and technical leadership, they lack specific experience in identity and access management (IAM) systems, which is a critical requirement for this role. Additionally, the job requires 3+ years in IAM, which the candidate does not meet. Although the candidate is open to remote work in Spain, the focus on IAM technologies presents a significant gap.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a strong background in fintech, they lack specific experience in identity and access management (IAM) systems, which is a critical requirement for this role. The job also requires leadership experience in managing a team, which is not explicitly highlighted in the candidate's CV. Additionally, the candidate's experience with cloud-based technologies is not detailed enough to confirm a strong fit for the role's requirements.",
     "applied_at": null,
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
@@ -2458,7 +2458,7 @@
     "first_seen": "2026-10-22T18:59:52.837Z"
   },
   {
-    "id": 22,
+    "id": 20,
     "external_id": "8315195",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2471,12 +2471,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Site Reliability Engineer role, which typically requires deeper expertise in operational systems and cloud infrastructure, areas where the candidate's experience is less pronounced. The candidate's background in fintech and full-stack development aligns with some aspects of the role, but they lack specific experience with infrastructure as code tools like Terraform and may not have the extensive operational experience required for this position.",
+    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Staff Site Reliability Engineer role, which requires specific expertise in deploying and operating production systems in cloud environments, particularly with infrastructure as code tools like Terraform. The candidate's experience does not explicitly mention cloud environments or Terraform, which are critical for this role. Additionally, the focus on developer tooling and workflow automation may not align perfectly with the candidate's background in fintech and enterprise platforms.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 21,
+    "id": 19,
     "external_id": "8315192",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2489,12 +2489,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Staff Site Reliability Engineer role, which requires specific expertise in deploying and operating production systems in cloud environments, particularly with tools like Terraform, which the candidate does not explicitly mention. Additionally, the role emphasizes experience with C++ or Rust, which the candidate lacks. Although the candidate's background in AI-assisted development aligns with some aspects of the role, the overall fit is limited due to these gaps.",
+    "reasoning": "While the candidate has strong software engineering skills and experience in CI/CD and DevOps, the job posting is for a Site Reliability Engineer role, which typically requires deeper expertise in operational systems, cloud infrastructure, and possibly languages like C++ or Rust that the candidate does not list. Additionally, the focus on developer tooling and workflow automation may not align perfectly with the candidate's background, which is more centered on application development and integration. The candidate's experience with AI-assisted development tools is a plus, but overall, there are significant gaps in the specific requirements for this role.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 19,
+    "id": 17,
     "external_id": "8315350",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2507,12 +2507,12 @@
     "posted_at": "2026-10-30T09:09:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and is based in the Netherlands, the job requires strong proficiency in C++ and Rust, which the candidate does not list in their skills. The role also emphasizes privacy protections and browser architecture, areas that are not highlighted in the candidate's background. However, the candidate's experience with Java and web technologies aligns with some aspects of the job, making it a tangential fit.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and strong skills in Java and SQL, the job requires proficiency in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy protections and browser architecture, areas that are not explicitly covered in the candidate's background. Although the candidate has experience in fintech and product engineering, the specific technical requirements for this position present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
   {
-    "id": 20,
+    "id": 18,
     "external_id": "8315278",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -2525,7 +2525,7 @@
     "posted_at": "2026-10-30T09:09:27-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and is open to remote work, the job requires specific expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses heavily on privacy and browser architecture, areas that are not highlighted in the candidate's background. The candidate's strong skills in Java, SQL, and frontend technologies do not align with the core requirements of this position.",
+    "reasoning": "While the candidate has extensive experience as a software engineer and is open to remote roles, the job requires specific expertise in C++ and Rust, which the candidate does not possess. Additionally, the role focuses on privacy and browser architecture, areas that are not highlighted in the candidate's background. Although the candidate has strong skills in Java and SQL, the lack of required programming languages and specific domain experience leads to a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-22T23:48:41.455Z"
   },
@@ -2800,7 +2800,7 @@
     "first_seen": "2026-10-27T11:23:00.760Z"
   },
   {
-    "id": 31,
+    "id": 29,
     "external_id": "8040380003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2813,12 +2813,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in full-stack development and a strong background in Java, SQL, and React, the job posting specifically requires experience with mobile applications using React Native, which the candidate lacks. Additionally, the role emphasizes ownership of mobile application development and experience with Kotlin, neither of which are mentioned in the candidate's profile. The remote work aspect aligns with the candidate's preferences, but the location requirement for Spain is a significant constraint.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and is proficient in Java and SQL, the job posting specifically requires experience with mobile applications and proficiency in Python or Kotlin, which the candidate lacks. Additionally, the role is remote but requires the candidate to be based in Spain, which does not align with the candidate's current location in the Netherlands. The candidate's fintech background and experience with CI/CD and DevOps are relevant, but the gaps in required technologies and location make this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 36,
+    "id": 34,
     "external_id": "8040394003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2831,12 +2831,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and is proficient in Java and SQL, the job requires specific experience with Python or Kotlin for backend development, which the candidate lacks. Additionally, the role is based in Spain, and although the candidate is open to remote work, they are currently based in the Netherlands, which may complicate logistics. The candidate's strong background in fintech and customer-facing roles aligns with the company's mission, but the gaps in required technologies and location create a weak fit overall.",
+    "reasoning": "While the candidate has extensive experience as a full-stack software engineer and is proficient in Java and SQL, the job requires proficiency in Python or Kotlin, which the candidate does not possess. Additionally, the role specifies a minimum of 1.5 years of experience, which the candidate exceeds, but the focus on mobile application development is not aligned with their background. The remote work location requirement in Spain also poses a challenge, as the candidate is based in the Netherlands and does not express a willingness to relocate.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 39,
+    "id": 37,
     "external_id": "8034645003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2849,12 +2849,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience as a software engineer and a strong background in fintech, the job requires proficiency in specific technologies like Kotlin and AWS, which the candidate does not list in their skills. Additionally, the role emphasizes designing and operating correctness-sensitive systems and requires experience with Kubernetes, which is not mentioned in the candidate's experience. The candidate's experience aligns with backend development, but the gaps in required technologies and specific system design experience make this a weak fit.",
+    "reasoning": "While the candidate has over 10 years of experience as a software engineer and strong skills in Java, SQL, and CI/CD, the job requires proficiency in Python, Kotlin, AWS, and Kubernetes, which the candidate lacks. Additionally, the role emphasizes designing and operating correctness-sensitive systems and requires experience with complex systems architecture, which may stretch the candidate's current experience. The remote nature of the job aligns with the candidate's preferences, but the specific technical requirements present significant gaps.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 25,
+    "id": 23,
     "external_id": "8041432003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2867,12 +2867,12 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has extensive experience in software engineering and a fintech background, this role requires specific expertise in machine learning and management experience, which the candidate does not explicitly demonstrate. The job focuses on leading a team of ML engineers and developing machine learning models, areas where the candidate's experience is limited. Additionally, the requirement for 3+ years of management experience is not met by the candidate's profile.",
+    "reasoning": "While the candidate has extensive experience in software engineering and a fintech background, this role requires specific expertise in machine learning and management of ML engineers, which the candidate does not explicitly demonstrate. The candidate's experience is primarily in software development and integration rather than leading machine learning initiatives. Additionally, the role is based in Spain, which may not align with the candidate's current location preference for remote roles in the Netherlands, Italy, or Spain.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 26,
+    "id": 24,
     "external_id": "8043027003",
     "source": "greenhouse",
     "company": "Affirm",
@@ -2885,7 +2885,7 @@
     "posted_at": "2026-10-30T17:15:12-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This position requires a candidate to be based in Spain, which does not align with the candidate's preference for roles in the Netherlands, Italy, or remote EU. Additionally, the role is a Senior Manager position, which involves managing multiple teams and requires 5+ years of management experience, whereas the candidate's experience is primarily as a software engineer without explicit management roles. This significant gap in seniority and location makes the job unsuitable for the candidate.",
+    "reasoning": "The job posting for the Senior Manager, Software Engineering role at Affirm requires significant management experience, specifically 5+ years managing engineering teams and 2+ years managing managers. The candidate, while experienced as a software engineer, does not demonstrate the requisite managerial experience or leadership of multi-team organizations. Additionally, the role is based in Spain and requires someone to be located there, which does not align with the candidate's current location in the Netherlands and their openness to remote roles but not specific to Spain.",
     "applied_at": null,
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
@@ -2962,7 +2962,7 @@
     "first_seen": "2026-10-30T00:32:21.750Z"
   },
   {
-    "id": 41,
+    "id": 39,
     "external_id": "5083170007",
     "source": "greenhouse",
     "company": "Foundation Risk Partners",
@@ -2975,12 +2975,12 @@
     "posted_at": "2026-10-30T09:43:24-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Insurance Sales Producer role, which is unrelated to the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but this position requires skills in sales, client relationship management, and insurance knowledge, none of which are present in the candidate's profile. Additionally, the role is located in the US, which contradicts the candidate's preference for positions in the Netherlands, Italy, or Spain.",
+    "reasoning": "This job posting is for an Insurance Sales Producer role, which is unrelated to the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but this position requires sales skills and knowledge of insurance products, which the candidate does not possess. Additionally, the job is located in California, which contradicts the candidate's preference for roles in the Netherlands, Italy, or Spain.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 40,
+    "id": 38,
     "external_id": "5032985007",
     "source": "greenhouse",
     "company": "Foundation Risk Partners",
@@ -2993,12 +2993,12 @@
     "posted_at": "2026-10-30T09:43:24-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for an Employee Benefits Insurance Sales Producer, which is entirely unrelated to the candidate's background in software engineering. The role focuses on sales, client relationship management, and insurance knowledge, none of which align with the candidate's expertise in software development, particularly in fintech and full-stack engineering. Additionally, the position is located in California, which conflicts with the candidate's preference for roles in the Netherlands, Italy, or Spain, and their explicit constraint against US-based roles.",
+    "reasoning": "This job posting is for an Insurance Sales Producer role, which is unrelated to the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in fintech and full-stack engineering, but this position requires skills in sales, client relationship management, and insurance knowledge, none of which are present in the candidate's profile. Additionally, the role is located in California, which contradicts the candidate's preference for positions in the Netherlands, Italy, or Spain.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 5,
+    "id": 4,
     "external_id": "8003083",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3011,12 +3011,12 @@
     "posted_at": "2026-10-30T09:24:14-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Staff Software Engineer position at Adyen, which requires a high level of technical leadership and strategic architectural vision across multiple teams. The role is office-first and does not offer remote-only options, which contradicts the candidate's preference for remote work. Additionally, the candidate's experience does not align with the specific requirements for distributed systems expertise and ML systems experience at the level required for this position.",
+    "reasoning": "This position at Adyen is for a Staff Software Engineer focused on Fraud Intelligence, requiring significant experience in distributed systems and machine learning infrastructure, which the candidate does not explicitly possess. Additionally, the role is office-first and does not offer remote-only options, conflicting with the candidate's preference for remote work. The seniority level and specific focus on fraud detection also do not align with the candidate's background in general software engineering and fintech.",
     "applied_at": null,
     "first_seen": "2026-10-30T17:34:45.572Z"
   },
   {
-    "id": 4,
+    "id": 3,
     "external_id": "8081186",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3029,12 +3029,12 @@
     "posted_at": "2026-11-01T18:00:00-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has strong experience in Java, SQL, and full-stack development, the job at Adyen requires in-person collaboration three days a week in Amsterdam, which conflicts with the candidate's preference for remote or flexible work arrangements. Additionally, the role emphasizes experience with large-scale distributed systems and specific familiarity with PostgreSQL, which is not mentioned in the candidate's profile. Therefore, while there are relevant skills, the constraints and specific requirements create a mismatch.",
+    "reasoning": "While the candidate has strong experience in Java, SQL, and working with APIs, the job at Adyen requires in-person collaboration three days a week in Amsterdam, which conflicts with the candidate's preference for remote or flexible work arrangements. Additionally, the role emphasizes familiarity with large-scale distributed systems, which is not explicitly mentioned in the candidate's experience. The candidate's fintech background aligns well with Adyen's focus, but the requirement for a minimum of 3 years in a fast-paced tech environment may not fully match the candidate's extensive but specific experience.",
     "applied_at": null,
     "first_seen": "2026-11-02T00:06:55.149Z"
   },
   {
-    "id": 2,
+    "id": 1,
     "external_id": "7573921",
     "source": "greenhouse",
     "company": "Adyen",
@@ -3047,7 +3047,7 @@
     "posted_at": "2026-11-01T18:00:00-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "While the candidate has over ten years of experience in software engineering and strong skills in Java and SQL, the job at Adyen requires a commitment to in-office work three days a week, which may not align with the candidate's preference for remote or flexible work arrangements. Additionally, the role emphasizes experience with large-scale distributed systems and specific technologies like PostgreSQL, which are not explicitly mentioned in the candidate's background. The candidate's fintech experience and familiarity with REST APIs do align with the job requirements, but the gaps in specific technology experience and the in-office requirement lead to a weak fit overall.",
+    "reasoning": "While the candidate has extensive experience in software engineering, particularly with Java and SQL, the job at Adyen requires a strong focus on large-scale distributed systems and in-person collaboration, which may not align with the candidate's preference for remote work. Additionally, the role emphasizes building APIs and tooling in a fast-paced environment, which the candidate has experience in, but the office-first requirement could be a significant barrier. The candidate's fintech background is a plus, but the need for in-office presence is a mismatch.",
     "applied_at": null,
     "first_seen": "2026-11-02T00:06:55.149Z"
   },
@@ -3065,7 +3065,7 @@
     "posted_at": "2026-11-02T04:50:14-05:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate has a solid background in full-stack development with over 10 years of experience, particularly in Java, React, and CI/CD, which aligns well with the job requirements at Elastic. Their experience in leading projects end-to-end and mentoring junior developers matches the expectations for ownership and leadership in this role. Additionally, the candidate's familiarity with AI-assisted development tools is a plus, as the job emphasizes the use of such technologies. However, the candidate lacks specific experience with Node.js and the Elastic stack, which are preferred but not mandatory.",
+    "reasoning": "The candidate has a solid background in full-stack development with over 10 years of experience, particularly in Java, React, and CI/CD, which aligns well with the job requirements at Elastic. They have demonstrated ownership of complex projects and possess the necessary skills in TypeScript and Node.js, which are crucial for this role. Additionally, their experience with AI-assisted development tools matches the job's emphasis on innovative solutions. However, the candidate lacks specific experience with the Elastic stack and observability tooling, which could be a minor gap.",
     "applied_at": null,
     "first_seen": "2026-11-02T10:24:37.121Z"
   },
@@ -3083,48 +3083,12 @@
     "posted_at": "2026-11-02T04:47:44-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Founding ML Engineer position focused on machine learning and AI systems, requiring a proven track record in ML/AI, particularly with LLMs and generative AI. The candidate has strong software engineering skills and experience with AI tooling but lacks the specific ML/AI lead experience and deep understanding of LLM ecosystems that this role demands. Additionally, the candidate's background does not indicate experience in early-stage startups or the specific ML/AI frameworks mentioned, making this position a poor fit.",
+    "reasoning": "This job posting is for a Founding ML Engineer role focused on machine learning and AI systems, specifically requiring a proven track record in ML/AI leadership and extensive experience with LLMs and generative AI. The candidate's background, while strong in software engineering and AI tooling, does not demonstrate the required depth in ML/AI systems or the specific experience with LLMs and prompt engineering that this role demands. Additionally, the candidate's experience is more aligned with software engineering rather than leading ML initiatives, making this position a poor fit.",
     "applied_at": null,
     "first_seen": "2026-11-02T10:24:37.121Z"
   },
   {
     "id": 10,
-    "external_id": "8328125",
-    "source": "greenhouse",
-    "company": "HelloFresh",
-    "title": "Team Lead International Supplier FSQA (all genders)",
-    "location": "Amsterdam, North Holland, Netherlands; Berlin, Berlin, Germany; UK ",
-    "workplace_type": null,
-    "employment_type": "Intern",
-    "url": "https://careers.hellofresh.com/global/en/job/8328125?gh_jid=8328125",
-    "description": "<h2><strong>About the role: What's in the Box</strong></h2> <p>Are you passionate about building food safety standards and systems across multiple countries, and driving food safety culture to the next level?</p> <p>As the Team Lead International Supplier FSQA, you will join a lean, fast-paced cross-functional international team responsible for managing our International Food Safety and Quality Assurance (FSQA) team. The International FSQA team is based across the EU where HelloFresh is active. As part of your responsibilities as Team Lead International Supplier FSQA you’ll collaboratively work to mitigate risk, drive standards and operational excellence, while ensuring the consumer gets safe and high quality ingredients.</p> <p>Above all, we are looking for people who will <strong>make HelloFresh better</strong>. We believe there are many different ways of developing skills and we love diverse experiences! So even if you don’t “tick all the boxes” but think you’d thrive in this role, we would really like to learn more about you.</p> <p><strong>This is a fixed-term role, limited to 9 months initially.&nbsp;</strong></p> <p>&nbsp;</p> <h2><strong>What you’ll do: The Recipe</strong></h2> <ul> <li><strong>Drive category and ingredient development</strong> by partnering with International Procurement, Culinary and Development teams to identify opportunities, drive new ingredient development and ensure food safety, quality, ethical and operational requirements are embedded in strategic initiatives.</li> <li><strong>Lead, coach and develop the international team</strong> across markets, ensuring the right capabilities and expertise are in place to meet business requirements. Develop individual development plans, set performance objectives and support team members in achieving their goals.</li> <li><strong>Lead and continuously improve the International Supplier Approval Process</strong>, including supplier onboarding, risk assessment and allocation, and audit standards, ensuring suppliers meet HelloFresh requirements and proactively reducing supply base risks.</li> <li><strong>Develop and deploy international food safety and quality standards and procedures</strong>, ensuring alignment across markets, consistent implementation and continuous development of processes to support international scalability.</li> <li><strong>Drive systems and process development</strong> in collaboration with relevant stakeholders, further enhancing supplier management, specification management and culinary development systems, including their integration with Distribution Centre processes.</li> <li><strong>Drive international quality performance and continuous improvement</strong> by monitoring and analysing category quality data, identifying trends and cross-market risks, translating insights into improvement initiatives and collaborating with Operations to deliver key performance metrics and share best practices.</li> <li><strong>Build strong stakeholder relationships and role-model HelloFresh values</strong>, fostering collaboration, alignment and shared accountability across internal and external stakeholders, while actively contributing to the International Safety, Quality and Operational Compliance vision.</li> </ul> <p>&nbsp;</p> <h2><strong>What you’ll bring: The Ingredients</strong></h2> <ul> <li>Relevant Experience: 5+ years of relevant experience in a similar role within Food Manufacturing, Assembly, Distribution, or Retail. Consultancy experience is highly regarded.</li> <li>Audit &amp; Regulatory Knowledge: Experience with internal and external audits and a strong understanding of relevant food regulations in the UK and wider Europe.</li> <li>Food Safety Expertise: In-depth knowledge of food safety management systems, HACCP, and COSHH.</li> <li>Technical &amp; Analytical Skills: Intermediate to advanced AI skills, strong proficiency in MS Excel, Word, and PowerPoint, and the ability to manipulate, interpret, and analyse data.</li> <li>Organisational Skills: Excellent organisational and time management skills, with the ability to manage priorities effectively.</li> <li>Leadership &amp; Communication: Strong leadership and communication skills, combined with energy, enthusiasm, commitment, and a flexible, can-do attitude.</li> <li>Adaptability &amp; International Mindset: Comfortable embracing change and challenges, working autonomously, and ideally bringing international experience. Excellent English skills are essential.</li> </ul> <p>&nbsp;</p> <h2><strong>What we offer: The Toppings</strong></h2> <p><strong>Please note: Depending on location benefits vary</strong></p> <ul> <li>70% off HelloFresh or Green Chef boxes</li> <li>Company pension scheme</li> <li>Gym membership</li> <li>Bupa private medical insurance (including dental &amp; family cover options)</li> <li>Mental health first aiders and an employee assistance programme</li> <li>Dog friendly office! (London site only)</li> <li>Nursery support scheme</li> <li>Cycle to work scheme</li> <li>Group Life Assurance</li> </ul> <p>&nbsp;</p> <p><strong data-stringify-type=\"bold\">Hybrid Working Policy</strong><br>We offer a hybrid working policy for eligible roles, allowing flexibility to work from home and in the office. For more details on eligibility and how this applies to the role you're applying for, please consult with your recruiter.</p> <p><strong>Next steps</strong>: Your application will be reviewed and if successful, a member of the Talent Acquisition Team will be in touch within 2 weeks.</p> <p>You are required to cooperate with HelloFresh in all health and safety matters. You are responsible for ensuring you take reasonable care of your own health, and safety as well as others who may be affected by the work activities you undertake. You must report incidents immediately and actively raise health and safety-related concerns to your Line Manager.&nbsp;As part of our commitment to maintaining a safe and secure environment, we will process Disclosure and Barring Service (<span class=\"il\">DBS</span>) checks to the successful individual. Failure to disclose relevant information at application or throughout the process could affect your employment with the company.&nbsp;</p> <p>If you are currently a HelloFresh employee, please make sure you have discussed your application with your Line Manager.</p>",
-    "posted_at": "2026-11-02T04:32:16-05:00",
-    "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting is for a Team Lead International Supplier FSQA role, which is focused on food safety, quality assurance, and supplier management, requiring specific expertise in food manufacturing and regulations. The candidate's background as a software engineer does not align with the core requirements of this position, which includes experience in food safety management systems and audit knowledge. Additionally, the role is not related to software engineering, which is the candidate's primary skill set.",
-    "applied_at": null,
-    "first_seen": "2026-11-02T11:30:04.843Z"
-  },
-  {
-    "id": 9,
-    "external_id": "8102697",
-    "source": "greenhouse",
-    "company": "HelloFresh",
-    "title": "Senior FSQA Manager - PHF (all genders)",
-    "location": "Amsterdam, North Holland, Netherlands; Berlin, Berlin, Germany; London, England, United Kingdom",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://careers.hellofresh.com/global/en/job/8102697?gh_jid=8102697",
-    "description": "<p><strong><span style=\"text-decoration: underline;\">About The Team:</span></strong></p> <p>Are you passionate about building food safety standards and driving product quality? We are looking for someone with technical experience to drive food safety and quality compliance.</p> <p>Our Food Safety &amp; Quality Assurance team is recruiting and we are looking for an experienced and highly driven Food Safety professional to join our international team. You will work within a team based across Europe to drive food safety and quality compliance with our Produce, Herbs &amp; Fruit (PHF) suppliers, and work collaboratively with our procurement, sourcing, supply chain and distribution centre teams. The role will share best practice, create standardized ways of working, drive improvement in food safety &amp; quality and lead on various strategic projects to ensure we delight our customers.</p> <p>&nbsp;</p> <p><span style=\"text-decoration: underline;\"><strong>What You Will Be Doing:</strong></span></p> <p>You will...</p> <ul> <li>Perform on-site supplier visits and audits to manage their approval and drive strategic improvements in quality to decrease complaints and increase customer satisfaction</li> <li>Use your expertise and knowledge from industry and the supply base to develop best practice ways of working with your suppliers and internally</li> <li>Strategically manage supplier product quality and performance. Delivering focussed error (complaint) reduction initiatives and identifying projects that will improve our quality and safety standards</li> <li>Develop and maintain strong relationships with internal and external stakeholders to ensure optimal performance</li> <li>Investigate and manage quality issues with suppliers to ensure customer availability and quality is not compromised with thorough root cause analysis and corrective action</li> <li>Own your category area to achieve key performance indicators relating to out of specification deliveries, customer complaints, and compliance metrics</li> <li>Manage and coordinate the onboarding of new suppliers and products ensuring compliance to food safety, legal and quality standards</li> </ul> <p>&nbsp;</p> <p><span style=\"text-decoration: underline;\"><strong>Who You Are:</strong></span></p> <ul> <li>4+ years of experience in quality and food safety management, ideally within the produce industry</li> <li>Experience in auditing food manufacturers; additional food safety qualifications (e.g. HACCP, internal auditing) are highly desirable</li> <li>Willingness to travel, including some international trips; 50% of time spent at suppliers, distribution centres and the base office</li> <li>Excellent English communication and negotiation skills; pragmatic in solving time-sensitive issues - German skills are a big plus</li> <li>Confident decision-maker who remains calm under pressure and in challenging situations</li> <li>Thrives in a fast-paced environment with the ability to multitask across competing priorities</li> <li>Comfortable working with cross-functional and international teams across HelloFresh markets (UK, DACH, France, Nordics, BNL)</li> <li>intermediate to advanced skills in Google Suite / MS Office</li> </ul> <p>&nbsp;</p> <p><span style=\"text-decoration: underline;\"><strong>What you will get in return:</strong></span></p> <p>● 70% off HelloFresh or Green Chef boxes<br>● Company pension scheme<br>● Gym membership<br>● Bupa private medical insurance (including dental &amp; family cover options)<br>● Mental health first aiders and an employee assistance programme<br>● Dog friendly office!&nbsp;<br>● Nursery support scheme<br>● Cycle to work scheme<br>● Group Life Assurance</p> <p><strong>Location</strong>: The HelloFresh Farm, 60 Worship Street, EC2A 2EZ, London</p> <p><strong>To be considered for this role, you’ll need to have the independent right to work in the UK, as we're unfortunately unable to provide sponsorship at this time.</strong></p> <p><strong data-stringify-type=\"bold\">Hybrid Working Policy</strong><br>We offer a hybrid working policy for eligible roles, allowing flexibility to work from home and in the office. For more details on eligibility and how this applies to the role you're applying for, please consult with your recruiter.</p> <p><strong>Next steps</strong>: Your application will be reviewed and if successful, a member of the Talent Acquisition Team will be in touch within 2 weeks.</p> <p>You are required to cooperate with HelloFresh in all health and safety matters. You are responsible for ensuring you take reasonable care of your own health, and safety as well as others who may be affected by the work activities you undertake. You must report incidents immediately and actively raise health and safety-related concerns to your Line Manager.&nbsp;As part of our commitment to maintaining a safe and secure environment, we will process Disclosure and Barring Service (<span class=\"il\">DBS</span>) checks to the successful individual. Failure to disclose relevant information at application or throughout the process could affect your employment with the company.&nbsp;</p>",
-    "posted_at": "2026-11-02T04:09:41-05:00",
-    "tags": null,
-    "verdict": "no",
-    "reasoning": "This job posting is for a Senior FSQA Manager focused on food safety and quality assurance, which is completely unrelated to the candidate's background in software engineering and development. The candidate has extensive experience in software engineering, particularly in fintech and full-stack development, but lacks any relevant experience or qualifications in food safety management or quality assurance. Additionally, the role requires specific industry knowledge and skills that the candidate does not possess.",
-    "applied_at": null,
-    "first_seen": "2026-11-02T11:30:04.843Z"
-  },
-  {
-    "id": 12,
     "external_id": "8153435",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3137,12 +3101,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Product Manager role, which is a significant departure from the candidate's background as a Senior Software Engineer. The candidate has extensive experience in software engineering, particularly in backend and full-stack development, but lacks the required product management experience, specifically in launching or managing mobile applications. Additionally, the role focuses on user experience and product strategy rather than technical development, which does not align with the candidate's career goals and expertise.",
+    "reasoning": "This job posting is for a Senior Product Manager role, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development and engineering, but lacks the necessary product management experience, particularly in launching or managing mobile apps. Additionally, the role focuses on user experience and product strategy rather than technical development, which does not match the candidate's skills and career aspirations.",
     "applied_at": null,
     "first_seen": "2026-11-02T11:30:04.843Z"
   },
   {
-    "id": 11,
+    "id": 9,
     "external_id": "8153458",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -3155,12 +3119,12 @@
     "posted_at": "2026-10-30T09:09:25-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This job posting is for a Senior Product Manager role focused on mobile applications, which is outside the candidate's expertise as a software engineer. The candidate has a strong background in full-stack development and fintech but lacks the required experience in product management, particularly in launching or managing mobile apps. Additionally, the role emphasizes user experience and product strategy rather than technical development, which does not align with the candidate's career focus.",
+    "reasoning": "This job posting is for a Senior Product Manager position focused on mobile applications, which is not aligned with the candidate's background as a software engineer. The candidate has extensive experience in software development, particularly in backend and full-stack roles, but lacks the necessary product management experience and specific mobile app management skills required for this role. Additionally, the candidate is looking for engineering roles, not managerial positions.",
     "applied_at": null,
     "first_seen": "2026-11-02T11:30:04.843Z"
   },
   {
-    "id": 1,
+    "id": 5,
     "external_id": "8268322",
     "source": "greenhouse",
     "company": "N26",
@@ -3173,7 +3137,7 @@
     "posted_at": "2026-10-30T08:54:33-04:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The job posting is for a Lead Technical Product Manager role focused on Machine Learning, which requires extensive product management experience and deep knowledge of ML platforms. The candidate is a senior full-stack software engineer with a strong background in software development but lacks the necessary product management experience and specific ML platform expertise outlined in the job description. Additionally, the role is more managerial and strategic, while the candidate's experience is primarily technical and hands-on.",
+    "reasoning": "This position is for a Lead Technical Product Manager focused on Machine Learning, which is a significant departure from the candidate's background as a software engineer. The candidate has strong technical skills in software development and DevOps but lacks the required experience in product management, particularly in leading ML platforms and managing multi-squad initiatives. Additionally, the role demands extensive experience in ML methodologies and governance, which the candidate does not explicitly demonstrate.",
     "applied_at": null,
     "first_seen": "2026-11-02T11:30:04.843Z"
   }
