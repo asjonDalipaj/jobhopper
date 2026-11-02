@@ -757,3 +757,20 @@ Rejected as non-software despite matching the gate: Auto1 ("Auto Mobile" car buy
 engineers, Turner & Townsend (construction QA/QC), Somfy and Wabtec (electronics/rail), Talan and
 Lifted (cybersecurity consulting), ZURU (toys). Pending: Workday (728K rows; 453 MB parquet) and
 custom-domain rows whose tenant cannot be derived from the URL.
+
+## Workday slice — no Italian software (added 2026-11-02)
+
+The Workday parquet (728K rows) has 1,101 Italian rows across 190 tenants; 17 had software titles. Probing
+the live CXS APIs left four matches and **all four are hardware/QA**, not software: Allegro Micro (systems
+engineer), Copeland (QA & lab manager), Thermo Fisher (PDS QA), Rockwell (software test). Nothing added;
+Workday's Italian footprint is retail/manufacturing, matching the earlier 386-tenant probe (Ciena only).
+
+After the 20-board import, the scan fetched 22,345 postings (was 16,205), added 53 new (was 40), dropped
+106 unrelated, and the snapshot grew to **194 rows / 13 Italian / 8 visible**, including Nearform (fair)
+and Hudl (weak) from the new boards.
+
+**Where the remaining gap is.** The pipeline is now company-first and repeatable: dataset → Italian rows →
+tenant → live probe → registry. The limit is adapter coverage: we support 8 ATSs, while the dataset's
+biggest non-Workday sources are SuccessFactors (321K), Oracle (297K), iCIMS (211K) and Phenom (133K), none
+supported. Custom-domain rows (no derivable tenant) are also lost. Those adapters, not more scraping, are
+what closes the gap to hiring.cafe's 100K career pages.
