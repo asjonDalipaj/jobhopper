@@ -741,3 +741,19 @@ rejected: live Italy, zero software.
 Pending bigger slices: ashby 55K rows / 344 MB, lever 72K / 351 MB, greenhouse 179K / 1.1 GB,
 smartrecruiters 244K / 1.4 GB, workday 728K / 4 GB. CSV is inflated by descriptions; the parquet slices
 are ~10× smaller (greenhouse 130 MB) but need pyarrow/duckdb, which are not installed.
+
+## Big-ATS Italian import (added 2026-11-02)
+
+Installed DuckDB in `.jobhopper/venv` and used the parquet slices (Ashby 55K rows/124 Italian,
+Lever 72K/152, Greenhouse 179K/566, SmartRecruiters 244K/1,615 = 2,457 Italian rows). Deriving the
+tenant from each URL gave 207 boards; 34 had software titles; probing with the live role gate left
+**20 new boards with a live Italian software role**, now in `DEFAULT_COMPANIES`: Kong, Veliù,
+SurveyMonkey, Anyone AI (Ashby); Sysdig, Keyloop (Lever); Speechify, Shopfully, Capco, Nozomi
+Networks, Hudl, Nearform, Ping Identity (Greenhouse); Sopra Steria, Devoteam, Max Mara, SIA,
+Kanadevia Inova, Everience, Stäubli (SmartRecruiters). Satispay, Docebo, Doctolib and Telnyx were
+already registered.
+
+Rejected as non-software despite matching the gate: Auto1 ("Auto Mobile" car buyers), Renesas test
+engineers, Turner & Townsend (construction QA/QC), Somfy and Wabtec (electronics/rail), Talan and
+Lifted (cybersecurity consulting), ZURU (toys). Pending: Workday (728K rows; 453 MB parquet) and
+custom-domain rows whose tenant cannot be derived from the URL.

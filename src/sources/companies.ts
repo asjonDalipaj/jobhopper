@@ -27,6 +27,9 @@ function wd(name: string, tenant: string, shard: string, site: string): CompanyE
 function rc(name: string, token: string): CompanyEntry {
   return { name, ats: 'recruitee', token };
 }
+function sr(name: string, token: string): CompanyEntry {
+  return { name, ats: 'smartrecruiters', token };
+}
 
 /**
  * Default registry — Dutch and European technology companies (plus a few
@@ -57,6 +60,27 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   tt('ISS International', 'issinternational'),
   tt('WeRoad', 'weroad'),
   rc('Byte-code', 'bytecode'),
+  // Italy — from the open ATS dataset, live software roles across the big four (2026-11-02)
+  as('Kong', 'kong'),
+  as('Veliù', 'veliu'),
+  as('SurveyMonkey', 'surveymonkey'),
+  as('Anyone AI', 'anyone-ai'),
+  lv('Sysdig', 'sysdig'),
+  lv('Keyloop', 'keyloop'),
+  gh('Speechify', 'speechify'),
+  gh('Shopfully', 'shopfully'),
+  gh('Capco', 'capco'),
+  gh('Nozomi Networks', 'nozominetworks'),
+  gh('Hudl', 'hudl'),
+  gh('Nearform', 'nearform'),
+  gh('Ping Identity', 'pingidentity'),
+  sr('Sopra Steria', 'SopraSteria1'),
+  sr('Devoteam', 'devoteam'),
+  sr('Max Mara Fashion Group', 'maxmarafashiongroup'),
+  sr('SIA', 'sia'),
+  sr('Kanadevia Inova', 'kanadeviainova'),
+  sr('Everience', 'EVERIENCE'),
+  sr('Stäubli', 'staubligroup'),
   // Italy — found by the public tracker discovery (fresh Italian role, 2026-10-29)
   as('Docker', 'docker'),
   // Workday — 386 tenants probed, the only one with fresh Italian roles (2026-10-29)
