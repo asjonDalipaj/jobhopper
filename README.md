@@ -23,8 +23,9 @@ and it's yours.
 
 ## What you get
 
-- **A curated company index.** ~70 live-verified employers on Greenhouse,
-  Lever, Ashby, Workable, Teamtailor, Recruitee, SmartRecruiters and Workday,
+- **A curated company index.** ~80 live-verified employers on Greenhouse,
+  Lever, Ashby, Workable, Teamtailor, Recruitee, SmartRecruiters, Workday and
+  SuccessFactors,
   plus Italian boards imported from the open JobHive dataset (see
   [Company discovery](docs/COMPANY-INDEX.md)).
 - **A deterministic gate.** Market aliases, a 3-day freshness window, and a

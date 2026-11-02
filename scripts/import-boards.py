@@ -25,7 +25,7 @@ import time
 import urllib.request
 from pathlib import Path
 
-DEFAULT_ATS = "ashby,lever,greenhouse,smartrecruiters,workable,teamtailor,recruitee"
+DEFAULT_ATS = "ashby,lever,greenhouse,smartrecruiters,workable,teamtailor,recruitee,successfactors"
 DEFAULT_COUNTRIES = "IT,ES,NL"
 BASE = "https://storage.stapply.ai/jobhive/v1"
 CACHE = Path(".jobhopper/tmp/parquet")

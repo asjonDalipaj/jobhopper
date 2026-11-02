@@ -1,6 +1,7 @@
 import type { CompanyEntry } from './companies.js';
 import { fetchWithTimeout } from './html.js';
 import { parseWorkdayToken, workdayCxs } from './workday.js';
+import { successFactorsFeedUrl } from './successfactors.js';
 
 const BASE_URLS: Record<string, (token: string) => string> = {
   greenhouse: (t) => `https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(t)}/jobs`,
@@ -28,6 +29,17 @@ export async function verifyCompanyBoard(company: CompanyEntry): Promise<boolean
         body: JSON.stringify({ appliedFacets: {}, limit: 1, offset: 0, searchText: '' }),
       });
       return res.ok;
+    } catch {
+      return false;
+    }
+  }
+  if (company.ats === 'successfactors') {
+    try {
+      const res = await fetchWithTimeout(successFactorsFeedUrl(company.token), {
+        headers: { 'User-Agent': 'jobhopper/0.1', Accept: 'application/rss+xml, application/xml, */*' },
+      });
+      if (!res.ok) return false;
+      return /<rss[\s>]|<channel[\s>]|<Job-Listing[\s>]/i.test(await res.text());
     } catch {
       return false;
     }

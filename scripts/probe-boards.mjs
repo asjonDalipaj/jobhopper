@@ -27,7 +27,7 @@ try {
   process.exit(1);
 }
 
-const ADAPTER_NAMES = ['ashby', 'lever', 'greenhouse', 'smartrecruiters', 'workable', 'teamtailor', 'recruitee', 'workday'];
+const ADAPTER_NAMES = ['ashby', 'lever', 'greenhouse', 'smartrecruiters', 'workable', 'teamtailor', 'recruitee', 'workday', 'successfactors'];
 const adapters = {};
 for (const name of ADAPTER_NAMES) {
   try {
@@ -53,6 +53,13 @@ function tenantFor(ats, row) {
     if (ats === 'workable' && host === 'apply.workable.com' && segs[0] !== 'j') return segs[0];
     if (ats === 'teamtailor' && host.endsWith('.teamtailor.com')) return host.split('.')[0];
     if (ats === 'recruitee' && host.endsWith('.recruitee.com')) return host.split('.')[0];
+    if (ats === 'successfactors') {
+      if (/successfactors\.(com|eu)$/i.test(host)) {
+        const company = url.searchParams.get('company');
+        if (company) return `https://${host}/career?company=${encodeURIComponent(company)}&career_ns=job_listing_summary`;
+      }
+      return host;
+    }
     if (ats === 'workday') {
       const m = host.match(/^([^.]+)\.(wd\d+)\.myworkdayjobs\.com$/);
       if (!m) continue;

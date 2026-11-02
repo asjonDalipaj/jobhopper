@@ -112,6 +112,9 @@ and commits the refreshed `board-candidates.{json,md}`. It never edits
 - Ashby 124 Italian rows, Lever 152, Greenhouse 566, SmartRecruiters 1,615 =
   **2,457 rows → 207 tenants → 34 with software titles → 20 new boards**
   (Kong, Speechify, Sysdig, Sopra Steria, Stäubli, WeRoad, Byte-code, …).
+- SuccessFactors: 2,954 Italian rows / 120 tenants → 14 software groups → **8
+  boards** (Intesa Sanpaolo, KPMG Italy, Pirelli, Worldline, msg global, AVL,
+  CRIF, Tenova); pharma QA and hardware matches were rejected.
 - Workday: 1,101 Italian rows across 190 tenants, but the four live matches were
   hardware/QA → none added.
 - EURES: the public EU feed had **zero** software titles in a 500-row probe →
@@ -119,9 +122,9 @@ and commits the refreshed `board-candidates.{json,md}`. It never edits
 
 ## Limits
 
-- **Only supported ATSs are imported.** SuccessFactors (321K rows), Oracle
-  (297K), iCIMS (211K) and Phenom (133K) dominate the remaining dataset; each
-  needs its own adapter (see [ADDING-A-SOURCE.md](ADDING-A-SOURCE.md)).
+- **Only supported ATSs are imported.** Oracle (297K), iCIMS (211K) and Phenom
+  (133K) dominate the remaining dataset; each needs its own adapter (see
+  [ADDING-A-SOURCE.md](ADDING-A-SOURCE.md)).
 - **Custom domains are skipped** because the tenant cannot be derived from the
   job URL.
 - **The dataset is a snapshot.** It tells you which company/tenant exists; the

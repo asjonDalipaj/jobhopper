@@ -774,3 +774,15 @@ tenant → live probe → registry. The limit is adapter coverage: we support 8 
 biggest non-Workday sources are SuccessFactors (321K), Oracle (297K), iCIMS (211K) and Phenom (133K), none
 supported. Custom-domain rows (no derivable tenant) are also lost. Those adapters, not more scraping, are
 what closes the gap to hiring.cafe's 100K career pages.
+
+## SuccessFactors adapter + 8 Italian boards (added 2026-11-02)
+
+SuccessFactors exposes two credential-free feeds: Recruiting Marketing RSS at `https://{host}/sitemal.xml`
+and legacy `Job-Listing` XML at `https://{host}/career?company={ID}&...&resultType=XML`. The adapter
+(`src/sources/successfactors.ts`, 3 tests) handles both, maps locations from `g:location`/title parens and
+dates from pubDate / `Posted-Date`, and prefixes ids with the tenant to avoid collisions.
+
+The parquet slice (2,954 Italian rows / 120 tenants) produced 14 software groups and **8 live boards**:
+Intesa Sanpaolo (12 live Italian software roles), KPMG Italy (8), Pirelli (3), Worldline (3), msg global
+(3), AVL (2), CRIF (1), Tenova (1). Rejected: Chiesi and Grünenthal (pharma QA), Alstom (cybersecurity
+manager), EssilorLuxottica (audio engineer). The import/probe scripts now include SuccessFactors by default.

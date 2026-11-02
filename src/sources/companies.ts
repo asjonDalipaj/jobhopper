@@ -1,4 +1,4 @@
-export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee' | 'smartrecruiters' | 'workday';
+export type AtsKind = 'greenhouse' | 'lever' | 'ashby' | 'workable' | 'teamtailor' | 'recruitee' | 'smartrecruiters' | 'workday' | 'successfactors';
 
 export interface CompanyEntry {
   name: string;
@@ -29,6 +29,9 @@ function rc(name: string, token: string): CompanyEntry {
 }
 function sr(name: string, token: string): CompanyEntry {
   return { name, ats: 'smartrecruiters', token };
+}
+function sf(name: string, token: string): CompanyEntry {
+  return { name, ats: 'successfactors', token };
 }
 
 /**
@@ -81,6 +84,15 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   sr('Kanadevia Inova', 'kanadeviainova'),
   sr('Everience', 'EVERIENCE'),
   sr('Stäubli', 'staubligroup'),
+  // Italy — SuccessFactors RSS career feeds (verified live, 2026-11-02)
+  sf('Intesa Sanpaolo', 'jobs.intesasanpaolo.com'),
+  sf('KPMG Italy', 'careers.kpmg.it'),
+  sf('Pirelli', 'jobs.pirelli.com'),
+  sf('Worldline', 'jobs.worldline.com'),
+  sf('msg global', 'careers.msg-global.com'),
+  sf('AVL', 'jobs.avl.com'),
+  sf('CRIF', 'careers.crif.com'),
+  sf('Tenova', 'careers.tenova.com'),
   // Italy — found by the public tracker discovery (fresh Italian role, 2026-10-29)
   as('Docker', 'docker'),
   // Workday — 386 tenants probed, the only one with fresh Italian roles (2026-10-29)
