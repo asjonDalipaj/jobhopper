@@ -1,0 +1,795 @@
+{
+ "generated_at": "2026-11-02T12:54:36.369Z",
+ "countries": [
+  "IT"
+ ],
+ "dataset": {
+  "ashby": {
+   "rows": 124
+  },
+  "lever": {
+   "rows": 152
+  },
+  "greenhouse": {
+   "rows": 566
+  },
+  "smartrecruiters": {
+   "rows": 1615
+  }
+ },
+ "groups": 207,
+ "no_tenant": 188,
+ "candidates": [
+  {
+   "ats": "lever",
+   "token": "jobgether",
+   "company": "jobgether",
+   "live": {
+    "total": 64,
+    "fresh": 20,
+    "countries": {
+     "IT": 13,
+     "ES": 28,
+     "NL": 23
+    }
+   },
+   "titles": [
+    "Back-end Engineer (Java/Kotlin)",
+    "Back-end Engineer (Java/Kotlin)",
+    "Backend Engineer",
+    "Backend Engineer",
+    "Character Art Director (Stylized Games | Mobile)"
+   ],
+   "datasetHits": [
+    "Character Art Director (Stylized Games | Mobile)",
+    "Freelance Full-Stack Developer | Django | AI Products | Python & LLM Integration",
+    "Lead Teacher – Software Development & AI (Full-Stack)"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "SopraSteria1",
+   "company": "SopraSteria1",
+   "live": {
+    "total": 46,
+    "fresh": 1,
+    "countries": {
+     "IT": 4,
+     "ES": 19,
+     "NL": 23
+    }
+   },
+   "titles": [
+    "Fullstack .NET/Angular - Getafe",
+    "Cloud Platform Engineer",
+    "Software Delivery Architect (DevSecOps & Generative AI) ",
+    "Software Delivery Architect (DevSecOps & Generative AI) ",
+    "Desarrollador/a ADA"
+   ],
+   "datasetHits": [
+    "Software Delivery Architect (DevSecOps & Generative AI) ",
+    "Software Delivery Architect (DevSecOps & Generative AI) ",
+    "Senior Databricks Data Engineer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "devoteam",
+   "company": "devoteam",
+   "live": {
+    "total": 21,
+    "fresh": 0,
+    "countries": {
+     "IT": 3,
+     "ES": 17,
+     "NL": 1
+    }
+   },
+   "titles": [
+    "AI Engineer Mid-Level",
+    "AI Engineer Senior",
+    "BI & Data Engineer – Microsoft Fabric & Power BI",
+    "DATABRICKS DATA ENGINEER ",
+    "Desarrollador Java "
+   ],
+   "datasetHits": [
+    "AI Forward Deployed Engineer",
+    "Azure Cloud Engineer",
+    "Full Stack Web Developer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "sia",
+   "company": "sia",
+   "live": {
+    "total": 20,
+    "fresh": 3,
+    "countries": {
+     "IT": 2,
+     "ES": 0,
+     "NL": 18
+    }
+   },
+   "titles": [
+    "Forward Deployed Engineer Manager",
+    "Senior Forward Deployed Engineer",
+    "Forward Deployed Engineer Manager",
+    "Senior Forward Deployed Engineer",
+    "Senior Consultant / Manager SDLC (Software Development Life Cycle)  "
+   ],
+   "datasetHits": [
+    "Senior Consultant / Manager SDLC (Software Development Life Cycle)  ",
+    "Senior Consultant / Manager SDLC (Software Development Life Cycle)  "
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "speechify",
+   "company": "speechify",
+   "live": {
+    "total": 15,
+    "fresh": 0,
+    "countries": {
+     "IT": 4,
+     "ES": 6,
+     "NL": 5
+    }
+   },
+   "titles": [
+    "Tech Lead, Android Core Product - Amsterdam, Netherlands",
+    "Tech Lead, Android Core Product - Barcelona, Spain",
+    "Tech Lead, Android Core Product - Bilbao, Spain",
+    "Tech Lead, Android Core Product - Bologna, Italy",
+    "Tech Lead, Android Core Product - Eindhoven, Netherlands"
+   ],
+   "datasetHits": [
+    "Tech Lead, Android Core Product - Bologna, Italy",
+    "Tech Lead, Android Core Product - Milan, Italy",
+    "Tech Lead, Android Core Product - Rome, Italy"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "satispay",
+   "company": "satispay",
+   "live": {
+    "total": 12,
+    "fresh": 0,
+    "countries": {
+     "IT": 12,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Software Engineer III, Backend - Business Domain",
+    "Lead Backend Engineer - Consumer Growth",
+    "Backend Tech Lead - Business Domain",
+    "Senior Backend Software Engineer - Core Domain",
+    "Software Engineer III, Backend - Consumer Payment & Services Domain"
+   ],
+   "datasetHits": [
+    "Software Engineer III, Backend - Business Domain",
+    "Lead Backend Engineer - Consumer Growth",
+    "Backend Tech Lead - Business Domain"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "anyone-ai",
+   "company": "anyone-ai",
+   "live": {
+    "total": 10,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 6,
+     "NL": 3
+    }
+   },
+   "titles": [
+    "Full-Stack Developer (Italy)",
+    "Software Engineering AI Trainer (Netherlands)",
+    "Software Engineering AI Trainer (Spain)",
+    "Full-Stack Developer - AI Trainer (Spain)",
+    "Full-Stack Developer - AI Trainer (Netherlands)"
+   ],
+   "datasetHits": [
+    "Full-Stack Developer (Italy)"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "kong",
+   "company": "kong",
+   "live": {
+    "total": 6,
+    "fresh": 0,
+    "countries": {
+     "IT": 6,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Software Engineer AI Gateway",
+    "Senior Security Engineer (Security Champion), Runtimes",
+    "Senior Software Engineer, Control Plane",
+    "Senior Software Engineer, AI Gateway",
+    "Senior Software Engineer, AI Gateway"
+   ],
+   "datasetHits": [
+    "Software Engineer AI Gateway",
+    "Senior Security Engineer (Security Champion), Runtimes",
+    "Senior Software Engineer, Control Plane"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "auto1",
+   "company": "auto1",
+   "live": {
+    "total": 5,
+    "fresh": 0,
+    "countries": {
+     "IT": 5,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Addetto Acquisti Auto Mobile Triveneto",
+    "Addetto Acquisti Auto Mobile - Lazio",
+    "Addetto Acquisti Auto Mobile - Milano Est",
+    "Addetto Acquisti Auto Mobile - Milano Sud",
+    "Addetto Acquisti Auto Mobile Milano Sud"
+   ],
+   "datasetHits": [
+    "Addetto Acquisti Auto Mobile Triveneto",
+    "Addetto Acquisti Auto Mobile - Lazio",
+    "Addetto Acquisti Auto Mobile - Milano Est"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "EVERIENCE",
+   "company": "EVERIENCE",
+   "live": {
+    "total": 5,
+    "fresh": 3,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 4
+    }
+   },
+   "titles": [
+    "Data Engineer (m/w/d)",
+    "Front-End Developer - Amsterdam ",
+    "DevOps Engineer (m/w/d) - Banking",
+    "Senior Backend Developer (m/w/d)",
+    "Fullstack Developer Java "
+   ],
+   "datasetHits": [
+    "Fullstack Developer Java "
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "telnyx54",
+   "company": "telnyx54",
+   "live": {
+    "total": 4,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 3
+    }
+   },
+   "titles": [
+    "Forward Deployed Engineer, Benelux",
+    "Forward Deployed Engineer, Southern Europe",
+    "Senior Machine Learning Engineer (Voice & Video AI)",
+    "Software Engineer (Python) — Programmable Networking"
+   ],
+   "datasetHits": [
+    "Forward Deployed Engineer, Southern Europe"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "docebo",
+   "company": "docebo",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 3,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Senior Cloud Engineer I",
+    "Data Engineer I ",
+    "Senior Site Reliability Engineer"
+   ],
+   "datasetHits": [
+    "Senior Cloud Engineer I",
+    "Data Engineer I ",
+    "Senior Site Reliability Engineer"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "veliu",
+   "company": "veliu",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 3,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Front-end Engineer",
+    "Back-end Engineer",
+    "Founding Data and ML Engineer"
+   ],
+   "datasetHits": [
+    "Front-end Engineer",
+    "Back-end Engineer",
+    "Founding Data and ML Engineer"
+   ]
+  },
+  {
+   "ats": "lever",
+   "token": "sysdig",
+   "company": "sysdig",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 3,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Senior Infrastructure Engineer",
+    "Senior Software Engineer (Monitor Ingestion team)",
+    "Senior Software Engineer (Platform team)"
+   ],
+   "datasetHits": [
+    "Senior Infrastructure Engineer",
+    "Senior Software Engineer (Monitor Ingestion team)",
+    "Senior Software Engineer (Platform team)"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "hudl",
+   "company": "hudl",
+   "live": {
+    "total": 3,
+    "fresh": 3,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 2
+    }
+   },
+   "titles": [
+    "Senior Embedded Linux Engineer",
+    "Software Engineer II - Embedded Platform",
+    "Software Engineer II - Global Football & Rugby"
+   ],
+   "datasetHits": [
+    "Software Engineer II - Global Football & Rugby"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "shopfully",
+   "company": "shopfully",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 3,
+     "ES": 1,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "AI Engineer",
+    "Senior Machine Learning Engineer",
+    "Software Engineer "
+   ],
+   "datasetHits": [
+    "AI Engineer",
+    "Senior Machine Learning Engineer",
+    "Software Engineer "
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "talan",
+   "company": "talan",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 2,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Senior Cybersecurity Analyst - (Cyber Defense Operations) ",
+    "Senior Cybersecurity Analyst - (Cyber Defense Operations) ",
+    "Senior Cybersecurity Analyst - (Cyber Defense Operations) "
+   ],
+   "datasetHits": [
+    "Senior Cybersecurity Analyst - (Cyber Defense Operations) "
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "wabtec",
+   "company": "wabtec",
+   "live": {
+    "total": 3,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 2,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "System Integrator & Test Engineer",
+    "Software Engineering Team Leader",
+    "Software Engineering Team Leader"
+   ],
+   "datasetHits": [
+    "System Integrator & Test Engineer"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "capco",
+   "company": "capco",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 2,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Front-end Developer",
+    "Generative AI Engineer"
+   ],
+   "datasetHits": [
+    "Front-end Developer",
+    "Generative AI Engineer"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "nozominetworks",
+   "company": "nozominetworks",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 2,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Fullstack Software Engineer",
+    "Staff Software Engineer"
+   ],
+   "datasetHits": [
+    "Fullstack Software Engineer",
+    "Staff Software Engineer"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "doctolib",
+   "company": "doctolib",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 1
+    }
+   },
+   "titles": [
+    "Senior Fullstack Engineer - Java, React (x/f/m)",
+    "Senior Software Engineer - Java (x/f/m)"
+   ],
+   "datasetHits": [
+    "Senior Software Engineer - Java (x/f/m)"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "jobsforhumanity",
+   "company": "jobsforhumanity",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 0,
+     "ES": 1,
+     "NL": 1
+    }
+   },
+   "titles": [
+    "Cybersecurity Operations Consultant",
+    "PLC Programmeur | Rijnmond"
+   ],
+   "datasetHits": [
+    "Front-end developer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "maxmarafashiongroup",
+   "company": "maxmarafashiongroup",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 2,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Software Analyst & Project Specialist",
+    "Software Engineer"
+   ],
+   "datasetHits": [
+    "Software Analyst & Project Specialist",
+    "Software Engineer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "renesaselectronics",
+   "company": "renesaselectronics",
+   "live": {
+    "total": 2,
+    "fresh": 0,
+    "countries": {
+     "IT": 2,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Sr Test Engineer",
+    "Principal Test Engineer"
+   ],
+   "datasetHits": [
+    "Sr Test Engineer",
+    "Principal Test Engineer"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "surveymonkey",
+   "company": "surveymonkey",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Machine Learning Engineer - Multiple Positions"
+   ],
+   "datasetHits": [
+    "Machine Learning Engineer - Multiple Positions"
+   ]
+  },
+  {
+   "ats": "ashby",
+   "token": "zuru",
+   "company": "zuru",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Housing | Product Engineer - Mobile "
+   ],
+   "datasetHits": [
+    "Housing | Product Engineer - Mobile "
+   ]
+  },
+  {
+   "ats": "lever",
+   "token": "keyloop",
+   "company": "keyloop",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Software Engineer"
+   ],
+   "datasetHits": [
+    "Software Engineer"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "nearform",
+   "company": "nearform",
+   "live": {
+    "total": 1,
+    "fresh": 1,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Forward Deployed Engineer"
+   ],
+   "datasetHits": [
+    "Forward Deployed Engineer"
+   ]
+  },
+  {
+   "ats": "greenhouse",
+   "token": "pingidentity",
+   "company": "pingidentity",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Senior Site Reliability Engineer"
+   ],
+   "datasetHits": [
+    "Senior Site Reliability Engineer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "kanadeviainova",
+   "company": "kanadeviainova",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Senior Automation Software Engineer"
+   ],
+   "datasetHits": [
+    "Senior Automation Software Engineer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "liftedanupworkcompany",
+   "company": "liftedanupworkcompany",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Cybersecurity Governance, Risk & Compliance (GRC) Consultant"
+   ],
+   "datasetHits": [
+    "Cybersecurity Governance, Risk & Compliance (GRC) Consultant"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "staubligroup",
+   "company": "staubligroup",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Firmware Engineer"
+   ],
+   "datasetHits": [
+    "Firmware Engineer"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "turnertownsend",
+   "company": "turnertownsend",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "QA/QC Manager - Data Centre Construction"
+   ],
+   "datasetHits": [
+    "QA/QC Manager - Data Centre Construction"
+   ]
+  },
+  {
+   "ats": "smartrecruiters",
+   "token": "somfygroup",
+   "company": "somfygroup",
+   "live": {
+    "total": 1,
+    "fresh": 0,
+    "countries": {
+     "IT": 1,
+     "ES": 0,
+     "NL": 0
+    }
+   },
+   "titles": [
+    "Technical Manager - Electronics & Embedded Systems"
+   ],
+   "datasetHits": [
+    "Technical Manager - Electronics & Embedded Systems"
+   ]
+  }
+ ],
+ "errors": []
+}

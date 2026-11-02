@@ -16,7 +16,10 @@
     "prepare": "npm run build",
     "ui": "node dist/cli/index.js ui",
     "refresh": "git pull --ff-only && npm run build:web && npm run ui",
-    "view": "git pull --ff-only && npm run ui"
+    "view": "git pull --ff-only && npm run ui",
+    "boards:import": "python3 scripts/import-boards.py",
+    "boards:probe": "node scripts/probe-boards.mjs",
+    "boards:discover": "npm run build && npm run boards:import && npm run boards:probe"
   },
   "keywords": [
     "job-search",
