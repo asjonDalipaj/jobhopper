@@ -23,7 +23,7 @@ const HOST_RULES: Array<[Ats, RegExp]> = [
 ];
 
 /** Adapters that can fill and submit today. Detection knows more than this on purpose. */
-export const SUPPORTED: Ats[] = ['greenhouse', 'ashby'];
+export const SUPPORTED: Ats[] = ['greenhouse', 'ashby', 'lever'];
 
 export function detectAts(url: string | null | undefined): Ats | null {
   if (!url) return null;

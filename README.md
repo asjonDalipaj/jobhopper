@@ -39,8 +39,8 @@ and it's yours.
   the React app on Cloudflare Pages reads it, so the phone works without a
   server. Locally, `jobhopper ui` serves the same app with a live API.
 - **Human-in-the-loop applying.** CV/cover-letter prefill + a Playwright fill
-  for Greenhouse and Ashby, a review window, and **you** submit. Nothing
-  auto-submits.
+  for Greenhouse, Ashby and Lever, a review window, and **you** submit.
+  Nothing auto-submits.
 
 ---
 

@@ -36,7 +36,7 @@ test('resolveAts prefers the URL and falls back to the scan source', () => {
 });
 
 test('only greenhouse has an adapter so far', () => {
-  assert.deepEqual(SUPPORTED, ['greenhouse', 'ashby']);
+  assert.deepEqual(SUPPORTED, ['greenhouse', 'ashby', 'lever']);
 });
 
 test('splitName keeps the last token as the surname', () => {

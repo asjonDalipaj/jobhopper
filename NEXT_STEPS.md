@@ -813,3 +813,15 @@ fieldset legend ("Are you authorized to work in the EU?"), and the privacy check
 `SUPPORTED` is now `greenhouse, ashby`; `jobhopper apply <id> --review` dispatches on the ATS.
 Verified with a local fixture (every field filled, 0 missing) and a live Satispay dry-run (9 fields,
 0 missing, no submission). Tests: 91.
+
+## Lever form filler (added 2026-11-02)
+
+`src/apply/lever.ts` opens `/apply`, fills the stable core fields by name (`name`, `email`, `phone`,
+`location`, `org`, `urls[...]`, `resume`) and the `cards[...]` questions from their
+`.application-label` text, handling selects, numbers, radio groups and the consent/acknowledgement
+checkboxes. **Nothing submits**: hCaptcha, so `--submit` is rejected and `--review` hands it over.
+
+`SUPPORTED` is now `greenhouse, ashby, lever`. Verified with a local fixture (0 missing) and a live
+Sysdig dry-run: name/email/phone/location/org/LinkedIn/GitHub/portfolio/resume filled, the
+authorization select and two consent acknowledgements ticked, and one required sponsorship question
+deliberately left for the reviewer (no answer in `applicant.json`). Tests: 92.

@@ -28,6 +28,7 @@ import { writeCoverLetter, lintLetter } from '../cv/letter.js';
 import { renderLetterPdf } from '../cv/letter-render.js';
 import { applyGreenhouse } from '../apply/greenhouse.js';
 import { applyAshby } from '../apply/ashby.js';
+import { applyLever } from '../apply/lever.js';
 import { loadApplicant, questionsFor } from '../apply/applicant.js';
 import { resolveAts, SUPPORTED } from '../apply/ats.js';
 import { resolveBrowser } from '../apply/browser.js';
@@ -955,7 +956,7 @@ cv.command('letter <id>')
 
 program
   .command('apply <id>')
-  .description('Fill the application form for a stored posting (Greenhouse and Ashby supported)')
+  .description('Fill the application form for a stored posting (Greenhouse, Ashby and Lever supported)')
   .option('--submit', 'click Submit, prompting for the emailed code when asked')
   .option('--review', 'fill, then leave the window open for you to review and submit yourself')
   .option('--headed', 'show the browser window')
@@ -1018,7 +1019,8 @@ program
       outDir: dir,
       askCode: submit && process.stdin.isTTY ? askVerificationCode : undefined,
     };
-    const result = await (ats === 'greenhouse' ? applyGreenhouse(context) : applyAshby(context));
+    const filler = ats === 'greenhouse' ? applyGreenhouse : ats === 'ashby' ? applyAshby : applyLever;
+    const result = await filler(context);
 
     console.log(pc.green('filled: ') + result.filled.join(', '));
     if (result.missing.length) console.log(pc.yellow('left blank: ') + result.missing.join(', '));
