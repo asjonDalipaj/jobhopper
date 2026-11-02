@@ -1,164 +1,59 @@
-ABOUT ME
-T-shaped Software Engineer with 10+ years experience
-Ten years of Fintech experience taught me that great work starts with an open mind and a fresh
-perspective. I specialize in bridging the gap between complex backend systems and elegant
-frontend interfaces, ensuring my personality and charisma are always part of the solution.
-My technical journey started hacking on early Android OS and today that same curiosity drives me
-to find out of the box solutions for complex systems.
-Working with different cultures has made me natural at reading the room and finding common ground,
-whether that is over a shared cultural lunch or through an improv game in a sprint retro.
-I do not just write code, I help building the environment that makes the code work.
+ASJON DALIPAJ
+Software Engineer  ·  Enterprise platforms, integration and AI-assisted development
+Utrecht, Netherlands  ·  open to the Netherlands, Italy, Spain and remote EU
+asjon.dalipaj@gmail.com · +31 683 715 213 · linkedin.com/in/asjon-dalipaj · github.com/asjonDalipaj
 
-Core Competencies
-•
+SUMMARY
+Ten years building production systems, eight of them on site at Rabobank as a consultant. I write the code and I answer the questions around it, from a product owner asking why a release slipped to a new developer trying to get their first change through. Most of my work sits between a backend that has collected nine years of business logic, the CI/CD pipeline that ships it, and the people who use it every day. I have been building with LLM APIs and agentic coding tools for a while now, and that is the work I want to do next, with customers in the room.
 
-Frontend Development:
+SKILLS
+Platform: WebRatio, model-driven development (primary tool, ten years)
+Frontend: HTML, CSS, JavaScript, AngularJS, React, TypeScript
+Backend: Java, REST and SOAP APIs, Python
+Data: SQL, PL/SQL, MySQL, SQL Server, Oracle
+Delivery: Azure DevOps, CI/CD pipelines, Talend, Git, Scrum
+AI tooling: LLM APIs, agentic coding assistants, MCP tooling, crawl4ai
+People: customer-facing delivery, stakeholder demos, proof-of-concept lead, mentoring
 
-Expert in HTML, CSS, and JavaScript and ReactJS.
-•
+EXPERIENCE
+Software Engineer — Rabobank (consultant via Finomnia)
+Eindhoven, NL · 04/2018 – Present
+- Embedded consultant on a loan and lease contract system that around 70 people use daily. Nine years of business logic live in it, and the system is now in long-term maintenance.
+- Go-to person on the WebRatio side for both junior and senior developers.
+- Turn loosely written business requests into work we can scope and ship, and push back when a request would cost more than it returns.
+- Lead proof-of-concept work and present demos to stakeholders.
+- Represent the team in technical discussions across the tribe.
+- Own DevOps and the CI/CD pipeline for the team, from build and release to environment changes.
+- Integrate large third-party components over REST and SOAP.
+- Fix the critical production bugs, and profile the BPM framework to find where it slows users down.
+- Mentor junior developers, review their work, and help them land their first changes in a nine-year-old codebase.
 
-Backend / APIs:
+Application Developer — Finomnia
+Milan, IT · 01/2017 – 04/2018
+- Built finance web application pages and backend services with WebRatio, AngularJS and Java.
+- Wrote and tuned queries across PL/SQL, MySQL and SQL Server.
+- Streamlined a core process for roughly 20% efficiency gain.
+- Handled post-go-live support and bug fixing directly with the client at DLL Italy.
 
-Strong in Java for building robust services and REST or SOAP integrations. React and Python used for side projects.
-•
+Software Developer — Lanzi Innovazione
+Sondrio, IT · 03/2015 – 01/2017
+- Built Java services for account management and frontend pages on WebRatio.
+- First point of contact for frontend changes and UI improvements.
 
-Platforms / Tools:
-
-Expert with WebRatio, Talend, Java Spring boot, AI copilot/claude/chatgpt. And CI/CD pipelines through Azure DevOps.
-•
-
-Databases:
-
-Proficient in PL/SQL, MySQL for efficient data management.
-•
-
-Soft Skills:
-
-Communication, Problem solving, Adaptability, and Cultural Empathy.
-WORK EXPERIENCE
-Rabobank (consultant from FInomnia)
-City:
-
-Eindhoven |
-
-Country:
-
-Netherlands
-[ 30/04/2018 – Current ]
-
-Software engineer
-• Act as the primary point of contact for leading and supporting both junior and senior
-developers on the WebRatio platform
-• Drive product initiatives within a SCRUM environment, facilitating demo presentations and
-technical discussions
-• Manage DevOps tasks and CI/CD pipelines to ensure seamless deployment cycles
-• Foster team unity by bringing improv games to events and retros, ensuring a high energy and
-collaborative atmosphere.
-• Improved app stability by resolving critical bugs and integrating complex third party
-components using REST or SOAP APIs
-FInomnia (former Finwave)
-City:
-
-Milan |
-
-Country:
-
-Italy
-[ 31/01/2017 – 30/04/2018 ]
-
-Application developer
-• Developed comprehensive web application pages for the
-
-finance sector using WebRatio,
-ReactJS, and Java
-• Optimized query response times using PL/SQL and MySQL
-• Provided essential post GoLive support and bugfixing
-
-Lanzi Innovazione
-City:
-
-Sondrio |
-
-Country:
-
-Italy
-[ 31/03/2015 – 31/01/2017 ]
-
-Software developer
-• Designed frontend pages and backend integration using WebRatio
-• Served as the main person of contact for frontend modifications and UI improvements
-
-Asjon Dalipaj
-Gender:
-
-Male
-
-Date of birth:
-
-14/10/1994
-
-Nationality:
-
-Italian
-Home
-
-: Utrecht, Netherlands
-
-Email:
-
-asjon.dalipaj@gmail.com
-
-
-Phone:
-
-(+31) 683715213
-
-LinkedIn:
-
-https://www.linkedin.com/in/asjon-dalipaj
-
-Github:
-
-https://github.com/asjonDalipaj/
-
 PROJECTS
-REA bot
-Github: REA bot
-Stack: Python
-Developed an automated bot, a web scraper to extract rental listing information from multiple real
-estate websites. I implemented a modular architecture for easy integration of new brokers and easy
-maintenance. I used AI-powered services to process and transform scraped data into a structured
-format. Stored formatted data in a database, then used REST APIs to interact with the DB (CRUD)
-and
+REA Bot — Python, crawl4ai, LLM API  ·  github.com/asjonDalipaj
+- Scraper for rental listings across several real-estate sites, with a separate adapter per broker so a new source plugs in without touching the core.
+- An LLM API turns the scraped listings into structured records. They go into a database, come back out over REST, and land in a Telegram channel as they appear.
 
-finally sent real-time notifications to a Telegram channel. This helped strengthening my problem-solving skills and web scraping and data processing skills.
-Next step is to make this project open source and open to everyone in need.
+JobHopper — TypeScript, Node, React, SQLite  ·  github.com/asjonDalipaj/jobhopper
+- Local-first job search: a CLI scans employer ATS boards (Greenhouse, Lever, Ashby, Workable, Teamtailor, Recruitee, SmartRecruiters) and stores postings in SQLite.
+- Each posting is judged against my profile by an LLM, then published as a filterable static board on Cloudflare Pages behind access control, refreshed by a scheduled CI scan.
 
-EDUCATION AND TRAINING
-[ 2009 – 2015 ]
+EDUCATION
+Secondary School Diploma in Information Technology — I.I.S. Galileo Galilei, Crema, Italy (2009 - 2015)
 
-Secondary School Diploma in Information Technology
-I.I.S. Galileo Galilei
-City:
+LANGUAGES
+Italian (native)  ·  English (fluent)  ·  Albanian  ·  Spanish (basic).
 
-Crema |
-
-Country:
-
-Italy
-[ 2006 – 2009 ]
-
-Middle School Diploma
-Scuola Media "A.Galmozzi"
-City:
-
-Crema |
-
-Country:
-
-Italy
-HOBBIES AND INTERESTS
-Experiences
-Outside work, I get myself into the game of improvising on stage at the local theatre, playing sports,
-or travel. I love getting deeply rich by meeting people from all cultures and capturing moments
-through photography. While hiking instead helps getting myself very much relaxed and present.
+BEYOND WORK
+Outside work I am on stage for improvisation at a local theatre, and I take photographs, hike and travel.
