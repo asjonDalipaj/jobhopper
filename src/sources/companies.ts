@@ -51,6 +51,12 @@ export const DEFAULT_COMPANIES: CompanyEntry[] = [
   as('Bynder', 'bynder'),
   lv('Job&Talent', 'jobandtalent'),
   gh('Wallapop', 'wallapop'),
+  // Italy — from the open ATS dataset (country_iso=IT, live boards, 2026-11-02)
+  tt('Accessiway', 'accessiway'),
+  tt('Idealista', 'idealista'),
+  tt('ISS International', 'issinternational'),
+  tt('WeRoad', 'weroad'),
+  rc('Byte-code', 'bytecode'),
   // Italy — found by the public tracker discovery (fresh Italian role, 2026-10-29)
   as('Docker', 'docker'),
   // Workday — 386 tenants probed, the only one with fresh Italian roles (2026-10-29)

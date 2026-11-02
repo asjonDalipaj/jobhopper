@@ -717,3 +717,27 @@ wired into the scan** (a 20s fetch that the role gate drops is pure cost).
 The probe also caught two gate false positives — `ios` inside "sanitari-os" and `dj` inside
 "a-dj-unto". `isRelevantRole` now matches keywords on word boundaries (stems like sviluppator /
 desarrollador keep prefix matching) and the Spanish/Dutch stems were added.
+
+## Italian company index — first slice (added 2026-11-02)
+
+The open [JobHive dataset](https://github.com/kalil0321/ats-scrapers) small-ATS slices were streamed and
+filtered to `country_iso=IT`: Teamtailor 18,061 rows → 1,209 Italian rows / 61 companies; Recruitee 16,560
+→ 55 / 17; Workable 1,296 → 1 / 1. Deriving the tenant from each URL (or the dataset's `company` column)
+gave 76 boards; 11 had software titles; probing each live board with the real role gate left **5 with a
+live Italian software role**:
+
+| Board | Italy software role |
+|---|---|
+| Accessiway (Teamtailor) | Software Developer (Backend / Full Stack) |
+| Idealista (Teamtailor) | Backend Developer (Regold) |
+| ISS International (Teamtailor) | AI / Agentic Systems Engineer |
+| WeRoad (Teamtailor) | Staff Data Engineer, AI Engineer |
+| Byte-code (Recruitee) | Full Stack Developer |
+
+Added to `DEFAULT_COMPANIES`. None has a posting newer than three days right now, so this buys coverage
+for future scans, not rows today. Ascom, Idealista's photographers, ISS construction roles etc. were
+rejected: live Italy, zero software.
+
+Pending bigger slices: ashby 55K rows / 344 MB, lever 72K / 351 MB, greenhouse 179K / 1.1 GB,
+smartrecruiters 244K / 1.4 GB, workday 728K / 4 GB. CSV is inflated by descriptions; the parquet slices
+are ~10× smaller (greenhouse 130 MB) but need pyarrow/duckdb, which are not installed.
