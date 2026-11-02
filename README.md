@@ -254,6 +254,9 @@ needs that bridge; the hosted page alone is read-only.
 | `deploy-pages.yml` | after a scan, pushes touching `web/**` or the snapshot | builds `web/`, copies `jobs.json`, deploys to Cloudflare Pages |
 | `discover-boards.yml` | monthly + manual | imports the dataset, probes candidates, commits the report |
 
+To rescore every stored verdict after a profile change: **Actions → scheduled job scan → Run workflow**,
+tick `rejudge` (runs `backfill --rejudge` over the whole snapshot with `deepseek-v4-pro`).
+
 Secrets: `OPENROUTER_API_KEY` (scan/judge), Cloudflare API token/account for
 Pages. The scan commits with `GITHUB_TOKEN`; the deploy follows via
 `workflow_run`.

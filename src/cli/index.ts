@@ -442,7 +442,7 @@ program
       console.log(dim('Nothing to backfill.'));
       return;
     }
-    console.log(pc.cyan(`Judging ${pending.length} snapshot row(s) with no verdict…`));
+    console.log(pc.cyan(`${opts.rejudge ? 'Re-judging' : 'Judging'} ${pending.length} snapshot row(s)…`));
     let judged = 0;
     let failed = 0;
     for (const row of pending) {

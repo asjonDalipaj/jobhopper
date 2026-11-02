@@ -786,3 +786,17 @@ The parquet slice (2,954 Italian rows / 120 tenants) produced 14 software groups
 Intesa Sanpaolo (12 live Italian software roles), KPMG Italy (8), Pirelli (3), Worldline (3), msg global
 (3), AVL (2), CRIF (1), Tenova (1). Rejected: Chiesi and Grünenthal (pharma QA), Alstom (cybersecurity
 manager), EssilorLuxottica (audio engineer). The import/probe scripts now include SuccessFactors by default.
+
+## Rejudge with the current profile (2026-11-02)
+
+The scheduled scan now takes a `rejudge` input: `backfill --rejudge` over the whole snapshot with
+`deepseek/deepseek-v4-pro` (quick passes use `deepseek-v4-flash`; both are configured in CI). The first
+run judged 194/194 rows in ~17 minutes, 0 failures.
+
+- Global: `no` 67 → 34, `fair` 23 → 60, `weak` 101 → 99, `strong` 4 → 1.
+- Italy: 13 → 12 rows (the malformed Docebo location was dropped), visible (non-`no`) 8 → **12**.
+  Every former `no` flipped: Mollie Senior Platform (fair), Mollie Platform II Build (weak), Docebo
+  Cloud Engineer I (weak), Mollie Platform II Infrastructure (weak); the Docebo SRE row with
+  `[object Object]` was removed by `inSnapshotScope`.
+- The full model is stricter on "strong" (4 → 1) but much more willing to call platform/SRE/cloud roles
+  fair once Italy is a target market — exactly the profile correction.
