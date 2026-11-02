@@ -27,6 +27,7 @@ import { artifactStem } from '../cv/text.js';
 import { writeCoverLetter, lintLetter } from '../cv/letter.js';
 import { renderLetterPdf } from '../cv/letter-render.js';
 import { applyGreenhouse } from '../apply/greenhouse.js';
+import { applyAshby } from '../apply/ashby.js';
 import { loadApplicant, questionsFor } from '../apply/applicant.js';
 import { resolveAts, SUPPORTED } from '../apply/ats.js';
 import { resolveBrowser } from '../apply/browser.js';
@@ -954,7 +955,7 @@ cv.command('letter <id>')
 
 program
   .command('apply <id>')
-  .description('Fill the application form for a stored posting (Greenhouse supported)')
+  .description('Fill the application form for a stored posting (Greenhouse and Ashby supported)')
   .option('--submit', 'click Submit, prompting for the emailed code when asked')
   .option('--review', 'fill, then leave the window open for you to review and submit yourself')
   .option('--headed', 'show the browser window')
@@ -1004,7 +1005,7 @@ program
       console.log(dim('Check every field, then click Submit Application yourself. Close the window when you are done.'));
     }
 
-    const result = await applyGreenhouse({
+    const context = {
       url: job.url,
       doc,
       applicant,
@@ -1016,7 +1017,8 @@ program
       review,
       outDir: dir,
       askCode: submit && process.stdin.isTTY ? askVerificationCode : undefined,
-    });
+    };
+    const result = await (ats === 'greenhouse' ? applyGreenhouse(context) : applyAshby(context));
 
     console.log(pc.green('filled: ') + result.filled.join(', '));
     if (result.missing.length) console.log(pc.yellow('left blank: ') + result.missing.join(', '));

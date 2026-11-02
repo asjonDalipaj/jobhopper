@@ -800,3 +800,16 @@ run judged 194/194 rows in ~17 minutes, 0 failures.
   `[object Object]` was removed by `inSnapshotScope`.
 - The full model is stricter on "strong" (4 → 1) but much more willing to call platform/SRE/cloud roles
   fair once Italy is a target market — exactly the profile correction.
+
+## Ashby form filler (added 2026-11-02)
+
+`src/apply/ashby.ts` opens `/application`, fills the three stable system fields by id
+(`_systemfield_name/email/resume`), and everything else by visible label (Ashby names the rest with
+per-board UUIDs). Number inputs get numeric coercion ("EUR 80k" → 80000), radio groups read the
+fieldset legend ("Are you authorized to work in the EU?"), and the privacy checkbox follows
+`consentRetention`. **Nothing submits**: the form has reCAPTCHA, so `--submit` is rejected and
+`--review` hands it to you.
+
+`SUPPORTED` is now `greenhouse, ashby`; `jobhopper apply <id> --review` dispatches on the ATS.
+Verified with a local fixture (every field filled, 0 missing) and a live Satispay dry-run (9 fields,
+0 missing, no submission). Tests: 91.
