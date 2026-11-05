@@ -8,7 +8,7 @@ on:
       action:
         description: 'list applications, list one app’s policies, or delete an app'
         type: choice
-        options: [list, policies, delete]
+        options: [list, policies, delete, workers]
         default: list
       app_id:
         description: 'Access application id (required for policies/delete)'
@@ -42,6 +42,14 @@ jobs:
             "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/access/apps/${{ inputs.app_id }}/policies" \
             | jq '{success, errors, policies: [.result[] | {id,name,decision,precedence,include,require,exclude}]}'
 
+      - name: Check Workers permission
+        if: inputs.action == 'workers'
+        run: |
+          code=$(curl -sS -o /tmp/workers.json -w "%{http_code}"             -H "Authorization: Bearer $CF_TOKEN"             "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts")
+          echo "HTTP $code"
+          jq -r '.success, (.result[]?.id // empty)' /tmp/workers.json 2>/dev/null || cat /tmp/workers.json
+          [ "$code" = "200" ]
+
       - name: Delete the application
         if: inputs.action == 'delete'
         run: |
@@ -56,4 +64,4 @@ jobs:
             "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/access/apps/${{ inputs.app_id }}")
           echo "delete HTTP $code"
           cat /tmp/delete.json | jq .
-          [ "$code" = "200" ]
+          [ "$code" = "200" ] || [ "$code" = "202" ]
