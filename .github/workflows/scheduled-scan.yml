@@ -10,9 +10,10 @@ name: scheduled job scan
 # The SQLite DB is NOT committed (too large + local-only); it is rebuilt fresh
 # on each runner and discarded when the job ends.
 on:
-  schedule:
-    - cron: '17 */3 * * *'  # every 3 hours, :17 to avoid GitHub's top-of-hour scheduler load
-  workflow_dispatch:         # also allow manual run from the Actions tab
+  # The external Cloudflare Worker (workers/dispatch-scan) dispatches this every
+  # 3 hours. GitHub's own schedule was removed: it delayed/dropped runs at the
+  # top of the hour. Manual runs still work from the Actions tab.
+  workflow_dispatch:
     inputs:
       rejudge:
         description: 'Re-judge every snapshot row with the full model (costly)'
@@ -22,9 +23,15 @@ on:
 permissions:
   contents: write
 
+# One scan at a time: a slow judge must not overlap the next dispatch.
+concurrency:
+  group: scheduled-scan
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -71,6 +78,7 @@ jobs:
       # Without the secret the step simply no-ops.
       - name: Judge market tabs (if key set)
         if: inputs.rejudge != true
+        timeout-minutes: 30
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -96,6 +104,7 @@ jobs:
 
       - name: Re-judge every snapshot row (full model)
         if: inputs.rejudge == true
+        timeout-minutes: 40
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

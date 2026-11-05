@@ -251,16 +251,19 @@ needs that bridge; the hosted page alone is read-only.
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `scheduled-scan.yml` | every 3h + manual | `scan -a --verify`, `run -j` per market tab, `judge --tab ... --quick`, `backfill --limit 200`, commits the snapshot |
+| `scheduled-scan.yml` | dispatch worker (3h) + manual | `scan -a --verify`, `run -j` per market tab, `judge --tab ... --quick`, `backfill --limit 200`, commits the snapshot |
+| `deploy-worker.yml` | push to `workers/**` + manual | deploys the Cloudflare Worker that triggers the scan every 3h |
 | `deploy-pages.yml` | after a scan, pushes touching `web/**` or the snapshot | builds `web/`, copies `jobs.json`, deploys to Cloudflare Pages |
 | `discover-boards.yml` | monthly + manual | imports the dataset, probes candidates, commits the report |
 
 To rescore every stored verdict after a profile change: **Actions → scheduled job scan → Run workflow**,
 tick `rejudge` (runs `backfill --rejudge` over the whole snapshot with `deepseek-v4-pro`).
 
-Secrets: `OPENROUTER_API_KEY` (scan/judge), Cloudflare API token/account for
-Pages. The scan commits with `GITHUB_TOKEN`; the deploy follows via
-`workflow_run`.
+Secrets: `OPENROUTER_API_KEY` (scan/judge), `CLOUDFLARE_API_TOKEN` +
+`CLOUDFLARE_ACCOUNT_ID` (Pages and the dispatch worker), and `GH_DISPATCH_TOKEN`
+(fine-grained PAT, Actions: write) for the worker. The scan commits with
+`GITHUB_TOKEN`; the deploy follows via `workflow_run`. The Worker cron is the
+automatic 3-hour trigger — see [workers/dispatch-scan](workers/dispatch-scan/README.md).
 
 ## Tests
 

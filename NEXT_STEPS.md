@@ -839,3 +839,16 @@ applies at ingestion and the merge preserves history.
   days)** so it is not mistaken for the posting date.
 - Verified with Playwright: first card is the max `posted_at` (2 Nov), Today shows 0 because nothing was
   posted on 5 Nov. Tests: 93.
+
+
+## External scheduler — Cloudflare Worker (added 2026-11-05)
+
+GitHub's `schedule` was missing runs: with the cron at minute 0 it delayed by 1–2h and dropped slots
+(the catch-up run itself took >1h in the judge step). The automatic trigger now lives in a Cloudflare
+Worker (`workers/dispatch-scan`) with a Cloudflare cron `17 */3 * * *`; it calls the GitHub dispatch API
+for `scheduled-scan.yml`. The GitHub `schedule` is removed, the scan has a `concurrency` group and job/
+judge timeouts, and manual dispatch still works.
+
+Setup requires a fine-grained PAT (`Actions: Read and write`) stored as `GH_DISPATCH_TOKEN`; the
+`deploy worker` workflow deploys the Worker and sets its secret. Until that secret exists, no automatic
+scan runs — manual `gh workflow run scheduled-scan.yml` is the fallback.

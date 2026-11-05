@@ -1,0 +1,13 @@
+name = "jobhopper-dispatch"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Cloudflare's cron is UTC. Off the top of the hour, every 3 hours.
+[triggers]
+crons = ["17 */3 * * *"]
+
+[vars]
+GITHUB_REPO = "asjonDalipaj/jobhopper"
+WORKFLOW_FILE = "scheduled-scan.yml"
+GITHUB_REF = "main"
