@@ -11,7 +11,7 @@ name: scheduled job scan
 # on each runner and discarded when the job ends.
 on:
   schedule:
-    - cron: '0 */3 * * *'   # every 3 hours
+    - cron: '17 */3 * * *'  # every 3 hours, :17 to avoid GitHub's top-of-hour scheduler load
   workflow_dispatch:         # also allow manual run from the Actions tab
     inputs:
       rejudge:
