@@ -138,6 +138,24 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
   return Array.from(byKey.values());
 }
 
+/**
+ * Newest posted first; rows without a date last. ISO strings compare
+ * lexicographically. Used on the merged snapshot so "newest first" is true even
+ * though the merge keeps the previous snapshot's order.
+ */
+export function sortRowsByPostedAt<T extends { posted_at?: string | null; first_seen?: string | null }>(rows: T[]): T[] {
+  const time = (value?: string | null) => {
+    const ms = value ? Date.parse(value) : Number.NaN;
+    return Number.isFinite(ms) ? ms : Number.NEGATIVE_INFINITY;
+  };
+  return [...rows].sort((a, b) => {
+    const at = time(a.posted_at);
+    const bt = time(b.posted_at);
+    if (at !== bt) return bt - at;
+    return (b.first_seen ?? '').localeCompare(a.first_seen ?? '');
+  });
+}
+
 /** Write full job rows (as returned by the DB, containing verdicts) to JSON. */
 export function exportJobsToJsonFile(rows: JsonRow[], outputPath: string): void {
   mkdirSync(dirname(outputPath), { recursive: true });

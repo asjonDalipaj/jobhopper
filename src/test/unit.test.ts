@@ -6,7 +6,7 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
-import { mergeSnapshotRows, inSnapshotScope } from '../export/html.js';
+import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt } from '../export/html.js';
 
 type SnapRow = {
   source: string;
@@ -157,6 +157,15 @@ test('isRelevantRole keeps engineering and music titles, rejects unrelated roles
   assert.equal(isRelevantRole('QA Automation Engineer'), true);
   assert.equal(isRelevantRole('Sales Development Representative'), false);
   assert.equal(isRelevantRole('Product Manager'), false);
+});
+
+test('sortRowsByPostedAt puts the newest posting first and undated rows last', () => {
+  const sorted = sortRowsByPostedAt([
+    { posted_at: '2026-10-07', first_seen: '2026-10-08' },
+    { posted_at: '2026-11-02', first_seen: '2026-11-02' },
+    { posted_at: null, first_seen: '2026-11-01' },
+  ]);
+  assert.deepEqual(sorted.map((row) => row.posted_at), ['2026-11-02', '2026-10-07', null]);
 });
 
 test('inSnapshotScope keeps current-gate roles and applied rows only', () => {

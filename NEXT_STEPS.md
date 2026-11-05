@@ -825,3 +825,17 @@ checkboxes. **Nothing submits**: hCaptcha, so `--submit` is rejected and `--revi
 Sysdig dry-run: name/email/phone/location/org/LinkedIn/GitHub/portfolio/resume filled, the
 authorization select and two consent acknowledgements ticked, and one required sponsorship question
 deliberately left for the reviewer (no answer in `applicant.json`). Tests: 92.
+
+## Fix — newest-first ordering and Today filter (added 2026-11-05)
+
+The board claimed "newest first" but showed 7 October at the top. Root cause: `mergeSnapshotRows` keeps the
+previous snapshot's order (company/scan order), `run -j` wrote it unsorted, and the React app trusted the
+array. The dates on the cards are `posted_at`; old rows remain in the snapshot because the 3-day gate
+applies at ingestion and the merge preserves history.
+
+- `sortRowsByPostedAt` (src/export/html.ts) sorts the merged snapshot by `posted_at` desc, undated last.
+- `sortJobs` (web/src/utils.ts) sorts every load path (injected, API, jobs.json, sample) with the same rule.
+- The sidebar has a **Posted today** toggle; "New this scan" is renamed **New to JobHopper (first seen ≤3
+  days)** so it is not mistaken for the posting date.
+- Verified with Playwright: first card is the max `posted_at` (2 Nov), Today shows 0 because nothing was
+  posted on 5 Nov. Tests: 93.

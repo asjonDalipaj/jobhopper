@@ -25,6 +25,20 @@ export function formatDate(dateStr?: string | null): string {
  * (snapshot-driven, scan-to-scan).
  */
 const NEW_SINCE_MS = 3 * 24 * 60 * 60 * 1000;
+/** Newest posted first; undated rows last. ISO strings compare lexicographically. */
+export function sortJobs<T extends { posted_at?: string | null; first_seen?: string | null }>(jobs: T[]): T[] {
+  const time = (value?: string | null) => {
+    const ms = value ? Date.parse(value) : Number.NaN;
+    return Number.isFinite(ms) ? ms : Number.NEGATIVE_INFINITY;
+  };
+  return [...jobs].sort((a, b) => {
+    const at = time(a.posted_at);
+    const bt = time(b.posted_at);
+    if (at !== bt) return bt - at;
+    return (b.first_seen ?? '').localeCompare(a.first_seen ?? '');
+  });
+}
+
 export function isNewJob(job: { first_seen?: string | null }): boolean {
   if (!job.first_seen) return false;
   const seen = new Date(job.first_seen).getTime();

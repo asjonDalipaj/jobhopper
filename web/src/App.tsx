@@ -6,7 +6,7 @@ import { JobCard } from './components/JobCard';
 import { SAMPLE_JOBS } from './data/mockJobs';
 import { matchesLocation, getLocationFilterOptions } from './data/locations';
 import type { Job, FilterState } from './types';
-import { toLocalDay, isNewJob } from './utils';
+import { toLocalDay, isNewJob, sortJobs } from './utils';
 import { appliedKey, loadApplied, saveApplied } from './utils/applied';
 import { ApplyToast } from './components/ApplyToast';
 import { PrepDialog } from './components/PrepDialog';
@@ -136,7 +136,7 @@ export function App() {
       try {
         const injected = (window as unknown as { __INITIAL_JOBS__?: Job[] }).__INITIAL_JOBS__;
         if (Array.isArray(injected) && injected.length > 0) {
-          setJobs(injected);
+          setJobs(sortJobs(injected));
           setLoading(false);
           return;
         }
@@ -145,7 +145,7 @@ export function App() {
         if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data) && data.length > 0) {
-            setJobs(data);
+            setJobs(sortJobs(data));
             setLoading(false);
             return;
           }
@@ -160,7 +160,7 @@ export function App() {
         if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data) && data.length > 0) {
-            setJobs(data);
+            setJobs(sortJobs(data));
             setLoading(false);
             return;
           }
@@ -169,7 +169,7 @@ export function App() {
         // Snapshot missing; fall through to sample data.
       }
 
-      setJobs(SAMPLE_JOBS);
+      setJobs(sortJobs(SAMPLE_JOBS));
       setLoading(false);
     }
 
@@ -227,6 +227,8 @@ export function App() {
   }), [jobs]);
 
   const clearFilters = () => setFilters(initialFilters);
+  const today = toLocalDay(new Date().toISOString());
+  const showingToday = filters.dateFrom === today && filters.dateTo === today;
   const hasActiveFilters = filters.search || filters.verdict !== 'relevant' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
 
   return (
@@ -295,7 +297,7 @@ export function App() {
                   <input type="checkbox" checked={filters.remoteOnly} onChange={(event) => setFilters({ ...filters, remoteOnly: event.target.checked })} />
                 </label>
                 <label className="mt-4 flex cursor-pointer items-center justify-between gap-3 text-sm font-medium">
-                  <span>New this scan <span className="text-xs font-normal text-ink-faint">(last 3 days)</span></span>
+                  <span>New to JobHopper <span className="text-xs font-normal text-ink-faint">(first seen ≤3 days)</span></span>
                   <input type="checkbox" checked={filters.newOnly} onChange={(event) => setFilters({ ...filters, newOnly: event.target.checked })} />
                 </label>
                 <label className="mt-4 block text-sm font-medium" htmlFor="applied-filter">Applications</label>
@@ -313,6 +315,14 @@ export function App() {
 
               <fieldset className="border-t border-line pt-5">
                 <legend className="mb-2 text-sm font-semibold">Date posted</legend>
+                <button
+                  type="button"
+                  onClick={() => setFilters({ ...filters, dateFrom: showingToday ? '' : today, dateTo: showingToday ? '' : today })}
+                  aria-pressed={showingToday}
+                  className={`mb-3 w-full rounded-lg border px-3 py-2 text-xs font-medium transition-colors ${showingToday ? 'border-ink bg-ink text-surface' : 'border-line bg-surface text-ink-soft hover:text-ink'}`}
+                >
+                  {showingToday ? 'Showing today' : 'Posted today'}
+                </button>
                 <label className="mb-2 block text-xs text-ink-soft" htmlFor="date-from">From</label>
                 <input id="date-from" type="date" value={filters.dateFrom} onChange={(event) => setFilters({ ...filters, dateFrom: event.target.value })} className="mb-3 w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm" />
                 <label className="mb-2 block text-xs text-ink-soft" htmlFor="date-to">To</label>
