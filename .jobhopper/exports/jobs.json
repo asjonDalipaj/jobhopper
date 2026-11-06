@@ -1422,6 +1422,24 @@
     "first_seen": "2026-11-03T20:44:23.636Z"
   },
   {
+    "id": 7436,
+    "external_id": "744000159398761",
+    "source": "smartrecruiters",
+    "company": "T-Systems Iberia",
+    "title": "DevOps Engineer – Mobile DNS (m/f/d)",
+    "location": "Madrid, MD, Spain",
+    "workplace_type": "Hybrid",
+    "employment_type": "Full-time",
+    "url": "https://jobs.smartrecruiters.com/T-SystemsIberia/744000159398761",
+    "description": "Join the Mobile DNS Squad responsible for the end-to-end lifecycle, operation and evolution of Deutsche Telekom's critical DNS infrastructure. You will work closely with suppliers, DevOps engineers and operations teams to design, integrate, deploy, monitor and troubleshoot the Mobile DNS platform. Key Responsibilities Implement and operate physical, virtualized and containerized systems. Analyze, troubleshoot and document incidents and system malfunctions. Improve automated failover, deployment and disaster recovery processes. Develop and optimize automation scripts using Ansible, Bash, Perl and Python. Implement changes across test, reference and production environments. Develop monitoring and data analysis capabilities. Collaborate with cross-functional teams to ensure service reliability and resilience.\n\nMandatory Skills DNS technologies: BIND, PowerDNS, DoH, DoT and DoQ. Strong Ansible automation experience. IP networking, routing, LAN/WAN and Wireshark troubleshooting. Monitoring tools including Grafana, CheckMK and Telegraf. Linux administration, particularly Red Hat 9 and SUSE 15. Additional Skills Strong analytical and problem-solving capabilities. Quality awareness and experience working in agile teams. Telecommunications industry experience is highly valued.\n\nWhat&#xa0;do&#xa0;we&#xa0;offer&#xa0;you?&#xa0; &#xa0; Additional Information Working language: English. On-call duties approximately eight weeks per year. Occasional out-of-hours maintenance activities. Work&#xa0;environment&#xa0;&&#xa0;flexibility&#xa0; &#xa0; International,&#xa0;dynamic&#xa0;and&#xa0;collaborative&#xa0;environment. T-Social: social&#xa0;initiatives&#xa0;(sports,&#xa0;community,&#xa0;health, ...). Hybrid&#xa0;work&#xa0;model&#xa0;(remote/on-site). Flexible&#xa0;working&#xa0;hours.&#xa0; &#xa0; Growth&#xa0;&&#xa0;development&#xa0; &#xa0; Customized&#xa0;training:&#xa0;access&#xa0;to&#xa0;Coursera&#xa0;to&#xa0;learn&#xa0;whatever&#xa0;you&#xa0;want,&#xa0;whenever&#xa0;you&#xa0;want. Weekly&#xa0;language&#xa0;classes&#xa0;(English & German). International&#xa0;Mentoring&#xa0;Sessions&#xa0;&&#xa0;Experience&#xa0;Days. Compensation&#xa0;&&#xa0;benefits&#xa0; &#xa0; Flexible&#xa0;compensation&#xa0;plan (health&#xa0;insurance,&#xa0;meal&#xa0;vouchers,&#xa0;childcare,&#xa0;transport). Telemedicine. Life&#xa0;and&#xa0;accident&#xa0;insurance. Social&#xa0;fund. Wellbeing&#xa0;& time off&#xa0; &#xa0; 26+&#xa0;working&#xa0;days&#xa0;of&#xa0;vacation&#xa0;per&#xa0;year. Free&#xa0;access&#xa0;to&#xa0;specialist&#xa0;services&#xa0;(medical, legal,&#xa0;wellness). 100%&#xa0;salary&#xa0;coverage&#xa0;during&#xa0;medical&#xa0;leave. And many more advantages of being part of T-Systems! If you are looking for a new challenge, do not hesitate to send us your CV! Please send CV in English. Join our team! T-Systems Iberia will only process the CVs of candidates who meet the requirements specified for each offer.",
+    "posted_at": "2026-11-03T14:28:32.485Z",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "The candidate has strong DevOps and CI/CD experience from eight years at Rabobank, including pipeline ownership and automation, which aligns with the role's operational focus. However, the job requires deep expertise in DNS technologies (BIND, PowerDNS, DoH, DoT, DoQ) and specific tools like Ansible, Grafana, and CheckMK that are absent from the candidate's profile. The candidate's background is in full-stack development and fintech, not telecommunications or network infrastructure, making this a significant stretch. While the location and seniority match, the mandatory technical gaps outweigh the transferable DevOps skills.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T12:42:31.671Z"
+  },
+  {
     "id": 7361,
     "external_id": "8902352002",
     "source": "greenhouse",
