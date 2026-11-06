@@ -54,7 +54,7 @@
     "first_seen": "2026-11-06T08:47:23.568Z"
   },
   {
-    "id": 22,
+    "id": 7362,
     "external_id": "8020924",
     "source": "greenhouse",
     "company": "HelloFresh",
@@ -67,7 +67,7 @@
     "posted_at": "2026-11-05T12:48:33-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This role is a food quality assurance specialist position at HelloFresh, not a software engineering role. The candidate's entire 10-year career is in software development, with no experience in food industry quality management, quality systems (IFS, BRC, FSSC22000), or Dutch language fluency, which are all required. While the location in the Netherlands is a match, the role's core responsibilities and required background are completely unrelated to the candidate's skills and career goals. The candidate explicitly seeks senior full-stack or backend engineering roles, making this a clear mismatch.",
+    "reasoning": "This role is a food quality assurance specialist position at a fulfillment center, not a software engineering role. The candidate is a senior full-stack/backend engineer with 10+ years of experience in enterprise software, fintech, and CI/CD. The posting requires 2-5 years in a food industry quality function, experience with food safety standards (IFS, BRC, FSSC22000), and fluency in Dutch — none of which the candidate possesses. The candidate explicitly seeks senior software engineering roles, making this a complete mismatch in domain and function.",
     "applied_at": null,
     "first_seen": "2026-11-06T08:47:23.568Z"
   },
@@ -288,7 +288,7 @@
     "first_seen": "2026-11-04T19:13:21.616Z"
   },
   {
-    "id": 6,
+    "id": 7359,
     "external_id": "744000159676599",
     "source": "smartrecruiters",
     "company": "Everience",
@@ -301,7 +301,7 @@
     "posted_at": "2026-11-04T16:13:57.009Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role requires C++ development, a language absent from the candidate's 10-year career. The offered salary (€28k–€32k) is well below senior market rates and implies a junior/mid-level position, directly conflicting with the candidate's explicit constraint against junior roles. While the location in Italy and JavaScript requirement are positive, the core technical mismatch and seniority gap make this a non-fit.",
+    "reasoning": "The role requires C++ and Linux development, which are absent from the candidate's 10-year Java/WebRatio/enterprise background. The offered salary (28-32k EUR) is far below market rate for a senior engineer with the candidate's experience, and the title suggests a junior to mid-level position, violating the candidate's constraint against junior roles. While the location in Italy is a match, the technical and seniority gaps are too large to overcome.",
     "applied_at": null,
     "first_seen": "2026-11-04T19:13:21.616Z"
   },
@@ -486,7 +486,7 @@
     "first_seen": "2026-11-03T20:44:23.636Z"
   },
   {
-    "id": 13,
+    "id": 7361,
     "external_id": "8902352002",
     "source": "greenhouse",
     "company": "Bol.com",
@@ -499,7 +499,7 @@
     "posted_at": "2026-11-03T08:19:04-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This posting is for a Marketing Automation & Messaging Specialist focused on email and mobile messaging, which is fundamentally a marketing operations role rather than a software engineering position. The candidate is a senior full-stack/backend engineer with deep Java, SQL, CI/CD, and integration experience, but no demonstrated background in marketing automation platforms, campaign management, or customer messaging strategy. The only real fit is the Utrecht location. The job type and function are unrelated to the candidate's profile, so it does not meet their senior engineering career goals.",
+    "reasoning": "This is a Marketing Automation & Messaging Specialist role focused on email and mobile messaging campaigns, which is a marketing operations function rather than a senior software engineering position. The candidate is a senior full-stack/backend engineer with ten years of enterprise software delivery experience, and nothing in the posting aligns with their engineering, integration, or AI-assisted development focus. Even though the job is in Utrecht, the core discipline and responsibilities are a clear mismatch with the candidate's profile and stated preference for senior engineering roles.",
     "applied_at": null,
     "first_seen": "2026-11-02T12:41:30.895Z"
   },
@@ -540,7 +540,7 @@
     "first_seen": "2026-11-03T13:25:23.206Z"
   },
   {
-    "id": 21,
+    "id": 7360,
     "external_id": "744000159369250",
     "source": "smartrecruiters",
     "company": "Devoteam",
@@ -553,7 +553,7 @@
     "posted_at": "2026-11-03T12:10:03.445Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This role is an infrastructure/sysadmin position focused on AWS, networking, and compliance, which is a significant departure from the candidate's 10-year career as a full-stack software engineer. The candidate has no experience with Terraform, CloudFormation, firewalls, or on-premise networking, and their DevOps experience is limited to CI/CD pipelines from a developer perspective. The job does not align with their stated preference for senior full-stack or backend software engineering roles, and the required skills are not present in their profile.",
+    "reasoning": "This role is an AWS & Infrastructure Engineer (SysAdmin/NetOps) focused on cloud infrastructure, networking, firewalls, and compliance (ISO 27001, ENS). The candidate is a senior full-stack software engineer with 10+ years in Java, React, SQL, and CI/CD, but has no demonstrated experience in AWS administration, Terraform/CloudFormation, networking (CCNA level), Fortinet firewalls, or security compliance. The role is a clear domain mismatch—infrastructure operations vs. software engineering—and does not align with the candidate's stated preference for senior full-stack or backend software engineering roles. While the location (Barcelona, Spain) is within the candidate's target countries, the core responsibilities and required skills are unrelated to the candidate's background, making this a poor fit.",
     "applied_at": null,
     "first_seen": "2026-11-03T13:25:23.206Z"
   },
