@@ -973,3 +973,19 @@ Workday (Salesforce, Kion, ABB, AGCO, Copeland, Hitachi, Kyndryl, Rockwell), rem
 (Chiesi, EssilorLuxottica, Grünenthal) and SmartRecruiters (Auto1). Add/probe those boards first, then
 aggregator APIs; only build the crawler after a software-filtered company-domain universe exists and a
 headless/sitemap sample shows real yield.
+
+### Result — Italian ATS expansion probe (2026-11-06)
+
+Live-probed 28 candidate boards from the software-only slice: 17 Workday tenants, 3 missing SuccessFactors
+(Chiesi, EssilorLuxottica, Grünenthal) and 8 SmartRecruiters. Only **Kion Group** had a fresh (<=3 days)
+Italian software title — R&D Firmware Engineer, 2026-11-04. It was added, the targeted scan fetched 2
+postings, and the judge rejected the role (`no`); the board was removed. No other board had a fresh
+software role:
+
+- Auto1: 5 software, 0 fresh; Chiesi: 4/0; EssilorLuxottica: 1/0; Grünenthal: 1/0
+- Workday tenants: mostly 0 fresh; Salesforce/Kyndryl/HPE/Abbott/SaxoBank returned no Italian software in
+  the live feed.
+
+**Conclusion:** the 3-day Italian ATS slice is exhausted. Do not re-probe the same boards; the next lever
+is aggregator/Italian-native coverage (Careerjet/Jooble, possibly InfoJobs) or a broader employer-domain
+universe, not more adapters for the same ATSs.
