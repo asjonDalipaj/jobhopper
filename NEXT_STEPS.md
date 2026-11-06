@@ -883,3 +883,16 @@ Verified: one `--once` cycle fetched 23,723 postings, added 19, and the second e
 `--publish --once` cycle then fetched 23,632, added 1, committed `982e830`, deployed successfully, and
 left **247 rows on both local and live**, newest posting 2026-11-06 09:47 UTC. The watcher also retries
 the broken local `/etc/ssh` config with `ssh -F /dev/null`. Tests: 95.
+
+## Plan — ES/NL breadth batch (added 2026-11-06)
+
+State: the Italy supported-ATS pool is exhausted; the monthly report has 213 ES/NL candidates, while the
+snapshot has 124 Spain + 71 Netherlands rows. Breadth, not Italy depth, is the remaining volume lever.
+
+1. Probe the highest-live ES/NL candidates that are not in the registry.
+2. Add only boards with real software roles in ES/NL (no sales/QA/PM boards).
+3. Run a scan + export and compare snapshot size/quality.
+4. Review the diff, run gates, commit.
+
+Acceptance: registry grows by the boards with live software roles; scan exits clean; snapshot gains
+ES/NL rows without adding off-role rows; `npm test` and `npm run build` green.
