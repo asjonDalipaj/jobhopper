@@ -5,7 +5,7 @@ import { storeJudgment } from '../db/judgments-repo.js';
 import { judgePosting } from '../judge/openrouter.js';
 import { exportToHtmlFile, type HtmlRow } from '../export/html.js';
 import type { JobSpec } from './config.js';
-import { resolveApiKey, loadConfig } from '../config/config.js';
+import { hasApiKey, loadConfig } from '../config/config.js';
 import { join } from 'node:path';
 import { getPaths } from '../storage/paths.js';
 
@@ -59,7 +59,7 @@ async function judgeJob(jobId: number, spec: JobSpec): Promise<void> {
   const job = getJob(jobId);
   if (!job) return;
   const config = loadConfig();
-  if (!resolveApiKey(config)) return; // no key -> skip judging silently
+  if (!hasApiKey(config)) return; // no key -> skip judging silently
   try {
     const result = await judgePosting(job, { quick: spec.quick, model: undefined });
     storeJudgment({

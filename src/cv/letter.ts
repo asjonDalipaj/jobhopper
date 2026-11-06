@@ -3,13 +3,12 @@
  * but every claim has to survive the fact gate in facts.ts.
  */
 
-import { hasApiKey, loadConfig, resolveApiKey } from '../config/config.js';
+import { chatJson } from '../judge/client.js';
 import { stripHtml } from '../sources/html.js';
 import type { CvDocument } from './schema.js';
 import type { TailorPlan } from './render.js';
 import type { TailorJob } from './tailor.js';
 
-const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 const MAX_JD_CHARS = 8000;
 const MIN_WORDS = 140;
 const MAX_WORDS = 300;
@@ -147,36 +146,15 @@ export async function writeCoverLetter(
   plan: TailorPlan,
   options: { model?: string } = {},
 ): Promise<LetterResult> {
-  const config = loadConfig();
-  if (!hasApiKey(config)) {
-    throw new Error('No OpenRouter API key configured. Run `jobhopper config set-openrouter-key`.');
-  }
-  const model = options.model ?? config.model;
-  const key = resolveApiKey(config);
-
-  const res = await fetch(OPENROUTER_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${key}`,
-      'HTTP-Referer': 'https://github.com/asjonDalipaj/jobhopper',
-      'X-Title': 'jobhopper',
-    },
-    body: JSON.stringify({
-      model,
-      messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: buildLetterPrompt(job, doc, plan) },
-      ],
-      response_format: { type: 'json_object' },
-      temperature: 0.3,
-    }),
+  const { content, model } = await chatJson({
+    messages: [
+      { role: 'system', content: SYSTEM_PROMPT },
+      { role: 'user', content: buildLetterPrompt(job, doc, plan) },
+    ],
+    temperature: 0.3,
+    model: options.model,
   });
-
-  if (!res.ok) throw new Error(`OpenRouter returned HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }>; model?: string };
-  const content = data.choices?.[0]?.message?.content ?? '';
   const { letter, errors, fixes } = validateLetter(parseJsonObject(content), job);
 
-  return { ...letter, model: data.model ?? model, fixes, errors };
+  return { ...letter, model, fixes, errors };
 }

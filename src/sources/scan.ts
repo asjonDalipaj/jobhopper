@@ -15,7 +15,7 @@ import { remoteok } from './remoteok.js';
 import { filterLiveCompanies } from './verify.js';
 import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
 import { judgePosting, extractJobMetadata } from '../judge/openrouter.js';
-import { loadConfig, resolveApiKey } from '../config/config.js';
+import { loadConfig, hasApiKey } from '../config/config.js';
 import type { JobSource, SourceJob, ScraperStats } from './types.js';
 import type { CompanyEntry } from './companies.js';
 
@@ -83,11 +83,11 @@ async function ingest(
  * Quick-judge every newly inserted posting against the local profile and
  * delete it if the verdict is "no" — quality over quantity, a rejected
  * posting doesn't clutter search/list/export downstream. Silently skipped
- * if no OpenRouter key is configured (same convention as jobs/run.ts).
+ * if no judge API key is configured (same convention as jobs/run.ts).
  */
 async function judgeAndPrune(insertedHere: Set<number>, concurrency = 4): Promise<{ judged: number; rejected: number }> {
   const config = loadConfig();
-  if (!resolveApiKey(config)) return { judged: 0, rejected: 0 };
+  if (!hasApiKey(config)) return { judged: 0, rejected: 0 };
 
   let judged = 0;
   let rejected = 0;
@@ -119,7 +119,7 @@ async function judgeAndPrune(insertedHere: Set<number>, concurrency = 4): Promis
 
 async function extractMetadata(insertedHere: Set<number>, concurrency = 4): Promise<void> {
   const config = loadConfig();
-  if (!resolveApiKey(config)) return;
+  if (!hasApiKey(config)) return;
   const queue = [...insertedHere];
   const worker = async () => {
     while (queue.length) {
@@ -229,7 +229,7 @@ export async function scanCompanies(
   }
 
   // 3. Quality gate: quick-judge newly inserted postings and drop verdict "no".
-  // Runs after commit — network calls to OpenRouter shouldn't hold the DB transaction open.
+  // Runs after commit — network calls to the judge shouldn't hold the DB transaction open.
   let judged = 0;
   let rejected = 0;
   if (options.judge !== false) {

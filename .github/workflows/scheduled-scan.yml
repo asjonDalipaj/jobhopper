@@ -70,7 +70,7 @@ jobs:
       # / constraints under .jobhopper/profile/). Verdicts are surfaced in the
       # React UI via the committed jobs.json snapshot — that is the single place
       # to read verdicts (the static HTML dashboards don't carry verdicts).
-      # Add an OPENROUTER_API_KEY secret under Settings -> Secrets and variables.
+      # Add an OPENROUTER_API_KEY or DEEPSEEK_API_KEY secret under Settings -> Secrets and variables.
       # When it is present this:
       #   1. judges every posting in the italy-roles, spain-roles and
       #      netherlands-roles tabs with the quick model, and
@@ -82,9 +82,11 @@ jobs:
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          JOBHOPPER_JUDGE_PROVIDER: ${{ vars.JOBHOPPER_JUDGE_PROVIDER }}
         run: |
-          if [ -n "$OPENROUTER_API_KEY" ]; then
-            echo "OpenRouter key reached this step (${#OPENROUTER_API_KEY} chars) - judging market tabs..."
+          if [ -n "$OPENROUTER_API_KEY" ] || [ -n "$DEEPSEEK_API_KEY" ]; then
+            echo "Judge key reached this step (OpenRouter=${OPENROUTER_API_KEY:+yes} DeepSeek=${DEEPSEEK_API_KEY:+yes}) - judging market tabs..."
             # Tabs must exist (see .jobhopper/jobs.json); a missing tab now fails the step.
             for tab in italy-roles spain-roles netherlands-roles; do
               node dist/cli/index.js judge --tab "$tab" --quick
@@ -95,11 +97,9 @@ jobs:
             # the commit below picks up the verdicts.
             node dist/cli/index.js backfill --snapshot .jobhopper/exports/jobs.json --quick --limit 200
           else
-            echo "No OpenRouter API key reached this step - skipping judgment."
-            echo "Check Settings -> Secrets and variables -> Actions:"
-            echo "  - the secret must be named exactly OPENROUTER_API_KEY"
-            echo "  - it must be a REPOSITORY secret (not only an environment secret, unless the job sets environment:)"
-            echo "  - scheduled runs on the default branch see repo/org secrets; a run started before you saved it won't have it"
+            echo "No judge API key reached this step - skipping judgment."
+            echo "Add OPENROUTER_API_KEY or DEEPSEEK_API_KEY under Settings -> Secrets and variables -> Actions."
+            echo "It must be a REPOSITORY secret (not only an environment secret, unless the job sets environment:)."
           fi
 
       - name: Re-judge every snapshot row (full model)
@@ -108,9 +108,11 @@ jobs:
         env:
           JOBHOPPER_HOME: ${{ github.workspace }}/.jobhopper
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          JOBHOPPER_JUDGE_PROVIDER: ${{ vars.JOBHOPPER_JUDGE_PROVIDER }}
         run: |
-          if [ -z "$OPENROUTER_API_KEY" ]; then
-            echo "No OpenRouter API key reached this step - cannot re-judge."
+          if [ -z "$OPENROUTER_API_KEY" ] && [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "No judge API key reached this step - cannot re-judge."
             exit 1
           fi
           node dist/cli/index.js backfill --snapshot .jobhopper/exports/jobs.json --rejudge --limit 500

@@ -2,7 +2,7 @@
 import { Command } from 'commander';
 import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
-import { loadConfig, saveConfig, resolveApiKey, hasApiKey } from '../config/config.js';
+import { loadConfig, saveConfig, hasApiKey, resolveOpenRouterKey, resolveDeepSeekKey, type JudgeProviderPreference } from '../config/config.js';
 import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket, setJobApplied } from '../db/jobs-repo.js';
 import { storeJudgment, listJudgments, getJudgment } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
@@ -20,6 +20,7 @@ import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, inSnapshotSc
 import { pendingSnapshotRows, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
 import { startWebServer } from './serve.js';
 import { watch as watchJobs } from '../watch.js';
+import { resolveJudgeProvider } from '../judge/provider.js';
 import { parseCv } from '../cv/schema.js';
 import { renderCvPdf } from '../cv/render.js';
 import { checkFacts } from '../cv/facts.js';
@@ -48,10 +49,12 @@ function requireKey(): void {
   const config = loadConfig();
   if (!hasApiKey(config)) {
     console.error(
-      pc.red('No OpenRouter API key set.') +
+      pc.red('No judge API key set.') +
         '\nRun ' +
-        pc.cyan('jobhopper config set-openrouter-key') +
-        ', or export OPENROUTER_API_KEY.',
+        pc.cyan('jobhopper config set-deepseek-key') +
+        ' or ' +
+        pc.cyan('config set-openrouter-key') +
+        ', or export DEEPSEEK_API_KEY / OPENROUTER_API_KEY.',
     );
     process.exit(1);
   }
@@ -60,7 +63,7 @@ function requireKey(): void {
 /* ------------------------------------------------------------------ *
  * config
  * ------------------------------------------------------------------ */
-const config = program.command('config').description('Manage OpenRouter key and model settings');
+const config = program.command('config').description('Manage judge provider keys and model settings');
 
 config
   .command('set-openrouter-key')
@@ -76,6 +79,60 @@ config
     cwd.openrouterKey = key;
     saveConfig(cwd);
     console.log(pc.green('OpenRouter API key saved locally.'));
+  });
+
+config
+  .command('set-deepseek-key')
+  .description('Set the DeepSeek direct API key (stored locally in config.json)')
+  .argument('[key]', 'the API key; if omitted, read from DEEPSEEK_API_KEY')
+  .action((keyArg?: string) => {
+    const cwd = loadConfig();
+    const key = keyArg?.trim() || process.env['DEEPSEEK_API_KEY']?.trim() || '';
+    if (!key) {
+      console.error(pc.red('No key provided. Pass it as an argument or set DEEPSEEK_API_KEY.'));
+      process.exit(1);
+    }
+    cwd.deepseekKey = key;
+    saveConfig(cwd);
+    console.log(pc.green('DeepSeek API key saved locally.'));
+  });
+
+config
+  .command('set-provider')
+  .description('Choose auto (OpenRouter first, then DeepSeek), openrouter, or deepseek')
+  .argument('<provider>', 'auto | openrouter | deepseek')
+  .action((provider: string) => {
+    const value = provider.trim().toLowerCase();
+    if (value !== 'auto' && value !== 'openrouter' && value !== 'deepseek') {
+      console.error(pc.red("Provider must be 'auto', 'openrouter' or 'deepseek'."));
+      process.exit(1);
+    }
+    const cwd = loadConfig();
+    cwd.judgeProvider = value as JudgeProviderPreference;
+    saveConfig(cwd);
+    console.log(pc.green(`Judge provider set to ${value}.`));
+  });
+
+config
+  .command('set-deepseek-model')
+  .description('Set the DeepSeek model used for full judgments')
+  .argument('<model>', 'DeepSeek model id, e.g. deepseek-v4-pro')
+  .action((model: string) => {
+    const cwd = loadConfig();
+    cwd.deepseekModel = model;
+    saveConfig(cwd);
+    console.log(pc.green(`DeepSeek full-judgment model set to ${model}.`));
+  });
+
+config
+  .command('set-deepseek-quick-model')
+  .description('Set the DeepSeek model used for quick judgments')
+  .argument('<model>', 'DeepSeek model id, e.g. deepseek-flash')
+  .action((model: string) => {
+    const cwd = loadConfig();
+    cwd.deepseekQuickModel = model;
+    saveConfig(cwd);
+    console.log(pc.green(`DeepSeek quick model set to ${model}.`));
   });
 
 config
@@ -102,16 +159,26 @@ config
 
 config
   .command('show')
-  .description('Show current configuration (key masked)')
+  .description('Show current configuration (keys masked)')
   .action(() => {
     const c = loadConfig();
-    const key = resolveApiKey(c);
-    const masked = key ? `${key.slice(0, 6)}…${key.slice(-4)}` : '(not set)';
-    console.log(`OpenRouter key : ${masked}`);
-    console.log(`Full model     : ${c.model}`);
-    console.log(`Quick model    : ${c.quickModel}`);
-    console.log(`Config file    : ${getPaths().configFile}`);
+    const mask = (key: string) => (key ? `${key.slice(0, 6)}…${key.slice(-4)}` : '(not set)');
+    const openrouter = resolveOpenRouterKey(c);
+    const deepseek = resolveDeepSeekKey(c);
+    console.log(`Provider      : ${c.judgeProvider}`);
+    try {
+      const effective = resolveJudgeProvider(c);
+      console.log(`Effective     : ${effective.name} (${effective.model})`);
+    } catch {
+      console.log('Effective     : (no key)');
+    }
+    console.log(`OpenRouter key: ${mask(openrouter)}`);
+    console.log(`DeepSeek key  : ${mask(deepseek)}`);
+    console.log(`OpenRouter    : ${c.model} / ${c.quickModel}`);
+    console.log(`DeepSeek      : ${c.deepseekModel} / ${c.deepseekQuickModel}`);
+    console.log(`Config file   : ${getPaths().configFile}`);
   });
+
 /* ------------------------------------------------------------------ *
  * profile
  * ------------------------------------------------------------------ */
@@ -370,7 +437,7 @@ program
  * ------------------------------------------------------------------ */
 program
   .command('judge')
-  .description('Judge poster(s) against your profile via OpenRouter')
+  .description('Judge poster(s) against your profile via OpenRouter or DeepSeek')
   .argument('[id]', 'job id to judge')
   .option('-t, --tab <name>', 'judge unjudged jobs in a tab')
   .option('--rejudge', 'include jobs that already have a verdict (default: judge only unjudged)')
@@ -761,6 +828,7 @@ program
     console.log(`  Database   : ${dim(getPaths().db)}`);
     console.log(`  Jobs stored: ${jobs}`);
     console.log(`  API key    : ${hasApiKey(config) ? pc.green('set') : pc.red('NOT SET')}`);
+    console.log(`  Provider   : ${config.judgeProvider}`);
     console.log(`  Full model : ${config.model}`);
     console.log(`  Quick model: ${config.quickModel}`);
     console.log(`  Profile    : ${dim(join(getPaths().profileDir))}`);
@@ -778,7 +846,7 @@ program
 Your data stays on this machine. Nothing is uploaded to a middleman.
 
 Quick start:
-  1. jobhopper config set-openrouter-key <your_key>
+  1. jobhopper config set-deepseek-key <your_key>   (or set-openrouter-key)
   2. jobhopper profile import-cv /path/to/cv.pdf
   3. jobhopper profile set preferences          (paste preferences; Ctrl-D to send)
   4. jobhopper scan                              (fetch jobs from Dutch/EU boards)
@@ -797,9 +865,13 @@ program
 
 Commands:
   config set-openrouter-key [key]    set OpenRouter API key (local)
-  config set-model <id>              set full-judgment model
-  config set-quick-model <id>        set quick-judgment model
-  config show                        show config (key masked)
+  config set-deepseek-key [key]      set DeepSeek direct API key (local)
+  config set-provider <p>            auto | openrouter | deepseek
+  config set-model <id>              set OpenRouter full-judgment model
+  config set-quick-model <id>        set OpenRouter quick-judgment model
+  config set-deepseek-model <id>     set DeepSeek full-judgment model
+  config set-deepseek-quick-model <id> set DeepSeek quick-judgment model
+  config show                        show config (keys masked)
   profile import-cv <pdf>            extract CV text locally from a PDF
   profile set <name> [file]          set a profile doc (preferences/constraints/background)
   profile show / get <name>          view stored profile docs
@@ -808,7 +880,7 @@ Commands:
   cleanup                            purge stored jobs outside IT/ES/NL or older than 30 days
   search <words> [filters]           full-text search local DB
   list [filters]                     list jobs
-  judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter)
+  judge <id> | --tab <t> | --all     judge postings against your profile (OpenRouter/DeepSeek)
   judgments [--verdict <v>]          list stored verdicts
   tab create/list/add/get/rm         manage shortlists
   export [tab] [-o out.html]         build a clickable HTML dashboard
@@ -863,7 +935,7 @@ cv.command('render')
 cv.command('tailor <id>')
   .description('Tailor the CV to a stored posting and render it next to the job')
   .option('-o, --out <dir>', 'output directory')
-  .option('-m, --model <id>', 'OpenRouter model override')
+  .option('-m, --model <id>', 'model id override for the active provider')
   .action(async (id: string, opts: { out?: string; model?: string }) => {
     const job = getJob(Number(id));
     if (!job) throw new Error(`No job with id ${id}. Try \`jobhopper list\`.`);
@@ -937,7 +1009,7 @@ async function askVerificationCode(): Promise<string> {
 cv.command('letter <id>')
   .description('Write the cover letter for a stored posting next to its tailored CV')
   .option('-o, --out <dir>', 'output directory')
-  .option('-m, --model <id>', 'OpenRouter model override')
+  .option('-m, --model <id>', 'model id override for the active provider')
   .action(async (id: string, opts: { out?: string; model?: string }) => {
     const job = getJob(Number(id));
     if (!job) throw new Error(`No job with id ${id}. Try \`jobhopper list\`.`);
