@@ -69,4 +69,17 @@ jobs:
 
       - name: Deploy to Pages
         if: env.CF_READY == '1'
-        run: npx --yes wrangler@4 pages deploy web/dist --project-name "$CF_PAGES_PROJECT" --branch main --commit-dirty=true
+        run: |
+          set -uo pipefail
+          # Cloudflare Pages occasionally returns "Unknown internal error" while
+          # publishing the Function. It is transient; retry before failing the run.
+          for attempt in 1 2 3; do
+            echo "Pages deploy attempt $attempt"
+            if npx --yes wrangler@4 pages deploy web/dist --project-name "$CF_PAGES_PROJECT" --branch main --commit-dirty=true; then
+              exit 0
+            fi
+            echo "attempt $attempt failed; retrying in 20s"
+            sleep 20
+          done
+          echo "Pages deploy failed after 3 attempts"
+          exit 1
