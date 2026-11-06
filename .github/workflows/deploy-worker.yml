@@ -1,9 +1,8 @@
 name: deploy dispatch worker
 
 # Deploys the Cloudflare Worker that dispatches the scan every 3 hours.
-# Uses the Cloudflare REST API directly (no wrangler), reusing the same
-# CLOUDFLARE_API_TOKEN/ACCOUNT_ID secrets as the Pages deploy, plus the
-# GH_DISPATCH_TOKEN repository secret for the Worker's GitHub PAT.
+# wrangler reads the [triggers] cron and [vars] from wrangler.toml; the GitHub
+# PAT is pushed as a Worker secret from the GH_DISPATCH_TOKEN repository secret.
 on:
   push:
     branches: [main]
@@ -18,65 +17,40 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
-      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Upload worker
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Deploy worker (code + cron)
         working-directory: workers/dispatch-scan
         run: |
           set -euo pipefail
-          if [ -z "$CF_TOKEN" ] || [ -z "$CF_ACCOUNT" ]; then
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
             echo "Missing CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID repository secrets."
             exit 1
           fi
-          metadata=$(jq -n '{main_module:"index.js", compatibility_date:"2026-11-01", bindings:[
-            {type:"plain_text", name:"GITHUB_REPO", text:"asjonDalipaj/jobhopper"},
-            {type:"plain_text", name:"WORKFLOW_FILE", text:"scheduled-scan.yml"},
-            {type:"plain_text", name:"GITHUB_REF", text:"main"}
-          ]}')
-          code=$(curl -sS -o /tmp/upload.json -w "%{http_code}" -X PUT \
-            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts/jobhopper-dispatch" \
-            -H "Authorization: Bearer $CF_TOKEN" \
-            -F "metadata=$metadata;type=application/json" \
-            -F "index.js=@src/index.js;type=application/javascript+module")
-          echo "upload HTTP $code"
-          jq . /tmp/upload.json 2>/dev/null || cat /tmp/upload.json
-          [ "$code" = "200" ]
+          npx --yes wrangler@3 deploy
 
       - name: Set the GitHub dispatch token
         if: env.GH_DISPATCH_TOKEN != ''
+        working-directory: workers/dispatch-scan
         run: |
           set -euo pipefail
-          payload=$(jq -n --arg token "$GH_DISPATCH_TOKEN" '{name:"GITHUB_DISPATCH_TOKEN", text:$token, type:"secret_text"}')
-          code=$(curl -sS -o /tmp/secret.json -w "%{http_code}" -X PUT \
-            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts/jobhopper-dispatch/secrets" \
-            -H "Authorization: Bearer $CF_TOKEN" \
-            -H "Content-Type: application/json" \
-            --data "$payload")
-          echo "secret HTTP $code"
-          cat /tmp/secret.json
-          [ "$code" = "200" ]
-
-      - name: Set the 3-hour cron
-        run: |
-          set -euo pipefail
-          code=$(curl -sS -o /tmp/schedule.json -w "%{http_code}" -X PUT \
-            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts/jobhopper-dispatch/schedules" \
-            -H "Authorization: Bearer $CF_TOKEN" \
-            -H "Content-Type: application/json" \
-            --data '{"crons":["17 */3 * * *"]}')
-          echo "schedule HTTP $code"
-          cat /tmp/schedule.json
-          [ "$code" = "200" ]
+          printf '%s' "$GH_DISPATCH_TOKEN" | npx --yes wrangler@3 secret put GITHUB_DISPATCH_TOKEN
 
       - name: Show the worker URL
         run: |
-          sub=$(curl -sS -H "Authorization: Bearer $CF_TOKEN"             "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/subdomain"             | jq -r '.result.subdomain // empty')
+          sub=$(curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
+            | jq -r '.result.subdomain // empty')
           if [ -n "$sub" ]; then
             echo "worker health: https://jobhopper-dispatch.$sub.workers.dev/health"
           fi
