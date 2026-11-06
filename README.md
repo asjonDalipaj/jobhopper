@@ -23,7 +23,7 @@ and it's yours.
 
 ## What you get
 
-- **A curated company index.** ~80 live-verified employers on Greenhouse,
+- **A curated company index.** ~200 live-verified employers on Greenhouse,
   Lever, Ashby, Workable, Teamtailor, Recruitee, SmartRecruiters, Workday and
   SuccessFactors,
   plus Italian boards imported from the open JobHive dataset (see

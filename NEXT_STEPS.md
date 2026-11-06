@@ -896,3 +896,13 @@ snapshot has 124 Spain + 71 Netherlands rows. Breadth, not Italy depth, is the r
 
 Acceptance: registry grows by the boards with live software roles; scan exits clean; snapshot gains
 ES/NL rows without adding off-role rows; `npm test` and `npm run build` green.
+
+
+### Result (2026-11-06)
+
+Added 18 boards (registry now **198**): Bjak, T-Systems Iberia, Xebia, Flexport, IMC Trading, DKB Code
+Factory, KPN, Inetum Spain, IFS, CuspAI, Knowmad Mood, Mozilla, Affirm, Trading 212, New Relic, Auctane,
+Eye Security, Miratech. The scan fetched 30,391 postings, kept 52, and the snapshot went from 248 to **300
+rows**: **11 strong, 19 fair, 22 weak, 0 unjudged**. Live deploy verified at 300 rows / 22 strong. Two
+business-development roles from Knowmad were labeled weak by the judge; the gate stays broad and the judge
+remains the quality gate.
