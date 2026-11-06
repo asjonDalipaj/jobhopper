@@ -1,0 +1,32 @@
+name: deepseek smoke
+
+# Manual check that the DEEPSEEK_API_KEY repository secret is valid and can call
+# the direct API. Prints no key material.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Call DeepSeek
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "DEEPSEEK_API_KEY is not set"
+            exit 1
+          fi
+          code=$(curl -sS -o /tmp/deepseek.json -w "%{http_code}" \
+            https://api.deepseek.com/chat/completions \
+            -H "Authorization: Bearer $DEEPSEEK_API_KEY" \
+            -H "Content-Type: application/json" \
+            --data '{"model":"deepseek-flash","messages":[{"role":"user","content":"Return exactly this JSON: {\"ok\":true}"}],"response_format":{"type":"json_object"},"thinking":{"type":"disabled"},"temperature":0}')
+          echo "HTTP $code"
+          jq '{model, content: .choices[0].message.content, error: .error}' /tmp/deepseek.json
+          [ "$code" = "200" ]
