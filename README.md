@@ -139,10 +139,9 @@ jobhopper watch --interval 15 --publish
 ```
 
 It runs the same pipeline as CI against the persistent local SQLite DB (scan →
-export → judge the market tabs → backfill), then commits **only**
-`.jobhopper/exports/jobs.json` and pushes when the snapshot changed. That push
-triggers the normal Pages deploy, so the hosted board and the local one stay
-aligned. Without `--publish` it only updates the local DB and snapshot.
+export → judge the market tabs → backfill), then commits the exports directory (the JSON snapshot plus the generated
+dashboards) and pushes when the snapshot changed. That push triggers the normal
+Pages deploy, so the hosted board and the local one stay aligned. Without `--publish` it only updates the local DB and snapshot.
 
 `Ctrl-C` stops it; a `watch.lock` prevents two watchers; each cycle starts every
 15 minutes (a slower cycle simply delays the next one). The Cloudflare Worker

@@ -871,11 +871,13 @@ aggregator keys (Careerjet/Jooble/InfoJobs) or new adapters (Oracle/iCIMS/Phenom
 
 `jobhopper watch --interval 15 [--publish] [--once]` runs the CI pipeline locally against the persistent
 SQLite DB: `scan -a --verify` → `run -j` → `judge --tab … --quick` → `run -j` → `backfill --quick`. It
-holds a `watch.lock`, starts cycles every N minutes, and `--publish` commits **only**
-`.jobhopper/exports/jobs.json` and pushes it, which triggers the Pages deploy and keeps the hosted board
-aligned. The Cloudflare Worker remains the 3-hour fallback.
+holds a `watch.lock`, starts cycles every N minutes, and `--publish` commits the exports directory (snapshot + generated dashboards) and pushes it, which
+triggers the Pages deploy and keeps the hosted board aligned. The Cloudflare Worker remains the 3-hour fallback.
 
 Also fixed in the same export path: rows whose previous `first_seen` was null are no longer stamped with
 "now" (which made old rows look newly discovered); they fall back to their posted date.
 
-Verified: one `--once` cycle fetched 23,723 postings, added 19, and the second export was stable. Tests: 95.
+Verified: one `--once` cycle fetched 23,723 postings, added 19, and the second export was stable. A
+`--publish --once` cycle then fetched 23,632, added 1, committed `982e830`, deployed successfully, and
+left **247 rows on both local and live**, newest posting 2026-11-06 09:47 UTC. The watcher also retries
+the broken local `/etc/ssh` config with `ssh -F /dev/null`. Tests: 95.
