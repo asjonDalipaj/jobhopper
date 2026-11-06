@@ -145,7 +145,8 @@ Pages deploy, so the hosted board and the local one stay aligned. Without `--pub
 
 `Ctrl-C` stops it; a `watch.lock` prevents two watchers; each cycle starts every
 15 minutes (a slower cycle simply delays the next one). The Cloudflare Worker
-still runs every 3 hours as the fallback when the machine is off.
+still runs every 3 hours as the fallback when the machine is off. See
+[docs/WATCHER.md](docs/WATCHER.md) for tmux/systemd and troubleshooting.
 
 
 ## How it works

@@ -877,6 +877,8 @@ triggers the Pages deploy and keeps the hosted board aligned. The Cloudflare Wor
 Also fixed in the same export path: rows whose previous `first_seen` was null are no longer stamped with
 "now" (which made old rows look newly discovered); they fall back to their posted date.
 
+Acceptance: `--once` green; `--publish` commits/pushes and the Pages deploy succeeds; local and live rows
+match; lock and SSH fallback tested; runbook in `docs/WATCHER.md` + `ops/jobhopper-watch.service`.
 Verified: one `--once` cycle fetched 23,723 postings, added 19, and the second export was stable. A
 `--publish --once` cycle then fetched 23,632, added 1, committed `982e830`, deployed successfully, and
 left **247 rows on both local and live**, newest posting 2026-11-06 09:47 UTC. The watcher also retries

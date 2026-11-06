@@ -1,0 +1,17 @@
+[Unit]
+Description=JobHopper local 15-minute watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Adjust these two paths if the checkout or node binary differs.
+WorkingDirectory=/home/aj/Desktop/Personal/Projects/jobhopper
+ExecStart=/usr/bin/node /home/aj/Desktop/Personal/Projects/jobhopper/dist/cli/index.js watch --publish
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGINT
+TimeoutStopSec=60
+
+[Install]
+WantedBy=default.target
