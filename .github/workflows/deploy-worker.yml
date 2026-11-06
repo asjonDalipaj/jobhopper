@@ -43,7 +43,7 @@ jobs:
             "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts/jobhopper-dispatch" \
             -H "Authorization: Bearer $CF_TOKEN" \
             -F "metadata=$metadata;type=application/json" \
-            -F "index.js=@src/index.js;type=application/javascript")
+            -F "index.js=@src/index.js;type=application/javascript+module")
           echo "upload HTTP $code"
           jq . /tmp/upload.json 2>/dev/null || cat /tmp/upload.json
           [ "$code" = "200" ]
