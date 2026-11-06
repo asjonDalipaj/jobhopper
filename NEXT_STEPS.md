@@ -852,3 +852,17 @@ judge timeouts, and manual dispatch still works.
 Setup requires a fine-grained PAT (`Actions: Read and write`) stored as `GH_DISPATCH_TOKEN`; the
 `deploy worker` workflow deploys the Worker and sets its secret. Until that secret exists, no automatic
 scan runs — manual `gh workflow run scheduled-scan.yml` is the fallback.
+
+## External scheduler live (2026-11-06)
+
+The Cloudflare Worker is deployed at `jobhopper-dispatch.asjon-dalipaj.workers.dev` with cron
+`17 */3 * * *` and the `GITHUB_DISPATCH_TOKEN` secret. First real dispatch: 09:17:50 UTC → scan run
+42193965658 (success). The follow-up Pages deploy hit a transient Cloudflare "Unknown internal error"
+while publishing the Function; a rerun succeeded. `deploy-pages.yml` now retries the deploy three times,
+so a single flaky Functions upload no longer blocks the snapshot.
+
+The Italian candidate report's 11 unadded IT-live boards were probed: all are stale or non-software
+(Auto1 purchasing, Talan cyber, LeTelezioni tutoring, Renesas test, ZURU toys, Wärtsilä-adjacent QA,
+Turner & Townsend construction QA, etc.); Jobgether is an aggregator and timed out. **No additions**:
+the supported-ATS Italian pool is effectively exhausted. The next Italy volume has to come from
+aggregator keys (Careerjet/Jooble/InfoJobs) or new adapters (Oracle/iCIMS/Phenom), not more board harvesting.
