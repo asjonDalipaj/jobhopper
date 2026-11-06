@@ -87,13 +87,14 @@ function syncRemote(): void {
   }
 }
 
-/** Commit and push only the snapshot; never touches other staged files. */
+/** Commit and push the exports (snapshot + dashboards); never touches other staged files. */
 function publishSnapshot(path: string): void {
   const rel = relative(process.cwd(), path);
   const dir = dirname(rel);
   git(['add', '--', dir]);
   const diff = git(['diff', '--cached', '--quiet', '--', dir], true);
   if (diff.status === 0) return;
+  if (diff.status !== 1) throw new Error('git diff failed while checking the snapshot');
 
   git(['commit', '-m', `chore: fresh jobs snapshot ${new Date().toISOString()}`, '--', dir]);
   const pull = git(['pull', '--rebase', '--autostash'], true);
@@ -112,6 +113,9 @@ async function cycle(opts: WatchOptions): Promise<void> {
   const before = digest(snapshotPath());
 
   await runCli(['scan', '-a', '--verify']);
+  // A Worker scan may have committed while this one was running; pull its rows
+  // in before the export so the merge keeps both sides.
+  if (opts.publish) syncRemote();
   await runCli(['run', '-j', snapshotPath()]);
 
   if (hasApiKey(loadConfig())) {
