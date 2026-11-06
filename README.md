@@ -28,6 +28,8 @@ and it's yours.
   SuccessFactors,
   plus Italian boards imported from the open JobHive dataset (see
   [Company discovery](docs/COMPANY-INDEX.md)).
+- **Coverage research.** Measured source yields, the hiring.cafe playbook and aggregator quirks:
+  [docs/COVERAGE.md](docs/COVERAGE.md).
 - **A deterministic gate.** Market aliases, a 3-day freshness window, and a
   word-boundary software-role filter run before anything reaches SQLite
   (`src/market.ts`).
