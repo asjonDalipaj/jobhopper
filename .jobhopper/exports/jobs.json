@@ -50,7 +50,7 @@
     "tags": null,
     "verdict": "strong",
     "reasoning": "The candidate's 10+ years of full-stack experience, strong Java and SQL background, and proven interest in AI-assisted development (LLM APIs, agentic coding tools) align well with the Full Stack Engineer, AI systems role. The location in Spain matches the candidate's preference for Spain, and the role is senior-level, satisfying the constraint against junior positions. The candidate's fintech background at Rabobank and Finomnia is directly relevant to Bjak's likely fintech context. The only minor gap is the lack of explicit mention of AI systems engineering in a professional setting, but the candidate's projects and stated interest in AI work make this a strong fit.",
-    "applied_at": null,
+    "applied_at": "2026-11-06T12:42:52.659Z",
     "first_seen": "2026-11-06T12:32:13.580Z"
   },
   {
@@ -972,6 +972,24 @@
     "first_seen": "2026-11-06T12:32:13.580Z"
   },
   {
+    "id": 7450,
+    "external_id": "1518519",
+    "source": "recruitee",
+    "company": "Xebia",
+    "title": "Data Engineer - Cross-Skilling program",
+    "location": "Amsterdam, Netherlands",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://xebiacareers.recruitee.com/o/apprentice-data-engineer-2",
+    "description": "Does This Sound Like You? You are an engineer with a pragmatic attitude. You feel the weight of responsibility that comes with taking systems into production. You easily switch between scripting and structured programming in typed languages. You understand cloud, provisioning, and automation and are eager to learn more and build robust systems next to our experienced team! The Xebia Data Division Xebia Data is one of the divisions of Xebia Netherlands, renowned for its expertise in building strong Data and AI practices that deliver value to our clients. In the past, our team has predicted daily bread demand for millions of loaves, built advanced energy-saving algorithms at a national scale, and established data innovation labs at large multinational companies! You’ll work with the sharpest data professionals in Europe, people who are not only technically brilliant but also generous with their knowledge. We enjoy the benefits of being part of a large organization while maintaining the energetic atmosphere of a scale-up. Our commitment to our community is strong; we are deeply rooted in the local landscape. What You’ll Be Doing To Make Organizations Data-Driven As a data engineer, you are responsible for the implementation of the foundations of data-intensive systems. You develop enabling infrastructure to store, transform and process data at scale and in the cloud. You make sure that data is stored safely and securely using the technology that you see fit for the job. With your knowledge of software engineering, cloud, clusters, queues, containers, streaming, or graphs, you work on the backbone of the data infrastructure. There is a lot of data to store, many jobs to run and schedule, and much configuration to be dealt with. You work with the client in teams that are a mix of people from Xebia and the client, and pick up work related to the backbone on which the team is building. Your communication skills matter as much as your technical skills. You explain your design choices, align team members, and help client teams make confident and informed decisions about their data landscape. You will be surrounded by experts from diverse fields, learn from different environments and industries, and have the perfect environment to shine as a data professional. Not always easy, but always rewarding. Stuck on a tough problem at a client? At Xebia we work as a team and we've got your back. Everyone is just a message away and ready to help! We say People First, and we mean it. What is the Cross-Skilling Program about? This program is designed for people with professional experience in data or related technical fields, particularly those familiar with modern tech stacks in data and/or software development. Over the first month , you’ll dive into the essential tech fundamentals in data and start your journey as a consultant for our clients in your second month. In the first year, you will be working on a long-term project with one of our clients, so not a sprint, but a genuine partnership to apply all the knowledge learned. Then you will be working on projects of varying lengths, tech stacks, and levels of complexity. You’ll have our experienced team by your side to support you the whole way!",
+    "posted_at": "2026-11-04 12:54:11 UTC",
+    "tags": null,
+    "verdict": "fair",
+    "reasoning": "This cross-skilling program is a realistic stretch for the candidate. They bring 10 years of software engineering, strong Java and SQL, CI/CD and DevOps experience, which are solid foundations for data engineering. The role is based in Amsterdam, NL, matching their location preference. However, the candidate lacks direct experience with big data infrastructure, streaming, clusters, and modern data stack tools, and the role is a pivot away from their stated preference for senior full-stack/backend roles. The program explicitly targets professionals with related technical backgrounds, so the fit is plausible but requires intentional upskilling.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T12:57:20.608Z"
+  },
+  {
     "id": 7424,
     "external_id": "4cad187f-0a03-41a5-b045-ab0e671d71e8",
     "source": "teamtailor",
@@ -1006,6 +1024,24 @@
     "reasoning": "The role is for a .NET developer in Madrid, which matches the candidate's location preference for Spain. However, the candidate has no professional experience with C# or .NET, which is the core requirement. Their strong background in Java, SQL, CI/CD, and agile methodologies is relevant but not directly applicable to the .NET stack. The candidate could potentially transition, but the job explicitly requires 4+ years of .NET experience, making it a stretch.",
     "applied_at": null,
     "first_seen": "2026-11-06T12:32:13.580Z"
+  },
+  {
+    "id": 7464,
+    "external_id": "9ebc0fe5-5eee-47fd-9095-1bdba84624cd",
+    "source": "teamtailor",
+    "company": "Knowmad Mood",
+    "title": "QA Architect | Automation & Performance Testing",
+    "location": "Las Rozas de Madrid, ES",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://knowmadmood.teamtailor.com/jobs/8664858-qa-architect-automation-performance-testing",
+    "description": "We are knowmad mood! Somos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. ¿Te apasiona la calidad del software y quieres liderar estrategias de automatización y rendimiento en entornos tecnológicos complejos? Estamos buscando un/a QA Architect con amplia experiencia en automatización de pruebas y performance testing para incorporarse a un proyecto internacional de alto impacto dentro de un equipo de Quality Engineering. 🔎 ¿Qué harás? Diseñar, desarrollar y mantener frameworks y suites de pruebas automatizadas. Definir e implantar estrategias de automatización y pruebas de rendimiento. Ejecutar pruebas de carga, estrés, endurance, spike y escalabilidad. Analizar cuellos de botella y proponer mejoras de rendimiento. Integrar pruebas automatizadas en entornos CI/CD. Monitorizar aplicaciones e infraestructuras durante la ejecución de pruebas. Colaborar estrechamente con equipos de Desarrollo, DevOps, Infraestructura y QA. Elaborar informes de rendimiento y recomendaciones de optimización. ✅ Requisitos imprescindibles Experiencia sólida en automatización de pruebas con Playwright y/o Selenium . Programación avanzada en Java . Experiencia en diseño y mantenimiento de frameworks de automatización. Conocimientos de Git . Experiencia configurando y manteniendo Jenkins . Integración de pruebas automatizadas en pipelines CI/CD. Experiencia avanzada en Apache JMeter . Conocimientos sólidos de metodologías de performance testing: Load Testing Stress Testing Endurance Testing Spike Testing Scalability Testing Experiencia validando APIs REST, microservicios y arquitecturas distribuidas. Capacidad para analizar métricas y detectar problemas de rendimiento. Nivel de inglés C1 o superior. Se precisa presencialidad híbrida en Madrid centro. Buscamos colaboracion freelance - Proyecto de 3 a 6 meses. ¡ Apúntate y te daremos más detalles! 🚀 Para estar al corriente de nuestras novedades síguenos aquí -> knowmad mood En knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "posted_at": "2026-11-04T13:00:51+01:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "This is a QA Architect role focused almost entirely on test automation and performance engineering, while the candidate is a senior full-stack/backend developer with no demonstrated QA or performance-testing specialization. His Java, Git, CI/CD and REST API experience are transferable, but the core requirements (Selenium/Playwright, JMeter, load/stress/scalability testing, framework design) are absent from his background. The freelance contract in Madrid is compatible with his preferences, but the role would require a significant pivot rather than a natural fit.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T12:57:20.608Z"
   },
   {
     "id": 7428,
@@ -1258,6 +1294,24 @@
     "reasoning": "The Lead Software Engineer role in the Netherlands aligns perfectly with the candidate's seniority, location preferences, and employment flexibility. The candidate's 10+ years of full-stack and backend experience, including fintech and enterprise platforms, makes them a strong candidate for a lead position. While the job description lacks details on tech stack or domain, the candidate's broad skill set and openness to various industries mitigate this uncertainty. No constraints are violated, and the role matches the candidate's career level and geographic target.",
     "applied_at": null,
     "first_seen": "2026-11-06T12:32:13.580Z"
+  },
+  {
+    "id": 7461,
+    "external_id": "d324ef32-22e9-4b3e-b3dd-e09e310a27e5",
+    "source": "ashby",
+    "company": "Bjak",
+    "title": "Lead Software Engineer",
+    "location": "Spain",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/bjakcareer/d324ef32-22e9-4b3e-b3dd-e09e310a27e5",
+    "description": "",
+    "posted_at": "2026-11-04T05:48:45.398+00:00",
+    "tags": null,
+    "verdict": "fair",
+    "reasoning": "The job title 'Lead Software Engineer' aligns with the candidate's seniority and leadership experience (mentoring, representing the team, owning CI/CD, and leading POCs). The location in Spain is explicitly targeted by the candidate, and the insurtech/fintech context of Bjak is a plausible match for their financial services background. However, the job description is empty, so no concrete technical requirements or responsibilities can be verified — the fit is therefore a reasonable stretch rather than a confirmed strong match. The candidate would likely meet most expectations for a lead role, but without details on stack or domain specifics there is some uncertainty.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T12:57:20.608Z"
   },
   {
     "id": 7399,
