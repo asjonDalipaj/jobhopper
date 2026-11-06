@@ -40,7 +40,7 @@ src/sources/* ──► scan.ts ──► market.ts gate ──► SQLite (jobs)
    `src/db/connection.ts`.
 5. **Judge** — `judgePosting` (`src/judge/openrouter.ts`) builds the prompt from
    `cv.txt`, `background.md`, `preferences.md`, `constraints.md`, calls
-   OpenRouter, and stores `strong|fair|weak|no` + reasoning in `judgments`.
+   OpenRouter (or DeepSeek when only `DEEPSEEK_API_KEY` is set), and stores `strong|fair|weak|no` + reasoning in `judgments`.
    `scan` quick-judges new rows and removes `no` rows; `judge --rejudge`
    rescans existing verdicts; `backfill` judges unjudged snapshot rows.
 6. **Publish** — `run -j` (`src/cli/index.ts` + `src/jobs/run.ts`) writes a
@@ -64,7 +64,7 @@ src/sources/* ──► scan.ts ──► market.ts gate ──► SQLite (jobs)
 | `src/sources/verify.ts` | Live token checks (`companies verify`, `scan --verify`) |
 | `src/market.ts` | Market aliases, freshness, role gate, snapshot scope helpers |
 | `src/db/` | Schema, jobs/judgments/tabs repositories |
-| `src/judge/` | OpenRouter client, model defaults, prompt |
+| `src/judge/` | Provider resolver, OpenAI-compatible client, model defaults, prompts |
 | `src/jobs/` | Tab definitions and `run -j` |
 | `src/export/` | Snapshot merge/scope, HTML, backfill |
 | `src/apply/` | CV/letter prep, Greenhouse fill, browser resolution |

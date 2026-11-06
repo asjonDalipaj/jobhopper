@@ -114,7 +114,7 @@ Run `npm test` (it builds first). No network in tests.
 npm run build
 jobhopper companies verify            # every registry token
 jobhopper scan -c Acme                # one board
-jobhopper scan -a --no-judge          # full market, no OpenRouter calls
+jobhopper scan -a --no-judge          # full market, no judge calls
 ```
 
 Or a one-off probe:

@@ -906,3 +906,35 @@ Eye Security, Miratech. The scan fetched 30,391 postings, kept 52, and the snaps
 rows**: **11 strong, 19 fair, 22 weak, 0 unjudged**. Live deploy verified at 300 rows / 22 strong. Two
 business-development roles from Knowmad were labeled weak by the judge; the gate stays broad and the judge
 remains the quality gate.
+
+## Plan — DeepSeek fallback for AI calls (added 2026-11-06)
+
+State: every model call is hardwired to OpenRouter (`judgePosting`, metadata extraction, CV tailoring,
+cover letters), and `resolveApiKey` only knows the OpenRouter key. DeepSeek's direct API is
+OpenAI-compatible: `POST https://api.deepseek.com/chat/completions`, models `deepseek-v4-pro` and
+`deepseek-flash`, JSON output supported.
+
+1. Add a provider resolver: explicit `auto | openrouter | deepseek`; `auto` prefers OpenRouter, falls
+   back to `DEEPSEEK_API_KEY`.
+2. Centralize chat/JSON calls in one client so all four call sites share headers, JSON mode and errors.
+3. DeepSeek defaults: full `deepseek-v4-pro`, quick `deepseek-flash`, thinking disabled for judging.
+4. Config/env: `DEEPSEEK_API_KEY`, `JOBHOPPER_DEEPSEEK_KEY`, `DEEPSEEK_BASE_URL`; CLI commands for the
+   key, provider and DeepSeek models.
+5. CI: pass `secrets.DEEPSEEK_API_KEY` to judge/rejudge and accept either key.
+6. Tests for provider selection, model mapping and key resolution; docs.
+
+Acceptance: with only `DEEPSEEK_API_KEY`, `judge`, `scan`, `cv tailor` and `cv letter` hit DeepSeek; with
+both keys OpenRouter wins unless `judgeProvider` is `deepseek`; with neither, a clear error naming both
+env vars; all gates green.
+
+
+### Result (2026-11-06)
+
+Provider resolver + shared `chatJson` client landed; judge, metadata extraction, CV tailoring and cover
+letters all use it. `auto` chooses OpenRouter when its key exists, otherwise DeepSeek; `judgeProvider` or
+`JOBHOPPER_JUDGE_PROVIDER` forces one. DeepSeek defaults are `deepseek-v4-pro` (full) and `deepseek-flash`
+(quick), endpoint `https://api.deepseek.com/chat/completions`, JSON mode with thinking disabled.
+
+Gates: 104 tests, build green. Live OpenRouter smoke returned `{"ok":true}` via
+`deepseek/deepseek-v4-flash`; DeepSeek's request shape is covered by a mocked client test (no DeepSeek key
+on this machine). Add `DEEPSEEK_API_KEY` locally or in repo secrets to exercise the direct path.

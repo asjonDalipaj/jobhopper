@@ -59,7 +59,7 @@ jobhopper watch --publish
 ## Notes and troubleshooting
 
 - **No key**: the scan still runs, but tab judgment/backfill are skipped. Set
-  the OpenRouter key with `jobhopper config set-openrouter-key`.
+  a judge key with `jobhopper config set-deepseek-key` (or `set-openrouter-key`).
 - **Git identity**: publishing needs `git config user.name` and `user.email`.
 - **SSH config**: a broken `/etc/ssh` config is retried with
   `ssh -F /dev/null` automatically.

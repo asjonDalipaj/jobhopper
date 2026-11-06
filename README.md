@@ -6,13 +6,13 @@ JobHopper keeps **your data on your machine** — your CV, preferences, and job
 postings never leave your laptop unless you ask it to judge a posting. It pulls
 postings **directly from employers' public ATS boards** (no login, no account,
 no job-board middleman), indexes them locally in SQLite with full-text search,
-and evaluates them against your profile using **OpenRouter** with your own API
+and evaluates them against your profile using **OpenRouter or DeepSeek** with your own API
 key.
 
 **Market focus: Italy, Spain, Netherlands.** Only software-engineering (and
 music-production) postings in those markets and posted within the last **3
 days** survive ingestion — city/native-language aliases are recognised and
-everything else is dropped at the gate, quality over quantity. If an OpenRouter
+everything else is dropped at the gate, quality over quantity. If a judge
 key is configured, every newly ingested posting is also quick-judged and
 deleted if the verdict is "no" (`scan --no-judge` skips this).
 
@@ -47,7 +47,7 @@ and it's yours.
 ## Requirements
 
 - Node.js **>= 22.13** (native `node:sqlite`, `DatabaseSync.function`)
-- An [OpenRouter](https://openrouter.ai) API key for judgment (scanning needs
+- An [OpenRouter](https://openrouter.ai) **or [DeepSeek](https://api-docs.deepseek.com)** API key for judgment (scanning needs
   none)
 - For the optional company-index importer: Python 3 + DuckDB (see
   [docs/COMPANY-INDEX.md](docs/COMPANY-INDEX.md))
@@ -65,8 +65,11 @@ npm link             # makes `jobhopper` available globally
 ## Quick start
 
 ```bash
-# 1. OpenRouter key (stored locally in config.json; masked in `config show`)
-jobhopper config set-openrouter-key sk-or-...
+# 1. Judge key: DeepSeek direct, or OpenRouter (stored locally in config.json; masked in `config show`)
+#    DEEPSEEK_API_KEY / OPENROUTER_API_KEY also work; auto prefers OpenRouter when both exist.
+#    Force one with: jobhopper config set-provider deepseek
+#    Optional: JOBHOPPER_JUDGE_PROVIDER=deepseek and DEEPSEEK_BASE_URL override the provider and endpoint.
+jobhopper config set-deepseek-key sk-...          # or set-openrouter-key sk-or-...
 
 # 2. Profile: CV text, preferences, constraints (all local)
 jobhopper profile import-cv ~/Documents/CV.pdf
@@ -83,7 +86,7 @@ jobhopper search fullstack --country Netherlands
 jobhopper list --remote --limit 20
 jobhopper list --source smartrecruiters --limit 10
 
-# 5. Judge with your profile (OpenRouter, your key)
+# 5. Judge with your profile (OpenRouter or DeepSeek, your key)
 jobhopper judge 358
 jobhopper judge --tab italy-roles --quick
 jobhopper judge --all --rejudge            # rescore everything
@@ -115,7 +118,7 @@ scan [-c <name>] [-a] [--verify] [--no-judge]
 cleanup                            purge off-market / stale rows
 search <words> [filters]           FTS over the local DB
 list [filters]                     list jobs
-judge <id> | --tab <t> | --all     judge (OpenRouter; --rejudge rescans verdicts)
+judge <id> | --tab <t> | --all     judge (OpenRouter or DeepSeek; --rejudge rescans verdicts)
 judgments [--verdict <v>]          stored verdicts
 tab create/list/add/get/rm         shortlists
 export [tab] [-o out.html]         clickable HTML dashboard
@@ -163,7 +166,7 @@ still runs every 3 hours as the fallback when the machine is off. See
                  │ word-boundary software role (src/market.ts) │
                  └───────────────┬──────────────────────────────┘
                                  ▼
-                 SQLite jobs + FTS5  ──►  judge (OpenRouter)
+                 SQLite jobs + FTS5  ──►  judge (OpenRouter/DeepSeek)
                                  │           │ verdict/reasoning
                                  ▼           ▼
                  shortlists/HTML     judgments (strong/fair/weak/no)
@@ -194,7 +197,7 @@ Key invariants:
 | `src/sources/` | ATS adapters, `companies.ts` registry, `scan.ts`, `verify.ts` |
 | `src/market.ts` | Market aliases, freshness, word-boundary role gate |
 | `src/db/` | SQLite schema, jobs/judgments/tabs repositories |
-| `src/judge/` | OpenRouter client, models, prompts |
+| `src/judge/` | Provider resolver + OpenAI-compatible client, models, prompts |
 | `src/jobs/` | Tab definitions and `run -j` |
 | `src/export/` | Snapshot merge/scope, HTML dashboards, backfill |
 | `src/apply/` | CV/letter prep, Greenhouse fill, browser resolution |
@@ -280,9 +283,10 @@ needs that bridge; the hosted page alone is read-only.
 To rescore every stored verdict after a profile change: **Actions → scheduled job scan → Run workflow**,
 tick `rejudge` (runs `backfill --rejudge` over the whole snapshot with `deepseek-v4-pro`).
 
-Secrets: `OPENROUTER_API_KEY` (scan/judge), `CLOUDFLARE_API_TOKEN` +
+Secrets: `OPENROUTER_API_KEY` or `DEEPSEEK_API_KEY` (judge), `CLOUDFLARE_API_TOKEN` +
 `CLOUDFLARE_ACCOUNT_ID` (Pages and the dispatch worker), and `GH_DISPATCH_TOKEN`
-(fine-grained PAT, Actions: write) for the worker. The scan commits with
+(fine-grained PAT, Actions: write) for the worker. Optional repository variable
+`JOBHOPPER_JUDGE_PROVIDER=deepseek` forces the direct provider in CI. The scan commits with
 `GITHUB_TOKEN`; the deploy follows via `workflow_run`. The Worker cron is the
 automatic 3-hour trigger — see [workers/dispatch-scan](workers/dispatch-scan/README.md).
 
