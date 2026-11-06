@@ -2,7 +2,7 @@
 import { Command } from 'commander';
 import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
-import { loadConfig, saveConfig, hasApiKey, resolveOpenRouterKey, resolveDeepSeekKey, type JudgeProviderPreference } from '../config/config.js';
+import { loadConfig, saveConfig, hasApiKey, resolveOpenRouterKey, resolveDeepSeekKey, resolveCareerjetAffid, resolveCareerjetApiKey, resolveJoobleKey, type JudgeProviderPreference } from '../config/config.js';
 import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket, setJobApplied } from '../db/jobs-repo.js';
 import { storeJudgment, listJudgments, getJudgment } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
@@ -136,6 +136,54 @@ config
   });
 
 config
+  .command('set-careerjet-affid')
+  .description('Set the Careerjet affiliate id (legacy API)')
+  .argument('[affid]', 'the affiliate id; if omitted, read from CAREERJET_AFFID')
+  .action((arg?: string) => {
+    const cwd = loadConfig();
+    const key = arg?.trim() || process.env['CAREERJET_AFFID']?.trim() || '';
+    if (!key) {
+      console.error(pc.red('No affiliate id provided. Pass it as an argument or set CAREERJET_AFFID.'));
+      process.exit(1);
+    }
+    cwd.careerjetAffid = key;
+    saveConfig(cwd);
+    console.log(pc.green('Careerjet affiliate id saved locally.'));
+  });
+
+config
+  .command('set-careerjet-api-key')
+  .description('Set the Careerjet v4 publisher API key (Basic auth)')
+  .argument('[key]', 'the API key; if omitted, read from CAREERJET_API_KEY')
+  .action((arg?: string) => {
+    const cwd = loadConfig();
+    const key = arg?.trim() || process.env['CAREERJET_API_KEY']?.trim() || '';
+    if (!key) {
+      console.error(pc.red('No API key provided. Pass it as an argument or set CAREERJET_API_KEY.'));
+      process.exit(1);
+    }
+    cwd.careerjetApiKey = key;
+    saveConfig(cwd);
+    console.log(pc.green('Careerjet API key saved locally.'));
+  });
+
+config
+  .command('set-jooble-key')
+  .description('Set the Jooble REST API key (use the Italy-domain key)')
+  .argument('[key]', 'the API key; if omitted, read from JOOBLE_API_KEY')
+  .action((arg?: string) => {
+    const cwd = loadConfig();
+    const key = arg?.trim() || process.env['JOOBLE_API_KEY']?.trim() || '';
+    if (!key) {
+      console.error(pc.red('No Jooble key provided. Pass it as an argument or set JOOBLE_API_KEY.'));
+      process.exit(1);
+    }
+    cwd.joobleKey = key;
+    saveConfig(cwd);
+    console.log(pc.green('Jooble API key saved locally.'));
+  });
+
+config
   .command('set-model')
   .description('Set the model used for full judgments')
   .argument('<model>', 'OpenRouter model id, e.g. openai/gpt-4o-mini')
@@ -176,6 +224,8 @@ config
     console.log(`DeepSeek key  : ${mask(deepseek)}`);
     console.log(`OpenRouter    : ${c.model} / ${c.quickModel}`);
     console.log(`DeepSeek      : ${c.deepseekModel} / ${c.deepseekQuickModel}`);
+    console.log(`Careerjet     : ${mask(resolveCareerjetAffid(c))} / ${mask(resolveCareerjetApiKey(c))}`);
+    console.log(`Jooble        : ${mask(resolveJoobleKey(c))}`);
     console.log(`Config file   : ${getPaths().configFile}`);
   });
 

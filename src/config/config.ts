@@ -19,6 +19,12 @@ export interface AppConfig {
   deepseekModel: string;
   /** DeepSeek direct model id used for fast batch/quick judgments. */
   deepseekQuickModel: string;
+  /** Careerjet publisher affiliate id (legacy API). */
+  careerjetAffid: string;
+  /** Careerjet v4 publisher API key (Basic auth). */
+  careerjetApiKey: string;
+  /** Jooble REST API key for the Italy domain. */
+  joobleKey: string;
 }
 
 export function defaultConfig(): AppConfig {
@@ -30,6 +36,9 @@ export function defaultConfig(): AppConfig {
     quickModel: DEFAULT_MODELS.quick,
     deepseekModel: DEFAULT_DEEPSEEK_MODELS.full,
     deepseekQuickModel: DEFAULT_DEEPSEEK_MODELS.quick,
+    careerjetAffid: '',
+    careerjetApiKey: '',
+    joobleKey: '',
   };
 }
 
@@ -69,4 +78,20 @@ export function hasApiKey(config: AppConfig, env: NodeJS.ProcessEnv = process.en
   if (preference === 'openrouter') return Boolean(resolveOpenRouterKey(config, env));
   if (preference === 'deepseek') return Boolean(resolveDeepSeekKey(config, env));
   return Boolean(resolveOpenRouterKey(config, env) || resolveDeepSeekKey(config, env));
+}
+
+
+/** Careerjet legacy affiliate id, from config or environment. */
+export function resolveCareerjetAffid(config: AppConfig, env: NodeJS.ProcessEnv = process.env): string {
+  return config.careerjetAffid || env['CAREERJET_AFFID'] || '';
+}
+
+/** Careerjet v4 publisher API key, from config or environment. */
+export function resolveCareerjetApiKey(config: AppConfig, env: NodeJS.ProcessEnv = process.env): string {
+  return config.careerjetApiKey || env['CAREERJET_API_KEY'] || '';
+}
+
+/** Jooble REST API key, from config or environment. */
+export function resolveJoobleKey(config: AppConfig, env: NodeJS.ProcessEnv = process.env): string {
+  return config.joobleKey || env['JOOBLE_API_KEY'] || '';
 }

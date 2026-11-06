@@ -989,3 +989,18 @@ software role:
 **Conclusion:** the 3-day Italian ATS slice is exhausted. Do not re-probe the same boards; the next lever
 is aggregator/Italian-native coverage (Careerjet/Jooble, possibly InfoJobs) or a broader employer-domain
 universe, not more adapters for the same ATSs.
+
+## Plan — Aggregator coverage: Careerjet + Jooble (added 2026-11-06)
+
+State: the Italian ATS slice is exhausted. Careerjet and Jooble keys are the next coverage lever; both
+APIs need credentials the CLI process cannot currently see.
+
+1. Persist `careerjetAffid` / `careerjetApiKey` / `joobleKey` in config; add env fallbacks and CLI setters.
+2. Careerjet: v4 API key (Basic auth, `user_ip`/`user_agent`) or legacy `affid` endpoint; query IT/ES/NL
+   with software keywords.
+3. Jooble: country-specific key; query Italy with one broad software keyword; respect the 500-request
+   lifetime quota with a 24h throttle.
+4. Add tests for response mapping, docs, and a live scan once the keys are in config.
+
+Acceptance: `scan -a` includes both sources only when keys exist; throttles prevent burning Jooble's
+lifetime quota; mappings/tests green; live scan verified with real keys.

@@ -12,6 +12,8 @@ import { workday } from './workday.js';
 import { successfactors } from './successfactors.js';
 import { remotive } from './remotive.js';
 import { remoteok } from './remoteok.js';
+import { careerjet } from './careerjet.js';
+import { jooble } from './jooble.js';
 import { filterLiveCompanies } from './verify.js';
 import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
 import { judgePosting, extractJobMetadata } from '../judge/openrouter.js';
@@ -31,6 +33,8 @@ const SOURCES: Record<string, JobSource> = {
   successfactors,
   [remotive.name]: remotive,
   [remoteok.name]: remoteok,
+  [careerjet.name]: careerjet,
+  [jooble.name]: jooble,
 };
 
 /** Whole-market aggregator sources (no company token) — derived from SOURCES. */

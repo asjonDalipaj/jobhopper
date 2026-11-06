@@ -76,9 +76,11 @@ jobhopper profile import-cv ~/Documents/CV.pdf
 jobhopper profile set preferences
 jobhopper profile set constraints
 
-# 3. Fetch postings from the curated boards (+ whole-market remote feeds)
+# 3. Fetch postings from the curated boards (+ aggregators; keys optional)
+#    Careerjet: jobhopper config set-careerjet-affid "$CAREERJET_AFFID"
+#    Jooble:    jobhopper config set-jooble-key "$JOOBLE_API_KEY"   (Italy-domain key)
 jobhopper scan                  # curated company boards
-jobhopper scan -a               # also Remotive + RemoteOK
+jobhopper scan -a               # + Remotive/RemoteOK, Careerjet/Jooble when configured
 jobhopper companies verify      # live-check every registry token
 
 # 4. Search the local index
@@ -157,7 +159,8 @@ still runs every 3 hours as the fallback when the machine is off. See
 ```
                  ┌──────────────────────────────────────────────┐
  company registry│  scan: fetchCompany per board                │
- (companies.ts)  │  aggregators: fetchAll (Remotive/RemoteOK)   │
+ (companies.ts)  │  aggregators: fetchAll (Remotive/RemoteOK/   │
+                 │  Careerjet/Jooble when keys exist)           │
                  └───────────────┬──────────────────────────────┘
                                  │ SourceJob (normalized)
                                  ▼
@@ -211,7 +214,8 @@ Key invariants:
 1. **Curated ATS boards** (`src/sources/companies.ts`): one token per employer.
    `scan` calls `fetchCompany` per board, in parallel, and reports dead tokens
    without aborting.
-2. **Whole-market aggregators** (`scan -a`): Remotive and RemoteOK, tagged
+2. **Whole-market aggregators** (`scan -a`): Remotive, RemoteOK, plus Careerjet and Jooble when their
+   keys are configured, tagged
    `aggregator-remotive` / `aggregator-remoteok`.
 3. **EURES** (`src/sources/eures.ts`): implemented and tested, deliberately
    **not wired** — a 500-row probe found no software titles. See
