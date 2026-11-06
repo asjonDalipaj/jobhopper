@@ -15,6 +15,7 @@ import { remoteok } from './remoteok.js';
 import { careerjet } from './careerjet.js';
 import { jooble } from './jooble.js';
 import { filterLiveCompanies } from './verify.js';
+import { shouldDropAggregator } from './quality.js';
 import { isTargetMarket, isFresh, isRelevantRole } from '../market.js';
 import { judgePosting, extractJobMetadata } from '../judge/openrouter.js';
 import { loadConfig, hasApiKey } from '../config/config.js';
@@ -105,7 +106,15 @@ async function judgeAndPrune(insertedHere: Set<number>, concurrency = 4): Promis
       try {
         const result = await judgePosting(job, { quick: true });
         judged++;
-        if (result.verdict === 'no') {
+        const drop =
+          result.verdict === 'no' ||
+          shouldDropAggregator({
+            source: job.source,
+            company: job.company,
+            description: job.description,
+            verdict: result.verdict,
+          });
+        if (drop) {
           removeJob(id);
           insertedHere.delete(id);
           rejected++;

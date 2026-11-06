@@ -1020,3 +1020,13 @@ Keys were persisted in `.jobhopper/config.json` (Careerjet AFFID; Jooble key). L
 - Caveat: Careerjet is recruiter/agency-heavy (CarusiHR, Techyon, Welyk, FORTIL, MC Engineering) and most
   weak rows are agencies. It is coverage, not direct-employer quality; the judge remains the gate. Jooble
   adds no fresh rows today.
+
+### Result — directness quality gate (2026-11-06)
+
+Added `src/sources/quality.ts`: aggregator rows are kept only when the verdict is **fair/strong** and the
+company is not agency/consultancy-shaped (known names plus recruiter/talent/staffing/consult/agency
+patterns and "our client"/"recruiting for" description phrases). Direct ATS boards are unaffected.
+
+Cleaned the aggregator batch: **22 of 24 rows removed**, leaving one fair direct row (TomTom) plus the
+Grafana direct-board row that was already kept. Snapshot: **315 rows**, Italy **21**; the aggregator feed is
+now direct-employer-shaped rather than agency-shaped. Jooble still contributes 0 fresh rows.

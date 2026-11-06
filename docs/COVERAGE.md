@@ -83,6 +83,18 @@ Probed 28 candidates from the software slice: 17 Workday tenants, 3 SuccessFacto
 - Careerjet is **recruiter/agency-heavy** (CarusiHR, Techyon, Welyk, FORTIL, MC Engineering); weak rows are
   mostly agencies. It is coverage, not direct-employer quality; the judge remains the gate.
 
+### Directness quality gate
+
+The 24 aggregator rows were cleaned on 2026-11-06: **22 removed** (15 weak plus agency/consultancy fair
+rows), leaving one fair direct row (TomTom). Snapshot: **315 rows**, Italy **21**.
+
+New aggregator rows must be **fair/strong** and not agency-shaped; the heuristic uses known names
+(CarusiHR, Techyon, Welyk, FORTIL, Grafton, Accenture, Avanade, etc.), recruiter/talent/staffing/consult
+patterns and "our client"/"recruiting for" description phrases. Direct ATS boards are unaffected.
+
+This keeps aggregators as **discovery coverage**, not a source of recruiter noise. The heuristic is not
+perfect; the judge remains the final quality gate.
+
 ## Decision
 
 1. The 3-day Italian ATS slice is **exhausted**; do not re-probe the same boards.

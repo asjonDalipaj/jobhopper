@@ -217,7 +217,7 @@ Key invariants:
    `scan` calls `fetchCompany` per board, in parallel, and reports dead tokens
    without aborting.
 2. **Whole-market aggregators** (`scan -a`): Remotive, RemoteOK, plus Careerjet and Jooble when their
-   keys are configured, tagged
+   keys are configured. Aggregator rows must be fair/strong and non-agency to enter the snapshot, tagged
    `aggregator-remotive` / `aggregator-remoteok`.
 3. **EURES** (`src/sources/eures.ts`): implemented and tested, deliberately
    **not wired** — a 500-row probe found no software titles. See
