@@ -13,7 +13,7 @@
 import { spawn, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { closeSync, existsSync, mkdirSync, openSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { dirname, join, relative } from 'node:path';
 import { getPaths } from './storage/paths.js';
 import { hasApiKey, loadConfig } from './config/config.js';
 import { parseIntervalMinutes } from './watch/interval.js';
@@ -60,7 +60,14 @@ function runCli(args: string[]): Promise<void> {
 }
 
 function git(args: string[], allowFail = false) {
-  const result = spawnSync('git', args, { cwd: process.cwd(), encoding: 'utf8' });
+  const run = (env: NodeJS.ProcessEnv) => spawnSync('git', args, { cwd: process.cwd(), encoding: 'utf8', env });
+  let result = run(process.env);
+  // Some hosts ship a broken /etc/ssh config; the repo works with `ssh -F /dev/null`.
+  // Retry only for that failure, never for ordinary git errors.
+  if (result.status !== 0 && /Bad owner or permissions|Could not read from remote repository/i.test(result.stderr || '')) {
+    console.log('[watch] retrying git with GIT_SSH_COMMAND=ssh -F /dev/null');
+    result = run({ ...process.env, GIT_SSH_COMMAND: 'ssh -F /dev/null' });
+  }
   if (result.status !== 0 && !allowFail) {
     throw new Error(`git ${args.join(' ')} failed: ${(result.stderr || '').trim()}`);
   }
@@ -83,11 +90,12 @@ function syncRemote(): void {
 /** Commit and push only the snapshot; never touches other staged files. */
 function publishSnapshot(path: string): void {
   const rel = relative(process.cwd(), path);
-  git(['add', '--', rel]);
-  const diff = git(['diff', '--cached', '--quiet', '--', rel], true);
+  const dir = dirname(rel);
+  git(['add', '--', dir]);
+  const diff = git(['diff', '--cached', '--quiet', '--', dir], true);
   if (diff.status === 0) return;
 
-  git(['commit', '-m', `chore: fresh jobs snapshot ${new Date().toISOString()}`, '--', rel]);
+  git(['commit', '-m', `chore: fresh jobs snapshot ${new Date().toISOString()}`, '--', dir]);
   const pull = git(['pull', '--rebase', '--autostash'], true);
   if (pull.status !== 0) console.error('[watch] pull before push failed; trying to push anyway');
   const push = git(['push'], true);

@@ -717,8 +717,9 @@ program
           row.first_seen = nowISO;
         }
       }
-      exportJobsToJsonFile(sortRowsByPostedAt(mergeSnapshotRows(existing, rows).filter(inSnapshotScope)), jsonPath);
-      const newCount = rows.filter((r) => !prevFirstSeen.has(`${r.source}:${r.external_id}`)).length;
+      const merged = sortRowsByPostedAt(mergeSnapshotRows(existing, rows).filter(inSnapshotScope));
+      exportJobsToJsonFile(merged, jsonPath);
+      const newCount = merged.filter((r) => !prevFirstSeen.has(`${r.source}:${r.external_id}`)).length;
       console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}` + (existing.length ? dim(` (${newCount} new since last snapshot)`) : ''));
     }
   });
