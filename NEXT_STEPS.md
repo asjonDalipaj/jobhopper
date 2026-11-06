@@ -866,3 +866,16 @@ The Italian candidate report's 11 unadded IT-live boards were probed: all are st
 Turner & Townsend construction QA, etc.); Jobgether is an aggregator and timed out. **No additions**:
 the supported-ATS Italian pool is effectively exhausted. The next Italy volume has to come from
 aggregator keys (Careerjet/Jooble/InfoJobs) or new adapters (Oracle/iCIMS/Phenom), not more board harvesting.
+
+## Local 15-minute watcher (added 2026-11-06)
+
+`jobhopper watch --interval 15 [--publish] [--once]` runs the CI pipeline locally against the persistent
+SQLite DB: `scan -a --verify` → `run -j` → `judge --tab … --quick` → `run -j` → `backfill --quick`. It
+holds a `watch.lock`, starts cycles every N minutes, and `--publish` commits **only**
+`.jobhopper/exports/jobs.json` and pushes it, which triggers the Pages deploy and keeps the hosted board
+aligned. The Cloudflare Worker remains the 3-hour fallback.
+
+Also fixed in the same export path: rows whose previous `first_seen` was null are no longer stamped with
+"now" (which made old rows look newly discovered); they fall back to their posted date.
+
+Verified: one `--once` cycle fetched 23,723 postings, added 19, and the second export was stable. Tests: 95.

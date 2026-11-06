@@ -120,6 +120,7 @@ judgments [--verdict <v>]          stored verdicts
 tab create/list/add/get/rm         shortlists
 export [tab] [-o out.html]         clickable HTML dashboard
 run [-j] [-o out.html]             run job-search tabs from jobs.json
+watch [--interval 15] [--publish]  scan/judge locally every N minutes (--publish aligns the hosted board)
 backfill --snapshot <path>         judge unjudged snapshot rows
 status                             DB / config status
 ui [-p <port>]                     local web app + API
@@ -127,6 +128,26 @@ ui [-p <port>]                     local web app + API
 
 Common filters: `--country <name> --remote --contract --unjudged --source <s>
 --limit <n>`. Run `jobhopper <command> --help` for the full surface.
+
+### Fresh every 15 minutes (local)
+
+The scheduled scan is a 3-hour fallback. On a machine that stays on, run:
+
+```bash
+npm run build
+jobhopper watch --interval 15 --publish
+```
+
+It runs the same pipeline as CI against the persistent local SQLite DB (scan →
+export → judge the market tabs → backfill), then commits **only**
+`.jobhopper/exports/jobs.json` and pushes when the snapshot changed. That push
+triggers the normal Pages deploy, so the hosted board and the local one stay
+aligned. Without `--publish` it only updates the local DB and snapshot.
+
+`Ctrl-C` stops it; a `watch.lock` prevents two watchers; each cycle starts every
+15 minutes (a slower cycle simply delays the next one). The Cloudflare Worker
+still runs every 3 hours as the fallback when the machine is off.
+
 
 ## How it works
 

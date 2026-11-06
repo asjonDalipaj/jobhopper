@@ -19,6 +19,7 @@ import { runJob, runAllJobs } from '../jobs/run.js';
 import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, type HtmlRow } from '../export/html.js';
 import { pendingSnapshotRows, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
 import { startWebServer } from './serve.js';
+import { watch as watchJobs } from '../watch.js';
 import { parseCv } from '../cv/schema.js';
 import { renderCvPdf } from '../cv/render.js';
 import { checkFacts } from '../cv/facts.js';
@@ -707,12 +708,32 @@ program
       );
       const nowISO = new Date().toISOString();
       for (const row of rows) {
-        row.first_seen = prevFirstSeen.get(`${row.source}:${row.external_id}`) ?? nowISO;
+        const key = `${row.source}:${row.external_id}`;
+        if (prevFirstSeen.has(key)) {
+          // Old rows whose first_seen predates the field keep an old value;
+          // stamping them with nowISO would make them look newly discovered.
+          row.first_seen = prevFirstSeen.get(key) ?? row.posted_at ?? '';
+        } else {
+          row.first_seen = nowISO;
+        }
       }
       exportJobsToJsonFile(sortRowsByPostedAt(mergeSnapshotRows(existing, rows).filter(inSnapshotScope)), jsonPath);
-      const newCount = rows.filter((r) => prevFirstSeen.get(`${r.source}:${r.external_id}`) === null || prevFirstSeen.get(`${r.source}:${r.external_id}`) === undefined).length;
+      const newCount = rows.filter((r) => !prevFirstSeen.has(`${r.source}:${r.external_id}`)).length;
       console.log(dim('->') + ` ${dim('wrote JSON snapshot')} ${pc.cyan(jsonPath)}` + (existing.length ? dim(` (${newCount} new since last snapshot)`) : ''));
     }
+  });
+
+/* ------------------------------------------------------------------ *
+ * watch (local 15-minute loop)
+ * ------------------------------------------------------------------ */
+program
+  .command('watch')
+  .description('Scan every N minutes, judge new postings, and optionally publish the fresh snapshot')
+  .option('--interval <minutes>', 'minutes between cycles', '15')
+  .option('--publish', 'commit and push the snapshot when it changes (keeps the hosted board aligned)')
+  .option('--once', 'run one cycle then exit')
+  .action(async (opts: { interval: string; publish?: boolean; once?: boolean }) => {
+    await watchJobs({ interval: opts.interval, publish: Boolean(opts.publish), once: Boolean(opts.once) });
   });
 
 /* ------------------------------------------------------------------ *
