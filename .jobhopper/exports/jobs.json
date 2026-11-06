@@ -1,5 +1,23 @@
 [
   {
+    "id": 7625,
+    "external_id": "744000160275169",
+    "source": "smartrecruiters",
+    "company": "Everience",
+    "title": "Data Engineer (m/w/d)",
+    "location": "Netherlands, , Netherlands",
+    "workplace_type": "Hybrid",
+    "employment_type": "Full-time",
+    "url": "https://jobs.smartrecruiters.com/EVERIENCE/744000160275169",
+    "description": "For one of our clients in the Dutch energy sector , we are looking for an experienced Data Engineer to develop and maintain scalable data solutions supporting data-driven decision-making and the energy transition. You will work with modern cloud and data technologies and collaborate with Data Scientists, Analysts, Architects, Product Owners and business stakeholders. Your responsibilities: Design, build and maintain scalable data pipelines and data platforms. Develop ETL/ELT processes and data integrations. Transform complex datasets into reliable and reusable data products. Build and maintain cloud-based data solutions. Ensure data quality, reliability, security and performance. Work with stakeholders to translate business requirements into technical data solutions. Collaborate with Data Scientists, Analysts, Architects and other engineering teams. Contribute to data-platform modernisation and cloud migration projects. Implement automated testing and CI/CD practices. Help establish and improve data-engineering standards and best practices.\n\n3+ years of experience as a Data Engineer or similar role. Experience within the Dutch energy, utilities, renewable-energy or infrastructure sector . Strong knowledge of Python and SQL . Experience developing ETL/ELT pipelines. Experience with Azure or another major cloud platform . Experience with modern data platforms such as Databricks, Microsoft Fabric, Azure Synapse or Snowflake . Understanding of data modelling, data quality and data governance. Experience working in Agile and/or DevOps environments. Strong analytical and problem-solving skills. Excellent Dutch and English communication skills and the ability to work with both technical and business stakeholders. Relevant cloud or data-engineering certifications are a plus, particularly Azure, Databricks or cloud-data-platform certifications . Energy-sector experience Experience with one or more of the following is particularly relevant: Energy trading Renewable energy Electricity and gas Energy networks and grid infrastructure Utilities Smart meters and IoT Energy consumption and forecasting Asset data Energy markets Energy transition and sustainability Customer or billing data\n\nAll our positions are open to both women and men and are, of course, open to people with disabilities.",
+    "posted_at": "2026-11-06T18:21:57.331Z",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "This is a Data Engineer role in the Dutch energy sector, and while the candidate is a strong senior engineer, the fit is tangential. He has Python and SQL and CI/CD experience, but his core is WebRatio model-driven development, Java backend and frontend work at Rabobank, not building ETL/ELT pipelines or cloud data platforms. The posting explicitly requires 3+ years as a Data Engineer, experience in the Dutch energy/utilities sector, and hands-on with Databricks/Fabric/Synapse/Snowflake and Azure — none of which appear in his CV. It also demands excellent Dutch communication, and his languages list Italian, English, Albanian and basic Spanish with no Dutch. The role is a career pivot rather than a match, so it lands as weak despite his general engineering strength.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T18:25:48.961Z"
+  },
+  {
     "id": 7612,
     "external_id": "744000160268485",
     "source": "smartrecruiters",
