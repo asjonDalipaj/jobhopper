@@ -94,6 +94,7 @@ test('isTargetMarket matches Italy/Spain/Netherlands substrings, case-insensitiv
   assert.equal(isTargetMarket('Madrid'), true);
   assert.equal(isTargetMarket('Utrecht, Nederland'), true);
   assert.equal(isTargetMarket('Bergamo, Lombardia'), true);
+  assert.equal(isTargetMarket('Italian Republic'), true);
   assert.equal(isTargetMarket('Bari, Puglia'), true);
   assert.equal(isTargetMarket('Trento'), true);
   assert.equal(isTargetMarket('Berlin, Germany'), false);

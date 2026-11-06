@@ -78,14 +78,20 @@ async function query(
     user_ip: process.env['CAREERJET_USER_IP'] ?? '127.0.0.1',
     user_agent: 'jobhopper/0.1',
   });
-  const headers: Record<string, string> = { Accept: 'application/json' };
+  const headers: Record<string, string> = {
+    Accept: 'application/json',
+    // The legacy endpoint rejects undeclared referrers.
+    Referer: 'https://jobhopper.pages.dev/',
+  };
   let url: string;
   if (apiKey) {
     url = `https://search.api.careerjet.net/v4/query?${params}`;
     headers.Authorization = `Basic ${Buffer.from(`${apiKey}:`).toString('base64')}`;
   } else {
     params.set('affid', affid);
-    url = `https://public.api.careerjet.net/search?${params}`;
+    // public.api.careerjet.net serves the legacy API over HTTP only; HTTPS
+    // fails at the TLS layer. The AFFID is a publisher id, not a secret key.
+    url = `http://public.api.careerjet.net/search?${params}`;
   }
   const res = await fetchWithTimeout(url, { headers });
   if (!res.ok) throw new Error(`careerjet: HTTP ${res.status}`);

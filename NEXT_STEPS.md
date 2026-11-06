@@ -1004,3 +1004,19 @@ APIs need credentials the CLI process cannot currently see.
 
 Acceptance: `scan -a` includes both sources only when keys exist; throttles prevent burning Jooble's
 lifetime quota; mappings/tests green; live scan verified with real keys.
+
+### Result — aggregator coverage (2026-11-06)
+
+Keys were persisted in `.jobhopper/config.json` (Careerjet AFFID; Jooble key). Live results:
+
+- **Careerjet** (legacy AFFID): `https://public.api.careerjet.net` fails TLS but the HTTP endpoint works
+  **only with a `Referer`**; the adapter now sends one. 161 unique results, 45 Italy, 10 fresh software
+  titles. Nine queries (IT/ES/NL × 3 keywords), throttled to 6h.
+- **Jooble** (Italy-domain key): 51 unique, 51 Italy, 6 software, **0 fresh**. One query, throttled to 24h
+  to protect the 500-request lifetime quota. Jooble labels the country "Italian Republic", so that alias
+  was added to `market.ts`.
+- Full `scan -a`: 25 new rows (24 Careerjet, 1 Greenhouse/Grafana), snapshot 338, Italy 28. Quick verdicts:
+  **1 strong / 9 fair / 15 weak**, 10 rejected.
+- Caveat: Careerjet is recruiter/agency-heavy (CarusiHR, Techyon, Welyk, FORTIL, MC Engineering) and most
+  weak rows are agencies. It is coverage, not direct-employer quality; the judge remains the gate. Jooble
+  adds no fresh rows today.

@@ -14,7 +14,7 @@ export type TargetCountry = (typeof TARGET_COUNTRIES)[number];
  */
 const COUNTRY_ALIASES: Record<TargetCountry, string[]> = {
   Italy: [
-    'italia', 'italy',
+    'italia', 'italy', 'italian republic', 'republic of italy', 'repubblica italiana',
     'milano', 'milan', 'roma', 'rome', 'torino', 'turin', 'napoli', 'naples', 'bologna',
     'firenze', 'florence', 'genova', 'genoa', 'venezia', 'venice', 'verona', 'padova', 'padua',
     'bari', 'palermo', 'catania', 'messina', 'cagliari', 'sassari', 'perugia', 'ancona',
