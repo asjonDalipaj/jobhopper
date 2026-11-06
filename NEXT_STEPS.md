@@ -938,3 +938,38 @@ letters all use it. `auto` chooses OpenRouter when its key exists, otherwise Dee
 Gates: 104 tests, build green. Live OpenRouter smoke returned `{"ok":true}` via
 `deepseek/deepseek-v4-flash`; DeepSeek's request shape is covered by a mocked client test (no DeepSeek key
 on this machine). Add `DEEPSEEK_API_KEY` locally or in repo secrets to exercise the direct path.
+
+## Plan — Italian career-page coverage spike (added 2026-11-06)
+
+State: 21 Italian rows in a 304-row snapshot. Supported ATS boards are exhausted; hiring.cafe's edge is a
+generic crawler over employer websites with AI extraction, so the open question is whether Italian
+employers expose career pages with `JobPosting` JSON-LD (or sitemaps) at a useful rate.
+
+1. Take up to 200 unique Italian employer domains from the open dataset (URL hosts that are not ATS hosts).
+2. Fetch the homepage + likely careers paths, parse `schema.org/JobPosting` JSON-LD and detect ATS widgets.
+3. Count: pages reachable, JSON-LD postings, software postings, fresh postings (<=30 days), ATS fingerprints.
+4. Log the measured yield and decide: build the generic crawler, target Italian ATSs, or go aggregator-first.
+
+Acceptance: a repeatable spike script and JSON/CSV output; numbers written into NEXT_STEPS; no production
+ingestion until the yield threshold is met.
+
+### Result — Italian career-page spike (2026-11-06)
+
+Two measurements, both in `.jobhopper/tmp-e2e/` (`career-spike.json`, `career-domains.json`,
+`probe-career-pages.mjs`; research only, not committed):
+
+1. **Whole Italian slice**: 6,512 postings, but only **168 (2.6%)** pass the software-role gate. They sit on
+   **35 hosts**, mostly known ATSs: SuccessFactors 51, Workday 32, SmartRecruiters 27, Ashby 27,
+   Greenhouse 17, Lever 14 (title counts).
+2. **Career-page sample**: only **132** unique non-ATS employer hosts were available in the local supported
+   slices (not 200). 130 were reachable; **1** exposed `JobPosting` JSON-LD; **0** software titles were
+   found; fingerprints were **112 SuccessFactors**, 9 Workday, 5 Greenhouse, 1 each Workable/Recruitee/
+   Phenom. The sample was also biased toward retail (Lidl, Sephora, Prada), and static HTML cannot see
+   JS-rendered ATS shells.
+
+**Conclusion:** the hiring.cafe recipe is right globally, but a generic JSON-LD career-page crawler is *not*
+the first Italian lever. The missing Italian software postings are on ATSs we can already read:
+Workday (Salesforce, Kion, ABB, AGCO, Copeland, Hitachi, Kyndryl, Rockwell), remaining SuccessFactors
+(Chiesi, EssilorLuxottica, Grünenthal) and SmartRecruiters (Auto1). Add/probe those boards first, then
+aggregator APIs; only build the crawler after a software-filtered company-domain universe exists and a
+headless/sitemap sample shows real yield.
