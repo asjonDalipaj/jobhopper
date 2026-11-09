@@ -1,5 +1,23 @@
 [
   {
+    "id": 7898,
+    "external_id": "c69ca7f9-ea2d-4c11-bd39-3be156b93e94",
+    "source": "teamtailor",
+    "company": "Knowmad Mood",
+    "title": "DESARROLLADOR .NET",
+    "location": "Sevilla, ES",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://knowmadmood.teamtailor.com/jobs/8692433-desarrollador-net",
+    "description": "We are knowmad mood! Somos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Formado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto. Los valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza. En knowmad mood buscamos desarrolladores .NET con un mínimo de 5 años de experiencia para trabajar en nuestra comunidad Microsoft en Sevilla. Sería una posición híbrida al 50% ¿Que buscamos? 5 años de experiencia con Net Core. Estás familiarizado con trabajar con formatos de datos como JSON y XML Has trabajado con bases de datos como Microsoft SQL Server y PostgreSQL y no relacionales como MongoDB y Redis. Trabajas con principios SOLID y DDD. Conocimientos de testing. Tienes experiencia trabajando con GIT. Tienes experiencia trabajando con Microservicios. ¿Qué ofrecemos? Contrato indefinido Vacaciones 🌴: 22 días de vacaciones + 2 días de libre disposición, además de los días 24 y 31 de diciembre libres. Contrato indefinido 📄: Desde el primer día, con opción de 12 o 14 pagas. Retribución flexible 💳: Tarjeta restaurante, cheque guardería, seguro médico, formación y otros beneficios con ventajas fiscales. Club de ventajas 🎁: Descuentos en tecnología, ocio y formación. Formación continua 📚: Acceso a Udemy Business, cursos de idiomas, certificaciones oficiales y formación técnica. Plan de carrera 🚀: Acompañamiento para crecer, especializarte o asumir nuevos retos. Bienestar integral 💚: Programas de nutrición, actividad física y equilibrio emocional. Conciliación +VIDA 👨 👩 👧 👦: Asistencia personal y familiar 24/7. Ambiente inclusivo 🌍: Entorno diverso y multicultural. Eventos sociales 🎮: Actividades para conectar con el equipo. ¡ Apúntate y te daremos más detalles! 🚀 Para estar al corriente de nuestras novedades síguenos aquí -> knowmad mood En knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "posted_at": "2026-11-09T17:09:11+01:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "This is a .NET developer role in Sevilla requiring at least 5 years of .NET Core experience, and the candidate's stack is Java, WebRatio, SQL, and React with no .NET/C# background at all. The posting also asks for SOLID/DDD, microservices, MongoDB and Redis, none of which appear in the CV. The candidate is open to Spain and has relevant seniority, database experience (SQL Server), Git, and CI/CD, so the location and general engineering maturity fit. But the core technology requirement is a hard mismatch, making this a tangential fit at best.",
+    "applied_at": null,
+    "first_seen": "2026-11-09T16:22:50.149Z"
+  },
+  {
     "id": 10,
     "external_id": "7819150003",
     "source": "greenhouse",
