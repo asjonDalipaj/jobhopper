@@ -12,8 +12,8 @@
     "description": "",
     "posted_at": "2026-11-09T19:38:21.162+00:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The role is a team lead for software verification in satellite systems, a domain completely unrelated to the candidate's 10-year career in enterprise fintech, model-driven development, and AI-assisted coding. The candidate has no experience in embedded systems, verification, or aerospace, and the job does not leverage their core strengths in full-stack development, integration, or AI tooling. While the location in Valencia is acceptable, the fundamental mismatch in industry and role type makes this a poor fit.",
+    "verdict": "weak",
+    "reasoning": "The role is in Valencia, Spain, which matches your preferred location, and the team-lead aspect aligns with your mentoring and POC leadership experience. However, the core domain is satellite systems software verification, a highly specialized field far from your enterprise/fintech and WebRatio/Java full-stack background. You have no demonstrated experience in aerospace, embedded systems, or verification/test methodology, which are likely central to this position. While your CI/CD and software engineering fundamentals are transferable, the missing domain expertise makes this a significant stretch rather than a natural fit.",
     "applied_at": null,
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
@@ -31,7 +31,7 @@
     "posted_at": "2026-11-09T17:19:56+01:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is for a .NET developer in Madrid, which matches the candidate's location preference for Spain. However, the candidate's entire 10-year career is built on Java, WebRatio, and frontend technologies like React and AngularJS, with no .NET experience whatsoever. The job requires 5+ years of .NET Core, microservices, and SQL Server/PostgreSQL, none of which align with the candidate's demonstrated skills. Additionally, the candidate explicitly wants to work with LLM APIs and agentic coding tools, which this role does not involve. The tech stack mismatch is too fundamental to consider this a viable opportunity.",
+    "reasoning": "The role requires a minimum of 5 years of .NET Core experience, but the candidate's entire career is built on Java, WebRatio, and frontend technologies with no .NET background. While the location (Madrid), hybrid setup, and seniority level align with the candidate's preferences, the core technical requirement is a complete mismatch. Additionally, the candidate's Spanish is basic, which may be insufficient for a local role, and they lack experience with the required databases (MongoDB, Redis) and microservices architecture. The gap in the primary skill set makes this role unsuitable.",
     "applied_at": null,
     "first_seen": "2026-11-09T16:37:48.261Z"
   },
@@ -48,8 +48,8 @@
     "description": "We are knowmad mood! Somos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Formado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto. Los valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza. En knowmad mood buscamos desarrolladores .NET con un mínimo de 5 años de experiencia para trabajar en nuestra comunidad Microsoft en Sevilla. Sería una posición híbrida al 50% ¿Que buscamos? 5 años de experiencia con Net Core. Estás familiarizado con trabajar con formatos de datos como JSON y XML Has trabajado con bases de datos como Microsoft SQL Server y PostgreSQL y no relacionales como MongoDB y Redis. Trabajas con principios SOLID y DDD. Conocimientos de testing. Tienes experiencia trabajando con GIT. Tienes experiencia trabajando con Microservicios. ¿Qué ofrecemos? Contrato indefinido Vacaciones 🌴: 22 días de vacaciones + 2 días de libre disposición, además de los días 24 y 31 de diciembre libres. Contrato indefinido 📄: Desde el primer día, con opción de 12 o 14 pagas. Retribución flexible 💳: Tarjeta restaurante, cheque guardería, seguro médico, formación y otros beneficios con ventajas fiscales. Club de ventajas 🎁: Descuentos en tecnología, ocio y formación. Formación continua 📚: Acceso a Udemy Business, cursos de idiomas, certificaciones oficiales y formación técnica. Plan de carrera 🚀: Acompañamiento para crecer, especializarte o asumir nuevos retos. Bienestar integral 💚: Programas de nutrición, actividad física y equilibrio emocional. Conciliación +VIDA 👨 👩 👧 👦: Asistencia personal y familiar 24/7. Ambiente inclusivo 🌍: Entorno diverso y multicultural. Eventos sociales 🎮: Actividades para conectar con el equipo. ¡ Apúntate y te daremos más detalles! 🚀 Para estar al corriente de nuestras novedades síguenos aquí -> knowmad mood En knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
     "posted_at": "2026-11-09T17:09:11+01:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The role is a .NET developer position in Seville, Spain, requiring 5+ years of .NET Core experience, SQL Server/PostgreSQL, MongoDB, Redis, SOLID/DDD, testing, and microservices. The candidate has 10+ years of experience but primarily in Java, WebRatio, and frontend technologies, with no .NET or C# background. While the candidate has strong SQL and backend skills, the core requirement for .NET expertise is a significant mismatch. The location (Seville) and hybrid model are compatible with the candidate's preference for Spain, but the technical stack gap outweighs this.",
+    "verdict": "no",
+    "reasoning": "The job requires 5+ years of .NET Core experience, but the candidate's entire backend career is in Java and WebRatio, with no .NET background. The role is hybrid in Sevilla, Spain, requiring relocation from Utrecht, which is possible but not a strong fit given the candidate's current base and the lack of .NET skills. While the candidate has strong SQL, Git, and general software engineering experience, the core technology mismatch is insurmountable for a senior role. The candidate's explicit interest in AI-assisted development and fintech is not addressed by this .NET position.",
     "applied_at": null,
     "first_seen": "2026-11-09T16:22:50.149Z"
   },
@@ -67,7 +67,7 @@
     "posted_at": "2026-11-09T10:11:00-05:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate's 10+ years of Java backend experience and fintech background at Rabobank align well with Adyen's payments domain and the core Java requirement. However, the role focuses on building internal Java frameworks and leading large-scale migrations, which is a stretch from his primary experience with WebRatio and legacy system maintenance. He lacks explicit Kubernetes and cloud migration experience, though his DevOps and CI/CD skills are relevant. The Amsterdam location is feasible given he is in Utrecht, but the office-first policy may conflict with his openness to remote work. Overall, a realistic stretch with meaningful gaps to address.",
+    "reasoning": "The candidate's 10+ years of Java backend experience and fintech background at Rabobank align well with Adyen's payments platform and the seniority of this role. Their hands-on work with CI/CD, DevOps, and mentoring matches the 'communicative, proactive team player' and 'DevOps mindset' the job values. However, the role is specifically about building core Java frameworks and libraries used across the company, which is a different focus than the candidate's primary experience with WebRatio model-driven development and application-level work. The candidate lacks explicit experience with Kubernetes, cloud migrations, or building shared libraries/frameworks, which are key to this role. The location requirement (Amsterdam, office-first) is a strong match since the candidate is based in the Netherlands and open to hybrid/on-site.",
     "applied_at": null,
     "first_seen": "2026-11-06T09:48:02.712Z"
   },
@@ -85,7 +85,7 @@
     "posted_at": "2026-11-09T08:25:05-05:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is for a Mid Android Developer requiring 4+ years of native Android experience with Kotlin, Jetpack Compose, and MVVM. The candidate has zero Android or mobile development experience; their entire career is in web and backend systems. Additionally, the role is mid-level, while the candidate is a senior engineer seeking senior positions. Although the location (Valencia) and fintech domain align, the core technical requirements are a complete mismatch.",
+    "reasoning": "The role is a Mid Android Developer requiring 4+ years of native Android development with Kotlin, Jetpack Compose, and MVVM. The candidate has zero Android or mobile development experience; their entire 10-year career is in enterprise backend/frontend (WebRatio, Java, AngularJS, React) and fintech consulting. While they have strong Java, SQL, and CI/CD skills, the core Android stack is completely absent. The location (Valencia, Spain) is a match, but the role's seniority (mid-level) and technical focus violate the candidate's explicit preference for senior full-stack/backend roles and their lack of mobile experience makes this a non-fit.",
     "applied_at": null,
     "first_seen": "2026-11-09T15:18:57.862Z"
   },
@@ -103,7 +103,7 @@
     "posted_at": "2026-11-09T05:48:11-05:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate's 10+ years of experience, deep Java and SQL background, fintech domain expertise, and hands-on work with CI/CD, DevOps, and AI tooling (LLM APIs, agentic coding assistants) align closely with the Principal Software Engineer role at Redwood. The role's emphasis on prompt engineering, AI-assisted development, and architectural leadership matches the candidate's recent projects (REA Bot, JobHopper) and stated interest in AI-driven work. The location in Houten, Netherlands fits the candidate's preference for the Netherlands, and the senior IC nature matches their seniority. Minor gaps include lack of explicit Kubernetes/Docker experience and no mention of workload automation or job scheduling, but the candidate's broad platform and integration experience suggests they can ramp up quickly.",
+    "reasoning": "The candidate's 10+ years of experience, deep Java and SQL background, fintech domain expertise, and hands-on work with CI/CD, DevOps, and AI tooling (LLM APIs, agentic coding assistants) align closely with the Principal Software Engineer role at Redwood. The location in Houten, Netherlands matches the candidate's geographic preference. The role's emphasis on technical leadership, system architecture, and mentoring fits the candidate's profile as a senior engineer who has owned product initiatives and mentored juniors. The candidate's explicit interest in AI-assisted development and prompt engineering is a direct match to the job's requirements. While the candidate lacks explicit experience with Kubernetes, cloud platforms (AWS/Azure/GCP), and workload automation, these gaps are manageable given the strong overall fit and the candidate's proven ability to learn and adapt.",
     "applied_at": null,
     "first_seen": "2026-11-05T16:27:22.592Z"
   },
@@ -121,7 +121,7 @@
     "posted_at": "2026-11-09T10:39:31.514Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is an ML Engineer at KPN in Amsterdam, which fits the candidate's location preference for the Netherlands. However, the candidate's background is primarily in enterprise software engineering with WebRatio, Java, and SQL, not in machine learning engineering. The job requires circa 5 years of experience in data science/ML engineering, a master's degree in a quantitative field, and deep expertise in developing and managing ML models—none of which the candidate demonstrates. While the candidate has some exposure to LLM APIs and agentic tools, this is tangential and does not meet the core requirements. The candidate's strong DevOps and CI/CD skills are a partial match, but the overall fit is weak due to the fundamental mismatch in specialization.",
+    "reasoning": "The role is an ML Engineer at KPN in Amsterdam, which fits the candidate's location preference for the Netherlands. However, the candidate's background is primarily in enterprise software engineering, integration, and CI/CD, with only personal projects involving LLM APIs and scraping. The job requires circa 5 years of data science/ML engineering experience, a master's degree in a quantitative field, and deep expertise in building and managing ML models—none of which the candidate demonstrates. While the candidate has strong DevOps and Python skills, the core ML engineering requirements are a significant stretch. The role is not junior, but the candidate's profile is misaligned with the specialized ML focus.",
     "applied_at": "2026-11-09T11:11:26.192Z",
     "first_seen": "2026-11-09T10:53:03.051Z"
   },
@@ -139,7 +139,7 @@
     "posted_at": "2026-11-09T05:17:04-05:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate's 10+ years of software engineering experience, strong Java and SQL background, fintech domain knowledge, and recent hands-on projects with LLM APIs and agentic tooling (REA Bot, JobHopper) align well with the Senior Forward Deployed Engineer role at Adyen. The role's emphasis on AI/automation, building internal tools, and customer-facing delivery matches the candidate's stated interest in AI-assisted development and their experience leading proof-of-concept work and stakeholder demos at Rabobank. However, the candidate lacks explicit experience with Google Cloud Platform (GCP), Vertex AI, and the specific agentic frameworks mentioned (LangChain, Google ADK), which are core requirements. Additionally, the role is office-first in Amsterdam, and while the candidate is based in the Netherlands, they prefer remote or hybrid options, though Amsterdam is commutable. The candidate's primary tool (WebRatio) is niche and not directly relevant to the role's tech stack, but their broader skills in Java, Python, CI/CD, and AI tooling are transferable. Overall, the role is a realistic stretch with meaningful gaps in GCP and specific AI frameworks.",
+    "reasoning": "",
     "applied_at": null,
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
@@ -157,7 +157,7 @@
     "posted_at": "2026-11-09T09:55:01.980Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is titled 'Software Analyst & Project Specialist' and focuses heavily on requirements gathering, process mapping, UAT coordination, and documentation — it is a business analyst / project management position, not a senior engineering role. The candidate has 10+ years of hands-on development experience and explicitly seeks senior full-stack or backend engineering work, not a shift to analysis. The offered salary range (€35k–€43k) is far below what a senior engineer with a decade of experience would expect, especially in Italy. While the location (Reggio Emilia, Italy) matches the candidate's geographic preference, the role's nature and compensation violate the candidate's hard constraints against junior-level positions and their career goals.",
+    "reasoning": "The role is titled 'Software Analyst & Project Specialist' and focuses heavily on requirements gathering, process mapping, UAT coordination, and documentation — a business analyst / project management profile rather than a senior engineering position. The candidate explicitly seeks senior full-stack or backend engineering roles and is not interested in junior or entry-level positions. The offered salary range (€35k–€43k RAL) is well below market expectations for a senior engineer with 10+ years of experience, even in Italy. While the location in Italy is acceptable, the role's responsibilities and level are a clear mismatch with the candidate's hands-on technical background and career goals.",
     "applied_at": null,
     "first_seen": "2026-11-09T10:08:05.500Z"
   },
@@ -175,7 +175,7 @@
     "posted_at": "2026-11-09T10:50:15+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "This role is a strong fit for the candidate. The job requires a senior fullstack architect with Java, React, and AI tooling experience, all of which the candidate possesses. The candidate's 10+ years of experience, including building products from scratch (PoCs, personal projects like REA Bot and JobHopper), directly matches the responsibility of constructing a product from zero. Their hands-on use of LLM APIs and agentic coding assistants aligns perfectly with the requirement for AI-assisted development. The full remote setup in Spain satisfies the candidate's location preferences, and the senior, non-hierarchical technical leadership role matches their mentoring and go-to-person background. The main gap is that the candidate's primary recent tool is WebRatio, a low-code platform, rather than standard Java/React fullstack, but their demonstrated skills in Java, React, and TypeScript projects show they can adapt quickly.",
+    "reasoning": "The candidate is a strong fit for this senior full-stack architect role. His 10+ years of full-stack development, Java and React skills, and active use of AI coding tools directly match the requirements. His experience building products from scratch, leading PoCs, and mentoring aligns with the responsibilities. The remote work in Spain fits his location preferences. Minor gaps include his primary expertise in WebRatio rather than standard Java/React, limited production React exposure, and basic Spanish, but these are not deal-breakers.",
     "applied_at": "2026-11-09T10:31:25.769Z",
     "first_seen": "2026-11-09T09:53:11.316Z"
   },
