@@ -252,7 +252,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 52,
+    "id": 8169,
     "external_id": "0a9e6754-087b-4c34-83ef-cb0fffe688be",
     "source": "ashby",
     "company": "Bjak",
@@ -264,8 +264,8 @@
     "description": "",
     "posted_at": "2026-11-11T03:52:50.852+00:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The posting is for an Android Developer, a mobile-native role that does not align with the candidate's 10+ years of full-stack and backend experience in Java, SQL, and enterprise platforms. The candidate's CV shows no Android or mobile development background, and their stated preferences target senior full-stack or backend positions, not mobile. While the location in Spain is compatible, the core skill mismatch and lack of interest in mobile development make this a clear non-fit.",
+    "verdict": "weak",
+    "reasoning": "This is an Android Developer role, and the candidate's CV shows no Android development experience at all — no Kotlin, no Java-for-Android, no Android SDK, no mobile app work. His Java background is enterprise backend (WebRatio, REST/SOAP, PL/SQL) and his frontend work is web (React, AngularJS, TypeScript), not mobile. The location (Spain) fits his stated target markets, but the core skill requirement is missing, making this a tangential rather than realistic fit. The posting has no description, so there is no evidence of overlap beyond generic software engineering.",
     "applied_at": null,
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
