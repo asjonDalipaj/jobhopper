@@ -1,5 +1,23 @@
 [
   {
+    "id": 8272,
+    "external_id": "744000161081245",
+    "source": "smartrecruiters",
+    "company": "Sopra Steria",
+    "title": "Senior Databricks Data Engineer",
+    "location": "Roma, Lazio, Italy",
+    "workplace_type": "Hybrid",
+    "employment_type": "Full-time",
+    "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000161081245",
+    "description": "Ai fini dell’ampliamento del nostro centro di competenza dedicato alla Data Engineering e all'Advanced Analytics, siamo alla ricerca di un/una Senior Databricks Data Engineer&#xa0; che operi come pilastro tecnico per la costruzione di architetture dati moderne. La risorsa garantirà la qualità dei processi di ingestione e trasformazione, promuovendo le best practice di sviluppo su ambienti Cloud (Azure/AWS/GCP) all'interno dei team di progetto. Sarai responsabile di progettare, sviluppare e implementare pipeline di dati scalabili e performanti, coordinando l'ottimizzazione dei carichi di lavoro in collaborazione con i Data Scientist e i Data Architect. In scenari complessi, guiderai il design dell'architettura Medallion (Bronze, Silver, Gold) e la gestione dei Delta Lake , risolvendo colli di bottiglia tecnici e garantendo la consegna di soluzioni robuste per il processamento di grandi volumi di dati (Batch e Streaming). In un contesto orientato all'innovazione tecnologica con un’impostazione Business Oriented , ti occuperai di: Sviluppo Pipeline ETL/ELT : Progettazione e implementazione di flussi di dati complessi utilizzando Apache Spark (PySpark, Spark SQL, Scala); Gestione del Data Lakehouse: Ottimizzazione delle tabelle Delta Lake e implementazione di logiche di partizionamento e indexing per massimizzare le performance di lettura/scrittura; Data Governance & Security: Configurazione della sicurezza e del controllo accessi ai dati tramite Unity Catalog , garantendo la conformità alle policy aziendali; Collaborazione Agile: Cooperazione con i Data Scientist per l'integrazione di modelli di Machine Learning (MLflow) e con i Power BI Developer per l'esposizione di set di dati ottimizzati (Gold Layer); Automazione e Monitoraggio: Implementazione di workflow tramite Databricks Jobs, integrazione con strumenti di CI/CD e monitoraggio della qualità del dato (Data Quality checks).\n\nCompetenze richieste: Apache Spark Ecosistema Hadoop Programmazione Scala e Python Esperienza nel ruolo 3-5 anni. Almeno 2 anni di esperienza su servizi e tecnologie del cloud Microsoft Azure, con competenze nella progettazione e gestione di architetture dati cloud‑native. Esperto nei processi di data ingestion sia batch che streaming, orientato alle performance e alla qualità del dato.\n\nLA NOSTRA PROPOSTA: Ti offriamo l’opportunità di lavorare in un ambiente dinamico, su progetti nazionali ed internazionali, che ti permetta di approfondire continuamente le tue conoscenze e di sviluppare le tue competenze. Se vuoi dare una spinta alla tua carriera ed entrare a far parte di una società di servizi IT leader in Europa ed in continua crescita, inviaci il tuo curriculum! Per questa posizione è prevista una RAL (retribuzione annua lorda) compresa tra € 33.000 e € 40.000. La sede di lavoro è ROMA con possibilità, compatibilmente con l'attività svolta, di aderire all’accordo di smart working secondo quanto previsto dalla nostra policy aziendale. E’ comunque richiesta la disponibilità a compiere trasferte sul territorio nazionale e internazionale. Scopri Sopra Steria! Visita il nostro sito e rimani aggiornato attraverso il blog e le pagine social https://linktr.ee/SopraSteria Il presente annuncio è rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91 e a persone di tutte le età e tutte le nazionalità, ai sensi dei decreti legislativi 215/03 e 216/03. Tutte le regole relative ai tuoi dati raccolti in questo modo sono dettagliate nell'Informativa sulla Protezione dei Dati dei Candidati (https://www.soprasteria.it/footer/protezione_dati_candidati). In conformità con la legislazione / i regolamenti vigenti in materia di tecnologia dell'informazione, documenti e libertà civili, hai diritti di accesso, rettifica, cancellazione, portabilità, limitazione, opposizione e definizione di istruzioni riguardanti la sorte dei tuoi Dati personali dopo la tua morte. Questi diritti saranno esercitati inviando un'e-mail al responsabile della protezione dei dati (DPO) all'indirizzo DPO.Italia@soprasteria.com o per posta a questo indirizzo: Sopra Steria Group S.p.A. - Ufficio legale - Strada 4 Palazzo A7 - 20090 Assago (MI). Hai anche il diritto di presentare un reclamo Garante per la Protezione dei Dati Personali (Piazza di Monte Citorio n. 121 00186 Roma), se il titolare del trattamento non rispetta gli obblighi previsti dalla legislazione in vigore.",
+    "posted_at": "2026-11-11T13:12:21.547Z",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "This is a specialist Databricks/Spark data engineering role, and the candidate's background is full-stack Java/WebRatio application development with SQL work, not big-data pipeline engineering. The posting's core requirements — Apache Spark (PySpark/Spark SQL/Scala), the Hadoop ecosystem, Delta Lake, Medallion architecture, Unity Catalog, MLflow, and at least two years of Azure cloud-native data architecture — are almost entirely absent from the CV. The candidate's Python and SQL experience and CI/CD familiarity are adjacent but do not substitute for hands-on Spark/Databricks delivery. The role is in Rome, which is within the candidate's stated target geography, and the seniority level is appropriate, but the technical domain mismatch is substantial. The listed RAL of €33,000–40,000 is also well below what a 10-year senior engineer would typically command.",
+    "applied_at": null,
+    "first_seen": "2026-11-11T13:18:09.303Z"
+  },
+  {
     "id": 8262,
     "external_id": "a24d0d99-a293-4ad5-bd72-0971af48bfe0",
     "source": "teamtailor",
@@ -342,7 +360,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 49,
+    "id": 8275,
     "external_id": "318eea5b-5b35-4f33-a6f3-4b7838d7f42f",
     "source": "ashby",
     "company": "Bjak",
@@ -354,8 +372,8 @@
     "description": "",
     "posted_at": "2026-11-11T03:53:16.214+00:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The role is for an Android Developer, which requires specific mobile development skills (Android SDK, Kotlin/Java for Android, UI/UX for mobile) that are entirely absent from the candidate's profile. The candidate has 10+ years of enterprise backend and full-stack experience with WebRatio, Java, React, and CI/CD, but no mobile or Android development background. While the location (Netherlands) and industry (fintech/insurance) align with the candidate's preferences, the core technical mismatch is too large to overcome. The candidate explicitly seeks senior full-stack or backend roles, not mobile development.",
+    "verdict": "weak",
+    "reasoning": "This is an Android Developer role at Bjak, and the candidate's profile is centered on Java/WebRatio enterprise platforms, backend integration, and full-stack web work — there is no Android or mobile development experience anywhere in the CV. The posting itself has no description, so the only signal is the title, which points to a specialist mobile engineering position rather than the senior full-stack/backend roles the candidate is targeting. The location (Netherlands) fits his constraints, and his Java background could transfer somewhat, but Android-specific skills (Kotlin, Android SDK, mobile UI, app lifecycle) are entirely absent. This is a tangential match at best and would be a significant pivot rather than a natural next step.",
     "applied_at": null,
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
