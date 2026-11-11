@@ -23,7 +23,8 @@ import { renderLetterPdf } from '../cv/letter-render.js';
 import { checkFacts } from '../cv/facts.js';
 import { loadApplicant, questionsFor } from './applicant.js';
 import { resolveAts, SUPPORTED } from './ats.js';
-import { applyGreenhouse, briefError } from './greenhouse.js';
+import { briefError, type ApplyResult } from './greenhouse.js';
+import { fillerFor } from './fillers.js';
 import { resolveBrowser } from './browser.js';
 
 export type PrepStepId = 'cv' | 'letter' | 'fill';
@@ -393,8 +394,9 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
           );
         }
 
+        const filler = fillerFor(detected);
         const launch = () =>
-          applyGreenhouse({
+          filler({
             url: job.url,
             doc,
             applicant,
@@ -417,11 +419,11 @@ async function execute(run: PrepRun, job: Job, options: PrepOptions): Promise<vo
         // A review run spends most of its life idle, waiting for the human, so it
         // must not sit in the fill queue: that would block every other fill for
         // as long as the window stays open. Headless fills stay serialised.
-        let result: Awaited<ReturnType<typeof applyGreenhouse>>;
+        let result: ApplyResult;
         if (review) {
           result = await launch();
         } else {
-          result = await new Promise<Awaited<ReturnType<typeof applyGreenhouse>>>((resolve, reject) => {
+          result = await new Promise<ApplyResult>((resolve, reject) => {
             fillQueue = fillQueue.then(async () => {
               try {
                 resolve(await launch());

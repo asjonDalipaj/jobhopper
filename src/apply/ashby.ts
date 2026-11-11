@@ -56,11 +56,12 @@ const REVIEW_TIMEOUT_MS = 15 * 60_000;
 
 async function openApplication(page: Page, url: string): Promise<void> {
   if (!/\/application\/?($|\?)/i.test(page.url())) {
-    const apply = page.getByRole('link', { name: /apply/i }).or(page.getByRole('button', { name: /apply/i })).first();
-    if (await apply.count().catch(() => 0)) {
-      await apply.click({ timeout: 8000 }).catch(() => undefined);
-      await page.waitForTimeout(1500);
-    }
+    // The Apply button is client-rendered and occasionally not hydrated when
+    // clicked, which strands the run on the posting. Ashby's application route
+    // is stable, so navigate there directly instead.
+    const target = new URL(url);
+    target.pathname = `${target.pathname.replace(/\/+$/, '')}/application`;
+    await page.goto(target.toString(), { waitUntil: 'load', timeout: 60000 });
   }
   try {
     await page.waitForSelector('#_systemfield_name', { timeout: 25000 });

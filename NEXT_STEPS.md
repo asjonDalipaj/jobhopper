@@ -1030,3 +1030,26 @@ patterns and "our client"/"recruiting for" description phrases). Direct ATS boar
 Cleaned the aggregator batch: **22 of 24 rows removed**, leaving one fair direct row (TomTom) plus the
 Grafana direct-board row that was already kept. Snapshot: **315 rows**, Italy **21**; the aggregator feed is
 now direct-employer-shaped rather than agency-shaped. Jooble still contributes 0 fresh rows.
+
+## Bug — UI auto-fill always uses the Greenhouse filler (2026-11-11)
+
+Symptom: `Apply with auto-fill` on an Ashby job (`jobs.ashbyhq.com/bjakcareer/...`) fails with
+"no application form found" even though CV and cover letter succeeded.
+
+Cause: `src/apply/prep.ts` resolves the ATS but its `launch()` closure always calls `applyGreenhouse`.
+The CLI `apply` command dispatches correctly. Greenhouse looks for `#first_name`; Ashby uses
+`#_systemfield_name`, so the form is reported missing.
+
+Fix: one `fillerFor(ats)` mapping in `src/apply/ats.ts`, used by both prep and CLI; regression test for the
+mapping; verify the live Ashby form selector.
+
+### Result — UI prep dispatch fixed (2026-11-11)
+
+Confirmed the job was open: `https://jobs.ashbyhq.com/bjakcareer/b1e73b18-...` serves the application form at
+`/application` with `#_systemfield_name`; `#first_name` (Greenhouse) does not exist. The UI prep path was
+calling `applyGreenhouse` unconditionally, so it reported "no application form found".
+
+Fixes: `src/apply/fillers.ts` provides one `fillerFor(ats)` mapping used by both `prep.ts` and the CLI;
+Ashby navigates directly to `/application` instead of relying on the occasionally-unhydrated Apply button.
+Regression test added. Live prep fill now succeeds: **7 fields filled, 2 left blank**, no submit.
+Tests: 112 passing; build green.

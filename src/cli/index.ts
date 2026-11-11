@@ -28,9 +28,7 @@ import { tailorCv } from '../cv/tailor.js';
 import { artifactStem } from '../cv/text.js';
 import { writeCoverLetter, lintLetter } from '../cv/letter.js';
 import { renderLetterPdf } from '../cv/letter-render.js';
-import { applyGreenhouse } from '../apply/greenhouse.js';
-import { applyAshby } from '../apply/ashby.js';
-import { applyLever } from '../apply/lever.js';
+import { fillerFor } from '../apply/fillers.js';
 import { loadApplicant, questionsFor } from '../apply/applicant.js';
 import { resolveAts, SUPPORTED } from '../apply/ats.js';
 import { resolveBrowser } from '../apply/browser.js';
@@ -1163,7 +1161,7 @@ program
       outDir: dir,
       askCode: submit && process.stdin.isTTY ? askVerificationCode : undefined,
     };
-    const filler = ats === 'greenhouse' ? applyGreenhouse : ats === 'ashby' ? applyAshby : applyLever;
+    const filler = fillerFor(ats);
     const result = await filler(context);
 
     console.log(pc.green('filled: ') + result.filled.join(', '));

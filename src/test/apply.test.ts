@@ -1,6 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { detectAts, resolveAts, SUPPORTED } from '../apply/ats.js';
+import { fillerFor } from '../apply/fillers.js';
+import { applyGreenhouse } from '../apply/greenhouse.js';
+import { applyAshby } from '../apply/ashby.js';
+import { applyLever } from '../apply/lever.js';
 import { salaryMarket, questionsFor, splitName } from '../apply/applicant.js';
 import { briefError, sameValue } from '../apply/greenhouse.js';
 import { descriptionHash, jobFromPayload } from '../apply/prep.js';
@@ -170,4 +174,12 @@ test('jobFromPayload caps the description before it reaches the model', () => {
   );
   assert.ok(job);
   assert.equal(job.description.length, 60_000);
+});
+
+
+test('fillerFor dispatches every supported ATS and rejects the rest', () => {
+  assert.equal(fillerFor('greenhouse'), applyGreenhouse);
+  assert.equal(fillerFor('ashby'), applyAshby);
+  assert.equal(fillerFor('lever'), applyLever);
+  assert.throws(() => fillerFor('smartrecruiters'), /no apply adapter/);
 });
