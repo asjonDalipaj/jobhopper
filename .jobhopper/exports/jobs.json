@@ -13,7 +13,7 @@
     "posted_at": "2026-11-11T13:41:00-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate is a senior full-stack engineer with Java and SQL skills, but the role demands deep expertise in vector search algorithms (HNSW, IVF) and search/vector database internals, which the candidate's CV does not show. While the candidate has used LLM APIs and built AI-assisted projects, the job requires professional experience with search platforms at scale and novel vector similarity techniques—a gap not covered by general Java or CI/CD experience. The location (Spain) and seniority level match, but the core technical requirements are a significant stretch.",
+    "reasoning": "The role requires deep expertise in vector search algorithms (HNSW, IVF) and search platform engineering at scale, which the candidate's CV does not demonstrate. While the candidate has strong Java skills, CI/CD experience, and has used LLM APIs, these are not directly applicable to the core responsibilities of building and optimizing vector similarity search in Elasticsearch. The candidate's background is in enterprise integration and model-driven development, not in search or information retrieval. The location (Spain) and seniority level match, but the technical fit is too distant for a strong or fair verdict.",
     "applied_at": null,
     "first_seen": "2026-09-10T20:07:01-04:00"
   },
@@ -121,7 +121,7 @@
     "posted_at": "2026-11-11T16:29:22+01:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a dedicated DevOps Engineer with heavy emphasis on Kubernetes, OpenShift, Helm, Argo CD, Ansible, and Docker — skills the candidate does not list. While the candidate has strong CI/CD experience with Azure DevOps and a solid software engineering background, the core infrastructure automation and container orchestration requirements are missing. The location (Madrid) and seniority level are compatible, but the technical focus is a significant stretch from the candidate's full-stack and integration profile.",
+    "reasoning": "The role is a dedicated DevOps Engineer focused on Kubernetes, OpenShift, CI/CD, and infrastructure automation, while the candidate's 10-year background is primarily in full-stack software engineering with a strong emphasis on model-driven development (WebRatio), Java, and SQL. Although the candidate has hands-on CI/CD pipeline ownership (Azure DevOps) and some Docker/container exposure, the posting demands deep, specialized expertise in Kubernetes, Helm, Argo CD, Ansible, and Linux administration that the candidate's profile does not demonstrate. The candidate's strengths in fintech, product ownership, and AI tooling are not relevant to this role. The location (Madrid, hybrid) is acceptable, but the core skill mismatch makes this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
@@ -139,7 +139,7 @@
     "posted_at": "2026-11-11T16:24:07+01:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The candidate is a senior full-stack software engineer with a strong background in enterprise platforms, integration, and AI-assisted development, but this role is a dedicated cybersecurity engineering position requiring deep hands-on experience with SIEM, EDR, cloud security, and security automation tools. The candidate's CV shows no direct experience in security operations, threat hunting, or managing security-specific technologies like Sentinel, CrowdStrike, or vulnerability management. While the candidate has Python and CI/CD skills, these are not sufficient to bridge the gap into a specialized cybersecurity role. Additionally, the candidate's stated interest in fintech, product engineering, and technical ownership does not align with this security-focused position.",
+    "reasoning": "The role is a dedicated Cybersecurity Senior Engineer requiring deep hands-on experience with SIEM, EDR, IDS/IPS, vulnerability management, and security frameworks. The candidate's entire career is in software engineering and enterprise platform delivery, with no mention of security operations, threat hunting, or security tooling. While the candidate has strong DevOps and automation skills, the core cybersecurity domain expertise is absent. The role also explicitly asks for 5+ years in cybersecurity engineering, which the candidate does not have. This is a fundamental domain mismatch, not a stretch.",
     "applied_at": null,
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
@@ -157,7 +157,7 @@
     "posted_at": "2026-11-11T10:15:51-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a Senior Site Reliability Engineer focused on service mesh, networking, and cloud infrastructure (AWS, Kubernetes, Istio, Terraform, Vault, Consul). The candidate has strong software engineering and DevOps experience (CI/CD, Git, some cloud exposure) but lacks the core SRE and infrastructure skills required: no production AWS experience, no Kubernetes or container orchestration, no service mesh (Istio), no Terraform, Vault, or Consul. The candidate's background is in full-stack development and platform integration with WebRatio, Java, and SQL, not in deep systems/infrastructure engineering. While the candidate has some Python and CI/CD skills, the gap in the primary technical stack is too wide for a senior SRE role. The location (Berlin/Barcelona) is compatible with the candidate's EU preferences, but the role is a poor fit for their expertise and career trajectory.",
+    "reasoning": "The candidate's background as a senior full-stack engineer with DevOps experience is tangentially relevant, but this role is a specialized SRE position focused on service mesh, networking, and infrastructure. He lacks production experience with AWS, Kubernetes, Istio, Terraform, Vault, and Consul, which are core requirements. While he has Python and CI/CD skills, the gap in infrastructure and SRE-specific expertise is significant. The fintech domain and seniority level are positive, but the technical mismatch makes this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
@@ -175,7 +175,7 @@
     "posted_at": "2026-11-11T15:46:26+01:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a .NET developer position in Madrid, which conflicts with the candidate's location preference for the Netherlands, Italy, or Spain (Madrid is in Spain, but the candidate is based in Utrecht and the role is hybrid in Madrid, requiring relocation). The candidate's primary stack is Java, WebRatio, and Python, with no professional .NET or C# experience, which is a core requirement. While the candidate has strong CI/CD, DevOps, and mentoring skills that partially align, the technology mismatch and location constraint make this a weak fit. The candidate's explicit constraint against US roles is not violated, but the lack of .NET experience and the need to relocate to Madrid are significant gaps.",
+    "reasoning": "The role is a .NET developer position in Madrid, which matches the candidate's openness to Spain and hybrid work. However, the candidate's entire 10-year career is in Java, WebRatio, and Python, with no mention of C# or .NET. The job requires 4+ years of C# and .NET experience, which the candidate lacks. While the candidate has strong CI/CD, SQL, and mentoring skills that partially overlap, the core technology stack is a mismatch. The candidate's seniority and fintech background are relevant, but the .NET requirement is a significant gap that makes this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
@@ -192,8 +192,8 @@
     "description": "We are knowmad mood! Somos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento. Formado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto. Los valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza. ¿Qué es lo que valoramos? • Experiencia de 4+ años en desarrollo C# y .NET. • Conocimientos en ASP.NET Core / ASP.NET (MVC, WebAPI) y API REST / servicios SOAP / microservicios . • Experiencia con bases de datos relacionales (Microsoft SQL Server, PostgreSQL) y NoSQL (MongoDB, Redis). • Manejo de JSON, XML y buenas prácticas de código escalable y mantenible . • Aplicación de patrones de diseño (DDD, SOLID) y estándares de la industria. • Experiencia con pruebas unitarias e integración, cobertura de código y mocking . • Experiencia en control de versiones (Git) y herramientas de CI/CD . • Capacidad de aprendizaje continuo , colaboración en equipo y mentoría. • Experiencia trabajando con metodologías ágiles y responsabilidad sobre servicios durante todo su ciclo de vida ¿Cuáles serían tus funciones? • Diseñar, desarrollar y mantener aplicaciones web en .NET. • Colaborar con equipos de desarrolladores, arquitectos, DevOps y negocio. • Proponer e implementar soluciones técnicas a problemas complejos y optimizar soluciones existentes. • Aplicar buenas prácticas de escalabilidad, estabilidad, calidad y responsabilidad. • Mentorizar a compañeros menos experimentados y aportar ideas de mejora en productos y servicios. • Participar activamente en proyectos con arquitecturas variadas, adaptando soluciones a cada caso. ✅ Modalidad híbrida: oficinas en Sevilla ✅ Horario: L-J 08:00–14:00 / 15:00–17:30; V 08:00–14:00 ✅ No hay jornada intensiva de verano En knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección. Para estar al corriente de nuestras novedades síguenos aquí -> knowmad mood",
     "posted_at": "2026-11-11T15:43:16+01:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The role is a .NET developer position in Seville, Spain, which matches the candidate's preference for Spain and hybrid work. However, the candidate's entire 10-year career is built on Java, WebRatio, and frontend technologies like React and AngularJS, with no professional experience in C# or .NET. While the candidate has strong CI/CD, SQL, and mentoring skills that partially overlap, the core .NET requirement is a significant gap that would require a major technology shift. The role is also mid-level (4+ years), which is below the candidate's senior profile, though not a hard constraint violation. Overall, the fit is weak due to the mismatch in primary tech stack.",
+    "verdict": "no",
+    "reasoning": "The role requires 4+ years of C# and .NET development, but the candidate's entire 10-year career is in Java, WebRatio, and Python with no .NET experience. The location is hybrid in Seville, Spain, which is not one of the candidate's target locations (Netherlands, Italy, Spain is listed, but Seville is far from the candidate's base in Utrecht and the role is hybrid, not remote). The candidate's strong Java/SQL/fintech background does not align with the .NET stack, and the mismatch in core technology is a hard gap. Additionally, the candidate's preference for senior full-stack or backend roles is met in seniority, but the technology and location constraints make this a poor fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
@@ -211,7 +211,7 @@
     "posted_at": "2026-11-11T15:36:54+01:00",
     "tags": null,
     "verdict": "fair",
-    "reasoning": "The candidate's 10-year track record in Java, technical leadership, and recent hands-on work with LLM APIs and agentic tools aligns well with the core requirements. However, the role demands several years of dedicated AI leadership in an enterprise context, which his CV does not demonstrate beyond personal projects and tooling experiments. His pre-sales experience is limited to internal demos and PoCs, not client-facing proposal defense. Additionally, while the job is remote, it is based in Spain and requires Spanish fluency for client interaction; his basic Spanish may be a barrier. Overall, it is a fair stretch that could be pursued with targeted preparation, but not a strong fit.",
+    "reasoning": "The candidate has 10+ years of software engineering experience, strong Java and enterprise architecture background, and recent hands-on work with LLM APIs and agentic coding tools, which aligns well with the AI leadership focus of this role. However, the job explicitly requires experience as a Technical Lead or Software Architect leading AI initiatives, while the candidate's leadership has been more as a senior individual contributor and mentor within a single team, not as an architect defining company-wide AI strategy. The location is Madrid, which is acceptable given the candidate's openness to Spain and remote work, and the role is senior-level, meeting the constraint against junior roles. The main gaps are the lack of formal architecture and pre-sales experience, and the need to demonstrate leadership of multi-disciplinary AI teams at scale.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
@@ -229,7 +229,7 @@
     "posted_at": "2026-11-11T15:35:43+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate's 10+ years of experience in software engineering, strong Java and SQL background, and recent hands-on work with LLM APIs and agentic coding tools align directly with the role's requirements for generative AI architecture and software engineering. Their experience in customer-facing delivery, proof-of-concept leadership, and technical pre-sales at Rabobank matches the pre-sales and consulting responsibilities. The role is 100% remote in Spain, which fits the candidate's openness to Spain and remote EU work. The only minor gaps are the lack of explicit cloud platform certifications and enterprise architecture frameworks like TOGAF, but these are valued rather than required, and the candidate's practical cloud and integration experience compensates.",
+    "reasoning": "The role is a strong match for the candidate's seniority, technical stack, and career interests. As a Generative AI Architect, it leverages his 10+ years of software engineering experience, deep Java and backend skills, and proven hands-on work with LLM APIs and agentic coding tools (e.g., REA Bot, JobHopper). His background in enterprise integration, CI/CD, and customer-facing delivery at Rabobank aligns well with the architectural and pre-sales responsibilities. The role is fully remote in Spain, which fits his location preferences, and it is a senior position, satisfying his hard constraints. The only minor gaps are the lack of formal cloud certifications and explicit microservices architecture experience, but his practical experience and adaptability make this a very close fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
@@ -283,7 +283,7 @@
     "posted_at": "2026-11-11T14:56:33+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate has 10+ years of software engineering experience, including architecture-level responsibilities and direct client interaction, which aligns well with the Software Architect & AI role. Their hands-on work with LLM APIs, agentic coding tools, and AI-assisted development projects (REA Bot, JobHopper) directly matches the AI Gen focus. The role is 100% remote in Spain, and the candidate is open to Spain and remote EU positions, satisfying location constraints. The candidate's background in fintech, DevOps, and mentoring further supports the technical leadership and client advisory aspects. The only minor gap is the lack of explicit experience in delivering AI training or formal architectural assessments, but their project and consulting experience compensates.",
+    "reasoning": "The candidate has over 10 years of software engineering experience, including architecture, client-facing delivery, and hands-on work with LLM APIs and agentic coding tools—directly matching the AI-focused architect role. Their background in enterprise platforms, CI/CD, and mentoring aligns with the responsibilities of leading technical services and training. The role is 100% remote in Spain, which fits the candidate's openness to Spain and remote EU work. The only minor gap is the lack of explicit 'software architect' title, but their experience leading proofs-of-concept and technical discussions compensates for this.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
@@ -319,7 +319,7 @@
     "posted_at": "2026-11-11T14:53:06+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate has 10+ years of software engineering experience, strong architecture and delivery background, and explicit hands-on work with LLM APIs and agentic coding tools, which directly matches the AI and software architect role. Their experience leading proof-of-concepts, stakeholder demos, and mentoring aligns with the customer-facing and training aspects of the job. The role is 100% remote in Spain, which fits the candidate's openness to Spain and remote EU work. The candidate's fintech background and end-to-end ownership of projects are strong matches, and there are no hard constraint violations. The only minor gap is that the candidate's architecture experience is more as a senior engineer than a dedicated architect, but the breadth of their work compensates.",
+    "reasoning": "The candidate has 10+ years of software engineering experience, including architecture, customer-facing delivery, and hands-on work with LLM APIs and agentic coding tools—directly matching the AI Architect role's core requirements. Their background in fintech, CI/CD, and mentoring aligns with the need for a technical lead who can advise clients and train teams. The role is 100% remote in Spain, which fits the candidate's openness to Spain and remote EU work. The only minor gap is the lack of explicit experience in formal training delivery, but the candidate's mentoring and demo experience strongly compensates.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
@@ -337,7 +337,7 @@
     "posted_at": "2026-11-11T14:50:54+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate's 10+ years of software engineering experience, including architecture, CI/CD, and customer-facing delivery, align well with the Tech Lead IA role. Their hands-on work with LLM APIs, agentic coding tools, and projects like REA Bot and JobHopper directly match the GenAI focus. The role is 100% remote in Spain, which fits the candidate's preference for Spain and remote work. The candidate's background in fintech and enterprise platforms at Rabobank demonstrates the ability to lead complex technical projects and engage with stakeholders, meeting the requirements for technical leadership, pre-sales, and training. The only minor gap is the lack of explicit microservices and cloud architecture experience, but their broad backend and DevOps skills make this a strong fit.",
+    "reasoning": "The candidate has 10+ years of software engineering experience, including architecture, delivery, and client-facing work, which aligns well with the Tech Lead IA role. They have hands-on experience with LLM APIs and agentic coding tools, directly matching the GenAI requirement. Their background in fintech, CI/CD, and mentoring fits the leadership and technical ownership aspects. The role is 100% remote in Spain, which matches their openness to Spain and remote EU work. The only minor gaps are the lack of explicit microservices/cloud architecture experience and formal training delivery, but these are stretchable given their seniority and project work.",
     "applied_at": null,
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
@@ -355,7 +355,7 @@
     "posted_at": "2026-11-11T14:28:45+01:00",
     "tags": null,
     "verdict": "strong",
-    "reasoning": "The candidate has over 10 years of software engineering experience, including architecture, CI/CD, and customer-facing delivery, which aligns well with the Tech Lead IA role. Their recent hands-on work with LLM APIs, agentic coding tools, and projects like REA Bot and JobHopper demonstrate direct experience with Generative AI applied to software development. The role is 100% remote in Spain, which matches their openness to Spain and remote EU work. The candidate's background in fintech and enterprise platforms at Rabobank provides the architectural and business solution experience required. The only minor gap is the lack of explicit experience in delivering formal training, which is listed as 'very valuable' but not mandatory.",
+    "reasoning": "The candidate has 10+ years of software engineering experience, strong architecture and delivery background, and explicit hands-on experience with LLM APIs and agentic coding tools—directly matching the GenAI focus of this role. Their consulting background at Rabobank includes leading proofs-of-concept, stakeholder demos, and technical discussions, which aligns with the pre-sales and client-facing responsibilities. The role is 100% remote in Spain, and the candidate is open to Spain and remote EU work. The only minor gap is that the job asks for 'arquitecto/a de software' experience, and while the candidate has led technical design and architecture decisions, they may not have held a formal architect title; however, their seniority and breadth cover this well. No hard constraints are violated.",
     "applied_at": null,
     "first_seen": "2026-11-11T13:33:25.145Z"
   },
@@ -373,7 +373,7 @@
     "posted_at": "2026-11-11T14:25:40+01:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a frontend React Native developer focused on SmartTV applications, which is a significant departure from the candidate's backend-heavy, enterprise platform and integration background. While the candidate has some frontend experience (React, TypeScript), they have no demonstrated experience with React Native, SmartTV platforms, or multimedia streaming. The job also mentions low-code/no-code with PowerPlatform, which is not in the candidate's skill set. The candidate's strengths in Java, SQL, CI/CD, and fintech are not directly relevant. The location (Madrid) and remote work are compatible, but the role is a mismatch in seniority and focus.",
+    "reasoning": "The role is a frontend React Native developer focused on SmartTV and entertainment applications, which diverges significantly from the candidate's backend-heavy, enterprise fintech profile. The candidate has strong React and TypeScript skills but no React Native or SmartTV experience, and their career trajectory is toward AI-assisted development and product ownership, not mobile or TV UI. The location (Madrid) and remote option are compatible, and the seniority level matches, but the core technical focus and industry are mismatched. The candidate would need to stretch into a new domain without leveraging their main strengths in Java, SQL, and platform integration.",
     "applied_at": null,
     "first_seen": "2026-11-11T13:33:25.145Z"
   },
@@ -391,7 +391,7 @@
     "posted_at": "2026-11-11T13:12:21.547Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is a Senior Databricks Data Engineer requiring deep expertise in Apache Spark, Scala, PySpark, Azure cloud data services, and data lakehouse architecture. The candidate's 10-year background is in full-stack enterprise software engineering with Java, SQL, WebRatio, and CI/CD, but has no demonstrated experience with Databricks, Spark, Scala, or cloud-native data engineering pipelines. The salary range (€33k-€40k) is far below a senior engineer's market rate in the Netherlands or Italy, and the role is based in Rome with travel requirements, which does not match the candidate's preference for remote or hybrid work in Utrecht or other specified locations. This role is a mismatch in domain, required skills, seniority level, and compensation.",
+    "reasoning": "The role is a Senior Databricks Data Engineer requiring deep expertise in Apache Spark, Scala, PySpark, and cloud-native data architectures on Azure, with a strong focus on ETL/ELT pipelines, Delta Lake, and Unity Catalog. The candidate's background is in full-stack enterprise software engineering with Java, SQL, WebRatio, and CI/CD, but they have no demonstrated experience with Databricks, Spark, Scala, or modern data engineering pipelines. The offered salary range (€33k-€40k) is well below a senior-level market rate and likely violates the candidate's seniority expectations. Additionally, the role is based in Rome with required national/international travel, which does not align with the candidate's preference for the Netherlands, Italy, or Spain with remote flexibility.",
     "applied_at": null,
     "first_seen": "2026-11-11T13:18:09.303Z"
   },
@@ -409,7 +409,7 @@
     "posted_at": "2026-11-11T13:42:56+01:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This role is a functional consultant focused on mobile app configuration, testing, and project coordination for a leisure park operator. The candidate is a senior full-stack engineer with deep backend and integration experience, not a functional/mobile specialist. The job requires hands-on mobile app configuration and functional analysis, which the candidate's profile does not demonstrate. Additionally, the role is a short-term freelance project in Madrid, while the candidate is based in the Netherlands and prefers roles in fintech or product engineering, not leisure or functional consulting. The mismatch in role type, domain, and required expertise is clear.",
+    "reasoning": "The role is a functional mobile consultant focused on configuring, testing, and validating a mobile app for an entertainment park pilot. The candidate's entire career is in backend-heavy enterprise software engineering, primarily with WebRatio, Java, and SQL, with no mobile app experience. The job requires hands-on functional configuration and testing of iOS/Android apps, which is completely outside the candidate's skill set. Additionally, the role is based in Madrid and the candidate is in the Netherlands, with no indication of willingness to relocate to Spain for a short-term freelance project. This posting violates the candidate's explicit constraint against junior roles and does not match their senior engineering profile.",
     "applied_at": null,
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
@@ -445,7 +445,7 @@
     "posted_at": "2026-11-11T13:40:17+01:00",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is a QA Lead, which is a quality assurance and testing leadership position, while the candidate is a senior full-stack software engineer with a strong focus on backend development, integration, and AI-assisted coding. The candidate's CV shows no experience in QA leadership, test automation frameworks like Selenium or JUnit, or ISTQB certification. Additionally, the job requires hybrid presence in Madrid, which the candidate is open to, but the fundamental mismatch in role type and required expertise makes this a poor fit. The candidate's explicit preference for senior full-stack or backend engineering roles further confirms this is not aligned.",
+    "reasoning": "The role is a QA Lead, which is a quality assurance and testing leadership position, while the candidate is a senior full-stack/backend software engineer with no QA or testing leadership experience. The candidate's background is in building and delivering software, not in defining test strategies, coordinating QA teams, or using tools like Selenium, JUnit, or Postman for testing. The role requires an ISTQB certification and a focus on manual and automated testing, which are not present in the candidate's profile. Additionally, the role requires hybrid presence in Madrid, which is not a constraint violation but the role itself is a poor fit for the candidate's career trajectory and skills.",
     "applied_at": null,
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
@@ -481,7 +481,7 @@
     "posted_at": "2026-11-11T07:33:58-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate is a senior full-stack engineer with strong Java, SQL, and CI/CD skills, but this role is a dedicated Site Reliability Engineer position focused on data platform infrastructure, cloud (AWS), containers (Docker/Kubernetes), and infrastructure-as-code (Terraform). The candidate's experience is primarily in enterprise application development and model-driven development (WebRatio), with no demonstrated hands-on SRE, cloud infrastructure, or container orchestration experience. While they have some relevant skills (CI/CD, Python, SQL, communication), the core requirements of the role are a significant stretch. The location (Barcelona or Berlin) is compatible with the candidate's preference for Spain or remote EU, but the role's focus on SRE and data platform engineering does not align well with the candidate's stated interest in full-stack/backend product engineering and AI-assisted development.",
+    "reasoning": "The candidate's fintech background and strong SQL/CI-CD skills partially align with N26's SRE role, but the job demands deep hands-on experience with AWS, Kubernetes, Terraform, and observability tools that are absent from his CV. His career has been in application development and model-driven tools, not infrastructure/SRE, making this a significant stretch. While he could potentially learn, the gap is too large for a senior SRE position requiring immediate operational expertise.",
     "applied_at": null,
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
@@ -498,8 +498,8 @@
     "description": "",
     "posted_at": "2026-11-11T12:21:33.234+00:00",
     "tags": null,
-    "verdict": "fair",
-    "reasoning": "",
+    "verdict": "no",
+    "reasoning": "The role is a Systems and Software Verification Technician, which is a junior or entry-level position. The candidate explicitly excludes junior, internship, or entry-level roles. Additionally, the candidate's senior software engineering background with 10+ years of experience in full-stack development, fintech, and AI tooling does not align with a technician-level verification role. The location in Valencia is acceptable, but the seniority mismatch is a hard constraint violation.",
     "applied_at": null,
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
@@ -553,7 +553,7 @@
     "posted_at": "2026-11-11T09:03:09.957Z",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a Data Engineer position focused on Hadoop, Spark, Scala, and cloud infrastructure migration, which diverges significantly from the candidate's 10-year background as a full-stack software engineer specializing in WebRatio, Java, and frontend technologies. While the candidate has strong SQL and CI/CD skills, they lack experience with Scala, Spark, Hadoop, Airflow, and Kubernetes, which are core to this job. The mention of Gen AI prompts is a minor overlap with their AI tooling interest, but the overall technical stack mismatch makes this a stretch. The location in Madrid is acceptable, but the role's data engineering focus does not align with the candidate's preference for senior full-stack or backend engineering roles.",
+    "reasoning": "The role is a data engineering position requiring deep expertise in Hadoop, Spark, Scala, and cloud migration, which the candidate does not possess. While the candidate has strong SQL, CI/CD, and fintech domain knowledge, the core technical stack is a mismatch. The candidate's background is in full-stack software engineering, not data engineering, and the Gen AI prompts requirement is only a minor overlap. The location in Madrid fits the candidate's geographic preferences, but the role type and required skills are not aligned with the candidate's experience and career direction.",
     "applied_at": null,
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
@@ -607,7 +607,7 @@
     "posted_at": "2026-11-11T03:54:24-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The role is a Senior QA Automation Engineer focused on testing strategy, automation frameworks, and quality ownership. While the candidate has strong backend and CI/CD experience, their career has been in software engineering and delivery, not dedicated QA or test automation. They lack hands-on experience with automated testing frameworks, API validation, and test design techniques that are core to this role. The location (Valencia, Spain) and seniority level match, but the core responsibilities are a significant pivot from their profile.",
+    "reasoning": "The role is a Senior QA Automation Engineer, which is a significant departure from the candidate's career as a full-stack/backend software engineer. While the candidate has strong Java, SQL, and CI/CD skills that are relevant, they lack explicit QA automation experience, test framework expertise, and a track record in quality assurance roles. The candidate's stated interests in product engineering, technical ownership, and AI-assisted development do not align with a QA-focused position. The location in Valencia, Spain is a positive match, and the seniority level fits, but the core responsibilities and required background are a stretch for this candidate.",
     "applied_at": null,
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
@@ -786,8 +786,8 @@
     "description": "",
     "posted_at": "2026-11-11T04:01:56.656+00:00",
     "tags": null,
-    "verdict": "fair",
-    "reasoning": "",
+    "verdict": "no",
+    "reasoning": "The posting is for an Android Software Engineer, a mobile development role that requires specific Android platform expertise (Kotlin/Java, Android SDK, UI/UX patterns). The candidate's entire 10-year career is in enterprise backend and full-stack web development using Java, WebRatio, React, and SQL, with no mention of Android or mobile experience. While the location (Spain) and seniority level are compatible, the core skill set is a complete mismatch. The candidate explicitly prefers full-stack or backend roles, not mobile. Therefore, this role does not fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
@@ -822,8 +822,8 @@
     "description": "",
     "posted_at": "2026-11-11T03:58:15.497+00:00",
     "tags": null,
-    "verdict": "no",
-    "reasoning": "The role is for an Android Software Engineer, which requires native Android development skills (e.g., Kotlin/Java for Android, Android SDK, UI frameworks). The candidate has no Android experience whatsoever; their entire career is in web and enterprise backend/frontend development. While the AI Finance Agent theme aligns with their interest in AI and fintech, the platform mismatch is fundamental and cannot be bridged. The candidate's explicit constraints are not violated, but the role is unrelated to their core expertise.",
+    "verdict": "weak",
+    "reasoning": "The role is for an Android Software Engineer focused on an AI Finance Agent, which aligns with the candidate's interest in AI and fintech. However, the candidate's entire 10-year career is in web and backend development (Java, React, CI/CD) with no Android or mobile experience. While the candidate is senior and could potentially learn, the job's core requirement is Android native development, which is a significant gap. The location (Spain) and AI/finance angle are positive, but the technical mismatch makes this a weak fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
@@ -858,8 +858,8 @@
     "description": "",
     "posted_at": "2026-11-11T03:52:50.852+00:00",
     "tags": null,
-    "verdict": "fair",
-    "reasoning": "",
+    "verdict": "no",
+    "reasoning": "The role is for an Android Developer, which requires mobile development skills (Android SDK, Kotlin/Java for Android) that the candidate does not possess. The candidate's entire 10-year career is in web and backend development (Java, React, WebRatio, CI/CD) with no mobile experience. The candidate explicitly seeks senior full-stack or backend roles, not mobile. While the location in Spain is acceptable, the core specialization mismatch makes this a poor fit.",
     "applied_at": null,
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
@@ -1525,7 +1525,7 @@
     "posted_at": "2026-11-10T13:43:25-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The candidate has strong senior full-stack and backend experience, but the job requires expertise in Golang, C++, or Ruby for large-scale distributed systems, which the candidate lacks. The candidate's background is in Java, WebRatio, and enterprise integration, not in the core languages or OT/IoT cybersecurity domain. While the candidate has technical leadership and mentoring experience, the mismatch in required languages and domain is significant. The location (Italy) and seniority level are a fit, but the technical gaps make this a stretch.",
+    "reasoning": "The role requires extensive experience with large-scale distributed systems and strong expertise in Golang, C++, or Ruby. The candidate's background is in enterprise Java, WebRatio, and fintech, with no demonstrated experience in OT/IoT cybersecurity or the required core languages. While the candidate has strong technical leadership, DevOps, and mentoring skills, the language and domain gaps are significant. The role is also in Italy/Switzerland, which fits location preferences, but the technical mismatch makes it a stretch.",
     "applied_at": null,
     "first_seen": "2026-11-03T13:25:23.206Z"
   },
@@ -1543,7 +1543,7 @@
     "posted_at": "2026-11-10T13:43:25-05:00",
     "tags": null,
     "verdict": "weak",
-    "reasoning": "The job requires proven extensive experience in Ruby, Golang, or C++, none of which appear in the candidate's CV (their backend expertise is Java and Python). While the candidate's TypeScript/React and PostgreSQL skills are listed as 'highly valuable', the primary language requirement is a hard mismatch. The role is in OT/IoT cybersecurity, a domain completely absent from the candidate's fintech background. The candidate's seniority, location (Italy), and full-stack profile are positive, but the core technical requirement is a significant gap.",
+    "reasoning": "The role is in Italy and matches the candidate's location preference, and the senior full-stack description aligns with his experience. However, the required primary languages are Ruby, Golang, or C++, none of which appear in his CV; his core stack is Java, WebRatio, and Python. While JavaScript/TypeScript and React are valued, and he has those, the job's cybersecurity domain (OT/IoT) is a significant departure from his fintech background. The candidate's strengths in DevOps, CI/CD, and mentoring are relevant, but the language mismatch and domain shift make this a stretch.",
     "applied_at": null,
     "first_seen": "2026-11-03T13:25:23.206Z"
   },
@@ -1632,8 +1632,8 @@
     "description": "",
     "posted_at": "2026-11-10T15:25:45.848+00:00",
     "tags": null,
-    "verdict": "weak",
-    "reasoning": "The role is a Platform Engineer II focused on infrastructure governance, which leans heavily toward platform engineering, cloud infrastructure, and governance policies. The candidate's background is in full-stack and backend development with a strong fintech and enterprise integration focus, but lacks explicit experience in infrastructure governance, cloud platforms (e.g., AWS, GCP, Kubernetes), or policy-as-code. While the location in Milan matches a preference, the seniority level (Engineer II) may be below the candidate's senior profile, and the core responsibilities do not align with their stated interest in AI-assisted development and product ownership. The job description is sparse, but the title and company suggest a role that would require skills the candidate does not prominently demonstrate.",
+    "verdict": "no",
+    "reasoning": "The job posting is essentially empty — it provides no title, description, or requirements beyond the company name and location. Without any information about the role, it is impossible to evaluate a match. The candidate's explicit constraints and preferences cannot be assessed against a blank posting. Therefore, the only honest verdict is 'no'.",
     "applied_at": null,
     "first_seen": "2026-10-14T14:15:35.796Z"
   },
@@ -2425,7 +2425,7 @@
     "posted_at": "2026-11-09T09:55:01.980Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "The role is a junior-to-mid-level analyst position with a salary band (€35k–€43k) that is far below what a senior engineer with 10+ years of experience would expect, and the responsibilities are heavily focused on requirements gathering, process mapping, and project coordination rather than hands-on software engineering. The candidate's profile is senior full-stack/backend engineering with deep technical ownership, not a business analyst or project specialist. While the location (Reggio Emilia, Italy) matches the candidate's openness to Italy, the seniority mismatch and salary gap are dealbreakers.",
+    "reasoning": "The role is titled 'Software Analyst & Project Specialist' with a heavy emphasis on requirements gathering, process mapping, UAT coordination, and documentation — it is a business analyst / project management position, not a senior software engineering role. The candidate has 10+ years of hands-on development experience and explicitly seeks senior full-stack or backend engineering roles. The offered salary range (€35k–€43k) is far below what a senior engineer with a decade of experience would expect, and the role is on-site in Reggio Emilia, Italy, which does not match the candidate's preference for remote or hybrid work. While the candidate's fintech background and stakeholder-facing skills are tangentially relevant, the core responsibilities and compensation violate the candidate's explicit constraints and career direction.",
     "applied_at": null,
     "first_seen": "2026-11-09T10:08:05.500Z"
   },
