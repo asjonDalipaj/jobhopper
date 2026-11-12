@@ -1053,3 +1053,29 @@ Fixes: `src/apply/fillers.ts` provides one `fillerFor(ats)` mapping used by both
 Ashby navigates directly to `/application` instead of relying on the occasionally-unhydrated Apply button.
 Regression test added. Live prep fill now succeeds: **7 fields filled, 2 left blank**, no submit.
 Tests: 112 passing; build green.
+
+## Plan — profile doctor (2026-11-12)
+
+State: tailoring reads `profile/cv.json`, the judge reads `profile/cv.txt` + preferences/constraints/background,
+and auto-fill reads `profile/applicant.json`. Manual edits drift (e.g. `cv.json` omits remote EU while
+`cv.txt`/`preferences.md` include it).
+
+1. Add a pure profile analyzer: CV JSON validity, cv.txt/contact/headline drift, location-line drift, target
+   market drift, applicant preferred location/salary markets, and consent.
+2. Add `jobhopper profile doctor` with `--strict` for CI.
+3. Tests for consistent and drifted snapshots; README command entry.
+
+Acceptance: doctor reports the current remote-EU drift and consent warning; consistent fixtures pass; gates green.
+
+### Result — profile doctor (2026-11-12)
+
+Added `jobhopper profile doctor` (`--strict` for CI). On the current profile it reports:
+
+- `cv.json` vs `cv.txt`: **Remote EU only in cv.txt**
+- `cv.json` vs `preferences.md`: **Remote EU only in preferences**
+- `applicant.json` consentRetention is true, so auto-fill ticks the retention/marketing consent box
+- CV JSON, contact details, target salary markets and preferred location otherwise pass
+
+Files to fix: `.jobhopper/profile/cv.json:4` (add `remote EU`) and
+`.jobhopper/profile/applicant.json:7` (set `consentRetention` to false if you do not want auto-consent).
+Tests: 117 passing; build green.

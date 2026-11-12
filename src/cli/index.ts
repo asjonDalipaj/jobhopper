@@ -12,6 +12,7 @@ import { readFileSync, existsSync, writeFileSync, mkdirSync, statSync } from 'no
 import { join, dirname, resolve } from 'node:path';
 import { getPaths, ensureDirs } from '../storage/paths.js';
 import { importCvPdf, readCvText, readProfileDoc, writeProfileDoc, profileFiles } from '../profile/cv.js';
+import { inspectProfile } from '../profile/doctor.js';
 import { judgePosting } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
@@ -286,6 +287,26 @@ profile
     }
     console.log(`\n${pc.bold('CV')} (${cv.length} chars):`);
     console.log(dim(cv.slice(0, 600)) + (cv.length > 600 ? pc.dim('\n…') : ''));
+  });
+
+profile
+  .command('doctor')
+  .description('Check cv.json, cv.txt, preferences, constraints, background and applicant.json for drift')
+  .option('--strict', 'exit non-zero when warnings are present')
+  .action((opts: { strict?: boolean }) => {
+    const findings = inspectProfile();
+    console.log(pc.bold('Profile doctor'));
+    for (const finding of findings) {
+      const icon =
+        finding.level === 'error' ? pc.red('✗') : finding.level === 'warn' ? pc.yellow('⚠') : pc.green('✓');
+      console.log(`${icon} ${finding.message}`);
+      if (finding.detail) console.log(dim(`   ${finding.detail}`));
+    }
+    const errors = findings.filter((finding) => finding.level === 'error').length;
+    const warnings = findings.filter((finding) => finding.level === 'warn').length;
+    if (!errors && !warnings) console.log(pc.green('\nNo drift found.'));
+    else console.log(dim(`\n${errors} error(s), ${warnings} warning(s).`));
+    if (errors || (opts.strict && warnings)) process.exitCode = 1;
   });
 
 profile
@@ -920,6 +941,7 @@ Commands:
   config set-deepseek-model <id>     set DeepSeek full-judgment model
   config set-deepseek-quick-model <id> set DeepSeek quick-judgment model
   config show                        show config (keys masked)
+  profile doctor                     check profile consistency
   profile import-cv <pdf>            extract CV text locally from a PDF
   profile set <name> [file]          set a profile doc (preferences/constraints/background)
   profile show / get <name>          view stored profile docs
