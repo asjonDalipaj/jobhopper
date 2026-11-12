@@ -112,6 +112,7 @@ config set-model <id>              set full-judgment model
 config set-quick-model <id>        set quick-judgment model
 config show / list-models          show config / model presets
 
+profile doctor [--strict]          check profile consistency
 profile import-cv <pdf>            extract CV text locally
 profile set <name> [file]          set preferences/constraints/background
 profile show / get <name>          view stored profile docs
