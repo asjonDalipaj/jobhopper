@@ -1,6 +1,78 @@
 [
   {
-    "id": 19,
+    "id": 8,
+    "external_id": "8002425",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Forward Deployed Engineer",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8002425",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h3><strong>Senior Forward Deployed Engineer</strong></h3> <p>Adyen’s Business Enablement Engineering Team is looking for a Senior Forward Deployed Engineer who has a deep passion for AI and Automation. They will work on improving how teams work using their day to day productivity tooling by applying AI and automation where it has a huge effect and value.</p> <p>You will be the primary driver of internal teams adopting and taking full advantage of our productivity tooling landscape. Operating as a highly technical expert, specialized, engineer, you will work with and dive deep into non-technical functions such as Legal, Support, and Operations to understand their operational toil, architect the right solutions, to reduce manual work in key business workflows, with the goal of speeding up the teams overall day to day work.&nbsp;</p> <p>This isn't just about coding, it's about deeply understanding our internal team's most complex problems, leading the end-to-end technical delivery of innovative AI solutions, and empowering these teams to operate faster and smarter. You will be a hands-on engineer, shaping technical strategy and ensuring successful outcomes from initial concept to handover while increasing overall adoption of our tooling ecosystem.</p> <h3><strong>What you will do</strong></h3> <ul> <li>You build robust and resilient systems where maintenance is lower or non-existent. You build on top of our existing internal ecosystem or stakeholder tooling to accelerate teams productivity and user experience.&nbsp;</li> <li>You create long-term high-quality documentation and runbooks. You hand ownership back to the function/team before moving on to your next project.</li> <li>You identify repeated patterns of stakeholder issues or asks that feed back into Business Enablements Tooling roadmap.</li> <li>Automate complex internal processes using Google Vertex AI, Google’s Agent Development Kit (ADK), and software engineering to provide solutions(e.g., automated support agents, intelligent documentation retrieval, contract review automations).</li> <li>Be responsible for the end-to-end technical delivery of complex technical solutions. You will personally write critical code, configure systems, and troubleshoot issues to ensure successful deployment and measurable business impact.</li> <li>Embrace Adyen's \"launch fast\" formula. Quickly develop proofs-of-concept and minimum viable products, translating non-technical business requirements into technical solutions, and gathering feedback along the way.</li> <li>Identify, analyze, and directly resolve the most complex technical challenges during all phases of the project, from complex data integrations on GCP/Kubernetes to advanced AI agent orchestration.</li> </ul> <h3><strong>Who you are</strong></h3> <ul> <li>You are an expert in Software Engineering and bring strong automation skills, with the ability to build, troubleshoot, and scale scripts and tools independently.</li> <li>You have client facing experiences like Solutions Architect, Solutions Engineers</li> <li>You have a deep understanding of LLMs, prompt engineering, and applied ML workflows. You have hands-on experience integrating third-party AI models (e.g., Gemini) and using agentic orchestration frameworks (e.g., LangChain, LlamaIndex, Google ADK).</li> <li>You have hands-on experience with Google Cloud Platform (GCP) especially integrating applications across services like Vertex AI as well as deploying to on-premise infrastructure such as K8S, Postgres, Redis etc.</li> <li>You’ve successfully rolled out and maintained integrations across a variety of enterprise applications (Slack Enterprise Grid, Zoom, Atlassian suite).</li> <li>You are great at understanding and translating non-technical issues into technical requirements. You can confidently navigate stakeholder conversations, present complex concepts simply, and create high-quality documentation.</li> <li>You apply a security-first mindset, designing solutions that safeguard data and systems while maintaining a seamless user experience.</li> <li>You have a \"get-things-done\" mentality, focusing on fast and impactful delivery, and the proven ability to lead technical initiatives autonomously.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
+    "posted_at": "2026-11-12T03:57:28-05:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "The role is a senior position at a fintech company in Amsterdam, matching the candidate's seniority, location, and industry background. However, the job is heavily specialized in AI and automation using Google Cloud Platform, requiring deep expertise in LLMs, prompt engineering, and GCP services. The candidate's background is strong in traditional full-stack development (Java, React, SQL) and automation (CI/CD, DevOps), but lacks the specific AI/ML and GCP experience demanded. While the candidate's soft skills and ownership mentality are relevant, the technical gaps are significant, making this a stretch.",
+    "applied_at": null,
+    "first_seen": "2026-10-13T13:18:40.922Z"
+  },
+  {
+    "id": 9,
+    "external_id": "8379238",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Forward Deployed Engineer - Data Platform",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8379238",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h3><strong>Senior Forward Deployed Engineer</strong></h3> <p>Adyen’s Business Enablement Engineering Team is looking for a Senior Forward Deployed Engineer who has a deep passion for AI and Automation. They will work on improving how teams work using their day to day productivity tooling by applying AI and automation where it has a huge effect and value.</p> <p>You will be the primary driver of internal teams adopting and taking full advantage of our productivity tooling landscape. Operating as a highly technical expert, specialized, engineer, you will work with and dive deep into non-technical functions such as Legal, Support, and Operations to understand their operational toil, architect the right solutions, to reduce manual work in key business workflows, with the goal of speeding up the teams overall day to day work.&nbsp;</p> <p>This isn't just about coding, it's about deeply understanding our internal team's most complex problems, leading the end-to-end technical delivery of innovative AI solutions, and empowering these teams to operate faster and smarter. You will be a hands-on engineer, shaping technical strategy and ensuring successful outcomes from initial concept to handover while increasing overall adoption of our tooling ecosystem.</p> <h3><strong>What you will do</strong></h3> <ul> <li>You build robust and resilient systems where maintenance is lower or non-existent. You build on top of our existing internal ecosystem or stakeholder tooling to accelerate teams productivity and user experience.&nbsp;</li> <li>You create long-term high-quality documentation and runbooks. You hand ownership back to the function/team before moving on to your next project.</li> <li>You identify repeated patterns of stakeholder issues or asks that feed back into Business Enablements Tooling roadmap.</li> <li>Automate complex internal processes using Google Vertex AI, Google’s Agent Development Kit (ADK), and software engineering to provide solutions(e.g., automated support agents, intelligent documentation retrieval, contract review automations).</li> <li>Be responsible for the end-to-end technical delivery of complex technical solutions. You will personally write critical code, configure systems, and troubleshoot issues to ensure successful deployment and measurable business impact.</li> <li>Embrace Adyen's \"launch fast\" formula. Quickly develop proofs-of-concept and minimum viable products, translating non-technical business requirements into technical solutions, and gathering feedback along the way.</li> <li>Identify, analyze, and directly resolve the most complex technical challenges during all phases of the project, from complex data integrations on GCP/Kubernetes to advanced AI agent orchestration.</li> </ul> <h3><strong>Who you are</strong></h3> <ul> <li>You are an expert in Software Engineering and bring strong automation skills, with the ability to build, troubleshoot, and scale scripts and tools independently.</li> <li>You have experience working with data platform&nbsp;</li> <li>You have client facing experiences like Solutions Architect, Solutions Engineers</li> <li>You have a deep understanding of LLMs, prompt engineering, and applied ML workflows. You have hands-on experience integrating third-party AI models (e.g., Gemini) and using agentic orchestration frameworks (e.g., LangChain, LlamaIndex, Google ADK).</li> <li>You have hands-on experience with Google Cloud Platform (GCP) especially integrating applications across services like Vertex AI as well as deploying to on-premise infrastructure such as K8S, Postgres, Redis etc.</li> <li>You’ve successfully rolled out and maintained integrations across a variety of enterprise applications (Slack Enterprise Grid, Zoom, Atlassian suite).</li> <li>You are great at understanding and translating non-technical issues into technical requirements. You can confidently navigate stakeholder conversations, present complex concepts simply, and create high-quality documentation.</li> <li>You apply a security-first mindset, designing solutions that safeguard data and systems while maintaining a seamless user experience.</li> <li>You have a \"get-things-done\" mentality, focusing on fast and impactful delivery, and the proven ability to lead technical initiatives autonomously.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
+    "posted_at": "2026-11-12T03:57:09-05:00",
+    "tags": null,
+    "verdict": "fair",
+    "reasoning": "The candidate's 10+ years of full-stack engineering, fintech background, and hands-on AI projects (REA Bot, JobHopper) align well with Adyen's Senior Forward Deployed Engineer role, which emphasizes AI/automation and internal tooling. However, the role requires deep GCP/Vertex AI expertise and enterprise integration experience (Slack, Atlassian) that the candidate lacks directly, though they have transferable skills. The Amsterdam office-first policy is a strong location match, and the senior level fits. The main gaps are the specific cloud platform (GCP vs. Azure) and the enterprise tooling integration scope, making this a realistic stretch.",
+    "applied_at": null,
+    "first_seen": "2026-11-11T18:19:02.184Z"
+  },
+  {
+    "id": 69,
+    "external_id": "7921068",
+    "source": "greenhouse",
+    "company": "Flexport",
+    "title": "Senior Software Engineer, DevEx",
+    "location": "Amsterdam, Netherlands",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/flexport/jobs/7921068",
+    "description": "<div class=\"content-intro\"><h2><strong>About Flexport:&nbsp;</strong></h2> <p>At Flexport, we believe global trade can move the human race forward. That’s why it’s our mission to make global commerce so easy there will be more of it. We’re shaping the future of a $10T industry with solutions powered by innovative technology and exceptional people. Today, companies of all sizes—from emerging brands to Fortune 500s—use Flexport technology to move more than $19B of merchandise across 112 countries a year.&nbsp;</p> <p>The recent global supply chain crisis has put Flexport center stage as we continue to play a pivotal role in how goods move around the world. We are proud to have the support of the best investors in the game who believe in our mission, solutions and people. Ready to tackle global challenges that impact business, society, and the environment? Come join us.</p></div><h1><strong>Senior Software Engineer: DevEx</strong></h1> <p>Every engineer at Flexport ships code that moves real freight across 112 countries. The faster and safer they can do that, the faster the world's supply chains move. The PSI (Platform, Security &amp; Infrastructure) team makes this possible: we build the paved path and tooling that hundreds of engineers around the world rely on every day to ship.</p> <p>This is not a role where you wait for tickets. You'll talk to engineers, dogfood our platform, and find the friction that's slowing us down, and then design and ship the tools to remove that.</p> <h2><strong>What You'll Do</strong></h2> <p>You'll own and evolve the developer platform that powers Flexport engineering. That means:</p> <ul> <li>Making the best <strong>paved paths and self-serve tooling </strong>possible that make the right thing the easy thing.</li> <li>Creating and supporting developers with<strong> CI/CD pipelines</strong> (Buildkit, Github Actions), <strong>build tooling </strong>(Gradle, Bazel, npm/pnpm/bun, Go and Cargo) and <strong>artifact repositories</strong> (Artifactory, ECR, github).</li> <li>Owning and improving the backend and frontend developer experience.</li> <li>Acting as the steward of our <strong>GraphQL and gRPC ecosystem</strong> and make sure our middleware, federation and schema sharing, CLIs, codegen and servers and clients work smooth as butter.</li> <li>Evolving and integrating our&nbsp;<strong>IAM solutions and primitives</strong> so that everything is easy and secure by default.</li> <li>Making sure engineers can easily use and understand our&nbsp;<strong>container orchestration </strong>(Kubernetes, ECS) and <strong>observability stack</strong> (Openmetrics, Datadog) that engineers rely on to run, understand and debug their services.</li> </ul> <h2><strong>You Should Have</strong></h2> <ul> <li><strong>5+ years of software engineering experience</strong>, with time spent building developer platforms, or internal tooling that other engineers depend on.</li> <li><strong>Deep full-stack instincts</strong>: you're equally comfortable in a backend service, a frontend build pipeline, a Kubernetes manifest, and a CI configuration.</li> <li><strong>Strong product instincts applied to internal users</strong>: you treat engineers as customers, identify what's actually worth building, and measure whether it worked.</li> <li><strong>Expertise and hands on experience with several of: </strong>a CI/CD system (Github Actions preferred), a container orchestrator (Kubernetes preferred), build tooling preferably for more than one language, backend-for-frontend (Graphql preferred), service-to-service communication (gRPC preferred), Metrics and artifact storage.</li> <li><strong>You take pride in solving tech debt and fixing what’s broken: </strong>you’ll either fix it, or if a migration is needed you either execute them yourself or make them feel effortless.</li> <li><strong>An independent mindset</strong>: you thrive in ambiguity, find the highest-leverage problems yourself, and don't wait to be told what to do.</li> <li><strong>Excellent communication</strong>: you can run a developer interview, write a clear design doc, and make sure everyone understands what’s going on.</li> <li><strong>A generally helpful attitude</strong>. Everyone should know you within no-time as the person who gets stuff unblocked, points them in the right direction and makes their work easier.&nbsp;</li> <li><strong>A drive for impact</strong>: you are not satisfying until every engineer is productive and confident thanks to your team.</li> </ul> <h2><strong>Nice to Have</strong></h2> <ul> <li>Experience in data-driven DevX development using metrics such as DORA.</li> <li>Experience with AWS.</li> <li>Experience in Identity and Access Management (IAM) at scale such as JWTs, OIDC and fine-grained authorization.</li> <li>Experience with Terraform.</li> </ul> <h2><strong>How We Work</strong></h2> <ul> <li>We come to the office 3 times a week to hang out, whiteboard, and ship together.</li> <li>We have the latest hardware and software, including frontier AI models on day one.</li> <li>We're agile, but not dogmatic. Teams decide how they work best.</li> </ul> <h2><strong>Why This Role Is Special</strong></h2> <ul> <li><strong>Massive leverage</strong>: every improvement you ship is multiplied across hundreds of engineers and thousands of deploys a day.</li> <li><strong>Full ownership</strong>: from developer research to production rollout to measuring impact, it's yours.</li> <li><strong>You shape the paved path</strong>: the conventions you set and decisions you make become how Flexport engineering builds for years to come.</li> </ul> <h2><strong>What's in it for you:&nbsp;</strong></h2> <ul> <li>An opportunity to contribute to one of the fastest-growing companies, where you’ll have the chance to create a global impact while being a part of a&nbsp; thriving multinational environment.</li> <li>Daily catered lunches incl. vegetarian options, breakfast, snacks and soft drinks available in our office on daily basis.</li> <li>Commute expenses: Flexport will cover&nbsp; home-office commuting costs for employees living outside of Amsterdam.</li> <li>25 working days as vacation days based on full time employment.</li> <li>Health insurance: Flexport offers a collective health insurance plan including a basic package and any available additional packages. Your monthly premium is fully paid by Flexport.&nbsp;</li> <li>A defined pension contribution scheme.</li> <li>Equity program: every team member becomes a shareholder, aligning our success with yours. As a private company in a multi-trillion dollar industry, you have a direct stake in our collective growth and success.</li> <li>Employee Assistance Program through Aetna Resources for Living: Flexport provides an employer-sponsored program at no cost to you and your household members.</li> <li>Parental leave benefit: Flexport is here to support you and your families in one of the most important times in life – the birth of a child! Our parental leave program allows both mothers and partners to take time off from work for pregnancy, childbirth, and to bond with your new child.</li> </ul> <p>&nbsp;</p> <p>#LI-onsite</p> <p><span data-sheets-root=\"1\">#LI-BG1</span></p><div class=\"content-conclusion\"><div id=\"1704749847.557549\" class=\"c-virtual_list__item\" data-qa=\"virtual-list-item\" data-item-key=\"1704749847.557549\"> <div class=\"c-message_kit__background p-message_pane_message__message c-message_kit__message\" data-qa=\"message_container\" data-qa-unprocessed=\"false\" data-qa-placeholder=\"false\"> <div class=\"c-message_kit__hover\" data-qa-hover=\"true\"> <div class=\"c-message_kit__actions c-message_kit__actions--default\"> <div class=\"c-message_kit__gutter\"> <div class=\"c-message_kit__gutter__right\" data-qa=\"message_content\"> <div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <h4>Commitment to Equal Opportunity</h4> <p>At Flexport, our ability to fulfill our mission of making global commerce easy and accessible relies on having a diverse, dedicated and engaged workforce. All qualified applicants will receive consideration for employment regardless of race, color, religion, sex, national origin, age, physical and mental disability, health status, marital and family status, sexual orientation, gender identity and expression, military and veteran status, and any other characteristic protected by applicable law.</p> <h4>Global Data Privacy Notice for Job Candidates and Applicants</h4> <p>Depending on your location, the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) may regulate the way we manage the data of job applicants.&nbsp;By submitting your application, you are agreeing to our use and processing of your data as required. Please see our Privacy Notice available at&nbsp;<a href=\"http://www.flexport.com/privacy\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.flexport.com/privacy&amp;source=gmail&amp;ust=1613840050053000&amp;usg=AFQjCNHD63svlkD-hWHlGuGOM_bSYVrnpw\">www.flexport.com/privacy</a>&nbsp;for additional information.</p> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div></div>",
+    "posted_at": "2026-11-12T03:49:08-05:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "The role is a strong seniority and location match — the candidate has 10+ years of experience and is based in the Netherlands, open to Amsterdam hybrid work. The full-stack background, CI/CD ownership, and mentoring behavior align with the DevEx team's 'helpful unblocker' culture. However, the job is fundamentally platform engineering: Kubernetes, GraphQL/gRPC, build tooling, artifact repositories, and observability are core requirements, and none of these appear in the candidate's CV. Their experience is anchored in WebRatio, Java/React application work, and Azure DevOps pipelines, which is relevant but not the developer-platform depth this role demands.",
+    "applied_at": null,
+    "first_seen": "2026-11-06T12:32:13.580Z"
+  },
+  {
+    "id": 7,
+    "external_id": "6919020",
+    "source": "greenhouse",
+    "company": "Adyen",
+    "title": "Senior Data Engineer",
+    "location": "Amsterdam",
+    "workplace_type": null,
+    "employment_type": null,
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/6919020",
+    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Senior Data Engineer</strong></p> <p>At Adyen, we treat data and data artifacts as first-class citizens. They form our backbone and drive the business and product insights we generate. To this end, Adyen is looking for a Senior Data Engineers in Amsterdam. We’re looking for engineers that understand the business context and the data needs behind it, and excel in implementing high-quality data pipelines on our Big Data Platform. As a Senior Data Engineer at Adyen, you will play a crucial role in shaping our data infrastructure and ensuring the seamless flow of data across various systems.&nbsp;</p> <p><strong>What you’ll do</strong></p> <ul> <li><strong>Collaborative Solution Development</strong>: Engage with a diverse range of stakeholders, including data scientists, analysts, software engineers, product managers, and customers, to understand their requirements and craft effective solutions.</li> <li><strong>State-of-the-Art Pipelines and Architecture</strong>: Design, develop, deploy and operate high-quality production ELT pipelines and data architectures. Integrate data from various sources and formats, ensuring compatibility, consistency, and reliability. Design scalable architectures.&nbsp;</li> <li><strong>Champion Data Best Practices</strong>: Proactively establish and advocate for best practices in performance, code quality, data validation, data governance, and discoverability across Adyen through mentoring, training, and knowledge sharing.</li> <li><strong>High Quality Data and Code:</strong> Ensure data is accurate, complete, reliable, relevant, and timely. Implement rigorous testing, monitoring and validation protocols for your code and data, leveraging tools such as Pytest.</li> <li><strong>Performance Optimization</strong>: Identify and resolve performance bottlenecks in data pipelines and systems. Optimize query performance and resource utilization to meet SLAs and performance requirements, using technologies such as caching, indexing, partitioning, and other Spark optimizations.</li> </ul> <p><strong>Who you are</strong></p> <ul> <li><strong>Experienced in Big Data:</strong> Over 7 years of experience working as a Data Engineer or in a similar role.</li> <li><strong>Data &amp; Engineering practices:</strong> You possess an expert-level understanding of both Software and Data Engineering practices.</li> <li><strong>Technical Super Star:</strong> Highly proficient in tools and languages such as: Python, PySpark, Airflow, Hadoop, Spark, Kafka, SQL, Git.&nbsp;</li> <li><strong>Clear Communicator:</strong> Skilled at articulating complex data-related concepts and outcomes to a diverse range of stakeholders.&nbsp;</li> <li><strong>Self-starter:</strong> Capable of independently recognizing opportunities, devising solutions, leading, prioritizing and owning projects.&nbsp;</li> <li><strong>Innovator:</strong> You have an experimental mindset with a ‘launch fast and iterate’ mentality.</li> <li><strong>Data Culture Champion:</strong> Experienced in fostering a data-centric culture within large, technical organizations and setting standards for excellence and continuous improvement.&nbsp;</li> </ul> <p><strong>Data positions at Adyen</strong></p> <p>We know companies handle different definitions for their data-related positions, this is for instance dependent on the size of a company. Since the birth of the Data Solution and the growth of all data streams, we categorized and defined all our positions. Have a look at<a href=\"https://www.adyen.com/knowledge-hub/roles-scaling-up-data-culture\" target=\"_blank\"> this blogpost</a> to find out!&nbsp;</p> <p>Teams we're currently hiring for:</p> <ul> <li>Uplift Protect</li> <li>Balance Transactions</li> <li>Payment Lifecycle Data</li> <li>Optimise Interfaces</li> <li>Payment Pricing</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p> <p>&nbsp;</p>",
+    "posted_at": "2026-11-12T03:21:55-05:00",
+    "tags": null,
+    "verdict": "weak",
+    "reasoning": "This is a Senior Data Engineer role at Adyen focused on big data infrastructure (Spark, PySpark, Airflow, Hadoop, Kafka) and ELT pipelines at scale. The candidate is a senior full-stack/backend engineer with strong SQL, Python basics, and CI/CD experience, plus a fintech background, so the industry and seniority align well. However, the core hard requirements of the role are big data technologies and dedicated data engineering experience, which the candidate's profile does not demonstrate. Their hands-on Python work is project-based (scraping, LLM integrations), not production data pipelines on distributed systems. This is more of a tangential fit than a realistic direct match without significant upskilling or repositioning.",
+    "applied_at": null,
+    "first_seen": "2026-10-16T13:41:04.250Z"
+  },
+  {
+    "id": 17,
     "external_id": "8161519",
     "source": "greenhouse",
     "company": "Elastic",
@@ -54,24 +126,6 @@
     "first_seen": "2026-11-05T16:27:22.592Z"
   },
   {
-    "id": 9,
-    "external_id": "8379238",
-    "source": "greenhouse",
-    "company": "Adyen",
-    "title": "Senior Forward Deployed Engineer - Data Platform",
-    "location": "Amsterdam",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/8379238",
-    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h3><strong>Senior Forward Deployed Engineer</strong></h3> <p>Adyen’s Business Enablement Engineering Team is looking for a Senior Forward Deployed Engineer who has a deep passion for AI and Automation. They will work on improving how teams work using their day to day productivity tooling by applying AI and automation where it has a huge effect and value.</p> <p>You will be the primary driver of internal teams adopting and taking full advantage of our productivity tooling landscape. Operating as a highly technical expert, specialized, engineer, you will work with and dive deep into non-technical functions such as Legal, Support, and Operations to understand their operational toil, architect the right solutions, to reduce manual work in key business workflows, with the goal of speeding up the teams overall day to day work.&nbsp;</p> <p>This isn't just about coding, it's about deeply understanding our internal team's most complex problems, leading the end-to-end technical delivery of innovative AI solutions, and empowering these teams to operate faster and smarter. You will be a hands-on engineer, shaping technical strategy and ensuring successful outcomes from initial concept to handover while increasing overall adoption of our tooling ecosystem.</p> <h3><strong>What you will do</strong></h3> <ul> <li>You build robust and resilient systems where maintenance is lower or non-existent. You build on top of our existing internal ecosystem or stakeholder tooling to accelerate teams productivity and user experience.&nbsp;</li> <li>You create long-term high-quality documentation and runbooks. You hand ownership back to the function/team before moving on to your next project.</li> <li>You identify repeated patterns of stakeholder issues or asks that feed back into Business Enablements Tooling roadmap.</li> <li>Automate complex internal processes using Google Vertex AI, Google’s Agent Development Kit (ADK), and software engineering to provide solutions(e.g., automated support agents, intelligent documentation retrieval, contract review automations).</li> <li>Be responsible for the end-to-end technical delivery of complex technical solutions. You will personally write critical code, configure systems, and troubleshoot issues to ensure successful deployment and measurable business impact.</li> <li>Embrace Adyen's \"launch fast\" formula. Quickly develop proofs-of-concept and minimum viable products, translating non-technical business requirements into technical solutions, and gathering feedback along the way.</li> <li>Identify, analyze, and directly resolve the most complex technical challenges during all phases of the project, from complex data integrations on GCP/Kubernetes to advanced AI agent orchestration.</li> </ul> <h3><strong>Who you are</strong></h3> <ul> <li>You are an expert in Software Engineering and bring strong automation skills, with the ability to build, troubleshoot, and scale scripts and tools independently.</li> <li>You have experience working with data platform&nbsp;</li> <li>You have client facing experiences like Solutions Architect, Solutions Engineers</li> <li>You have a deep understanding of LLMs, prompt engineering, and applied ML workflows. You have hands-on experience integrating third-party AI models (e.g., Gemini) and using agentic orchestration frameworks (e.g., LangChain, LlamaIndex, Google ADK).</li> <li>You have hands-on experience with Google Cloud Platform (GCP) especially integrating applications across services like Vertex AI as well as deploying to on-premise infrastructure such as K8S, Postgres, Redis etc.</li> <li>You’ve successfully rolled out and maintained integrations across a variety of enterprise applications (Slack Enterprise Grid, Zoom, Atlassian suite).</li> <li>You are great at understanding and translating non-technical issues into technical requirements. You can confidently navigate stakeholder conversations, present complex concepts simply, and create high-quality documentation.</li> <li>You apply a security-first mindset, designing solutions that safeguard data and systems while maintaining a seamless user experience.</li> <li>You have a \"get-things-done\" mentality, focusing on fast and impactful delivery, and the proven ability to lead technical initiatives autonomously.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-11-11T11:02:02-05:00",
-    "tags": null,
-    "verdict": "fair",
-    "reasoning": "The candidate's 10+ years of full-stack engineering, fintech background, and hands-on AI projects (REA Bot, JobHopper) align well with Adyen's Senior Forward Deployed Engineer role, which emphasizes AI/automation and internal tooling. However, the role requires deep GCP/Vertex AI expertise and enterprise integration experience (Slack, Atlassian) that the candidate lacks directly, though they have transferable skills. The Amsterdam office-first policy is a strong location match, and the senior level fits. The main gaps are the specific cloud platform (GCP vs. Azure) and the enterprise tooling integration scope, making this a realistic stretch.",
-    "applied_at": null,
-    "first_seen": "2026-11-11T18:19:02.184Z"
-  },
-  {
     "id": 5,
     "external_id": "744000161114693",
     "source": "smartrecruiters",
@@ -90,7 +144,7 @@
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
   {
-    "id": 76,
+    "id": 73,
     "external_id": "2824242",
     "source": "recruitee",
     "company": "Xebia",
@@ -108,7 +162,7 @@
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
   {
-    "id": 81,
+    "id": 82,
     "external_id": "39aac6b6-32fc-4517-99eb-90a790645789",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -126,7 +180,7 @@
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
   {
-    "id": 82,
+    "id": 83,
     "external_id": "64a2cfc4-2857-4679-ab4b-e44c028821c6",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -162,7 +216,7 @@
     "first_seen": "2026-10-23T18:49:41.333Z"
   },
   {
-    "id": 83,
+    "id": 84,
     "external_id": "91bf8f39-1572-4549-bfd1-9433ba917d77",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -180,7 +234,7 @@
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
   {
-    "id": 84,
+    "id": 85,
     "external_id": "cd3cc84e-c006-488b-aedf-26726cf2b01c",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -198,7 +252,7 @@
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
   {
-    "id": 85,
+    "id": 86,
     "external_id": "1edfbe1c-ad49-4b9b-a402-b6b218e36a04",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -216,7 +270,7 @@
     "first_seen": "2026-11-11T14:48:10.817Z"
   },
   {
-    "id": 86,
+    "id": 87,
     "external_id": "1b0ea4de-e6a9-41f5-abeb-f152c60692ad",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -270,7 +324,7 @@
     "first_seen": "2026-10-26T08:21:51.149Z"
   },
   {
-    "id": 87,
+    "id": 88,
     "external_id": "4903cb9e-d85a-44eb-ad1e-5f4b93f96800",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -288,7 +342,7 @@
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
   {
-    "id": 7,
+    "id": 6,
     "external_id": "7720026",
     "source": "greenhouse",
     "company": "Adyen",
@@ -306,7 +360,7 @@
     "first_seen": "2026-11-06T09:48:02.712Z"
   },
   {
-    "id": 88,
+    "id": 89,
     "external_id": "31a0d9e2-3af6-419f-99cc-9752dbf25170",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -324,7 +378,7 @@
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
   {
-    "id": 89,
+    "id": 90,
     "external_id": "4762006f-3c17-4b87-8d0e-467137263777",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -342,7 +396,7 @@
     "first_seen": "2026-11-11T14:03:33.836Z"
   },
   {
-    "id": 90,
+    "id": 91,
     "external_id": "6598d095-0a66-41dd-872f-f8d7441a0681",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -360,7 +414,7 @@
     "first_seen": "2026-11-11T13:33:25.145Z"
   },
   {
-    "id": 91,
+    "id": 92,
     "external_id": "10a11c49-257f-4381-b0cc-696af676a8f1",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -378,7 +432,7 @@
     "first_seen": "2026-11-11T13:33:25.145Z"
   },
   {
-    "id": 27,
+    "id": 78,
     "external_id": "744000161081245",
     "source": "smartrecruiters",
     "company": "Sopra Steria",
@@ -396,7 +450,7 @@
     "first_seen": "2026-11-11T13:18:09.303Z"
   },
   {
-    "id": 92,
+    "id": 93,
     "external_id": "a24d0d99-a293-4ad5-bd72-0971af48bfe0",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -414,7 +468,7 @@
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
   {
-    "id": 77,
+    "id": 74,
     "external_id": "2823863",
     "source": "recruitee",
     "company": "Xebia",
@@ -432,7 +486,7 @@
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
   {
-    "id": 93,
+    "id": 94,
     "external_id": "10eb4ee1-e693-4613-8606-48314378d4aa",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -450,7 +504,7 @@
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
   {
-    "id": 78,
+    "id": 75,
     "external_id": "2823855",
     "source": "recruitee",
     "company": "Xebia",
@@ -486,7 +540,7 @@
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
   {
-    "id": 32,
+    "id": 28,
     "external_id": "9649c999-70dc-4620-9487-e664767fa88d",
     "source": "ashby",
     "company": "ICEYE",
@@ -504,7 +558,7 @@
     "first_seen": "2026-10-15T18:49:35.417Z"
   },
   {
-    "id": 28,
+    "id": 79,
     "external_id": "744000161061215",
     "source": "smartrecruiters",
     "company": "Sopra Steria",
@@ -540,7 +594,7 @@
     "first_seen": "2026-10-16T13:41:04.250Z"
   },
   {
-    "id": 104,
+    "id": 105,
     "external_id": "744000161046309",
     "source": "smartrecruiters",
     "company": "Inetum Spain",
@@ -594,7 +648,7 @@
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
   {
-    "id": 75,
+    "id": 72,
     "external_id": "8197448003",
     "source": "greenhouse",
     "company": "DKB Code Factory",
@@ -684,7 +738,7 @@
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
   {
-    "id": 20,
+    "id": 19,
     "external_id": "8367122",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -702,7 +756,7 @@
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
   {
-    "id": 21,
+    "id": 18,
     "external_id": "8367114",
     "source": "greenhouse",
     "company": "Mozilla",
@@ -756,7 +810,7 @@
     "first_seen": "2026-11-11T09:19:10.819Z"
   },
   {
-    "id": 55,
+    "id": 51,
     "external_id": "d6041398-9f41-4107-ab8c-99d8b6162cd1",
     "source": "ashby",
     "company": "Bjak",
@@ -774,7 +828,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 58,
+    "id": 54,
     "external_id": "ec790614-2265-48de-8665-7370f1fe7d7e",
     "source": "ashby",
     "company": "Bjak",
@@ -792,7 +846,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 41,
+    "id": 37,
     "external_id": "2cd09591-7b66-49b4-ae0e-ca404451e23d",
     "source": "ashby",
     "company": "Bjak",
@@ -810,7 +864,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 39,
+    "id": 35,
     "external_id": "e1a428c1-2fd0-4bf9-ad48-9fdb450191c8",
     "source": "ashby",
     "company": "Bjak",
@@ -828,7 +882,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 60,
+    "id": 56,
     "external_id": "318eea5b-5b35-4f33-a6f3-4b7838d7f42f",
     "source": "ashby",
     "company": "Bjak",
@@ -846,7 +900,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 62,
+    "id": 58,
     "external_id": "0a9e6754-087b-4c34-83ef-cb0fffe688be",
     "source": "ashby",
     "company": "Bjak",
@@ -864,7 +918,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 43,
+    "id": 39,
     "external_id": "121cda74-9bec-4f4d-8c64-a065310228c7",
     "source": "ashby",
     "company": "Bjak",
@@ -882,7 +936,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 44,
+    "id": 40,
     "external_id": "fad535bd-3fc8-48a4-b208-73241590d0eb",
     "source": "ashby",
     "company": "Bjak",
@@ -900,7 +954,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 65,
+    "id": 61,
     "external_id": "79240285-7982-4720-afdb-c4b6a5f0e935",
     "source": "ashby",
     "company": "Bjak",
@@ -918,7 +972,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 54,
+    "id": 50,
     "external_id": "fc78a81b-f8ac-4364-a13e-f3c0b9e9b3e2",
     "source": "ashby",
     "company": "Bjak",
@@ -936,7 +990,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 70,
+    "id": 66,
     "external_id": "b0c84da7-e3be-482f-8850-273368cfc509",
     "source": "ashby",
     "company": "Bjak",
@@ -954,7 +1008,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 69,
+    "id": 65,
     "external_id": "e9704c63-a10a-4ac3-8497-319e0393d47b",
     "source": "ashby",
     "company": "Bjak",
@@ -972,7 +1026,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 59,
+    "id": 55,
     "external_id": "0ad28eb3-fb50-449e-8be1-f970b4d1004c",
     "source": "ashby",
     "company": "Bjak",
@@ -990,7 +1044,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 64,
+    "id": 60,
     "external_id": "8a636802-cf1d-4de5-a00d-5dfee6a3b91e",
     "source": "ashby",
     "company": "Bjak",
@@ -1008,7 +1062,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 63,
+    "id": 59,
     "external_id": "f5ce0694-b062-4504-bd3e-fc1d48c4706c",
     "source": "ashby",
     "company": "Bjak",
@@ -1026,7 +1080,7 @@
     "first_seen": "2026-11-11T06:18:38.885Z"
   },
   {
-    "id": 61,
+    "id": 57,
     "external_id": "a692981c-4349-4d38-afe9-21d207aabb29",
     "source": "ashby",
     "company": "Bjak",
@@ -1044,7 +1098,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 48,
+    "id": 44,
     "external_id": "5e7a0488-8b81-4d8a-b2c2-73f7ef7f9cbd",
     "source": "ashby",
     "company": "Bjak",
@@ -1062,7 +1116,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 53,
+    "id": 49,
     "external_id": "a11c911e-c22e-45a2-9acf-b2f169a8cef1",
     "source": "ashby",
     "company": "Bjak",
@@ -1080,7 +1134,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 57,
+    "id": 53,
     "external_id": "88e9e701-ca19-4e65-8bb4-0424ab01eba2",
     "source": "ashby",
     "company": "Bjak",
@@ -1098,7 +1152,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 56,
+    "id": 52,
     "external_id": "13453638-395c-41c1-8a07-de71e1460773",
     "source": "ashby",
     "company": "Bjak",
@@ -1116,7 +1170,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 45,
+    "id": 41,
     "external_id": "51347727-afe3-4136-8a80-fa01ef06ba49",
     "source": "ashby",
     "company": "Bjak",
@@ -1134,7 +1188,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 47,
+    "id": 43,
     "external_id": "3a5fa7a6-083b-4912-aa1f-c0f197e84cd6",
     "source": "ashby",
     "company": "Bjak",
@@ -1152,7 +1206,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 52,
+    "id": 48,
     "external_id": "b31dd1ba-841d-4ce8-851a-9cb6a6bcae7a",
     "source": "ashby",
     "company": "Bjak",
@@ -1170,7 +1224,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 51,
+    "id": 47,
     "external_id": "b9420b5f-529a-4b5b-a968-a233cc72f5e8",
     "source": "ashby",
     "company": "Bjak",
@@ -1188,7 +1242,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 40,
+    "id": 36,
     "external_id": "35cdb157-679d-478d-ab81-71e7ce956767",
     "source": "ashby",
     "company": "Bjak",
@@ -1206,7 +1260,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 36,
+    "id": 32,
     "external_id": "b1e73b18-5191-4c06-8f66-3ede3b88702b",
     "source": "ashby",
     "company": "Bjak",
@@ -1224,7 +1278,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 34,
+    "id": 30,
     "external_id": "6f01ea71-d239-4373-ba6d-4101205a91ce",
     "source": "ashby",
     "company": "Bjak",
@@ -1242,7 +1296,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 37,
+    "id": 33,
     "external_id": "5264e346-7ff1-4efb-9b78-a591c8c3e0cd",
     "source": "ashby",
     "company": "Bjak",
@@ -1260,7 +1314,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 38,
+    "id": 34,
     "external_id": "39152fe9-4f88-495c-91a0-2f6c065d9063",
     "source": "ashby",
     "company": "Bjak",
@@ -1278,7 +1332,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 42,
+    "id": 38,
     "external_id": "9f2c725b-6782-45f2-a1a3-352c229a811c",
     "source": "ashby",
     "company": "Bjak",
@@ -1296,7 +1350,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 50,
+    "id": 46,
     "external_id": "b75e432f-888a-414a-87a5-b525d6d58ae9",
     "source": "ashby",
     "company": "Bjak",
@@ -1314,7 +1368,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 35,
+    "id": 31,
     "external_id": "590020ff-507d-4bcf-bf8e-9361485e0290",
     "source": "ashby",
     "company": "Bjak",
@@ -1332,7 +1386,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 46,
+    "id": 42,
     "external_id": "1f968d3e-dcaf-403d-9dc3-f885b76af31b",
     "source": "ashby",
     "company": "Bjak",
@@ -1350,7 +1404,7 @@
     "first_seen": "2026-11-11T03:18:42.143Z"
   },
   {
-    "id": 49,
+    "id": 45,
     "external_id": "91d0229f-45ce-4b89-b60c-de7cae4408c5",
     "source": "ashby",
     "company": "Bjak",
@@ -1548,7 +1602,7 @@
     "first_seen": "2026-11-03T13:25:23.206Z"
   },
   {
-    "id": 79,
+    "id": 76,
     "external_id": "744000160933919",
     "source": "smartrecruiters",
     "company": "T-Systems Iberia",
@@ -1602,7 +1656,7 @@
     "first_seen": "2026-11-06T15:19:19.072Z"
   },
   {
-    "id": 17,
+    "id": 20,
     "external_id": "744000160905485",
     "source": "smartrecruiters",
     "company": "Devoteam",
@@ -1656,7 +1710,7 @@
     "first_seen": "2026-11-02T15:47:25.291Z"
   },
   {
-    "id": 73,
+    "id": 70,
     "external_id": "7311883",
     "source": "greenhouse",
     "company": "Flexport",
@@ -1674,7 +1728,7 @@
     "first_seen": "2026-11-06T12:32:13.580Z"
   },
   {
-    "id": 29,
+    "id": 80,
     "external_id": "744000160869432",
     "source": "smartrecruiters",
     "company": "Sopra Steria",
@@ -1692,7 +1746,7 @@
     "first_seen": "2026-11-10T15:18:45.195Z"
   },
   {
-    "id": 94,
+    "id": 95,
     "external_id": "9abb48e8-ffb9-417f-a821-57634bb918f0",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1710,7 +1764,7 @@
     "first_seen": "2026-11-10T12:18:54.084Z"
   },
   {
-    "id": 95,
+    "id": 96,
     "external_id": "e4357f5b-19d1-4679-a198-700a7a881849",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1728,7 +1782,7 @@
     "first_seen": "2026-11-10T12:18:54.084Z"
   },
   {
-    "id": 96,
+    "id": 97,
     "external_id": "2ed8d30b-ef39-4948-bcf4-9e5a7b05bcd3",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1746,7 +1800,7 @@
     "first_seen": "2026-11-10T12:18:54.084Z"
   },
   {
-    "id": 97,
+    "id": 98,
     "external_id": "53f5f775-c55a-416e-8545-129f1c114ecd",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1782,7 +1836,7 @@
     "first_seen": "2026-10-27T17:11:07.229Z"
   },
   {
-    "id": 98,
+    "id": 99,
     "external_id": "c418f31c-3eda-4fee-84f4-11802f0713f6",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1800,7 +1854,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 30,
+    "id": 81,
     "external_id": "744000160818875",
     "source": "smartrecruiters",
     "company": "Sopra Steria",
@@ -1818,7 +1872,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 33,
+    "id": 29,
     "external_id": "ade33296-95c8-410c-9f08-62cf09fb1999",
     "source": "ashby",
     "company": "ICEYE",
@@ -1836,7 +1890,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 99,
+    "id": 100,
     "external_id": "96b624e3-ddf9-401e-9901-8360fc326450",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -1854,7 +1908,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 18,
+    "id": 21,
     "external_id": "744000160813609",
     "source": "smartrecruiters",
     "company": "Devoteam",
@@ -1872,7 +1926,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 103,
+    "id": 104,
     "external_id": "744000160812649",
     "source": "smartrecruiters",
     "company": "IFS",
@@ -1890,7 +1944,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 67,
+    "id": 63,
     "external_id": "59498cfe-ad30-43c5-99aa-a9337c52498e",
     "source": "ashby",
     "company": "Bjak",
@@ -1908,7 +1962,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 68,
+    "id": 64,
     "external_id": "6137e9eb-d5ad-4da5-8a34-d02c9f5d9b7f",
     "source": "ashby",
     "company": "Bjak",
@@ -1926,7 +1980,7 @@
     "first_seen": "2026-11-10T09:18:47.080Z"
   },
   {
-    "id": 66,
+    "id": 62,
     "external_id": "3b571ea2-7d5a-4096-9be0-1f783a397554",
     "source": "ashby",
     "company": "Bjak",
@@ -1944,7 +1998,7 @@
     "first_seen": "2026-11-10T06:21:21.160Z"
   },
   {
-    "id": 72,
+    "id": 68,
     "external_id": "3e3c113a-d478-463e-a2ec-237bed0b9900",
     "source": "ashby",
     "company": "Bjak",
@@ -1962,7 +2016,7 @@
     "first_seen": "2026-11-10T06:21:21.160Z"
   },
   {
-    "id": 71,
+    "id": 67,
     "external_id": "800177f4-a2da-49f1-85e2-c0ad13c897ac",
     "source": "ashby",
     "company": "Bjak",
@@ -2304,7 +2358,7 @@
     "first_seen": "2026-11-10T06:21:21.160Z"
   },
   {
-    "id": 31,
+    "id": 27,
     "external_id": "9371410f-1664-48c7-8153-466766739c8d",
     "source": "ashby",
     "company": "ICEYE",
@@ -2322,7 +2376,7 @@
     "first_seen": "2026-10-14T19:07:07.856Z"
   },
   {
-    "id": 100,
+    "id": 101,
     "external_id": "b7892f7d-8b7a-445c-9620-198ded2468e1",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -2340,7 +2394,7 @@
     "first_seen": "2026-11-09T16:37:48.261Z"
   },
   {
-    "id": 101,
+    "id": 102,
     "external_id": "c69ca7f9-ea2d-4c11-bd39-3be156b93e94",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -2358,7 +2412,7 @@
     "first_seen": "2026-11-09T16:22:50.149Z"
   },
   {
-    "id": 74,
+    "id": 71,
     "external_id": "7819150003",
     "source": "greenhouse",
     "company": "DKB Code Factory",
@@ -2376,7 +2430,7 @@
     "first_seen": "2026-11-09T15:18:57.862Z"
   },
   {
-    "id": 80,
+    "id": 77,
     "external_id": "744000160579839",
     "source": "smartrecruiters",
     "company": "KPN",
@@ -2392,24 +2446,6 @@
     "reasoning": "This is an ML Engineer role at KPN focused on data science and machine learning engineering, requiring roughly 5 years of dedicated ML/data science experience, a master's degree in AI/CS/math, and a strong foundation in building and managing ML models and MLOps. The candidate is a strong full-stack/backend engineer with 10+ years in Java, SQL, CI/CD and fintech, and has recent hands-on LLM API and agentic tooling experience in side projects, but that is hobby-level rather than the professional ML model development and MLOps depth this role demands. The candidate's education is a secondary school diploma, not the master's or equivalent the posting asks for, and there is no evidence of production ML model lifecycle ownership. Location (Amsterdam, NL) and seniority fit the candidate's preferences, and the DevOps/Python/CI-CD overlap is real, but the core ML engineering requirements are largely unmet, making this a tangential rather than realistic fit.",
     "applied_at": "2026-11-09T11:11:26.192Z",
     "first_seen": "2026-11-09T10:53:03.051Z"
-  },
-  {
-    "id": 8,
-    "external_id": "8002425",
-    "source": "greenhouse",
-    "company": "Adyen",
-    "title": "Senior Forward Deployed Engineer",
-    "location": "Amsterdam",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/8002425",
-    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p>For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</p> <h3><strong>Senior Forward Deployed Engineer</strong></h3> <p>Adyen’s Business Enablement Engineering Team is looking for a Senior Forward Deployed Engineer who has a deep passion for AI and Automation. They will work on improving how teams work using their day to day productivity tooling by applying AI and automation where it has a huge effect and value.</p> <p>You will be the primary driver of internal teams adopting and taking full advantage of our productivity tooling landscape. Operating as a highly technical expert, specialized, engineer, you will work with and dive deep into non-technical functions such as Legal, Support, and Operations to understand their operational toil, architect the right solutions, to reduce manual work in key business workflows, with the goal of speeding up the teams overall day to day work.&nbsp;</p> <p>This isn't just about coding, it's about deeply understanding our internal team's most complex problems, leading the end-to-end technical delivery of innovative AI solutions, and empowering these teams to operate faster and smarter. You will be a hands-on engineer, shaping technical strategy and ensuring successful outcomes from initial concept to handover while increasing overall adoption of our tooling ecosystem.</p> <h3><strong>What you will do</strong></h3> <ul> <li>You build robust and resilient systems where maintenance is lower or non-existent. You build on top of our existing internal ecosystem or stakeholder tooling to accelerate teams productivity and user experience.&nbsp;</li> <li>You create long-term high-quality documentation and runbooks. You hand ownership back to the function/team before moving on to your next project.</li> <li>You identify repeated patterns of stakeholder issues or asks that feed back into Business Enablements Tooling roadmap.</li> <li>Automate complex internal processes using Google Vertex AI, Google’s Agent Development Kit (ADK), and software engineering to provide solutions(e.g., automated support agents, intelligent documentation retrieval, contract review automations).</li> <li>Be responsible for the end-to-end technical delivery of complex technical solutions. You will personally write critical code, configure systems, and troubleshoot issues to ensure successful deployment and measurable business impact.</li> <li>Embrace Adyen's \"launch fast\" formula. Quickly develop proofs-of-concept and minimum viable products, translating non-technical business requirements into technical solutions, and gathering feedback along the way.</li> <li>Identify, analyze, and directly resolve the most complex technical challenges during all phases of the project, from complex data integrations on GCP/Kubernetes to advanced AI agent orchestration.</li> </ul> <h3><strong>Who you are</strong></h3> <ul> <li>You are an expert in Software Engineering and bring strong automation skills, with the ability to build, troubleshoot, and scale scripts and tools independently.</li> <li>You have client facing experiences like Solutions Architect, Solutions Engineers</li> <li>You have a deep understanding of LLMs, prompt engineering, and applied ML workflows. You have hands-on experience integrating third-party AI models (e.g., Gemini) and using agentic orchestration frameworks (e.g., LangChain, LlamaIndex, Google ADK).</li> <li>You have hands-on experience with Google Cloud Platform (GCP) especially integrating applications across services like Vertex AI as well as deploying to on-premise infrastructure such as K8S, Postgres, Redis etc.</li> <li>You’ve successfully rolled out and maintained integrations across a variety of enterprise applications (Slack Enterprise Grid, Zoom, Atlassian suite).</li> <li>You are great at understanding and translating non-technical issues into technical requirements. You can confidently navigate stakeholder conversations, present complex concepts simply, and create high-quality documentation.</li> <li>You apply a security-first mindset, designing solutions that safeguard data and systems while maintaining a seamless user experience.</li> <li>You have a \"get-things-done\" mentality, focusing on fast and impactful delivery, and the proven ability to lead technical initiatives autonomously.</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p><span style=\"font-weight: 400;\">This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</span></p>",
-    "posted_at": "2026-11-09T05:17:04-05:00",
-    "tags": null,
-    "verdict": "weak",
-    "reasoning": "The role is a senior position at a fintech company in Amsterdam, matching the candidate's seniority, location, and industry background. However, the job is heavily specialized in AI and automation using Google Cloud Platform, requiring deep expertise in LLMs, prompt engineering, and GCP services. The candidate's background is strong in traditional full-stack development (Java, React, SQL) and automation (CI/CD, DevOps), but lacks the specific AI/ML and GCP experience demanded. While the candidate's soft skills and ownership mentality are relevant, the technical gaps are significant, making this a stretch.",
-    "applied_at": null,
-    "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
     "id": 4,
@@ -2430,7 +2466,7 @@
     "first_seen": "2026-11-09T10:08:05.500Z"
   },
   {
-    "id": 102,
+    "id": 103,
     "external_id": "15b778bc-e60c-4dc4-9b9c-279f0ed2d3c0",
     "source": "teamtailor",
     "company": "Knowmad Mood",
@@ -3798,24 +3834,6 @@
     "first_seen": "2026-10-13T13:18:40.922Z"
   },
   {
-    "id": 7310,
-    "external_id": "6919020",
-    "source": "greenhouse",
-    "company": "Adyen",
-    "title": "Senior Data Engineer",
-    "location": "Amsterdam",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/6919020",
-    "description": "<p><strong>This is Adyen</strong></p> <p><span style=\"font-weight: 400;\">Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster.</span></p> <p><strong>Senior Data Engineer</strong></p> <p>At Adyen, we treat data and data artifacts as first-class citizens. They form our backbone and drive the business and product insights we generate. To this end, Adyen is looking for a Senior Data Engineers in Amsterdam. We’re looking for engineers that understand the business context and the data needs behind it, and excel in implementing high-quality data pipelines on our Big Data Platform. As a Senior Data Engineer at Adyen, you will play a crucial role in shaping our data infrastructure and ensuring the seamless flow of data across various systems.&nbsp;</p> <p><strong>What you’ll do</strong></p> <ul> <li><strong>Collaborative Solution Development</strong>: Engage with a diverse range of stakeholders, including data scientists, analysts, software engineers, product managers, and customers, to understand their requirements and craft effective solutions.</li> <li><strong>State-of-the-Art Pipelines and Architecture</strong>: Design, develop, deploy and operate high-quality production ELT pipelines and data architectures. Integrate data from various sources and formats, ensuring compatibility, consistency, and reliability. Design scalable architectures.&nbsp;</li> <li><strong>Champion Data Best Practices</strong>: Proactively establish and advocate for best practices in performance, code quality, data validation, data governance, and discoverability across Adyen through mentoring, training, and knowledge sharing.</li> <li><strong>High Quality Data and Code:</strong> Ensure data is accurate, complete, reliable, relevant, and timely. Implement rigorous testing, monitoring and validation protocols for your code and data, leveraging tools such as Pytest.</li> <li><strong>Performance Optimization</strong>: Identify and resolve performance bottlenecks in data pipelines and systems. Optimize query performance and resource utilization to meet SLAs and performance requirements, using technologies such as caching, indexing, partitioning, and other Spark optimizations.</li> </ul> <p><strong>Who you are</strong></p> <ul> <li><strong>Experienced in Big Data:</strong> Over 7 years of experience working as a Data Engineer or in a similar role.</li> <li><strong>Data &amp; Engineering practices:</strong> You possess an expert-level understanding of both Software and Data Engineering practices.</li> <li><strong>Technical Super Star:</strong> Highly proficient in tools and languages such as: Python, PySpark, Airflow, Hadoop, Spark, Kafka, SQL, Git.&nbsp;</li> <li><strong>Clear Communicator:</strong> Skilled at articulating complex data-related concepts and outcomes to a diverse range of stakeholders.&nbsp;</li> <li><strong>Self-starter:</strong> Capable of independently recognizing opportunities, devising solutions, leading, prioritizing and owning projects.&nbsp;</li> <li><strong>Innovator:</strong> You have an experimental mindset with a ‘launch fast and iterate’ mentality.</li> <li><strong>Data Culture Champion:</strong> Experienced in fostering a data-centric culture within large, technical organizations and setting standards for excellence and continuous improvement.&nbsp;</li> </ul> <p><strong>Data positions at Adyen</strong></p> <p>We know companies handle different definitions for their data-related positions, this is for instance dependent on the size of a company. Since the birth of the Data Solution and the growth of all data streams, we categorized and defined all our positions. Have a look at<a href=\"https://www.adyen.com/knowledge-hub/roles-scaling-up-data-culture\" target=\"_blank\"> this blogpost</a> to find out!&nbsp;</p> <p>Teams we're currently hiring for:</p> <ul> <li>Uplift Protect</li> <li>Balance Transactions</li> <li>Payment Lifecycle Data</li> <li>Optimise Interfaces</li> <li>Payment Pricing</li> </ul> <p><strong>Our Diversity, Equity and Inclusion commitments&nbsp;</strong></p> <p><span style=\"font-weight: 400;\">Our unique approach is a product of our diverse perspectives. This diversity of backgrounds and cultures is essential in helping us maintain our momentum. Our business and technical challenges are unique, and we need as many different voices as possible to join us in solving them - voices like yours. No matter who you are or where you’re from, we welcome you to be your true self at Adyen.&nbsp;</span></p> <p><span style=\"font-weight: 400;\">Studies show that women and members of underrepresented communities apply for jobs only if they meet 100% of the qualifications. Does this sound like you? If so, Adyen encourages you to reconsider and apply. We look forward to your application!</span></p> <p><strong>What’s next?</strong></p> <p><span style=\"font-weight: 400;\">Ensuring a smooth and enjoyable candidate experience is critical for us. We aim to get back to you regarding your application within 5 business days. Our interview process tends to take about 4 weeks to complete, but may fluctuate depending on the role. </span><a href=\"https://careers.adyen.com/how-we-hire\"><span style=\"font-weight: 400;\">Learn more about our hiring process here</span></a><span style=\"font-weight: 400;\">. Don’t be afraid to let us know if you need more flexibility.</span></p> <p>This role is based out of our Amsterdam office. We are an office-first company and value in-person collaboration; we do not offer remote-only roles.</p> <p>&nbsp;</p>",
-    "posted_at": "2026-11-05T05:26:03-05:00",
-    "tags": null,
-    "verdict": "weak",
-    "reasoning": "This is a Senior Data Engineer role at Adyen focused on big data infrastructure (Spark, PySpark, Airflow, Hadoop, Kafka) and ELT pipelines at scale. The candidate is a senior full-stack/backend engineer with strong SQL, Python basics, and CI/CD experience, plus a fintech background, so the industry and seniority align well. However, the core hard requirements of the role are big data technologies and dedicated data engineering experience, which the candidate's profile does not demonstrate. Their hands-on Python work is project-based (scraping, LLM integrations), not production data pipelines on distributed systems. This is more of a tangential fit than a realistic direct match without significant upskilling or repositioning.",
-    "applied_at": null,
-    "first_seen": "2026-10-16T13:41:04.250Z"
-  },
-  {
     "id": 7406,
     "external_id": "744000159820470",
     "source": "smartrecruiters",
@@ -4100,24 +4118,6 @@
     "tags": null,
     "verdict": "strong",
     "reasoning": "The candidate's 10+ years of experience, strong CI/CD and DevOps ownership at Rabobank, and full-stack background align well with the DevEx role's requirements. The location in Amsterdam matches the candidate's preference for the Netherlands, and the seniority level is appropriate. The candidate's hands-on experience with CI/CD pipelines, build tooling, and internal tooling directly maps to the job's core responsibilities. While the candidate lacks explicit GraphQL, gRPC, and Kubernetes experience, their demonstrated ability to learn and adapt, plus their AI tooling interest, makes this a strong fit with manageable gaps.",
-    "applied_at": null,
-    "first_seen": "2026-11-06T12:32:13.580Z"
-  },
-  {
-    "id": 7367,
-    "external_id": "7921068",
-    "source": "greenhouse",
-    "company": "Flexport",
-    "title": "Senior Software Engineer, DevEx",
-    "location": "Amsterdam, Netherlands",
-    "workplace_type": null,
-    "employment_type": null,
-    "url": "https://job-boards.greenhouse.io/flexport/jobs/7921068",
-    "description": "<div class=\"content-intro\"><h2><strong>About Flexport:&nbsp;</strong></h2> <p>At Flexport, we believe global trade can move the human race forward. That’s why it’s our mission to make global commerce so easy there will be more of it. We’re shaping the future of a $10T industry with solutions powered by innovative technology and exceptional people. Today, companies of all sizes—from emerging brands to Fortune 500s—use Flexport technology to move more than $19B of merchandise across 112 countries a year.&nbsp;</p> <p>The recent global supply chain crisis has put Flexport center stage as we continue to play a pivotal role in how goods move around the world. We are proud to have the support of the best investors in the game who believe in our mission, solutions and people. Ready to tackle global challenges that impact business, society, and the environment? Come join us.</p></div><h1><strong>Senior Software Engineer: DevEx</strong></h1> <p>Every engineer at Flexport ships code that moves real freight across 112 countries. The faster and safer they can do that, the faster the world's supply chains move. The PSI (Platform, Security &amp; Infrastructure) team makes this possible: we build the paved path and tooling that hundreds of engineers around the world rely on every day to ship.</p> <p>This is not a role where you wait for tickets. You'll talk to engineers, dogfood our platform, and find the friction that's slowing us down, and then design and ship the tools to remove that.</p> <h2><strong>What You'll Do</strong></h2> <p>You'll own and evolve the developer platform that powers Flexport engineering. That means:</p> <ul> <li>Making the best <strong>paved paths and self-serve tooling </strong>possible that make the right thing the easy thing.</li> <li>Creating and supporting developers with<strong> CI/CD pipelines</strong> (Buildkit, Github Actions), <strong>build tooling </strong>(Gradle, Bazel, npm/pnpm/bun, Go and Cargo) and <strong>artifact repositories</strong> (Artifactory, ECR, github).</li> <li>Owning and improving the backend and frontend developer experience.</li> <li>Acting as the steward of our <strong>GraphQL and gRPC ecosystem</strong> and make sure our middleware, federation and schema sharing, CLIs, codegen and servers and clients work smooth as butter.</li> <li>Evolving and integrating our&nbsp;<strong>IAM solutions and primitives</strong> so that everything is easy and secure by default.</li> <li>Making sure engineers can easily use and understand our&nbsp;<strong>container orchestration </strong>(Kubernetes, ECS) and <strong>observability stack</strong> (Openmetrics, Datadog) that engineers rely on to run, understand and debug their services.</li> </ul> <h2><strong>You Should Have</strong></h2> <ul> <li><strong>5+ years of software engineering experience</strong>, with time spent building developer platforms, or internal tooling that other engineers depend on.</li> <li><strong>Deep full-stack instincts</strong>: you're equally comfortable in a backend service, a frontend build pipeline, a Kubernetes manifest, and a CI configuration.</li> <li><strong>Strong product instincts applied to internal users</strong>: you treat engineers as customers, identify what's actually worth building, and measure whether it worked.</li> <li><strong>Expertise and hands on experience with several of: </strong>a CI/CD system (Github Actions preferred), a container orchestrator (Kubernetes preferred), build tooling preferably for more than one language, backend-for-frontend (Graphql preferred), service-to-service communication (gRPC preferred), Metrics and artifact storage.</li> <li><strong>You take pride in solving tech debt and fixing what’s broken: </strong>you’ll either fix it, or if a migration is needed you either execute them yourself or make them feel effortless.</li> <li><strong>An independent mindset</strong>: you thrive in ambiguity, find the highest-leverage problems yourself, and don't wait to be told what to do.</li> <li><strong>Excellent communication</strong>: you can run a developer interview, write a clear design doc, and make sure everyone understands what’s going on.</li> <li><strong>A generally helpful attitude</strong>. Everyone should know you within no-time as the person who gets stuff unblocked, points them in the right direction and makes their work easier.&nbsp;</li> <li><strong>A drive for impact</strong>: you are not satisfying until every engineer is productive and confident thanks to your team.</li> </ul> <h2><strong>Nice to Have</strong></h2> <ul> <li>Experience in data-driven DevX development using metrics such as DORA.</li> <li>Experience with AWS.</li> <li>Experience in Identity and Access Management (IAM) at scale such as JWTs, OIDC and fine-grained authorization.</li> <li>Experience with Terraform.</li> </ul> <h2><strong>How We Work</strong></h2> <ul> <li>We come to the office 3 times a week to hang out, whiteboard, and ship together.</li> <li>We have the latest hardware and software, including frontier AI models on day one.</li> <li>We're agile, but not dogmatic. Teams decide how they work best.</li> </ul> <h2><strong>Why This Role Is Special</strong></h2> <ul> <li><strong>Massive leverage</strong>: every improvement you ship is multiplied across hundreds of engineers and thousands of deploys a day.</li> <li><strong>Full ownership</strong>: from developer research to production rollout to measuring impact, it's yours.</li> <li><strong>You shape the paved path</strong>: the conventions you set and decisions you make become how Flexport engineering builds for years to come.</li> </ul> <h2><strong>What's in it for you:&nbsp;</strong></h2> <ul> <li>An opportunity to contribute to one of the fastest-growing companies, where you’ll have the chance to create a global impact while being a part of a&nbsp; thriving multinational environment.</li> <li>Daily catered lunches incl. vegetarian options, breakfast, snacks and soft drinks available in our office on daily basis.</li> <li>Commute expenses: Flexport will cover&nbsp; home-office commuting costs for employees living outside of Amsterdam.</li> <li>25 working days as vacation days based on full time employment.</li> <li>Health insurance: Flexport offers a collective health insurance plan including a basic package and any available additional packages. Your monthly premium is fully paid by Flexport.&nbsp;</li> <li>A defined pension contribution scheme.</li> <li>Equity program: every team member becomes a shareholder, aligning our success with yours. As a private company in a multi-trillion dollar industry, you have a direct stake in our collective growth and success.</li> <li>Employee Assistance Program through Aetna Resources for Living: Flexport provides an employer-sponsored program at no cost to you and your household members.</li> <li>Parental leave benefit: Flexport is here to support you and your families in one of the most important times in life – the birth of a child! Our parental leave program allows both mothers and partners to take time off from work for pregnancy, childbirth, and to bond with your new child.</li> </ul> <p>&nbsp;</p> <p>#LI-onsite</p> <p><span data-sheets-root=\"1\">#LI-BG1</span></p><div class=\"content-conclusion\"><div id=\"1704749847.557549\" class=\"c-virtual_list__item\" data-qa=\"virtual-list-item\" data-item-key=\"1704749847.557549\"> <div class=\"c-message_kit__background p-message_pane_message__message c-message_kit__message\" data-qa=\"message_container\" data-qa-unprocessed=\"false\" data-qa-placeholder=\"false\"> <div class=\"c-message_kit__hover\" data-qa-hover=\"true\"> <div class=\"c-message_kit__actions c-message_kit__actions--default\"> <div class=\"c-message_kit__gutter\"> <div class=\"c-message_kit__gutter__right\" data-qa=\"message_content\"> <div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"> <div class=\"c-message__message_blocks c-message__message_blocks--rich_text\" data-qa=\"message-text\"> <div class=\"p-block_kit_renderer\" data-qa=\"block-kit-renderer\"> <div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"> <div class=\"p-rich_text_block\"> <h4>Commitment to Equal Opportunity</h4> <p>At Flexport, our ability to fulfill our mission of making global commerce easy and accessible relies on having a diverse, dedicated and engaged workforce. All qualified applicants will receive consideration for employment regardless of race, color, religion, sex, national origin, age, physical and mental disability, health status, marital and family status, sexual orientation, gender identity and expression, military and veteran status, and any other characteristic protected by applicable law.</p> <h4>Global Data Privacy Notice for Job Candidates and Applicants</h4> <p>Depending on your location, the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) may regulate the way we manage the data of job applicants.&nbsp;By submitting your application, you are agreeing to our use and processing of your data as required. Please see our Privacy Notice available at&nbsp;<a href=\"http://www.flexport.com/privacy\" target=\"_blank\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.flexport.com/privacy&amp;source=gmail&amp;ust=1613840050053000&amp;usg=AFQjCNHD63svlkD-hWHlGuGOM_bSYVrnpw\">www.flexport.com/privacy</a>&nbsp;for additional information.</p> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div></div>",
-    "posted_at": "2026-11-04T11:38:51-05:00",
-    "tags": null,
-    "verdict": "weak",
-    "reasoning": "The role is a strong seniority and location match — the candidate has 10+ years of experience and is based in the Netherlands, open to Amsterdam hybrid work. The full-stack background, CI/CD ownership, and mentoring behavior align with the DevEx team's 'helpful unblocker' culture. However, the job is fundamentally platform engineering: Kubernetes, GraphQL/gRPC, build tooling, artifact repositories, and observability are core requirements, and none of these appear in the candidate's CV. Their experience is anchored in WebRatio, Java/React application work, and Azure DevOps pipelines, which is relevant but not the developer-platform depth this role demands.",
     "applied_at": null,
     "first_seen": "2026-11-06T12:32:13.580Z"
   },
