@@ -50,7 +50,7 @@
     "tags": null,
     "verdict": "fair",
     "reasoning": "This is a genuine senior full-stack role at a fintech, remote in Spain, which aligns with the candidate's target locations, fintech interest, and seniority. He meets the 4+ years bar comfortably, has strong React/TypeScript frontend experience, Java/SQL backend depth, CI/CD ownership, and demonstrable daily use of LLM APIs and agentic tooling (REA Bot, JobHopper), which maps well to Affirm's AI-productivity emphasis. The main gaps are stack-specific: the posting centers on Python, Kotlin, AWS, MySQL, and Kubernetes for large-scale backend systems, whereas his backend is primarily Java plus WebRatio model-driven development, with limited evidence of cloud-native/Kubernetes or Kotlin work. His scale experience is a ~70-user internal bank system rather than consumer products serving millions, and the role expects leading engineers through ambiguity and on-call ownership at consumer scale. It is a realistic stretch rather than a close fit, but not a mismatch on seniority or constraints.",
-    "applied_at": null,
+    "applied_at": "2026-11-12T19:38:26.775Z",
     "first_seen": "2026-11-12T18:01:15.134Z"
   },
   {
@@ -266,7 +266,7 @@
     "tags": null,
     "verdict": "fair",
     "reasoning": "The role is a Spain-based remote senior/staff backend engineering position at Grafana Labs, which aligns with Asjon's location preferences (Spain, remote EU) and his seniority, so there's no hard-constraint violation. His strengths map partially: he has production backend experience (Java, REST/SOAP, SQL), CI/CD and DevOps ownership, customer-facing delivery, and hands-on LLM/agentic tooling including MCP and a personal LLM-powered project. However, the posting is explicitly a Staff-level backend role building a multi-tenant cloud-native SaaS context/retrieval system, and Asjon's core platform is WebRatio model-driven development rather than modern cloud-native backend services (Go/K8s/AWS-style infra), with no demonstrated multi-tenancy, observability instrumentation, or data-platform experience. His AI work is project-scale rather than production GenAI systems, and his stack leans legacy enterprise rather than the greenfield architecture this team wants. It's a realistic stretch but with meaningful gaps in cloud-native depth and staff-level scope.",
-    "applied_at": null,
+    "applied_at": "2026-11-12T18:04:34.230Z",
     "first_seen": "2026-11-12T15:19:23.959Z"
   },
   {
