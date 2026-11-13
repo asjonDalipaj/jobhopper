@@ -18,7 +18,7 @@
     "first_seen": "2026-10-20T23:34:43.583Z"
   },
   {
-    "id": 73,
+    "id": 8668,
     "external_id": "744000161451679",
     "source": "smartrecruiters",
     "company": "T-Systems Iberia",
@@ -31,7 +31,7 @@
     "posted_at": "2026-11-13T09:47:34.349Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This is a functional analyst (business analyst) role for HR/payroll software, not a software engineering position, and it requires advanced Catalan, which the candidate does not list among his languages (Italian, English, Albanian, basic Spanish). The core requirement is 3+ years as a functional analyst gathering requirements and writing functional documentation, whereas the candidate is a hands-on engineer whose career is building and shipping code. The tech stack centers on legacy HOST technology with a planned Java/cloud migration, and the role is tied to Reus/Barcelona with a preference for Tarragona-area candidates. While the candidate's fintech background and stakeholder-facing experience are relevant, the language requirement and the analyst (non-engineering) nature of the role make this a poor fit.",
+    "reasoning": "This is a functional analyst role for HR/payroll software, not a software engineering position, and it fails the candidate's core requirements. The posting demands advanced Catalan (spoken and written) as an imprescindible requirement, which the candidate does not have — his languages are Italian, English, Albanian and basic Spanish. It also requires at least 3 years as a functional analyst, whereas the candidate is a hands-on engineer with 10+ years of development experience and no formal functional-analysis title. The role is based in Reus/Barcelona with a preference for Tarragona-area candidates, and while the candidate is open to Spain, the work itself (requirements gathering, functional documentation, UAT) is a different discipline from the senior full-stack/backend engineering roles he is targeting. The legacy HOST-to-Java migration is the only tangential overlap, and it is not enough to make this a realistic fit.",
     "applied_at": null,
     "first_seen": "2026-11-13T12:18:46.659Z"
   },
@@ -288,7 +288,7 @@
     "first_seen": "2026-11-12T15:19:23.959Z"
   },
   {
-    "id": 75,
+    "id": 8669,
     "external_id": "744000161314192",
     "source": "smartrecruiters",
     "company": "KPN",
@@ -301,7 +301,7 @@
     "posted_at": "2026-11-12T14:39:37.210Z",
     "tags": null,
     "verdict": "no",
-    "reasoning": "This is an internship (meewerkstage) explicitly targeting MBO-level students, which directly violates the candidate's hard constraint against junior, internship, or entry-level roles. The candidate has 10+ years of senior experience and is seeking senior full-stack or backend positions. Even though there is some technical overlap (Python, automation, CI/CD), the role's level and educational requirements are fundamentally mismatched with the candidate's profile and preferences.",
+    "reasoning": "This is an internship (meewerkstage) for MBO-level ICT students, explicitly requiring enrollment in an MBO ICT program (level 3 or 4) and offering a €600 student stipend. The candidate is a senior engineer with 10+ years of professional experience, which directly violates his hard constraint against junior, internship, or entry-level roles. While some skills overlap (Python, HTML/CSS/JS, automation, DevOps), the role's seniority, educational requirement, and compensation model are fundamentally mismatched. This is a clear disqualification regardless of technical overlap.",
     "applied_at": null,
     "first_seen": "2026-11-12T15:19:23.959Z"
   },
@@ -648,7 +648,7 @@
     "first_seen": "2026-11-11T18:19:02.184Z"
   },
   {
-    "id": 70,
+    "id": 8666,
     "external_id": "2824242",
     "source": "recruitee",
     "company": "Xebia",
@@ -954,7 +954,7 @@
     "first_seen": "2026-11-11T12:48:18.903Z"
   },
   {
-    "id": 72,
+    "id": 8667,
     "external_id": "2823855",
     "source": "recruitee",
     "company": "Xebia",
