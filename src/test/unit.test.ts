@@ -16,6 +16,7 @@ type SnapRow = {
   applied_at: string | null;
   first_seen?: string | null;
   last_seen?: string | null;
+  model?: string | null;
 };
 import { ashbyLocations } from '../sources/ashby.js';
 import { greenhousePostedAt } from '../sources/greenhouse.js';
@@ -267,6 +268,18 @@ test('mergeSnapshotRows never rewinds last_seen, so liveness survives a stale re
   // A row with no last_seen inherits the stored one instead of losing it.
   const unknown: SnapRow[] = [{ ...fresh[0], last_seen: null }];
   assert.equal(mergeSnapshotRows(existing, unknown)[0].last_seen, '2026-11-12T10:00:00.000Z');
+});
+
+test('mergeSnapshotRows keeps the judging model when the fresh row has none', () => {
+  // Seeding restores verdicts from the snapshot; an export must not blank out
+  // which model produced them.
+  const existing: SnapRow[] = [
+    { source: 'a', external_id: '1', verdict: 'fair', reasoning: 'why', applied_at: null, model: 'deepseek-v4-flash' },
+  ];
+  const fresh: SnapRow[] = [
+    { source: 'a', external_id: '1', verdict: 'fair', reasoning: 'why', applied_at: null, model: null },
+  ];
+  assert.equal(mergeSnapshotRows(existing, fresh)[0].model, 'deepseek-v4-flash');
 });
 
 test('greenhousePostedAt prefers first_published over a bulk-edited updated_at', () => {

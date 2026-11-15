@@ -829,6 +829,7 @@ program
         tags: j.tags ?? null,
         verdict: j.verdict ?? null,
         reasoning: j.reasoning ?? null,
+        model: j.model || null,
         applied_at: j.applied_at ?? null,
         last_seen: j.last_seen ?? null,
         first_seen: null as string | null, // set below from the previous snapshot

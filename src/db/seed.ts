@@ -20,6 +20,7 @@ interface SnapshotRow {
   tags?: unknown;
   verdict?: unknown;
   reasoning?: unknown;
+  model?: unknown;
   applied_at?: unknown;
   last_seen?: unknown;
 }
@@ -48,10 +49,12 @@ export function seedFromSnapshot(jsonPath: string): SeedResult {
   let rows: SnapshotRow[];
   try {
     const parsed: unknown = JSON.parse(readFileSync(jsonPath, 'utf8'));
-    if (!Array.isArray(parsed)) return result;
+    if (!Array.isArray(parsed)) throw new Error('not a JSON array');
     rows = parsed as SnapshotRow[];
-  } catch {
-    return result;
+  } catch (err) {
+    // Fail loudly: seeding nothing would silently re-judge every row, which is
+    // a real API bill, and the snapshot is the only cross-run memory we have.
+    throw new Error(`cannot read snapshot ${jsonPath}: ${(err as Error).message}`);
   }
 
   for (const row of rows) {
@@ -86,7 +89,9 @@ export function seedFromSnapshot(jsonPath: string): SeedResult {
         jobId: id,
         verdict: verdict as Verdict,
         reasoning: text(row.reasoning),
-        model: 'snapshot',
+        // Empty means "never recorded" (snapshots predating the field) — better
+        // than stamping a model name that did not produce the verdict.
+        model: text(row.model),
         quick: true,
       });
       result.judgments++;

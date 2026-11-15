@@ -229,13 +229,14 @@ function buildListSql(filters: ListFilters): { sql: string; params: SQLInputValu
   return { sql: where, params };
 }
 
-export function listJobs(filters: ListFilters = {}): Array<Job & { verdict: Verdict | null; reasoning: string | null }> {
+export function listJobs(filters: ListFilters = {}): Array<Job & { verdict: Verdict | null; reasoning: string | null; model: string | null }> {
   const { sql, params } = buildListSql(filters);
   const limit = filters.limit ?? 50;
   const offset = filters.offset ?? 0;
   const rows = getDb()
     .prepare(
-      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning
+      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning,
+              judgments.model AS model
        FROM jobs
        LEFT JOIN judgments ON judgments.job_id = jobs.id
        ${sql}
@@ -243,7 +244,7 @@ export function listJobs(filters: ListFilters = {}): Array<Job & { verdict: Verd
        LIMIT ? OFFSET ?`,
     )
     .all(...params, limit, offset) as unknown as Array<
-    Job & { verdict: Verdict | null; reasoning: string | null }
+    Job & { verdict: Verdict | null; reasoning: string | null; model: string | null }
   >;
   return rows;
 }
@@ -328,14 +329,15 @@ export function searchJobs(options: {
  * recency). Used to ensure judged postings are never dropped from the exported
  * snapshot just because they fall outside the newest-1000 cutoff.
  */
-export function listJudgedJobs(limit = 5000): Array<Job & { verdict: Verdict | null; reasoning: string | null }> {
+export function listJudgedJobs(limit = 5000): Array<Job & { verdict: Verdict | null; reasoning: string | null; model: string | null }> {
   return getDb()
     .prepare(
-      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning
+      `SELECT jobs.*, judgments.verdict AS verdict, judgments.reasoning AS reasoning,
+              judgments.model AS model
        FROM jobs
        INNER JOIN judgments ON judgments.job_id = jobs.id
        ORDER BY jobs.posted_at IS NULL, jobs.posted_at DESC, jobs.id DESC
        LIMIT ?`,
     )
-    .all(limit) as unknown as Array<Job & { verdict: Verdict | null; reasoning: string | null }>;
+    .all(limit) as unknown as Array<Job & { verdict: Verdict | null; reasoning: string | null; model: string | null }>;
 }

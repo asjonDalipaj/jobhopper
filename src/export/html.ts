@@ -109,6 +109,8 @@ export interface JsonRow {
   tags: string | null;
   verdict?: string | null;
   reasoning?: string | null;
+  /** Model that produced the verdict; null when it was never recorded. */
+  model?: string | null;
   /** Last time a board returned this row (ISO). Cross-run liveness signal. */
   last_seen?: string | null;
 }
@@ -126,7 +128,7 @@ function maxIso(a?: string | null, b?: string | null): string | null {
  * in which case the fresh row wins. A committed verdict/reasoning is kept when the
  * fresh row has none, so a re-export never erases a judgment.
  */
-export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; applied_at?: string | null; first_seen?: string | null; last_seen?: string | null }>(
+export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; model?: string | null; applied_at?: string | null; first_seen?: string | null; last_seen?: string | null }>(
   existing: T[],
   fresh: T[],
 ): T[] {
@@ -138,12 +140,14 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
     const keepVerdict = !row.verdict && prev?.verdict;
     const keepApplied = !row.applied_at && prev?.applied_at;
     const keepFirstSeen = !row.first_seen && prev?.first_seen;
+    const keepModel = !row.model && prev?.model;
     // A run that does not re-see a row must not rewind its liveness clock.
     const lastSeen = maxIso(row.last_seen, prev?.last_seen);
     let merged = row;
     if (keepVerdict) merged = { ...merged, verdict: prev.verdict, reasoning: prev.reasoning ?? row.reasoning };
     if (keepApplied) merged = { ...merged, applied_at: prev.applied_at };
     if (keepFirstSeen) merged = { ...merged, first_seen: prev.first_seen };
+    if (keepModel) merged = { ...merged, model: prev.model };
     if (lastSeen !== (row.last_seen ?? null)) merged = { ...merged, last_seen: lastSeen };
     byKey.set(key, merged);
   }
