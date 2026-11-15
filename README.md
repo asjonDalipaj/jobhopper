@@ -30,9 +30,10 @@ and it's yours.
   [Company discovery](docs/COMPANY-INDEX.md)).
 - **Coverage research.** Measured source yields, the hiring.cafe playbook and aggregator quirks:
   [docs/COVERAGE.md](docs/COVERAGE.md).
-- **A deterministic gate.** Market aliases, a 3-day freshness window, and a
+- **A deterministic gate.** Market aliases, a 30-day ingest floor, and a
   word-boundary software-role filter run before anything reaches SQLite
-  (`src/market.ts`).
+  (`src/market.ts`). Age is a rank, not a delete: a row stays while its board
+  still returns it (`last_seen`).
 - **Local SQLite + FTS5.** Search, filters, shortlists ("tabs"), and verdicts
   stay on disk.
 - **BYO AI.** The judge reads `cv.txt`, `background.md`, `preferences.md` and
@@ -168,7 +169,7 @@ still runs every 3 hours as the fallback when the machine is off. See
                                  │ SourceJob (normalized)
                                  ▼
                  ┌──────────────────────────────────────────────┐
-                 │ gate: market aliases → 3-day freshness →     │
+                 │ gate: market aliases → 30-day ingest floor →  │
                  │ word-boundary software role (src/market.ts) │
                  └───────────────┬──────────────────────────────┘
                                  ▼
@@ -187,11 +188,14 @@ still runs every 3 hours as the fallback when the machine is off. See
 Key invariants:
 
 - **The gate runs at ingestion**, not in the UI. If a row is in the DB it
-  passed market + freshness + role at that moment. `cleanup` re-applies the
-  rule to old rows; `run -j` re-filters the merged snapshot with
-  `inSnapshotScope`.
+  passed market + the ingest floor + role at that moment, on a scan that also
+  stamped `last_seen`. `cleanup` drops unjudged rows its board stopped
+  returning, and never judged/applied history; `run -j` re-filters the merged
+  snapshot with `inSnapshotScope`.
 - **The snapshot never invents rows.** CI merges the new export over the
-  previous snapshot, preserving `first_seen`, verdicts and `applied_at`.
+  previous snapshot, preserving `first_seen`, `last_seen`, verdicts and
+  `applied_at`. The DB is seeded from that snapshot before each scan, so a
+  row that already has a verdict is never judged twice.
 - **Verdicts are per job row**, with the model that produced them.
 - **Applying never auto-submits.** The fill flow stops for a human review.
 
@@ -316,8 +320,9 @@ Tests are fixture-driven and live in `src/test/`; they cover the pure seams
   from an old build; `npm run build:web && npm run ui`.
 - **A job shows `[object Object]` in the location** → stale snapshot data from
   an older parser; re-scan/re-export the affected source.
-- **Nothing new after a scan** → check the gate: market (`--country`), 3-day
-  freshness, and the software-role filter. `scan` prints the skipped counts.
+- **Nothing new after a scan** → check the gate: market (`--country`), the
+  30-day ingest floor, and the software-role filter. `scan` prints the skipped
+  counts, and the seed line shows how many rows it already knew.
 - **Judgments unchanged after editing the profile** → verdicts are stored per
   row; run `judge --all --rejudge` (or `--tab X --rejudge`).
 - **No jobs on the phone** → the hosted page reads the committed snapshot; a

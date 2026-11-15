@@ -28,8 +28,9 @@ src/sources/* ──► scan.ts ──► market.ts gate ──► SQLite (jobs)
 3. **Gate** — `passesMarketFilter` in `scan.ts` calls `src/market.ts`:
    - `isTargetMarket(location)` — Italy / Spain / Netherlands aliases and
      cities (word-boundary, case-insensitive).
-   - `isFresh(postedAt, now, target)` — 3 days for target markets
-     (`TARGET_MARKET_MAX_AGE_DAYS`), 30 days otherwise.
+   - `isFresh(postedAt, now)` — the ingest floor (`MAX_JOB_AGE_DAYS`, 30 days).
+     Age ranks; it does not delete. `TARGET_MARKET_MAX_AGE_DAYS` remains only
+     as EURES' request window.
    - `isRelevantRole(title)` — software-engineering and music-production
      keywords, matched on word boundaries; Italian/Spanish/Dutch stems
      (`sviluppator`, `desarrollador`, `ontwikkelaar`, …) use prefix matching.
@@ -98,7 +99,7 @@ src/sources/* ──► scan.ts ──► market.ts gate ──► SQLite (jobs)
 |---|---|
 | add a city/country alias | `src/market.ts` (`ITALY_ALIASES`, `SPAIN_ALIASES`, `NETHERLANDS_ALIASES`) |
 | add/remove a role keyword | `src/market.ts` (`ENGINEERING_KEYWORDS`, `ENGINEERING_STEMS`, `MUSIC_KEYWORDS`) |
-| change freshness | `TARGET_MARKET_MAX_AGE_DAYS` / `MAX_JOB_AGE_DAYS` in `src/market.ts` |
+| change the ingest floor / retention | `MAX_JOB_AGE_DAYS` / `UNSEEN_RETENTION_DAYS` in `src/market.ts` |
 | add a company board | one line in `src/sources/companies.ts` |
 | add an ATS | [ADDING-A-SOURCE.md](ADDING-A-SOURCE.md) |
 | change the judge prompt/model | `src/judge/openrouter.ts`, `src/config/config.ts` |
