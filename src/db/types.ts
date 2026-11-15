@@ -12,6 +12,8 @@ export interface Job {
   posted_at: string | null;
   created_at: string;
   applied_at: string | null;
+  /** Last time a board returned this posting; null on rows seeded before 2026-11-13. */
+  last_seen: string | null;
   tags: string | null;
   category: string | null;
   normalized_locations: string | null;

@@ -26,6 +26,7 @@ export function getDb(): DatabaseSync {
     'extracted_workplace_type TEXT',
     'extraction_model TEXT',
     'applied_at TEXT',
+    'last_seen TEXT',
   ]) {
     try {
       _db.exec(`ALTER TABLE jobs ADD COLUMN ${column}`);
@@ -55,6 +56,7 @@ CREATE TABLE IF NOT EXISTS jobs (
   normalized_locations TEXT,
   extracted_workplace_type TEXT,
   extraction_model TEXT,
+  last_seen TEXT,
   UNIQUE(source, external_id)
 );
 

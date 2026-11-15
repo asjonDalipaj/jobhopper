@@ -152,6 +152,7 @@ export function jobFromPayload(raw: unknown, source: string, externalId: string)
     posted_at: null,
     created_at: '',
     applied_at: null,
+    last_seen: null,
     tags: null,
     category: null,
     normalized_locations: null,

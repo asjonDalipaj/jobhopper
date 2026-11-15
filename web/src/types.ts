@@ -20,6 +20,8 @@ export interface Job {
   applied_at?: string | null;
   /** ISO date the row first appeared in a snapshot (cross-run, scan-to-scan). */
   first_seen?: string | null;
+  /** ISO date a board last returned this row (liveness; unjudged rows age out after 7 days). */
+  last_seen?: string | null;
 }
 
 export interface FilterState {

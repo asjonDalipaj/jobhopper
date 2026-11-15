@@ -8,11 +8,26 @@ interface GreenhouseJobResponse {
   location?: { name?: string };
   absolute_url?: string | null;
   content?: string;
+  /** Bulk edits rewrite updated_at (a whole board can share one timestamp), so it is NOT a posting date. */
   updated_at?: string;
+  /** Original publication date — the real "posted at". */
+  first_published?: string;
   created_at?: string;
   workplace_type?: string | null;
   employment_type?: string | null;
   departments?: Array<{ name?: string }>;
+}
+
+/**
+ * Posting date. `first_published` is the real one; `updated_at` is rewritten by
+ * bulk edits (a whole board can share one timestamp), so it is only a fallback.
+ */
+export function greenhousePostedAt(j: {
+  first_published?: string;
+  updated_at?: string;
+  created_at?: string;
+}): string | null {
+  return j.first_published ?? j.updated_at ?? j.created_at ?? null;
 }
 
 /**
@@ -45,7 +60,7 @@ export const greenhouse: JobSource = {
         employmentType: j.employment_type ?? guessEmployment(desc.slice(0, 400)),
         url: j.absolute_url ?? undefined,
         description: desc,
-        postedAt: j.updated_at ?? j.created_at ?? null,
+        postedAt: greenhousePostedAt(j),
       } satisfies SourceJob;
     });
   },

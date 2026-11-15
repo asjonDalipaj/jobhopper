@@ -55,13 +55,17 @@ export interface ScanResult {
   deadBoards: string[];
 }
 
-/** Quality gate applied to every fetched posting before it reaches the DB. */
+/**
+ * Quality gate applied to every fetched posting before it reaches the DB.
+ * Freshness here is the ingest floor (MAX_JOB_AGE_DAYS), not a 3-day window: a
+ * live role stays posted for weeks, and age is handled by retention + ranking.
+ */
 function passesMarketFilter(job: SourceJob, skipped: { stale: number; offMarket: number; offRole: number }): boolean {
   if (!isTargetMarket(job.location)) {
     skipped.offMarket++;
     return false;
   }
-  if (!isFresh(job.postedAt, new Date(), true)) {
+  if (!isFresh(job.postedAt)) {
     skipped.stale++;
     return false;
   }

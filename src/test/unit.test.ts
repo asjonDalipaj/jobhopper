@@ -5,7 +5,7 @@ import { stripHtml, htmlToPlainText } from '../sources/html.js';
 import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
-import { isTargetMarket, isFresh, isRelevantRole, MAX_JOB_AGE_DAYS, TARGET_MARKET_MAX_AGE_DAYS } from '../market.js';
+import { isTargetMarket, isFresh, isRelevantRole, purgeReason, MAX_JOB_AGE_DAYS, UNSEEN_RETENTION_DAYS } from '../market.js';
 import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt } from '../export/html.js';
 
 type SnapRow = {
@@ -15,8 +15,10 @@ type SnapRow = {
   reasoning: string | null;
   applied_at: string | null;
   first_seen?: string | null;
+  last_seen?: string | null;
 };
 import { ashbyLocations } from '../sources/ashby.js';
+import { greenhousePostedAt } from '../sources/greenhouse.js';
 
 test('ashbyLocations joins primary and secondary locations as plain strings', () => {
   const job = {
@@ -116,7 +118,7 @@ test('isTargetMarket matches whole words only (no substring false positives)', (
   assert.equal(isTargetMarket('Barcelona, España'), true);
 });
 
-test('isFresh accepts dates within the cutoff and rejects stale/missing/invalid dates', () => {
+test('isFresh accepts dates within the ingest floor and rejects stale/missing/invalid dates', () => {
   const now = new Date('2026-01-31T00:00:00Z');
   assert.equal(isFresh(new Date('2026-01-30T00:00:00Z').toISOString(), now), true);
   const justOutside = new Date(now.getTime() - (MAX_JOB_AGE_DAYS + 1) * 86400000).toISOString();
@@ -124,7 +126,46 @@ test('isFresh accepts dates within the cutoff and rejects stale/missing/invalid 
   assert.equal(isFresh(null, now), false);
   assert.equal(isFresh(undefined, now), false);
   assert.equal(isFresh('not-a-date', now), false);
-  assert.equal(isFresh(new Date(now.getTime() - (TARGET_MARKET_MAX_AGE_DAYS + 1) * 86400000).toISOString(), now, true), false);
+  // A live posting older than the old 3-day window is still ingestible: age is a
+  // rank now, not a delete.
+  assert.equal(isFresh(new Date(now.getTime() - 20 * 86400000).toISOString(), now), true);
+});
+
+test('purgeReason keeps live unjudged rows regardless of posting age', () => {
+  const now = new Date('2026-11-13T12:00:00Z');
+  const seenNow = new Date(now.getTime() - 3600_000).toISOString();
+  const postedLongAgo = new Date(now.getTime() - 20 * 86400000).toISOString();
+  // The whole point of the 2026-11-13 change: a role posted 20 days ago that the
+  // board still returns is NOT stale.
+  assert.equal(purgeReason({ location: 'Milan', title: 'Backend Engineer', postedAt: postedLongAgo, lastSeen: seenNow, judged: false }, now), null);
+});
+
+test('purgeReason drops rows past the retention or ingest floor', () => {
+  const now = new Date('2026-11-13T12:00:00Z');
+  const old = (days: number) => new Date(now.getTime() - days * 86400000).toISOString();
+  const base = { location: 'Milan', title: 'Backend Engineer' };
+  // Board stopped returning it for longer than the retention window.
+  assert.equal(purgeReason({ ...base, postedAt: old(20), lastSeen: old(UNSEEN_RETENTION_DAYS + 1), judged: false }, now), 'unseen');
+  // Still seen, but past the ingest floor.
+  assert.equal(purgeReason({ ...base, postedAt: old(MAX_JOB_AGE_DAYS + 1), lastSeen: old(1), judged: false }, now), 'stale');
+  // Exactly on the boundary is not stale (inclusive, like isFresh).
+  assert.equal(purgeReason({ ...base, postedAt: old(MAX_JOB_AGE_DAYS), lastSeen: old(1), judged: false }, now), null);
+  // Unknown last_seen (pre-last_seen rows) falls back to the posted floor.
+  assert.equal(purgeReason({ ...base, postedAt: old(MAX_JOB_AGE_DAYS + 1), lastSeen: null, judged: false }, now), 'stale');
+  assert.equal(purgeReason({ ...base, postedAt: old(2), lastSeen: null, judged: false }, now), null);
+  // Unparsable last_seen is unknown, not old.
+  assert.equal(purgeReason({ ...base, postedAt: old(2), lastSeen: 'nonsense', judged: false }, now), null);
+});
+
+test('purgeReason never touches judged or applied history', () => {
+  const now = new Date('2026-11-13T12:00:00Z');
+  const old = (days: number) => new Date(now.getTime() - days * 86400000).toISOString();
+  const base = { location: 'Milan', title: 'Backend Engineer', postedAt: old(60), lastSeen: old(30) };
+  assert.equal(purgeReason({ ...base, judged: true }, now), null);
+  assert.equal(purgeReason({ ...base, judged: false, appliedAt: old(10) }, now), null);
+  // Off-market junk still goes unless applied — even when judged.
+  assert.equal(purgeReason({ location: 'Berlin', title: 'Sales Manager', postedAt: old(2), lastSeen: old(1), judged: false }, now), 'off-market');
+  assert.equal(purgeReason({ location: 'Berlin', title: 'Sales Manager', postedAt: old(60), lastSeen: old(30), appliedAt: old(1), judged: true }, now), null);
 });
 
 test('isRelevantRole keeps engineering and music titles, rejects unrelated roles', () => {
@@ -210,6 +251,32 @@ test('mergeSnapshotRows preserves first_seen from the previous snapshot', () => 
   const fresh2: SnapRow[] = [...fresh, { source: 'a', external_id: '9', verdict: null, reasoning: null, applied_at: null, first_seen: '2026-10-11T00:00:00Z' }];
   const out2 = mergeSnapshotRows(existing, fresh2);
   assert.equal(out2.find((r) => r.external_id === '9')?.first_seen, '2026-10-11T00:00:00Z');
+});
+
+test('mergeSnapshotRows never rewinds last_seen, so liveness survives a stale re-export', () => {
+  const existing: SnapRow[] = [
+    { source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null, last_seen: '2026-11-12T10:00:00.000Z' },
+  ];
+  const fresh: SnapRow[] = [
+    { source: 'a', external_id: '1', verdict: null, reasoning: null, applied_at: null, last_seen: '2026-11-10T10:00:00.000Z' },
+  ];
+  assert.equal(mergeSnapshotRows(existing, fresh)[0].last_seen, '2026-11-12T10:00:00.000Z');
+  // A newer scan stamps forward.
+  const newer: SnapRow[] = [{ ...fresh[0], last_seen: '2026-11-13T10:00:00.000Z' }];
+  assert.equal(mergeSnapshotRows(existing, newer)[0].last_seen, '2026-11-13T10:00:00.000Z');
+  // A row with no last_seen inherits the stored one instead of losing it.
+  const unknown: SnapRow[] = [{ ...fresh[0], last_seen: null }];
+  assert.equal(mergeSnapshotRows(existing, unknown)[0].last_seen, '2026-11-12T10:00:00.000Z');
+});
+
+test('greenhousePostedAt prefers first_published over a bulk-edited updated_at', () => {
+  // Real case: an entire board shares one updated_at, so freshness was fiction.
+  assert.equal(
+    greenhousePostedAt({ first_published: '2026-09-18T03:31:23-04:00', updated_at: '2026-11-03T08:19:04-05:00' }),
+    '2026-09-18T03:31:23-04:00',
+  );
+  assert.equal(greenhousePostedAt({ updated_at: '2026-11-03T08:19:04-05:00' }), '2026-11-03T08:19:04-05:00');
+  assert.equal(greenhousePostedAt({}), null);
 });
 
 test('mergeSnapshotRows keeps rows only present in one side and dedupes across', () => {

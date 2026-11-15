@@ -1,7 +1,7 @@
 import { getDb } from './connection.js';
 import type { Job, SearchRow, Verdict } from './types.js';
 import type { SQLInputValue } from 'node:sqlite';
-import { isTargetMarket, isFresh, isRelevantRole, isTargetCountry } from '../market.js';
+import { isTargetCountry, purgeReason } from '../market.js';
 
 export interface InsertJobInput {
   externalId: string;
@@ -15,6 +15,11 @@ export interface InsertJobInput {
   description?: string;
   postedAt?: string | null;
   tags?: string | null;
+  /**
+   * When a board last returned this posting. Omit for "now" (a live scan);
+   * pass null to mean unknown (a row seeded from a snapshot predating last_seen).
+   */
+  lastSeen?: string | null;
 }
 
 export interface JobMetadata {
@@ -34,18 +39,28 @@ export interface InsertResult {
 /** Insert a job if it does not already exist (dedup on source+external_id). */
 export function upsertJob(input: InsertJobInput): InsertResult {
   const db = getDb();
+  const seenAt = input.lastSeen === undefined ? new Date().toISOString() : input.lastSeen;
   const existing = db
     .prepare('SELECT id FROM jobs WHERE source = ? AND external_id = ?')
     .get(input.source, input.externalId) as { id: number } | undefined;
   if (existing) {
+    // Liveness only moves forward: a re-scan stamps "now", while seeding from an
+    // older snapshot must never rewind a row's last_seen.
+    db.prepare(
+      `UPDATE jobs SET last_seen =
+         CASE WHEN ? IS NULL THEN last_seen
+              WHEN last_seen IS NULL OR ? > last_seen THEN ?
+              ELSE last_seen END
+       WHERE id = ?`,
+    ).run(seenAt, seenAt, seenAt, existing.id);
     return { id: existing.id, created: false };
   }
   const info = db
     .prepare(
       `INSERT INTO jobs
         (external_id, source, company, title, location, workplace_type,
-         employment_type, url, description, posted_at, tags)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         employment_type, url, description, posted_at, tags, last_seen)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     )
     .run(
       input.externalId,
@@ -59,6 +74,7 @@ export function upsertJob(input: InsertJobInput): InsertResult {
       input.description ?? '',
       input.postedAt ?? null,
       input.tags ?? null,
+      seenAt,
     );
   const id = Number(info.lastInsertRowid);
   indexJobFts(id, input);
@@ -103,12 +119,17 @@ export function updateJobMetadata(id: number, metadata: JobMetadata): void {
  * are always kept — they are the scan/application history the user tracks and
  * graphs — so only these are removed:
  *  - rows outside the target market or with irrelevant titles (junk), unless applied
- *  - rows older than the freshness cutoff that were never judged and never applied
+ *  - rows their board has stopped returning for UNSEEN_RETENTION_DAYS, unjudged
+ *  - rows older than the ingest floor, unjudged
  */
-export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMarket: number } {
+export function purgeStaleAndOffMarket(): {
+  removedStale: number;
+  removedOffMarket: number;
+  removedUnseen: number;
+} {
   const db = getDb();
   const rows = db.prepare(
-    `SELECT jobs.id, jobs.title, jobs.location, jobs.posted_at, jobs.applied_at,
+    `SELECT jobs.id, jobs.title, jobs.location, jobs.posted_at, jobs.last_seen, jobs.applied_at,
        EXISTS (SELECT 1 FROM judgments j WHERE j.job_id = jobs.id) AS judged
      FROM jobs`,
   ).all() as Array<{
@@ -116,28 +137,38 @@ export function purgeStaleAndOffMarket(): { removedStale: number; removedOffMark
     title: string;
     location: string;
     posted_at: string | null;
+    last_seen: string | null;
     applied_at: string | null;
     judged: number;
   }>;
-  let removedStale = 0;
-  let removedOffMarket = 0;
+  const counts = { removedStale: 0, removedOffMarket: 0, removedUnseen: 0 };
+  const now = new Date();
   db.exec('BEGIN');
   try {
     for (const row of rows) {
-      if ((!isTargetMarket(row.location) || !isRelevantRole(row.title)) && !row.applied_at) {
-        removeJob(row.id);
-        removedOffMarket++;
-      } else if (!row.judged && !row.applied_at && !isFresh(row.posted_at, new Date(), true)) {
-        removeJob(row.id);
-        removedStale++;
-      }
+      const reason = purgeReason(
+        {
+          title: row.title,
+          location: row.location,
+          postedAt: row.posted_at,
+          lastSeen: row.last_seen,
+          appliedAt: row.applied_at,
+          judged: row.judged === 1,
+        },
+        now,
+      );
+      if (!reason) continue;
+      removeJob(row.id);
+      if (reason === 'off-market') counts.removedOffMarket++;
+      else if (reason === 'unseen') counts.removedUnseen++;
+      else counts.removedStale++;
     }
     db.exec('COMMIT');
   } catch (err) {
     db.exec('ROLLBACK');
     throw err;
   }
-  return { removedStale, removedOffMarket };
+  return counts;
 }
 
 export function getJob(id: number): Job | undefined {

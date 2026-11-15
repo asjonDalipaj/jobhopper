@@ -29,8 +29,18 @@ const COUNTRY_ALIASES: Record<TargetCountry, string[]> = {
   Netherlands: ['nederland', 'amsterdam', 'rotterdam', 'utrecht', 'den haag', 'the hague', 'eindhoven', 'groningen'],
 };
 
-/** Postings older than this are considered stale and dropped. */
+/**
+ * Ingest floor: postings older than this are not stored at all. This is not the
+ * freshness window — a live role stays posted for weeks, so age is a ranking
+ * input, not a reason to delete (see NEXT_STEPS.md, 2026-11-13).
+ */
 export const MAX_JOB_AGE_DAYS = 30;
+/**
+ * How long an *unjudged* row survives without its board returning it. Judged and
+ * applied rows are history and are never purged for age.
+ */
+export const UNSEEN_RETENTION_DAYS = 7;
+/** EURES' own request window (the EU feed republishes old vacancies in bulk). */
 export const TARGET_MARKET_MAX_AGE_DAYS = 3;
 
 const escapeRegExp = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -70,17 +80,53 @@ export function isTargetMarket(location: string | null | undefined): boolean {
 }
 
 /**
- * True if `postedAt` is parseable and within MAX_JOB_AGE_DAYS of now.
- * A missing or unparsable date is treated as stale — quality over quantity,
- * we'd rather drop an ambiguous posting than keep a possibly-old one.
+ * True if `postedAt` is parseable and newer than the ingest floor
+ * (MAX_JOB_AGE_DAYS). A missing or unparsable date is treated as stale — we'd
+ * rather drop an ambiguous posting than keep a possibly-ancient one.
  */
-export function isFresh(postedAt: string | null | undefined, now: Date = new Date(), targetMarket = false): boolean {
+export function isFresh(postedAt: string | null | undefined, now: Date = new Date()): boolean {
   if (!postedAt) return false;
   const posted = new Date(postedAt);
   if (Number.isNaN(posted.getTime())) return false;
   const ageMs = now.getTime() - posted.getTime();
-  const maxDays = targetMarket ? TARGET_MARKET_MAX_AGE_DAYS : MAX_JOB_AGE_DAYS;
-  return ageMs <= maxDays * 24 * 60 * 60 * 1000;
+  return ageMs <= MAX_JOB_AGE_DAYS * 24 * 60 * 60 * 1000;
+}
+
+export interface RetentionState {
+  location?: string | null;
+  title?: string | null;
+  appliedAt?: string | null;
+  postedAt?: string | null;
+  /** When a board last returned this row; null means unknown (pre-last_seen rows). */
+  lastSeen?: string | null;
+  judged: boolean;
+}
+
+/**
+ * Why a stored row should be deleted, or null to keep it. One rule set, shared
+ * by the cleanup command and its tests:
+ *  - judged or applied rows are history, always kept;
+ *  - otherwise off-market/off-role junk goes;
+ *  - otherwise a row its board has stopped returning for UNSEEN_RETENTION_DAYS goes;
+ *  - otherwise a row older than the ingest floor goes.
+ */
+export function purgeReason(
+  row: RetentionState,
+  now: Date = new Date(),
+): 'off-market' | 'unseen' | 'stale' | null {
+  if (!row.appliedAt && (!isTargetMarket(row.location) || !isRelevantRole(row.title))) {
+    return 'off-market';
+  }
+  if (row.judged || row.appliedAt) return null;
+  if (row.lastSeen) {
+    const seen = new Date(row.lastSeen);
+    // An unparsable last_seen is unknown, not old: keep and let the posted_at
+    // floor decide.
+    if (!Number.isNaN(seen.getTime()) && now.getTime() - seen.getTime() > UNSEEN_RETENTION_DAYS * 86_400_000) {
+      return 'unseen';
+    }
+  }
+  return isFresh(row.postedAt, now) ? null : 'stale';
 }
 
 /**
@@ -123,10 +169,10 @@ export function isRelevantRole(title: string | null | undefined): boolean {
 }
 
 /**
- * The full scan-time quality gate in one predicate: target market, fresh
- * (14-day target-market window), relevant role. scan.ts and adapters share
- * this so the gate can't drift between call sites.
+ * The full scan-time quality gate in one predicate: target market, above the
+ * ingest floor, relevant role. scan.ts and adapters share this so the gate
+ * can't drift between call sites.
  */
 export function passesMarketGate(job: { location?: string | null; postedAt?: string | null; title?: string | null }): boolean {
-  return isTargetMarket(job.location) && isFresh(job.postedAt, new Date(), true) && isRelevantRole(job.title);
+  return isTargetMarket(job.location) && isFresh(job.postedAt) && isRelevantRole(job.title);
 }

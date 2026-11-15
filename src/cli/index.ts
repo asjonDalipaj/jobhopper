@@ -4,6 +4,7 @@ import pc from 'picocolors';
 import { closeDb } from '../db/connection.js';
 import { loadConfig, saveConfig, hasApiKey, resolveOpenRouterKey, resolveDeepSeekKey, resolveCareerjetAffid, resolveCareerjetApiKey, resolveJoobleKey, type JudgeProviderPreference } from '../config/config.js';
 import { listJobs, searchJobs, countJobs, getJob, listJudgedJobs, purgeStaleAndOffMarket, setJobApplied } from '../db/jobs-repo.js';
+import { seedFromSnapshot } from '../db/seed.js';
 import { storeJudgment, listJudgments, getJudgment } from '../db/judgments-repo.js';
 import { createTab, listTabs, addToTab, getTabJobs, deleteTab, getTab } from '../db/tabs-repo.js';
 import { scanCompanies } from '../sources/scan.js';
@@ -372,6 +373,13 @@ program
       list = [hit];
     }
     console.log(pc.cyan(`Scanning ${list.length} company board(s)${opts.aggregators ? ' + open aggregators' : ''}…`));
+    // The DB is ephemeral in CI. Seed it from the committed snapshot first so a
+    // scan only judges genuinely new identities instead of the whole retained
+    // window (freshness is now a 30-day floor, not a 3-day delete).
+    const seeded = seedFromSnapshot(join(getPaths().exportsDir, 'jobs.json'));
+    if (seeded.rows) {
+      console.log(dim(`  seeded ${seeded.rows} snapshot row(s): ${seeded.inserted} new to this DB, ${seeded.judgments} verdict(s) restored.`));
+    }
     const result = await scanCompanies(list, {
       verifyBoards: opts.verify,
       includeAggregators: opts.aggregators,
@@ -400,13 +408,13 @@ program
  * ------------------------------------------------------------------ */
 program
   .command('cleanup')
-  .description('Purge noise: off-market postings and stale ones that were never judged or applied. Judged/applied history is always kept.')
+  .description('Purge noise: off-market postings, rows their board stopped returning, and ones past the ingest floor that were never judged or applied. Judged/applied history is always kept.')
   .action(() => {
     const before = countJobs();
-    const { removedStale, removedOffMarket } = purgeStaleAndOffMarket();
+    const { removedStale, removedOffMarket, removedUnseen } = purgeStaleAndOffMarket();
     console.log(
       pc.green(
-        `Removed ${removedOffMarket} off-market and ${removedStale} stale posting(s). ${before} -> ${countJobs()} jobs.`,
+        `Removed ${removedOffMarket} off-market, ${removedUnseen} unseen, ${removedStale} stale posting(s). ${before} -> ${countJobs()} jobs.`,
       ),
     );
   });
@@ -822,6 +830,7 @@ program
         verdict: j.verdict ?? null,
         reasoning: j.reasoning ?? null,
         applied_at: j.applied_at ?? null,
+        last_seen: j.last_seen ?? null,
         first_seen: null as string | null, // set below from the previous snapshot
       }));
       // Merge rather than overwrite: committed rows that the local DB no longer
