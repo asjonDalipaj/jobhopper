@@ -125,5 +125,8 @@ jobs:
             echo "no changes"
           else
             git commit -m "chore: refresh jobhopper dashboards"
+            # A scan runs for ~10 minutes; a human commit landing meanwhile makes
+            # the push non-fast-forward. Rebase the snapshot onto it first.
+            git pull --rebase origin main
             git push
           fi
