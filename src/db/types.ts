@@ -19,6 +19,17 @@ export interface Job {
   normalized_locations: string | null;
   extracted_workplace_type: string | null;
   extraction_model: string | null;
+  /** JSON array of normalized skills. */
+  skills: string | null;
+  experience_min_years: number | null;
+  salary_min: number | null;
+  salary_max: number | null;
+  salary_currency: string | null;
+  salary_frequency: string | null;
+  /** ISO 639-1 code of the posting's language. */
+  language: string | null;
+  /** Internal (direct employer) or External (recruiter/staffing agency). */
+  employer_type: string | null;
 }
 
 export type Verdict = 'no' | 'weak' | 'fair' | 'strong';

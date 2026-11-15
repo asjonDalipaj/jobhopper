@@ -14,12 +14,12 @@ import { join, dirname, resolve } from 'node:path';
 import { getPaths, ensureDirs } from '../storage/paths.js';
 import { importCvPdf, readCvText, readProfileDoc, writeProfileDoc, profileFiles } from '../profile/cv.js';
 import { inspectProfile } from '../profile/doctor.js';
-import { judgePosting } from '../judge/openrouter.js';
+import { judgePosting, extractJobMetadata } from '../judge/openrouter.js';
 import { boxTable, verdictColor, dim } from './ui.js';
 import { loadJobsConfig, saveJobsConfig, toJobSpec, jobsConfigPath, type JobSpec } from '../jobs/config.js';
 import { runJob, runAllJobs } from '../jobs/run.js';
-import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, type HtmlRow } from '../export/html.js';
-import { pendingSnapshotRows, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
+import { exportToHtmlFile, exportJobsToJsonFile, mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, snapshotMetadata, type HtmlRow } from '../export/html.js';
+import { pendingSnapshotRows, pendingMetadataRows, applyMetadataToRow, snapshotTarget, type SnapshotRow } from '../export/backfill.js';
 import { startWebServer } from './serve.js';
 import { watch as watchJobs } from '../watch.js';
 import { resolveJudgeProvider } from '../judge/provider.js';
@@ -378,7 +378,12 @@ program
     // window (freshness is now a 30-day floor, not a 3-day delete).
     const seeded = seedFromSnapshot(join(getPaths().exportsDir, 'jobs.json'));
     if (seeded.rows) {
-      console.log(dim(`  seeded ${seeded.rows} snapshot row(s): ${seeded.inserted} new to this DB, ${seeded.judgments} verdict(s) restored.`));
+      console.log(
+        dim(
+          `  seeded ${seeded.rows} snapshot row(s): ${seeded.inserted} new to this DB, ` +
+            `${seeded.judgments} verdict(s) and ${seeded.metadata} metadata block(s) restored.`,
+        ),
+      );
     }
     const result = await scanCompanies(list, {
       verifyBoards: opts.verify,
@@ -584,29 +589,57 @@ program
       process.exit(1);
     }
     const rows = JSON.parse(readFileSync(path, 'utf8')) as SnapshotRow[];
-    const pending = pendingSnapshotRows(rows, { rejudge: Boolean(opts.rejudge), limit: Number(opts.limit) });
-    if (!pending.length) {
+    const limit = Number(opts.limit);
+    const pending = pendingSnapshotRows(rows, { rejudge: Boolean(opts.rejudge), limit });
+    // The extractor's fields are what the board's filters run on, so rows that
+    // predate them get enriched here, a capped batch per run.
+    const missing = pendingMetadataRows(rows, limit);
+    if (!pending.length && !missing.length) {
       console.log(dim('Nothing to backfill.'));
       return;
     }
-    console.log(pc.cyan(`${opts.rejudge ? 'Re-judging' : 'Judging'} ${pending.length} snapshot row(s)…`));
     let judged = 0;
     let failed = 0;
-    for (const row of pending) {
-      try {
-        const result = await judgePosting(snapshotTarget(row), { quick: Boolean(opts.quick) });
-        row.verdict = result.verdict;
-        row.reasoning = result.reasoning;
-        judged += 1;
-        console.log(`${verdictColor(result.verdict.toUpperCase())}  ${row.company} — ${row.title}  ${dim(`[${result.model}]`)}`);
-      } catch (err) {
-        failed += 1;
-        console.error(pc.red(`  failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+    if (pending.length) {
+      console.log(pc.cyan(`${opts.rejudge ? 'Re-judging' : 'Judging'} ${pending.length} snapshot row(s)…`));
+      for (const row of pending) {
+        try {
+          const result = await judgePosting(snapshotTarget(row), { quick: Boolean(opts.quick) });
+          row.verdict = result.verdict;
+          row.reasoning = result.reasoning;
+          judged += 1;
+          console.log(`${verdictColor(result.verdict.toUpperCase())}  ${row.company} — ${row.title}  ${dim(`[${result.model}]`)}`);
+        } catch (err) {
+          failed += 1;
+          console.error(pc.red(`  failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+        }
       }
     }
-    if (judged > 0) writeFileSync(path, `${JSON.stringify(rows, null, 2)}\n`);
+
+    let enriched = 0;
+    let enrichFailed = 0;
+    if (missing.length) {
+      console.log(pc.cyan(`Extracting metadata for ${missing.length} snapshot row(s)…`));
+      for (const row of missing) {
+        try {
+          const metadata = await extractJobMetadata(snapshotTarget(row));
+          applyMetadataToRow(row, metadata);
+          enriched += 1;
+        } catch (err) {
+          enrichFailed += 1;
+          console.error(pc.red(`  metadata failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+        }
+      }
+    }
+
+    if (judged > 0 || enriched > 0) writeFileSync(path, `${JSON.stringify(rows, null, 2)}\n`);
     const still = rows.filter((row) => !row.verdict).length;
-    console.log(dim(`judged ${judged}, failed ${failed}, still unjudged ${still}`));
+    const stillMissing = rows.filter((row) => !row.extraction_model).length;
+    console.log(
+      dim(
+        `judged ${judged} (${failed} failed, ${still} still unjudged), enriched ${enriched} (${enrichFailed} failed, ${stillMissing} still missing metadata)`,
+      ),
+    );
   });
 
 /* ------------------------------------------------------------------ *
@@ -832,6 +865,7 @@ program
         model: j.model || null,
         applied_at: j.applied_at ?? null,
         last_seen: j.last_seen ?? null,
+        ...snapshotMetadata(j),
         first_seen: null as string | null, // set below from the previous snapshot
       }));
       // Merge rather than overwrite: committed rows that the local DB no longer

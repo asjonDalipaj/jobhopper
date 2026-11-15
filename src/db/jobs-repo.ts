@@ -22,10 +22,29 @@ export interface InsertJobInput {
   lastSeen?: string | null;
 }
 
+export interface JobSalary {
+  min: number | null;
+  max: number | null;
+  currency: string | null;
+  frequency: string | null;
+}
+
+/**
+ * Everything the extraction prompt returns for a posting. These are the fields
+ * hiring.cafe filters on, so they are the difference between "more rows" and
+ * "the right rows" — and they must round-trip through the committed snapshot,
+ * because the CI DB is rebuilt on every run.
+ */
 export interface JobMetadata {
   category: string;
   locations: string[];
   workplaceType: 'Remote' | 'Onsite' | 'Hybrid' | null;
+  skills: string[];
+  experienceMinYears: number | null;
+  salary: JobSalary | null;
+  language: string | null;
+  /** Internal = the employer itself; External = a recruiter/staffing agency. */
+  employerType: 'Internal' | 'External' | null;
   model: string;
 }
 
@@ -109,9 +128,27 @@ export function updateJobMetadata(id: number, metadata: JobMetadata): void {
   getDb()
     .prepare(
       `UPDATE jobs SET category = ?, normalized_locations = ?,
-       extracted_workplace_type = ?, extraction_model = ? WHERE id = ?`,
+       extracted_workplace_type = ?, extraction_model = ?,
+       skills = ?, experience_min_years = ?,
+       salary_min = ?, salary_max = ?, salary_currency = ?, salary_frequency = ?,
+       language = ?, employer_type = ?
+       WHERE id = ?`,
     )
-    .run(metadata.category, JSON.stringify(metadata.locations), metadata.workplaceType, metadata.model, id);
+    .run(
+      metadata.category,
+      JSON.stringify(metadata.locations),
+      metadata.workplaceType,
+      metadata.model,
+      metadata.skills.length ? JSON.stringify(metadata.skills) : null,
+      metadata.experienceMinYears,
+      metadata.salary?.min ?? null,
+      metadata.salary?.max ?? null,
+      metadata.salary?.currency ?? null,
+      metadata.salary?.frequency ?? null,
+      metadata.language,
+      metadata.employerType,
+      id,
+    );
 }
 
 /**

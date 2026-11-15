@@ -158,6 +158,14 @@ export function jobFromPayload(raw: unknown, source: string, externalId: string)
     normalized_locations: null,
     extracted_workplace_type: null,
     extraction_model: null,
+    skills: null,
+    experience_min_years: null,
+    salary_min: null,
+    salary_max: null,
+    salary_currency: null,
+    salary_frequency: null,
+    language: null,
+    employer_type: null,
   };
 }
 

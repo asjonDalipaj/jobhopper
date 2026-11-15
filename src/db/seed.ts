@@ -1,12 +1,13 @@
 import { readFileSync, existsSync } from 'node:fs';
-import { upsertJob, setJobApplied } from './jobs-repo.js';
+import { upsertJob, setJobApplied, updateJobMetadata, type JobMetadata } from './jobs-repo.js';
 import { storeJudgment } from './judgments-repo.js';
 import type { Verdict } from './types.js';
+import type { SnapshotMetadata } from '../export/html.js';
 
 const VERDICTS = new Set<string>(['no', 'weak', 'fair', 'strong']);
 
 /** A row as committed in `.jobhopper/exports/jobs.json`. */
-interface SnapshotRow {
+interface SnapshotRow extends SnapshotMetadata {
   source?: unknown;
   external_id?: unknown;
   company?: unknown;
@@ -29,6 +30,7 @@ export interface SeedResult {
   rows: number;
   inserted: number;
   judgments: number;
+  metadata: number;
 }
 
 const text = (value: unknown): string => (typeof value === 'string' ? value : '');
@@ -43,7 +45,7 @@ const optional = (value: unknown): string | null => (typeof value === 'string' &
  * makes the DB its working copy.
  */
 export function seedFromSnapshot(jsonPath: string): SeedResult {
-  const result: SeedResult = { rows: 0, inserted: 0, judgments: 0 };
+  const result: SeedResult = { rows: 0, inserted: 0, judgments: 0, metadata: 0 };
   if (!existsSync(jsonPath)) return result;
 
   let rows: SnapshotRow[];
@@ -96,6 +98,43 @@ export function seedFromSnapshot(jsonPath: string): SeedResult {
       });
       result.judgments++;
     }
+
+    const metadata = metadataFromRow(row);
+    if (metadata) {
+      // Extracted fields are not derivable from the snapshot's raw text, so a
+      // rebuild must restore them or every filter would empty out.
+      updateJobMetadata(id, metadata);
+      result.metadata++;
+    }
   }
   return result;
+}
+
+const asString = (value: unknown): string | null => (typeof value === 'string' && value ? value : null);
+const asNumber = (value: unknown): number | null =>
+  typeof value === 'number' && Number.isFinite(value) ? value : null;
+const asList = (value: unknown): string[] =>
+  Array.isArray(value) ? value.filter((item): item is string => typeof item === 'string') : [];
+
+/**
+ * Rebuild the metadata block from a snapshot row. `extraction_model` is the
+ * marker: a row without it was never enriched, so returning null keeps the
+ * columns null instead of writing a fabricated "Other"/"Unknown".
+ */
+export function metadataFromRow(row: SnapshotRow): JobMetadata | null {
+  const model = asString(row.extraction_model);
+  if (!model) return null;
+  const workplace = row.extracted_workplace_type;
+  const salary = { min: asNumber(row.salary_min), max: asNumber(row.salary_max), currency: asString(row.salary_currency), frequency: asString(row.salary_frequency) };
+  return {
+    category: asString(row.category) ?? 'Other',
+    locations: asList(row.locations).slice(0, 10),
+    workplaceType: workplace === 'Remote' || workplace === 'Onsite' || workplace === 'Hybrid' ? workplace : null,
+    skills: asList(row.skills).slice(0, 20),
+    experienceMinYears: asNumber(row.experience_min_years),
+    salary: salary.min !== null || salary.max !== null ? salary : null,
+    language: asString(row.language),
+    employerType: row.employer_type === 'Internal' || row.employer_type === 'External' ? row.employer_type : null,
+    model,
+  };
 }

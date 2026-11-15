@@ -93,8 +93,32 @@ export function exportToHtmlFile(rows: HtmlRow[], outputPath: string, title?: st
   writeFileSync(outputPath, buildHtml(rows, title), 'utf8');
 }
 
+/**
+ * Structured fields the extraction prompt produces. They live in the snapshot
+ * because the CI DB is rebuilt every run — without them, every filter on the
+ * hosted board would be empty.
+ */
+export interface SnapshotMetadata {
+  category?: string | null;
+  locations?: string[] | null;
+  /** Workplace type as extracted from the posting text (the adapter's is workplace_type). */
+  extracted_workplace_type?: string | null;
+  skills?: string[] | null;
+  experience_min_years?: number | null;
+  salary_min?: number | null;
+  salary_max?: number | null;
+  salary_currency?: string | null;
+  salary_frequency?: string | null;
+  /** ISO 639-1 code of the posting's language. */
+  language?: string | null;
+  /** Internal (direct employer) or External (recruiter/staffing agency). */
+  employer_type?: string | null;
+  /** Which model produced the extraction; also marks a row as enriched. */
+  extraction_model?: string | null;
+}
+
 /** Snapshot row shape — the full set of fields the React UI understands. */
-export interface JsonRow {
+export interface JsonRow extends SnapshotMetadata {
   id: number;
   external_id: string;
   source: string;
@@ -122,13 +146,55 @@ function maxIso(a?: string | null, b?: string | null): string | null {
   return a >= b ? a : b;
 }
 
+/** A JSON array column (locations, skills) as a string list; junk becomes []. */
+export function listFromJson(value: string | null | undefined): string[] {
+  if (!value) return [];
+  try {
+    const parsed: unknown = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed.filter((item): item is string => typeof item === 'string') : [];
+  } catch {
+    return [];
+  }
+}
+
+/** Project the DB's extracted columns onto the snapshot's metadata block. */
+export function snapshotMetadata(row: {
+  category: string | null;
+  normalized_locations: string | null;
+  extracted_workplace_type: string | null;
+  skills: string | null;
+  experience_min_years: number | null;
+  salary_min: number | null;
+  salary_max: number | null;
+  salary_currency: string | null;
+  salary_frequency: string | null;
+  language: string | null;
+  employer_type: string | null;
+  extraction_model: string | null;
+}): SnapshotMetadata {
+  return {
+    category: row.category,
+    locations: listFromJson(row.normalized_locations),
+    extracted_workplace_type: row.extracted_workplace_type,
+    skills: listFromJson(row.skills),
+    experience_min_years: row.experience_min_years,
+    salary_min: row.salary_min,
+    salary_max: row.salary_max,
+    salary_currency: row.salary_currency,
+    salary_frequency: row.salary_frequency,
+    language: row.language,
+    employer_type: row.employer_type,
+    extraction_model: row.extraction_model,
+  };
+}
+
 /**
  * Merge fresh DB rows into the committed snapshot without losing history.
  * Every existing row is kept, unless a fresh row has the same source+external_id,
  * in which case the fresh row wins. A committed verdict/reasoning is kept when the
  * fresh row has none, so a re-export never erases a judgment.
  */
-export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; model?: string | null; applied_at?: string | null; first_seen?: string | null; last_seen?: string | null }>(
+export function mergeSnapshotRows<T extends { source: string; external_id: string; verdict?: string | null; reasoning?: string | null; model?: string | null; applied_at?: string | null; first_seen?: string | null; last_seen?: string | null } & SnapshotMetadata>(
   existing: T[],
   fresh: T[],
 ): T[] {
@@ -141,6 +207,9 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
     const keepApplied = !row.applied_at && prev?.applied_at;
     const keepFirstSeen = !row.first_seen && prev?.first_seen;
     const keepModel = !row.model && prev?.model;
+    // Extracted metadata is written as one block, so it is kept or dropped as a
+    // block: a fresh row without an extraction must not erase what we knew.
+    const keepMetadata = !row.extraction_model && prev?.extraction_model;
     // A run that does not re-see a row must not rewind its liveness clock.
     const lastSeen = maxIso(row.last_seen, prev?.last_seen);
     let merged = row;
@@ -148,6 +217,22 @@ export function mergeSnapshotRows<T extends { source: string; external_id: strin
     if (keepApplied) merged = { ...merged, applied_at: prev.applied_at };
     if (keepFirstSeen) merged = { ...merged, first_seen: prev.first_seen };
     if (keepModel) merged = { ...merged, model: prev.model };
+    if (keepMetadata && prev) {
+      merged = {
+        ...merged,
+        category: prev.category,
+        locations: prev.locations,
+        skills: prev.skills,
+        experience_min_years: prev.experience_min_years,
+        salary_min: prev.salary_min,
+        salary_max: prev.salary_max,
+        salary_currency: prev.salary_currency,
+        salary_frequency: prev.salary_frequency,
+        language: prev.language,
+        employer_type: prev.employer_type,
+        extraction_model: prev.extraction_model,
+      };
+    }
     if (lastSeen !== (row.last_seen ?? null)) merged = { ...merged, last_seen: lastSeen };
     byKey.set(key, merged);
   }

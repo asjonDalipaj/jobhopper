@@ -6,7 +6,9 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, purgeReason, MAX_JOB_AGE_DAYS, UNSEEN_RETENTION_DAYS } from '../market.js';
-import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt } from '../export/html.js';
+import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, snapshotMetadata, listFromJson } from '../export/html.js';
+import { parseJobMetadata } from '../judge/openrouter.js';
+import { metadataFromRow } from '../db/seed.js';
 
 type SnapRow = {
   source: string;
@@ -17,6 +19,10 @@ type SnapRow = {
   first_seen?: string | null;
   last_seen?: string | null;
   model?: string | null;
+  skills?: string[] | null;
+  language?: string | null;
+  employer_type?: string | null;
+  extraction_model?: string | null;
 };
 import { ashbyLocations } from '../sources/ashby.js';
 import { greenhousePostedAt } from '../sources/greenhouse.js';
@@ -302,4 +308,133 @@ test('mergeSnapshotRows keeps rows only present in one side and dedupes across',
   assert.equal(out.length, 2);
   const row2 = out.find((r) => r.external_id === '2');
   assert.equal(row2?.verdict, 'fair'); // judged row preserved even though the fresh scan lost it
+});
+test('parseJobMetadata keeps a complete extraction intact', () => {
+  const meta = parseJobMetadata(
+    {
+      category: 'Data and Analytics',
+      locations: ['Milan, Italy', 'Rome, Italy'],
+      workplace_type: 'Hybrid',
+      skills: ['Python', 'dbt', 'Airflow'],
+      experience_min_years: 3,
+      salary: { min: 60000, max: 75000, currency: 'eur', frequency: 'Yearly' },
+      language: 'EN',
+      employer_type: 'Internal',
+    },
+    'deepseek-v4-flash',
+  );
+  assert.equal(meta.category, 'Data and Analytics');
+  assert.deepEqual(meta.locations, ['Milan, Italy', 'Rome, Italy']);
+  assert.equal(meta.workplaceType, 'Hybrid');
+  assert.deepEqual(meta.skills, ['Python', 'dbt', 'Airflow']);
+  assert.equal(meta.experienceMinYears, 3);
+  assert.deepEqual(meta.salary, { min: 60000, max: 75000, currency: 'EUR', frequency: 'Yearly' });
+  assert.equal(meta.language, 'en');
+  assert.equal(meta.employerType, 'Internal');
+  assert.equal(meta.model, 'deepseek-v4-flash');
+});
+
+test('parseJobMetadata clamps junk instead of trusting the model', () => {
+  const meta = parseJobMetadata(
+    {
+      category: 'Wizardry',
+      workplace_type: 'On a boat',
+      skills: ['React', 'react', '  React  ', '', 42, 'Node'],
+      experience_min_years: 'lots',
+      salary: { min: 90000, max: 70000, currency: 'euro', frequency: 'Fortnightly' },
+      language: 'english',
+      employer_type: 'Agency',
+    },
+    'm',
+  );
+  assert.equal(meta.category, 'Other');
+  assert.equal(meta.workplaceType, null);
+  assert.deepEqual(meta.skills, ['React', 'Node']); // trimmed, deduped, non-strings dropped
+  assert.equal(meta.experienceMinYears, null);
+  assert.deepEqual(meta.salary, { min: 70000, max: 90000, currency: null, frequency: null }); // swapped
+  assert.equal(meta.language, null);
+  assert.equal(meta.employerType, null);
+});
+
+test('parseJobMetadata never invents a salary and accepts numeric strings', () => {
+  assert.equal(parseJobMetadata({ salary: { min: null, max: null } }, 'm').salary, null);
+  assert.equal(parseJobMetadata({ salary: 'EUR 60k' }, 'm').salary, null);
+  const meta = parseJobMetadata({ salary: { min: '60000', max: '70000', currency: 'EUR', frequency: 'Yearly' } }, 'm');
+  assert.deepEqual(meta.salary, { min: 60000, max: 70000, currency: 'EUR', frequency: 'Yearly' });
+});
+
+test('parseJobMetadata survives an empty or hostile payload', () => {
+  for (const raw of [{}, null, 'nonsense', [], { skills: 'React', locations: 'Milan' }]) {
+    const meta = parseJobMetadata(raw, 'm');
+    assert.equal(meta.category, 'Other');
+    assert.deepEqual(meta.skills, []);
+    assert.deepEqual(meta.locations, []);
+    assert.equal(meta.experienceMinYears, null);
+    assert.equal(meta.salary, null);
+  }
+});
+
+test('metadataFromRow only rebuilds rows that were actually enriched', () => {
+  assert.equal(metadataFromRow({ source: 'a', external_id: '1', company: 'c', title: 't', location: 'Milan' }), null);
+  const meta = metadataFromRow({
+    source: 'a',
+    external_id: '1',
+    company: 'c',
+    title: 't',
+    location: 'Milan',
+    extraction_model: 'deepseek-v4-flash',
+    category: 'Software Development',
+    locations: ['Milan, Italy'],
+    extracted_workplace_type: 'Remote',
+    skills: ['Go'],
+    experience_min_years: 5,
+    salary_min: 50000,
+    salary_max: 60000,
+    salary_currency: 'EUR',
+    salary_frequency: 'Yearly',
+    language: 'it',
+    employer_type: 'External',
+  });
+  assert.equal(meta?.model, 'deepseek-v4-flash');
+  assert.equal(meta?.category, 'Software Development');
+  assert.deepEqual(meta?.skills, ['Go']);
+  assert.deepEqual(meta?.salary, { min: 50000, max: 60000, currency: 'EUR', frequency: 'Yearly' });
+  assert.equal(meta?.employerType, 'External');
+  assert.equal(meta?.workplaceType, 'Remote');
+});
+
+test('mergeSnapshotRows keeps the metadata block when a fresh row has none', () => {
+  const existing: SnapRow[] = [
+    { source: 'a', external_id: '1', verdict: 'fair', reasoning: null, applied_at: null, extraction_model: 'm', skills: ['Go'], language: 'it', employer_type: 'Internal' },
+  ];
+  const fresh: SnapRow[] = [{ source: 'a', external_id: '1', verdict: 'fair', reasoning: null, applied_at: null }];
+  const merged = mergeSnapshotRows<SnapRow>(existing, fresh)[0];
+  assert.deepEqual(merged.skills, ['Go']);
+  assert.equal(merged.language, 'it');
+  assert.equal(merged.extraction_model, 'm');
+  // A fresh extraction wins over the stored one.
+  const reExtracted: SnapRow[] = [{ ...fresh[0], extraction_model: 'm2', skills: ['Rust'] }];
+  assert.deepEqual(mergeSnapshotRows<SnapRow>(existing, reExtracted)[0].skills, ['Rust']);
+});
+
+test('snapshotMetadata projects JSON columns and tolerates junk', () => {
+  const meta = snapshotMetadata({
+    category: 'Engineering',
+    normalized_locations: '["Milan, Italy"]',
+    extracted_workplace_type: 'Onsite',
+    skills: '["Go","Kubernetes"]',
+    experience_min_years: 4,
+    salary_min: 1,
+    salary_max: 2,
+    salary_currency: 'EUR',
+    salary_frequency: 'Yearly',
+    language: 'it',
+    employer_type: 'Internal',
+    extraction_model: 'm',
+  });
+  assert.deepEqual(meta.locations, ['Milan, Italy']);
+  assert.deepEqual(meta.skills, ['Go', 'Kubernetes']);
+  assert.deepEqual(listFromJson('not json'), []);
+  assert.deepEqual(listFromJson('{"a":1}'), []);
+  assert.deepEqual(listFromJson(null), []);
 });

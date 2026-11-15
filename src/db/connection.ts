@@ -27,6 +27,14 @@ export function getDb(): DatabaseSync {
     'extraction_model TEXT',
     'applied_at TEXT',
     'last_seen TEXT',
+    'skills TEXT',
+    'experience_min_years INTEGER',
+    'salary_min INTEGER',
+    'salary_max INTEGER',
+    'salary_currency TEXT',
+    'salary_frequency TEXT',
+    'language TEXT',
+    'employer_type TEXT',
   ]) {
     try {
       _db.exec(`ALTER TABLE jobs ADD COLUMN ${column}`);
@@ -57,6 +65,14 @@ CREATE TABLE IF NOT EXISTS jobs (
   extracted_workplace_type TEXT,
   extraction_model TEXT,
   last_seen TEXT,
+  skills TEXT,
+  experience_min_years INTEGER,
+  salary_min INTEGER,
+  salary_max INTEGER,
+  salary_currency TEXT,
+  salary_frequency TEXT,
+  language TEXT,
+  employer_type TEXT,
   UNIQUE(source, external_id)
 );
 
