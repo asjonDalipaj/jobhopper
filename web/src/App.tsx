@@ -23,6 +23,8 @@ const initialFilters: FilterState = {
   remoteOnly: false,
   newOnly: false,
   applied: 'all',
+  directOnly: false,
+  maxYears: '',
 };
 
 export function App() {
@@ -194,6 +196,15 @@ export function App() {
 
     if (filters.newOnly && !isNewJob(job)) return false;
 
+    // Extracted fields: unknown values are kept rather than silently excluded —
+    // a row we have not enriched yet is not evidence of a mismatch.
+    if (filters.directOnly && job.employer_type !== 'Internal') return false;
+    if (filters.maxYears !== '') {
+      const limit = Number(filters.maxYears);
+      const required = job.experience_min_years;
+      if (typeof required === 'number' && required > limit) return false;
+    }
+
     if (filters.applied !== 'all') {
       const isApplied = Boolean(applied[appliedKey(job)] ?? job.applied_at);
       if (filters.applied === 'applied' ? !isApplied : isApplied) return false;
@@ -226,10 +237,13 @@ export function App() {
     unjudged: jobs.filter((job) => !job.verdict).length,
   }), [jobs]);
 
+  /** Rows the extractor has not reached yet; the metadata filters keep them. */
+  const unenriched = useMemo(() => jobs.filter((job) => !job.extraction_model).length, [jobs]);
+
   const clearFilters = () => setFilters(initialFilters);
   const today = toLocalDay(new Date().toISOString());
   const showingToday = filters.dateFrom === today && filters.dateTo === today;
-  const hasActiveFilters = filters.search || filters.verdict !== 'relevant' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all';
+  const hasActiveFilters = filters.search || filters.verdict !== 'relevant' || filters.country || filters.dateFrom || filters.dateTo || filters.remoteOnly || filters.newOnly || filters.applied !== 'all' || filters.directOnly || filters.maxYears !== '';
 
   return (
     <div className="app-shell min-h-screen bg-canvas text-ink">
@@ -300,6 +314,28 @@ export function App() {
                   <span>New to JobHopper <span className="text-xs font-normal text-ink-faint">(first seen ≤3 days)</span></span>
                   <input type="checkbox" checked={filters.newOnly} onChange={(event) => setFilters({ ...filters, newOnly: event.target.checked })} />
                 </label>
+                <label className="mt-4 flex cursor-pointer items-center justify-between gap-3 text-sm font-medium">
+                  <span>Direct employers <span className="text-xs font-normal text-ink-faint">(skips recruiters)</span></span>
+                  <input type="checkbox" checked={filters.directOnly} onChange={(event) => setFilters({ ...filters, directOnly: event.target.checked })} />
+                </label>
+                <label className="mt-4 block text-sm font-medium" htmlFor="years-filter">Max years required</label>
+                <select
+                  id="years-filter"
+                  value={filters.maxYears}
+                  onChange={(event) => setFilters({ ...filters, maxYears: event.target.value })}
+                  className="mt-2 w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm"
+                >
+                  <option value="">Any</option>
+                  <option value="2">2 or fewer</option>
+                  <option value="3">3 or fewer</option>
+                  <option value="5">5 or fewer</option>
+                  <option value="8">8 or fewer</option>
+                </select>
+                {unenriched > 0 && (
+                  <p className="mt-2 text-xs text-ink-faint">
+                    {unenriched} role{unenriched === 1 ? '' : 's'} not analysed yet — unknown values stay visible.
+                  </p>
+                )}
                 <label className="mt-4 block text-sm font-medium" htmlFor="applied-filter">Applications</label>
                 <select
                   id="applied-filter"

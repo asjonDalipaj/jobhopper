@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, ChevronDown, Building2, MapPin, Calendar, Sparkles, Tag, Check, Loader2, Wand2 } from 'lucide-react';
 import type { Job } from '../types';
 import { VerdictBadge } from './VerdictBadge';
-import { formatDate, isNewJob } from '../utils';
+import { formatDate, formatSalary, isNewJob } from '../utils';
 
 interface JobCardProps {
   job: Job;
@@ -26,6 +26,10 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
   const [expanded, setExpanded] = useState(false);
   const tint = cardTints[index % cardTints.length];
   const isNewRow = isNewJob(job);
+  const salary = formatSalary(job);
+  // Extracted skills beat the adapter's comma string: they are normalized and
+  // only present when the posting actually names them.
+  const keywords = job.skills?.length ? job.skills : (job.tags || '').split(',').map((t) => t.trim()).filter(Boolean);
 
   return (
     <motion.article
@@ -77,11 +81,13 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
         {job.workplace_type && <span className="rounded-md bg-white/65 px-2.5 py-1.5">{job.workplace_type}</span>}
         {job.employment_type && <span className="rounded-md bg-white/65 px-2.5 py-1.5">{job.employment_type}</span>}
         {job.posted_at && <span className="inline-flex items-center gap-1 rounded-md bg-white/65 px-2.5 py-1.5"><Calendar className="h-3 w-3" />{formatDate(job.posted_at)}</span>}
+        {salary && <span className="rounded-md bg-white/65 px-2.5 py-1.5 font-medium text-ink" title="As stated in the posting">{salary}</span>}
+        {job.employer_type === 'External' && <span className="rounded-md bg-white/65 px-2.5 py-1.5" title="Posted by a recruiter or staffing agency">Recruiter</span>}
       </div>
 
-      {job.tags && <div className="mt-3 flex flex-wrap gap-1.5" aria-label="Skills and keywords">
+      {keywords.length > 0 && <div className="mt-3 flex flex-wrap gap-1.5" aria-label="Skills and keywords">
         <Tag className="mr-0.5 h-3.5 w-3.5 self-center text-ink-faint" />
-        {job.tags.split(',').slice(0, 4).map((tag) => <span key={tag} className="rounded-md bg-white/55 px-2 py-1 text-[11px] text-ink-soft">{tag.trim()}</span>)}
+        {keywords.slice(0, 4).map((tag) => <span key={tag} className="rounded-md bg-white/55 px-2 py-1 text-[11px] text-ink-soft">{tag}</span>)}
       </div>}
 
       <div className="mt-auto pt-6">

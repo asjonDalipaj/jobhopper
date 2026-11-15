@@ -45,6 +45,38 @@ export function isNewJob(job: { first_seen?: string | null }): boolean {
   return !Number.isNaN(seen) && Date.now() - seen <= NEW_SINCE_MS;
 }
 
+const FREQUENCY_LABELS: Record<string, string> = {
+  Yearly: 'yr',
+  Monthly: 'mo',
+  'Bi-Weekly': '2wk',
+  Weekly: 'wk',
+  Daily: 'day',
+  Hourly: 'hr',
+};
+
+/**
+ * Compact salary range from the extracted fields, or null when the posting
+ * stated none. Amounts are shown as the employer wrote them (no FX, no
+ * annualisation) — a "Yearly" EUR range and an "Hourly" one are not comparable
+ * and pretending otherwise would mislead.
+ */
+export function formatSalary(job: {
+  salary_min?: number | null;
+  salary_max?: number | null;
+  salary_currency?: string | null;
+  salary_frequency?: string | null;
+}): string | null {
+  const min = job.salary_min ?? null;
+  const max = job.salary_max ?? null;
+  if (min === null && max === null) return null;
+  const money = (value: number) =>
+    new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
+  const range = min !== null && max !== null && min !== max ? `${money(min)}–${money(max)}` : money((min ?? max)!);
+  const currency = job.salary_currency ? ` ${job.salary_currency}` : '';
+  const frequency = job.salary_frequency ? `/${FREQUENCY_LABELS[job.salary_frequency] ?? job.salary_frequency.toLowerCase()}` : '';
+  return `${range}${currency}${frequency}`;
+}
+
 /**
  * Day of an ISO timestamp in the viewer's timezone, as YYYY-MM-DD.
  * Must match formatDate() so the date filter compares against the same
