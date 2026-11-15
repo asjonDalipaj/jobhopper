@@ -97,6 +97,32 @@ their filter set is five fields in a prompt that already runs on every row, so i
 the current snapshot, every row the name heuristic flags agency-shaped is labelled `External`
 (agreement check, not a new rule); every filter's count matches `jobs.json`.
 
+### B. Result (2026-11-15)
+
+Built on 150 really-extracted rows (deepseek-flash, on a copy of the committed snapshot):
+
+- **Coverage of fields:** `language` 150/150 (100%), `employer_type` 150/150 (100% — 144 Internal,
+  6 External), `skills` 98/150 (65%, target was 60%), `experience_min_years` 46/150, `salary` 20/150.
+  The last two are low because most postings simply do not state them; the prompt forbids estimating.
+- **A prompt fix that mattered:** the first version allowed `employer_type: null`, and 7/30 rows took
+  it. Reworded to "required: Internal unless clearly an agency", same 30 rows went to 28 Internal /
+  2 External / 0 null.
+- **Two parser bugs the tests caught:** `Number('lots'.replace(/[^0-9.-]/g,''))` is `0`, so a sentence
+  became "0 years required" (now a digit is required); and skills deduped case-sensitively, keeping
+  both "React" and "react".
+- **Fields no longer vanish on a CI rebuild.** `category`, `normalized_locations` and the new columns
+  were DB-only, so every CI run silently discarded them. They are now in the snapshot, restored by
+  `seedFromSnapshot`, and preserved by the merge.
+- **Existing rows get enriched** by `backfill` (200/run, capped by `--limit`), so the filters fill in
+  over a few scans instead of showing empty forever.
+- **UI:** 510 cards base / 116 with "Direct employers" / 491 with "≤3 years" and 6 "Recruiter" chips;
+  salary renders exactly as stated (`64K–88K EUR/yr`, `5.9K–9.2K EUR/mo`) with no annualisation or FX.
+  Every count matched the data file; Playwright asserted card-level state, not global stats.
+
+**Not done, on purpose.** `language` is stored but does not gate rows yet: a misdetected language would
+hide a role the user can actually read. `employer_type: null` rows stay visible under "Direct
+employers" off, and the note in the sidebar says how many rows are still unanalysed.
+
 ### C. Widen the universe — geo-targeted, never random
 
 **State of things.** Common Crawl's CDX index enumerates tenant boards for free: `collinfo.json` → latest
