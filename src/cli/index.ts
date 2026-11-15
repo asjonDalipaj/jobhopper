@@ -620,16 +620,25 @@ program
     let enrichFailed = 0;
     if (missing.length) {
       console.log(pc.cyan(`Extracting metadata for ${missing.length} snapshot row(s)…`));
-      for (const row of missing) {
-        try {
-          const metadata = await extractJobMetadata(snapshotTarget(row));
-          applyMetadataToRow(row, metadata);
-          enriched += 1;
-        } catch (err) {
-          enrichFailed += 1;
-          console.error(pc.red(`  metadata failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+      // Sequential extraction cost ~7s/row: 200 rows made a scheduled scan run
+      // 24 minutes. Four in flight brings the catch-up back under the 15-minute
+      // budget (same pattern as scan.ts's extractMetadata).
+      const queue = [...missing];
+      const worker = async () => {
+        while (queue.length) {
+          const row = queue.shift();
+          if (!row) return;
+          try {
+            const metadata = await extractJobMetadata(snapshotTarget(row));
+            applyMetadataToRow(row, metadata);
+            enriched += 1;
+          } catch (err) {
+            enrichFailed += 1;
+            console.error(pc.red(`  metadata failed ${row.title}: `) + (err instanceof Error ? err.message : String(err)));
+          }
         }
-      }
+      };
+      await Promise.all(Array.from({ length: Math.min(4, queue.length) }, worker));
     }
 
     if (judged > 0 || enriched > 0) writeFileSync(path, `${JSON.stringify(rows, null, 2)}\n`);
