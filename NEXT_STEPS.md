@@ -1,5 +1,144 @@
 # Next steps — JobHopper NL/IT/ES coverage
 
+## Goal — Close the hiring.cafe gap: retain live roles, rank them, then widen the universe (added 2026-11-13, after main @ `904503a`)
+
+> **Start here.** This is the first goal in this file. Everything below is backlog.
+
+**The complaint, translated.** hiring.cafe shows more *and* better roles for the same searches. Measured
+on this repo today, that gap is mostly **not** a crawling problem:
+
+| Lever | JobHopper today | hiring.cafe |
+|---|---|---|
+| Retention | hard 3-day cutoff at ingest | keeps a role while it is still on the employer's page |
+| Metadata | category / locations / workplace type | + skills, years of experience, salary, language, employer type |
+| Universe | 198 registered boards | ~130K career pages, crawled ~3×/day |
+
+Numbers (all measured 2026-11-13; raw findings and sources in `docs/COVERAGE.md`):
+
+- Snapshot: 531 rows, 248 fair/strong, **only 68 inside the 3-day window**. The board *displays* all of
+  them — the window is an **ingest** filter, so the other 180 are never re-fetched, re-verified or added
+  to from a fresh scan; they survive only because the snapshot accumulates.
+- Re-probed 14 tracked boards (5,296 postings): 92 passed market + role gates, 39 were fresh, so
+  **53 (58%) were discarded only for age**.
+- Of the 23 `strong` verdicts, **18 are 7–14 days old** and only **1** is inside the 3-day window — the
+  best rows are systematically the ones a fresh scan would refuse to store.
+- Greenhouse's `posted_at` was fiction: the adapter read `updated_at`, and a bulk edit gives a whole
+  board the same timestamp (45 of 52 bol.com rows differed from `first_published`).
+- Untracked Common Crawl universe: **1,385** boards from one snapshot page (free, one HTTP request per
+  page), but a random probe of 80 found **1** with any NL/IT/ES software role (1.3%).
+
+The quality signal already exists — the judge computes it — and then the pipeline refuses to store most of
+it on an age rule. Fix that first; grow the universe second, and only geo-targeted.
+
+### A. Retain while live, rank by freshness — the 3-day cutoff stops deleting
+
+**State of things.** `passesMarketFilter` (src/sources/scan.ts:64) drops every posting older than 3 days
+before it reaches the DB, via `TARGET_MARKET_MAX_AGE_DAYS` (src/market.ts:34); `purgeStaleAndOffMarket`
+(src/db/jobs-repo.ts:108) repeats the rule. Nothing records whether a board still lists a row, so "still
+open" is unknowable and age is the only proxy — a bad one, because a live job stays posted for weeks.
+
+1. **`last_seen` column.** Append-only migration (`connection.ts` ALTER list), `db/types.ts`, snapshot
+   export, `mergeSnapshotRows` (keep the newest), web `types.ts`. Types are contracts: touch all four.
+2. **Stamp, don't filter.** In `ingest`, set `last_seen = now` for every fetched posting that passes
+   role + market — *before* any age check. Age stops being a delete and becomes a rank.
+3. **Retention rule.** Keep a row while `last_seen` is within 7 days; purge when the board has not
+   returned it for 7 days, or when `posted_at` exceeds `MAX_JOB_AGE_DAYS` (30) and the row was never
+   judged/applied (keeps the existing purge carve-out).
+4. **Fix `posted_at`.** Greenhouse uses `updated_at ?? created_at`, so a bulk edit makes old jobs look new
+   and a genuinely new job can look old. The API exposes `first_published`; prefer it, keep `updated_at`
+   as a fallback only.
+5. **UI.** Newest-first ordering by `posted_at`; the "New" pill keeps its 3-day meaning. No new controls.
+6. **Seed the DB from the snapshot before scanning** (`src/db/seed.ts`). The CI DB is rebuilt every run,
+   so without this a 30-day ingest floor would re-judge the whole window every 3 hours. With it, judge
+   cost is proportional to genuinely new identities.
+
+**Acceptance.** A full scan stores the 4–30 day roles it used to discard — measured as "new identities
+whose `posted_at` is older than 3 days" — while inserting **zero** rows already in the snapshot (the seed
+proves it) and making no judge call for a row that already has a verdict. Cleanup never removes judged or
+applied history, and keeps an unjudged row its board still returns no matter how old the posting is.
+`npm test` green with boundary tests (3/7/30 days, null `last_seen`, null `posted_at`). Playwright:
+rendered cards == the snapshot's non-`no` rows, and an older-than-14-days role is on the page.
+
+### A. Result (2026-11-15)
+
+Isolated end-to-end run (`JOBHOPPER_HOME` copy of the real snapshot, `scan --no-judge`, then `run -j`):
+
+- Seed: **531** rows restored, **531** verdicts restored → the scan judged nothing it already knew.
+- Scan: 29,827 postings fetched → **74 new identities**, and **all 74 are 4–23 days old** — precisely the
+  rows the old 3-day gate deleted. Snapshot **531 → 605** (+14%), nothing lost.
+- Liveness: **201** seeded rows were re-returned by their boards and stamped `last_seen`; 330 were not.
+- Cleanup: removed **0** of the 605 real rows; synthetic fixtures showed unseen-unjudged removed,
+  seen-10-days-ago kept, judged-40-days-ago kept.
+- UI: 547 rendered cards == 547 non-`no` rows; "Showing 547 of 605"; the 16-day-old Affirm row renders
+  with `Oct 30, 2026`.
+- `first_published` changes ordering and staleness for Greenhouse boards (a whole board previously shared
+  one `updated_at`), so some rows that looked fresh are correctly older — and some now qualify that
+  previously did not.
+
+Not the original hypothesis: the board already *displayed* every snapshot row; the 3-day rule never hid
+them, it stopped them being fetched, re-verified and added to. The win is discovery, not un-hiding.
+
+### B. Extract the five fields that make a good role findable
+
+**State of things.** `EXTRACTION_PROMPT` (src/judge/openrouter.ts:25) already returns `category`,
+`locations`, `workplace_type` — the same enums hiring.cafe open-sourced — and nothing else. The gap to
+their filter set is five fields in a prompt that already runs on every row, so it is nearly free.
+
+1. Add `skills[]`, `experience_min_years`, `salary{min,max,currency,frequency}`, `language` (ISO 639-1),
+   `employer_type` (`Internal|External`) to the prompt.
+2. Append-only columns: `skills`, `experience_min_years`, `salary_min`, `salary_max`, `salary_currency`,
+   `salary_frequency`, `language`, `employer_type`; carry them through export + merge like every other
+   extracted field.
+3. `employer_type` becomes the primary agency signal; keep the name heuristic (src/sources/quality.ts)
+   as fallback. `language` gates postings in a language the user cannot use.
+4. UI: direct-employer-only toggle, max-YOE filter, salary shown when present.
+
+**Acceptance.** Every newly judged row carries `employer_type` and `language`; ≥60% carry ≥1 skill; on
+the current snapshot, every row the name heuristic flags agency-shaped is labelled `External`
+(agreement check, not a new rule); every filter's count matches `jobs.json`.
+
+### C. Widen the universe — geo-targeted, never random
+
+**State of things.** Common Crawl's CDX index enumerates tenant boards for free: `collinfo.json` → latest
+snapshots → `?url=<host>/*&output=json&page=N`, first path segment = tenant. Verified today on
+`CC-MAIN-2026-43`: `jobs.ashbyhq.com` page 0 → 4,105 records → **1,080 slugs**;
+`job-boards.greenhouse.io` page 0 → 9,123 → **357**; **1,385 untracked**. Lever is invisible
+(`jobs.lever.co/robots.txt` disallows `CCBot`) — do not chase it.
+
+1. `scripts/discover-cdx.mjs`: snapshots from `collinfo.json` (latest 3, never hardcoded), paged CDX per
+   host, tolerate per-page 504s, case-fold dedupe (ATS ids are case-insensitive).
+2. **Geo-first ordering.** Intersect candidates with the ats-scrapers parquet tenants that already have
+   `country_iso IN (IT, ES, NL)` postings *before* spending any live probe. Random breadth is 1.3%;
+   the dataset signal is proven (it produced the 20 Italian boards).
+3. Live-probe only the shortlist; keep a board only with ≥1 target-market software role. Manual run,
+   never in CI.
+4. Commit winners into `DEFAULT_COMPANIES`; record the run in `docs/COVERAGE.md`.
+
+**Acceptance.** Discovery appends boards with live NL/IT/ES software roles; kept-per-100-probes beats the
+1.3% random baseline (record both numbers); `npm test` and builds green; no CI cost.
+
+### D. Keep score
+
+A weekly manual spot check (hiring.cafe vs this board, same roles, NL/IT/ES) recorded in
+`docs/COVERAGE.md` as a ratio. **Do not** add a hiring.cafe scraper — the 2026-10-29 scraping policy
+stands, and a competitor's board is not a sanctioned feed.
+
+### Order of work
+
+A → B → C. A alone should double-to-triple visible good rows for about a day of work. B makes those rows
+findable. C is the slow coverage climb, and only worth starting once A stops throwing away what C finds.
+
+### Decision log
+
+- **2026-11-13 — freshness is a rank, not a delete. DONE 2026-11-15.** The 3-day window was the right
+  instinct against ghost jobs but the wrong mechanism: it refused to store rows a live probe had already
+  verified. Retention now keys on "the board still lists it" (`last_seen`), with a 30-day ingest floor and
+  a 7-day liveness rule for unjudged rows. This supersedes the *ingest* half of the 2026-10-11 §B
+  freshness window; the "New" badge keeps its 3-day meaning.
+- **2026-11-13 — copy hiring.cafe's schema, not its crawler.** The extraction prompt is public and cheap
+  to mirror; the 130K-page, 3×/day, residential-proxy loop is not reproducible for three countries and
+  yields ~1% per random board.
+
 ## Plan — Application history graph (added 2026-10-11, after main @ `a705f10`)
 
 Track the application cycle visually. No new dependencies: hand-rolled SVG.
@@ -52,6 +191,9 @@ last one), which also broke React keys (fixed in web, `941a2ea`).
    snapshot may still repeat (fine — web keys no longer use id).
 
 ### B. Freshness window: 3 days
+
+> **Superseded 2026-11-13** for ingestion — the window now ranks instead of deleting; see the goal at the
+> top of this file. The badge's 3-day meaning below still stands.
 
 **State of things:** `TARGET_MARKET_MAX_AGE_DAYS = 14`, `MAX_JOB_AGE_DAYS = 30`
 (src/market.ts:17-18) gate scan ingestion and `purgeStaleAndOffMarket`.
