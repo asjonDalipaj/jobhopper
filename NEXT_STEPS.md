@@ -165,6 +165,27 @@ findable. C is the slow coverage climb, and only worth starting once A stops thr
   to mirror; the 130K-page, 3×/day, residential-proxy loop is not reproducible for three countries and
   yields ~1% per random board.
 
+## Fix — the local board went blank (added 2026-11-16)
+
+`npm run ui` served a beige empty page: `f.slice(...).map is not a function`.
+
+Two data paths feed the same React app, and they disagreed on one field. The
+committed snapshot stores `skills`/`locations` as arrays (from
+`snapshotMetadata`), but `/api/jobs` spread the raw DB row, where those columns
+are JSON *strings*. `job.skills.length` was truthy for a string, `.slice(0, 4)`
+returned a string, and `.map` threw during render — one malformed field blanked
+the entire board.
+
+- **Contract fixed:** `apiJobRow` (src/export/html.ts) projects a DB row into
+  the same shape the snapshot has, and `/api/jobs` uses it.
+- **Hardened:** the card treats a non-array `skills` as empty, so one bad row
+  degrades a card instead of the whole app.
+- **Regression test:** `apiJobRow` must return arrays for the JSON columns.
+- **Verification gap:** B was verified only through the static `/jobs.json`
+  path. The local server path is a different code path; the check now drives
+  `node dist/cli/index.js ui` too (585 cards, filters working, no console
+  errors).
+
 ## Plan — Application history graph (added 2026-10-11, after main @ `a705f10`)
 
 Track the application cycle visually. No new dependencies: hand-rolled SVG.

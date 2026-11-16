@@ -2,6 +2,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 
 import { isTargetMarket, isRelevantRole } from '../market.js';
+import { htmlToPlainText } from '../sources/html.js';
 
 export interface HtmlRow {
   company: string;
@@ -155,6 +156,22 @@ export function listFromJson(value: string | null | undefined): string[] {
   } catch {
     return [];
   }
+}
+
+/**
+ * One DB row as the web UI consumes it. The local server and the static
+ * snapshot must hand the UI the SAME shape: the DB stores skills/locations as
+ * JSON strings, the snapshot stores arrays, and a raw spread once blanked the
+ * whole board on `.map`.
+ */
+export function apiJobRow(
+  row: Parameters<typeof snapshotMetadata>[0] & { description?: string | null },
+): Record<string, unknown> {
+  // Spread the row first, then the metadata: the JSON-string columns are
+  // replaced by arrays, which is the whole point of this projection. The return
+  // type is loose because the only consumer serializes it; the tests pin the
+  // shape the UI depends on.
+  return { ...row, ...snapshotMetadata(row), description: htmlToPlainText(row.description ?? '') };
 }
 
 /** Project the DB's extracted columns onto the snapshot's metadata block. */

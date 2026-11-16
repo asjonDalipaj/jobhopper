@@ -6,7 +6,7 @@ import { guessWorkplace, guessEmployment } from '../sources/types.js';
 import { isSoftware } from '../sources/remotive.js';
 import { isJob } from '../sources/remoteok.js';
 import { isTargetMarket, isFresh, isRelevantRole, purgeReason, MAX_JOB_AGE_DAYS, UNSEEN_RETENTION_DAYS } from '../market.js';
-import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, snapshotMetadata, listFromJson } from '../export/html.js';
+import { mergeSnapshotRows, inSnapshotScope, sortRowsByPostedAt, snapshotMetadata, listFromJson, apiJobRow } from '../export/html.js';
 import { parseJobMetadata } from '../judge/openrouter.js';
 import { metadataFromRow } from '../db/seed.js';
 
@@ -437,4 +437,31 @@ test('snapshotMetadata projects JSON columns and tolerates junk', () => {
   assert.deepEqual(listFromJson('not json'), []);
   assert.deepEqual(listFromJson('{"a":1}'), []);
   assert.deepEqual(listFromJson(null), []);
+});
+
+test('apiJobRow hands the UI arrays where the DB stores JSON strings', () => {
+  // The regression: /api/jobs spread the raw row, so `skills` arrived as
+  // '["Go"]' and the card's .map() blanked the entire board.
+  const row = {
+    description: '<p>Build things</p>',
+    category: 'Engineering',
+    normalized_locations: '["Milan, Italy"]',
+    extracted_workplace_type: null,
+    skills: '["Go","Kubernetes"]',
+    experience_min_years: 3,
+    salary_min: 50000,
+    salary_max: 60000,
+    salary_currency: 'EUR',
+    salary_frequency: 'Yearly',
+    language: 'it',
+    employer_type: 'Internal',
+    extraction_model: 'deepseek-flash',
+  };
+  const out = apiJobRow(row);
+  assert.ok(Array.isArray(out['skills']), 'skills must be an array');
+  assert.deepEqual(out['skills'], ['Go', 'Kubernetes']);
+  assert.ok(Array.isArray(out['locations']), 'locations must be an array');
+  assert.deepEqual(out['locations'], ['Milan, Italy']);
+  assert.ok(String(out['description']).includes('Build things'));
+  assert.equal(out['employer_type'], 'Internal');
 });

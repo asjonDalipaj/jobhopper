@@ -4,7 +4,7 @@ import { extname, join, resolve } from 'node:path';
 import pc from 'picocolors';
 import { getJobByExternal, listJobs, setJobApplied } from '../db/jobs-repo.js';
 import { activeRun, artifactDir, finishedPreps, getPrepRun, hasDisplay, jobFromPayload, latestPrep, startPrep, type PrepStepId } from '../apply/prep.js';
-import { htmlToPlainText } from '../sources/html.js';
+import { apiJobRow } from '../export/html.js';
 
 const MIME_TYPES: Record<string, string> = {
   '.html': 'text/html; charset=utf-8',
@@ -150,12 +150,10 @@ export function startWebServer(port = 3333): void {
       try {
         // Local UI must show current local scans, not a stale committed snapshot.
         const source = listJobs({ limit: 1000 });
-        // Coerce stored HTML descriptions into clean, readable plain text so
-        // the frontend never has to ingest raw markup or risk XSS.
-        const cleaned = source.map((j) => {
-          const desc = ((j as { description?: string }).description) || '';
-          return { ...j, description: htmlToPlainText(desc) };
-        });
+        // Same shape as the committed snapshot the static site reads: the JSON
+        // columns (skills, locations) are arrays here too. Spreading the raw row
+        // sent JSON strings, which blanked the whole board on `.map`.
+        const cleaned = source.map(apiJobRow);
         res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
         res.end(JSON.stringify(cleaned));
       } catch (err) {

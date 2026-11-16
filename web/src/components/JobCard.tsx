@@ -28,8 +28,10 @@ export const JobCard: React.FC<JobCardProps> = ({ job, index, appliedAt, onApply
   const isNewRow = isNewJob(job);
   const salary = formatSalary(job);
   // Extracted skills beat the adapter's comma string: they are normalized and
-  // only present when the posting actually names them.
-  const keywords = job.skills?.length ? job.skills : (job.tags || '').split(',').map((t) => t.trim()).filter(Boolean);
+  // only present when the posting actually names them. Guard the array: a
+  // malformed row (JSON string) must degrade this card, not blank the board.
+  const skills = Array.isArray(job.skills) ? job.skills : [];
+  const keywords = skills.length ? skills : (job.tags || '').split(',').map((t) => t.trim()).filter(Boolean);
 
   return (
     <motion.article
