@@ -74,17 +74,67 @@ function git(args: string[], allowFail = false) {
   return result;
 }
 
+/** Directory holding files this process regenerates on every cycle. */
+const GENERATED_DIR = join('.jobhopper', 'exports');
+
+/**
+ * Integrate origin/main without ever leaving the repo wedged.
+ *
+ * The snapshot and dashboards are regenerated every cycle, so a 3-way merge of
+ * them means nothing. A `pull --rebase` that hits one conflicts and STOPS: git
+ * detaches HEAD, leaves conflict markers inside jobs.json, and every later
+ * cycle fails (unparseable snapshot, "not currently on a branch"). That is
+ * exactly how this watcher died on 2026-11-20.
+ *
+ * So: merge instead of rebase, and resolve conflicts wholesale — but only when
+ * every conflicting path is generated. Anything else is aborted for a human
+ * rather than silently decided.
+ *
+ * @param prefer 'remote' before scanning (CI's snapshot becomes the base the
+ *   local export merges onto); 'local' after exporting (ours is newer).
+ */
+export function integrate(prefer: 'local' | 'remote'): boolean {
+  const fetch = git(['fetch', 'origin', 'main'], true);
+  if (fetch.status !== 0) {
+    console.error('[watch] git fetch failed; keeping the local snapshot');
+    console.error((fetch.stderr || '').trim());
+    return false;
+  }
+  const merge = git(['merge', '--no-edit', 'origin/main'], true);
+  if (merge.status === 0) return true;
+
+  const conflicts = (git(['diff', '--name-only', '--diff-filter=U'], true).stdout || '')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const generatedOnly = conflicts.length > 0 && conflicts.every((path) => path.startsWith(`${GENERATED_DIR}/`));
+  if (!generatedOnly) {
+    git(['merge', '--abort'], true);
+    console.error('[watch] conflict outside the generated exports; left it for you to resolve');
+    if (conflicts.length) console.error(conflicts.join('\n'));
+    return false;
+  }
+
+  // In a merge, --ours is this branch and --theirs is origin/main.
+  const side = prefer === 'remote' ? '--theirs' : '--ours';
+  git(['checkout', side, '--', ...conflicts], true);
+  git(['add', '--', ...conflicts], true);
+  if (git(['commit', '--no-edit'], true).status !== 0) {
+    git(['merge', '--abort'], true);
+    console.error('[watch] could not finish the merge; keeping the local snapshot');
+    return false;
+  }
+  console.log(`[watch] resolved ${conflicts.length} generated file conflict(s) in favour of ${prefer}`);
+  return true;
+}
+
 function syncRemote(): void {
   const upstream = git(['rev-parse', '--abbrev-ref', '--symbolic-full-name', '@{u}'], true);
   if (upstream.status !== 0) {
     console.log('[watch] no upstream branch; skipping the remote pull');
     return;
   }
-  const pull = git(['pull', '--rebase', '--autostash'], true);
-  if (pull.status !== 0) {
-    console.error('[watch] git pull failed; continuing with the local snapshot');
-    console.error((pull.stderr || '').trim());
-  }
+  if (!integrate('remote')) console.error('[watch] continuing with the local snapshot this cycle');
 }
 
 /** Commit and push the exports (snapshot + dashboards); never touches other staged files. */
@@ -97,8 +147,11 @@ function publishSnapshot(path: string): void {
   if (diff.status !== 1) throw new Error('git diff failed while checking the snapshot');
 
   git(['commit', '-m', `chore: fresh jobs snapshot ${new Date().toISOString()}`, '--', dir]);
-  const pull = git(['pull', '--rebase', '--autostash'], true);
-  if (pull.status !== 0) console.error('[watch] pull before push failed; trying to push anyway');
+  // Our export is newer than whatever landed on the remote during the scan.
+  if (!integrate('local')) {
+    console.error('[watch] could not integrate the remote; the snapshot stays local this cycle');
+    return;
+  }
   const push = git(['push'], true);
   if (push.status !== 0) {
     console.error('[watch] push failed; the snapshot stays local this cycle');

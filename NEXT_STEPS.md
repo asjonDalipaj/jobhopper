@@ -186,6 +186,40 @@ the entire board.
   `node dist/cli/index.js ui` too (585 cards, filters working, no console
   errors).
 
+## Fix — the watcher wedged the repo on a snapshot conflict (added 2026-11-20)
+
+Symptom: every cycle failed with `cannot read snapshot ... Expected property name
+or '}' in JSON at position 6 (line 3 column 1)`, and git said
+`fatal: You are not currently on a branch`.
+
+The chain:
+
+1. The watcher (local) and the scheduled Worker both write
+   `.jobhopper/exports/jobs.json` and both push it. They diverged: one generated
+   commit local, one generated commit remote.
+2. `git pull --rebase` hit that file, **conflicted, and stopped** — HEAD
+   detached, `.git/rebase-merge` left behind, and conflict markers written into
+   `jobs.json`.
+3. From then on the scan read a non-JSON file and failed, while pull/push could
+   not run because there was no branch. Every 900 s, same failure. The
+   `--autostash` made it look like a transient pull error.
+
+Fixes (`src/watch.ts`):
+
+- `integrate(prefer)` replaces `pull --rebase`: fetch + merge. When **every**
+  conflicting path is under `.jobhopper/exports`, it resolves the file
+  wholesale — `remote` before scanning (CI's snapshot becomes the base the
+  export merges onto), `local` after exporting (ours is newer). Any conflict
+  outside the generated exports aborts the merge and is left to a human.
+  It never leaves a merge or rebase in progress.
+- 3 tests build real repos (bare origin, two clones) and assert: the chosen
+  side wins, no `MERGE_HEAD`/rebase dir remains, the tree is clean, and a
+  code conflict aborts without touching the file.
+
+Repair of the wedged checkout: aborted the rebase and reset `main` to
+`origin/main` (the only local commit was a generated snapshot; the local DB
+re-exports it), preserving the uncommitted profile edits.
+
 ## Plan — Application history graph (added 2026-10-11, after main @ `a705f10`)
 
 Track the application cycle visually. No new dependencies: hand-rolled SVG.
